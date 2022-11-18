@@ -1,0 +1,97 @@
+/* =================== animation =================== */
+// obj
+.obj {
+	position: absolute;
+	display: inline-block;
+	width: 9.375rem;
+	height: 9.375rem;
+	background: $m-color;
+	border: 1.875rem solid $m-color;
+	border-radius: 50%;
+	animation: drop ease-in-out 3s infinite;
+}
+
+.obj-sm {
+	position: absolute;
+	display: inline-block;
+	width: 12.5rem;
+	height: 12.5rem;
+	border-radius: 50%;
+	background: $skyBlue;
+	animation: drop ease-in-out 2.5s infinite;
+
+	@at-root .search-menu & {
+		top: -1.875rem;
+		left: 9vw;
+	}
+	@at-root .report & {
+		top: 0px;
+		right: 0;
+	}
+}
+
+.obj-big {
+	position: absolute;
+	display: inline-block;
+	width: 31.25rem;
+	height: 31.25rem;
+	border-radius: 50%;
+	background: $green;
+	animation: drop ease-in-out 3.5s infinite;
+
+	@at-root .search-menu & {
+		top: 19.125rem;
+		left: -3vw;
+	}
+	@at-root .report & {
+		top: 400px;
+		right: -11vw;
+	}
+	@at-root .main-organ & {
+		right: -5vw;
+		left: auto;
+	}
+}
+
+.obj-bd {
+	position: absolute;
+	top: 133px;
+	right: 0;
+	background: url(../img/bg-search-menu.png) no-repeat center/cover;
+	width: 35.3125rem;
+	height: 35.3125rem;
+	animation: drop ease-in-out 2.5s infinite;
+
+	@at-root .report & {
+		top: -150px;
+		left: -15vw;
+	}
+}
+
+.obj-sq {
+	position: absolute;
+	z-index: -1;
+	top: 133px;
+	right: 0;
+	background: url(../img/bg-sq.png) no-repeat center/contain;
+	width: 610px;
+	height: 610px;
+	animation: drop ease-in-out 3.5s infinite;
+
+	@at-root .edu-info & {
+		top: 220px;
+		left: -6vw;
+	}
+}
+
+@keyframes drop {
+	0% {
+		transform: translateY(-30px);
+	}
+	50% {
+		transform: translateY(0px);
+	}
+	100% {
+		transform: translateY(-30px);
+	}
+}
