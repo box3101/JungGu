@@ -3,3 +3,22 @@
     opacity: 0;
     font-size: 0;
 }
+.location .a{}
+.location .b{}
+
+
+/* 데스크탑 작은거 */
+@media (max-width:1200px) {
+    
+}
+
+/* 테블릿 */
+@media (max-width:900px) {
+
+}
+
+/* 모바일 */
+@media (max-width:600px) {
+
+}
+
