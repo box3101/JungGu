@@ -16,3 +16,6 @@
 @import "components/button.scss";
 @import "components/popup.scss";
 @import "components/forms.scss";
+
+//모든 SCSS 파일에서 사용할 변수에 대한 정의만 작성
+@import "variables.scss";

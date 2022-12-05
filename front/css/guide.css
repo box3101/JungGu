@@ -1,0 +1,78 @@
+.guideBox {
+  padding-top: 50px;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.guideBox .header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* swiper */
+
+.swiper-slide img {
+  width: 80%;
+  height: 400px;
+  box-shadow: 0 0 5px #555;
+}
+
+.swiper-slide a {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  border: none;
+}
+.guideSwiper{
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+}
+.autoplay-control {
+  position: absolute;
+  z-index: 10;
+  right: 7px;
+  bottom: 7px;
+  transform: translateX(-50%);
+}
+
+.autoplay-control button {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.autoplay-control button:before {
+  display: block;
+  content: '';
+  position: absolute;
+}
+
+.autoplay-control button[aria-pressed="false"]:before {
+  top: 4px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  box-sizing: border-box;
+}
+
+.autoplay-control button[aria-pressed="true"]:before {
+  top: 2px;
+  left: 2px;
+  border-top: 8px solid transparent;
+  border-left: 16px solid #000;
+  border-bottom: 8px solid transparent;
+}
