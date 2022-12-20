@@ -1,8 +1,16 @@
 // 사용자 정의 변수
 // 여기에 매인컬러, 서브컬러 등의 변수를 설정하면 SCSS 어디에서도 사용할 수 있습니다.
 //////////////////////////////////////////////
-$color-main: #ff3322;
+$cMain: #00489e;
 $color-sub: #334455;
 $color-gray-1: #333333;
 $color-gray-2: #666666;
 $color-gray-3: #999999;
+
+// 위치 설정
+$path-set: (
+	icon: "../img/icon/",
+	img: "../img/",
+	logo: "../img/logo/",
+	object: "../img/object/",
+);

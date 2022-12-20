@@ -1,7 +1,147 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  vertical-align: baseline;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #2d2d2d;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  display: block;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  left: -9999999999px;
+  font-size: 0;
 }
 
 /* skip nav */
@@ -755,6 +895,142 @@ button.swiper-pagination-bullet {
 
 .swiper-container-coverflow .swiper-wrapper {
   -ms-perspective: 1200px;
+}
+
+/* button */
+button {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0;
+  padding: 0px;
+  border: 0px;
+  font-weight: normal;
+  background-color: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.header .headerBg {
+  box-shadow: 0px 4px 8px 0px rgba(45, 45, 45, 0.1);
+  text-shadow: 0px 4px 8px rgba(45, 45, 45, 0.1);
+}
+
+.inner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header .headerWrap {
+  border-bottom: 1px solid #d4d4d4;
+}
+.header .headerWrap.on .subPanel,
+.header .headerWrap.on .headerBg {
+  display: block !important;
+}
+.header .headerWrap .headerInner {
+  position: relative;
+  z-index: 11;
+  max-width: 1400px;
+  margin: 0 auto;
+  height: 80px;
+}
+.header .headerWrap .headerInner .logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.header .headerWrap .headerInner .logo a {
+  display: inline-block;
+}
+.header .headerWrap .headerInner .gnb {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.header .headerWrap .headerInner .gnb > li {
+  position: relative;
+  padding: 0 35px;
+}
+.header .headerWrap .headerInner .gnb > li > a {
+  display: inline-block;
+  color: #333;
+  font-size: 20px;
+  transition: all 0.4s;
+  font-weight: 500;
+}
+.header .headerWrap .headerInner .gnb > li > a:hover {
+  font-weight: bold;
+  color: #00489e;
+}
+.header .headerWrap .headerInner .gnb > li > a.on {
+  font-weight: bold;
+  color: #00489e;
+}
+.header .headerWrap .headerInner .gnb > li .subPanel {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.header .headerWrap .headerInner .gnb > li .subPanel li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.header .headerWrap .headerInner .gnb > li .subPanel li a:hover {
+  color: #00489e;
+  font-weight: bold;
+}
+.header .headerWrap .headerInner .utilMenu {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header .headerWrap .headerInner .utilMenu li .searchBtn {
+  background-image: url("../img/searchBtn.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.header .headerWrap .headerInner .utilMenu li .myPage {
+  background-image: url("../img/mypageBtn.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.header .headerBg {
+  position: absolute;
+  display: none;
+  background: #fff;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 80px;
+}
+.header .headerBg.on {
+  display: block;
+}
+
+.visual {
+  height: 500px;
 }
 
 /*# sourceMappingURL=ui.css.map */

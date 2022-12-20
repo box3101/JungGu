@@ -1,0 +1,103 @@
+.header {
+	.headerWrap {
+		border-bottom: 1px solid #d4d4d4;
+		&.on {
+			.subPanel,
+			.headerBg {
+				display: block !important;
+			}
+		}
+		.headerInner {
+			position: relative;
+			z-index: 11;
+			max-width: 1400px;
+			margin: 0 auto;
+			height: 80px;
+			.logo {
+				@include pCenterY;
+				left: 0;
+				a {
+					display: inline-block;
+				}
+			}
+			.gnb {
+				@include pCenterY;
+				@include flex(null, center);
+				position: relative;
+				> li {
+					position: relative;
+					padding: 0 35px;
+					> a {
+						display: inline-block;
+						color: #333;
+						font-size: 20px;
+						transition: all 0.4s;
+						font-weight: 500;
+						&:hover {
+							font-weight: bold;
+							color: $cMain;
+						}
+						&.on {
+							font-weight: bold;
+							color: $cMain;
+						}
+					}
+					.subPanel {
+						display: none;
+						position: absolute;
+						left: 0;
+						width: 100%;
+						top: 50px;
+						padding-top: 24px;
+						padding-bottom: 24px;
+						&:hover {
+						}
+						li {
+							a {
+								display: block;
+								text-align: center;
+								font-size: 16px;
+								color: #333333;
+								margin-bottom: 16px;
+								&:hover {
+									color: $cMain;
+									font-weight: bold;
+								}
+							}
+						}
+					}
+				}
+			}
+			.utilMenu {
+				@include pCenterY;
+				right: 0;
+				@include flex(center, null, 20px);
+				li {
+					.searchBtn {
+						@include bg-url("img", "searchBtn.png", "cover");
+						width: 25px;
+						height: 25px;
+					}
+					.myPage {
+						@include bg-url("img", "mypageBtn.png", "cover");
+						width: 25px;
+						height: 25px;
+					}
+				}
+			}
+		}
+	}
+	.headerBg {
+		@extend %boxShadowType-1;
+		position: absolute;
+		display: none;
+		background: #fff;
+		z-index: 10;
+		left: 0;
+		right: 0;
+		top: 80px;
+		&.on {
+			display: block;
+		}
+	}
+}
