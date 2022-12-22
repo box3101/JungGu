@@ -14,6 +14,12 @@
 	}
 }
 
+@mixin media($px, $range: max) {
+	@media all and (#{$range}-width: $px) {
+		@content;
+	}
+}
+
 @mixin bg-op($p: center, $s: cover, $r: no-repeat) {
 	background-position: $p;
 	background-size: $s;
@@ -47,4 +53,20 @@
 	top: 50%;
 	transform: translateY(-50%);
 	@content;
+}
+
+@mixin before($c: "", $d: block) {
+	&:before {
+		content: $c;
+		display: $d;
+		@content;
+	}
+}
+
+@mixin after($c: "", $d: block) {
+	&:after {
+		content: $c;
+		display: $d;
+		@content;
+	}
 }

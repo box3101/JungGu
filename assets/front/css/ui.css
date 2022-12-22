@@ -921,6 +921,13 @@ button {
   margin: 0 auto;
 }
 
+body {
+  min-height: 3000px;
+}
+
+.header {
+  position: relative;
+}
 .header .headerWrap {
   border-bottom: 1px solid #d4d4d4;
 }
@@ -1023,7 +1030,7 @@ button {
   z-index: 10;
   left: 0;
   right: 0;
-  top: 80px;
+  top: 81px;
 }
 .header .headerBg.on {
   display: block;
@@ -1031,7 +1038,6 @@ button {
 .header .headerBg .inner {
   position: relative;
   height: 100%;
-  opacity: 1;
 }
 .header .headerBg .inner .changImg {
   position: absolute;
@@ -1045,7 +1051,92 @@ button {
   width: 100px;
   height: 100px;
 }
+.header .mobileMenu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  cursor: pointer;
+  z-index: 11;
+}
+.header .mobileMenu .menuToggle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  top: 43px;
+  right: 15px;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 11;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+.header .mobileMenu .menuToggle .menuItem {
+  background-color: #000;
+  display: block;
+  height: 3px;
+  margin: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+  width: 30px;
+}
+.header .mobileMenu .menuToggle.open .menuItem {
+  margin: 0px 0px 5px;
+  background-color: red;
+}
+.header .mobileMenu .menuToggle.open .menuItem:first-child {
+  transform: rotate(45deg);
+  transform-origin: 4px;
+}
+.header .mobileMenu .menuToggle.open .menuItem:nth-child(2) {
+  opacity: 0;
+}
+.header .mobileMenu .menuToggle.open .menuItem:nth-child(3) {
+  transform: rotate(-45deg);
+  transform-origin: 3px;
+}
+.header .mobileMenu .mobileNav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0px;
+  background-color: #3c3842;
+  width: 100vw;
+  height: 100vh;
+  transform: translate(100%, 0);
+  transition: all 0.2s ease-in-out;
+}
+.header .mobileMenu .mobileNav ul {
+  list-style-type: none;
+}
+.header .mobileMenu .mobileNav li a {
+  color: #989aa4;
+  display: block;
+  padding: 15px 20px;
+}
+.header .mobileMenu .mobileNav li a:hover {
+  background-color: #23252b;
+  color: #fff;
+}
 
+@media all and (max-width: 1200px) {
+  html,
+body {
+    overflow-x: hidden;
+  }
+  .gnb {
+    display: none !important;
+  }
+  .mobileMenu {
+    display: block !important;
+  }
+  .header .headerWrap .headerInner .logo {
+    left: 20px;
+  }
+  .header .headerWrap .headerInner .utilMenu {
+    display: none;
+  }
+}
 .visual {
   height: 500px;
 }

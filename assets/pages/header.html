@@ -145,7 +145,6 @@
 </div>
 
 <script>
-
   window.onload = function () {
     (function (e) {
       const $header = document.querySelector(".header");
@@ -259,4 +258,35 @@
     })();
   }
 
+</script>
+
+<!-- 모바일메뉴 -->
+<nav class="mobileMenu">
+  <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
+    <span class="menuItem"></span>
+    <span class="menuItem"></span>
+    <span class="menuItem"></span>
+  </button>
+  <nav class="mobileNav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Works</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+</nav>
+
+<script>
+  let menu = "close";
+  document.querySelector('.menuToggle').addEventListener('click', () => {
+    if (menu === "close") {
+      document.querySelector('.mobileNav').style.transform = 'translate(0%, 0)'
+      menu = "open";
+    } else {
+      document.querySelector('.mobileNav').style.transform = 'translate(100%, 0)'
+      menu = "close";
+    }
+    document.querySelector('.menuToggle').classList.toggle('open');
+  })
 </script>

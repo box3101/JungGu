@@ -14,3 +14,11 @@ $path-set: (
 	logo: "../img/logo/",
 	object: "../img/object/",
 );
+
+// 반응형 기준
+// 모니터 작은 데스크탑
+$web: 1200px;
+// 랩탑 - 노트북
+$tab: 900px;
+// 태블릿 -
+$mo: 600px;

@@ -1,4 +1,9 @@
+body {
+	min-height: 3000px;
+}
+
 .header {
+	position: relative;
 	.headerWrap {
 		border-bottom: 1px solid #d4d4d4;
 		&.on {
@@ -95,14 +100,13 @@
 		z-index: 10;
 		left: 0;
 		right: 0;
-		top: 80px;
+		top: 81px;
 		&.on {
 			display: block;
 		}
 		.inner {
 			position: relative;
 			height: 100%;
-			opacity: 1;
 			.changImg {
 				@include pCenterY;
 				left: 30px;
@@ -111,5 +115,95 @@
 				height: 100px;
 			}
 		}
+	}
+	.mobileMenu {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		cursor: pointer;
+		z-index: 11;
+		.menuToggle {
+			@include pCenterY;
+			top: 43px;
+			right: 15px;
+			display: inline-block;
+			cursor: pointer;
+			z-index: 11;
+			display: inline-block;
+			transition: all 0.3s ease-in-out;
+			.menuItem {
+				background-color: #000;
+				display: block;
+				height: 3px;
+				margin: 0 0 10px;
+				transition: all 0.3s ease-in-out;
+				width: 30px;
+			}
+			&.open .menuItem {
+				margin: 0px 0px 5px;
+				background-color: red;
+
+				&:first-child {
+					transform: rotate(45deg);
+					transform-origin: 4px;
+				}
+
+				&:nth-child(2) {
+					opacity: 0;
+				}
+
+				&:nth-child(3) {
+					transform: rotate(-45deg);
+					transform-origin: 3px;
+				}
+			}
+		}
+		.mobileNav {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0px;
+			background-color: #3c3842;
+			width: 100vw;
+			height: 100vh;
+			transform: translate(100%, 0);
+			transition: all 0.2s ease-in-out;
+
+			& ul {
+				list-style-type: none;
+			}
+
+			& li a {
+				color: #989aa4;
+				display: block;
+				padding: 15px 20px;
+
+				&:hover {
+					background-color: #23252b;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+@include media($web) {
+	html,
+	body {
+		overflow-x: hidden;
+	}
+	.gnb {
+		display: none !important;
+	}
+	.mobileMenu {
+		display: block !important;
+	}
+	.header .headerWrap .headerInner .logo {
+		left: 20px;
+	}
+	.header .headerWrap .headerInner .utilMenu {
+		display: none;
 	}
 }
