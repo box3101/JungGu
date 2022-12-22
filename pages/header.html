@@ -6,7 +6,7 @@
       </a>
     </h1>
     <ul class="gnb" id="gnb" tabindex="0">
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo.png">
         <a href="#" class="gnbLink">
           평생학습도시
         </a>
@@ -27,14 +27,11 @@
             <a href="#">주요사업 소개</a>
           </li>
           <li>
-            <a href="#">오시는길</a>
-          </li>
-          <li>
-            <a href="#">오시는길</a>
+            <a href="#">높이테스트</a>
           </li>
         </ul>
       </li>
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo2.png">
         <a href="#" class="gnbLink">
           수강신청 </a>
         <ul class="subPanel">
@@ -55,7 +52,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo.png">
         <a href="#" class="gnbLink">
           네트워크
         </a>
@@ -74,7 +71,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo2.png">
         <a href="#" class="gnbLink">
           나눔공간
         </a>
@@ -90,7 +87,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo.png">
         <a href="#" class="gnbLink">
           열린마당
         </a>
@@ -106,7 +103,7 @@
           </li>
         </ul>
       </li>
-      <li>
+      <li class="gnbItem" data-img="../front/img/logo2.png">
         <a href="#" class="gnbLink">
           교육혁신지구
         </a>
@@ -142,7 +139,8 @@
 </div>
 <div class="headerBg">
   <div class="inner">
-
+    <div class="changImg">
+    </div>
   </div>
 </div>
 
@@ -157,20 +155,22 @@
       const $$subPanel = document.querySelectorAll(".subPanel");
       const $visual = document.querySelector(".visual");
       const $logo = document.querySelector(".logo");
-      const subHeight = [];
       const activeName = "on";
       const $gnb = document.querySelector(".gnb");
       const links = $gnb.querySelectorAll('a');
+      const subPenelHeight = [];
       let maxHeight = '';
+
 
       // Gnb 최대 높이 설정 함수
       const gnbMaxHeight = (e) => {
         // panel height 높이 설정
         $$subPanel.forEach((el, idx) => {
-          let ulHeight = el.clientHeight;
-          subHeight.push(ulHeight);
-          maxHeight = Math.max(maxHeight, subHeight[idx]);
-          el.style.height = `${maxHeight + 0}px`;
+          let panelHeight = el.clientHeight;
+          subPenelHeight.push(panelHeight);
+          maxHeight = Math.max(maxHeight, subPenelHeight[idx]);
+          el.style.height = maxHeight.toString() + `px`;
+          return maxHeight;
         });
         $headerBg.style.height = `${maxHeight + 0}px`;
       }
@@ -197,16 +197,15 @@
       // 탭키 접근성
       const tabKey = (e) => {
         if (event.key === 'Tab') {
-          console.log("!@3");
           $headerWrap.classList.add(activeName);
           $headerBg.classList.add(activeName);
           gnbMaxHeight(e);
 
           // 탭 키가 눌렸을 때, 현재 포커스가 있는 링크의 인덱스
-          const focusedIndex = Array.from(links).indexOf(event.target) + 1;
+          const focusedIndex = Array.from(links).indexOf(event.target);
 
           // 탭키가 처음 마지막 키 눌렀을때
-          if (focusedIndex === 0 || focusedIndex === links.length - 1) {
+          if (focusedIndex === -1 || focusedIndex === links.length - 1) {
             $headerBg.classList.remove(activeName);
             $headerWrap.classList.remove(activeName);
             return;
@@ -226,11 +225,36 @@
         });
       }
 
+      // gnbItem li 활성화
+      const changeImgAtive = (e) => {
+        const target = e.target;
+        const $changeImg = document.querySelector(".changImg");
+        const $$gnbItem = document.querySelectorAll(".gnbItem");
+        const $$subPanelItem = document.querySelectorAll(".subPanel a");
+
+        // 배경 이미지 활성화 함수
+        const changImgActive = (el) => {
+          let changeImg = el.closest(".gnbItem").getAttribute("data-img");
+          $changeImg.style.backgroundImage = `url(${changeImg})`;
+        }
+
+        $$gnbItem.forEach((el) => {
+          if (target == el || target == el.querySelector(".subPanel")) {
+            changImgActive(el);
+          }
+        });
+        $$subPanelItem.forEach((el) => {
+          if (target == el) {
+            changImgActive(el);
+          }
+        });
+      }
+
       $header.addEventListener("mouseover", gnbOpen);
       $visual.addEventListener("mouseover", gnbClose);
       $gnb.addEventListener('keydown', tabKey);
       $gnb.addEventListener('keydown', subPanelActive(e));
-
+      $gnb.addEventListener('mouseover', changeImgAtive);
 
     })();
   }

@@ -99,5 +99,16 @@
 		&.on {
 			display: block;
 		}
+		.inner {
+			position: relative;
+			height: 100%;
+			.changImg {
+				@include pCenterY;
+				left: 30px;
+				@include bg-url("img", "logo.png", "cover");
+				width: 100px;
+				height: 100px;
+			}
+		}
 	}
 }
