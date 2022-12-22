@@ -102,6 +102,7 @@
 		.inner {
 			position: relative;
 			height: 100%;
+			opacity: 1;
 			.changImg {
 				@include pCenterY;
 				left: 30px;

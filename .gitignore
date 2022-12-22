@@ -1,4 +1,4 @@
-*.map
 [.sass-cache]
 .sass-cache/
 .vscode/
+front/css/*.map
