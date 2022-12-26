@@ -5,6 +5,8 @@ body {
 .header {
 	position: relative;
 	.headerWrap {
+		position: relative;
+		z-index: 101;
 		border-bottom: 1px solid #d4d4d4;
 		&.on {
 			.subPanel,
@@ -15,7 +17,7 @@ body {
 		.headerInner {
 			position: relative;
 			z-index: 11;
-			max-width: 1400px;
+			max-width: 1280px;
 			margin: 0 auto;
 			height: 80px;
 			.logo {
@@ -80,11 +82,15 @@ body {
 				li {
 					.searchBtn {
 						@include bg-url("img", "searchBtn.png", "cover");
+						background-color: #fff;
+						border: none;
 						width: 25px;
 						height: 25px;
 					}
 					.myPage {
 						@include bg-url("img", "mypageBtn.png", "cover");
+						background-color: #fff;
+						border: none;
 						width: 25px;
 						height: 25px;
 					}
@@ -97,7 +103,7 @@ body {
 		position: absolute;
 		display: none;
 		background: #fff;
-		z-index: 10;
+		z-index: 100;
 		left: 0;
 		right: 0;
 		top: 81px;

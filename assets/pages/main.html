@@ -16,8 +16,10 @@
   <!-- <link rel="stylesheet" href="../front/css/yg.css"> -->
 
   <!-- =================== SCRIPT =================== -->
+  <script src="../front/js/swiper.js"></script>
   <script src="../front/js/jquery.js"></script>
-  <script src="../front/js/main.js"></script>
+  <script defer src="../front/js/main.js"></script>
+
   <!-- include -->
   <script type="text/javascript">
     $(document).ready(function () {
@@ -48,7 +50,46 @@
         <!-- visual -->
         <figure class="visual">
           <div class="inner">
-            visual 메뉴
+            <div class="visualSlide">
+              <!-- 다음 버튼 -->
+              <button type="button" class="swiper-button-next"></button>
+
+              <!-- 슬라이드 -->
+              <div id="visualSlide" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://via.placeholder.com/1280x380" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://via.placeholder.com/1280x380" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://via.placeholder.com/1280x380" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 이전 버튼 -->
+              <button type="button" class="swiper-button-prev"></button>
+
+              <!-- 시작,정지 -->
+              <div class="autoplayControl">
+                <button aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+              </div>
+
+              <!-- 페이징 -->
+              <div class="comSlidePaging">
+                <div class="currentNum"></div>
+                <span class="bar">/</span>
+                <div class="allNum"></div>
+              </div>
+            </div>
           </div>
         </figure>
         <!-- visual eee-->

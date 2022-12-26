@@ -1,6 +1,6 @@
 .guideBox {
   padding-top: 50px;
-  width: 1400px;
+  width: 1280px;
   margin: 0 auto;
 }
 
@@ -11,7 +11,19 @@
   font-size: 20px;
   margin-bottom: 10px;
 }
-
+.guideBox dl{}
+.guideBox dl dt{
+  color: darkred;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+.guideBox dl dd{
+  margin-top: 20px;
+  margin-left: 0;
+}
+.guideBox dl dd ul li{
+  margin-bottom: 10px;
+}
 /* swiper */
 
 .swiper-slide img {
@@ -33,7 +45,7 @@
 }
 .guideSwiper{
   position: relative;
-  width: 1400px;
+  width: 1280px;
   margin: 0 auto;
 }
 .autoplay-control {
@@ -79,14 +91,14 @@
 
 .swiper{
   height: 100vh;
-  width: 1400px;
+  width: 1280px;
 }
 .swiper img{
   width: 100%; height: 300px;
 }
 
 .infoBox{
-  width: 1400px;
+  width: 1280px;
   margin: 0 auto;
 }
 ul,li{
@@ -470,9 +482,6 @@ p.desc{
   color: #fff;
 }
 
-.comSelectBox {
-  margin-top: 20px;
-}
 
 .tbl-btn>a {
   padding: 0 10px !important;

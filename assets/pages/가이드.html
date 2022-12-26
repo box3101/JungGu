@@ -8,34 +8,131 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <link rel="stylesheet" href="../front/css/guide.css">
+  <link rel="stylesheet" href="../front/css/ui.css">
   <script src="../front/js/swiper.js"></script>
-
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.esm.js"></script>
-  <script nomodule src="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/duet.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@duetds/date-picker@1.4.0/dist/duet/themes/default.css" />
+  <script defer src="../front/js/main.js"></script>
 
 </head>
 
 <body>
   <div class="guideBox">
-    <div class="header">접근성 주의사항</div>
+    <div class="header">컴포넌트</div>
     <div class="info">
-      <div class="txtWrap">
-        <p class="desc">-인식의 용이성</p>
-        <p class="tit">1. 적절한 대체 텍스트 제공</p>
-        <strong>[오류]</strong> <br>
-        - 대체택스트를 빈값으로 제공하는 경우 <br>
-        - 의미가 있는 이미지가 배경이미지로만 제공하는 경우. <br>
-        - 이미지의 정보를 요약하거나 오타가 있는 경우.
-        </p>
-      </div>
-      <div class="txtWrap">
-        <p class="tit">2. 자막 제공</p>
-        <strong>[오류]</strong> <br>
-        - 멀티미디어 콘텐츠에 자막, 원고, 수화 중 하나 이상의 대체 수단을 제공하지 않을 경우. <br>
-        - 멀티미디어 콘텐츠에 대한 대체수단의 내용을 불충분, 적절하지 않게 제공할 경우. <br>
-        </p>
-      </div>
+      <dl>
+        <dt>input</dt>
+        <dd>
+          <ul>
+            <li>
+              <label for="a1"></label>
+              <input id="a1" type="text" class="comInput">
+            </li>
+            <li>
+              <label for="a2"></label>
+              <input id="a2" type="text" class="comInput" placeholder="설명">
+            </li>
+            <li>
+              <label for="a2"></label>
+              <input id="a2" type="text" class="comInput" readonly placeholder="readonly">
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>select</dt>
+        <dd>
+          <ul>
+            <li>
+              <div class="comSelectBox">
+                <label for="a3"></label>
+                <select name="" id="a3" class="comSelect">
+                  <option value="">전체</option>
+                  <option value="">전체2</option>
+                </select>
+              </div>
+            </li>
+            <li>
+              <div class="comSelectBox">
+                <label for="a3"></label>
+                <select name="" id="a3" class="comSelect">
+                  <option value="">전체</option>
+                  <option value="">전체2</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>textarea</dt>
+        <dd>
+          <ul>
+            <li>
+              <label for="c1" class="hidden"><textarea name="" id="" cols="30" rows="10"></textarea></label>
+              <textarea name="" id="c1" cols="30" rows="10" class="comTextArea"></textarea>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>checkBox</dt>
+        <dd>
+          <ul>
+            <li>
+              <div class="formChkbox flex gap5 aiCenter">
+                <label class="formChkbox__control control--checkbox"> 체크박스 box1
+                  <input type="checkbox">
+                </label>
+                <label class="formChkbox__control control--checkbox">
+                  체크박스 box2
+                  <input type="checkbox">
+                </label>
+                <label class="formChkbox__control control--checkbox">
+                  체크박스 box3
+                  <input type="checkbox">
+                </label>
+                <label class="formChkbox__control control--checkbox">
+                  체크박스 box4
+                  <input type="checkbox">
+                </label>
+              </div>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>radioBox</dt>
+        <dd>
+          <ul>
+            <li>
+              <div class="formRadio">
+                <input type="radio" id="c1" name="chk1_01" value="1" checked="">
+                <label for="c1">
+                  대기중 &nbsp;&nbsp;
+                </label>
+                <input type="radio" id="c2" name="chk1_01" value="2">
+                <label for="c2">
+                  모집중 &nbsp;&nbsp;
+                </label>
+                <input type="radio" id="c3" name="chk1_01" value="3">
+                <label for="c3">
+                  모집완료 &nbsp;&nbsp;
+                </label>
+              </div>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <dl>
+        <dt>button</dt>
+        <dd>
+          <div class="content buttons">
+            <button type="button" class="comBtn bgMain sizeSm">Primary</button>
+            <button type="button" class="comBtn bgDefault sizeMid">Secondary</button>
+            <button type="button" class="comBtn bgRed sizeLg">Outline</button>
+            <button type="button" class="comBtn bgBlue sizeXlg">Outline</button>
+          </div>
+        </dd>
+      </dl>
     </div>
   </div>
 
@@ -81,56 +178,6 @@
         </div>
       </div>
 
-      <script>
-        const changeTabIndex = () => {
-          $$swiperAll = document.querySelectorAll(".swiper-slide");
-          $$swiperAll.forEach((el, idx) => {
-            const $swiperAnchor = el.querySelector("a");
-            if (el.classList.contains("swiper-slide-active")) {
-              $swiperAnchor.setAttribute("tabindex", "0");
-            } else {
-              $swiperAnchor.setAttribute("tabindex", "-1");
-            }
-          });
-        }
-
-        new Swiper('.swiper-container', {
-          autoplay: {
-            delay: 1000,
-          },
-          loop: true,
-          navigation: {
-            nextEl: '.swiper-button-next', // 다음 버튼 클래스명
-            prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
-          },
-          a11y: {
-            prevSlideMessage: '이전 슬라이드',
-            nextSlideMessage: '다음 슬라이드',
-            slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
-          },
-          on: {
-            init: function () {
-              changeTabIndex();
-              thisSlide = this;
-              autoPlayBtn = document.querySelector('.autoplay-control > button');
-              autoPlayBtn.addEventListener('click', (e) => {
-                autoPlayState = autoPlayBtn.getAttribute('aria-pressed');
-                if (autoPlayState === 'false') {
-                  autoPlayBtn.setAttribute('aria-pressed', 'true');
-                  thisSlide.autoplay.stop();
-                } else if (autoPlayState === 'true') {
-                  autoPlayBtn.setAttribute('aria-pressed', 'false');
-                  thisSlide.autoplay.start();
-                };
-              });
-            },
-            slideChangeTransitionStart: () => {
-              changeTabIndex();
-            }
-          },
-
-        });
-      </script>
     </div>
   </div>
 
@@ -318,60 +365,6 @@
       </div>
       <!-- 접근성 팝업  eee-->
     </div>
-    <script>
-      (function () {
-
-        window.onload = () => {
-          eventBinding();
-        }
-
-        // 함수모음
-        const eventBinding = () => {
-          comPopup();
-        }
-
-        // 공통 레이어 팝업
-        const comPopup = () => {
-
-          const $$comPopupWrap = document.querySelectorAll(".comPopupWrap");
-          const $$modalBtn = document.querySelectorAll(".modalBtn");
-          const $$closeBtn = document.querySelectorAll(".popClose");
-          const $$comPopContainer = document.querySelectorAll(".comPopupContainer");
-
-          // open popup
-          $$modalBtn.forEach((el) => {
-            el.addEventListener("click", () => {
-              openPop(el);
-            });
-          });
-
-          // close popup
-          $$comPopupWrap.forEach((popWrap) => {
-            popWrap.addEventListener("click", (e) => {
-              $$comPopContainer.forEach((element) => {
-                $$closeBtn.forEach((el) => {
-                  const curentTarget = e.target;
-                  if (curentTarget == el || curentTarget == element) {
-                    closePop(el);
-                  }
-                });
-              });
-            });
-          });
-        }
-
-        const openPop = (el) => {
-          const target = el.getAttribute("data-id");
-          const targetId = `#${target}`;
-          document.querySelector(targetId).classList.add("on");
-        }
-
-        const closePop = (el) => {
-          el.closest(".comPopupWrap").classList.remove("on");
-        }
-
-      })();
-    </script>
   </div>
 
   <div class="guideBox">

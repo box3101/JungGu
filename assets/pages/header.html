@@ -1,7 +1,7 @@
 <div class="headerWrap">
   <div class="headerInner">
     <h1 class="logo">
-      <a href="#">
+      <a href="../pages/main.html">
         <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
       </a>
     </h1>
@@ -144,122 +144,6 @@
   </div>
 </div>
 
-<script>
-  window.onload = function () {
-    (function (e) {
-      const $header = document.querySelector(".header");
-      const $headerWrap = document.querySelector(".headerWrap");
-      const $$gnbLink = document.querySelectorAll(".gnbLink");
-      const $headerBg = document.querySelector(".headerBg");
-      const $$subPanel = document.querySelectorAll(".subPanel");
-      const $visual = document.querySelector(".visual");
-      const $logo = document.querySelector(".logo");
-      const activeName = "on";
-      const $gnb = document.querySelector(".gnb");
-      const links = $gnb.querySelectorAll('a');
-      const subPenelHeight = [];
-      let maxHeight = '';
-
-
-      // Gnb 최대 높이 설정 함수
-      const gnbMaxHeight = (e) => {
-        // panel height 높이 설정
-        $$subPanel.forEach((el, idx) => {
-          let panelHeight = el.clientHeight;
-          subPenelHeight.push(panelHeight);
-          maxHeight = Math.max(maxHeight, subPenelHeight[idx]);
-          el.style.height = maxHeight.toString() + `px`;
-          return maxHeight;
-        });
-        $headerBg.style.height = `${maxHeight + 0}px`;
-      }
-
-      // Gnb 오픈 함수
-      const gnbOpen = (e) => {
-        const target = e.target;
-
-        $$gnbLink.forEach((el) => {
-          if (target == el) {
-            $headerWrap.classList.add(activeName);
-            $headerBg.classList.add(activeName);
-            gnbMaxHeight(e);
-          }
-        });
-      }
-
-      // Gnb 닫는 함수
-      const gnbClose = () => {
-        $headerBg.classList.remove(activeName);
-        $headerWrap.classList.remove(activeName);
-      }
-
-      // 탭키 접근성
-      const tabKey = (e) => {
-        if (event.key === 'Tab') {
-          $headerWrap.classList.add(activeName);
-          $headerBg.classList.add(activeName);
-          gnbMaxHeight(e);
-
-          // 탭 키가 눌렸을 때, 현재 포커스가 있는 링크의 인덱스
-          const focusedIndex = Array.from(links).indexOf(event.target);
-
-          // 탭키가 처음 마지막 키 눌렀을때
-          if (focusedIndex === -1 || focusedIndex === links.length - 1) {
-            $headerBg.classList.remove(activeName);
-            $headerWrap.classList.remove(activeName);
-            return;
-          }
-        }
-      }
-
-      // Gnb 활성화
-      const subPanelActive = (e) => {
-        $$subPanel.forEach((el, idx) => {
-          el.addEventListener("mouseover", (e) => {
-            el.previousElementSibling.classList.add("on");
-          });
-          el.addEventListener("mouseout", (e) => {
-            el.previousElementSibling.classList.remove("on");
-          });
-        });
-      }
-
-      // gnbItem li 활성화
-      const changeImgAtive = (e) => {
-        const target = e.target;
-        const $changeImg = document.querySelector(".changImg");
-        const $$gnbItem = document.querySelectorAll(".gnbItem");
-        const $$subPanelItem = document.querySelectorAll(".subPanel a");
-
-        // 배경 이미지 활성화 함수
-        const changImgActive = (el) => {
-          let changeImg = el.closest(".gnbItem").getAttribute("data-img");
-          $changeImg.style.backgroundImage = `url(${changeImg})`;
-        }
-
-        $$gnbItem.forEach((el) => {
-          if (target == el || target == el.querySelector(".subPanel")) {
-            changImgActive(el);
-          }
-        });
-        $$subPanelItem.forEach((el) => {
-          if (target == el) {
-            changImgActive(el);
-          }
-        });
-      }
-
-      $header.addEventListener("mouseover", gnbOpen);
-      $visual.addEventListener("mouseover", gnbClose);
-      $gnb.addEventListener('keydown', tabKey);
-      $gnb.addEventListener('keydown', subPanelActive(e));
-      $gnb.addEventListener('mouseover', changeImgAtive);
-
-    })();
-  }
-
-</script>
-
 <!-- 모바일메뉴 -->
 <nav class="mobileMenu">
   <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
@@ -276,17 +160,3 @@
     </ul>
   </nav>
 </nav>
-
-<script>
-  let menu = "close";
-  document.querySelector('.menuToggle').addEventListener('click', () => {
-    if (menu === "close") {
-      document.querySelector('.mobileNav').style.transform = 'translate(0%, 0)'
-      menu = "open";
-    } else {
-      document.querySelector('.mobileNav').style.transform = 'translate(100%, 0)'
-      menu = "close";
-    }
-    document.querySelector('.menuToggle').classList.toggle('open');
-  })
-</script>

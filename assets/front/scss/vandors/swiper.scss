@@ -9,22 +9,6 @@
  *
  * Released on: September 13, 2019
  */
-
-.main-flag {
-	position: absolute;
-	top: 5px;
-	left: -144px;
-}
-@media (max-width: 1024px) {
-	.main-flag {
-		position: relative;
-		top: 0px;
-		left: 0px;
-	}
-	.footer-mark li {
-		margin: 0 4px;
-	}
-}
 .swiper-container {
 	margin-left: auto;
 	margin-right: auto;
@@ -109,8 +93,8 @@
 	transition-property: transform, height, -webkit-transform;
 }
 .swiper-container-3d {
-	-webkit-perspective: 1200px;
-	perspective: 1200px;
+	-webkit-perspective: 1280px;
+	perspective: 1280px;
 }
 .swiper-container-3d .swiper-cube-shadow,
 .swiper-container-3d .swiper-slide,
@@ -710,5 +694,5 @@ button.swiper-pagination-bullet {
 	backface-visibility: hidden;
 }
 .swiper-container-coverflow .swiper-wrapper {
-	-ms-perspective: 1200px;
+	-ms-perspective: 1280px;
 }

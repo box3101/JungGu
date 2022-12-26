@@ -1,3 +1,50 @@
 .visual {
-	height: 500px;
+	padding-top: 50px;
+	.visualSlide {
+		.swiper-slide {
+			a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				img {
+					border-radius: 10px;
+					width: 100%;
+					height: 382px;
+				}
+			}
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			transition: all 0.4s ease-in-out;
+			width: 50px;
+			height: 50px;
+		}
+		.swiper-button-prev {
+			@include bg-url("img", "visual-prev.svg", "cover");
+			left: -70px !important;
+			&:hover {
+				left: -80px !important;
+			}
+		}
+		.swiper-button-next {
+			@include bg-url("img", "visual-next.svg", "cover");
+			right: -70px !important;
+			&:hover {
+				right: -80px !important;
+			}
+		}
+		.comSlidePaging {
+			@include pCenterX;
+			@include flex(null, center, 5px);
+			bottom: 40px;
+			z-index: 10;
+			.currentNum,
+			.bar,
+			.allNum {
+				font-size: 20px;
+				font-weight: 500;
+				color: #fff;
+			}
+		}
+	}
 }
