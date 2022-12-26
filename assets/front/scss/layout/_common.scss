@@ -36,11 +36,45 @@
 	border-right: 6px solid transparent;
 }
 
+//html, body{
+html,
+body {
+	overflow-x: hidden;
+}
+
 // inner
 .inner {
 	position: relative;
 	max-width: 1280px;
 	margin: 0 auto;
+	@include media($web) {
+		padding: 0 15px;
+	}
+}
+
+// title
+.comTitle-1 {
+	margin-bottom: 2rem;
+	width: 100%;
+	text-align: center;
+	&__tit {
+		font-size: 2rem;
+		font-weight: bold;
+		line-height: 1;
+		&.cWhite {
+			color: #fff;
+		}
+	}
+	&__txt {
+		margin-top: 0.5625rem;
+		font-size: 1.1875rem;
+		font-weight: 400;
+		color: $cGray-2;
+		opacity: 0.8;
+		&.cWhite {
+			color: #fff;
+		}
+	}
 }
 
 // flex
@@ -51,6 +85,17 @@
 	}
 	&.jcCenter {
 		justify-content: center;
+	}
+	&.flex16 {
+		li {
+			flex: 1;
+			@include media($web) {
+				flex: calc(33.333% - ((15px / 3) * 2));
+			}
+			@include media($mo) {
+				flex: calc(50% - ((15px / 3) * 2));
+			}
+		}
 	}
 }
 
@@ -65,5 +110,21 @@
 @for $i from 1 to 1000 {
 	.gap#{$i} {
 		gap: #{$i}px;
+	}
+}
+
+@include media($web) {
+	html {
+		font-size: 14px;
+	}
+}
+@include media($tab) {
+	html {
+		font-size: 13px;
+	}
+}
+@include media($mo) {
+	html {
+		font-size: 12px;
 	}
 }

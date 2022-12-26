@@ -129,7 +129,7 @@ body {
 		left: 0;
 		width: 100%;
 		cursor: pointer;
-		z-index: 11;
+		z-index: 102;
 		.menuToggle {
 			@include pCenterY;
 			top: 43px;
@@ -196,10 +196,6 @@ body {
 }
 
 @include media($web) {
-	html,
-	body {
-		overflow-x: hidden;
-	}
 	.gnb {
 		display: none !important;
 	}

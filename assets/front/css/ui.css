@@ -903,7 +903,6 @@ button {
   position: relative;
   z-index: 1;
   top: 0;
-  cursor: pointer;
   transition: 0.25s ease-in-out;
   border-radius: 5px;
   border: 1px solid #666;
@@ -1174,7 +1173,7 @@ input:read-only:focus, input:read-only:hover {
   border-color: #00489e;
 }
 
-.header .headerBg {
+.courseSearch__btn input, .service__list li a, .header .headerBg {
   box-shadow: 0px 4px 8px 0px rgba(45, 45, 45, 0.1);
   text-shadow: 0px 4px 8px rgba(45, 45, 45, 0.1);
 }
@@ -1211,10 +1210,44 @@ input:read-only:focus, input:read-only:hover {
   border-right: 6px solid transparent;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .inner {
   position: relative;
   max-width: 1280px;
   margin: 0 auto;
+}
+@media all and (max-width: 1280px) {
+  .inner {
+    padding: 0 15px;
+  }
+}
+
+.comTitle-1 {
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+.comTitle-1__tit {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+.comTitle-1__tit.cWhite {
+  color: #fff;
+}
+.comTitle-1__txt {
+  margin-top: 0.5625rem;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  color: #999999;
+  opacity: 0.8;
+}
+.comTitle-1__txt.cWhite {
+  color: #fff;
 }
 
 .flex {
@@ -1225,6 +1258,19 @@ input:read-only:focus, input:read-only:hover {
 }
 .flex.jcCenter {
   justify-content: center;
+}
+.flex.flex16 li {
+  flex: 1;
+}
+@media all and (max-width: 1280px) {
+  .flex.flex16 li {
+    flex: calc(33.333% - 10px);
+  }
+}
+@media all and (max-width: 600px) {
+  .flex.flex16 li {
+    flex: calc(50% - 10px);
+  }
 }
 
 .w1 {
@@ -9219,6 +9265,21 @@ input:read-only:focus, input:read-only:hover {
   gap: 999px;
 }
 
+@media all and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 900px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
 body {
   min-height: 3000px;
 }
@@ -9362,7 +9423,7 @@ body {
   left: 0;
   width: 100%;
   cursor: pointer;
-  z-index: 11;
+  z-index: 102;
 }
 .header .mobileMenu .menuToggle {
   position: absolute;
@@ -9424,10 +9485,6 @@ body {
 }
 
 @media all and (max-width: 1280px) {
-  html,
-  body {
-    overflow-x: hidden;
-  }
   .gnb {
     display: none !important;
   }
@@ -9442,43 +9499,48 @@ body {
   }
 }
 .visual {
-  padding-top: 50px;
+  position: relative;
+  padding-top: 3.125rem;
 }
 .visual .visualSlide .swiper-slide a {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
+.visual .visualSlide .swiper-slide a:focus-visible, .visual .visualSlide .swiper-slide a:focus {
+  outline: 0.125rem dotted #000;
+  border: 0.125rem solid #000;
+}
 .visual .visualSlide .swiper-slide a img {
-  border-radius: 10px;
+  border-radius: 0.625rem;
   width: 100%;
-  height: 382px;
+  height: 24.0625rem;
 }
 .visual .visualSlide .swiper-button-prev,
 .visual .visualSlide .swiper-button-next {
   transition: all 0.4s ease-in-out;
-  width: 50px;
-  height: 50px;
+  width: 3.125rem;
+  height: 3.125rem;
 }
 .visual .visualSlide .swiper-button-prev {
   background-image: url("../img/visual-prev.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  left: -70px !important;
+  left: -4.375rem !important;
 }
 .visual .visualSlide .swiper-button-prev:hover {
-  left: -80px !important;
+  left: -5rem !important;
 }
 .visual .visualSlide .swiper-button-next {
   background-image: url("../img/visual-next.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  right: -70px !important;
+  right: -4.375rem !important;
 }
 .visual .visualSlide .swiper-button-next:hover {
-  right: -80px !important;
+  right: -5rem !important;
 }
 .visual .visualSlide .comSlidePaging {
   position: absolute;
@@ -9486,16 +9548,189 @@ body {
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  gap: 5px;
-  bottom: 40px;
+  gap: 0.3125rem;
+  bottom: 1.875rem;
   z-index: 10;
 }
 .visual .visualSlide .comSlidePaging .currentNum,
 .visual .visualSlide .comSlidePaging .bar,
 .visual .visualSlide .comSlidePaging .allNum {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   color: #fff;
+}
+.visual .visualSlide .autoplayControl {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateX(2.5rem);
+  bottom: 1.875rem;
+  z-index: 10;
+}
+.visual .visualSlide .autoplayControl button {
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.visual .visualSlide .autoplayControl button:before {
+  display: block;
+  content: "";
+  position: absolute;
+}
+.visual .visualSlide .autoplayControl button[aria-pressed=false]:before {
+  top: 0.25rem;
+  left: 0.25rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-left: 0.1875rem solid #000;
+  border-right: 0.1875rem solid #000;
+  box-sizing: border-box;
+}
+.visual .visualSlide .autoplayControl button[aria-pressed=true]:before {
+  top: 0.125rem;
+  left: 0.125rem;
+  border-top: 0.5rem solid transparent;
+  border-left: 1rem solid #000;
+  border-bottom: 0.5rem solid transparent;
+}
+.visual:after {
+  content: "";
+  display: block;
+  background-image: url("../img/bg-visual.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -10.4375rem;
+  bottom: -8.5625rem;
+  width: 47.875rem;
+  height: 13.1875rem;
+}
+
+.service {
+  padding-top: 4.1875rem;
+}
+.service__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.service__list li {
+  flex: 1;
+  transition: all 0.4s;
+}
+@media (min-width: 1280px) {
+  .service__list li:hover {
+    flex: 1.3;
+  }
+}
+.service__list li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  height: 13.125rem;
+  border-radius: 0.9375rem;
+  border: 0.0625rem solid #c5c5c5;
+  transition: all 0.4s;
+}
+.service__list li a:hover {
+  background: #00489e;
+}
+.service__list li a:hover p {
+  color: #fff;
+}
+.service__list li a .img {
+  display: flex;
+  align-items: flex-start;
+  height: 6.875rem;
+}
+.service__list li a .img:hover img {
+  transform: rotateY(180deg);
+}
+.service__list li a .img img {
+  display: inline-block;
+  transition: all 0.4s;
+  transform: rotateY(0deg);
+}
+@media all and (max-width: 1280px) {
+  .service__list li a .img img {
+    height: 6rem;
+  }
+}
+.service__list li a p {
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+.courseSearch {
+  background-image: url("../img/bg-course-search.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 15.625rem;
+  margin-top: 4.6875rem;
+  padding-top: 2.8125rem;
+  padding-bottom: 3.4375rem;
+}
+.courseSearch__btn {
+  position: relative;
+  width: 53.90625%; /* 690/1280 */
+  margin: 0 auto;
+}
+.courseSearch__btn input {
+  height: 3.375rem;
+  border: 0.125rem solid #666666;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.courseSearch__btn input::placeholder {
+  color: #999999;
+  letter-spacing: -0.0625rem;
+}
+.courseSearch__btn button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../img/searchBtn.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1.5625rem;
+  height: 1.5625rem;
+  right: 1.25rem;
+}
+
+.mainBottom .flex50 > div {
+  flex: 0 0 calc(50% - 30px);
+}
+.mainBottom .courseMonth ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.mainBottom .courseMonth ul li {
+  flex: 1 1 calc(50% - 10px);
+}
+.mainBottom .courseMonth ul li a {
+  padding: 15px;
+  box-sizing: border-box;
+  width: 100%;
+  display: inline-block;
+  height: 190px;
+  border: 1px solid #dedede;
+  background: #e9f7ff;
+}
+
+@media all and (max-width: 1280px) {
+  .courseSearch__btn {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=ui.css.map */

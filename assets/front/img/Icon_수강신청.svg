@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="143" height="101" viewBox="0 0 143 101">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_567" data-name="Rectangle 567" width="125" height="84" rx="8" transform="translate(310 727)" fill="#fff" stroke="#051f54" stroke-width="2"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#89ccff"/>
+      <stop offset="1" stop-color="#68ffcf"/>
+    </linearGradient>
+    <filter id="Rectangle_567_copy_2">
+      <feOffset dx="3.464" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.6" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_4" x="38.509" y="20.312" width="52" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.509" dy="1.312" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" y1="0.964" x2="1" y2="0.036" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff2160"/>
+      <stop offset="1" stop-color="#ffc495"/>
+    </linearGradient>
+    <filter id="Rectangle_568_copy" x="38.533" y="20.336" width="54.953" height="38.977" filterUnits="userSpaceOnUse">
+      <feOffset dx="1.509" dy="1.312" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Icon_수강신청" transform="translate(-310 -727)">
+    <g id="Rectangle_567-2" data-name="Rectangle 567">
+      <g id="Rectangle_567-3" data-name="Rectangle 567" transform="translate(310 727)" fill="#fff" stroke="#051f54" stroke-width="2">
+        <rect width="125" height="84" rx="8" stroke="none"/>
+        <rect x="1" y="1" width="123" height="82" rx="7" fill="none"/>
+      </g>
+      <g id="Clip" clip-path="url(#clip-path)">
+        <g data-type="innerShadowGroup">
+          <rect id="Rectangle_567_copy_2-2" data-name="Rectangle 567 copy 2" width="125" height="74" transform="translate(310 737)" fill="url(#linear-gradient)"/>
+          <g transform="matrix(1, 0, 0, 1, 310, 727)" filter="url(#Rectangle_567_copy_2)">
+            <rect id="Rectangle_567_copy_2-3" data-name="Rectangle 567 copy 2" width="125" height="74" transform="translate(0 10)" fill="#fff"/>
+          </g>
+        </g>
+        <g id="Rectangle_567_copy" data-name="Rectangle 567 copy" transform="translate(310 727)" fill="#051f54" stroke="#051f54" stroke-width="2">
+          <rect width="125" height="10" stroke="none"/>
+          <rect x="1" y="1" width="123" height="8" fill="none"/>
+        </g>
+        <circle id="Ellipse_3" data-name="Ellipse 3" cx="2.5" cy="2.5" r="2.5" transform="translate(407 730)" fill="#fff"/>
+        <circle id="Ellipse_3_copy" data-name="Ellipse 3 copy" cx="2.5" cy="2.5" r="2.5" transform="translate(415 730)" fill="#fff"/>
+        <circle id="Ellipse_3_copy_2" data-name="Ellipse 3 copy 2" cx="2.5" cy="2.5" r="2.5" transform="translate(423 730)" fill="#fff"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 310, 727)" filter="url(#Ellipse_4)">
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="20" cy="20" r="20" transform="translate(43 25)" fill="#fff"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 310, 727)" filter="url(#Rectangle_568_copy)">
+      <path id="Rectangle_568_copy-2" data-name="Rectangle 568 copy" d="M350.023,761.478l4.585-4.631,16.027,16.175,23.756-24,4.585,4.63-27.5,27.785-.278-.281-.834.843Z" transform="translate(-310 -727)" fill="url(#linear-gradient-2)"/>
+    </g>
+    <g id="Group_28" data-name="Group 28">
+      <image id="Group_28_copy" data-name="Group 28 copy" width="38" height="38" transform="translate(415 790)" opacity="0.502" xlink:href="data:image/png;base64,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" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Triangle_1" data-name="Triangle 1" d="M418.236,789.732l27.97,13.04-10.575,4.355L431.276,817.7Z" fill="#fff"/>
+      <path id="Rectangle_568" data-name="Rectangle 568" d="M427.15,802.124l3.478-3.478,17.393,17.392-3.479,3.478Z" fill="#fff"/>
+    </g>
+  </g>
+</svg>

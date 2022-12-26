@@ -154,6 +154,10 @@ window.onload = function () {
             $swiperAnchor.setAttribute("tabindex", "-1");
           }
         });
+        const $$swiperSlideDuplicateAll = document.querySelectorAll(".swiper-slide-duplicate a");
+        $$swiperSlideDuplicateAll.forEach((el) => {
+          el.setAttribute("tabindex", "-1");
+        });
       }
 
       // visualSlide
@@ -162,10 +166,10 @@ window.onload = function () {
         comSlidePaging.style.display = "flex";
         const visualSlide = new Swiper('#visualSlide', {
           // autoplay: {
-          //   delay: 1000,
+          //   delay: 3000,
           // },
           loop: true,
-          effect: 'fade',
+          // effect: 'fade',
           navigation: {
             nextEl: '.swiper-button-next', // 다음 버튼 클래스명
             prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
@@ -179,7 +183,7 @@ window.onload = function () {
             init: function () {
               thisSlide = this;
               autoPlayBtn = document.querySelector('.autoplayControl > button');
-              autoPlayBtn.addEventListener('click', (e) => {
+              autoPlayBtn.addEventListener('click', () => {
                 autoPlayState = autoPlayBtn.getAttribute('aria-pressed');
                 if (autoPlayState === 'false') {
                   autoPlayBtn.setAttribute('aria-pressed', 'true');
