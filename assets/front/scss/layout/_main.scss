@@ -192,16 +192,20 @@
 .mainBottom {
 	.flex50 {
 		> div {
-			flex: 0 0 calc(50% - 30px);
+			width: calc(50% - 30px);
 		}
 	}
 	.courseMonth {
+		.chipWrap {
+			margin-bottom: 13px;
+		}
 		ul {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 15px;
 			li {
 				flex: 1 1 calc(50% - 10px);
+				max-width: calc(50% - 10px);
 				a {
 					padding: 15px;
 					box-sizing: border-box;
@@ -210,6 +214,56 @@
 					height: 190px;
 					border: 1px solid #dedede;
 					background: #e9f7ff;
+
+					.txt {
+						font-size: 20px;
+						font-weight: bold;
+						word-break: keep-all;
+					}
+
+					.bottom {
+						margin-top: 10px;
+						padding-top: 10px;
+						border-top: 1px solid #dedede;
+						dl {
+							display: flex;
+							align-items: center;
+							&:first-of-type {
+								margin-bottom: 10px;
+							}
+							dt {
+								position: relative;
+								padding-left: 26px;
+								@include before {
+									@include bg-url("img", "ico-date.png");
+									@include pCenterY;
+									left: 0;
+									top: 54%;
+									width: 17px;
+									height: 15px;
+								}
+								&.place {
+									position: relative;
+									padding-left: 26px;
+									@include before {
+										@include bg-url("img", "ico-place.png");
+										@include pCenter;
+										left: 9px;
+										top: 54%;
+										width: 12px;
+									}
+								}
+								font-size: 16px;
+								font-weight: bold;
+								color: #555;
+							}
+							dd {
+								font-size: 16px;
+								color: #555555;
+								margin-left: 5px;
+							}
+						}
+					}
 				}
 			}
 		}

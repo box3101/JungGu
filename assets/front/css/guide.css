@@ -1,6 +1,6 @@
 .guideBox {
   padding-top: 50px;
-  width: 1280px;
+  width: 1400px;
   margin: 0 auto;
 }
 
@@ -45,7 +45,7 @@
 }
 .guideSwiper{
   position: relative;
-  width: 1280px;
+  width: 1400px;
   margin: 0 auto;
 }
 .autoplay-control {
@@ -91,14 +91,14 @@
 
 .swiper{
   height: 100vh;
-  width: 1280px;
+  width: 1400px;
 }
 .swiper img{
   width: 100%; height: 300px;
 }
 
 .infoBox{
-  width: 1280px;
+  width: 1400px;
   margin: 0 auto;
 }
 ul,li{

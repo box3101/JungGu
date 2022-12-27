@@ -93,8 +93,8 @@
 	transition-property: transform, height, -webkit-transform;
 }
 .swiper-container-3d {
-	-webkit-perspective: 1280px;
-	perspective: 1280px;
+	-webkit-perspective: 1400px;
+	perspective: 1400px;
 }
 .swiper-container-3d .swiper-cube-shadow,
 .swiper-container-3d .swiper-slide,
@@ -694,5 +694,5 @@ button.swiper-pagination-bullet {
 	backface-visibility: hidden;
 }
 .swiper-container-coverflow .swiper-wrapper {
-	-ms-perspective: 1280px;
+	-ms-perspective: 1400px;
 }

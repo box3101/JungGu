@@ -143,3 +143,45 @@ $btn-radius: (
 
 //////////////////////////////////// //BUTTON TYPE ////////////////////////////////////
 ///
+
+/* =================== chip =================== */
+.chipWrap {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+.chip {
+	padding: 0 10px;
+	min-width: 60px;
+	height: 30px;
+	line-height: 30px;
+	background: #fff;
+	color: $cMain;
+	border: 1px solid $cMain;
+	box-sizing: border-box;
+	border-radius: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	&.receipt {
+		background: #4259e7;
+		border: 1px solid #4259e7;
+		color: #fff;
+	}
+	&.pay {
+		background: #ff7200;
+		border: 1px solid #ff7200;
+		color: #fff;
+	}
+	&.deadline {
+		background: #666666;
+		border: 1px solid #666666;
+		color: #fff;
+	}
+	&.free {
+		background: #0fdb5c;
+		border: 1px solid #0fdb5c;
+		color: #fff;
+	}
+}
+/* =================== chip eee =================== */

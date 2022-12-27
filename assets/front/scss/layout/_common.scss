@@ -45,7 +45,7 @@ body {
 // inner
 .inner {
 	position: relative;
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto;
 	@include media($web) {
 		padding: 0 15px;
@@ -55,7 +55,7 @@ body {
 //sub
 .subContent {
 	padding-top: 50px;
-	max-width: 1280px;
+	max-width: 1400px;
 	margin: 0 auto;
 }
 .subHead {
@@ -120,6 +120,7 @@ body {
 		}
 	}
 }
+
 // title
 .comTitle-1 {
 	margin-bottom: 2rem;
@@ -148,11 +149,15 @@ body {
 // flex
 .flex {
 	display: flex;
+	width: 100%;
 	&.aiCenter {
 		align-items: center;
 	}
 	&.jcCenter {
 		justify-content: center;
+	}
+	&.jcBetween {
+		justify-content: space-between;
 	}
 	&.flex16 {
 		li {
@@ -181,6 +186,42 @@ body {
 	}
 }
 
+//margin
+@for $i from 0 to 1000 {
+	.mb#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.mt#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.mr#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.ml#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+}
+
+//line
+.oneLine {
+	display: inline-block;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.twoLine {
+	overflow: hidden;
+	white-space: normal;
+	line-height: 1.2;
+	height: 2.4em;
+	text-align: left;
+	word-wrap: break-word;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+// 미디어 쿼리
 @include media($web) {
 	html {
 		font-size: 14px;
