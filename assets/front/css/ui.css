@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 a,
 abbr,
@@ -1219,6 +1220,14 @@ input:read-only:focus, input:read-only:hover {
   border-color: #00489e;
 }
 
+@keyframes ani {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 103px;
+  }
+}
 .courseSearch__btn input, .service__list li a, .header .headerBg {
   box-shadow: 0px 4px 8px 0px rgba(45, 45, 45, 0.1);
   text-shadow: 0px 4px 8px rgba(45, 45, 45, 0.1);
@@ -1256,7 +1265,46 @@ input:read-only:focus, input:read-only:hover {
   border-right: 6px solid transparent;
 }
 
-html,
+.mainBottom .courseMonth ul li a {
+  position: relative;
+}
+.mainBottom .courseMonth ul li a:before, .mainBottom .courseMonth ul li a:after {
+  position: absolute;
+  content: "";
+  display: block;
+  transition: transform 0.5s ease;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-style: solid;
+  border-color: #59c4ff;
+  box-sizing: border-box;
+}
+.mainBottom .courseMonth ul li a:before {
+  border-width: 3px 0 3px 0;
+  transform: scaleX(0);
+}
+.mainBottom .courseMonth ul li a:after {
+  border-width: 0 3px 0 3px;
+  transform: scaleY(0);
+}
+
+.mainBottom .courseMonth ul li a:hover:before, .mainBottom .courseMonth ul li a:hover:after {
+  transform: scale(1, 1);
+}
+
+.footer__nav ul li a:after {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.0625rem;
+  height: 1rem;
+  background: #fff;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -25409,6 +25457,42 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.goTop {
+  display: block;
+  position: fixed; /*bottom:283px; */
+  bottom: 40px;
+  right: 20px;
+  z-index: 99;
+  width: 44px;
+  height: 44px;
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+.goTop.on {
+  opacity: 1;
+  bottom: 20px;
+}
+
+.goTop > button {
+  display: block;
+  width: 44px;
+  height: 44px;
+  display: block;
+  background-color: #00489e;
+  background-image: url(../img/arw-btn-go-top.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  border-radius: 6px;
+  background-size: 14px 8px;
+}
+
+@media only screen and (max-width: 1171px) {
+  .goTop {
+    /*bottom:59vh;*/
+    bottom: 4vw;
+    right: 4vw;
+  }
+}
 @media all and (max-width: 1400px) {
   html {
     font-size: 14px;
@@ -25424,10 +25508,6 @@ body {
     font-size: 12px;
   }
 }
-body {
-  min-height: 3000px;
-}
-
 .header {
   position: relative;
 }
@@ -25469,6 +25549,7 @@ body {
   padding: 0 35px;
 }
 .header .headerWrap .headerInner .gnb > li > a {
+  position: relative;
   display: inline-block;
   color: #333;
   font-size: 20px;
@@ -25479,9 +25560,40 @@ body {
   font-weight: bold;
   color: #00489e;
 }
+.header .headerWrap .headerInner .gnb > li > a:hover:after {
+  content: "";
+  display: block;
+  background-image: url("../img/gnb-hover.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml, %3Csvg class='object' id='Vector_Smart_Object' data-name='Vector Smart Object' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='103' height='8' viewBox='0 0 103 8'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_60' data-name='사각형 60' width='103' height='8' fill='none' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_80' data-name='그룹 80'%3E%3Cg id='그룹_79' data-name='그룹 79' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_169' data-name='패스 169' d='M0,1.6c8.583,0,8.583,4.8,17.165,4.8s8.583-4.8,17.166-4.8S42.914,6.4,51.5,6.4,60.08,1.6,68.663,1.6s8.584,4.8,17.169,4.8S94.416,1.6,103,1.6' fill='none' stroke='%2300398e' stroke-miterlimit='10' stroke-width='3.193' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  height: 8px;
+  animation: ani 0.5s;
+}
 .header .headerWrap .headerInner .gnb > li > a.on {
   font-weight: bold;
   color: #00489e;
+}
+.header .headerWrap .headerInner .gnb > li > a.on:after {
+  content: "";
+  display: block;
+  background-image: url("../img/gnb-hover.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml, %3Csvg class='object' id='Vector_Smart_Object' data-name='Vector Smart Object' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='103' height='8' viewBox='0 0 103 8'%3E%3Cdefs%3E%3CclipPath id='clip-path'%3E%3Crect id='사각형_60' data-name='사각형 60' width='103' height='8' fill='none' /%3E%3C/clipPath%3E%3C/defs%3E%3Cg id='그룹_80' data-name='그룹 80'%3E%3Cg id='그룹_79' data-name='그룹 79' clip-path='url(%23clip-path)'%3E%3Cpath id='패스_169' data-name='패스 169' d='M0,1.6c8.583,0,8.583,4.8,17.165,4.8s8.583-4.8,17.166-4.8S42.914,6.4,51.5,6.4,60.08,1.6,68.663,1.6s8.584,4.8,17.169,4.8S94.416,1.6,103,1.6' fill='none' stroke='%2300398e' stroke-miterlimit='10' stroke-width='3.193' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  width: 103px;
+  height: 8px;
+  animation: ani 0.5s;
 }
 .header .headerWrap .headerInner .gnb > li .subPanel {
   display: none;
@@ -25490,7 +25602,6 @@ body {
   width: 100%;
   top: 50px;
   padding-top: 24px;
-  padding-bottom: 24px;
 }
 .header .headerWrap .headerInner .gnb > li .subPanel li a {
   display: block;
@@ -25642,6 +25753,75 @@ body {
     display: none;
   }
 }
+.footer__nav {
+  background: #0085cf;
+}
+.footer__nav ul {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__nav ul li:nth-of-type(1) a {
+  font-weight: bold;
+}
+.footer__nav ul li:last-of-type a:after {
+  content: "";
+  display: block;
+  display: none;
+}
+.footer__nav ul li a {
+  position: relative;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  color: #fff;
+}
+.footer__nav ul li a:after {
+  content: "";
+  display: block;
+  top: 53%;
+  right: -14px;
+}
+.footer .inner {
+  padding: 30px 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .left {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+.footer .left address {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.footer .comSelectBox:after {
+  content: "";
+  display: block;
+  border-bottom: 9px solid #000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: none;
+}
+.footer .comSelectBox select {
+  width: 260px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #999999;
+  border: 2px solid #dddddd;
+}
+
 .visual {
   position: relative;
   padding-top: 3.125rem;
@@ -25790,13 +25970,13 @@ body {
 .service__list li a:hover p {
   color: #fff;
 }
+.service__list li a:hover .img img {
+  transform: rotateY(360deg);
+}
 .service__list li a .img {
   display: flex;
   align-items: flex-start;
   height: 6.875rem;
-}
-.service__list li a .img:hover img {
-  transform: rotateY(180deg);
 }
 .service__list li a .img img {
   display: inline-block;
@@ -25814,6 +25994,7 @@ body {
 }
 
 .courseSearch {
+  position: relative;
   background-image: url("../img/bg-course-search.png");
   background-position: center;
   background-size: cover;
@@ -25822,6 +26003,17 @@ body {
   margin-top: 4.6875rem;
   padding-top: 2.8125rem;
   padding-bottom: 3.4375rem;
+}
+.courseSearch .moreBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/more-btn.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 81px;
+  height: 29px;
 }
 .courseSearch__btn {
   position: relative;
@@ -25851,8 +26043,26 @@ body {
   right: 1.25rem;
 }
 
+.mainBottom {
+  padding-bottom: 50px;
+}
 .mainBottom .flex50 > div {
   width: calc(50% - 30px);
+  padding-bottom: 40px;
+}
+.mainBottom .courseMonth {
+  position: relative;
+}
+.mainBottom .courseMonth .moreBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/more-btn.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 81px;
+  height: 29px;
 }
 .mainBottom .courseMonth .chipWrap {
   margin-bottom: 13px;
@@ -25867,6 +26077,7 @@ body {
   max-width: calc(50% - 10px);
 }
 .mainBottom .courseMonth ul li a {
+  position: relative;
   padding: 15px;
   box-sizing: border-box;
   width: 100%;
@@ -25931,6 +26142,60 @@ body {
   font-size: 16px;
   color: #555555;
   margin-left: 5px;
+}
+.mainBottom .notice {
+  position: relative;
+}
+.mainBottom .notice .moreBtn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url("../img/more-btn.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 82px;
+  height: 29px;
+}
+.mainBottom .notice ul {
+  padding: 30px 0;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+.mainBottom .notice ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.mainBottom .notice ul li:last-of-type {
+  margin-bottom: 0;
+}
+.mainBottom .notice ul li .left {
+  display: flex;
+  align-items: center;
+  gap: 33px;
+}
+.mainBottom .notice ul li .left .num {
+  font-weight: 500;
+  font-size: 18px;
+  color: #999999;
+}
+.mainBottom .notice ul li .left .txt {
+  font-weight: bold;
+  font-size: 20px;
+  width: 500px;
+}
+.mainBottom .notice ul li .left .txt:hover {
+  color: #00489e;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.mainBottom .notice ul li .date {
+  font-size: 18px;
+  font-weight: bold;
+  color: #999999;
 }
 
 @media all and (max-width: 1400px) {

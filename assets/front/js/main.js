@@ -13,6 +13,8 @@
     comSlide();
     comPopupLayer();
     comTab();
+    goTop();
+    wowJs();
   }
 
   // 공통 gnb
@@ -41,7 +43,7 @@
           el.style.height = maxHeight.toString() + `px`;
           return maxHeight;
         });
-        $headerBg.style.height = `${maxHeight + 0}px`;
+        $headerBg.style.height = `${maxHeight + 20}px`;
       }
 
       // Gnb 오픈 함수
@@ -349,6 +351,43 @@
       });
 
     }
+  }
+
+  // 상단이동
+  const goTop = () => {
+    const goTop = document.querySelector(".goTop");
+    const goTopAnchor = goTop.querySelector("button");
+
+    window.addEventListener("scroll", () => {
+      const currentScroll = window.scrollY;
+      if (currentScroll > 100) {
+        goTop.classList.add("on");
+      } else {
+        goTop.classList.remove("on");
+      }
+    });
+
+    goTop.addEventListener("click", () => {
+      window.scrollTo({
+        behavior: "smooth",
+        top: 0,
+      });
+    });
+
+  }
+
+  // wow.js
+  const wowJs = () => {
+    wow = new WOW({
+      mobile: false,
+    });
+    wow.init();
+    $(".open-mb-nav").on("click", function () {
+      $("body, html").css({ "overflow-y": "hidden" });
+    });
+    $(".mobile-menu .close").on("click", function () {
+      $("body, html").css({ "overflow-y": "auto" });
+    });
   }
 
 })();

@@ -130,16 +130,14 @@
 					p {
 						color: #fff;
 					}
+					.img img {
+						transform: rotateY(360deg);
+					}
 				}
 				.img {
 					display: flex;
 					align-items: flex-start;
 					height: 6.875rem;
-					&:hover {
-						img {
-							transform: rotateY(180deg);
-						}
-					}
 					img {
 						display: inline-block;
 						transition: all 0.4s;
@@ -159,6 +157,15 @@
 }
 
 .courseSearch {
+	position: relative;
+	.moreBtn {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@include bg-url("img", "more-btn.svg", "cover");
+		width: 81px;
+		height: 29px;
+	}
 	@include bg-url("img", "bg-course-search.png", "cover");
 	height: 15.625rem;
 	margin-top: 4.6875rem;
@@ -190,12 +197,23 @@
 }
 
 .mainBottom {
+	padding-bottom: 50px;
 	.flex50 {
 		> div {
 			width: calc(50% - 30px);
+			padding-bottom: 40px;
 		}
 	}
 	.courseMonth {
+		position: relative;
+		.moreBtn {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			@include bg-url("img", "more-btn.svg", "cover");
+			width: 81px;
+			height: 29px;
+		}
 		.chipWrap {
 			margin-bottom: 13px;
 		}
@@ -207,6 +225,8 @@
 				flex: 1 1 calc(50% - 10px);
 				max-width: calc(50% - 10px);
 				a {
+					position: relative;
+					@extend %effect-1;
 					padding: 15px;
 					box-sizing: border-box;
 					width: 100%;
@@ -214,6 +234,10 @@
 					height: 190px;
 					border: 1px solid #dedede;
 					background: #e9f7ff;
+
+					&:hover {
+						@extend %hover-effect-1;
+					}
 
 					.txt {
 						font-size: 20px;
@@ -264,6 +288,58 @@
 							}
 						}
 					}
+				}
+			}
+		}
+	}
+
+	.notice {
+		position: relative;
+		.moreBtn {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			@include bg-url("img", "more-btn.svg", "cover");
+			width: 82px;
+			height: 29px;
+		}
+		ul {
+			padding: 30px 0;
+			border-top: 1px solid #dedede;
+			border-bottom: 1px solid #dedede;
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 32px;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				.left {
+					display: flex;
+					align-items: center;
+					gap: 33px;
+					.num {
+						font-weight: 500;
+						font-size: 18px;
+						color: #999999;
+					}
+					.txt {
+						font-weight: bold;
+						font-size: 20px;
+						width: 500px;
+						&:hover {
+							color: $cMain;
+							font-weight: 700;
+							text-decoration: underline;
+							text-underline-position: under;
+						}
+					}
+				}
+				.date {
+					font-size: 18px;
+					font-weight: bold;
+					color: #999999;
 				}
 			}
 		}
