@@ -44664,7 +44664,7 @@ html {
 }
 .privacyPolicy .tableType-1 td,
 .privacyPolicy .tableType-1 th {
-  border: 0.0625rem solid #ddd;
+  border: 1px solid #ddd;
   box-sizing: border-box;
   word-break: break-all;
   line-height: 1.5;
@@ -44681,7 +44681,7 @@ html {
 .privacyPolicy .row__head {
   font-size: 1.25rem;
   padding: 1.25rem 0;
-  border-bottom: 0.0625rem solid #333333;
+  border-bottom: 1px solid #333333;
   font-size: 1.5rem;
   color: #333333;
   min-height: 1.5625rem;
@@ -44735,7 +44735,7 @@ html {
   margin-left: 1.25rem;
 }
 .privacyPolicy .row__body .boxWrap {
-  border: 0.0625rem solid #ddd;
+  border: 1px solid #ddd;
   flex-direction: column;
   background-color: #f7f7f7;
   padding: 0.625rem 1.25rem;
@@ -44744,7 +44744,7 @@ html {
 }
 .privacyPolicy .row__body .under {
   padding-top: 0;
-  border-bottom: 0.0625rem solid #ddd;
+  border-bottom: 1px solid #ddd;
   margin-left: -1.25rem;
   padding-left: 1.25rem;
 }
@@ -44759,7 +44759,7 @@ html {
   overflow: hidden;
   display: block;
   background-color: #f4f7f6;
-  border: 0.0625rem solid #ddd;
+  border: 1px solid #ddd;
   padding: 1.75rem 1.75rem;
   line-height: 150%;
   font-weight: 400;
@@ -44782,7 +44782,7 @@ html {
   padding-right: 1.875rem;
   margin: 0.625rem 0 0 0.8125rem;
   border-radius: 1.875rem;
-  border: 0.0625rem solid;
+  border: 1px solid;
   line-height: 1.5rem;
   color: #fff;
   background: #00489e;
@@ -44808,6 +44808,21 @@ html {
   text-indent: -9999em;
 }
 
+@media all and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 900px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media all and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+}
 .join .agreeRow {
   position: relative;
   margin-bottom: 30px;
