@@ -3751,21 +3751,27 @@ html {
 }
 
 .subContent {
-  padding-top: 50px;
+  padding-top: 25px;
   max-width: 1400px;
   margin: 0 auto;
+}
+@media all and (max-width: 1400px) {
+  .subContent {
+    padding: 0 10px;
+    padding-top: 25px;
+  }
 }
 
 .subHead {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #2d2d2d;
-  margin-bottom: 40px;
+  padding-bottom: 1.25rem;
+  border-bottom: 0.125rem solid #2d2d2d;
+  margin-bottom: 2.5rem;
 }
 .subHead__tit {
-  font-size: 34px;
+  font-size: 2.125rem;
   font-weight: bold;
 }
 .subHead__right {
@@ -3774,11 +3780,16 @@ html {
 }
 .subHead__location {
   display: flex;
-  gap: 5px;
+  gap: 0.3125rem;
+}
+@media all and (max-width: 1400px) {
+  .subHead__location {
+    margin-top: 10px;
+  }
 }
 .subHead__location li {
   position: relative;
-  padding-left: 15px;
+  padding-left: 0.9375rem;
 }
 .subHead__location li:after {
   content: "";
@@ -3786,20 +3797,25 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: -15px;
+  right: -0.9375rem;
   color: #666;
-  padding-left: 8px;
+  padding-left: 0.5rem;
   content: ">";
 }
 .subHead__location li a {
   display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
   color: #666;
   transition: all 0.1s;
 }
 .subHead__location li a:hover {
   color: #2d2d2d;
   font-weight: bold;
+}
+@media all and (max-width: 1400px) {
+  .subHead__location li.home {
+    padding-left: 0;
+  }
 }
 .subHead__location li.last a {
   display: inline-block;
@@ -3814,6 +3830,11 @@ html {
 }
 .subHead__shareWrap {
   padding-left: 25px;
+}
+@media all and (max-width: 1400px) {
+  .subHead__shareWrap {
+    display: none;
+  }
 }
 .subHead__shareWrap button {
   background-image: url("../img/icon-share.png");
@@ -44643,7 +44664,7 @@ html {
 }
 .privacyPolicy .tableType-1 td,
 .privacyPolicy .tableType-1 th {
-  border: 1px solid #ddd;
+  border: 0.0625rem solid #ddd;
   box-sizing: border-box;
   word-break: break-all;
   line-height: 1.5;
@@ -44652,18 +44673,18 @@ html {
 .privacyPolicy .tableType-1 th {
   background-color: #f7f7f7;
   text-align: center;
-  padding: 10px 2px;
+  padding: 0.625rem 0.125rem;
 }
 .privacyPolicy .row {
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 .privacyPolicy .row__head {
-  font-size: 20px;
-  padding: 20px 0;
-  border-bottom: 1px solid #333333;
-  font-size: 24px;
+  font-size: 1.25rem;
+  padding: 1.25rem 0;
+  border-bottom: 0.0625rem solid #333333;
+  font-size: 1.5rem;
   color: #333333;
-  min-height: 25px;
+  min-height: 1.5625rem;
 }
 .privacyPolicy .row__head span {
   color: #00489e;
@@ -44672,23 +44693,26 @@ html {
 .privacyPolicy .row__head .title__icon::before {
   content: "";
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  background: url(../img/icon-wave.svg) no-repeat 0 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.625rem;
+  background-image: url("../img/icon-wave.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .privacyPolicy .row__body {
-  padding-top: 10px;
+  padding-top: 0.625rem;
   text-indent: -15pt;
 }
 .privacyPolicy .row__body .txtWrap {
-  padding: 5px 0;
-  font-size: 17px;
+  padding: 0.3125rem 0;
+  font-size: 1.0625rem;
   word-break: keep-all;
   line-height: 1.4;
 }
 .privacyPolicy .row__body .txtWrap.p10 {
-  padding: 10px;
+  padding: 0.625rem;
 }
 .privacyPolicy .row__body .txtWrap.pl0 {
   padding-left: 0;
@@ -44708,35 +44732,35 @@ html {
   font-weight: 400;
 }
 .privacyPolicy .row__body .ml-20 {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 .privacyPolicy .row__body .boxWrap {
-  border: 1px solid #ddd;
+  border: 0.0625rem solid #ddd;
   flex-direction: column;
   background-color: #f7f7f7;
-  padding: 10px 20px;
-  margin: 15px 0;
+  padding: 0.625rem 1.25rem;
+  margin: 0.9375rem 0;
   box-sizing: border-box;
 }
 .privacyPolicy .row__body .under {
   padding-top: 0;
-  border-bottom: 1px solid #ddd;
-  margin-left: -20px;
-  padding-left: 20px;
+  border-bottom: 0.0625rem solid #ddd;
+  margin-left: -1.25rem;
+  padding-left: 1.25rem;
 }
 .privacyPolicy .row h3 {
   text-align: center;
   color: rgb(51, 51, 51);
-  font-size: 32px;
-  margin-bottom: 30px;
+  font-size: 2rem;
+  margin-bottom: 1.875rem;
   font-weight: bold;
 }
 .privacyPolicy .row .definition {
   overflow: hidden;
   display: block;
   background-color: #f4f7f6;
-  border: 1px solid #ddd;
-  padding: 28px 28px;
+  border: 0.0625rem solid #ddd;
+  padding: 1.75rem 1.75rem;
   line-height: 150%;
   font-weight: 400;
   color: #555555;
@@ -44751,17 +44775,23 @@ html {
 .privacyPolicy .row .btn {
   display: inline-block;
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
-  height: 24px;
-  padding: 3px 24px;
-  padding-right: 30px;
-  margin: 10px 0 0 13px;
-  border-radius: 30px;
-  border: 1px solid;
-  line-height: 24px;
+  height: 1.5rem;
+  padding: 0.1875rem 1.5rem;
+  padding-right: 1.875rem;
+  margin: 0.625rem 0 0 0.8125rem;
+  border-radius: 1.875rem;
+  border: 0.0625rem solid;
+  line-height: 1.5rem;
   color: #fff;
   background: #00489e;
+  padding-right: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+.privacyPolicy .row .btn:hover {
+  color: #00489e;
+  background: #fff;
 }
 .privacyPolicy .row .btn .icon__pass {
   background-image: url("../img/icon-pass.svg");
@@ -44771,9 +44801,10 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  right: 0.625rem;
   display: inline-block;
-  width: 19px;
-  height: 6px;
+  width: 1.1875rem;
+  height: 0.375rem;
   text-indent: -9999em;
 }
 
