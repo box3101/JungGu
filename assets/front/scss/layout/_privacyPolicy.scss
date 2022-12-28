@@ -27,10 +27,18 @@
 				color: $cMain;
 				font-weight: bold;
 			}
+			.title__icon::before {
+				content: "";
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				margin-right: 10px;
+				background: url(../assets/front/img/icon-wave.svg) no-repeat 0 0;
+			}
 		}
 		&__body {
 			padding-top: 10px;
-			text-indent: -15pt;
+			// text-indent: -15pt;
 			margin-left: 15pt;
 			.txtWrap {
 				padding: 5px 0;
@@ -40,6 +48,30 @@
 				a {
 					color: $cMain;
 				}
+				span {
+					color: $cMain;
+					font-weight: bold;
+				}
+				.bold {
+					color: #2d2d2d;
+					font-weight: bold;
+				}
+				.fontcolor {
+					font-weight: 400;
+				}
+			}
+			.ml20 {
+				margin-left: 20px;
+			}
+			.boxWrap {
+				border: 1px solid #ddd;
+				flex-direction: column;
+				background-color: #f7f7f7;
+				padding: 10px 10px;
+				margin: 15px 0;
+			}
+			.under {
+				border-bottom: 1px solid #ddd;
 			}
 		}
 		h3 {
@@ -61,6 +93,30 @@
 			text-align: left;
 			p {
 				word-break: keep-all;
+			}
+		}
+
+		.notindent {
+			text-indent: 0;
+		}
+		.btn {
+			font-size: 16px;
+			font-weight: 500;
+			height: 24px;
+			padding: 3px 24px;
+			margin: 20px 0 0 20px;
+			border-radius: 30px;
+			border: 1px solid;
+			line-height: 24px;
+			color: #fff;
+			background: #00489e;
+
+			.icon-pass {
+				display: inline-block;
+				width: 19px;
+				height: 6px;
+				margin-left: 5px;
+				background: url(/assets/front/img/icon-pass.svg) no-repeat 0 0;
 			}
 		}
 	}
