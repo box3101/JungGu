@@ -14,7 +14,7 @@
     comPopupLayer();
     comTab();
     goTop();
-    wowJs();
+    scrollInput();
   }
 
   // 공통 gnb
@@ -376,18 +376,28 @@
 
   }
 
-  // wow.js
-  const wowJs = () => {
-    wow = new WOW({
-      mobile: false,
-    });
-    wow.init();
-    $(".open-mb-nav").on("click", function () {
-      $("body, html").css({ "overflow-y": "hidden" });
-    });
-    $(".mobile-menu .close").on("click", function () {
-      $("body, html").css({ "overflow-y": "auto" });
-    });
+  // input스크롤
+  const scrollInput = () => {
+
+    if (document.querySelector('.scrollable-element')) {
+      const $$scrollableElement = document.querySelectorAll('.scrollable-element');
+
+      $$scrollableElement.forEach((el) => {
+        el.addEventListener('scroll', () => {
+          const agreeRow = el.closest(".agreeRow");
+          const hint = agreeRow.querySelector(".hint");
+          const checkbox = agreeRow.querySelector('.my-checkbox');
+          if (el.scrollTop + el.clientHeight >= el.scrollHeight) {
+            checkbox.disabled = false;
+            hint.style.display = "none";
+          } else {
+            checkbox.disabled = true;
+            hint.style.display = "block";
+          }
+        });
+      });
+    }
+
   }
 
 })();
