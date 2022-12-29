@@ -193,6 +193,7 @@ html.open {
 		}
 	}
 	&__shareWrap {
+		display: none;
 		padding-left: 25px;
 		@include media($web) {
 			display: none;

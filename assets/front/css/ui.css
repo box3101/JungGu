@@ -3833,6 +3833,7 @@ html.open {
   display: none;
 }
 .subHead__shareWrap {
+  display: none;
   padding-left: 25px;
 }
 @media all and (max-width: 1400px) {
