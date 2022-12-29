@@ -4,8 +4,8 @@ button {
 	display: inline-block;
 	vertical-align: middle;
 	border-radius: 0;
-	padding: 0px;
-	border: 0px;
+	padding: 0rem;
+	border: 0rem;
 	font-weight: normal;
 	background-color: transparent;
 	cursor: pointer;
@@ -20,9 +20,9 @@ button {
 	top: 0;
 	// cursor: pointer;
 	transition: 0.25s ease-in-out;
-	border-radius: 5px;
-	border: 1px solid #666;
-	font: 500 16px/1 "Noto Sans KR";
+	border-radius: 0.3125rem;
+	border: 0.0625rem solid #666;
+	font: 500 1rem/1 "Noto Sans KR";
 	box-sizing: border-box;
 	color: #fff;
 	&.w100 {
@@ -36,17 +36,19 @@ button {
 		bottom: 0;
 		left: 0;
 		z-index: -1;
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		background-color: #000;
 		/* background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%); */
-		box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
-			7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+		box-shadow: -0.4375rem -0.4375rem 1.25rem 0rem #fff9,
+			-0.25rem -0.25rem 0.3125rem 0rem #fff9,
+			0.4375rem 0.4375rem 1.25rem 0rem #0002,
+			0.25rem 0.25rem 0.3125rem 0rem #0001;
 		transition: all 0.3s ease;
 		opacity: 0.1;
 	}
 	&:hover,
 	&.hover {
-		top: -0.3125rem;
+		top: -5px;
 		color: #fff;
 	}
 	&:hover::after {
@@ -77,27 +79,27 @@ $btn-colors: (
 	.#{$key} {
 		background-color: map-get($value, bg-color);
 		color: map-get($value, color) !important;
-		border: 1px solid map-get($value, bd-color);
+		border: 0.0625rem solid map-get($value, bd-color);
 	}
 }
 
 $btn-sizes: (
 	sizeSm: (
 		padding: 0.6em 2.2em,
-		size: 0.8rem,
+		size: 12.8px,
 	),
 	sizeMid: (
-		padding: 0.8rem 2.5rem,
-		size: 16px,
+		padding: 12.8px 40px,
+		size: 1rem,
 	),
 	sizeLg: (
-		padding: 1.25rem 3.75rem,
-		size: 1.125rem,
+		padding: 20px 60px,
+		size: 18px,
 		font-w: 400,
 	),
 	sizeXlg: (
-		padding: 1.5rem 4.2rem,
-		size: 1.5625rem,
+		padding: 24px 67.2px,
+		size: 25px,
 	),
 );
 
@@ -111,16 +113,16 @@ $btn-sizes: (
 
 $btn-radius: (
 	r-none: (
-		radius: 0px,
+		radius: 0rem,
 	),
 	r-sm: (
-		radius: 0.3125rem,
+		radius: 5px,
 	),
 	r-mid: (
-		radius: 1.25rem,
+		radius: 20px,
 	),
 	r-lg: (
-		radius: 1.875rem,
+		radius: 30px,
 	),
 );
 
@@ -132,7 +134,7 @@ $btn-radius: (
 
 .btn.btn-outline {
 	background: transparent;
-	border: 1px solid #5f8ee4;
+	border: 0.0625rem solid #5f8ee4;
 	color: #333 !important;
 }
 
@@ -148,39 +150,39 @@ $btn-radius: (
 .chipWrap {
 	display: flex;
 	align-items: center;
-	gap: 5px;
+	gap: 0.3125rem;
 }
 .chip {
-	padding: 0 10px;
-	min-width: 60px;
-	height: 30px;
-	line-height: 30px;
+	padding: 0 0.625rem;
+	min-width: 3.75rem;
+	height: 1.875rem;
+	line-height: 1.875rem;
 	background: #fff;
 	color: $cMain;
-	border: 1px solid $cMain;
+	border: 0.0625rem solid $cMain;
 	box-sizing: border-box;
-	border-radius: 15px;
-	font-size: 15px;
+	border-radius: 0.9375rem;
+	font-size: 0.9375rem;
 	font-weight: bold;
 	text-align: center;
 	&.receipt {
 		background: #4259e7;
-		border: 1px solid #4259e7;
+		border: 0.0625rem solid #4259e7;
 		color: #fff;
 	}
 	&.pay {
 		background: #ff7200;
-		border: 1px solid #ff7200;
+		border: 0.0625rem solid #ff7200;
 		color: #fff;
 	}
 	&.deadline {
 		background: #666666;
-		border: 1px solid #666666;
+		border: 0.0625rem solid #666666;
 		color: #fff;
 	}
 	&.free {
 		background: #0fdb5c;
-		border: 1px solid #0fdb5c;
+		border: 0.0625rem solid #0fdb5c;
 		color: #fff;
 	}
 }

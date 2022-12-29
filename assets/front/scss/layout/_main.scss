@@ -163,14 +163,14 @@
 		right: 0;
 		bottom: 0;
 		@include bg-url("img", "more-btn.svg", "cover");
-		width: 81px;
-		height: 29px;
+		width: 5.0625rem;
+		height: 1.8125rem;
 	}
 	@include bg-url("img", "bg-course-search.png", "cover");
 	height: 15.625rem;
 	margin-top: 4.6875rem;
 	padding-top: 2.8125rem;
-	padding-bottom: 3.4375rem;
+	z-index: 11;
 	&__btn {
 		position: relative;
 		width: 53.90625%; /* 690/1280 */
@@ -197,11 +197,30 @@
 }
 
 .mainBottom {
-	padding-bottom: 50px;
+	@include after {
+		@include bg-url("img", "main-bottom-obj2.png", "cover");
+		@include pCenterY;
+		left: 0;
+		z-index: -1;
+		width: 21.5625rem;
+		height: 9.625rem;
+	}
+	@include before {
+		@include bg-url("img", "main-bottom-obj1.png", "cover");
+		position: absolute;
+		right: 0;
+		top: -16.25rem;
+		width: 11.25rem;
+		height: 18.75rem;
+		z-index: 10;
+	}
+	position: relative;
+	padding-top: 1.375rem;
+	padding-bottom: 3.125rem;
 	.flex50 {
 		> div {
 			width: calc(50% - 30px);
-			padding-bottom: 40px;
+			padding-bottom: 2.5rem;
 		}
 	}
 	.courseMonth {
@@ -211,27 +230,27 @@
 			right: 0;
 			bottom: 0;
 			@include bg-url("img", "more-btn.svg", "cover");
-			width: 81px;
-			height: 29px;
+			width: 5.0625rem;
+			height: 1.8125rem;
 		}
 		.chipWrap {
-			margin-bottom: 13px;
+			margin-bottom: 0.8125rem;
 		}
 		ul {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 15px;
+			gap: 0.9375rem;
 			li {
 				flex: 1 1 calc(50% - 10px);
 				max-width: calc(50% - 10px);
 				a {
 					position: relative;
 					@extend %effect-1;
-					padding: 15px;
+					padding: 0.9375rem;
 					box-sizing: border-box;
 					width: 100%;
 					display: inline-block;
-					height: 190px;
+					height: 11.875rem;
 					border: 1px solid #dedede;
 					background: #e9f7ff;
 
@@ -240,51 +259,51 @@
 					}
 
 					.txt {
-						font-size: 20px;
+						font-size: 1.25rem;
 						font-weight: bold;
 						word-break: keep-all;
 					}
 
 					.bottom {
-						margin-top: 10px;
-						padding-top: 10px;
+						margin-top: 0.625rem;
+						padding-top: 0.625rem;
 						border-top: 1px solid #dedede;
 						dl {
 							display: flex;
 							align-items: center;
 							&:first-of-type {
-								margin-bottom: 10px;
+								margin-bottom: 0.625rem;
 							}
 							dt {
 								position: relative;
-								padding-left: 26px;
+								padding-left: 1.625rem;
 								@include before {
 									@include bg-url("img", "ico-date.png");
 									@include pCenterY;
 									left: 0;
 									top: 54%;
-									width: 17px;
-									height: 15px;
+									width: 1.0625rem;
+									height: 0.9375rem;
 								}
 								&.place {
 									position: relative;
-									padding-left: 26px;
+									padding-left: 1.625rem;
 									@include before {
 										@include bg-url("img", "ico-place.png");
 										@include pCenter;
-										left: 9px;
+										left: 0.5625rem;
 										top: 54%;
-										width: 12px;
+										width: 0.75rem;
 									}
 								}
-								font-size: 16px;
+								font-size: 1rem;
 								font-weight: bold;
 								color: #555;
 							}
 							dd {
-								font-size: 16px;
+								font-size: 1rem;
 								color: #555555;
-								margin-left: 5px;
+								margin-left: 0.3125rem;
 							}
 						}
 					}
@@ -300,8 +319,8 @@
 			right: 0;
 			bottom: 0;
 			@include bg-url("img", "more-btn.svg", "cover");
-			width: 82px;
-			height: 29px;
+			width: 5.125rem;
+			height: 1.8125rem;
 		}
 		ul {
 			padding: 30px 0;
@@ -311,23 +330,23 @@
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				margin-bottom: 32px;
+				margin-bottom: 2rem;
 				&:last-of-type {
 					margin-bottom: 0;
 				}
 				.left {
 					display: flex;
 					align-items: center;
-					gap: 33px;
+					gap: 2.0625rem;
 					.num {
 						font-weight: 500;
-						font-size: 18px;
+						font-size: 1.125rem;
 						color: #999999;
 					}
 					.txt {
 						font-weight: bold;
-						font-size: 20px;
-						width: 500px;
+						font-size: 1.25rem;
+						width: 31.25rem;
 						&:hover {
 							color: $cMain;
 							font-weight: 700;
@@ -337,7 +356,7 @@
 					}
 				}
 				.date {
-					font-size: 18px;
+					font-size: 1.125rem;
 					font-weight: bold;
 					color: #999999;
 				}
@@ -347,7 +366,57 @@
 }
 
 @include media($web) {
+	.header .headerWrap .headerInner .logo a img {
+		width: 10rem;
+	}
+	.visual {
+		padding-top: 20px;
+	}
 	.courseSearch__btn {
 		width: 100%;
+	}
+	.service {
+		padding-top: 20px;
+	}
+	.mainBottom > .flex {
+		flex-direction: column;
+	}
+	.mainBottom .flex50 > div {
+		width: 100%;
+	}
+	.mainBottom .courseMonth ul li a {
+		height: auto;
+	}
+	.mainBottom .courseMonth ul li {
+		flex: 1 1 calc(100%);
+		max-width: 100%;
+	}
+	.courseSearch {
+		margin-top: 20px;
+		padding-bottom: 0px;
+	}
+	.mainBottom .inner > .flex {
+		flex-direction: column;
+	}
+	.gap60 {
+		gap: 20px;
+	}
+	.mainBottom .notice ul li .left .txt {
+		width: 59vw;
+	}
+	.visual .visualSlide .swiper-button-next {
+		right: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-prev {
+		left: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-prev:hover {
+		left: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-next:hover {
+		right: 0 !important;
+	}
+	.visual .visualSlide .swiper-slide a img {
+		height: auto;
 	}
 }

@@ -648,7 +648,27 @@
 
   </div>
 
+  <script>
 
+    // if (document.querySelector('.scrollable-element')) {
+    const $$scrollableElement = document.querySelectorAll('.scrollable-element');
+
+    $$scrollableElement.forEach((el) => {
+      el.addEventListener('scroll', () => {
+        const agreeRow = el.closest(".agreeRow");
+        const hint = agreeRow.querySelector(".hint");
+        const checkbox = agreeRow.querySelector('.my-checkbox');
+        if (el.scrollTop + el.clientHeight >= el.scrollHeight) {
+          checkbox.disabled = false;
+          hint.style.display = "none";
+        } else {
+          checkbox.disabled = true;
+          hint.style.display = "block";
+        }
+      });
+    });
+    // }
+  </script>
 </body>
 
 </html>

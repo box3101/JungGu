@@ -3321,8 +3321,8 @@ button {
   display: inline-block;
   vertical-align: middle;
   border-radius: 0;
-  padding: 0px;
-  border: 0px;
+  padding: 0rem;
+  border: 0rem;
   font-weight: normal;
   background-color: transparent;
   cursor: pointer;
@@ -3337,9 +3337,9 @@ button {
   z-index: 1;
   top: 0;
   transition: 0.25s ease-in-out;
-  border-radius: 5px;
-  border: 1px solid #666;
-  font: 500 16px/1 "Noto Sans KR";
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #666;
+  font: 500 1rem/1 "Noto Sans KR";
   box-sizing: border-box;
   color: #fff;
 }
@@ -3354,15 +3354,15 @@ button {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background-color: #000;
   /* background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%); */
-  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.6), -4px -4px 5px 0px rgba(255, 255, 255, 0.6), 7px 7px 20px 0px rgba(0, 0, 0, 0.1333333333), 4px 4px 5px 0px rgba(0, 0, 0, 0.0666666667);
+  box-shadow: -0.4375rem -0.4375rem 1.25rem 0rem rgba(255, 255, 255, 0.6), -0.25rem -0.25rem 0.3125rem 0rem rgba(255, 255, 255, 0.6), 0.4375rem 0.4375rem 1.25rem 0rem rgba(0, 0, 0, 0.1333333333), 0.25rem 0.25rem 0.3125rem 0rem rgba(0, 0, 0, 0.0666666667);
   transition: all 0.3s ease;
   opacity: 0.1;
 }
 .comBtn:hover, .comBtn.hover {
-  top: -0.3125rem;
+  top: -5px;
   color: #fff;
 }
 .comBtn:hover::after {
@@ -3373,70 +3373,70 @@ button {
 .bgDefault {
   background-color: transparent;
   color: #000 !important;
-  border: 1px solid #333;
+  border: 0.0625rem solid #333;
 }
 
 .bgMain {
   background-color: #00489e;
   color: #fff !important;
-  border: 1px solid;
+  border: 0.0625rem solid;
 }
 
 .bgRed {
   background-color: red;
   color: !important;
-  border: 1px solid;
+  border: 0.0625rem solid;
 }
 
 .bgBlue {
   background-color: blue;
   color: !important;
-  border: 1px solid;
+  border: 0.0625rem solid;
 }
 
 .sizeSm {
   padding: 0.6em 2.2em !important;
-  font-size: 0.8rem !important;
+  font-size: 12.8px !important;
   font-weight: !important;
 }
 
 .sizeMid {
-  padding: 0.8rem 2.5rem !important;
-  font-size: 16px !important;
+  padding: 12.8px 40px !important;
+  font-size: 1rem !important;
   font-weight: !important;
 }
 
 .sizeLg {
-  padding: 1.25rem 3.75rem !important;
-  font-size: 1.125rem !important;
+  padding: 20px 60px !important;
+  font-size: 18px !important;
   font-weight: 400 !important;
 }
 
 .sizeXlg {
-  padding: 1.5rem 4.2rem !important;
-  font-size: 1.5625rem !important;
+  padding: 24px 67.2px !important;
+  font-size: 25px !important;
   font-weight: !important;
 }
 
 .r-none {
-  border-radius: 0px !important;
+  border-radius: 0rem !important;
 }
 
 .r-sm {
-  border-radius: 0.3125rem !important;
+  border-radius: 5px !important;
 }
 
 .r-mid {
-  border-radius: 1.25rem !important;
+  border-radius: 20px !important;
 }
 
 .r-lg {
-  border-radius: 1.875rem !important;
+  border-radius: 30px !important;
 }
 
 .btn.btn-outline {
   background: transparent;
-  border: 1px solid #5f8ee4;
+  border: 0.0625rem solid #5f8ee4;
   color: #333 !important;
 }
 
@@ -3449,41 +3449,41 @@ button {
 .chipWrap {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 0.3125rem;
 }
 
 .chip {
-  padding: 0 10px;
-  min-width: 60px;
-  height: 30px;
-  line-height: 30px;
+  padding: 0 0.625rem;
+  min-width: 3.75rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
   background: #fff;
   color: #00489e;
-  border: 1px solid #00489e;
+  border: 0.0625rem solid #00489e;
   box-sizing: border-box;
-  border-radius: 15px;
-  font-size: 15px;
+  border-radius: 0.9375rem;
+  font-size: 0.9375rem;
   font-weight: bold;
   text-align: center;
 }
 .chip.receipt {
   background: #4259e7;
-  border: 1px solid #4259e7;
+  border: 0.0625rem solid #4259e7;
   color: #fff;
 }
 .chip.pay {
   background: #ff7200;
-  border: 1px solid #ff7200;
+  border: 0.0625rem solid #ff7200;
   color: #fff;
 }
 .chip.deadline {
   background: #666666;
-  border: 1px solid #666666;
+  border: 0.0625rem solid #666666;
   color: #fff;
 }
 .chip.free {
   background: #0fdb5c;
-  border: 1px solid #0fdb5c;
+  border: 0.0625rem solid #0fdb5c;
   color: #fff;
 }
 
@@ -3737,6 +3737,10 @@ input:read-only:focus, input:read-only:hover {
 body,
 html {
   overflow-x: hidden;
+}
+
+html.open {
+  overflow-y: hidden;
 }
 
 .inner {
@@ -43965,7 +43969,7 @@ html {
 .header .headerWrap {
   position: relative;
   z-index: 101;
-  border-bottom: 1px solid #d4d4d4;
+  border-bottom: 0.0625rem solid #d4d4d4;
 }
 .header .headerWrap.on .subPanel,
 .header .headerWrap.on .headerBg {
@@ -43974,9 +43978,9 @@ html {
 .header .headerWrap .headerInner {
   position: relative;
   z-index: 11;
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
-  height: 80px;
+  height: 5rem;
 }
 .header .headerWrap .headerInner .logo {
   position: absolute;
@@ -44005,13 +44009,13 @@ html {
 }
 .header .headerWrap .headerInner .gnb > li {
   position: relative;
-  padding: 0 35px;
+  padding: 0 2.1875rem;
 }
 .header .headerWrap .headerInner .gnb > li > a {
   position: relative;
   display: inline-block;
   color: #333;
-  font-size: 20px;
+  font-size: 1.25rem;
   transition: all 0.4s;
   font-weight: 500;
 }
@@ -44030,8 +44034,8 @@ html {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 30px;
-  height: 8px;
+  top: 1.875rem;
+  height: 0.5rem;
   animation: ani 0.5s;
 }
 .header .headerWrap .headerInner .gnb > li > a.on {
@@ -44049,9 +44053,9 @@ html {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 30px;
-  width: 103px;
-  height: 8px;
+  top: 1.875rem;
+  width: 6.4375rem;
+  height: 0.5rem;
   animation: ani 0.5s;
 }
 .header .headerWrap .headerInner .gnb > li .subPanel {
@@ -44059,15 +44063,15 @@ html {
   position: absolute;
   left: 0;
   width: 100%;
-  top: 50px;
-  padding-top: 24px;
+  top: 3.125rem;
+  padding-top: 1.5rem;
 }
 .header .headerWrap .headerInner .gnb > li .subPanel li a {
   display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
   color: #333333;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .header .headerWrap .headerInner .gnb > li .subPanel li a:hover {
   color: #00489e;
@@ -44080,7 +44084,7 @@ html {
   right: 0;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
 }
 .header .headerWrap .headerInner .utilMenu li .searchBtn {
   background-image: url("../img/searchBtn.png");
@@ -44089,8 +44093,8 @@ html {
   background-repeat: no-repeat;
   background-color: #fff;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
 }
 .header .headerWrap .headerInner .utilMenu li .myPage {
   background-image: url("../img/mypageBtn.png");
@@ -44099,8 +44103,8 @@ html {
   background-repeat: no-repeat;
   background-color: #fff;
   border: none;
-  width: 25px;
-  height: 25px;
+  width: 1.5625rem;
+  height: 1.5625rem;
 }
 .header .headerBg {
   position: absolute;
@@ -44109,7 +44113,7 @@ html {
   z-index: 100;
   left: 0;
   right: 0;
-  top: 81px;
+  top: 5.0625rem;
 }
 .header .headerBg.on {
   display: block;
@@ -44122,13 +44126,13 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 30px;
+  left: 1.875rem;
   background-image: url("../img/logo.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100px;
-  height: 100px;
+  width: 6.25rem;
+  height: 6.25rem;
 }
 .header .mobileMenu {
   display: none;
@@ -44143,8 +44147,8 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  top: 43px;
-  right: 15px;
+  top: 2.6875rem;
+  right: 0.9375rem;
   display: inline-block;
   cursor: pointer;
   z-index: 11;
@@ -44160,7 +44164,7 @@ html {
   width: 30px;
 }
 .header .mobileMenu .menuToggle.open .menuItem {
-  margin: 0px 0px 5px;
+  margin: 1px 0px 5px;
   background-color: red;
 }
 .header .mobileMenu .menuToggle.open .menuItem:first-child {
@@ -44178,9 +44182,10 @@ html {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 0px;
+  right: 0rem;
+  left: 0;
   background-color: #3c3842;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   transform: translate(100%, 0);
   transition: all 0.2s ease-in-out;
@@ -44188,14 +44193,107 @@ html {
 .header .mobileMenu .mobileNav ul {
   list-style-type: none;
 }
+.header .mobileMenu .mobileNav ul li.mobileNavItem > a {
+  position: relative;
+  color: #000;
+  font-size: 16px;
+}
+.header .mobileMenu .mobileNav ul li.mobileNavItem > a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: translateY(-50%) rotate(135deg);
+  top: 43%;
+}
+.header .mobileMenu .mobileNav ul li.mobileNavItem.on > a {
+  background: #00489e;
+  color: #fff;
+}
+.header .mobileMenu .mobileNav ul li.mobileNavItem.on > a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: translateY(-50%) rotate(315deg);
+  top: 55%;
+}
 .header .mobileMenu .mobileNav li a {
   color: #989aa4;
   display: block;
-  padding: 15px 20px;
+  padding: 0.9375rem 1.25rem;
 }
-.header .mobileMenu .mobileNav li a:hover {
-  background-color: #23252b;
-  color: #fff;
+
+.mobileNav {
+  background-color: #fff !important;
+}
+.mobileNav > ul {
+  margin-top: 40px;
+}
+.mobileNav > ul > li {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+.mobileNav > ul > li > a {
+  display: inline-block;
+  padding: 20px 1.25rem !important;
+}
+.mobileNav > ul > li .dapth2 li a {
+  padding: 0 !important;
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s;
+}
+.mobileNav > ul > li.on .dapth2 {
+  background: #fff !important;
+  padding: 10px;
+}
+.mobileNav > ul > li.on .dapth2 li > a {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  height: 100%;
+  color: #000;
+  padding: 16px 0 !important;
+  border-bottom: 1px solid #dddddd;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+.mobileNav > ul > li.on .dapth2 li:last-of-type a {
+  border-bottom: none;
+}
+.mobileNav .moLogo {
+  text-align: center;
+  margin-top: 20px;
+}
+.mobileNav .moLogo a {
+  display: inline-block;
+  text-align: center;
+}
+.mobileNav .moLogo a img {
+  display: block;
+  margin: 0 auto;
+  width: 10rem;
+}
+
+.header .mobileMenu .menuToggle.open .menuItem {
+  background: #00489e !important;
 }
 
 @media all and (max-width: 1400px) {
@@ -44206,21 +44304,29 @@ html {
     display: block !important;
   }
   .header .headerWrap .headerInner .logo {
-    left: 20px;
+    left: 1.25rem;
   }
   .header .headerWrap .headerInner .utilMenu {
     display: none;
+  }
+  .header .mobileMenu .menuToggle .menuItem {
+    background-color: #000;
+    display: block;
+    height: 2px;
+    margin: 0 0 7px;
+    transition: all 0.3s ease-in-out;
+    width: 26px;
   }
 }
 .footer__nav {
   background: #0085cf;
 }
 .footer__nav ul {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .footer__nav ul li:nth-of-type(1) a {
   font-weight: bold;
@@ -44233,20 +44339,20 @@ html {
 .footer__nav ul li a {
   position: relative;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  font-size: 1rem;
   color: #fff;
 }
 .footer__nav ul li a:after {
   content: "";
   display: block;
   top: 53%;
-  right: -14px;
+  right: -0.875rem;
 }
 .footer .inner {
-  padding: 30px 0;
-  max-width: 1400px;
+  padding: 1.875rem 0;
+  max-width: 87.5rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -44255,32 +44361,52 @@ html {
 .footer .left {
   display: flex;
   align-items: center;
-  gap: 31px;
+  gap: 1.9375rem;
 }
 .footer .left address {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #666666;
 }
 .footer .comSelectBox:after {
   content: "";
   display: block;
-  border-bottom: 9px solid #000;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-bottom: 0.5625rem solid #000;
+  border-left: 0.375rem solid transparent;
+  border-right: 0.375rem solid transparent;
   border-top: none;
 }
 .footer .comSelectBox select {
-  width: 260px;
-  height: 40px;
-  line-height: 40px;
-  padding-left: 15px;
-  font-size: 18px;
+  width: 16.25rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding-left: 0.9375rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #999999;
-  border: 2px solid #dddddd;
+  border: 0.125rem solid #dddddd;
 }
 
+@media all and (max-width: 1400px) {
+  .footer__nav ul {
+    padding: 0 10px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .footer__nav ul li {
+    width: auto;
+    margin: 0 10px;
+  }
+  .footer .inner,
+  .footer .left {
+    flex-direction: column;
+  }
+  .footer .left address {
+    text-align: center;
+    margin-bottom: 20px;
+    word-break: keep-all;
+  }
+}
 .visual {
   position: relative;
   padding-top: 3.125rem;
@@ -44461,7 +44587,7 @@ html {
   height: 15.625rem;
   margin-top: 4.6875rem;
   padding-top: 2.8125rem;
-  padding-bottom: 3.4375rem;
+  z-index: 11;
 }
 .courseSearch .moreBtn {
   position: absolute;
@@ -44471,8 +44597,8 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 81px;
-  height: 29px;
+  width: 5.0625rem;
+  height: 1.8125rem;
 }
 .courseSearch__btn {
   position: relative;
@@ -44503,11 +44629,42 @@ html {
 }
 
 .mainBottom {
-  padding-bottom: 50px;
+  position: relative;
+  padding-top: 1.375rem;
+  padding-bottom: 3.125rem;
+}
+.mainBottom:after {
+  content: "";
+  display: block;
+  background-image: url("../img/main-bottom-obj2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: -1;
+  width: 21.5625rem;
+  height: 9.625rem;
+}
+.mainBottom:before {
+  content: "";
+  display: block;
+  background-image: url("../img/main-bottom-obj1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: -16.25rem;
+  width: 11.25rem;
+  height: 18.75rem;
+  z-index: 10;
 }
 .mainBottom .flex50 > div {
   width: calc(50% - 30px);
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 .mainBottom .courseMonth {
   position: relative;
@@ -44520,16 +44677,16 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 81px;
-  height: 29px;
+  width: 5.0625rem;
+  height: 1.8125rem;
 }
 .mainBottom .courseMonth .chipWrap {
-  margin-bottom: 13px;
+  margin-bottom: 0.8125rem;
 }
 .mainBottom .courseMonth ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 0.9375rem;
 }
 .mainBottom .courseMonth ul li {
   flex: 1 1 calc(50% - 10px);
@@ -44537,22 +44694,22 @@ html {
 }
 .mainBottom .courseMonth ul li a {
   position: relative;
-  padding: 15px;
+  padding: 0.9375rem;
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
-  height: 190px;
+  height: 11.875rem;
   border: 1px solid #dedede;
   background: #e9f7ff;
 }
 .mainBottom .courseMonth ul li a .txt {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   word-break: keep-all;
 }
 .mainBottom .courseMonth ul li a .bottom {
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
   border-top: 1px solid #dedede;
 }
 .mainBottom .courseMonth ul li a .bottom dl {
@@ -44560,12 +44717,12 @@ html {
   align-items: center;
 }
 .mainBottom .courseMonth ul li a .bottom dl:first-of-type {
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 .mainBottom .courseMonth ul li a .bottom dl dt {
   position: relative;
-  padding-left: 26px;
-  font-size: 16px;
+  padding-left: 1.625rem;
+  font-size: 1rem;
   font-weight: bold;
   color: #555;
 }
@@ -44578,12 +44735,12 @@ html {
   transform: translateY(-50%);
   left: 0;
   top: 54%;
-  width: 17px;
-  height: 15px;
+  width: 1.0625rem;
+  height: 0.9375rem;
 }
 .mainBottom .courseMonth ul li a .bottom dl dt.place {
   position: relative;
-  padding-left: 26px;
+  padding-left: 1.625rem;
 }
 .mainBottom .courseMonth ul li a .bottom dl dt.place:before {
   content: "";
@@ -44593,14 +44750,14 @@ html {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  left: 9px;
+  left: 0.5625rem;
   top: 54%;
-  width: 12px;
+  width: 0.75rem;
 }
 .mainBottom .courseMonth ul li a .bottom dl dd {
-  font-size: 16px;
+  font-size: 1rem;
   color: #555555;
-  margin-left: 5px;
+  margin-left: 0.3125rem;
 }
 .mainBottom .notice {
   position: relative;
@@ -44613,8 +44770,8 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 82px;
-  height: 29px;
+  width: 5.125rem;
+  height: 1.8125rem;
 }
 .mainBottom .notice ul {
   padding: 30px 0;
@@ -44625,7 +44782,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 .mainBottom .notice ul li:last-of-type {
   margin-bottom: 0;
@@ -44633,17 +44790,17 @@ html {
 .mainBottom .notice ul li .left {
   display: flex;
   align-items: center;
-  gap: 33px;
+  gap: 2.0625rem;
 }
 .mainBottom .notice ul li .left .num {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #999999;
 }
 .mainBottom .notice ul li .left .txt {
   font-weight: bold;
-  font-size: 20px;
-  width: 500px;
+  font-size: 1.25rem;
+  width: 31.25rem;
 }
 .mainBottom .notice ul li .left .txt:hover {
   color: #00489e;
@@ -44652,14 +44809,64 @@ html {
   text-underline-position: under;
 }
 .mainBottom .notice ul li .date {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
   color: #999999;
 }
 
 @media all and (max-width: 1400px) {
+  .header .headerWrap .headerInner .logo a img {
+    width: 10rem;
+  }
+  .visual {
+    padding-top: 20px;
+  }
   .courseSearch__btn {
     width: 100%;
+  }
+  .service {
+    padding-top: 20px;
+  }
+  .mainBottom > .flex {
+    flex-direction: column;
+  }
+  .mainBottom .flex50 > div {
+    width: 100%;
+  }
+  .mainBottom .courseMonth ul li a {
+    height: auto;
+  }
+  .mainBottom .courseMonth ul li {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .courseSearch {
+    margin-top: 20px;
+    padding-bottom: 0px;
+  }
+  .mainBottom .inner > .flex {
+    flex-direction: column;
+  }
+  .gap60 {
+    gap: 20px;
+  }
+  .mainBottom .notice ul li .left .txt {
+    width: 59vw;
+  }
+  .visual .visualSlide .swiper-button-next {
+    right: 0 !important;
+  }
+  .visual .visualSlide .swiper-button-prev {
+    left: 0 !important;
+  }
+  .visual .visualSlide .swiper-button-prev:hover {
+    left: 0 !important;
+  }
+  .visual .visualSlide .swiper-button-next:hover {
+    right: 0 !important;
+  }
+  .visual .visualSlide .swiper-slide a img {
+    height: auto;
   }
 }
 .privacyPolicy .tableType-1 td,

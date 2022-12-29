@@ -138,7 +138,35 @@
           menu = "close";
         }
         document.querySelector('.menuToggle').classList.toggle('open');
+        document.querySelector("html").classList.toggle('open');
+
       })
+
+      const $$mobileNavItemAnchor = document.querySelectorAll(".mobileNavItem>a");
+      const $$mobileNavItem = document.querySelectorAll(".mobileNavItem");
+
+      // mobileNavItem a 클릭
+      $$mobileNavItemAnchor.forEach((el) => {
+        el.addEventListener("click", () => {
+
+          // --> mobileNavItem.on이 아닐시
+          if (!el.closest(".mobileNavItem").classList.contains("on")) {
+            // 1. mobileNavItem 모두가 on클래스 remove
+            $$mobileNavItem.forEach((element) => {
+              element.classList.remove("on");
+            });
+            // 2. mobileNavItem a 클릭하면 부모요소 mobileNavItem.on 되어서 ul.dapth2가 보임
+            el.closest(".mobileNavItem").classList.add("on");
+          }
+
+          // --> mobileNavItem.on 일시
+          else {
+            // 1. mobileNavItem a 클릭하면  mobileNavItem on remove
+            el.closest(".mobileNavItem").classList.remove("on");
+          }
+        });
+      });
+      // 모바일 메뉴 eee
 
     })();
   }

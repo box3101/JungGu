@@ -107,6 +107,9 @@ body,
 html {
 	overflow-x: hidden;
 }
+html.open {
+	overflow-y: hidden;
+}
 
 // inner
 .inner {
