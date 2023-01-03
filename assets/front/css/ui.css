@@ -4016,7 +4016,7 @@ html.open {
 }
 .row__head {
   font-size: 1.25rem;
-  padding: 1.25rem 0;
+  padding: 0.8rem 0;
   border-bottom: 1px solid #333333;
   font-size: 1.5rem;
   color: #333333;
@@ -50260,6 +50260,7 @@ html.open {
 .labeling__icon {
   width: 4rem;
   height: 4rem;
+  margin-left: 0.6875rem;
 }
 @media all and (max-width: 600px) {
   .labeling__icon {
