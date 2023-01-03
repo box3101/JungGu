@@ -179,6 +179,9 @@ input:read-only {
 	position: relative;
 	align-items: center;
 	display: flex;
+	.row {
+		margin-right: 0.9375rem;
+	}
 	@include media($web) {
 		flex-wrap: wrap;
 	}

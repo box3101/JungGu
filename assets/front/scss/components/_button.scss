@@ -27,6 +27,28 @@ button {
 	box-sizing: border-box;
 	color: #fff;
 	flex: none;
+	&.bgSearch {
+		position: relative;
+		padding-left: 35px;
+		@include before {
+			@include pCenterY;
+			left: 26px;
+			@include bg-url("img", "bg-search.png", "cover");
+			width: 20px;
+			height: 19px;
+		}
+	}
+	&.bgSearch2 {
+		position: relative;
+		padding-right: 31px;
+		@include before {
+			@include pCenterY;
+			right: 18px;
+			@include bg-url("img", "bg-search2.png", "cover");
+			width: 10px;
+			height: 7px;
+		}
+	}
 	&.w100 {
 		width: 100%;
 	}
