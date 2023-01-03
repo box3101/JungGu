@@ -15,7 +15,7 @@
   <!-- =================== LINK =================== -->
   <link rel="stylesheet" href="../front/css/ui.css">
   <!-- =================== SCRIPT =================== -->
-
+  <script src='../front/js/index.global.min.js'></script>
   <script src="../front/js/swiper.js"></script>
   <script src="../front/js/jquery.js"></script>
   <script src="../front/js/main.js"></script>
@@ -107,7 +107,7 @@
               </ul>
 
               <!-- 달력 -->
-              <div class="calendar">
+              <div class="calendar" id="calendar">
                 <div class="calendar__select">
                   <div class="comSelectBox">
                     <label for="a1" class="hidden">년도 선택</label>
@@ -117,6 +117,18 @@
                   </div>
                 </div>
               </div>
+
+              <script>
+
+                document.addEventListener('DOMContentLoaded', function () {
+                  var calendarEl = document.getElementById('calendar');
+                  var calendar = new FullCalendar.Calendar(calendarEl, {
+                    initialView: 'dayGridMonth'
+                  });
+                  calendar.render();
+                });
+
+              </script>
 
               <!-- 신청서 작성 -->
               <div class="row">
@@ -172,12 +184,12 @@
                       <tr>
                         <th scope="row">이용인원<span>*</span></th>
                         <td colspan="3">
-                          <div class="flex gap5 aiCenter">
+                          <div class="flex gap5 aiCenter moColumn">
                             <span class="moItem flex aiCenter">
-                              <input type="text" class="comInput mw140 textRight">
+                              <input type="text" class="comInput textRight">
                               &nbsp;명&nbsp;
                             </span>
-                            <span class="moItem w120"> / 최대 50명</span>
+                            <span class="moItem"> / 최대 50명</span>
                           </div>
                         </td>
                       </tr>
@@ -221,7 +233,7 @@
                         <th scope="row">이용계획서<span>*</span></th>
                         <td colspan="3">
                           <div class="flex gap5">
-                            <input type="text" class="comInput mw140">
+                            <input type="text" class="comInput">
                             <button type="button" class="comBtn bgMain">찾기</button>
                             <button type="button" class="comBtn bgBlack">
                               양식다운로드
@@ -248,7 +260,7 @@
                 </p>
                 <div class="agreeRow">
                   <div class="agree">
-                    <fieldset class="agreeBox scrollable-element" tabindex="0">
+                    <fieldset class="agreeBox scrollable-element comScroll" tabindex="0">
                       <legend class="hidden">대관신청 유의사항에 대한 동의</legend>
                       <span class="hidden">스크롤을 끝까지 내려주세요. 그래야 동의 체크가 가능합니다.</span>
                       <div>

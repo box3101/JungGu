@@ -387,8 +387,7 @@ html.open {
 		}
 	}
 	&.moColumn {
-		@include media($web) {
-			flex-direction: column;
+		@include media($mo) {
 			.moItem {
 				width: 100%;
 			}
@@ -404,6 +403,23 @@ html.open {
 //하단 신청 취소 버튼
 .BottomBtnWrap {
 	margin-top: 1.875rem;
+}
+
+//스크롤바
+.comScroll {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: #2f3542;
+		border-radius: 10px;
+		background-clip: padding-box;
+		border: 2px solid transparent;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: #b5b5b5;
+		border-radius: 10px;
+	}
 }
 
 // width

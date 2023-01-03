@@ -9,6 +9,9 @@
 				width: 100% !important;
 				@extend %boxShadowType-1;
 				margin: 0;
+				@include media($web) {
+					letter-spacing: -1px;
+				}
 				&.on {
 					background: #0085cf;
 					color: #fff !important;
@@ -18,8 +21,8 @@
 	}
 	.calendar {
 		margin: 3.75rem auto;
-		width: 58.125rem;
-		height: 25rem;
+		width: 100%;
+		height: 30rem;
 		background: #000;
 		.comSelectBox {
 			width: 12.5rem;
