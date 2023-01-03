@@ -1,8 +1,0 @@
-// image url setting
-@function path($path) {
-	@return map-get($path-set, $path);
-}
-
-@function urlPath($pathName, $img) {
-	@return url(path($pathName) + $img);
-}
