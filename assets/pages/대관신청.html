@@ -60,11 +60,7 @@
                   <a href="#">대관신청</a>
                 </li>
               </ul>
-              <div class="subHead__shareWrap">
-                <button type="button">
-                  <span class="hidden">공유레이어열기</span>
-                </button>
-              </div>
+
             </div>
           </div>
           <div class="subBody">
@@ -182,11 +178,11 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">이용인원<span>*</span></th>
+                        <th scope="row"><label for="d1">이용인원</label><span>*</span></th>
                         <td colspan="3">
                           <div class="flex gap5 aiCenter moColumn">
                             <span class="moItem flex aiCenter">
-                              <input type="text" class="comInput textRight">
+                              <input id="d1" type="text" class="comInput textRight">
                               &nbsp;명&nbsp;
                             </span>
                             <span class="moItem"> / 최대 50명</span>
@@ -224,16 +220,16 @@
                         <td colspan="3"><strong>15,000원</strong></td>
                       </tr>
                       <tr>
-                        <th scope="row">사용 목적<span>*</span> </th>
+                        <th scope="row"><label for="f1">사용 목적</label><span>*</span> </th>
                         <td colspan="3">
-                          <input type="text" class="comInput">
+                          <input type="text" id="f1" class="comInput">
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">이용계획서<span>*</span></th>
+                        <th scope="row"><label for="f2">이용계획서</label><span>*</span></th>
                         <td colspan="3">
                           <div class="flex gap5">
-                            <input type="text" class="comInput">
+                            <input type="text" id="f2" class="comInput">
                             <button type="button" class="comBtn bgMain">찾기</button>
                             <button type="button" class="comBtn bgBlack">
                               양식다운로드
@@ -366,6 +362,7 @@
                 <li>
                   <button type="button" class="comBtn sizeXlg bgBlack">취소</button>
                 </li>
+              </ul>
             </div>
 
           </div>

@@ -15,7 +15,7 @@
   <!-- =================== LINK =================== -->
   <link rel="stylesheet" href="../front/css/ui.css">
   <!-- =================== SCRIPT =================== -->
-
+  <script src='../front/js/index.global.min.js'></script>
   <script src="../front/js/swiper.js"></script>
   <script src="../front/js/jquery.js"></script>
   <script src="../front/js/main.js"></script>
@@ -57,23 +57,117 @@
                   <a href="#">나눔공간</a>
                 </li>
                 <li class="last">
-                  <a href="#">대관신청</a>
+                  <a href="#">대관신청 결제</a>
                 </li>
               </ul>
-              <div class="subHead__shareWrap">
-                <button type="button">
-                  <span class="hidden">공유레이어열기</span>
-                </button>
-              </div>
             </div>
           </div>
           <div class="subBody">
-            <div class="subContent">
+            <div class="subcotent sharingSpace">
 
+              <!-- 결제하기 -->
+              <div class="row">
+                <p class="row__head">
+                  <span class="title__icon">결제하기</span>
+                </p>
+                <div class="comTable-2">
+                  <table>
+                    <caption class="hidden">결제 하기</caption>
+                    <colgroup>
+                      <col width="130px">
+                      <col width="190px">
+                      <col width="100px">
+                      <col width="400px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="row">대관 정보</th>
+                        <td colspan="3" class="lh15">
+                          대관실 :
+                          <span>중강의실 1(1층) </span>
+                          <br class="is-mo-show">
+                          <span class="is-mo-hide">|</span>
+                          날짜 :
+                          <span>2022년 10월 29일 </span>
+                          <br class="is-mo-show">
+                          <span class="is-mo-hide">|</span>
+                          시간 :
+                          <span>오전(09:00 ~ 12:00)</span>
+                        </td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">신청자 정보</th>
+                        <td colspan="3" class="lh15">
+                          <span>홍*동</span> <br class="is-mo-show">
+                          <span>010-****-6785</span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">감면대상 인증</th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <div class="comSelectBox w150">
+                              <select name="" id="" class="comSelect">
+                                <option value="">국가유공자</option>
+                              </select>
+                            </div>
+                            <button type="button" class="comBtn bgMain">인증</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">결제수단 선택</th>
+                        <td colspan="3">
+                          <div class="flex gap5 aiCenter">
+                            <button type="button" class="comBtn bgMain sizeLg">신용카드</button>
+                            <button type="button" class="comBtn bgBlack sizeLg">가상계좌</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">현금영수증 신청</th>
+                        <td colspan="3">
+                          <div class="formRadio">
+                            <input type="radio" id="c1" name="chk1_01" value="1" checked="">
+                            <label for="c1">
+                              개인 &nbsp;&nbsp;
+                            </label>
+                            <input type="radio" id="c2" name="chk1_01" value="2">
+                            <label for="c2">
+                              사업자 &nbsp;&nbsp;
+                            </label>
+                            <input type="radio" id="c3" name="chk1_01" value="3">
+                            <label for="c3">
+                              미신청 &nbsp;&nbsp;
+                            </label>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row">결제금액</th>
+                        <td colspan="3"><strong>15,000원</strong></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <!-- 취소, 신청 -->
+              <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter">
+                <li>
+                  <button type="button" class="comBtn sizeXlg bgBlack">취소하기</button>
+                </li>
+                <li>
+                  <button type="button" class="comBtn sizeXlg bgMain">결제하기</button>
+                </li>
+              </ul>
             </div>
           </div>
-          <!-- 컨텐츠가 들어갈 부분 eee -->
         </div>
+        <!-- 컨텐츠가 들어갈 부분 eee -->
+      </div>
     </main>
     <!-- sub eee -->
 

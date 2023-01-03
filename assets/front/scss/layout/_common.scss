@@ -18,7 +18,7 @@
 	height: 2.1875rem;
 	padding-left: 0.9375rem;
 	box-sizing: border-box;
-	font-size: 1.125rem;
+	font-size: 1rem;
 	font-weight: 500;
 	transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
 	border-radius: 0.3125rem;
@@ -422,10 +422,84 @@ html.open {
 	}
 }
 
+//lineHeight
+.lh15 {
+	@include media($mo) {
+		line-height: 20px;
+		margin-top: -4px;
+	}
+}
+
+// 브라우저 크기별 레이아웃 보이기
+.is-tab-show {
+	display: none;
+	@include media($tab) {
+		display: block;
+	}
+}
+
+.is-tab-hide {
+	@include media($tab) {
+		display: none;
+	}
+}
+
+.is-web-show {
+	display: none;
+	@include media($web) {
+		display: block;
+	}
+}
+
+.is-web-hide {
+	@include media($web) {
+		display: none;
+	}
+}
+
+.is-mo-show {
+	display: none;
+	@include media($mo) {
+		display: block;
+	}
+}
+
+.is-mo-hide {
+	@include media($mo) {
+		display: none;
+	}
+}
+
+.is-mo-sm-show {
+	display: none;
+	@include media(360px) {
+		display: block;
+	}
+}
+
+.is-mo-sm-hide {
+	@include media(360px) {
+		display: none;
+	}
+}
+
+.is-mo-xsm-show {
+	display: none;
+	@include media(320px) {
+		display: block;
+	}
+}
+
+.is-mo-xsm-hide {
+	@include media(320px) {
+		display: none;
+	}
+}
+
 // width
 @for $i from 1 to 1000 {
 	.w#{$i} {
-		width: #{$i}px;
+		width: #{$i}px !important;
 	}
 }
 
