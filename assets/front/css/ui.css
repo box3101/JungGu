@@ -50257,6 +50257,16 @@ html.open {
   padding: 0.625rem 0.125rem;
 }
 
+.labeling__icon {
+  width: 4rem;
+  height: 4rem;
+}
+@media all and (max-width: 600px) {
+  .labeling__icon {
+    display: none;
+  }
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 14px;

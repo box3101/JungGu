@@ -16,6 +16,14 @@
 	}
 }
 
+.labeling__icon {
+	width: 4rem;
+	height: 4rem;
+	@include media($mo) {
+		display: none;
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
