@@ -96,16 +96,17 @@ $btn-sizes: (
 		fontSize: 12.8px,
 	),
 	sizeMid: (
-		padding: 12.8px 40px,
+		width: 116px,
+		height: 37px,
 		fontSize: 1rem,
 	),
 	sizeLg: (
-		width: 13.75rem,
-		height: 3.125rem,
-		lineHeight: 2.9rem,
+		width: 10.75rem,
+		height: 2.525rem,
+		lineHeight: 2.1rem,
 		fontSize: 1rem,
 		fontWeight: bold,
-		color: #555,
+		color: #fff,
 		border: 1px solid #b5b5b5,
 	),
 	sizeXlg: (
@@ -129,6 +130,7 @@ $btn-sizes: (
 		font-weight: map-get($value, fontWeight);
 		color: map-get($value, color) !important;
 		border: map-get($value, border);
+		box-sizing: border-box;
 	}
 }
 
