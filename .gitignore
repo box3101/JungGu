@@ -1,4 +1,1 @@
-[.sass-cache]
-.sass-cache/
-.vscode/
-assets/front/css/ui.map
+*.sass
