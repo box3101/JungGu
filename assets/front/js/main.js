@@ -404,7 +404,7 @@
 
   }
 
-  // input스크롤
+  // 동의 스크롤
   const scrollInput = () => {
 
     if (document.querySelector('.scrollable-element')) {

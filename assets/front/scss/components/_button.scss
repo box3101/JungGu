@@ -13,7 +13,8 @@ button {
 }
 /* =================== BUTTON =================== */
 .comBtn {
-	margin: 0 1em;
+	padding: 0.125rem 0.625rem;
+	min-width: 4.1875rem;
 	display: inline-block;
 	position: relative;
 	z-index: 1;
@@ -22,9 +23,10 @@ button {
 	transition: 0.25s ease-in-out;
 	border-radius: 0.3125rem;
 	border: 0.0625rem solid #666;
-	font: 500 1rem/1 "Noto Sans KR";
+	font: 500 0.8rem/1 "Noto Sans KR";
 	box-sizing: border-box;
 	color: #fff;
+	flex: none;
 	&.w100 {
 		width: 100%;
 	}
@@ -67,8 +69,13 @@ $btn-colors: (
 		bg-color: $cMain,
 		color: #fff,
 	),
-	bgRed: (
-		bg-color: red,
+	bgBlack: (
+		bg-color: #555,
+		color: #fff,
+	),
+	bgWhite: (
+		bg-color: white,
+		color: #000,
 	),
 	bgBlue: (
 		bg-color: blue,
@@ -86,28 +93,42 @@ $btn-colors: (
 $btn-sizes: (
 	sizeSm: (
 		padding: 0.6em 2.2em,
-		size: 12.8px,
+		fontSize: 12.8px,
 	),
 	sizeMid: (
 		padding: 12.8px 40px,
-		size: 1rem,
+		fontSize: 1rem,
 	),
 	sizeLg: (
-		padding: 20px 60px,
-		size: 18px,
-		font-w: 400,
+		width: 13.75rem,
+		height: 3.125rem,
+		lineHeight: 2.9rem,
+		fontSize: 1rem,
+		fontWeight: bold,
+		color: #555,
+		border: 1px solid #b5b5b5,
 	),
 	sizeXlg: (
-		padding: 24px 67.2px,
-		size: 25px,
+		width: 11.25rem,
+		height: 3.125rem,
+		lineHeight: 2.9rem,
+		fontSize: 1rem,
+		fontWeight: bold,
+		color: #fff,
+		border: 1px solid #b5b5b5,
 	),
 );
 
 @each $key, $value in $btn-sizes {
 	.#{$key} {
-		padding: map-get($value, padding) !important;
-		font-size: map-get($value, size) !important;
-		font-weight: map-get($value, font-w) !important;
+		width: map-get($value, width);
+		height: map-get($value, height);
+		line-height: map-get($value, lineHeight);
+		padding: map-get($value, padding);
+		font-size: map-get($value, fontSize);
+		font-weight: map-get($value, fontWeight);
+		color: map-get($value, color) !important;
+		border: map-get($value, border);
 	}
 }
 

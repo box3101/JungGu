@@ -1,6 +1,10 @@
 // input
 .comInput {
 	@extend %formReset;
+	&.textRight {
+		text-align: right;
+		padding-right: 15px;
+	}
 }
 input:read-only {
 	background: #eee;
@@ -29,6 +33,57 @@ input:read-only {
 	}
 }
 
+//table
+.comTable-2 {
+	table {
+		width: auto;
+	}
+	border-bottom: 1px solid #666666;
+	.formRadio label {
+		color: #555;
+		font-size: 1rem;
+	}
+	th,
+	td {
+		height: 45px;
+		text-align: left;
+		font-size: 1rem;
+	}
+	th {
+		color: #00489e;
+		font-weight: bold;
+		display: flex;
+		align-items: center;
+		span {
+			color: red;
+		}
+	}
+	td {
+		color: #2d2d2d;
+		strong {
+			font-weight: bold;
+		}
+	}
+
+	@include media($web) {
+		tr {
+			display: grid;
+			grid-template-columns: 6.25rem auto;
+		}
+		th {
+			display: flex;
+			align-items: flex-start;
+			justify-content: center;
+		}
+		th,
+		td {
+			height: auto;
+			padding: 10px 0;
+			text-align: left;
+		}
+	}
+}
+
 // textArea
 .comTextArea {
 	@extend %formReset;
@@ -44,10 +99,23 @@ input:read-only {
 	padding-left: 30px;
 	margin: 5.6px 0;
 	cursor: pointer;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
 	color: #333333;
 	margin-right: 4.8px;
+	word-break: keep-all;
+	line-height: 1.5;
+}
+.formChkbox {
+	flex-wrap: wrap;
+	@include media($web) {
+		align-items: flex-start;
+		.formChkbox__control {
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
 }
 .formChkbox input {
 	position: absolute;
@@ -95,6 +163,9 @@ input:read-only {
 	position: relative;
 	align-items: center;
 	display: flex;
+	@include media($web) {
+		flex-wrap: wrap;
+	}
 }
 .formRadio input[type="radio"] {
 	opacity: 0;
@@ -117,9 +188,9 @@ input:read-only {
 	display: inline-flex;
 	align-items: center;
 	position: relative;
-	min-width: 16px;
-	min-height: 16px;
-	line-height: 16px;
+	min-width: 1rem;
+	min-height: 1rem;
+	line-height: 1rem;
 	font-size: 19.2px;
 	cursor: pointer;
 }
@@ -127,8 +198,8 @@ input:read-only {
 	content: "";
 	display: block;
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	width: 1rem;
+	height: 1rem;
 	border: 0.0625rem solid #ddd;
 	background: #fff;
 	border-radius: 50%;
@@ -143,16 +214,22 @@ input:read-only {
 }
 .formRadio label:after {
 	@include pCenter;
-	left: 8px;
+	left: 0.5rem;
 	content: "";
 	display: block;
 	display: block;
 	position: absolute;
-	width: 10px;
-	height: 10px;
+	width: 0.625rem;
+	height: 0.625rem;
 	border-radius: 50%;
 }
 .formRadio input[type="radio"]:checked + label::after {
 	background: $cMain;
 	border-color: $cMain;
+}
+
+@include media($mo) {
+	.sizeLg {
+		font-size: 0.5rem;
+	}
 }
