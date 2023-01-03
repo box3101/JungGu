@@ -419,6 +419,8 @@
             checkbox.disabled = false;
             hint.style.display = "none";
           } else {
+            console.log(el.scrollTop);
+            console.log(el.scrollHeight);
             checkbox.disabled = true;
             hint.style.display = "block";
           }

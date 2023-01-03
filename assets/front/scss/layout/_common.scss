@@ -413,6 +413,14 @@ html.open {
 	}
 }
 
+@for $i from 1 to 1000 {
+	@include media($mo) {
+		.mw#{$i} {
+			width: #{$i}px;
+		}
+	}
+}
+
 // gap
 @for $i from 1 to 1000 {
 	.gap#{$i} {

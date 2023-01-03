@@ -108,9 +108,10 @@ input:read-only {
 }
 .formChkbox {
 	flex-wrap: wrap;
-	@include media($web) {
+	@include media($mo) {
 		align-items: flex-start;
 		.formChkbox__control {
+			width: 100%;
 			&:first-child {
 				margin-top: 0;
 			}
@@ -165,6 +166,16 @@ input:read-only {
 	display: flex;
 	@include media($web) {
 		flex-wrap: wrap;
+	}
+	@include media($mo) {
+		&:first-of-type {
+			position: relative;
+			top: -8px;
+		}
+		.row {
+			padding-bottom: 0;
+			width: 100%;
+		}
 	}
 }
 .formRadio input[type="radio"] {
