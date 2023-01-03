@@ -16,6 +16,11 @@
 	}
 }
 
+.labeling__icon {
+	width: 4rem;
+	height: 4rem;
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {

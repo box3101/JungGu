@@ -45,7 +45,7 @@ input:read-only {
 	}
 	th,
 	td {
-		height: 3.325rem;
+		height: 45px;
 		text-align: left;
 		font-size: 1rem;
 	}
@@ -54,12 +54,6 @@ input:read-only {
 		font-weight: bold;
 		display: flex;
 		align-items: center;
-		> label {
-			color: #00489e;
-			font-weight: bold;
-			display: flex;
-			align-items: center;
-		}
 		span {
 			color: red;
 		}
@@ -70,31 +64,22 @@ input:read-only {
 			font-weight: bold;
 		}
 	}
+
 	@include media($web) {
-		th {
-			justify-content: center;
-		}
-	}
-	@include media($mo) {
 		tr {
 			display: grid;
 			grid-template-columns: 6.25rem auto;
-			border-bottom: 1px solid #eee;
-		}
-		th,
-		td {
-			height: auto;
-			padding: 0.625rem 0;
-			text-align: left;
 		}
 		th {
 			display: flex;
 			align-items: flex-start;
 			justify-content: center;
-			align-items: center;
-			text-align: center;
-			word-break: keep-all;
-			line-height: 1.5;
+		}
+		th,
+		td {
+			height: auto;
+			padding: 10px 0;
+			text-align: left;
 		}
 	}
 }
@@ -185,7 +170,7 @@ input:read-only {
 	@include media($mo) {
 		&:first-of-type {
 			position: relative;
-			height: 100%;
+			top: -8px;
 		}
 		.row {
 			padding-bottom: 0;
