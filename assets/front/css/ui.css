@@ -5774,10 +5774,10 @@ input:read-only:focus, input:read-only:hover {
   border-right: 6px solid transparent;
 }
 
-.mainBottom .courseMonth ul li a {
+.cardcontent a, .mainBottom .courseMonth ul li a {
   position: relative;
 }
-.mainBottom .courseMonth ul li a:before, .mainBottom .courseMonth ul li a:after {
+.cardcontent a:before, .mainBottom .courseMonth ul li a:before, .cardcontent a:after, .mainBottom .courseMonth ul li a:after {
   position: absolute;
   content: "";
   display: block;
@@ -5792,16 +5792,16 @@ input:read-only:focus, input:read-only:hover {
   border-color: #59c4ff;
   box-sizing: border-box;
 }
-.mainBottom .courseMonth ul li a:before {
+.cardcontent a:before, .mainBottom .courseMonth ul li a:before {
   border-width: 3px 0 3px 0;
   transform: scaleX(0);
 }
-.mainBottom .courseMonth ul li a:after {
+.cardcontent a:after, .mainBottom .courseMonth ul li a:after {
   border-width: 0 3px 0 0.1875rem;
   transform: scaleY(0);
 }
 
-.mainBottom .courseMonth ul li a:hover:before, .mainBottom .courseMonth ul li a:hover:after {
+.cardcontent a:hover:before, .mainBottom .courseMonth ul li a:hover:before, .cardcontent a:hover:after, .mainBottom .courseMonth ul li a:hover:after {
   transform: scale(1, 1);
 }
 
@@ -52721,6 +52721,43 @@ html.open {
     width: 100%;
     justify-content: flex-end;
   }
+}
+.txt-top {
+  margin-top: 2.5rem;
+}
+
+.cardcontent p {
+  word-break: break-all !important;
+}
+
+.cardcontent .content-bottom .txt {
+  padding: 0.3125rem 0;
+}
+
+.cardcontent a {
+  display: block;
+  width: 100%;
+}
+.cardcontent {
+  width: calc(25% - 18px) !important;
+  flex-wrap: wrap;
+}
+.cardcontent img {
+  width: 100%;
+}
+@media all and (max-width: 1400px) {
+  .cardcontent {
+    width: calc(50% - 12px) !important;
+  }
+}
+@media all and (max-width: 600px) {
+  .cardcontent {
+    width: 100% !important;
+  }
+}
+
+.cardcontent-wrap .flex.gap24 {
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=ui.css.map */

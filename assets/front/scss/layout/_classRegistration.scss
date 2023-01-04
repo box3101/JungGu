@@ -87,3 +87,41 @@
 		}
 	}
 }
+
+.txt-top {
+	margin-top: 2.5rem;
+}
+
+.cardcontent p {
+	word-break: break-all !important;
+}
+
+.cardcontent .content-bottom .txt {
+	padding: 0.3125rem 0;
+}
+.cardcontent a {
+	display: block;
+	width: 100%;
+	@extend %effect-1;
+	&:hover {
+		@extend %hover-effect-1;
+	}
+}
+.cardcontent {
+	width: calc(25% - (24px / 4) * 3) !important;
+	flex-wrap: wrap;
+	img {
+		width: 100%;
+	}
+	@include media($web) {
+		width: calc(50% - (24px / 2) * 1) !important;
+	}
+	@include media($mo) {
+		width: calc(100%) !important;
+	}
+}
+.cardcontent-wrap {
+	.flex.gap24 {
+		flex-wrap: wrap;
+	}
+}
