@@ -1,93 +1,82 @@
 .subcotent {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .cardcontent-wrap {
-    margin-top: 19px;
+	margin-top: 19px;
 }
 
 .cardContent-wrap {
-    margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .txt-top {
-    font-size: 20px;
-    span {
-        font-weight: bold;
-    }
+	font-size: 20px;
+	span {
+		font-weight: bold;
+	}
 }
 
 .cardcontent {
-    width: 332px;
-    box-shadow: 4px 6px 22px -15px #2d2d2d;
-    .content-bottom {
-        padding: 25px 15px;
-        .tit {
-            font-size: 22px;
-            font-weight: bold;
-            line-height: 28px;
-            word-spacing: 0.025px;
-            margin: 10px 0 8px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid #dedede;
-        }
-        .txt {
-            color: #555555 !important;
-            span {
-                font-weight: bold;
-            }
-        }
-        .date-icon::before {
-            content: "";
-            display: inline-block;
-            width: 17px;
-            height: 15px;
-            margin-right: 8px;
-            background-image: url(../img/ico-date.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
+	width: 332px;
+	box-shadow: 4px 6px 22px -15px #2d2d2d;
+	.content-bottom {
+		padding: 25px 15px;
+		.tit {
+			font-size: 22px;
+			font-weight: bold;
+			line-height: 28px;
+			word-spacing: 0.025px;
+			margin: 10px 0 8px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #dedede;
+		}
+		.txt {
+			color: #555555 !important;
+			span {
+				font-weight: bold;
+			}
+		}
+		.date-icon::before,
+		.pepole-icon::before {
+			content: "";
+			display: inline-block;
+			width: 17px;
+			height: 15px;
+			margin-right: 8px;
+			background-image: url(../img/ico-date.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
 
-        .palce-icon::before {
-            content: "";
-            display: inline-block;
-            width: 12px;
-            height: 16px;
-            margin-right: 8px;
-            background-image: url(../img/ico-place.png);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-    }
+		.palce-icon::before {
+			content: "";
+			display: inline-block;
+			width: 12px;
+			height: 16px;
+			margin-right: 8px;
+			background-image: url(../img/ico-place.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
 }
 
 .cardcontent-wrap .gap24 {
-    margin-bottom: 24px;
+	margin-bottom: 24px;
 }
 
 .cardcontent.sm {
-    .content-bottom {
-        padding: 30px 20px;
-    }
-    .chip-wrap {
-        margin-top: 15px;
-    }
-}
-
-.cardcontent .people-icon::before {
-    content: "";
-    display: inline-block;
-    width: 14px;
-    height: 16px;
-    margin-right: 8px;
-    background-image: url(../img/ico-people.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+	.content-bottom {
+		padding: 30px 20px;
+	}
+	.chip-wrap {
+		margin-top: 15px;
+	}
 }
 
 .cardcontent p {
-    word-break: keep-all;
+	word-break: keep-all;
 }

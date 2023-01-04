@@ -108,6 +108,7 @@
 	}
 }
 .cardcontent {
+	// width: 25% !important;
 	width: calc(25% - (24px / 4) * 3) !important;
 	flex-wrap: wrap;
 	img {

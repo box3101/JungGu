@@ -39,7 +39,8 @@
 .cardcontent .content-bottom .txt span {
   font-weight: bold;
 }
-.cardcontent .content-bottom .date-icon::before {
+.cardcontent .content-bottom .date-icon::before,
+.cardcontent .content-bottom .pepole-icon::before {
   content: "";
   display: inline-block;
   width: 17px;
@@ -71,18 +72,6 @@
 }
 .cardcontent.sm .chip-wrap {
   margin-top: 15px;
-}
-
-.cardcontent .people-icon::before {
-  content: "";
-  display: inline-block;
-  width: 14px;
-  height: 16px;
-  margin-right: 8px;
-  background-image: url(../img/ico-people.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .cardcontent p {
