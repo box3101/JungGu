@@ -4,24 +4,4 @@
 * .scss.map
 assets/front/css/style.css.map
 assets/front/css/ui.css.map
-# assets/front/scss/style.scss
-# assets/front/scss/ui.scss
-# assets/front/scss/base/_reset.scss
-# assets/front/scss/base/_variables.scss
-# assets/front/scss/components/_button.scss
-# assets/front/scss/components/_card.scss
-# assets/front/scss/components/_forms.scss
-# assets/front/scss/components/_popup.scss
-# assets/front/scss/layout/_ classRegistration.scss
-# assets/front/scss/layout/_common.scss
-# assets/front/scss/layout/_common.scss.rej
-# assets/front/scss/layout/_footer.scss
-# assets/front/scss/layout/_header.scss
-# assets/front/scss/layout/_join.scss
-# assets/front/scss/layout/_main.scss
-# assets/front/scss/layout/_privacyPolicy.scss
-# assets/front/scss/layout/_sharingSpace.scss
-# assets/front/scss/utility/_function.scss
-# assets/front/scss/utility/_mixin.scss
-# assets/front/scss/vandors/animate.scss
-# assets/front/scss/vandors/swiper.scss
+assets/front/css/yg.css.map
