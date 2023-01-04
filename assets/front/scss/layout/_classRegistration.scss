@@ -1,0 +1,89 @@
+.searchArea {
+	@extend %boxShadowType-2;
+	padding: 0 6.25rem;
+	border-radius: 0.3125rem;
+	.row {
+		padding-bottom: 0;
+	}
+	&__info {
+		&.on {
+			.searchArea__top {
+				border-bottom: 1px solid #666666;
+			}
+			.searchArea__box {
+				display: block;
+			}
+			.detailedSearch::before {
+				border-top: none;
+				border-bottom: 0.5625rem solid #fff;
+				border-left: 0.375rem solid transparent;
+				border-right: 0.375rem solid transparent;
+			}
+		}
+	}
+	&__box {
+		display: none;
+		padding: 1.25rem 6.25rem;
+	}
+	&__top {
+		display: flex;
+		gap: 0.625rem;
+		padding: 1.875rem 6.25rem;
+	}
+	&__top-arr {
+		display: flex;
+		align-items: center;
+		gap: 0.625rem;
+		flex-grow: 1;
+	}
+	&__tit,
+	&__input {
+		flex-grow: 1;
+	}
+	&__tit {
+		position: relative;
+		top: -0.125rem;
+		flex-grow: 0;
+		flex-basis: 4.6875rem;
+		label {
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: $cMain;
+		}
+	}
+	&__btnWrap {
+		flex-grow: 0;
+		display: flex;
+		align-items: center;
+		gap: 0.3125rem;
+	}
+}
+
+@include media($web) {
+	.searchArea {
+		padding: 0 10px;
+	}
+}
+@include media($tab) {
+	.searchArea__top {
+		padding: 1.875rem 10px;
+	}
+	.searchArea__box {
+		padding: 1.25rem 10px;
+	}
+}
+@include media($mo) {
+	.searchArea__top {
+		flex-direction: column;
+		.is-mo-show {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			width: 100%;
+		}
+		.searchArea__btnWrap {
+			width: 100%;
+			justify-content: flex-end;
+		}
+	}
+}

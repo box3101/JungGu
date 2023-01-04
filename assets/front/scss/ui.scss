@@ -13,6 +13,7 @@
 // 프로젝트에서 사용하는 외부 스타일 vandors
 @import "vandors/animate.scss";
 @import "vandors/swiper.scss";
+@import "vandors/datePicker.scss";
 
 // 사이트 내에서 재사용가능한 작은 부분 components
 @import "components/card.scss";
@@ -28,6 +29,6 @@
 @import "layout/privacyPolicy.scss";
 @import "layout/join.scss";
 //나눔공간
-@import "layout/_sharingSpace.scss";
+@import "layout/sharingSpace.scss";
 // 수강신청
-@import "layout/_ classRegistration.scss";
+@import "layout/classRegistration.scss";

@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
+  <meta c har se t="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
     content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
@@ -14,11 +14,16 @@
 
   <!-- =================== LINK =================== -->
   <link rel="stylesheet" href="../front/css/ui.css">
+  <link rel="stylesheet" href="../front/css/yg.css">
+
   <!-- =================== SCRIPT =================== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src='../front/js/index.global.min.js'></script>
+  <script src="../front//js/datepicker.js"></script>
   <script src="../front/js/swiper.js"></script>
-  <script src="../front/js/jquery.js"></script>
   <script src="../front/js/main.js"></script>
+
   <!-- include -->
   <script type="text/javascript">
     $(document).ready(function () {
@@ -31,8 +36,8 @@
 <body>
 
   <div class="skip-nav">
-    <a href="#gnbmain">주메뉴 바로가기</a>
-    <a href="#contentmain">본문 바로가기</a>
+    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+    <a href="#contentmain" tabindex="1">본문 바로가기</a>
   </div>
 
   <div id="wrapper">
@@ -45,7 +50,7 @@
     <main id="sub" class="main sub">
       <div class="contentBody">
         <!-- 컨텐츠가 들어갈 부분 -->
-        <div class="subContent">
+        <div class="subContent" id="contentmain" tabindex="0">
           <div class="subHead">
             <div class="subHead__tit">대관신청</div>
             <div class="subHead__right">
@@ -116,12 +121,11 @@
 
               <script>
 
-                document.addEventListener('DOMContentLoaded', function () {
-                  var calendarEl = document.getElementById('calendar');
-                  var calendar = new FullCalendar.Calendar(calendarEl, {
-                    initialView: 'dayGridMonth'
-                  });
-                  calendar.render();
+                document.addEventListener('DOMContentLoaded', funct     var calendarEl = document.getElementById('calendar');
+                var calendar = new FullCalendar.Calendar(calendarEl, {
+                  initialView: 'dayGridMonth'
+                });
+                calendar.render();
                 });
 
               </script>
@@ -136,9 +140,7 @@
                     <caption class="hidden">신청서 작성</caption>
                     <colgroup>
                       <col width="130px">
-                      <col width="190px">
-                      <col width="100px">
-                      <col width="400px">
+                      <col width="220px">
                     </colgroup>
                     <thead>
                       <tr>

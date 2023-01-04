@@ -25,7 +25,9 @@
 		margin: 3.75rem auto;
 		width: 100%;
 		height: 30rem;
-		background: #000;
+		.fc .fc-button-primary {
+			background: #fff;
+		}
 		.comSelectBox {
 			width: 12.5rem;
 		}

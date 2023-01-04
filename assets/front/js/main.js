@@ -14,7 +14,8 @@
     comPopupLayer();
     comTab();
     goTop();
-    scrollInput();
+    scrollable();
+    detailedSearch();
   }
 
   // 공통 gnb
@@ -405,7 +406,7 @@
   }
 
   // 동의 스크롤
-  const scrollInput = () => {
+  const scrollable = () => {
 
     if (document.querySelector('.scrollable-element')) {
       const $$scrollableElement = document.querySelectorAll('.scrollable-element');
@@ -427,5 +428,17 @@
     }
 
   }
+
+  //상세 검색
+  const detailedSearch = () => {
+    if (document.querySelector('.searchArea')) {
+      const $detailedSearchBtn = document.querySelector(".detailedSearch");
+      $detailedSearchBtn.addEventListener("click", (e) => {
+        const target = e.target;
+        target.closest(".searchArea__info").classList.toggle("on");
+      });
+    }
+  }
+
 
 })();

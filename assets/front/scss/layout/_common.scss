@@ -239,6 +239,29 @@ html.open {
 	}
 }
 
+//date
+.inputDateWrap {
+	display: flex;
+	align-items: center;
+	gap: 0.3125rem;
+	.input-date-wrap {
+		cursor: pointer;
+		position: relative;
+		@include after {
+			@include bg-url("img", "bg-datapicker.png", "cover");
+			@include pCenterY;
+			right: 0;
+			width: 2.5rem;
+			height: 2.1875rem;
+		}
+	}
+	input {
+		position: relative;
+		cursor: pointer;
+		@extend %formReset;
+	}
+}
+
 // header title
 .row {
 	padding-bottom: 1.875rem;
@@ -398,6 +421,250 @@ html.open {
 			}
 		}
 	}
+}
+
+// 페이징
+#paginate table {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.customPage {
+	display: flex;
+	align-items: center;
+	gap: 0.625rem;
+}
+.customPaginateBar {
+	margin-top: 0.9375rem !important;
+	margin-top: 2.5rem;
+}
+
+.customPageMoveBtn {
+	display: inline-block;
+	border: none;
+	cursor: pointer;
+	margin: 0 1px;
+}
+
+.customPaginateBar {
+	padding-top: 40px !important;
+}
+
+.ui-icon-seek-first {
+	width: 2.2rem;
+	height: 2.2rem;
+	background-size: cover;
+	background: url(../img/btn_page_first.png) no-repeat;
+	background-size: cover;
+}
+
+.ui-icon-seek-prev {
+	width: 2.2rem;
+	height: 2.2rem;
+	background-size: cover;
+	background: url(../img/btn_page_pre.png) no-repeat;
+	background-size: cover;
+}
+
+.customPageNumberBtn {
+	display: inline-block;
+	width: 2.2rem;
+	height: 2.2rem;
+	text-align: center;
+	border: none;
+	font-size: 1rem;
+	font-weight: 300 !important;
+	opacity: 0.4;
+	color: #555 !important;
+	transition: all 0.4s;
+	line-height: 2.2rem;
+}
+
+.customPageNumberBtn:hover {
+	color: blue !important;
+	opacity: 1;
+}
+
+.customPageNumberBtn.on {
+	position: relative;
+	font-weight: bold !important;
+	font-size: 1rem;
+	color: blue !important;
+	opacity: 1;
+}
+
+.ui-icon-seek-next {
+	width: 2.2rem;
+	height: 2.2rem;
+	background-size: cover;
+	background: url(../img/btn_page_next.png) no-repeat;
+	background-size: cover;
+}
+
+.ui-icon-seek-end {
+	width: 2.2rem;
+	height: 2.2rem;
+	background-size: cover;
+	background: url(../img/btn_page_last.png) no-repeat;
+	background-size: cover;
+}
+
+//팝업
+
+.comPopupWrap {
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+}
+.comPopupWrap.on {
+	display: block;
+}
+.comPopupWrap .dim {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
+}
+.comPopupWrap .comBtn {
+	min-width: auto;
+	border-radius: 0;
+}
+.comPopupContainer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.comPopupInfo {
+	width: 100%;
+	height: 100%;
+	padding: 10px 15px;
+	background: #eaeaea;
+	box-sizing: border-box;
+}
+.comPopupInfo.bgfff {
+	background: #fff;
+}
+.comPopupInfoBox {
+	padding: 10px;
+	background: #fff;
+}
+.comPopupInfoBox .comTxt {
+	font-size: 16px;
+	text-align: center;
+	padding: 40px 0;
+}
+.comPopupBox {
+	position: relative;
+	width: 850px;
+	height: auto;
+	background: #fff;
+}
+.comPopupHeader {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #0195d3;
+}
+.comPopupHeader h2 {
+	padding: 10px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	padding-left: 23px;
+	position: relative;
+	line-height: 1;
+}
+.comPopupHeader h2::before {
+	content: "";
+	width: 4px;
+	height: 20px;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	left: 14px;
+	top: 11px;
+}
+.comPopupHeader .popClose {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	background: none;
+	border: none;
+	right: 5px;
+}
+.comPopupHeader .popClose::after {
+	display: inline-block;
+	content: "\00d7";
+	font-size: 15pt;
+	line-height: 50px;
+	color: #fff;
+}
+.comTableHeightWrap {
+	height: 300px;
+	overflow-y: scroll;
+	margin-top: 20px;
+}
+.comTableHeightWrap .comTable-1 {
+	margin-top: 0;
+}
+.comTableHeightWrap th {
+	position: sticky;
+	top: -2px;
+	z-index: 10;
+}
+.comPopupBotBtn {
+	top: 10px;
+	margin-left: -15px;
+	margin-right: -16px;
+	position: relative;
+}
+.comPopupBotBtn ul {
+	display: flex;
+}
+.comPopupBotBtn ul li {
+	flex: 1;
+}
+.comPopupBotBtn ul li button {
+	width: 100%;
+	height: 40px;
+	background: $cMain;
+	&:hover {
+		top: 0;
+	}
+}
+.accPopClose {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	background: none;
+	border: none;
+	right: 5px;
+	top: -5px;
+	position: absolute;
+}
+.accPopClose::after {
+	display: inline-block;
+	content: "\00d7";
+	font-size: 2rem;
+	line-height: 50px;
+	color: #fff;
 }
 
 //color

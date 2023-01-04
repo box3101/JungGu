@@ -27,6 +27,32 @@ button {
 	box-sizing: border-box;
 	color: #fff;
 	flex: none;
+	&.bgSearch {
+		position: relative;
+		padding-left: 2rem;
+		@include before {
+			@include pCenterY;
+			top: 52%;
+			left: 1.4rem;
+			@include bg-url("img", "bg-search.png", "cover");
+			width: 1.1875rem;
+			height: 1.125rem;
+		}
+	}
+	&.bgSearch2 {
+		position: relative;
+		padding-right: 2rem;
+		@include before {
+			@include pCenterY;
+			top: 54%;
+			right: 1rem;
+			width: 0rem;
+			height: 0rem;
+			border-top: 0.5625rem solid #fff;
+			border-left: 0.375rem solid transparent;
+			border-right: 0.375rem solid transparent;
+		}
+	}
 	&.w100 {
 		width: 100%;
 	}
@@ -50,12 +76,17 @@ button {
 	}
 	&:hover,
 	&.hover {
-		top: -5px;
+		top: -0.3125rem;
 		color: #fff;
 	}
 	&:hover::after {
 		top: 0;
 		height: 100%;
+	}
+}
+@include media($mo) {
+	.comBtn:hover {
+		top: 0 !important;
 	}
 }
 
@@ -93,11 +124,11 @@ $btn-colors: (
 $btn-sizes: (
 	sizeSm: (
 		padding: 0.6em 2.2em,
-		fontSize: 12.8px,
+		fontSize: 0.8rem,
 	),
 	sizeMid: (
-		width: 116px,
-		height: 37px,
+		width: 7.25rem,
+		height: 2.3125rem,
 		fontSize: 1rem,
 	),
 	sizeLg: (
@@ -107,7 +138,7 @@ $btn-sizes: (
 		fontSize: 1rem,
 		fontWeight: bold,
 		color: #fff,
-		border: 1px solid #b5b5b5,
+		border: 0.0625rem solid #b5b5b5,
 	),
 	sizeXlg: (
 		width: 11.25rem,
@@ -116,7 +147,7 @@ $btn-sizes: (
 		fontSize: 1rem,
 		fontWeight: bold,
 		color: #fff,
-		border: 1px solid #b5b5b5,
+		border: 0.0625rem solid #b5b5b5,
 	),
 );
 
@@ -139,13 +170,13 @@ $btn-radius: (
 		radius: 0rem,
 	),
 	r-sm: (
-		radius: 5px,
+		radius: 0.3125rem,
 	),
 	r-mid: (
-		radius: 20px,
+		radius: 1.25rem,
 	),
 	r-lg: (
-		radius: 30px,
+		radius: 1.875rem,
 	),
 );
 
@@ -174,6 +205,9 @@ $btn-radius: (
 	display: flex;
 	align-items: center;
 	gap: 0.3125rem;
+	.flex {
+		width: 100%;
+	}
 }
 .chip {
 	padding: 0 0.625rem;
