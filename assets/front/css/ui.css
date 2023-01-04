@@ -3345,42 +3345,6 @@ button {
   color: #fff;
   flex: none;
 }
-.comBtn.bgSearch {
-  position: relative;
-  padding-left: 35px;
-}
-.comBtn.bgSearch:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 26px;
-  background-image: url("../img/bg-search.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 20px;
-  height: 19px;
-}
-.comBtn.bgSearch2 {
-  position: relative;
-  padding-right: 31px;
-}
-.comBtn.bgSearch2:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 18px;
-  background-image: url("../img/bg-search2.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 10px;
-  height: 7px;
-}
 .comBtn.w100 {
   width: 100%;
 }
@@ -3623,7 +3587,7 @@ input:read-only:focus, input:read-only:hover {
     border-bottom: 1px solid #eee;
   }
   .comTable-2 th,
-.comTable-2 td {
+  .comTable-2 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -3722,9 +3686,6 @@ input:read-only:focus, input:read-only:hover {
   position: relative;
   align-items: center;
   display: flex;
-}
-.formRadio .row {
-  margin-right: 0.9375rem;
 }
 @media all and (max-width: 1400px) {
   .formRadio {
@@ -4055,7 +4016,7 @@ html.open {
 }
 .row__head {
   font-size: 1.25rem;
-  padding: 1.25rem 0;
+  padding: 1.5rem 0;
   border-bottom: 1px solid #333333;
   font-size: 1.5rem;
   color: #333333;
@@ -49811,7 +49772,7 @@ html.open {
     margin: 0 10px;
   }
   .footer .inner,
-.footer .left {
+  .footer .left {
     flex-direction: column;
   }
   .footer .left address {
@@ -50295,10 +50256,20 @@ html.open {
   text-align: center;
   padding: 0.625rem 0.125rem;
 }
+.privacyPolicy figure {
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 0;
+  gap: 15px;
+  justify-content: center;
+}
 
 .labeling__icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
+  margin-left: 0.6875rem;
+  position: relative;
+  top: 10px;
 }
 @media all and (max-width: 600px) {
   .labeling__icon {
@@ -50375,7 +50346,6 @@ html.open {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9375rem;
-  opacity: 1;
 }
 .sharingSpace .tabBtnWrap li {
   width: calc(16.666% - 0.78125rem);
@@ -50426,60 +50396,32 @@ html.open {
     display: none;
   }
 }
+.searchArea {
+  padding: 0 100px;
+  border-bottom: 1px solid #666666;
+}
 .searchArea__info {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .searchArea__top {
   padding: 30px 0;
   display: flex;
   align-items: center;
-  gap: 15px;
-  border-bottom: 1px solid #666666;
+  gap: 10px;
 }
 .searchArea__tit, .searchArea__input {
   flex-grow: 1;
 }
 .searchArea__tit {
   flex-grow: 0;
-  flex-basis: auto;
-  font-size: 24px;
-  color: #00489e;
-  font-weight: bold;
-  position: relative;
-  top: -1px;
+  flex-basis: 65px;
 }
 .searchArea__btnWrap {
   flex-grow: 0;
   display: flex;
   align-items: center;
-  gap: 5px;
-}
-.searchArea__info {
-  padding: 30px 0;
-}
-.searchArea__info .dlWrap50 {
-  display: flex;
-  gap: 20px;
-}
-.searchArea__info dl {
-  display: flex;
-  align-items: center;
-  margin: 25px 0;
-  flex: 1;
-}
-.searchArea__info dl:first-of-type {
-  margin-top: 0;
-}
-.searchArea__info dl dt {
-  flex-grow: 0;
-  flex-basis: 86px;
-  font-size: 18px;
-  color: #2d2d2d;
-  font-weight: bold;
-}
-.searchArea__info dl dd .row {
-  padding-bottom: 0;
+  gap: 15px;
 }
 
 /*# sourceMappingURL=ui.css.map */

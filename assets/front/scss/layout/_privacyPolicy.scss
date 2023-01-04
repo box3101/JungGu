@@ -14,12 +14,21 @@
 			padding: 0.625rem 0.125rem;
 		}
 	}
+	figure {
+		display: flex;
+		align-items: center;
+		padding: 1.25rem 0;
+		gap: 15px;
+		justify-content: center;
+	}
 }
 
 .labeling__icon {
-	width: 4rem;
-	height: 4rem;
+	width: 3rem;
+	height: 3rem;
 	margin-left: 0.6875rem;
+	position: relative;
+	top: 10px;
 	@include media($mo) {
 		display: none;
 	}
