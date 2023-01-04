@@ -52759,4 +52759,12 @@ html.open {
   flex-wrap: wrap;
 }
 
+.txt-top span {
+  color: #00489e;
+}
+
+.cardcontent.sm .content-bottom {
+  border: 1px solid #eee;
+}
+
 /*# sourceMappingURL=ui.css.map */
