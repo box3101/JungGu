@@ -1,3 +1,65 @@
+.subcotent {
+  margin-bottom: 50px;
+}
 
+.cardcontent-wrap {
+  margin-top: 19px;
+}
+
+.txt-top {
+  font-size: 20px;
+}
+.txt-top span {
+  font-weight: bold;
+}
+
+.cardcontent {
+  width: 332px;
+  box-shadow: 4px 6px 22px -15px #2d2d2d;
+}
+.cardcontent .content-bottom {
+  padding: 25px 15px;
+}
+.cardcontent .content-bottom .tit {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 28px;
+  word-spacing: 0.025px;
+  margin: 10px 0 8px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
+}
+.cardcontent .content-bottom .txt {
+  color: #555555 !important;
+}
+.cardcontent .content-bottom .txt span {
+  font-weight: bold;
+}
+.cardcontent .content-bottom .date-icon::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 15px;
+  margin-right: 8px;
+  background-image: url(../img/ico-date.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cardcontent .content-bottom .palce-icon::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/ico-place.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardcontent p {
+  word-break: keep-all;
+}
 
 /*# sourceMappingURL=yg.css.map */
