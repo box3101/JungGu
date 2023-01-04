@@ -1,0 +1,72 @@
+@mixin bg-url($path, $img, $op-default: false, $op-p: null, $op-s: null) {
+	background-image: urlPath($path, $img);
+
+	@if ($op-default) {
+		@include bg-op;
+	}
+
+	@if $op-p and $op-s {
+		@include bg-op($p: $op-p, $s: $op-s);
+	} @else if $op-p {
+		@include bg-op($p: $op-p);
+	} @else if $op-s {
+		@include bg-op($s: $op-s);
+	}
+}
+
+@mixin media($px, $range: max) {
+	@media all and (#{$range}-width: $px) {
+		@content;
+	}
+}
+
+@mixin bg-op($p: center, $s: cover, $r: no-repeat) {
+	background-position: $p;
+	background-size: $s;
+	background-repeat: $r;
+}
+
+@mixin flex($ai: null, $jc: null, $gap: null) {
+	display: flex;
+	align-items: $ai;
+	justify-content: $jc;
+	gap: $gap;
+	@content;
+}
+
+@mixin pCenter {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin pCenterX {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	@content;
+}
+
+@mixin pCenterY {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	@content;
+}
+
+@mixin before($c: "", $d: block) {
+	&:before {
+		content: $c;
+		display: $d;
+		@content;
+	}
+}
+
+@mixin after($c: "", $d: block) {
+	&:after {
+		content: $c;
+		display: $d;
+		@content;
+	}
+}

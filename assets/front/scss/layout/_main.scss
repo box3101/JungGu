@@ -1,0 +1,422 @@
+.visual {
+	position: relative;
+	padding-top: 3.125rem;
+	.visualSlide {
+		.swiper-slide {
+			a {
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				&:focus-visible,
+				&:focus {
+					outline: 0.125rem dotted #000;
+					border: 0.125rem solid #000;
+				}
+				img {
+					border-radius: 0.625rem;
+					width: 100%;
+					height: 24.0625rem;
+				}
+			}
+		}
+		.swiper-button-prev,
+		.swiper-button-next {
+			transition: all 0.4s ease-in-out;
+			width: 3.125rem;
+			height: 3.125rem;
+		}
+		.swiper-button-prev {
+			@include bg-url("img", "visual-prev.svg", "cover");
+			left: -4.375rem !important;
+			&:hover {
+				left: -5rem !important;
+			}
+		}
+		.swiper-button-next {
+			@include bg-url("img", "visual-next.svg", "cover");
+			right: -4.375rem !important;
+			&:hover {
+				right: -5rem !important;
+			}
+		}
+		.comSlidePaging {
+			@include pCenterX;
+			@include flex(null, center, 0.3125rem);
+			display: none;
+			bottom: 1.875rem;
+			z-index: 10;
+			.currentNum,
+			.bar,
+			.allNum {
+				font-size: 1.25rem;
+				font-weight: 500;
+				color: #fff;
+			}
+		}
+		.autoplayControl {
+			@include pCenterX;
+			transform: translateX(2.5rem);
+			bottom: 1.875rem;
+			z-index: 10;
+		}
+		.autoplayControl button {
+			display: block;
+			width: 1.25rem;
+			height: 1.25rem;
+			border: 0;
+			background: transparent;
+			cursor: pointer;
+		}
+		.autoplayControl button:before {
+			display: block;
+			content: "";
+			position: absolute;
+		}
+		.autoplayControl button[aria-pressed="false"]:before {
+			top: 0.25rem;
+			left: 0.25rem;
+			width: 0.75rem;
+			height: 0.75rem;
+			border-left: 0.1875rem solid #000;
+			border-right: 0.1875rem solid #000;
+			box-sizing: border-box;
+		}
+		.autoplayControl button[aria-pressed="true"]:before {
+			top: 0.125rem;
+			left: 0.125rem;
+			border-top: 0.5rem solid transparent;
+			border-left: 1rem solid #000;
+			border-bottom: 0.5rem solid transparent;
+		}
+	}
+	@include after {
+		@include bg-url("img", "bg-visual.png", "cover");
+		background-size: contain;
+		position: absolute;
+		right: -10.4375rem;
+		bottom: -8.5625rem;
+		width: 47.875rem;
+		height: 13.1875rem;
+	}
+}
+
+.service {
+	padding-top: 4.1875rem;
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			flex: 1;
+			transition: all 0.4s;
+			@media (min-width: $web) {
+				&:hover {
+					flex: 1.3;
+				}
+			}
+			a {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				height: 100%;
+				height: 13.125rem;
+				border-radius: 0.9375rem;
+				border: 0.0625rem solid $cGray;
+				transition: all 0.4s;
+				@extend %boxShadowType-1;
+				&:hover {
+					background: $cMain;
+					p {
+						color: #fff;
+					}
+					.img img {
+						transform: rotateY(360deg);
+					}
+				}
+				.img {
+					display: flex;
+					align-items: flex-start;
+					height: 6.875rem;
+					img {
+						display: inline-block;
+						transition: all 0.4s;
+						transform: rotateY(0deg);
+						@include media($web) {
+							height: 6rem;
+						}
+					}
+				}
+				p {
+					font-size: 1.375rem;
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+
+.courseSearch {
+	position: relative;
+	.moreBtn {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		@include bg-url("img", "more-btn.svg", "cover");
+		width: 5.0625rem;
+		height: 1.8125rem;
+	}
+	@include bg-url("img", "bg-course-search.png", "cover");
+	height: 15.625rem;
+	margin-top: 4.6875rem;
+	padding-top: 2.8125rem;
+	z-index: 11;
+	&__btn {
+		position: relative;
+		width: 53.90625%; /* 690/1280 */
+		margin: 0 auto;
+		input {
+			@extend %boxShadowType-1;
+			height: 3.375rem;
+			border: 0.125rem solid $cGray-3;
+			font-weight: 500;
+			font-size: 1.25rem;
+			&::placeholder {
+				color: $cGray-2;
+				letter-spacing: -0.0625rem;
+			}
+		}
+		button {
+			@include pCenterY;
+			@include bg-url("img", "searchBtn.png", "cover");
+			width: 1.5625rem;
+			height: 1.5625rem;
+			right: 1.25rem;
+		}
+	}
+}
+
+.mainBottom {
+	@include after {
+		@include bg-url("img", "main-bottom-obj2.png", "cover");
+		@include pCenterY;
+		left: 0;
+		z-index: -1;
+		width: 21.5625rem;
+		height: 9.625rem;
+	}
+	@include before {
+		@include bg-url("img", "main-bottom-obj1.png", "cover");
+		position: absolute;
+		right: 0;
+		top: -16.25rem;
+		width: 11.25rem;
+		height: 18.75rem;
+		z-index: 10;
+	}
+	position: relative;
+	padding-top: 1.375rem;
+	padding-bottom: 3.125rem;
+	.flex50 {
+		> div {
+			width: calc(50% - 30px);
+			padding-bottom: 2.5rem;
+		}
+	}
+	.courseMonth {
+		position: relative;
+		.moreBtn {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			@include bg-url("img", "more-btn.svg", "cover");
+			width: 5.0625rem;
+			height: 1.8125rem;
+		}
+		.chipWrap {
+			margin-bottom: 0.8125rem;
+		}
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.9375rem;
+			li {
+				flex: 1 1 calc(50% - 10px);
+				max-width: calc(50% - 10px);
+				a {
+					position: relative;
+					@extend %effect-1;
+					padding: 0.9375rem;
+					box-sizing: border-box;
+					width: 100%;
+					display: inline-block;
+					height: 11.875rem;
+					border: 1px solid #dedede;
+					background: #e9f7ff;
+
+					&:hover {
+						@extend %hover-effect-1;
+					}
+
+					.txt {
+						font-size: 1.25rem;
+						font-weight: bold;
+						word-break: keep-all;
+					}
+
+					.bottom {
+						margin-top: 0.625rem;
+						padding-top: 0.625rem;
+						border-top: 1px solid #dedede;
+						dl {
+							display: flex;
+							align-items: center;
+							&:first-of-type {
+								margin-bottom: 0.625rem;
+							}
+							dt {
+								position: relative;
+								padding-left: 1.625rem;
+								@include before {
+									@include bg-url("img", "ico-date.png");
+									@include pCenterY;
+									left: 0;
+									top: 54%;
+									width: 1.0625rem;
+									height: 0.9375rem;
+								}
+								&.place {
+									position: relative;
+									padding-left: 1.625rem;
+									@include before {
+										@include bg-url("img", "ico-place.png");
+										@include pCenter;
+										left: 0.5625rem;
+										top: 54%;
+										width: 0.75rem;
+									}
+								}
+								font-size: 1rem;
+								font-weight: bold;
+								color: #555;
+							}
+							dd {
+								font-size: 1rem;
+								color: #555555;
+								margin-left: 0.3125rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.notice {
+		position: relative;
+		.moreBtn {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			@include bg-url("img", "more-btn.svg", "cover");
+			width: 5.125rem;
+			height: 1.8125rem;
+		}
+		ul {
+			padding: 30px 0;
+			border-top: 1px solid #dedede;
+			border-bottom: 1px solid #dedede;
+			li {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 2rem;
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+				.left {
+					display: flex;
+					align-items: center;
+					gap: 2.0625rem;
+					.num {
+						font-weight: 500;
+						font-size: 1.125rem;
+						color: #999999;
+					}
+					.txt {
+						font-weight: bold;
+						font-size: 1.25rem;
+						width: 31.25rem;
+						&:hover {
+							color: $cMain;
+							font-weight: 700;
+							text-decoration: underline;
+							text-underline-position: under;
+						}
+					}
+				}
+				.date {
+					font-size: 1.125rem;
+					font-weight: bold;
+					color: #999999;
+				}
+			}
+		}
+	}
+}
+
+@include media($web) {
+	.header .headerWrap .headerInner .logo a img {
+		width: 10rem;
+	}
+	.visual {
+		padding-top: 20px;
+	}
+	.courseSearch__btn {
+		width: 100%;
+	}
+	.service {
+		padding-top: 20px;
+	}
+	.mainBottom > .flex {
+		flex-direction: column;
+	}
+	.mainBottom .flex50 > div {
+		width: 100%;
+	}
+	.mainBottom .courseMonth ul li a {
+		height: auto;
+	}
+	.mainBottom .courseMonth ul li {
+		flex: 1 1 calc(100%);
+		max-width: 100%;
+	}
+	.courseSearch {
+		margin-top: 20px;
+		padding-bottom: 0px;
+	}
+	.mainBottom .inner > .flex {
+		flex-direction: column;
+	}
+	.gap60 {
+		gap: 20px;
+	}
+	.mainBottom .notice ul li .left .txt {
+		width: 59vw;
+	}
+	.visual .visualSlide .swiper-button-next {
+		right: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-prev {
+		left: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-prev:hover {
+		left: 0 !important;
+	}
+	.visual .visualSlide .swiper-button-next:hover {
+		right: 0 !important;
+	}
+	.visual .visualSlide .swiper-slide a img {
+		height: auto;
+	}
+}
