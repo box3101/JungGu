@@ -6,6 +6,10 @@
     margin-top: 19px;
 }
 
+.cardContent-wrap {
+    margin-bottom: 24px;
+}
+
 .txt-top {
     font-size: 20px;
     span {
@@ -57,6 +61,31 @@
             background-repeat: no-repeat;
         }
     }
+}
+
+.cardcontent-wrap .gap24 {
+    margin-bottom: 24px;
+}
+
+.cardcontent.sm {
+    .content-bottom {
+        padding: 30px 20px;
+    }
+    .chip-wrap {
+        margin-top: 15px;
+    }
+}
+
+.cardcontent .people-icon::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 16px;
+    margin-right: 8px;
+    background-image: url(../img/ico-people.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .cardcontent p {
