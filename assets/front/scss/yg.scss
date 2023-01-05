@@ -156,6 +156,63 @@
 	}
 }
 
+.lecture {
+	&.detail {
+		p {
+			line-height: 28px;
+		}
+	}
+
+	&.info {
+		span {
+			font-weight: bold;
+			line-height: 36px;
+		}
+		.pl30 {
+			font-weight: bold;
+			font-size: 20px;
+		}
+
+		.pl-26 {
+			padding-left: 26px;
+		}
+	}
+
+	&.place {
+		p {
+			line-height: 28px;
+		}
+	}
+
+	&.point {
+		line-height: 28px;
+
+		p {
+		border: 1px solid rgba(255,255,255,.5);
+		background: #f5f5f5;
+		padding: 30px 20px;
+		}
+	}
+
+
+	.tit {
+		font-size: 26px;
+		font-weight: bold;
+		word-spacing: -0.025;
+		margin-bottom: 20px;
+
+	}
+	p {
+		color: #555555 !important;
+	}
+	.pl-25 {
+		padding-left: 25px;
+	}
+	.pl-30 {
+		padding-bottom: 30px;
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {

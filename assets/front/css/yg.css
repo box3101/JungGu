@@ -50931,6 +50931,47 @@ html.open {
   background: #fff;
 }
 
+.lecture.detail p {
+  line-height: 28px;
+}
+.lecture.info span {
+  font-weight: bold;
+  line-height: 36px;
+}
+.lecture.info .pl30 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.lecture.info .pl-26 {
+  padding-left: 26px;
+}
+.lecture.place p {
+  line-height: 28px;
+}
+.lecture.point {
+  line-height: 28px;
+}
+.lecture.point p {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: #f5f5f5;
+  padding: 30px 20px;
+}
+.lecture .tit {
+  font-size: 26px;
+  font-weight: bold;
+  word-spacing: -0.025;
+  margin-bottom: 20px;
+}
+.lecture p {
+  color: #555555 !important;
+}
+.lecture .pl-25 {
+  padding-left: 25px;
+}
+.lecture .pl-30 {
+  padding-bottom: 30px;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 14px;
