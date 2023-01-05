@@ -158,6 +158,8 @@
 
 .lecture {
 	&.detail {
+		margin-top: 50px;
+
 		p {
 			line-height: 28px;
 		}
@@ -221,7 +223,7 @@
 }
 @include media($tab) {
 	html {
-		font-size: 13px;
+	
 	}
 }
 @include media($mo) {

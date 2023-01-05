@@ -50931,6 +50931,9 @@ html.open {
   background: #fff;
 }
 
+.lecture.detail {
+  margin-top: 50px;
+}
 .lecture.detail p {
   line-height: 28px;
 }
@@ -50975,11 +50978,6 @@ html.open {
 @media all and (max-width: 1400px) {
   html {
     font-size: 14px;
-  }
-}
-@media all and (max-width: 900px) {
-  html {
-    font-size: 13px;
   }
 }
 @media all and (max-width: 600px) {
