@@ -24,7 +24,7 @@
 	padding-left: 0.9375rem;
 	box-sizing: border-box;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 400;
 	transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
 	border-radius: 0.3125rem;
 	border: 1px solid #666;
@@ -243,21 +243,49 @@ html.open {
 	display: flex;
 	align-items: center;
 	gap: 0.3125rem;
+	@include media($mo) {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.split {
+		@include media($mo) {
+			display: flex;
+			align-self: center;
+		}
+	}
+	.input-date-wrap {
+		@include media($mo) {
+			width: 100%;
+		}
+		input {
+			@include media($mo) {
+				width: 100%;
+			}
+		}
+	}
+	&.ml20 {
+		@include media($web) {
+			margin-left: 0 !important;
+		}
+	}
 	.input-date-wrap {
 		cursor: pointer;
 		position: relative;
-		@include after {
-			@include bg-url("img", "bg-datapicker.png", "cover");
-			@include pCenterY;
-			right: 0;
-			width: 2.5rem;
-			height: 2.1875rem;
-		}
+		z-index: 2;
 	}
+	position: relative;
 	input {
 		position: relative;
+		z-index: 3;
 		cursor: pointer;
 		@extend %formReset;
+		@include bg-url("img", "bg-datapicker.png");
+		width: 10rem;
+		background-image: url(../img/bg-datapicker.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 30px;
+		right: 0;
 	}
 }
 
@@ -472,15 +500,16 @@ html.open {
 	text-align: center;
 	border: none;
 	font-size: 1rem;
-	font-weight: 300 !important;
-	opacity: 0.4;
-	color: #555 !important;
+	font-weight: 400 !important;
+	opacity: 1;
+	color: #000 !important;
 	transition: all 0.4s;
 	line-height: 2.2rem;
 }
 
 .customPageNumberBtn:hover {
-	color: blue !important;
+	color: $cMain !important;
+	font-weight: 600;
 	opacity: 1;
 }
 
@@ -552,6 +581,9 @@ html.open {
 	padding: 10px 15px;
 	background: #eaeaea;
 	box-sizing: border-box;
+	max-height: 75vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .comPopupInfo.bgfff {
 	background: #fff;
@@ -795,13 +827,13 @@ html.open {
 		margin-bottom: #{$i}px !important;
 	}
 	.mt#{$i} {
-		margin-bottom: #{$i}px !important;
+		margin-top: #{$i}px !important;
 	}
 	.mr#{$i} {
-		margin-bottom: #{$i}px !important;
+		margin-right: #{$i}px !important;
 	}
 	.ml#{$i} {
-		margin-bottom: #{$i}px !important;
+		margin-left: #{$i}px !important;
 	}
 }
 
