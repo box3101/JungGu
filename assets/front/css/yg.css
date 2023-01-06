@@ -50892,6 +50892,10 @@ html.open {
   margin-top: 0.9375rem;
 }
 
+caption {
+  display: none;
+}
+
 .cardcontent p {
   word-break: keep-all;
 }
@@ -50946,6 +50950,7 @@ html.open {
 .lecture.info .pl30 {
   font-weight: bold;
   font-size: 1.25rem;
+  color: #2d2d2d !important;
 }
 .lecture.info .pl-26 {
   padding-left: 1.625rem;

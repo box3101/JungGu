@@ -108,6 +108,8 @@
 	}
 }
 
+caption {display: none;}
+
 .cardcontent p {
 	word-break: keep-all;
 }
@@ -167,6 +169,7 @@
 		.pl30 {
 			font-weight: bold;
 			font-size: 1.25rem;
+			color: #2d2d2d !important;
 		}
 
 		.pl-26 {
