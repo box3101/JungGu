@@ -24,7 +24,7 @@
 	.calendar {
 		margin: 3.75rem auto;
 		width: 100%;
-		height: 30rem;
+		height: 40rem;
 		.fc .fc-button-primary {
 			background: #fff;
 		}
@@ -56,4 +56,96 @@
 			display: none;
 		}
 	}
+}
+
+/* 달력 */
+.calendarWrap {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.calendarWrap .left {
+	position: relative;
+	flex: 1;
+}
+.calendarWrap .right {
+	display: none;
+	width: 20%;
+	margin-left: 0.9375rem;
+	margin-top: 3rem;
+	padding: 0.625rem;
+	border: 0.0625rem solid #aaa;
+	max-height: 27.9375rem;
+	overflow-y: scroll;
+}
+.calendarWrap .impossibleDate li {
+	font-size: 0.9375rem;
+	margin-bottom: 0.3125rem;
+}
+.calendarWrap .txtWrap {
+	position: absolute;
+	right: 0rem;
+	top: 5.3125rem;
+	display: flex;
+	gap: 1.5625rem;
+	font-size: 0.875rem;
+}
+.calendarWrap .txtWrap li {
+	position: relative;
+}
+.calendarWrap .txtWrap li:first-child::before {
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	left: -0.9375rem;
+	display: block;
+	content: "";
+	width: 0.625rem;
+	height: 0.625rem;
+	background: #3788d8;
+	opacity: 0.1;
+}
+.calendarWrap .txtWrap li:nth-of-type(2)::before {
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	left: -0.9375rem;
+	display: block;
+	content: "";
+	width: 0.625rem;
+	height: 0.625rem;
+	background: #aaa;
+}
+.calendarWrap .fc-today-button {
+	display: none !important;
+}
+.calendarWrap .fc .fc-button-primary {
+	background: #0195d3 !important;
+	border: 0.0625rem solid #0195d3 !important;
+	margin: 0 0.125rem !important;
+}
+.calendarWrap .fc .fc-button-primary:last-of-type {
+	margin-right: 0 !important;
+}
+.calendarWrap .fc .fc-toolbar {
+	justify-content: flex-start;
+}
+.calendarWrap .fc .fc-daygrid-day.fc-day-today {
+	background-color: transparent !important;
+}
+.calendarWrap .fc .fc-day-other {
+	background: #fff;
+}
+.unavailable {
+	background-color: #ddd;
+}
+.available {
+	background: aliceblue;
+}
+
+.fc-icon-chevron-left:before {
+	color: #fff;
+}
+.fc-icon-chevron-right:before {
+	color: #fff;
 }

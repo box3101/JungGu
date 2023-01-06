@@ -99,6 +99,32 @@ input:read-only {
 	}
 }
 
+.comTable-3 {
+	box-sizing: border-box;
+	width: 100%;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.comTable-3 th {
+	text-align: center;
+	font-size: 1.25rem;
+	color: #fff;
+	height: 3.125rem;
+	font-weight: bold;
+	vertical-align: middle;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	background: #0085cf;
+}
+.comTable-3 td {
+	padding-left: 1.0625rem;
+	font-size: 1.125rem;
+	height: 3.125rem;
+	vertical-align: middle;
+	border-top: 1px solid #dedede;
+	border-bottom: 1px solid #dedede;
+	background: #fff;
+}
+
 // comSearchTable
 .comSearchTable-1 {
 	&.flex {

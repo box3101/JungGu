@@ -20,7 +20,8 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src='../front/js/index.global.min.js'></script>
-  <script src="../front//js/datepicker.js"></script>
+  <script src='../front/js/locales-all.js'></script>
+  <script src="../front/js/datepicker.js"></script>
   <script src="../front/js/swiper.js"></script>
   <script src="../front/js/main.js"></script>
 
@@ -106,19 +107,36 @@
               </ul>
 
               <!-- 달력 -->
-              <div class="calendar" id="calendar">
-                <div class="calendar__select">
-                  <div class="comSelectBox">
-                    <label for="a1" class="hidden">년도 선택</label>
-                    <select class="comSelect" name="" id="a1">
-                      <option value="">2022년</option>
-                    </select>
+              <div class="calendarWrap">
+                <div class="left">
+                  <ul class="txtWrap">
+                    <li>
+                      예약 가능
+                    </li>
+                    <li>
+                      예약 불가능
+                    </li>
+                  </ul>
+                  <!-- 달력 플로그인 -->
+                  <div class="calendar" id="calendar">
                   </div>
+                  <!-- 달력 플로그인 eee -->
                 </div>
+                <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                    const initialLocaleCode = 'ko'; // 한글
+                    const calendarEl = document.getElementById('calendar');
+                    const calendar = new FullCalendar.Calendar(calendarEl, {
+                      selectable: false, // 날짜 클릭시 활성화
+                      initialView: 'dayGridMonth',
+                      locale: initialLocaleCode,
+                    });
+                    calendar.render();
+                  });
+                </script>
               </div>
 
               <script>
-
                 document.addEventListener('DOMContentLoaded', function () {
                   var calendarEl = document.getElementById('calendar');
                   var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -357,7 +375,7 @@
               <!-- 취소, 신청 -->
               <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter">
                 <li>
-                  <button type="button" class="comBtn sizeXlg bgMain">신청</button>
+                  <a href="../pages/대관신청-결제.html" type="button" class="comBtn sizeXlg bgMain">신청</a>
                 </li>
                 <li>
                   <button type="button" class="comBtn sizeXlg bgBlack">취소</button>
@@ -379,6 +397,18 @@
 
   </div>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const initialLocaleCode = 'ko'; // 한글
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        selectable: false, // 날짜 클릭시 활성화
+        initialView: 'dayGridMonth',
+        locale: initialLocaleCode,
+      });
+      calendar.render();
+    });
+  </script>
 </body>
 
 </html>

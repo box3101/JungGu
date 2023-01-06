@@ -4006,6 +4006,12 @@ button {
   width: 0.6875rem;
   height: 0.6875rem;
 }
+@media all and (max-width: 600px) {
+  .comBtn.ico-down:before {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
 .comBtn.w100 {
   width: 100%;
 }
@@ -4073,6 +4079,7 @@ button {
   font-size: 0.8rem;
   color: !important;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeMid {
@@ -4081,6 +4088,7 @@ button {
   font-size: 1rem;
   color: !important;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeLg {
@@ -4092,6 +4100,7 @@ button {
   color: #fff !important;
   border: 0.0625rem solid #b5b5b5;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeXlg {
@@ -4103,6 +4112,7 @@ button {
   color: #fff !important;
   border: 0.0625rem solid #b5b5b5;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .r-none {
@@ -4270,6 +4280,34 @@ input:read-only:focus, input:read-only:hover {
     word-break: keep-all;
     line-height: 1.5;
   }
+}
+
+.comTable-3 {
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.comTable-3 th {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  height: 3.125rem;
+  font-weight: bold;
+  vertical-align: middle;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #0085cf;
+}
+
+.comTable-3 td {
+  padding-left: 1.0625rem;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  vertical-align: middle;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
 }
 
 @media all and (max-width: 1400px) {
@@ -50398,6 +50436,37 @@ html.open {
   html {
     font-size: 0.75rem;
   }
+  .comTable-3 tr {
+    display: grid;
+    grid-template-columns: 6.25rem auto;
+  }
+  .comTable-3 tr th {
+    font-size: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    word-break: keep-all;
+    height: auto !important;
+    padding: 10px !important;
+  }
+  .comTable-3 tr td {
+    font-size: 1rem !important;
+    height: auto !important;
+    padding: 10px !important;
+  }
+  .comTable-3 tr th,
+  .comTable-3 tr td {
+    border-bottom: none !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .comTable-3 tr th .comBtn.ico-down,
+  .comTable-3 tr td .comBtn.ico-down {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 .header {
   position: relative;
@@ -51431,7 +51500,7 @@ html.open {
 .sharingSpace .calendar {
   margin: 3.75rem auto;
   width: 100%;
-  height: 30rem;
+  height: 40rem;
 }
 .sharingSpace .calendar .fc .fc-button-primary {
   background: #fff;
@@ -51461,6 +51530,114 @@ html.open {
     display: none;
   }
 }
+/* 달력 */
+.calendarWrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.calendarWrap .left {
+  position: relative;
+  flex: 1;
+}
+
+.calendarWrap .right {
+  display: none;
+  width: 20%;
+  margin-left: 0.9375rem;
+  margin-top: 3rem;
+  padding: 0.625rem;
+  border: 0.0625rem solid #aaa;
+  max-height: 27.9375rem;
+  overflow-y: scroll;
+}
+
+.calendarWrap .impossibleDate li {
+  font-size: 0.9375rem;
+  margin-bottom: 0.3125rem;
+}
+
+.calendarWrap .txtWrap {
+  position: absolute;
+  right: 0rem;
+  top: 5.3125rem;
+  display: flex;
+  gap: 1.5625rem;
+  font-size: 0.875rem;
+}
+
+.calendarWrap .txtWrap li {
+  position: relative;
+}
+
+.calendarWrap .txtWrap li:first-child::before {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: -0.9375rem;
+  display: block;
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  background: #3788d8;
+  opacity: 0.1;
+}
+
+.calendarWrap .txtWrap li:nth-of-type(2)::before {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: -0.9375rem;
+  display: block;
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  background: #aaa;
+}
+
+.calendarWrap .fc-today-button {
+  display: none !important;
+}
+
+.calendarWrap .fc .fc-button-primary {
+  background: #0195d3 !important;
+  border: 0.0625rem solid #0195d3 !important;
+  margin: 0 0.125rem !important;
+}
+
+.calendarWrap .fc .fc-button-primary:last-of-type {
+  margin-right: 0 !important;
+}
+
+.calendarWrap .fc .fc-toolbar {
+  justify-content: flex-start;
+}
+
+.calendarWrap .fc .fc-daygrid-day.fc-day-today {
+  background-color: transparent !important;
+}
+
+.calendarWrap .fc .fc-day-other {
+  background: #fff;
+}
+
+.unavailable {
+  background-color: #ddd;
+}
+
+.available {
+  background: aliceblue;
+}
+
+.fc-icon-chevron-left:before {
+  color: #fff;
+}
+
+.fc-icon-chevron-right:before {
+  color: #fff;
+}
+
 .searchArea {
   padding: 0 6.25rem;
   border-radius: 0.3125rem;
@@ -51578,6 +51755,11 @@ html.open {
   height: 13rem;
 }
 @media all and (max-width: 1400px) {
+  .cardcontent img {
+    height: auto;
+  }
+}
+@media all and (max-width: 1400px) {
   .cardcontent {
     width: calc(50% - 12px) !important;
   }
@@ -51625,7 +51807,7 @@ html.open {
   background-repeat: no-repeat;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 900px) {
   .classRegistration > .container.flex.gap15 {
     flex-direction: column;
   }
@@ -51635,6 +51817,7 @@ html.open {
   }
   .subcotent .con__left {
     width: 100% !important;
+    padding: 10px !important;
   }
 }
 
