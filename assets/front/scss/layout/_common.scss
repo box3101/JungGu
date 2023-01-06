@@ -584,6 +584,7 @@ html.open {
 	max-height: 75vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
+	padding-bottom: 50px;
 }
 .comPopupInfo.bgfff {
 	background: #fff;
@@ -660,10 +661,13 @@ html.open {
 	z-index: 10;
 }
 .comPopupBotBtn {
-	top: 10px;
+	top: auto;
+	left: 15px;
+	right: 15px;
+	bottom: 0;
 	margin-left: -15px;
 	margin-right: -16px;
-	position: relative;
+	position: absolute;
 }
 .comPopupBotBtn ul {
 	display: flex;
