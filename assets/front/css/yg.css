@@ -50979,17 +50979,17 @@ html.open {
 
 @media all and (max-width: 1400px) {
   html {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 @media all and (max-width: 900px) {
   html {
-    font-size: 13px;
+    font-size: 0.8125rem;
   }
 }
 @media all and (max-width: 600px) {
   html {
-    font-size: 12px;
+    font-size: 0.75rem;
     width: 100%;
   }
   html .subcotent .con__right colgroup {

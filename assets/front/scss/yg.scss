@@ -212,17 +212,17 @@
 // 미디어 쿼리
 @include media($web) {
 	html {
-		font-size: 14px;
+		font-size: 0.875rem;
 	}
 }
 @include media($tab) {
 	html {
-		font-size: 13px;
+		font-size: 0.8125rem;
 	}
 }
 @include media($mo) {
 	html {
-		font-size: 12px;
+		font-size: 0.75rem;
 		width: 100%;
 		.subcotent .con__right {
 			colgroup {
