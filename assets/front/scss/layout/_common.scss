@@ -284,7 +284,7 @@ html.open {
 		background-image: url(../img/bg-datapicker.png);
 		background-repeat: no-repeat;
 		background-position: top right;
-		background-size: 30px;
+		background-size: 1.875rem;
 		right: 0;
 	}
 }
@@ -603,6 +603,9 @@ html.open {
 	width: 850px;
 	height: auto;
 	background: #fff;
+	@include media($mo) {
+		width: 90% !important;
+	}
 }
 .comPopupHeader {
 	display: flex;
