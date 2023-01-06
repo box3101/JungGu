@@ -169,3 +169,18 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+@include media($web) {
+	.classRegistration > .container.flex.gap15 {
+		flex-direction: column;
+	}
+	.subcotent .con__left img {
+		width: 100% !important;
+		height: auto !important;
+	}
+	.subcotent .con__left {
+		width: 100% !important;
+	}
+}
+@include media($mo) {
+}

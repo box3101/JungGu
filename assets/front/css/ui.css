@@ -4268,6 +4268,7 @@ input:read-only:focus, input:read-only:hover {
     align-items: center;
     text-align: center;
     word-break: keep-all;
+    line-height: 1.5;
   }
 }
 
@@ -5100,6 +5101,7 @@ html.open {
   max-height: 75vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-bottom: 50px;
 }
 
 .comPopupInfo.bgfff {
@@ -5189,10 +5191,13 @@ html.open {
 }
 
 .comPopupBotBtn {
-  top: 10px;
+  top: auto;
+  left: 15px;
+  right: 15px;
+  bottom: 0;
   margin-left: -15px;
   margin-right: -16px;
-  position: relative;
+  position: absolute;
 }
 
 .comPopupBotBtn ul {
@@ -51248,7 +51253,7 @@ html.open {
 
 @media all and (max-width: 1400px) {
   .header .headerWrap .headerInner .logo a img {
-    width: 10rem;
+    width: 10rem !important;
   }
   .visual {
     padding-top: 20px;
@@ -51618,6 +51623,19 @@ html.open {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media all and (max-width: 1400px) {
+  .classRegistration > .container.flex.gap15 {
+    flex-direction: column;
+  }
+  .subcotent .con__left img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .subcotent .con__left {
+    width: 100% !important;
+  }
 }
 
 /*# sourceMappingURL=ui.css.map */

@@ -367,7 +367,7 @@
 
 @include media($web) {
 	.header .headerWrap .headerInner .logo a img {
-		width: 10rem;
+		width: 10rem !important;
 	}
 	.visual {
 		padding-top: 20px;
