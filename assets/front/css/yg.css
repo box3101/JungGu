@@ -4268,6 +4268,7 @@ input:read-only:focus, input:read-only:hover {
     align-items: center;
     text-align: center;
     word-break: keep-all;
+    line-height: 1.5;
   }
 }
 
@@ -50913,7 +50914,7 @@ html.open {
 }
 .subcotent .con__right table th {
   text-align: center;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #fff;
   height: 3.125rem;
   font-weight: bold;
@@ -50989,6 +50990,10 @@ html.open {
 @media all and (max-width: 600px) {
   html {
     font-size: 12px;
+    width: 100%;
+  }
+  html .subcotent .con__right colgroup {
+    display: none;
   }
 }
 
