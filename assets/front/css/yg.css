@@ -4006,6 +4006,12 @@ button {
   width: 0.6875rem;
   height: 0.6875rem;
 }
+@media all and (max-width: 600px) {
+  .comBtn.ico-down:before {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
 .comBtn.w100 {
   width: 100%;
 }
@@ -4073,6 +4079,7 @@ button {
   font-size: 0.8rem;
   color: !important;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeMid {
@@ -4081,6 +4088,7 @@ button {
   font-size: 1rem;
   color: !important;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeLg {
@@ -4092,6 +4100,7 @@ button {
   color: #fff !important;
   border: 0.0625rem solid #b5b5b5;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .sizeXlg {
@@ -4103,6 +4112,7 @@ button {
   color: #fff !important;
   border: 0.0625rem solid #b5b5b5;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .r-none {
@@ -4270,6 +4280,34 @@ input:read-only:focus, input:read-only:hover {
     word-break: keep-all;
     line-height: 1.5;
   }
+}
+
+.comTable-3 {
+  box-sizing: border-box;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.comTable-3 th {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #fff;
+  height: 3.125rem;
+  font-weight: bold;
+  vertical-align: middle;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #0085cf;
+}
+
+.comTable-3 td {
+  padding-left: 1.0625rem;
+  font-size: 1.125rem;
+  height: 3.125rem;
+  vertical-align: middle;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
 }
 
 @media all and (max-width: 1400px) {
@@ -4765,7 +4803,7 @@ html.open {
   background-image: url(../img/bg-datapicker.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 30px;
+  background-size: 1.875rem;
   right: 0;
 }
 
@@ -5093,6 +5131,11 @@ html.open {
   width: 850px;
   height: auto;
   background: #fff;
+}
+@media all and (max-width: 600px) {
+  .comPopupBox {
+    width: 90% !important;
+  }
 }
 
 .comPopupHeader {
@@ -50367,6 +50410,37 @@ html.open {
   html {
     font-size: 0.75rem;
   }
+  .comTable-3 tr {
+    display: grid;
+    grid-template-columns: 6.25rem auto;
+  }
+  .comTable-3 tr th {
+    font-size: 1rem !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.4;
+    word-break: keep-all;
+    height: auto !important;
+    padding: 10px !important;
+  }
+  .comTable-3 tr td {
+    font-size: 1rem !important;
+    height: auto !important;
+    padding: 10px !important;
+  }
+  .comTable-3 tr th,
+  .comTable-3 tr td {
+    border-bottom: none !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .comTable-3 tr th .comBtn.ico-down,
+  .comTable-3 tr td .comBtn.ico-down {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
 }
 .header {
   position: relative;
@@ -50890,10 +50964,6 @@ html.open {
 }
 .cardcontent.sm .chip-wrap {
   margin-top: 0.9375rem;
-}
-
-caption {
-  display: none;
 }
 
 .cardcontent p {
