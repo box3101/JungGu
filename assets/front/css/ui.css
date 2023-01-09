@@ -141,11 +141,11 @@ a {
 }
 
 .hidden {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: -10000000000000000px;
-  top: -999999px;
+  display: block !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -10000000000000000px !important;
+  top: -999999px !important;
   width: 0;
   height: 0;
   font-size: 1px;
@@ -5935,7 +5935,7 @@ button {
 
 /* =================== BUTTON =================== */
 .comBtn {
-  padding: 0.125rem 0.625rem;
+  padding: 0.125rem 1.025rem !important;
   min-width: 4.1875rem;
   display: inline-block;
   position: relative;
@@ -6266,7 +6266,7 @@ input:read-only:focus, input:read-only:hover {
     grid-template-columns: 6.25rem auto;
   }
   .comTable-2 th,
-  .comTable-2 td {
+.comTable-2 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -6357,7 +6357,7 @@ input:read-only:focus, input:read-only:hover {
     display: none;
   }
   .comSearchTable-1 th,
-  .comSearchTable-1 td {
+.comSearchTable-1 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -6671,8 +6671,8 @@ html.open {
 }
 @media all and (max-width: 1400px) {
   .subContent {
-    padding: 0 0.625rem;
-    padding-top: 1.5625rem;
+    padding: 0 15px !important;
+    padding-top: 1.5625rem !important;
   }
 }
 
@@ -6835,7 +6835,7 @@ html.open {
   background-image: url(../img/bg-datapicker.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 1.875rem;
+  background-size: 1.875rem !important;
   right: 0;
 }
 
@@ -52462,18 +52462,24 @@ html.open {
     padding: 10px !important;
   }
   .comTable-3 tr th,
-  .comTable-3 tr td {
+.comTable-3 tr td {
     border-bottom: none !important;
     display: flex;
     justify-content: center;
     flex-direction: column;
   }
   .comTable-3 tr th .comBtn.ico-down,
-  .comTable-3 tr td .comBtn.ico-down {
+.comTable-3 tr td .comBtn.ico-down {
     padding-left: 0 !important;
     margin-left: 0 !important;
   }
 }
+.agree {
+  padding: 0.625rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 .header {
   position: relative;
 }
@@ -52910,7 +52916,7 @@ html.open {
     margin: 0 10px;
   }
   .footer .inner,
-  .footer .left {
+.footer .left {
     flex-direction: column;
   }
   .footer .left address {
@@ -53480,6 +53486,119 @@ html.open {
   font-weight: 400;
 }
 
+.memmerWrap {
+  padding: 3.125rem 0;
+  text-align: center;
+}
+.memmerWrap__form {
+  display: inline-block;
+  width: 40.625rem;
+}
+
+.comRowType-1 {
+  width: 100%;
+}
+.comRowType-1 dl {
+  width: 100%;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.comRowType-1 dl dt {
+  font-size: 1rem;
+  color: #00489e;
+  flex-basis: 6.875rem;
+  text-align: left;
+  font-weight: bold;
+}
+.comRowType-1 dl dt label {
+  font-size: 1rem;
+  color: #00489e;
+  flex-basis: 6.875rem;
+  text-align: left;
+  font-weight: bold;
+}
+.comRowType-1 dl dd {
+  flex: 1;
+}
+.comRowType-1 dl dd .row {
+  padding-bottom: 0;
+  margin-right: 1rem;
+}
+.comRowType-1 dl dd .comInput::placeholder {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+}
+@media all and (max-width: 600px) {
+  .comRowType-1 dl dd .comInput::placeholder {
+    font-size: 0.8rem;
+  }
+}
+.comRowType-1 dl dd .comSelectBox {
+  flex: 1;
+}
+
+.memmerWrap__agree {
+  margin: 0 -6.25rem;
+  margin-top: 4.375rem;
+}
+.memmerWrap__agree p {
+  text-align: left;
+  font-size: 1.1875rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+  padding: 0 6.25rem;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem {
+  padding: 0 6.25rem;
+  margin-bottom: 0.375rem;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem:first-of-type {
+  padding-bottom: 0.9375rem;
+  border-bottom: 0.0625rem solid #aaa;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem > div {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem label {
+  color: #555555;
+  font-weight: 500 !important;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem .modalBtn {
+  font-size: 0.9375rem;
+  color: #b5b5b5;
+  letter-spacing: -0.0625rem;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem .modalBtn:hover {
+  color: #00489e;
+}
+
+@media all and (max-width: 600px) {
+  .memmerWrap__form {
+    width: 100%;
+  }
+  .memmerWrap__agree p {
+    width: 100%;
+  }
+  .memmerWrap__agree {
+    margin: 0;
+  }
+  .memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem {
+    padding: 0;
+  }
+  .memmerWrap {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .subcotent {
+    margin-bottom: 0 !important;
+  }
+}
 .sharingSpace .tabBtnWrap {
   display: flex;
   flex-wrap: wrap;
@@ -53824,6 +53943,18 @@ html.open {
   .subcotent .con__left {
     width: 100% !important;
     padding: 10px !important;
+  }
+}
+@media all and (max-width: 600px) {
+  .lecture.info ul.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lecture.info ul.flex .pl-26 {
+    margin-top: 20px;
+    padding-left: 0;
+    text-align: center;
   }
 }
 

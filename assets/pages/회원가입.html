@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta c har se t="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta name="description" content="">
+  <title>인천 중구청</title>
+
+  <!-- =================== Favicon =================== -->
+
+
+  <!-- =================== LINK =================== -->
+  <link rel="stylesheet" href="../front/css/ui.css">
+  <link rel="stylesheet" href="../front/css/yg.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="../front/js/jquery.js"></script>
+  <script src="../front/js/jquery-ui.js"></script>
+  <script src='../front/js/index.global.min.js'></script>
+  <script src="../front//js/datepicker.js"></script>
+  <script src="../front/js/swiper.js"></script>
+  <script src="../front/js/main.js"></script>
+
+  <!-- include -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="skip-nav">
+    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+    <a href="#contentmain" tabindex="1">본문 바로가기</a>
+  </div>
+
+  <div id="wrapper">
+
+    <!-- header -->
+    <!-- header -->
+    <header id="header" class="header">
+    </header>
+    <!-- header eee -->
+    <!-- header eee -->
+
+    <!-- sub -->
+    <main id="sub" class="main sub">
+      <div class="contentBody">
+        <!-- 컨텐츠가 들어갈 부분 -->
+        <div class="subContent" id="contentmain" tabindex="0">
+          <div class="subHead">
+            <div class="subHead__tit">회원가입</div>
+            <div class="subHead__right">
+              <ul class="subHead__location">
+                <li class="home">
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">평생학습도시</a>
+                </li>
+                <li class="last">
+                  <a href="#">회원가입</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="subBody">
+            <!-- 서브 컨텐츠 들어가는 부분 -->
+            <div class="subcotent join">
+              <div class="memmerWrap">
+                <div class="memmerWrap__form">
+                  <div class="comRowType-1">
+                    <dl>
+                      <dt><label for="a1">아이디</label></dt>
+                      <dd>
+                        <div class="flex gap5">
+                          <input type="text" id="a1" class="comInput">
+                          <button type="button" class="comBtn bgMain">중복확인</button>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt><label for="a2">비밀번호</label></dt>
+                      <dd>
+                        <div class="flex gap5">
+                          <input type="password" id="a2" class="comInput" placeholder="비밀번호(8~16자의 영문, 숫자, 특수기호)">
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <label for="a3">비밀번호 확인</label>
+                      </dt>
+                      <dd>
+                        <div class="flex gap5">
+                          <input type="password" id="a3" class="comInput" placeholder="비밀번호(8~16자의 영문, 숫자, 특수기호)">
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <label for="a4">이름</label>
+                      </dt>
+                      <dd>
+                        <div class="flex gap5">
+                          <input type="text" id="a4" class="comInput" placeholder="수료증에 표기됩니다. 정확한 이름을 입력하세요">
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>성별</dt>
+                      <dd>
+                        <div class="formRadio">
+                          <div class="row">
+                            <input type="radio" id="c1" name="chk1_01" value="1" checked="">
+                            <label for="c1">
+                              무료
+                            </label>
+                          </div>
+                          <div class="row">
+                            <input type="radio" id="c2" name="chk1_01" value="2">
+                            <label for="c2">
+                              유료
+                            </label>
+                            <input type="radio" id="c3" name="chk1_01" value="3">
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>생일</dt>
+                      </dt>
+                      <dd>
+                        <div class="flex gap15">
+                          <div class="comSelectBox">
+                            <label for="c1" class="hidden">년</label>
+                            <select name="" id="c1" class="comSelect">
+                              <option value="1990년">1990년</option>
+                            </select>
+                          </div>
+                          <div class="comSelectBox">
+                            <label for="c2" class="hidden">월</label>
+                            <select name="" id="c2" class="comSelect">
+                              <option value="10월">10월</option>
+                            </select>
+                          </div>
+                          <div class="comSelectBox">
+                            <label for="c3" class="hidden">일</label>
+                            <select name="" id="c3" class="comSelect">
+                              <option value="10일">10일</option>
+                            </select>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>휴대폰 번호</dt>
+                      <dd>
+                        <div class="flex gap5 aiCenter">
+                          <label for="d1" class="hidden">휴대폰 앞번호</label>
+                          <input type="text" id="d1" class="comInput" placeholder="010">
+                          <label for="d1" class="hidden">휴대폰 중간번호</label>
+                          -
+                          <input type="text" id="d1" class="comInput" placeholder="010">
+                          <label for="d1" class="hidden">휴대폰 끝번호</label>
+                          -
+                          <input type="text" id="d1" class="comInput" placeholder="010">
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl>
+                      <dt>
+                        <label for="d2">이메일</label>
+                      <dd>
+                        <div class="flex gap5">
+                          <label for="d2" class="hidden">이메일 입력</label>
+                          <input type="text" id="d2" class="comInput">
+                          <button class="comBtn bgMain">중복확인</button>
+                        </div>
+                      </dd>
+                      </dt>
+                    </dl>
+                    <dl>
+                      <dt>지역</dt>
+                      </dt>
+                      <dd>
+                        <div class="formRadio">
+                          <div class="row">
+                            <div class="flex gap10 aiCenter">
+                              <input type="radio" id="f1" name="chk1_02" value="1" checked="">
+                              <label for="f1">
+                                중구
+                              </label>
+                              <div class="comSelectBox">
+                                <label for="f1" class="hidden">동 선택</label>
+                                <select name="" id="f1" class="comSelect w100">
+                                  <option value="선택">선택</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <input type="radio" id="f2" name="chk1_02" value="2">
+                            <label for="f2">
+                              그 외 지역
+                            </label>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+
+                  <div class="memmerWrap__agree">
+                    <p>약관동의</p>
+                    <ul class="memmerWrap__agreeBox">
+                      <!-- 전체 동의 -->
+                      <li class="memmerWrap__agreeItem">
+                        <div class="formChkbox flex gap5 aiCenter">
+                          <label class="formChkbox__control control--checkbox" for="b1">전체 동의
+                            <input type="checkbox" id="b1">
+                          </label>
+                        </div>
+                      </li>
+                      <!-- 전체 동의 eee -->
+
+                      <!-- 이용약관 -->
+                      <li class="memmerWrap__agreeItem">
+                        <div class="formChkbox flex gap5 aiCenter jcBetween">
+                          <label class="formChkbox__control control--checkbox" for="b11">(필수) 이용약관
+                            <input type="checkbox" id="b11">
+                          </label>
+                          <button class="showPop modalBtn" data-id="terms">내용보기</button>
+                          <!-- 이용약관 팝업 -->
+                          <div class="comPopupWrap" role="dialog" id="terms">
+                            <div class="dim"></div>
+                            <div class="comPopupContainer" tabindex="0">
+                              <div class="comPopupBox">
+                                <div class="comPopupInfo bgfff comScroll">
+                                  <div class="comPopupInfoBox">
+                                    <div class="agreeRow">
+                                      <div class="agree">
+                                        <fieldset class="scrollable-element comScroll" tabindex="0">
+                                          <legend class="hidden">이용약관</legend>
+                                          <span class="hidden">스크롤을 끝까지 내려주세요. 그래야 동의 체크가 가능합니다.</span>
+                                          <div>
+                                            1. 다음 각 호의 1에 해당하는 경우 대관신청을 제한 할 수 있습니다. 단, 인천중구 주최의 행사는 제외합니다. <br><br>
+                                            ① 법령 또는 사회적 통념을 위반하는 경우 <br>
+                                            ② 상업적 목적의 제품설명회, 강연 등 판매행위를 위한 판촉행사, 정치적 집회, 시위, 종교행사 및 언론기자회견 등 <br>
+                                            ③ 평생학습관 시설 및 설비를 훼손할 우려가 있거나 관리·유지상 사용을 제한할 필요가 있다고 판단되는 경우 <br>
+                                            ④ 그 외 평생학습관 운영목적에 적합하지 않거나 수용하기에 부적절한 경우 <br><br>
+
+                                            2. 다음 각 호에 해당하는 경우 대관 승인을 취소, 변경 또는 그 사용을 제한, 정지시킬 수 있으며, 이 경우 사용자에게 손해가
+                                            있을지라도 인천중구는 그 배상책임을 지지
+                                            아니합니다. <br><br>
+                                            ① 대관승인 후 신청기재 사실이 허위로 밝혀졌을 때 <br>
+                                            ② 대관 승인된 목적과 실제 사용이 다른 경우 <br>
+                                            ③ 홈페이지에서 대관예약 후 결재시점이 지나도록 대금결재를 하지 않은 경우 <br>
+                                            ④ 대관시설의 질서를 현저하게 문란하게 한 경우 <br>
+                                            ⑤ 천재지변 및 기타 불가항력의 사유로 인하여 사용이 불가능한 때 <br><br>
+
+                                            3. 사용자는 다음과 같은 의무를 가집니다. <br><br>
+                                            ① 사용자는 대관시설 등의 사용에 대해 선량한 관리자로서 주의의무를 다하여야 한다. <br>
+                                            ② 사용자가 대관시설 등을 훼손하거나 멸실한 경우 시설 등을 원상회복하여야 하며 그에 따른 손해가 발생한 경우 이를 배상해야
+                                            한다.
+                                            <br>
+                                            ③ 사용자는 시설 등의 대관승인에 대한 일체의 권리를 양도하거나 전대하지 못한다. <br>
+                                            ④ 사용자는 시설사용과 관련하여 재단의 규정과 요구 사항을 성실히 이행하여야 한다. <br>
+                                            ⑤ 사용자가 사용기간 중 허가목적 달성을 위한 별도의 설비(이하 “시설물”이라함)를 설치하고자 할 경우 미리 구청장의 승인을 받아
+                                            사용자의 부담으로 시설물을 설치할 수
+                                            있다. <br>
+                                            ⑥ 제5항의 규정에 의하여 시설물을 설치하였을 경우 사용기간 만료 또는 중단과 동시에 이를 철거하고 원상복구 하여 구청장의 확인을
+                                            받아야 한다. <br>
+                                            ⑧ 사용자가 제6항의 규정에 의한 의무를 이행하지 아니할 때에는 이를 구청장이 원상복구하고 그 비용을 사용자로부터 징수한다. 만약
+                                            구청장이 철거할 시 파손에 대한 책임을
+                                            지지 않는다. <br>
+                                            사용자는 대관시설 등의 사용 시 안전하게 사용하여야 하며, 시설물 설치시 필요한 경우 안전관리계획을 인천중구와 협의하여 수립하여야
+                                            하며, 별도 시설물 설치로 인해
+                                            발생하는 손해배상이나 손실보상의 책임은 사용자에게
+                                            있다. <br><br>
+
+                                            4. 손해배상에 대한 안내 <br><br>
+                                            ①인천중구는 사용자에 대하여 제2조에 의해 대관계약을 취소, 정지시켰을 때에는 이로 인한 손해배상이나 손실보상의 책임을 지지
+                                            아니하며
+                                            사용자는 이의를 제기할 수 없다.
+                                            <br>
+                                            ②사용자는 대관시설 등의 사용에 따라 발생한 시설장비 등의 훼손, 멸실 등에 대한 재산상의 손해를 배상하여야 한다. <br>
+                                            ③사용자는 사용자의 귀책사유로 인하여 시설이용객의 신체적, 정신적 피해에 대하여 이를 배상하여야 한다. <br>
+                                            ④기타 사용자의 귀책사유로 인한 불법행위 책임 등에 관하여는 사회통념상 인정되는 관계법규 등에 의한다. <br> <br>
+
+                                            5. 그 외 <br><br>
+                                            ① 평생학습관 시설 이용 및 대관에 관한 사항은 인천광역시중구 평생학습진흥조례의 내용에 따릅니다.
+
+                                          </div>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- tabindex=“0” 추가 필요 -->
+                                  <div class="comPopupBotBtn">
+                                    <ul>
+                                      <li>
+                                        <button type="button" class="comBtn popClose">
+                                          닫기
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 이용약관 팝업 eee -->
+                        </div>
+                      </li>
+                      <!-- 이용약관 eee -->
+
+                      <!-- 개인정보 수집 이용에 대한 동의 -->
+                      <li class="memmerWrap__agreeItem">
+                        <div class="formChkbox flex gap5 aiCenter jcBetween">
+                          <label class="formChkbox__control control--checkbox" for="b22">(필수) 개인정보 수집 이용에 관한 동의
+                            <input type="checkbox" id="b22">
+                          </label>
+                          <button class="showPop modalBtn" data-id="promotion">내용보기</button>
+                          <!-- 개인정보 수집 동의 팝업 -->
+                          <div class="comPopupWrap" role="dialog" id="promotion">
+                            <div class="dim"></div>
+                            <div class="comPopupContainer" tabindex="0">
+                              <div class="comPopupBox">
+                                <div class="comPopupInfo bgfff comScroll">
+                                  <div class="comPopupInfoBox">
+                                    <div class="agreeRow">
+                                      <div class="agree">
+                                        <fieldset class="scrollable-element comScroll" tabindex="0">
+                                          <legend class="hidden">개인정보 수집 동의</legend>
+                                          <span class="hidden">스크롤을 끝까지 내려주세요. 그래야 동의 체크가 가능합니다.</span>
+                                          <div>
+                                            1. 다음 각 호의 1에 해당하는 경우 대관신청을 제한 할 수 있습니다. 단, 인천중구 주최의 행사는 제외합니다. <br><br>
+                                            ① 법령 또는 사회적 통념을 위반하는 경우 <br>
+                                            ② 상업적 목적의 제품설명회, 강연 등 판매행위를 위한 판촉행사, 정치적 집회, 시위, 종교행사 및 언론기자회견 등 <br>
+                                            ③ 평생학습관 시설 및 설비를 훼손할 우려가 있거나 관리·유지상 사용을 제한할 필요가 있다고 판단되는 경우 <br>
+                                            ④ 그 외 평생학습관 운영목적에 적합하지 않거나 수용하기에 부적절한 경우 <br><br>
+
+                                            2. 다음 각 호에 해당하는 경우 대관 승인을 취소, 변경 또는 그 사용을 제한, 정지시킬 수 있으며, 이 경우 사용자에게 손해가
+                                            있을지라도 인천중구는 그 배상책임을 지지
+                                            아니합니다. <br><br>
+                                            ① 대관승인 후 신청기재 사실이 허위로 밝혀졌을 때 <br>
+                                            ② 대관 승인된 목적과 실제 사용이 다른 경우 <br>
+                                            ③ 홈페이지에서 대관예약 후 결재시점이 지나도록 대금결재를 하지 않은 경우 <br>
+                                            ④ 대관시설의 질서를 현저하게 문란하게 한 경우 <br>
+                                            ⑤ 천재지변 및 기타 불가항력의 사유로 인하여 사용이 불가능한 때 <br><br>
+
+                                            3. 사용자는 다음과 같은 의무를 가집니다. <br><br>
+                                            ① 사용자는 대관시설 등의 사용에 대해 선량한 관리자로서 주의의무를 다하여야 한다. <br>
+                                            ② 사용자가 대관시설 등을 훼손하거나 멸실한 경우 시설 등을 원상회복하여야 하며 그에 따른 손해가 발생한 경우 이를 배상해야
+                                            한다.
+                                            <br>
+                                            ③ 사용자는 시설 등의 대관승인에 대한 일체의 권리를 양도하거나 전대하지 못한다. <br>
+                                            ④ 사용자는 시설사용과 관련하여 재단의 규정과 요구 사항을 성실히 이행하여야 한다. <br>
+                                            ⑤ 사용자가 사용기간 중 허가목적 달성을 위한 별도의 설비(이하 “시설물”이라함)를 설치하고자 할 경우 미리 구청장의 승인을 받아
+                                            사용자의 부담으로 시설물을 설치할 수
+                                            있다. <br>
+                                            ⑥ 제5항의 규정에 의하여 시설물을 설치하였을 경우 사용기간 만료 또는 중단과 동시에 이를 철거하고 원상복구 하여 구청장의 확인을
+                                            받아야 한다. <br>
+                                            ⑧ 사용자가 제6항의 규정에 의한 의무를 이행하지 아니할 때에는 이를 구청장이 원상복구하고 그 비용을 사용자로부터 징수한다. 만약
+                                            구청장이 철거할 시 파손에 대한 책임을
+                                            지지 않는다. <br>
+                                            사용자는 대관시설 등의 사용 시 안전하게 사용하여야 하며, 시설물 설치시 필요한 경우 안전관리계획을 인천중구와 협의하여 수립하여야
+                                            하며, 별도 시설물 설치로 인해
+                                            발생하는 손해배상이나 손실보상의 책임은 사용자에게
+                                            있다. <br><br>
+
+                                            4. 손해배상에 대한 안내 <br><br>
+                                            ①인천중구는 사용자에 대하여 제2조에 의해 대관계약을 취소, 정지시켰을 때에는 이로 인한 손해배상이나 손실보상의 책임을 지지
+                                            아니하며
+                                            사용자는 이의를 제기할 수 없다.
+                                            <br>
+                                            ②사용자는 대관시설 등의 사용에 따라 발생한 시설장비 등의 훼손, 멸실 등에 대한 재산상의 손해를 배상하여야 한다. <br>
+                                            ③사용자는 사용자의 귀책사유로 인하여 시설이용객의 신체적, 정신적 피해에 대하여 이를 배상하여야 한다. <br>
+                                            ④기타 사용자의 귀책사유로 인한 불법행위 책임 등에 관하여는 사회통념상 인정되는 관계법규 등에 의한다. <br> <br>
+
+                                            5. 그 외 <br><br>
+                                            ① 평생학습관 시설 이용 및 대관에 관한 사항은 인천광역시중구 평생학습진흥조례의 내용에 따릅니다.
+
+                                          </div>
+                                        </fieldset>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- tabindex=“0” 추가 필요 -->
+                                  <div class="comPopupBotBtn">
+                                    <ul>
+                                      <li>
+                                        <button type="button" class="comBtn popClose">
+                                          닫기
+                                        </button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- 개인정보 수집 동의 팝업 eee -->
+                        </div>
+                      </li>
+                      <!-- 개인정보 수집 이용에 대한 동의  eee -->
+
+                    </ul>
+                  </div>
+                </div>
+
+                <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter mt50">
+                  <li>
+                    <a href="../pages/대관신청-결제.html" type="button" class="comBtn sizeXlg bgMain">가입하기</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 서브 컨텐츠 들어가는 부분 eee -->
+
+          </div>
+          <!-- 컨텐츠가 들어갈 부분 eee -->
+        </div>
+    </main>
+    <!-- sub eee -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__nav">
+        <ul>
+          <li>
+            <a href="개인정보처리방침.html">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="#">저작권침해정책</a>
+          </li>
+          <li>
+            <a href="#">홈페이지 이용안내</a>
+          </li>
+          <li>
+            <a href="#">누리집 지도</a>
+          </li>
+          <li>
+            <a href="#">찾아오시는길</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="left">
+          <div class="logo">
+            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
+          </div>
+          <address>
+            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
+            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
+            E-Mail icjunggu@korea.kr
+          </address>
+        </div>
+        <div class="comSelectBox">
+          <label for="a3"></label>
+          <select name="" id="a3" class="comSelect">
+            <option value="">패밀리사이트</option>
+            <option value="">전체2</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <!-- footer eee -->
+  </div>
+
+
+</body>
+
+</html>

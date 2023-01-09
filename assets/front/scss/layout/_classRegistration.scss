@@ -187,4 +187,14 @@
 	}
 }
 @include media($mo) {
+	.lecture.info ul.flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.pl-26 {
+			margin-top: 20px;
+			padding-left: 0;
+			text-align: center;
+		}
+	}
 }

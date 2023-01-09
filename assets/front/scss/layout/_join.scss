@@ -49,3 +49,116 @@
 		font-weight: 400;
 	}
 }
+
+.memmerWrap {
+	padding: 3.125rem 0;
+	text-align: center;
+	&__form {
+		display: inline-block;
+		width: 40.625rem;
+	}
+}
+.comRowType-1 {
+	width: 100%;
+	dl {
+		width: 100%;
+		margin-bottom: 1.25rem;
+		display: flex;
+		align-items: center;
+		dt {
+			font-size: 1rem;
+			color: $cMain;
+			flex-basis: 6.875rem;
+			text-align: left;
+			font-weight: bold;
+			label {
+				font-size: 1rem;
+				color: $cMain;
+				flex-basis: 6.875rem;
+				text-align: left;
+				font-weight: bold;
+			}
+		}
+		dd {
+			flex: 1;
+			.row {
+				padding-bottom: 0;
+				margin-right: 1rem;
+			}
+			.comInput::placeholder {
+				font-size: 1rem;
+				font-weight: 500;
+				color: #555;
+				@include media($mo) {
+					font-size: 0.8rem;
+				}
+			}
+			.comSelectBox {
+				flex: 1;
+			}
+		}
+	}
+}
+
+.memmerWrap__agree {
+	margin: 0 -6.25rem;
+	margin-top: 4.375rem;
+	p {
+		text-align: left;
+		font-size: 1.1875rem;
+		font-weight: bold;
+		margin: 0 auto;
+		margin-bottom: 0.75rem;
+		padding: 0 6.25rem;
+	}
+	.memmerWrap__agreeBox {
+		.memmerWrap__agreeItem {
+			&:first-of-type {
+				padding-bottom: 0.9375rem;
+				border-bottom: 0.0625rem solid #aaa;
+			}
+			padding: 0 6.25rem;
+			margin-bottom: 0.375rem;
+			> div {
+				box-sizing: border-box;
+				margin: 0 auto;
+			}
+			label {
+				color: #555555;
+				font-weight: 500 !important;
+			}
+			.modalBtn {
+				font-size: 0.9375rem;
+				color: #b5b5b5;
+				letter-spacing: -0.0625rem;
+				text-decoration: underline;
+				text-underline-position: under;
+				&:hover {
+					color: $cMain;
+				}
+			}
+		}
+	}
+}
+
+@include media($mo) {
+	.memmerWrap__form {
+		width: 100%;
+	}
+	.memmerWrap__agree p {
+		width: 100%;
+	}
+	.memmerWrap__agree {
+		margin: 0;
+	}
+	.memmerWrap__agree .memmerWrap__agreeBox .memmerWrap__agreeItem {
+		padding: 0;
+	}
+	.memmerWrap {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	.subcotent {
+		margin-bottom: 0 !important;
+	}
+}
