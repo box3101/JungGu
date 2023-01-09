@@ -141,11 +141,11 @@ a {
 }
 
 .hidden {
-  display: block;
-  overflow: hidden;
-  position: absolute;
-  left: -10000000000000000px;
-  top: -999999px;
+  display: block !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  left: -10000000000000000px !important;
+  top: -999999px !important;
   width: 0;
   height: 0;
   font-size: 1px;
@@ -3934,7 +3934,7 @@ button {
 
 /* =================== BUTTON =================== */
 .comBtn {
-  padding: 0.125rem 0.625rem;
+  padding: 0.125rem 1.025rem !important;
   min-width: 4.1875rem;
   display: inline-block;
   position: relative;
@@ -4639,8 +4639,8 @@ html.open {
 }
 @media all and (max-width: 1400px) {
   .subContent {
-    padding: 0 0.625rem;
-    padding-top: 1.5625rem;
+    padding: 0 15px !important;
+    padding-top: 1.5625rem !important;
   }
 }
 
@@ -4803,7 +4803,7 @@ html.open {
   background-image: url(../img/bg-datapicker.png);
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: 1.875rem;
+  background-size: 1.875rem !important;
   right: 0;
 }
 
@@ -50442,6 +50442,12 @@ html.open {
     margin-left: 0 !important;
   }
 }
+.agree {
+  padding: 0.625rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
 .header {
   position: relative;
 }
@@ -51050,6 +51056,81 @@ html.open {
 }
 .lecture .pl-30 {
   padding-bottom: 1.875rem;
+}
+
+.subcotent .form {
+  padding: 9.5625rem 0 9.6875rem;
+  margin: 0 auto;
+  width: 35.7777%;
+  text-align: center;
+}
+.subcotent .form h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.subcotent .form__wrap {
+  margin: 2.625rem 0 2rem;
+}
+.subcotent .form__wrap .comBtn {
+  width: 100%;
+  font-size: 24px;
+  line-height: 50px;
+  font-weight: bold;
+}
+.subcotent .form__wrap .form__list {
+  padding: 1.5625rem 0 1.5625rem;
+  border-top: 2px solid #333333;
+  border-bottom: 2px solid #333333;
+  box-sizing: border-box;
+}
+.subcotent .form__wrap .form__list li {
+  margin-bottom: 1.125rem;
+}
+.subcotent .form__wrap .form__list li .formChkbox__control {
+  text-align: left;
+  padding-left: 0;
+  color: #555555;
+  font-weight: 500;
+}
+.subcotent .form__wrap .form__list li:last-child {
+  margin-bottom: 0;
+}
+.subcotent .form__wrap .links {
+  margin-top: 1.875rem;
+}
+.subcotent .form__wrap .links a {
+  font-size: 18px;
+  font-weight: 500;
+}
+.subcotent .form__wrap .login__connect {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: 0 1 calc(50% - 0.625rem);
+  flex-wrap: wrap;
+  color: #2d2d2d;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.subcotent .form__wrap .login__connect a {
+  display: inline-block;
+}
+.subcotent .form__wrap .login__connect li {
+  line-height: 50px;
+  width: calc(50% - 0.625rem);
+}
+.subcotent .form__wrap .login__connect img {
+  width: 1.9375rem;
+  height: 1.9375rem;
+  margin-right: 0.625rem;
+}
+.subcotent .form__wrap .login__connect .comBtn {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.subcotent .form__wrap .login__connect .w100 {
+  width: 100% !important;
 }
 
 @media all and (max-width: 1400px) {
