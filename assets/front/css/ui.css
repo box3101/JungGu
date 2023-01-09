@@ -5935,7 +5935,7 @@ button {
 
 /* =================== BUTTON =================== */
 .comBtn {
-  padding: 0.125rem 1.025rem !important;
+  padding: 0.125rem 1.025rem;
   min-width: 4.1875rem;
   display: inline-block;
   position: relative;
@@ -6508,7 +6508,7 @@ input:read-only:focus, input:read-only:hover {
   line-height: 1rem;
   font-size: 1.1rem;
   cursor: pointer;
-  color: #888;
+  color: #333 !important;
 }
 
 .formRadio label:before {
@@ -52474,12 +52474,6 @@ html.open {
     margin-left: 0 !important;
   }
 }
-.agree {
-  padding: 0.625rem;
-  line-height: 1.5;
-  text-align: left;
-}
-
 .header {
   position: relative;
 }
@@ -53542,6 +53536,11 @@ html.open {
 .memmerWrap__agree {
   margin: 0 -6.25rem;
   margin-top: 4.375rem;
+}
+.memmerWrap__agree .agree {
+  padding: 0.625rem;
+  line-height: 1.5;
+  text-align: left;
 }
 .memmerWrap__agree p {
   text-align: left;

@@ -450,6 +450,10 @@ html.open {
 	}
 }
 
+.subcotent .form__wrap .login__connect a {
+	display: inline-block;
+}
+
 // 페이징
 #paginate table {
 	display: flex;
@@ -961,10 +965,4 @@ html.open {
 			}
 		}
 	}
-}
-
-.agree {
-	padding: 0.625rem;
-	line-height: 1.5;
-	text-align: left;
 }

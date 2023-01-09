@@ -319,7 +319,7 @@ input:read-only {
 	line-height: 1rem;
 	font-size: 1.1rem;
 	cursor: pointer;
-	color: #888;
+	color: #333 !important;
 }
 .formRadio label:before {
 	content: "";

@@ -11,20 +11,20 @@
 @import "utility/mixin.scss"; // 재사용할 css 선언
 
 // 프로젝트에서 사용하는 외부 스타일 vandors
-@import "vandors/animate.scss";
-@import "vandors/swiper.scss";
-@import "vandors/datePicker.scss";
+// @import "vandors/animate.scss";
+// @import "vandors/swiper.scss";
+// @import "vandors/datePicker.scss";
 
 // 사이트 내에서 재사용가능한 작은 부분 components
-@import "components/card.scss";
-@import "components/button.scss";
-@import "components/popup.scss";
-@import "components/forms.scss";
+// @import "components/card.scss";
+// @import "components/button.scss";
+// @import "components/popup.scss";
+// @import "components/forms.scss";
 
 // 사이트 구조에 해당하는 레이아웃 layout
-@import "layout/common.scss";
-@import "layout/header.scss";
-@import "layout/footer.scss";
+// @import "layout/common.scss";
+// @import "layout/header.scss";
+// @import "layout/footer.scss";
 
 .subcotent {
 	margin-bottom: 3.125rem;
@@ -185,19 +185,17 @@
 		line-height: 1.75rem;
 
 		p {
-		border: 1px solid rgba(255,255,255,.5);
-		background: #f5f5f5;
-		padding: 1.875rem 1.25rem;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			background: #f5f5f5;
+			padding: 1.875rem 1.25rem;
 		}
 	}
-
 
 	.tit {
 		font-size: 1.625rem;
 		font-weight: bold;
 		word-spacing: -0.025;
 		margin-bottom: 1.25rem;
-
 	}
 	p {
 		color: #555555 !important;
@@ -211,45 +209,52 @@
 }
 
 .subcotent {
-	
+	margin-bottom: 0;
 	.form {
-		padding: 9.5625rem 0 9.6875rem;
+		padding: 5.5625rem 0;
 		margin: 0 auto;
 		width: 35.7777%;
 		text-align: center;
-		
+
 		h2 {
 			font-size: 2.5rem;
 			font-weight: 500;
 		}
-	} 
+	}
 	.form__wrap {
 		margin: 2.625rem 0 2rem;
-		
+
 		.comBtn {
 			width: 100%;
-			font-size: 24px;
-			line-height: 50px;
+			font-size: 1.5rem;
+			line-height: 3.125rem;
 			font-weight: bold;
-		} 
-		
+			transition: 0s;
+			transform: none;
+			cursor: pointer;
+			&:hover {
+				top: 0;
+			}
+		}
+
 		.form__list {
 			padding: 1.5625rem 0 1.5625rem;
 			border-top: 2px solid #333333;
 			border-bottom: 2px solid #333333;
 			box-sizing: border-box;
-			
+
 			li {
 				margin-bottom: 1.125rem;
-				
-				.formChkbox__control{
+
+				.formChkbox__control {
 					text-align: left;
 					padding-left: 0;
 					color: #555555;
 					font-weight: 500;
+					padding-left: 1.7rem;
 				}
 			}
-		
+
 			li:last-child {
 				margin-bottom: 0;
 			}
@@ -258,11 +263,39 @@
 			margin-top: 1.875rem;
 		}
 
-		.links a {
-			font-size: 18px;
-			font-weight: 500;
+		.links {
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				li {
+					position: relative;
+					flex: 1;
+					&:last-of-type {
+						@include after {
+							display: none;
+						}
+					}
+					@include after {
+						@include pCenterY;
+						right: 0;
+						width: 1px;
+						height: 100%;
+						background: #aaa;
+					}
+					a {
+						position: relative;
+						display: inline-block;
+						font-size: 1.0625rem;
+						color: #666;
+						font-weight: 500;
+						&:hover {
+							color: $cMain;
+						}
+					}
+				}
+			}
 		}
-		
+
 		.login__connect {
 			margin-top: 2rem;
 			@include flex(null, space-between, 1rem);
@@ -274,8 +307,14 @@
 
 			a {
 				display: inline-block;
+				div {
+					flex: 1;
+					font-size: 1rem;
+					color: #666;
+					text-align: center;
+				}
 			}
-			
+
 			li {
 				line-height: 50px;
 				width: calc(50% - 0.625rem);
@@ -286,17 +325,19 @@
 				height: 1.9375rem;
 				margin-right: 0.625rem;
 			}
-			
+
 			.comBtn {
 				font-size: 1.125rem;
 				font-weight: 500;
+				display: flex;
+				align-items: center;
+				height: 52px;
 			}
 
 			.w100 {
 				width: 100% !important;
 			}
 		}
-		
 	}
 }
 
@@ -305,10 +346,16 @@
 	html {
 		font-size: 0.875rem;
 	}
+	.subcotent .form {
+		width: 60%;
+	}
 }
 @include media($tab) {
 	html {
 		font-size: 0.8125rem;
+	}
+	.subcotent .form {
+		width: 90%;
 	}
 }
 @include media($mo) {
@@ -320,5 +367,27 @@
 				display: none;
 			}
 		}
+	}
+	.subcotent .form {
+		width: 100%;
+	}
+	.subcotent .form__wrap .login__connect li {
+		width: 100%;
+	}
+	.subcotent .form__wrap .login__connect a div {
+		font-size: 1.3rem;
+	}
+	.subcotent .form__wrap .form__list .comInput {
+		height: 4.5rem;
+		font-size: 1.2rem;
+	}
+	.subcotent .form__wrap .form__list li .formChkbox__control {
+		font-size: 1.2rem;
+	}
+	.subcotent .form__wrap .login__connect .comBtn {
+		justify-content: center;
+	}
+	.subcotent .form__wrap .login__connect a div {
+		flex: initial;
 	}
 }
