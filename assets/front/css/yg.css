@@ -473,6 +473,79 @@ a {
   width: 100% !important;
 }
 
+.form__wrap .con__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+}
+.form__wrap .con__top li {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  box-sizing: border-box;
+  flex: 0 1 50%;
+  padding: 1.0625rem 0;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+.form__wrap .id__top li {
+  border-top: 2px solid #999999;
+  border-left: 2px solid #999999;
+  border-right: 2px solid #999999;
+}
+.form__wrap .id__top li:nth-child(2) {
+  border-bottom: 2px solid #999999;
+  border-top: 2px solid #cecece;
+  border-left: 2px solid #cecece;
+  border-right: 2px solid #cecece;
+}
+.form__wrap .id__top li:nth-child(2) a {
+  color: #cecece;
+}
+.form__wrap .pw__top li:nth-child(1) {
+  border-bottom: 2px solid #999999;
+  border-top: 2px solid #cecece;
+  border-left: 2px solid #cecece;
+  border-right: 2px solid #cecece;
+}
+.form__wrap .pw__top li:nth-child(1) a {
+  color: #cecece;
+}
+.form__wrap .pw__top li:nth-child(2) {
+  border-top: 2px solid #999999;
+  border-left: 2px solid #999999;
+  border-right: 2px solid #999999;
+}
+.form__wrap .form__list__id li.flex, .form__wrap .form__list__pw li.flex {
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.form__wrap .form__list__id label, .form__wrap .form__list__pw label {
+  color: #555555;
+}
+.form__wrap .form__list__id .comInput, .form__wrap .form__list__pw .comInput {
+  flex: 0 1 78%;
+}
+.form__wrap .form__list__id p, .form__wrap .form__list__pw p {
+  text-align: left;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #555555;
+}
+.form__wrap .form__list__id input[id=a1]:focus + label, .form__wrap .form__list__pw input[id=a1]:focus + label {
+  color: #0085cf;
+}
+.form__wrap .form__list__pw li:nth-child(1) {
+  justify-content: flex-start;
+}
+.form__wrap .form__list__pw .formChkbox .formChkbox__control {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555555;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 0.875rem;

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta c har se t="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta name="description" content="">
+  <title>인천 중구청</title>
+
+  <!-- =================== Favicon =================== -->
+
+
+  <!-- =================== LINK =================== -->
+  <link rel="stylesheet" href="../front/css/ui.css">
+  <link rel="stylesheet" href="../front/css/yg.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src='../front/js/index.global.min.js'></script>
+  <script src="../front//js/datepicker.js"></script>
+  <script src="../front/js/swiper.js"></script>
+  <script src="../front/js/main.js"></script>
+
+  <!-- include -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script>
+</head>
+
+<body>
+
+  <div class="skip-nav">
+    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+    <a href="#contentmain" tabindex="1">본문 바로가기</a>
+  </div>
+
+  <div id="wrapper">
+
+    <!-- header -->
+    <!-- header -->
+    <header id="header" class="header">
+    </header>
+    <!-- header eee -->
+    <!-- header eee -->
+
+    <!-- sub -->
+    <main id="sub" class="main sub">
+      <div class="contentBody">
+        <!-- 컨텐츠가 들어갈 부분 -->
+        <div class="subContent" id="contentmain" tabindex="0">
+          <div class="subBody">
+            <div class="subcotent classRegistration">
+              <div class="form">
+                <div class="form__wrap">
+                  <ul class="pw__top con__top mb26">
+                    <li><a href="../pages/아이디찾기.html">아이디 찾기</a></li>
+                    <li><a href="../pages/비밀번호찾기.html">비밀번호 찾기</a></li>
+                  </ul>
+                  <ul class="form__list__pw">
+                    <li class="flex gap30 mb20">
+                      <div class="formChkbox flex gap5 aiCenter">
+                        <label class="formChkbox__control control--checkbox" for="c1">인증수단으로 찾기
+                          <input type="checkbox" id="c1">
+                        </label>
+                      </div>
+                      <div class="formChkbox flex gap5 aiCenter">
+                        <label class="formChkbox__control control--checkbox" for="c2">이메일로 찾기
+                          <input type="checkbox" id="c2">
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mb20">
+                      <p>회원가입 시 입력한 정보로 아이디를 찾을 수 있습니다</p>
+                    </li>
+                    <li class="flex mb20">
+                      <label for="a1">이름</label>
+                      <input id="a1" type="text" class="comInput">
+                    </li>
+                    <li class="flex mb20">
+                      <label for="a2">휴대폰번호</label>
+                      <input id="a2" type="text" class="comInput">
+                    </li>
+                    <li>
+                      <input type="submit" class="comBtn bgMain" value="비밀번호 찾기" style="background-color:#00489e;">
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 컨텐츠가 들어갈 부분 eee -->
+        </div>
+    </main>
+    <!-- sub eee -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__nav">
+        <ul>
+          <li>
+            <a href="개인정보처리방침.html">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="#">저작권침해정책</a>
+          </li>
+          <li>
+            <a href="#">홈페이지 이용안내</a>
+          </li>
+          <li>
+            <a href="#">누리집 지도</a>
+          </li>
+          <li>
+            <a href="#">찾아오시는길</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="left">
+          <div class="logo">
+            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
+          </div>
+          <address>
+            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
+            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
+            E-Mail icjunggu@korea.kr
+          </address>
+        </div>
+        <div class="comSelectBox">
+          <label for="a3"></label>
+          <select name="" id="a3" class="comSelect">
+            <option value="">패밀리사이트</option>
+            <option value="">전체2</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <!-- footer eee -->
+  </div>
+
+
+</body>
+
+</html>
