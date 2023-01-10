@@ -53616,6 +53616,23 @@ html.open {
     margin-bottom: 0 !important;
   }
 }
+.formSubmitBtn li {
+  flex: 1;
+}
+
+.registeredId p {
+  padding: 40px;
+  font-size: 16px;
+  background: #eee;
+  margin-bottom: 20px;
+}
+
+@media all and (max-width: 600px) {
+  .subcotent .form {
+    padding: 0;
+  }
+}
+
 .sharingSpace .tabBtnWrap {
   display: flex;
   flex-wrap: wrap;
@@ -53779,6 +53796,43 @@ html.open {
 
 .fc-icon-chevron-right:before {
   color: #fff;
+}
+
+.form__wrap .con__top {
+  gap: 0 !important;
+}
+
+.form__wrap .id__top li:nth-child(2) {
+  border-left: none !important;
+}
+
+.form__wrap .pw__top li:nth-child(1) {
+  border-right: none !important;
+}
+
+.form__wrap .form__list__id p,
+.form__wrap .form__list__pw p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #00489e;
+}
+
+.subcotent .form__wrap .comBtn {
+  font-size: 1.2rem;
+}
+.subcotent .form__wrap .comBtn:hover {
+  top: 0;
+}
+
+.form__wrap .id__top li a,
+.form__wrap .con__top li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.subcotent .form__wrap .comBtn.bgMain {
+  background: #00489e;
 }
 
 .searchArea {

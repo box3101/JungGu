@@ -367,15 +367,9 @@ a {
 }
 .subcotent .form__wrap .comBtn {
   width: 100%;
-  font-size: 1.5rem;
-  line-height: 3.125rem;
-  font-weight: bold;
-  transition: 0s;
-  transform: none;
+  height: 3.375rem;
+  font-size: 1.2rem;
   cursor: pointer;
-}
-.subcotent .form__wrap .comBtn:hover {
-  top: 0;
 }
 .subcotent .form__wrap .form__list {
   padding: 1.5625rem 0 1.5625rem;
@@ -516,25 +510,30 @@ a {
   border-left: 2px solid #999999;
   border-right: 2px solid #999999;
 }
-.form__wrap .form__list__id li.flex, .form__wrap .form__list__pw li.flex {
+.form__wrap .form__list__id li.flex,
+.form__wrap .form__list__pw li.flex {
   justify-content: space-between;
   align-items: center;
   font-size: 1.25rem;
   font-weight: 500;
 }
-.form__wrap .form__list__id label, .form__wrap .form__list__pw label {
+.form__wrap .form__list__id label,
+.form__wrap .form__list__pw label {
   color: #555555;
 }
-.form__wrap .form__list__id .comInput, .form__wrap .form__list__pw .comInput {
+.form__wrap .form__list__id .comInput,
+.form__wrap .form__list__pw .comInput {
   flex: 0 1 78%;
 }
-.form__wrap .form__list__id p, .form__wrap .form__list__pw p {
+.form__wrap .form__list__id p,
+.form__wrap .form__list__pw p {
   text-align: left;
   font-size: 1.125rem;
   font-weight: 500;
   color: #555555;
 }
-.form__wrap .form__list__id input[id=a1]:focus + label, .form__wrap .form__list__pw input[id=a1]:focus + label {
+.form__wrap .form__list__id input[id=a1]:focus + label,
+.form__wrap .form__list__pw input[id=a1]:focus + label {
   color: #0085cf;
 }
 .form__wrap .form__list__pw li:nth-child(1) {

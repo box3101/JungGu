@@ -174,3 +174,19 @@
 		margin-bottom: 0 !important;
 	}
 }
+.formSubmitBtn li {
+	flex: 1;
+}
+.registeredId {
+	p {
+		padding: 40px;
+		font-size: 16px;
+		background: #eee;
+		margin-bottom: 20px;
+	}
+}
+.subcotent .form {
+	@include media($mo) {
+		padding: 0;
+	}
+}
