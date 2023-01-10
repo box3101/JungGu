@@ -24,12 +24,6 @@
 		overflow-y: scroll;
 		font-size: 1rem;
 		line-height: 1.4;
-		&.h550 {
-			max-height: 450px;
-			@include media($mo) {
-				max-height: 300px;
-			}
-		}
 	}
 	.agreeOk {
 		position: relative;
@@ -172,21 +166,5 @@
 	}
 	.subcotent {
 		margin-bottom: 0 !important;
-	}
-}
-.formSubmitBtn li {
-	flex: 1;
-}
-.registeredId {
-	p {
-		padding: 40px;
-		font-size: 16px;
-		background: #eee;
-		margin-bottom: 20px;
-	}
-}
-.subcotent .form {
-	@include media($mo) {
-		padding: 0;
 	}
 }

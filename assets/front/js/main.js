@@ -29,7 +29,7 @@
       const $main = document.querySelector(".main");
       const activeName = "on";
       const $gnb = document.querySelector(".gnb");
-      const links = $gnb.querySelectorAll('.gnb a');
+      const links = $gnb.querySelectorAll('a');
       const subPenelHeight = [];
       let maxHeight = '';
 
@@ -407,6 +407,7 @@
 
   // 동의 스크롤
   const scrollable = () => {
+
     if (document.querySelector('.scrollable-element')) {
       const $$scrollableElement = document.querySelectorAll('.scrollable-element');
 
@@ -439,7 +440,7 @@
     }
   }
 
-  //공통 달력
+  //날짜
   $(function () {
     $(".setDatepicker").datepicker();
   });

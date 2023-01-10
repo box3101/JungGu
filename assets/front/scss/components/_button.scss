@@ -134,9 +134,6 @@ $btn-colors: (
 	bgBlue: (
 		bg-color: blue,
 	),
-	bgRed: (
-		bg-color: darkred,
-	),
 );
 
 @each $key, $value in $btn-colors {

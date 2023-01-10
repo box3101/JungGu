@@ -6075,12 +6075,6 @@ button {
   border: 0.0625rem solid;
 }
 
-.bgRed {
-  background-color: darkred;
-  color: !important;
-  border: 0.0625rem solid;
-}
-
 .sizeSm {
   padding: 0.6em 2.2em;
   font-size: 0.8rem;
@@ -7006,10 +7000,6 @@ html.open {
   .flex.moColumn .moItem {
     width: 100%;
   }
-}
-
-.subcotent .form__wrap .login__connect a {
-  display: inline-block;
 }
 
 #paginate table {
@@ -53466,14 +53456,6 @@ html.open {
   font-size: 1rem;
   line-height: 1.4;
 }
-.join .agreeBox.h550 {
-  max-height: 450px;
-}
-@media all and (max-width: 600px) {
-  .join .agreeBox.h550 {
-    max-height: 300px;
-  }
-}
 .join .agreeOk {
   position: relative;
   padding: 0.625rem 1.25rem;
@@ -53616,23 +53598,6 @@ html.open {
     margin-bottom: 0 !important;
   }
 }
-.formSubmitBtn li {
-  flex: 1;
-}
-
-.registeredId p {
-  padding: 40px;
-  font-size: 16px;
-  background: #eee;
-  margin-bottom: 20px;
-}
-
-@media all and (max-width: 600px) {
-  .subcotent .form {
-    padding: 0;
-  }
-}
-
 .sharingSpace .tabBtnWrap {
   display: flex;
   flex-wrap: wrap;
@@ -53739,8 +53704,8 @@ html.open {
   content: "";
   width: 0.625rem;
   height: 0.625rem;
-  background: #dbecfa;
-  border: 1px solid #666;
+  background: #3788d8;
+  opacity: 0.1;
 }
 
 .calendarWrap .txtWrap li:nth-of-type(2)::before {
@@ -53753,7 +53718,6 @@ html.open {
   width: 0.625rem;
   height: 0.625rem;
   background: #aaa;
-  border: 1px solid #666;
 }
 
 .calendarWrap .fc-today-button {
@@ -53787,7 +53751,7 @@ html.open {
 }
 
 .available {
-  background: dbecfa;
+  background: aliceblue;
 }
 
 .fc-icon-chevron-left:before {
@@ -53796,43 +53760,6 @@ html.open {
 
 .fc-icon-chevron-right:before {
   color: #fff;
-}
-
-.form__wrap .con__top {
-  gap: 0 !important;
-}
-
-.form__wrap .id__top li:nth-child(2) {
-  border-left: none !important;
-}
-
-.form__wrap .pw__top li:nth-child(1) {
-  border-right: none !important;
-}
-
-.form__wrap .form__list__id p,
-.form__wrap .form__list__pw p {
-  margin-top: 1rem;
-  font-size: 1rem;
-  color: #00489e;
-}
-
-.subcotent .form__wrap .comBtn {
-  font-size: 1.2rem;
-}
-.subcotent .form__wrap .comBtn:hover {
-  top: 0;
-}
-
-.form__wrap .id__top li a,
-.form__wrap .con__top li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.subcotent .form__wrap .comBtn.bgMain {
-  background: #00489e;
 }
 
 .searchArea {
