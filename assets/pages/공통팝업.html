@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="../front/css/ui.css">
+</head>
+
+<body>
+  <div class="wrap" style="padding: 20px;">
+    <div class="tit" style="padding-bottom: 15px; font-size: 20px; border-bottom: 1px solid #aaa;">공통 팝업</div>
+
+    <div class="btnList mt20 flex gap10">
+      <button type="button" class="comBtn sizeLg bgMain modalBtn" data-id="type1">팝업 스타일 1</button>
+      <button type="button" class="comBtn sizeLg bgMain modalBtn" data-id="type2">팝업 스타일 2</button>
+    </div>
+
+    <!-- type1 -->
+    <div class="comPopupWrap" role="dialog" id="type1">
+      <div class="dim"></div>
+      <div class="comPopupContainer">
+        <div class="comPopupBox">
+          <div class="comPopupInfo bgfff" tabindex="0">
+            <div class="comPopupInfoBox">
+              <div class="comTxt">
+                <p>
+                  검색대상이 없습니다.
+                  다시 검색해 주세요
+                </p>
+              </div>
+            </div>
+            <!-- tabindex=“0” 추가 필요 -->
+            <div class="comPopupBotBtn">
+              <ul>
+                <li>
+                  <button type="button" class="comBtn popClose">
+                    닫기
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- type2  -->
+    <div class="comPopupWrap" role="dialog" id="type2">
+      <div class="dim"></div>
+      <div class="comPopupContainer">
+        <div class="comPopupBox">
+          <div class="comPopupInfo bgfff" tabindex="0">
+            <div class="comPopupInfoBox">
+              <div class="comTxt">
+                <p>
+                  검색대상이 없습니다.
+                  다시 검색해 주세요
+                </p>
+              </div>
+            </div>
+            <!-- tabindex=“0” 추가 필요 -->
+            <div class="comPopupBotBtn">
+              <ul class="flex">
+                <li>
+                  <button type="button" class="comBtn">
+                    확인
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="comBtn popClose bgRed">
+                    취소
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script>
+    // 공통 접근성 팝업
+    const comPopupLayer = () => {
+      const comPopup = () => {
+
+        const $$comPopupWrap = document.querySelectorAll(".comPopupWrap");
+        const $$modalBtn = document.querySelectorAll(".modalBtn");
+        const $$closeBtn = document.querySelectorAll(".popClose");
+        const $$comPopContainer = document.querySelectorAll(".comPopupContainer");
+
+        // open popup
+        $$modalBtn.forEach((el) => {
+          el.addEventListener("click", () => {
+            openPop(el);
+          });
+        });
+
+        // close popup
+        $$comPopupWrap.forEach((popWrap) => {
+          popWrap.addEventListener("click", (e) => {
+            $$comPopContainer.forEach((element) => {
+              $$closeBtn.forEach((el) => {
+                const curentTarget = e.target;
+                if (curentTarget == el || curentTarget == element) {
+                  closePop(el);
+                }
+              });
+            });
+          });
+        });
+      }
+
+      const openPop = (el) => {
+        const target = el.getAttribute("data-id");
+        const targetId = `#${target}`;
+        document.querySelector(targetId).classList.add("on");
+      }
+
+      const closePop = (el) => {
+        el.closest(".comPopupWrap").classList.remove("on");
+      }
+
+      comPopup();
+    }
+
+    comPopupLayer();
+  </script>
+</body>
+
+</html>

@@ -6075,6 +6075,12 @@ button {
   border: 0.0625rem solid;
 }
 
+.bgRed {
+  background-color: darkred;
+  color: !important;
+  border: 0.0625rem solid;
+}
+
 .sizeSm {
   padding: 0.6em 2.2em;
   font-size: 0.8rem;
@@ -7000,6 +7006,10 @@ html.open {
   .flex.moColumn .moItem {
     width: 100%;
   }
+}
+
+.subcotent .form__wrap .login__connect a {
+  display: inline-block;
 }
 
 #paginate table {
@@ -53456,6 +53466,14 @@ html.open {
   font-size: 1rem;
   line-height: 1.4;
 }
+.join .agreeBox.h550 {
+  max-height: 450px;
+}
+@media all and (max-width: 600px) {
+  .join .agreeBox.h550 {
+    max-height: 300px;
+  }
+}
 .join .agreeOk {
   position: relative;
   padding: 0.625rem 1.25rem;
@@ -53704,8 +53722,8 @@ html.open {
   content: "";
   width: 0.625rem;
   height: 0.625rem;
-  background: #3788d8;
-  opacity: 0.1;
+  background: #dbecfa;
+  border: 1px solid #666;
 }
 
 .calendarWrap .txtWrap li:nth-of-type(2)::before {
@@ -53718,6 +53736,7 @@ html.open {
   width: 0.625rem;
   height: 0.625rem;
   background: #aaa;
+  border: 1px solid #666;
 }
 
 .calendarWrap .fc-today-button {
@@ -53751,7 +53770,7 @@ html.open {
 }
 
 .available {
-  background: aliceblue;
+  background: dbecfa;
 }
 
 .fc-icon-chevron-left:before {
