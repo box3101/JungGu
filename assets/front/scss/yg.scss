@@ -229,6 +229,19 @@
 			height: 3.375rem;
 			font-size: 1.2rem;
 			cursor: pointer;
+			transition: 0.1s ease-in-out;
+			
+			&::after {
+				display: none;
+			  }
+
+			&:hover {
+				background: $cMain !important;
+			}
+
+			&:hover div {
+				color: #fff !important;
+			}
 		}
 
 		.form__list {
@@ -292,8 +305,6 @@
 
 		.connect {
 			margin-top: 2rem;
-			@include flex(null, space-between, 1rem);
-			flex: 0 1 calc(50% - 0.625rem);
 			flex-wrap: wrap;
 			color: #2d2d2d;
 			font-size: 1.125rem;
@@ -303,15 +314,15 @@
 				display: inline-block;
 				div {
 					flex: 1;
-					font-size: 1rem;
-					color: #666;
+					font-size: 1.2rem;
 					text-align: center;
+					font-weight: bold;
 				}
 			}
 
 			li {
-				line-height: 50px;
-				width: calc(50% - 0.625rem);
+				width: 100%;
+				padding-bottom: 1rem;
 			}
 
 			img {
@@ -325,7 +336,7 @@
 				font-weight: 500;
 				display: flex;
 				align-items: center;
-				height: 52px;
+				height: 3.25rem;
 			}
 
 			.w100 {

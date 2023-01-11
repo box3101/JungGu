@@ -370,6 +370,16 @@ a {
   height: 3.375rem;
   font-size: 1.2rem;
   cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.subcotent .form__wrap .comBtn::after {
+  display: none;
+}
+.subcotent .form__wrap .comBtn:hover {
+  background: #00489e !important;
+}
+.subcotent .form__wrap .comBtn:hover div {
+  color: #fff !important;
 }
 .subcotent .form__wrap .form__list {
   padding: 1.5625rem 0 1.5625rem;
@@ -429,10 +439,6 @@ a {
 }
 .subcotent .form__wrap .connect {
   margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex: 0 1 calc(50% - 0.625rem);
   flex-wrap: wrap;
   color: #2d2d2d;
   font-size: 1.125rem;
@@ -443,13 +449,13 @@ a {
 }
 .subcotent .form__wrap .connect a div {
   flex: 1;
-  font-size: 1rem;
-  color: #666;
+  font-size: 1.2rem;
   text-align: center;
+  font-weight: bold;
 }
 .subcotent .form__wrap .connect li {
-  line-height: 50px;
-  width: calc(50% - 0.625rem);
+  width: 100%;
+  padding-bottom: 1rem;
 }
 .subcotent .form__wrap .connect img {
   width: 1.9375rem;
@@ -461,7 +467,7 @@ a {
   font-weight: 500;
   display: flex;
   align-items: center;
-  height: 52px;
+  height: 3.25rem;
 }
 .subcotent .form__wrap .connect .w100 {
   width: 100% !important;
