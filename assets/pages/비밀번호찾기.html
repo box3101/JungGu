@@ -13,8 +13,8 @@
 
 
   <!-- =================== LINK =================== -->
-  <link rel="stylesheet" href="../front/css/ui.css">
   <link rel="stylesheet" href="../front/css/yg.css">
+  <link rel="stylesheet" href="../front/css/ui.css">
 
   <!-- =================== SCRIPT =================== -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -57,40 +57,61 @@
           <div class="subBody">
             <div class="subcotent classRegistration">
               <div class="form">
+
+                <!-- TODO 비밀번호 찾기 -->
                 <div class="form__wrap">
                   <ul class="pw__top con__top mb26">
                     <li><a href="../pages/아이디찾기.html">아이디 찾기</a></li>
                     <li><a href="../pages/비밀번호찾기.html">비밀번호 찾기</a></li>
                   </ul>
                   <ul class="form__list__pw">
-                    <li class="flex gap30 mb20">
-                      <div class="formChkbox flex gap5 aiCenter">
-                        <label class="formChkbox__control control--checkbox" for="c1">인증수단으로 찾기
-                          <input type="checkbox" id="c1">
-                        </label>
-                      </div>
-                      <div class="formChkbox flex gap5 aiCenter">
-                        <label class="formChkbox__control control--checkbox" for="c2">이메일로 찾기
-                          <input type="checkbox" id="c2">
-                        </label>
-                      </div>
-                    </li>
                     <li class="mb20">
-                      <p>회원가입 시 입력한 정보로 아이디를 찾을 수 있습니다</p>
+                      <p>※ 회원가입 시 사용한 인증방법으로 선택해주세요</p>
+                    </li>
+                    <ul class="connect mt0">
+                      <li class="flex">
+                        <a href="#" class="comBtn sizeLg">
+                          <div>휴대폰 인증</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="comBtn sizeLg">
+                          <div>아이핀 인증</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </ul>
+                </div>
+                <!-- TODO 비밀번호 찾기 EEE -->
+
+                <!-- TODO 인증 완료 했을 때 -->
+                <div class="form__wrap">
+                  <ul class="pw__top con__top mb26">
+                    <li><a href="../pages/아이디찾기.html">아이디 찾기</a></li>
+                    <li><a href="../pages/비밀번호찾기.html">비밀번호 찾기</a></li>
+                  </ul>
+                  <ul class="form__list__pw">
+                    <li class="mb20">
+                      <p>※ 비밀번호를 재 설정 합니다 <br>
+                      영어소문자, 숫자, 특수문자를 모두 사용하여 8자 이상으로 입력해주세요</p>
                     </li>
                     <li class="flex mb20">
-                      <label for="a1">이름</label>
-                      <input id="a1" type="text" class="comInput">
+                      <label for="a1">비밀번호</label>
+                      <input id="a1" type="password" class="comInput w70">
                     </li>
                     <li class="flex mb20">
-                      <label for="a2">휴대폰번호</label>
-                      <input id="a2" type="text" class="comInput">
+                      <label for="a2">비밀번호 확인</label>
+                      <input id="a2" type="password" class="comInput w70">
                     </li>
+                  </ul>
+                  <ul class="formSubmitBtn flex gap10">
                     <li>
-                      <input type="submit" class="comBtn bgMain" value="비밀번호 찾기" style="background-color:#00489e;">
+                      <input type="submit" class="comBtn bgMain" value="비밀번호 재설정">
                     </li>
                   </ul>
                 </div>
+                <!-- TODO 인증 완료 했을 때 EEE -->
+
               </div>
             </div>
           </div>

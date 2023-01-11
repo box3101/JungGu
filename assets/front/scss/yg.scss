@@ -290,7 +290,7 @@
 			}
 		}
 
-		.login__connect {
+		.connect {
 			margin-top: 2rem;
 			@include flex(null, space-between, 1rem);
 			flex: 0 1 calc(50% - 0.625rem);
@@ -410,10 +410,7 @@
 			font-size: 1.125rem;
 			font-weight: 500;
 			color: #555555;
-		}
-
-		input[id="a1"]:focus + label {
-			color: #0085cf;
+			line-height: 1.2rem;
 		}
 	}
 
@@ -426,6 +423,10 @@
 			font-size: 1rem;
 			font-weight: 500;
 			color: #555555;
+		}
+
+		.w70 {
+			flex: 0 1 calc(73%);
 		}
 	}
 }
@@ -459,10 +460,10 @@
 	.subcotent .form {
 		width: 100%;
 	}
-	.subcotent .form__wrap .login__connect li {
+	.subcotent .form__wrap .connect li {
 		width: 100%;
 	}
-	.subcotent .form__wrap .login__connect a div {
+	.subcotent .form__wrap .connect a div {
 		font-size: 1.3rem;
 	}
 	.subcotent .form__wrap .form__list .comInput {
@@ -472,10 +473,10 @@
 	.subcotent .form__wrap .form__list li .formChkbox__control {
 		font-size: 1.2rem;
 	}
-	.subcotent .form__wrap .login__connect .comBtn {
+	.subcotent .form__wrap .connect .comBtn {
 		justify-content: center;
 	}
-	.subcotent .form__wrap .login__connect a div {
+	.subcotent .form__wrap .connect a div {
 		flex: initial;
 	}
 }

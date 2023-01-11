@@ -427,7 +427,7 @@ a {
 .subcotent .form__wrap .links ul li a:hover {
   color: #00489e;
 }
-.subcotent .form__wrap .login__connect {
+.subcotent .form__wrap .connect {
   margin-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -438,32 +438,32 @@ a {
   font-size: 1.125rem;
   font-weight: 500;
 }
-.subcotent .form__wrap .login__connect a {
+.subcotent .form__wrap .connect a {
   display: inline-block;
 }
-.subcotent .form__wrap .login__connect a div {
+.subcotent .form__wrap .connect a div {
   flex: 1;
   font-size: 1rem;
   color: #666;
   text-align: center;
 }
-.subcotent .form__wrap .login__connect li {
+.subcotent .form__wrap .connect li {
   line-height: 50px;
   width: calc(50% - 0.625rem);
 }
-.subcotent .form__wrap .login__connect img {
+.subcotent .form__wrap .connect img {
   width: 1.9375rem;
   height: 1.9375rem;
   margin-right: 0.625rem;
 }
-.subcotent .form__wrap .login__connect .comBtn {
+.subcotent .form__wrap .connect .comBtn {
   font-size: 1.125rem;
   font-weight: 500;
   display: flex;
   align-items: center;
   height: 52px;
 }
-.subcotent .form__wrap .login__connect .w100 {
+.subcotent .form__wrap .connect .w100 {
   width: 100% !important;
 }
 
@@ -531,10 +531,7 @@ a {
   font-size: 1.125rem;
   font-weight: 500;
   color: #555555;
-}
-.form__wrap .form__list__id input[id=a1]:focus + label,
-.form__wrap .form__list__pw input[id=a1]:focus + label {
-  color: #0085cf;
+  line-height: 1.2rem;
 }
 .form__wrap .form__list__pw li:nth-child(1) {
   justify-content: flex-start;
@@ -543,6 +540,9 @@ a {
   font-size: 1rem;
   font-weight: 500;
   color: #555555;
+}
+.form__wrap .form__list__pw .w70 {
+  flex: 0 1 73%;
 }
 
 @media all and (max-width: 1400px) {
@@ -572,10 +572,10 @@ a {
   .subcotent .form {
     width: 100%;
   }
-  .subcotent .form__wrap .login__connect li {
+  .subcotent .form__wrap .connect li {
     width: 100%;
   }
-  .subcotent .form__wrap .login__connect a div {
+  .subcotent .form__wrap .connect a div {
     font-size: 1.3rem;
   }
   .subcotent .form__wrap .form__list .comInput {
@@ -585,10 +585,10 @@ a {
   .subcotent .form__wrap .form__list li .formChkbox__control {
     font-size: 1.2rem;
   }
-  .subcotent .form__wrap .login__connect .comBtn {
+  .subcotent .form__wrap .connect .comBtn {
     justify-content: center;
   }
-  .subcotent .form__wrap .login__connect a div {
+  .subcotent .form__wrap .connect a div {
     flex: initial;
   }
 }
