@@ -285,7 +285,7 @@
 					@include after {
 						@include pCenterY;
 						right: 0;
-						width: 1px;
+						width: 0.0625rem;
 						height: 100%;
 						background: #aaa;
 					}
@@ -328,7 +328,6 @@
 			img {
 				width: 1.9375rem;
 				height: 1.9375rem;
-				margin-right: 0.625rem;
 			}
 
 			.comBtn {
@@ -342,6 +341,46 @@
 			.w100 {
 				width: 100% !important;
 			}
+		}
+
+		.jointop, .joinbt{
+			p {
+				color: #555555;
+				font-weight: 500;
+				font-size: 1.125rem;
+				margin-bottom: 1.25rem;
+			}
+		}
+
+		.joinbt {
+			li div {
+				font-size: 1.125rem;
+				font-weight: 500;
+			}
+		} 
+	}
+	.complete {
+		padding: 5.5625rem 0;
+		margin: 0 auto;
+		text-align: center;
+		
+		.comBtn {
+			width: 35.777%;
+		}
+
+		p {
+			font-size: 1.5rem;
+			line-height: 2.3125rem;
+			padding: 50px 0 30px;
+		}
+		.style1, .style2 { 
+			font-weight: bold;
+		}
+		.style1 {
+			color: #00398E;
+		}
+		.style2 {
+			color: #0074C6;
 		}
 	}
 }
@@ -457,6 +496,10 @@
 	.subcotent .form {
 		width: 90%;
 	}
+	.subcotent .form__wrap .complete .comBtn {
+		width: 50%;
+	}
+
 }
 @include media($mo) {
 	html {
@@ -475,7 +518,7 @@
 		width: 100%;
 	}
 	.subcotent .form__wrap .connect a div {
-		font-size: 1.3rem;
+		font-size: 1.2rem;
 	}
 	.subcotent .form__wrap .form__list .comInput {
 		height: 4.5rem;
@@ -489,5 +532,14 @@
 	}
 	.subcotent .form__wrap .connect a div {
 		flex: initial;
+	}
+	.subcotent .form__wrap .joinbt img {
+		margin-right: 0.6rem;
+	}
+	.subcotent .form__wrap .complete .comBtn {
+		text-align: center;
+	} 
+	.subcotent .form__wrap .complete .comBtn {
+		width: 60%;
 	}
 }
