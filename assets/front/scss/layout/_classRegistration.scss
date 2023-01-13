@@ -198,3 +198,27 @@
 		}
 	}
 }
+.select-lecture {
+	display: flex;
+	justify-content: flex-end;
+	ul {
+		display: flex;
+		gap: 5px;
+		margin-bottom: 10px;
+		button {
+			border-radius: 20px;
+			&:hover {
+				background: $cMain;
+			}
+			&:after {
+				border-radius: 20px;
+			}
+		}
+	}
+}
+
+.kakao-img {
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+}

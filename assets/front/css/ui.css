@@ -54263,5 +54263,29 @@ table input[type=radio] + label {
     text-align: center;
   }
 }
+.select-lecture {
+  display: flex;
+  justify-content: flex-end;
+}
+.select-lecture ul {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.select-lecture ul button {
+  border-radius: 20px;
+}
+.select-lecture ul button:hover {
+  background: #00489e;
+}
+.select-lecture ul button:after {
+  border-radius: 20px;
+}
+
+.kakao-img {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+}
 
 /*# sourceMappingURL=ui.css.map */
