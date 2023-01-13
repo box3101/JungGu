@@ -302,6 +302,10 @@ html.open {
 		span {
 			// color: $cMain;
 			font-weight: bold;
+			em {
+				font-weight: 400;
+				font-size: 1rem;
+			}
 		}
 		.title__icon::before {
 			content: "";
@@ -965,4 +969,66 @@ html.open {
 			}
 		}
 	}
+}
+.comTable-1 {
+	margin-top: 20px;
+	table-layout: fixed;
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+	border-top: 2px solid #484848;
+	background: #fff;
+}
+.comTable-1 th,
+.comTable-1 td {
+	padding: 3px 0;
+	height: 34px;
+	border: 1px solid #ddd;
+	min-height: 50px;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+table input[type="checkbox"] + label {
+	cursor: pointer;
+}
+.comTable-1 th.left,
+.comTable-1 td.left {
+	text-align: left;
+	padding-left: 10px;
+}
+.comTable-1 th {
+	background: #eaeaea;
+	border: 1px solid #d1d1d1;
+	border-left: none;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+}
+.comTable-1 td {
+	background: #fff;
+	text-align: center;
+	border-left: none;
+	font-size: 13px;
+	font-weight: 400;
+	height: 34px;
+	box-sizing: border-box;
+	word-break: keep-all;
+}
+.comTable-1 td.oneLine {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1;
+	vertical-align: middle;
+}
+.comTable-1 td a {
+	text-decoration: underline;
+	text-underline-position: under;
+	text-underline-offset: 2px;
+}
+table input[type="radio"] + label {
+	cursor: pointer;
 }

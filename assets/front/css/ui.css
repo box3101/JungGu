@@ -6066,11 +6066,17 @@ button {
 .bgWhite {
   background-color: white;
   color: #000 !important;
-  border: 0.0625rem solid;
+  border: 0.0625rem solid #999999;
 }
 
 .bgBlue {
   background-color: blue;
+  color: !important;
+  border: 0.0625rem solid;
+}
+
+.bgRed {
+  background-color: darkred;
   color: !important;
   border: 0.0625rem solid;
 }
@@ -6852,6 +6858,10 @@ html.open {
 }
 .row__head span {
   font-weight: bold;
+}
+.row__head span em {
+  font-weight: 400;
+  font-size: 1rem;
 }
 .row__head .title__icon::before {
   content: "";
@@ -52478,6 +52488,77 @@ html.open {
     margin-left: 0 !important;
   }
 }
+.comTable-1 {
+  margin-top: 20px;
+  table-layout: fixed;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-top: 2px solid #484848;
+  background: #fff;
+}
+
+.comTable-1 th,
+.comTable-1 td {
+  padding: 3px 0;
+  height: 34px;
+  border: 1px solid #ddd;
+  min-height: 50px;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+table input[type=checkbox] + label {
+  cursor: pointer;
+}
+
+.comTable-1 th.left,
+.comTable-1 td.left {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.comTable-1 th {
+  background: #eaeaea;
+  border: 1px solid #d1d1d1;
+  border-left: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.comTable-1 td {
+  background: #fff;
+  text-align: center;
+  border-left: none;
+  font-size: 13px;
+  font-weight: 400;
+  height: 34px;
+  box-sizing: border-box;
+  word-break: keep-all;
+}
+
+.comTable-1 td.oneLine {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.comTable-1 td a {
+  text-decoration: underline;
+  text-underline-position: under;
+  text-underline-offset: 2px;
+}
+
+table input[type=radio] + label {
+  cursor: pointer;
+}
+
 .header {
   position: relative;
 }
@@ -53625,6 +53706,56 @@ html.open {
   .subcotent .form {
     padding: 0;
   }
+}
+
+.profile .tit {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+.profile .txt-box {
+  display: flex;
+  gap: 30px;
+}
+.profile .txt-box .left {
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.profile .txt-box .left .img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.profile .txt-box .right {
+  opacity: 1;
+}
+.profile .txt-box .right .name {
+  opacity: 1;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555555;
+}
+.profile .txt-box .right .name span {
+  display: inline-block;
+  font-weight: 800;
+  color: #000;
+}
+.profile .txt-box .right ul.btns {
+  opacity: 1;
+  display: flex;
+  gap: 10px;
+}
+.profile .txt-box .right ul.btns li {
+  opacity: 1;
+}
+.profile .txt-box .right ul.btns li button {
+  opacity: 1;
 }
 
 .sharingSpace .tabBtnWrap {

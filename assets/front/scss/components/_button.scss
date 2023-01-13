@@ -130,9 +130,13 @@ $btn-colors: (
 	bgWhite: (
 		bg-color: white,
 		color: #000,
+		bd-color: #999999,
 	),
 	bgBlue: (
 		bg-color: blue,
+	),
+	bgRed: (
+		bg-color: darkred,
 	),
 );
 
