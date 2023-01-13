@@ -6054,7 +6054,7 @@ button {
 .bgMain {
   background-color: #00489e;
   color: #fff !important;
-  border: 0.0625rem solid;
+  border: 0.0625rem solid #00489e;
 }
 
 .bgBlack {
@@ -6078,7 +6078,7 @@ button {
 .bgRed {
   background-color: darkred;
   color: !important;
-  border: 0.0625rem solid;
+  border: 0.0625rem solid darkred;
 }
 
 .sizeSm {
@@ -7270,7 +7270,6 @@ html.open {
 .comPopupBotBtn ul li button {
   width: 100%;
   height: 40px;
-  background: #00489e;
 }
 .comPopupBotBtn ul li button:hover {
   top: 0;

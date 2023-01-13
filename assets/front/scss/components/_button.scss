@@ -122,6 +122,7 @@ $btn-colors: (
 	bgMain: (
 		bg-color: $cMain,
 		color: #fff,
+		bd-color: $cMain,
 	),
 	bgBlack: (
 		bg-color: #555,
@@ -137,6 +138,7 @@ $btn-colors: (
 	),
 	bgRed: (
 		bg-color: darkred,
+		bd-color: darkred,
 	),
 );
 
