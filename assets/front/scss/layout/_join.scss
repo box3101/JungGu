@@ -1,6 +1,7 @@
 .join {
 	.agreeRow {
 		position: relative;
+		margin-top: 1rem;
 		.moveBtn {
 			position: absolute;
 			top: -2.5rem;
@@ -24,6 +25,7 @@
 		overflow-y: scroll;
 		font-size: 1rem;
 		line-height: 1.4;
+		box-sizing: border-box;
 		&.h550 {
 			max-height: 450px;
 			@include media($mo) {
@@ -251,5 +253,26 @@
 	}
 	.row.mt60 {
 		margin-top: 10px !important;
+	}
+	.subcotent .form__wrap {
+		margin-top: 0;
+	}
+	.subcotent .form.pt1rem {
+		padding-top: 0;
+	}
+	.subcotent .form h2 {
+		padding-bottom: 1rem;
+	}
+}
+@include media($mo) {
+	.profile .txt-box .right ul.btns {
+		flex-direction: column;
+	}
+	.profile .txt-box .right ul.btns li a {
+		width: 100%;
+	}
+	.profile .txt-box {
+		flex-direction: column;
+		align-items: center;
 	}
 }

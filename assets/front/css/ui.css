@@ -6114,7 +6114,7 @@ button {
   width: 11.25rem;
   height: 3.125rem;
   line-height: 2.9rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
   color: #fff !important;
   border: 0.0625rem solid #b5b5b5;
@@ -52568,6 +52568,16 @@ table input[type=radio] + label {
 .form__wrap .form__list__pw label {
   font-size: 1.1rem;
 }
+@media all and (max-width: 600px) {
+  .form__wrap .form__list__id label,
+.form__wrap .form__list__pw label {
+    font-size: 1.1rem;
+    word-break: keep-all;
+    text-align: left;
+    line-height: 1.3;
+    flex: 0 0 30%;
+  }
+}
 
 .form__wrap .form__list__pw .w63 {
   flex: 0 1 63%;
@@ -53584,6 +53594,7 @@ table input[type=radio] + label {
 }
 .join .agreeRow {
   position: relative;
+  margin-top: 1rem;
 }
 .join .agreeRow .moveBtn {
   position: absolute;
@@ -53607,6 +53618,7 @@ table input[type=radio] + label {
   overflow-y: scroll;
   font-size: 1rem;
   line-height: 1.4;
+  box-sizing: border-box;
 }
 .join .agreeBox.h550 {
   max-height: 450px;
@@ -53833,6 +53845,27 @@ table input[type=radio] + label {
   }
   .row.mt60 {
     margin-top: 10px !important;
+  }
+  .subcotent .form__wrap {
+    margin-top: 0;
+  }
+  .subcotent .form.pt1rem {
+    padding-top: 0;
+  }
+  .subcotent .form h2 {
+    padding-bottom: 1rem;
+  }
+}
+@media all and (max-width: 600px) {
+  .profile .txt-box .right ul.btns {
+    flex-direction: column;
+  }
+  .profile .txt-box .right ul.btns li a {
+    width: 100%;
+  }
+  .profile .txt-box {
+    flex-direction: column;
+    align-items: center;
   }
 }
 .sharingSpace .tabBtnWrap {
