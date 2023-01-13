@@ -242,3 +242,14 @@
 		}
 	}
 }
+
+@include media($web) {
+	.row__head span em {
+		display: block;
+		margin-top: 9px;
+		margin-left: 20px;
+	}
+	.row.mt60 {
+		margin-top: 10px !important;
+	}
+}

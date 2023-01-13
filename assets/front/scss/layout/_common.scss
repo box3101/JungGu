@@ -295,6 +295,7 @@ html.open {
 	&__head {
 		font-size: 1.25rem;
 		padding: 1.5rem 0;
+		padding-bottom: 0.6rem;
 		border-bottom: 1px solid #333333;
 		font-size: 1.5rem;
 		color: #333333;
@@ -955,7 +956,7 @@ html.open {
 		td {
 			font-size: 1rem !important;
 			height: auto !important;
-			padding: 10px !important;
+			padding: 0.625rem !important;
 		}
 		th,
 		td {
@@ -971,20 +972,20 @@ html.open {
 	}
 }
 .comTable-1 {
-	margin-top: 20px;
+	margin-top: 1.25rem;
 	table-layout: fixed;
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
-	border-top: 2px solid #484848;
+	border-top: 0.125rem solid #484848;
 	background: #fff;
 }
 .comTable-1 th,
 .comTable-1 td {
-	padding: 3px 0;
-	height: 34px;
-	border: 1px solid #ddd;
-	min-height: 50px;
+	padding: 0.1875rem 0;
+	height: 2.125rem;
+	border: 0.0625rem solid #ddd;
+	min-height: 3.125rem;
 	vertical-align: middle;
 	line-height: 1.5;
 }
@@ -994,13 +995,13 @@ table input[type="checkbox"] + label {
 .comTable-1 th.left,
 .comTable-1 td.left {
 	text-align: left;
-	padding-left: 10px;
+	padding-left: 0.625rem;
 }
 .comTable-1 th {
 	background: #eaeaea;
-	border: 1px solid #d1d1d1;
+	border: 0.0625rem solid #d1d1d1;
 	border-left: none;
-	font-size: 13px;
+	font-size: 1rem;
 	font-weight: 600;
 	text-align: center;
 }
@@ -1008,9 +1009,9 @@ table input[type="checkbox"] + label {
 	background: #fff;
 	text-align: center;
 	border-left: none;
-	font-size: 13px;
+	font-size: 1rem;
 	font-weight: 400;
-	height: 34px;
+	height: 2.125rem;
 	box-sizing: border-box;
 	word-break: keep-all;
 }
@@ -1031,4 +1032,65 @@ table input[type="checkbox"] + label {
 }
 table input[type="radio"] + label {
 	cursor: pointer;
+}
+.subcotent .form.pt1rem {
+	padding-top: 1rem;
+}
+.form__wrap .form__list__id label,
+.form__wrap .form__list__pw label {
+	font-size: 1.1rem;
+}
+
+.form__wrap .form__list__pw .w63 {
+	flex: 0 1 63%;
+}
+.scroll-tbl-wrap {
+	@include media($web) {
+		position: relative;
+		z-index: 20;
+	}
+	> div {
+		@include media($web) {
+			position: relative;
+			width: 100%;
+			overflow-x: auto;
+		}
+	}
+	table {
+		@include media($web) {
+			width: auto;
+			min-width: 900px;
+			max-width: 1280px;
+			table-layout: auto;
+			text-align: center;
+		}
+		td {
+			padding-left: 0.325rem;
+			padding-right: 0.325rem;
+			@include media($web) {
+				padding: 3px 10px;
+			}
+		}
+	}
+}
+@include media($web) {
+	.scroll-wrap:before,
+	.scroll-tbl-wrap:before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		right: 0;
+		z-index: 0;
+		width: 43px;
+		height: 12px;
+		color: #333;
+		font-size: 14px;
+		@include bg-url("img", "hint-table-scroll.png");
+		z-index: 20;
+	}
+	.scroll-tbl-wrap colgroup {
+		@include media($web) {
+			display: none;
+		}
+	}
 }

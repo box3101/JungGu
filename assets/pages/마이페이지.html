@@ -88,19 +88,19 @@
                       </div>
                       <ul class="btns">
                         <li>
-                          <button type="button" class="comBtn  sizeSm bgWhite">
+                          <a target="_blank" title="새창 이동" href="../pages/비밀번호변경.html" class="comBtn  sizeSm bgWhite">
                             비밀번호 변경
-                          </button>
+                          </a>
                         </li>
                         <li>
-                          <button type="button" class="comBtn  sizeSm bgMain">
+                          <a target="_blank" title="새창 이동" href="../pages/회원정보수정.html" class="comBtn  sizeSm bgMain">
                             회원정보 수정
-                          </button>
+                          </a>
                         </li>
                         <li>
-                          <button type="button" class="comBtn  sizeSm bgBlack">
+                          <a target="_blank" title="새창 이동" href="../pages/회원탈퇴.html" class="comBtn  sizeSm bgBlack">
                             회원탈퇴
-                          </button>
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -116,78 +116,82 @@
                   </p>
                   <div class="row__body">
                     <div class="comTableWrap-1">
-                      <table class="comTable-1">
-                        <caption class="hidden">접수중인 강좌 번호,기관명,강의명,수강료,접수상태,교육기관,수강신청일시,결제하기,접수취소로 나열된 표</caption>
-                        <colgroup>
-                          <col width="100px">
-                          <col width="auto">
-                          <col width="auto">
-                          <col width="80px">
-                          <col width="100px">
-                          <col width="200px">
-                          <col width="200px">
-                          <col width="130px">
-                          <col width="130px">
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col">번호</th>
-                            <th scope="col">기관명</th>
-                            <th scope="col">강의명</th>
-                            <th scope="col">수강료</th>
-                            <th scope="col">접수상태</th>
-                            <th scope="col">교육기간</th>
-                            <th scope="col">수강신청일시</th>
-                            <th scope="col">결제하기</th>
-                            <th scope="col">접수취소</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>3</td>
-                            <td class="left">평생교육관</td>
-                            <td class="left">
-                              드론조종자 양성과정(드론국가자격증 1종 취득)
-                            </td>
-                            <td>무료</td>
-                            <td>접수완료</td>
-                            <td>2022-11-01 ~2022-11-10 </td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td></td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td class="left">운서동 행정복지센터</td>
-                            <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
-                            <td>유료</td>
-                            <td>추첨대기</td>
-                            <td>2022-11-01 ~ 2022-11-10</td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td></td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td class="left">영종동 행정복지센터</td>
-                            <td class="left">휴센터 휴공방 자개 그립톡</td>
-                            <td>유료</td>
-                            <td>결제대기</td>
-                            <td>2022-11-01 ~ 2022-11-10</td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td>
-                              <button type="button" class="comBtn bgMain sizeSm">결제하기</button>
-                            </td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">접수중인 강좌 번호,기관명,강의명,수강료,접수상태,교육기관,수강신청일시,결제하기,접수취소로 나열된 표</caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="230px">
+                              <col width="auto">
+                              <col width="70px">
+                              <col width="90px">
+                              <col width="120">
+                              <col width="120">
+                              <col width="130px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">기관명</th>
+                                <th scope="col">강의명</th>
+                                <th scope="col">수강료</th>
+                                <th scope="col">접수상태</th>
+                                <th scope="col">교육기간</th>
+                                <th scope="col">수강신청일시</th>
+                                <th scope="col">결제하기</th>
+                                <th scope="col">접수취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td class="left">평생교육관</td>
+                                <td class="left">
+                                  드론조종자 양성과정(드론국가자격증 1종 취득)
+                                </td>
+                                <td>무료</td>
+                                <td>접수완료</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td></td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">운서동 행정복지센터</td>
+                                <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                                <td>유료</td>
+                                <td>추첨대기</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td></td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="left">영종동 행정복지센터</td>
+                                <td class="left">휴센터 휴공방 자개 그립톡</td>
+                                <td>유료</td>
+                                <td>결제대기</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td>
+                                  <button type="button" class="comBtn bgMain sizeSm">결제하기</button>
+                                </td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -195,84 +199,495 @@
                 <!-- 수강중인 강좌 -->
                 <div class="row">
                   <p class="row__head">
-                    <span class="title__icon">접수중인 강좌
-                      <em>(교육시작 전인 강좌의 수강접수 현황입니다)</em>
+                    <span class="title__icon">수강중인 강좌 <em>(교육중인 강좌의 수강 현황입니다)</em>
                     </span>
                   </p>
                   <div class="row__body">
                     <div class="comTableWrap-1">
-                      <table class="comTable-1">
-                        <caption class="hidden">접수중인 강좌 번호,기관명,강의명,수강료,접수상태,교육기관,수강신청일시,결제하기,접수취소로 나열된 표</caption>
-                        <colgroup>
-                          <col width="100px">
-                          <col width="auto">
-                          <col width="auto">
-                          <col width="80px">
-                          <col width="100px">
-                          <col width="200px">
-                          <col width="200px">
-                          <col width="130px">
-                          <col width="130px">
-                        </colgroup>
-                        <thead>
-                          <tr>
-                            <th scope="col">번호</th>
-                            <th scope="col">기관명</th>
-                            <th scope="col">강의명</th>
-                            <th scope="col">수강료</th>
-                            <th scope="col">접수상태</th>
-                            <th scope="col">교육기간</th>
-                            <th scope="col">수강신청일시</th>
-                            <th scope="col">결제하기</th>
-                            <th scope="col">접수취소</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>3</td>
-                            <td class="left">평생교육관</td>
-                            <td class="left">
-                              드론조종자 양성과정(드론국가자격증 1종 취득)
-                            </td>
-                            <td>무료</td>
-                            <td>접수완료</td>
-                            <td>2022-11-01 ~2022-11-10 </td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td></td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td class="left">운서동 행정복지센터</td>
-                            <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
-                            <td>유료</td>
-                            <td>추첨대기</td>
-                            <td>2022-11-01 ~ 2022-11-10</td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td></td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>1</td>
-                            <td class="left">영종동 행정복지센터</td>
-                            <td class="left">휴센터 휴공방 자개 그립톡</td>
-                            <td>유료</td>
-                            <td>결제대기</td>
-                            <td>2022-11-01 ~ 2022-11-10</td>
-                            <td>2022-10-20 14:22:35</td>
-                            <td>
-                              <button type="button" class="comBtn bgMain sizeSm">결제하기</button>
-                            </td>
-                            <td>
-                              <button type="button" class="comBtn bgRed sizeSm">접수취소</button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">수강중인 강좌 번호,기관명,강의명,강사명,수강료,교육기관,수강신청일시, 출석현황으로 나열된 표 </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="230px">
+                              <col width="auto">
+                              <col width="70px">
+                              <col width="90px">
+                              <col width="185px">
+                              <col width="185px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">기관명</th>
+                                <th scope="col">강의명</th>
+                                <th scope="col">강사명</th>
+                                <th scope="col">수강료</th>
+                                <th scope="col">교육기간</th>
+                                <th scope="col">수강신청일시</th>
+                                <th scope="col">출석현황</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td class="left">평생교육관</td>
+                                <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득)</td>
+                                <td>홍길동</td>
+                                <td>무료</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td>3/10</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">운서동 행정복지센터</td>
+                                <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                                <td>임꺽정</td>
+                                <td>유료</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td>7/15</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 수강한 강좌-->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">수강한 강좌 <em>(수강을 완료한 강좌 내역입니다)</em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">수강한 강좌 번호,기관명,강의명,강사명,수강료,교육기관,수강신청일시, 출석현황으로 나열된 표 </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="230px">
+                              <col width="auto">
+                              <col width="70px">
+                              <col width="90px">
+                              <col width="120px">
+                              <col width="120px">
+                              <col width="130px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">기관명</th>
+                                <th scope="col">강의명</th>
+                                <th scope="col">강사명</th>
+                                <th scope="col">수강료</th>
+                                <th scope="col">교육기간</th>
+                                <th scope="col">수강신청일시</th>
+                                <th scope="col">출석현황</th>
+                                <th scope="col">수료증발급</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td class="left">평생교육관</td>
+                                <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득)</td>
+                                <td>홍길동</td>
+                                <td>무료</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td>3/10</td>
+                                <td><button type="button" class="comBtn bgMain sizeSm">발급</button></td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">운서동 행정복지센터</td>
+                                <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                                <td>임꺽정</td>
+                                <td>유료</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-10-20 14:22:35</td>
+                                <td>10/15</td>
+                                <td><button type="button" class="comBtn bgMain sizeSm">발급</button></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 관심강좌 -->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">관심강좌 <em>(나의 관심강좌 현황입니다)
+                      </em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">관심강좌 번호,기관명,강의명,선정방법,수강료,상태,접수기간, 교육기간, 관심강좌 해제로 나열된 표 </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="230px">
+                              <col width="auto">
+                              <col width="70px">
+                              <col width="90px">
+                              <col width="120px">
+                              <col width="120px">
+                              <col width="130px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">기관명</th>
+                                <th scope="col">강의명</th>
+                                <th scope="col">선정방법</th>
+                                <th scope="col">수강료</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">접수기간</th>
+                                <th scope="col">교육기간</th>
+                                <th scope="col">관심강좌 해제</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>3</td>
+                                <td class="left">평생교육관</td>
+                                <td class="left">드론조종자 양성과정(드론국가자격증 1종 취득)</td>
+                                <td>선착순</td>
+                                <td>무료</td>
+                                <td>접수중</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">관심해제</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">운서동 행정복지센터</td>
+                                <td class="left">푸드테라피-돌봄교육지도자 전문연수</td>
+                                <td>추첨</td>
+                                <td>유료</td>
+                                <td>접수중</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">관심해제</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="left">영종동 행정복지센터</td>
+                                <td class="left">휴센터 휴공방 자개 그립톡</td>
+                                <td>선착순</td>
+                                <td>유료</td>
+                                <td>접수마감</td>
+                                <td>2022-11-01 ~ 2022-11-10</td>
+                                <td>2022-11-01 ~2022-11-10 </td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">관심해제</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 대관신청 -->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">대관신청 내역 <em>(나의 대관예약 현황입니다)</em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">대관신청 내역 번호,기관명,강의명,선정방법,수강료,상태,접수기간, 교육기간, 관심강좌 해제로 나열된 표 </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="auto">
+                              <col width="100px">
+                              <col width="70px">
+                              <col width="90px">
+                              <col width="120px">
+                              <col width="130px">
+                              <col width="100px">
+                              <col width="170px">
+                              <col width="130px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">대관명</th>
+                                <th scope="col">대관일</th>
+                                <th scope="col">대관시간</th>
+                                <th scope="col">신청인원</th>
+                                <th scope="col">이용요금</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">결제상태</th>
+                                <th scope="col">대관신청일시</th>
+                                <th scope="col">결제하기</th>
+                                <th scope="col">예약취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>4</td>
+                                <td class="left">중강의실 1 (1층)</td>
+                                <td>2022-12-01</td>
+                                <td>오전</td>
+                                <td>30명</td>
+                                <td>55,000원</td>
+                                <td>승인대기</td>
+                                <td></td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td>
+                                  <button type="button" class="comBtn bgMain sizeSm">결제하기</button>
+                                </td>
+                                <td></td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td class="left">중강의실 1 (1층)</td>
+                                <td>2022-12-01</td>
+                                <td>오후</td>
+                                <td>30명</td>
+                                <td>75,000 원</td>
+                                <td>승인완료</td>
+                                <td>입금대기</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td></td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">예약취소</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">중강의실 1 (1층)</td>
+                                <td>2022-12-01</td>
+                                <td>야간</td>
+                                <td>30명</td>
+                                <td>75,000원</td>
+                                <td>승인완료</td>
+                                <td>입금완료</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td></td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">예약취소</button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="left">중강의실 1 (1층)</td>
+                                <td>2022-12-01</td>
+                                <td>야간</td>
+                                <td>30명</td>
+                                <td>75,000원</td>
+                                <td>승인취소</td>
+                                <td></td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td></td>
+                                <td></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 강사신청 내역 -->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">강사신청 내역 <em>(나의 강사신청 현황입니다)</em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">강사신청 내역 번호,강사명,교육분야,승인상태,상태,강사신청일시, 신청취소 해제로 나열된 표</caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="100px">
+                              <col width="auto">
+                              <col width="100px">
+                              <col width="170px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">강사명</th>
+                                <th scope="col">교육분야</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">강사신청일시</th>
+                                <th scope="col">신청취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td class="left">시민참여활동, 기초문해교육, 인문교양</td>
+                                <td>승인대기</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">신청취소</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 학습동아리 신청 내역 (나의 학습동아리 신청 현황입니다) -->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">학습동아리 신청 내역 <em>(나의 학습동아리 신청 현황입니다)</em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">학습동아리 신청 내역 번호,학습동아리명,활동구분,회원수,결성일,승인상태, 동아리 신청일시,신청취소 해제로 나열된 표
+                            </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="auto">
+                              <col width="auto">
+                              <col width="100px">
+                              <col width="120px">
+                              <col width="120px">
+                              <col width="200px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">학습동아리명</th>
+                                <th scope="col">활동구분</th>
+                                <th scope="col">회원수</th>
+                                <th scope="col">결성일</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">동아리 신청일시</th>
+                                <th scope="col">신청취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td class="left">배워서남주자</td>
+                                <td class="left">인문교양</td>
+                                <td>20명</td>
+                                <td>2022-09-10</td>
+                                <td>승인대기</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">신청취소</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 나눔공간 신청 내역 (나의 나눔공간 신청 현황입니다)-->
+                <div class="row">
+                  <p class="row__head">
+                    <span class="title__icon">나눔공간 신청 내역 <em>(나의 나눔공간 신청 현황입니다)</em>
+                    </span>
+                  </p>
+                  <div class="row__body">
+                    <div class="comTableWrap-1">
+                      <div class="scroll-tbl-wrap">
+                        <div class="board-data-list">
+                          <table class="comTable-1">
+                            <caption class="hidden">나눔공간 신청 내역 번호,공간명,자욕규분,수용가능인원,이용요금,승인상태, 신청일시,신청취소 해제로 나열된 표
+                            </caption>
+                            <colgroup>
+                              <col width="50px">
+                              <col width="auto">
+                              <col width="auto">
+                              <col width="100px">
+                              <col width="120px">
+                              <col width="120px">
+                              <col width="200px">
+                              <col width="130px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">공간명</th>
+                                <th scope="col">지역구분</th>
+                                <th scope="col">수용가능인원</th>
+                                <th scope="col">이용요금</th>
+                                <th scope="col">승인상태</th>
+                                <th scope="col">신청일시</th>
+                                <th scope="col">신청취소</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2</td>
+                                <td class="left">하늘도시농구교실</td>
+                                <td class="left">신표동</td>
+                                <td>30명</td>
+                                <td>무료</td>
+                                <td>승인대기</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">신청취소</button>
+                                </td>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td class="left">프리지어 9홀</td>
+                                <td class="left">연안동</td>
+                                <td>50명</td>
+                                <td>20,00원</td>
+                                <td>승인완료</td>
+                                <td>2022-11-01 15:28:45</td>
+                                <td>
+                                  <button type="button" class="comBtn bgRed sizeSm">신청취소</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
