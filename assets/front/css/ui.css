@@ -54229,10 +54229,22 @@ table input[type=radio] + label {
 .people-icon::before {
   content: "";
   display: inline-block;
-  width: 17px;
+  width: 12px;
+  height: 16px;
+  margin-right: 8px;
+  background-image: url(../img/ico-people.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.organ-icon::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
   height: 15px;
   margin-right: 8px;
-  background-image: url(../img/ico-date.png);
+  background-image: url(../img/ico-organ.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

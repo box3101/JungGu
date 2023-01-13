@@ -1,0 +1,46 @@
+<svg id="구성_요소_16" data-name="구성 요소 16" xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+  <g id="사각형_377" data-name="사각형 377" fill="none" stroke="#555" stroke-width="1">
+    <rect width="9" height="15" stroke="none"/>
+    <rect x="0.5" y="0.5" width="8" height="14" fill="none"/>
+  </g>
+  <g id="사각형_382" data-name="사각형 382" transform="translate(8 4)" fill="none" stroke="#555" stroke-width="1">
+    <rect width="8" height="11" stroke="none"/>
+    <rect x="0.5" y="0.5" width="7" height="10" fill="none"/>
+  </g>
+  <g id="패스_652" data-name="패스 652" transform="translate(3 6)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_654" data-name="패스 654" transform="translate(3 10)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_653" data-name="패스 653" transform="translate(8 6)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_659" data-name="패스 659" transform="translate(8 10)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_655" data-name="패스 655" transform="translate(10 6)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_658" data-name="패스 658" transform="translate(10 10)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_656" data-name="패스 656" transform="translate(12 6)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="패스_657" data-name="패스 657" transform="translate(12 10)" fill="none">
+    <path d="M0,0H3V3H0Z" stroke="none"/>
+    <path d="M 1 1 L 1 2 L 2 2 L 2 1 L 1 1 M 0 0 L 3 0 L 3 3 L 0 3 L 0 0 Z" stroke="none" fill="#555"/>
+  </g>
+  <g id="사각형_381" data-name="사각형 381" transform="translate(3 2)" fill="none" stroke="#555" stroke-width="1">
+    <rect width="3" height="3" stroke="none"/>
+    <rect x="0.5" y="0.5" width="2" height="2" fill="none"/>
+  </g>
+</svg>
