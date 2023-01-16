@@ -471,16 +471,77 @@
 					line-height: 2.25rem;
 					text-align: center;
 					word-break: keep-all;
-					width: 220px;
+					width: 13.75rem;
 					height: 13.75rem;
 					@include media($mo) {
 						width: 100%;
 						height: auto;
-						padding: 20px 0 !important;
+						padding: 1.25rem 0 !important;
 					}
 				}
 			}
 		}
+	}
+
+	.location {
+		.tit {
+			position: relative;
+			padding: 0 0 0.5625rem 1.75rem;
+
+			h3 {
+				font-size: 1.625rem;
+				font-weight: bold;
+				line-height: 2.3125rem;
+
+				@include before {
+					@include bg-url ("img", "icon-wave.svg");
+					@include bg-op;
+					position: absolute;
+					left: 0;
+					top: 0;
+					transform: translateY(50%);
+					width: 1.25rem;
+					height: 1.25rem;
+					
+				}
+			}
+
+			p {
+				font-size: 1.125rem;
+				line-height: 1.75rem;		
+			}
+		}
+    
+	}
+  .map {
+    width: 100%
+  }
+	.transport__wrap {
+			@include flex (null, null, 2.75rem);
+      padding: 1.25rem 0 4.375rem 2.5rem;
+      line-height: 1.75rem;
+
+      .transport {
+        font-size: 1rem;
+        text-indent: -0.9375rem;
+        span {
+          color: $cMain;
+          font-weight: 500;
+        }
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        padding-left: 1em;
+      }
+      
+      li::before {
+        content: "• ";
+      }
 	}
 }
 
@@ -605,7 +666,6 @@
 		}
 		padding-left: 0;
 	}
-
 	.subcotent .vision__wrap .top {
 		span::after {
 			content: none;
@@ -634,6 +694,9 @@
 			margin-top: 2rem;
 		}
 	}
+  .location .transport__wrap {
+    flex-direction: column;
+  }
 }
 @include media($mo) {
 	html {
@@ -685,4 +748,7 @@
 			width: 100%;
 		}
 	}
+  .subcotent .transport__wrap {
+    padding: 1.25rem 0 4.375rem 0.9375rem; 
+  }
 }
