@@ -329,7 +329,7 @@
         <!-- 컨텐츠가 들어갈 부분 -->
         <div class="subContent" id="contentmain" tabindex="0">
           <div class="subHead">
-            <div class="subHead__tit">평생학습기관</div>
+            <div class="subHead__tit">평생학습 동아리 현황</div>
             <div class="subHead__right">
               <ul class="subHead__location">
                 <li class="home">
@@ -339,182 +339,192 @@
                   <a href="#">네트워크</a>
                 </li>
                 <li class="last">
-                  <a href="#">평생학습기관</a>
+                  <a href="#">평생학습 동아리 현황</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="subBody">
-            <div class="subcotent classRegistration">
-              <!-- 검색바 -->
-              <div class="searchArea">
-                <div class="searchArea__info">
-                  <div class="searchArea__top">
-                    <div class="searchArea__top-arr">
-                      <div class="searchArea__tit">
-                        <label for="a1">강의명</label>
-                      </div>
-                      <div class="searchArea__input">
-                        <input type="text" id="a1" class="comInput" placeholder="검색어를 입력하세요.">
-                      </div>
-                    </div>
-                    <ul class="searchArea__btnWrap">
-                      <li>
-                        <button type="button" class="comBtn bgMain sizeMid bgSearch modalBtn" data-id="alert1"
-                          data-popup="accessibility">검색</button>
-                      </li>
-                      <!-- popup div에 role=dialog를 넣어주어 해당 요소가 popup 요소라는 것을 알려준다. -->
-                      <div class="comPopupWrap" role="dialog" id="alert1">
-                        <div class="dim"></div>
-                        <div class="comPopupContainer" tabindex="0">
-                          <div class="comPopupBox">
-                            <div class="comPopupInfo bgfff">
-                              <div class="comPopupInfoBox">
-                                <div class="comTxt">
-                                  <p>
-                                    검색대상이 없습니다.
-                                    다시 검색해 주세요
-                                  </p>
-                                </div>
-                              </div>
-                              <!-- tabindex=“0” 추가 필요 -->
-                              <div class="comPopupBotBtn">
-                                <ul>
-                                  <li>
-                                    <button type="button" class="comBtn popClose">
-                                      닫기
-                                    </button>
-                                  </li>
-                                </ul>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
-                </div>
+            <div class="subcotent network">
+              <!-- 서브 탭메뉴 -->
+              <ul class="comSubTab">
+                <li>
+                  <a href="../pages/평생학습동아리소개.html">평생학습 동아리 소개</a>
+                </li>
+                <li class="on">
+                  <a href="../pages/평생학습동아리현황.html">평생학습 동아리 현황</a>
+                </li>
+                <li>
+                  <a href="../pages/평생학습동아리신청.html">평생학습 동아리 신청</a>
+                </li>
+              </ul>
+              <!-- 서브 탭메뉴 eee -->
+              <div class="comSubTitle-1">
+                우리지역 평생학습 동아리를 소개합니다! 평생학습동아리를 등록하고 싶은 단체(개인)는 <br>
+                아래 버튼을 클릭하셔서 신청해주세요. 담당자 검토 후 승인이 완료되면 동아리 현황에 등록됩니다.
               </div>
-              <!-- 검색바 eee -->
 
               <!-- 리스트 -->
-              <div class="comTableWrap-1">
-                <div class="scroll-tbl-wrap">
-                  <div class="board-data-list">
-                    <table class="comTable-1 mt30">
-                      <caption class="hidden">구분 기관명, 대표젼화번호, 주소, 홈페이지, 강좌보기로 구성된 표</caption>
-                      <colgroup>
-                        <col width="15%">
-                        <col width="15%">
-                        <col width="10%">
-                        <col width="auto">
-                        <col width="auto">
-                        <col width="15%">
-                      </colgroup>
-                      <thead>
-                        <tr>
-                          <th>구분</th>
-                          <th>기관명</th>
-                          <th>대표 전화번호</th>
-                          <th>주소</th>
-                          <th>홈페이지</th>
-                          <th>강좌보기</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">
-                            글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
-                          </td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td>
-                            <button type="button" class="comBtn bgBlack sizeSm">강좌 보러가기 ➡️</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                        <tr>
-                          <td>행정복지센터</td>
-                          <td>운서동 행정복지센터</td>
-                          <td>032-123-4567</td>
-                          <td class="left">인천광역시 중구 흰바위로27번길 10</td>
-                          <td class="left"><a href="#" target="_blank"
-                              title="새창 이동">https://www.icjg.go.kr/dong/index</a>
-                          </td>
-                          <td></td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+              <div class="cardcontent-wrap cBlue">
+                <ul class="flex gap24">
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">인천 중구 2080 모두가 즐기는
+                              테니스 동아리 - 포티러브 테니...</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            나이제한 없이 인천에서 활동하는 테니스
+                            동아리입니다. 건강한 내일을 위해서 꾸준
+                            한 활동과 운동을 테니스로 즐기며 함께...
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">인천 중구 2080 모두가 즐기는
+                              테니스 동아리 - 포티러브 테니...</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            나이제한 없이 인천에서 활동하는 테니스
+                            동아리입니다. 건강한 내일을 위해서 꾸준
+                            한 활동과 운동을 테니스로 즐기며 함께...
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                  <li class="cardcontent flex">
+                    <a href="../pages/평생학습동아리현황-상세.html">
+                      <ul>
+                        <li class="content-bottom">
+                          <div class="tit">
+                            <p class="twoLine">댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠 라인&amp;라틴솔로 (여성전용) - 서부여성회관댄스스포츠
+                              라인&amp;라틴솔로
+                              (여성전용) - 서부여성회관</p>
+                          </div>
+                          <div class="subTxt threeLine">
+                            3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자3글자
+                          </div>
+                          <div class="date-icon txt"><span>생성일</span> : <em>22.10.11</em> </div>
+                          <div class="field-icon txt"><span>분야</span> : <em>시민참여교육</em> </div>
+                          <div class="people-icon txt"><span>대표자</span>: <em>홍*동</em></div>
+                        </li>
+                      </ul>
+                    </a>
+                  </li>
+                </ul>
               </div>
 
-
               <!-- 페이징 -->
-                   <!-- 페이징 -->
               <div id="paginate" class="customPaginateBar">
                 <table>
                   <caption class="hidden">페이징 네비게이션</caption>
@@ -565,7 +575,6 @@
                   </tbody>
                 </table>
               </div>
-              <!-- 페이징 eee -->
               <!-- 페이징 eee -->
 
             </div>

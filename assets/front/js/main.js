@@ -178,6 +178,8 @@
     const $currentNum = document.querySelector(".currentNum");
     const $allNum = document.querySelector(".allNum");
     const comSlidePaging = document.querySelector(".comSlidePaging");
+    const $visualSlide = document.querySelector("#visualSlide");
+    var $detailSlideList = document.querySelector("#detailSlideList");
 
     const changeTabIndex = () => {
       $$swiperAll.forEach((el) => {
@@ -195,7 +197,7 @@
     }
 
     // visualSlide
-    if ($$swiperAll.length > 1) {
+    if ($visualSlide) {
       comSlidePaging.style.display = "flex";
       const visualSlide = new Swiper('#visualSlide', {
         // autoplay: {
@@ -240,6 +242,47 @@
       });
     }
 
+    // 평생학습동아리 상세페이지 슬라이드
+    if ($detailSlideList) {
+      const detailSlideItem = new Swiper('#detailSlideItem', {
+        spaceBetween: 10,
+        slidesPerView: '4',
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const detailSlideList = new Swiper('#detailSlideList', {
+        navigation: {
+          nextEl: '.swiper-button-next', // 다음 버튼 클래스명
+          prevEl: '.swiper-button-prev', // 이번 버튼 클래스명
+        },
+        thumbs: {
+          swiper: detailSlideItem
+        },
+        a11y: {
+          prevSlideMessage: '이전 슬라이드',
+          nextSlideMessage: '다음 슬라이드',
+          slideLabelMessage: '총 {{slidesLength}}장의 슬라이드 중 {{index}}번 슬라이드 입니다.',
+        },
+        on: {
+          init: function () {
+            // changeTabIndex();
+          },
+          slideChangeTransitionStart: () => {
+            // changeTabIndex();
+          },
+        },
+      });
+
+      $$swiperBtn = document.querySelectorAll(".swiperBtn");
+      $$swiperBtn.forEach((el,idx)=>{
+      let slideIndex = idx;
+        el.addEventListener("keydown",(e)=>{
+          if(e.keyCode === 13){
+            detailSlideList.slideTo(slideIndex);
+          }
+        });
+      });
+    }
   }
 
   // 공통 접근성 팝업

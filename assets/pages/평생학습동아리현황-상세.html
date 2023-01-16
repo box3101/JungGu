@@ -17,8 +17,8 @@
   <link rel="stylesheet" href="../front/css/yg.css">
 
   <!-- =================== SCRIPT =================== -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="../front/js/jquery.js"></script>
+  <script src="../front/js/jquery-ui.js"></script>
   <script src='../front/js/index.global.min.js'></script>
   <script src="../front//js/datepicker.js"></script>
   <script src="../front/js/swiper.js"></script>
@@ -41,7 +41,6 @@
   </div>
 
   <div id="wrapper">
-
 
     <!-- header -->
     <header id="header" class="header">
@@ -330,129 +329,162 @@
         <!-- 컨텐츠가 들어갈 부분 -->
         <div class="subContent" id="contentmain" tabindex="0">
           <div class="subHead">
-            <div class="subHead__tit">대관신청</div>
+            <div class="subHead__tit">평생학습기관 동아리 상세</div>
             <div class="subHead__right">
               <ul class="subHead__location">
                 <li class="home">
                   <a href="#">Home</a>
                 </li>
                 <li>
-                  <a href="#">나눔공간</a>
+                  <a href="#">평생학습기관 동아리</a>
                 </li>
                 <li class="last">
-                  <a href="#">대관신청 결제</a>
+                  <a href="#">평생학습기관 동아리 상세</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="subBody">
-            <div class="subcotent sharingSpace">
+            <div class="subcotent classRegistration">
+              <div class="container flex gap15">
+                <div class="con__left">
+                  <!-- 332x208 -->
+                  <!-- 상세 슬라이드 -->
+                  <!-- top -->
+                  <div class="swiper-container" id="detailSlideList">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="http://ktsmemo.cdn3.cafe24.com/p/0024.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://ktsmemo.cafe24.com/p/0105.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://ktsmemo.cafe24.com/p/0083.jpg">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="https://ktsmemo.cafe24.com/p/0649.jpg">
+                      </div>
+                    </div>
 
-              <!-- 결제하기 -->
-              <div class="row">
-                <p class="row__head">
-                  <span class="title__icon">결제하기</span>
-                </p>
-                <div class="comTable-2">
-                  <table>
-                    <caption class="hidden">결제 하기</caption>
+                    <!-- 네비게이션 지정 -->
+                    <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                    <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+                  </div>
+                  <!-- top -->
+
+                  <!-- bottom -->
+                  <div class="swiper-container" id="detailSlideItem">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <button class="swiperBtn" type="button" title="슬라이드 상세 이미지">
+                          <img src="http://ktsmemo.cdn3.cafe24.com/p/0024.jpg">
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="swiperBtn" type="button" title="슬라이드 상세 이미지">
+                          <img src="https://ktsmemo.cafe24.com/p/0105.jpg">
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="swiperBtn" type="button" title="슬라이드 상세 이미지">
+                          <img src="https://ktsmemo.cafe24.com/p/0083.jpg">
+                        </button>
+                      </div>
+                      <div class="swiper-slide">
+                        <button class="swiperBtn" type="button" title="슬라이드 상세 이미지">
+                          <img src="https://ktsmemo.cafe24.com/p/0649.jpg">
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- bottom  eee-->
+                </div>
+                <div class="con__right">
+                  <table class="comTable-3">
+                    <caption class="hidden">강좌 상세 정보</caption>
                     <colgroup>
-                      <col width="130px">
-                      <col width="190px">
-                      <col width="100px">
-                      <col width="400px">
+                      <col width="180px">
+                      <col width="auto">
+                      <col width="180px">
+                      <col width="auto">
                     </colgroup>
                     <thead>
                       <tr>
-                        <th scope="row">대관 정보</th>
-                        <td colspan="3" class="lh15">
-                          대관실 :
-                          <span>중강의실 1(1층) </span>
-                          <br class="is-mo-show">
-                          <span class="is-mo-hide">|</span>
-                          날짜 :
-                          <span>2022년 10월 29일 </span>
-                          <br class="is-mo-show">
-                          <span class="is-mo-hide">|</span>
-                          시간 :
-                          <span>오전(09:00 ~ 12:00)</span>
-                        </td>
+                        <th scope="row">동아리명</th>
+                        </th>
+                        <td colspan="3">니들이인문학을알아</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <th scope="row">신청자 정보</th>
-                        <td colspan="3" class="lh15">
-                          <span>홍*동</span>
-                          <span class="is-mo-hide">|</span>
-                          <br class="is-mo-show">
-                          <span>010-****-6785</span>
+                        <th scope="row">활동분야</th>
+                        <td colspan="3">인문교양</td>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">감면대상 인증</th>
+                        <th scope="row">결성일</th>
+                        <td>2022-10-04</td>
+                        <th scope="row">회원수</th>
+                        </th>
+                        <td><span>20</span>명</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">대표자</th>
+                        <td>홍길동</td>
+                        <th scope="row">대표자 연락처</th>
+                        <td>010-1111-1111</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">실무자</th>
+                        <td>홍길동</td>
+                        <th scope="row">실무자 연락처</th>
+                        <td>010-2222-2222</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">모임일시</th>
+                        </th>
+                        <td colspan="3">매월 둘째 넷째주 토요일 오후 2시</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">모임장소</th>
+                        <td colspan="3">인천광역시 중구 신포로 278번길 80 701호</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">가입문의처</th>
                         <td colspan="3">
-                          <div class="flex gap5">
-                            <div class="comSelectBox w150">
-                              <select name="" id="" class="comSelect">
-                                <option value="">국가유공자</option>
-                              </select>
-                            </div>
-                            <button type="button" class="comBtn bgMain">인증</button>
-                          </div>
+                          <ul>
+                            <li>
+                              <span>전화</span> : <span>032-543-0324</span>,
+                            </li>
+                            <li>
+                              <span>이메일</span> : <span>sdmfls55@naver.com</span>
+                            </li>
+                          </ul>
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row">결제수단 선택</th>
-                        <td colspan="3">
-                          <div class="flex gap5 aiCenter">
-                            <button type="button" class="comBtn bgMain sizeLg">신용카드</button>
-                            <button type="button" class="comBtn bgBlack sizeLg">가상계좌</button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">현금영수증 신청</th>
-                        <td colspan="3">
-                          <div class="formRadio">
-                            <input type="radio" id="c1" name="chk1_01" value="1" checked="">
-                            <label for="c1">
-                              개인 &nbsp;&nbsp;
-                            </label>
-                            <input type="radio" id="c2" name="chk1_01" value="2">
-                            <label for="c2">
-                              사업자 &nbsp;&nbsp;
-                            </label>
-                            <input type="radio" id="c3" name="chk1_01" value="3">
-                            <label for="c3">
-                              미신청 &nbsp;&nbsp;
-                            </label>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">결제금액</th>
-                        <td colspan="3"><strong>15,000원</strong></td>
-                      </tr>
+                      <th scope="row">동아리 소개</th>
+                      <td colspan="3" style="padding: 1.25rem; line-height: 1.4;">
+                        역사와 문화에 대하여 연구하고 ,교육,봉사활동과 지역 주민간의 소통을 목적으로 한다.
+                        지역주민들의 자발적 참여와 주도로 학습내용의 개발, 진행, 현장 답사 등을 통해 얻은 지식을 지역사회(학교,기관,사회단체 등)와 공유하여
+                        문화시민으로서의 자긍심 함양과 정체성을 확립한다.
+                      </td>
                     </tbody>
                   </table>
                 </div>
               </div>
 
-              <!-- 취소, 신청 -->
-              <ul class="BottomBtnWrap flex gap5 aiCenter jcCenter">
+              <!-- 목록보기 -->
+              <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter">
                 <li>
-                  <button type="button" class="comBtn sizeXlg bgBlack">취소하기</button>
-                </li>
-                <li>
-                  <button type="button" class="comBtn sizeXlg bgMain">결제하기</button>
+                  <a href="../pages/평생학습동아리현황.html" class="comBtn sizeXlg bgBlack">목록보기</a>
                 </li>
               </ul>
+
             </div>
           </div>
+          <!-- 컨텐츠가 들어갈 부분 eee -->
         </div>
-        <!-- 컨텐츠가 들어갈 부분 eee -->
-      </div>
     </main>
     <!-- sub eee -->
 
@@ -498,9 +530,8 @@
       </div>
     </footer>
     <!-- footer eee -->
-
-
   </div>
+
 
 </body>
 

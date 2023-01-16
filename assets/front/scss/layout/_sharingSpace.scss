@@ -6,6 +6,7 @@
 		li {
 			width: calc(16.666% - (0.9375rem * 5) / 6);
 			button {
+				padding: 0;
 				color: #555 !important;
 				height: 3.225rem;
 				width: 100% !important;
@@ -31,10 +32,6 @@
 		.comSelectBox {
 			width: 12.5rem;
 		}
-	}
-	.comTable-2 {
-		margin-top: 1.25rem;
-		padding-bottom: 1.25rem;
 	}
 }
 

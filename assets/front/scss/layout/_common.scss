@@ -309,7 +309,7 @@ html.open {
 	&__head {
 		font-size: 1.25rem;
 		padding: 1.5rem 0;
-		padding-bottom: 0.6rem;
+		padding-bottom: 0.9rem;
 		border-bottom: 1px solid #333333;
 		font-size: 1.5rem;
 		color: #333333;
@@ -528,6 +528,7 @@ html.open {
 	color: #000 !important;
 	transition: all 0.4s;
 	line-height: 2.2rem;
+	cursor: pointer;
 	@include media($mo) {
 		width: 1.3rem;
 		height: 2.5rem;
@@ -699,6 +700,9 @@ html.open {
 	margin-left: -15px;
 	margin-right: -16px;
 	position: absolute;
+	li{
+		padding: 0!important;
+	}
 }
 .comPopupBotBtn ul {
 	display: flex;
@@ -842,6 +846,9 @@ html.open {
 @for $i from 1 to 1000 {
 	.w#{$i} {
 		width: #{$i}px !important;
+		@include media($mo){
+			width: 100%!important;
+		}
 	}
 }
 
@@ -977,6 +984,9 @@ html.open {
 	.comTable-3 tr {
 		display: grid;
 		grid-template-columns: 6.25rem auto;
+		ul li{
+			padding: 5px 0;
+		}
 		th {
 			font-size: 1rem !important;
 			display: flex;
@@ -991,13 +1001,16 @@ html.open {
 			font-size: 1rem !important;
 			height: auto !important;
 			padding: 0.625rem !important;
+			span{
+				display: contents;
+			}
 		}
 		th,
 		td {
 			border-bottom: none !important;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
+			vertical-align: middle;
+			display: grid;
+			align-items: center;
 			.comBtn.ico-down {
 				padding-left: 0 !important;
 				margin-left: 0 !important;
@@ -1119,20 +1132,30 @@ table input[type="radio"] + label {
 
 .comSubTab {
 	display: flex;
-	gap: 20px;
+	gap: 1.25rem;
+	flex-wrap: wrap;
+	@include media($mo){
+		gap:10px;
+	}
 	li {
+		@include media($mo){
+			width: 100%;
+		}
 		a {
 			display: inline-block;
 			width: 100%;
-			width: 230px;
-			height: 45px;
-			line-height: 45px;
+			width: 14.375rem;
+			height: 2.8125rem;
+			line-height: 2.8125rem;
 			background: #a8a8a8;
 			text-align: center;
 			color: #fff;
-			border-radius: 25px;
+			border-radius: 1.5625rem;
 			transition: all 0.4s;
-			font-size: 18px;
+			font-size: 1.125rem;
+			@include media($mo){
+				width: 100%;
+			}
 		}
 		&:hover a,
 		&.on a {
@@ -1164,15 +1187,19 @@ table input[type="radio"] + label {
 }
 
 .comSubTitle-1 {
-	margin-top: 30px;
-	padding: 25px 0;
+	margin-top: 1.875rem;
+	padding: 1.5625rem 0;
 	color: #a8a8a8;
-	border: 6px solid #a8a8a8;
-	font-size: 18px;
+	border: 0.375rem solid #a8a8a8;
+	font-size: 1.125rem;
 	color: #2d2d2d;
 	line-height: 1.5;
 	display: flex;
 	justify-content: center;
+	@include media($mo){
+		padding: 20px;
+		word-break: keep-all;
+	}
 }
 
 .field-icon::before {
@@ -1198,5 +1225,26 @@ table input[type="radio"] + label {
 .cardcontent-wrap.cBlue {
 	.tit p {
 		color: #0085cf;
+	}
+}
+.subcotent .vision__wrap span {
+	display: inline-block;
+	margin-right: 4.0625rem;
+	@include media($web) {
+		margin-right: 0;
+	}
+}
+@include media($tab) {
+	.subcotent .vision__wrap .bottom .list__wrap .list_tt {
+		flex-wrap: wrap;
+		flex-direction: row;
+	}
+	.subcotent .vision__wrap .bottom .list__wrap .list_tt li {
+		width: 48% !important;
+	}
+}
+@include media($mo){
+	.mt40{
+		margin-top: 2.5rem!important;
 	}
 }
