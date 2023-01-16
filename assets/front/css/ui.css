@@ -6082,7 +6082,7 @@ button {
 }
 
 .sizeSm {
-  padding: 0.6em 2.2em;
+  padding: 0.6em 1em;
   font-size: 0.9rem;
   color: !important;
   box-sizing: border-box;
@@ -6195,6 +6195,14 @@ button {
 }
 
 /* =================== chip eee =================== */
+@media all and (max-width: 600px) {
+  td .sizeSm {
+    padding: 0.6rem 0rem;
+  }
+  .subHead__location li:first-child:before {
+    display: none !important;
+  }
+}
 .comInput.textRight {
   text-align: right;
   padding-right: 0.9375rem;
@@ -6711,6 +6719,17 @@ html.open {
   position: relative;
   padding-left: 0.9375rem;
 }
+.subHead__location li:first-child:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 14px;
+  background-image: url("../img/ico-home.png");
+}
 .subHead__location li:after {
   content: "";
   display: block;
@@ -7042,7 +7061,7 @@ html.open {
 }
 
 .customPaginateBar {
-  padding-top: 40px !important;
+  padding-top: 2.5rem !important;
 }
 
 .ui-icon-seek-first {
@@ -7073,6 +7092,13 @@ html.open {
   color: #000 !important;
   transition: all 0.4s;
   line-height: 2.2rem;
+}
+@media all and (max-width: 600px) {
+  .customPageNumberBtn {
+    width: 1.3rem;
+    height: 2.5rem;
+    color: #000 !important;
+  }
 }
 
 .customPageNumberBtn:hover {
@@ -7270,9 +7296,14 @@ html.open {
 .comPopupBotBtn ul li button {
   width: 100%;
   height: 40px;
+  background: #00489e;
 }
 .comPopupBotBtn ul li button:hover {
   top: 0;
+}
+.comPopupBotBtn ul li button.bgRed {
+  background-color: darkred !important;
+  border: 0.0625rem solid darkred !important;
 }
 
 .accPopClose {
@@ -52406,6 +52437,18 @@ html.open {
   -webkit-box-orient: vertical;
 }
 
+.threeLine {
+  overflow: hidden;
+  white-space: normal;
+  line-height: 1.4;
+  height: 4.2em;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 .goTop {
   display: block;
   position: fixed; /*bottom:17.6875rem; */
@@ -52489,7 +52532,7 @@ html.open {
   }
 }
 .comTable-1 {
-  margin-top: 1.25rem;
+  margin-top: 0.4rem;
   table-layout: fixed;
   width: 100%;
   border-spacing: 0;
@@ -52535,7 +52578,6 @@ table input[type=checkbox] + label {
   font-weight: 400;
   height: 2.125rem;
   box-sizing: border-box;
-  word-break: keep-all;
 }
 
 .comTable-1 td.oneLine {
@@ -52553,6 +52595,9 @@ table input[type=checkbox] + label {
   text-decoration: underline;
   text-underline-position: under;
   text-underline-offset: 2px;
+}
+.comTable-1 td a:hover {
+  color: #00489e;
 }
 
 table input[type=radio] + label {
@@ -52614,6 +52659,27 @@ table input[type=radio] + label {
   }
 }
 
+.comSubTab {
+  display: flex;
+  gap: 20px;
+}
+.comSubTab li a {
+  display: inline-block;
+  width: 100%;
+  width: 230px;
+  height: 45px;
+  line-height: 45px;
+  background: #a8a8a8;
+  text-align: center;
+  color: #fff;
+  border-radius: 25px;
+  transition: all 0.4s;
+  font-size: 18px;
+}
+.comSubTab li:hover a, .comSubTab li.on a {
+  background: #00489e;
+}
+
 @media all and (max-width: 1400px) {
   .scroll-wrap:before,
 .scroll-tbl-wrap:before {
@@ -52635,6 +52701,45 @@ table input[type=radio] + label {
     display: none;
   }
 }
+.comSubTitle-1 {
+  margin-top: 30px;
+  padding: 25px 0;
+  color: #a8a8a8;
+  border: 6px solid #a8a8a8;
+  font-size: 18px;
+  color: #2d2d2d;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+}
+
+.field-icon::before {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 8px;
+  background-image: url(../img/ico-field.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cardcontent .content-bottom .subTxt {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 18px;
+  line-height: 1.4;
+}
+
+.cardcontent a {
+  box-sizing: border-box;
+}
+
+.cardcontent-wrap.cBlue .tit p {
+  color: #0085cf;
+}
+
 .header {
   position: relative;
 }
@@ -54104,6 +54209,11 @@ table input[type=radio] + label {
   gap: 0.625rem;
   flex-grow: 1;
 }
+@media all and (max-width: 600px) {
+  .searchArea__top-arr {
+    flex-direction: column;
+  }
+}
 .searchArea__tit, .searchArea__input {
   flex-grow: 1;
 }
@@ -54159,6 +54269,12 @@ table input[type=radio] + label {
   .searchArea__top .searchArea__btnWrap {
     width: 100%;
     justify-content: center;
+  }
+  .searchArea__top .searchArea__btnWrap li {
+    flex: 1;
+  }
+  .searchArea__top .searchArea__btnWrap button {
+    width: 100%;
   }
 }
 .txt-top {
@@ -54264,6 +54380,13 @@ table input[type=radio] + label {
   }
 }
 @media all and (max-width: 600px) {
+  .searchArea__tit {
+    flex-basis: auto;
+    margin-bottom: 5px;
+  }
+  .searchArea__input {
+    width: 100%;
+  }
   .lecture.info ul.flex {
     display: flex;
     flex-direction: column;

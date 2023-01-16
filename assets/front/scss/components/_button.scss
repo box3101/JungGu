@@ -152,7 +152,7 @@ $btn-colors: (
 
 $btn-sizes: (
 	sizeSm: (
-		padding: 0.6em 2.2em,
+		padding: 0.6em 1em,
 		fontSize: 0.9rem,
 	),
 	sizeMid: (
@@ -274,3 +274,12 @@ $btn-radius: (
 	}
 }
 /* =================== chip eee =================== */
+
+@include media($mo) {
+	td .sizeSm {
+		padding: 0.6rem 0rem;
+	}
+	.subHead__location li:first-child:before {
+		display: none !important;
+	}
+}

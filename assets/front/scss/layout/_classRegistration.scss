@@ -36,6 +36,9 @@
 		align-items: center;
 		gap: 0.625rem;
 		flex-grow: 1;
+		@include media($mo) {
+			flex-direction: column;
+		}
 	}
 	&__tit,
 	&__input {
@@ -95,6 +98,12 @@
 		.searchArea__btnWrap {
 			width: 100%;
 			justify-content: center;
+			li {
+				flex: 1;
+			}
+			button {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -198,6 +207,13 @@
 	}
 }
 @include media($mo) {
+	.searchArea__tit {
+		flex-basis: auto;
+		margin-bottom: 5px;
+	}
+	.searchArea__input {
+		width: 100%;
+	}
 	.lecture.info ul.flex {
 		display: flex;
 		flex-direction: column;

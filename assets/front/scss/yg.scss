@@ -230,10 +230,10 @@
 			font-size: 1.2rem;
 			cursor: pointer;
 			transition: 0.1s ease-in-out;
-			
+
 			&::after {
 				display: none;
-			  }
+			}
 
 			&:hover {
 				background: $cMain !important;
@@ -343,7 +343,8 @@
 			}
 		}
 
-		.jointop, .joinbt{
+		.jointop,
+		.joinbt {
 			p {
 				color: #555555;
 				font-weight: 500;
@@ -357,13 +358,13 @@
 				font-size: 1.125rem;
 				font-weight: 500;
 			}
-		} 
+		}
 	}
 	.complete {
 		padding: 5.5625rem 0;
 		margin: 0 auto;
 		text-align: center;
-		
+
 		.comBtn {
 			width: 35.777%;
 		}
@@ -373,14 +374,15 @@
 			line-height: 2.3125rem;
 			padding: 50px 0 30px;
 		}
-		.style1, .style2 { 
+		.style1,
+		.style2 {
 			font-weight: bold;
 		}
 		.style1 {
-			color: #00398E;
+			color: #00398e;
 		}
 		.style2 {
-			color: #0074C6;
+			color: #0074c6;
 		}
 	}
 	.text__wrap {
@@ -390,7 +392,6 @@
 			font-size: 1.25rem;
 			line-height: 2rem;
 			word-break: keep-all;
-
 		}
 		p:nth-child(1) {
 			color: $cMain;
@@ -407,36 +408,35 @@
 		padding-left: 2.5rem;
 
 		.flex__box {
-			@include flex (center, flex-start, null);
+			@include flex(center, flex-start, null);
 			flex-wrap: nowrap;
 		}
-		
+
 		span {
 			color: $cMain;
 			font-size: 1.375rem;
 			font-weight: 500;
 		}
-		
+
 		.top {
 			span::after {
-				content: '········';
+				content: "········";
 				padding: 0 12.1875rem 0 3.9063rem;
 			}
-			
+
 			.box_tt {
 				flex: 0 1 calc(50% - 10px);
 				font-size: 1.875rem;
 				color: #232323;
 				border: 1px solid none;
 				border-radius: 3.75rem;
-				padding: .9375rem 6.75rem 1.5rem;
+				padding: 0.9375rem 2.75rem 1.5rem;
 				box-shadow: rgba(45, 45, 45, 0.2) 3px 3px 12px;
 				box-sizing: border-box;
 				line-height: 2.5rem;
 				text-align: center;
 				word-break: keep-all;
 			}
-
 		}
 
 		.middle {
@@ -445,23 +445,25 @@
 				width: 70%;
 			}
 			span::after {
-				content: '········';
+				content: "········";
 				padding: 0 2.9375rem 0 3.9063rem;
 			}
 		}
 
-
 		.bottom {
 			span::after {
-				content: '········';
+				content: "········";
 				padding: 0 3.25rem 0 1.4688rem;
 			}
 
 			.list__wrap .list_tt {
-				@include flex (center, center, 1rem);
+				@include flex(center, center, 1rem);
 				width: 70%;
 
 				li {
+					display: flex;
+					align-items: center;
+					justify-content: center;
 					border: 1px solid none;
 					box-shadow: rgba(45, 45, 45, 0.16) 3px 3px 12px;
 					box-sizing: border-box;
@@ -470,26 +472,15 @@
 					text-align: center;
 					word-break: keep-all;
 					width: 220px;
-					height: 220px;
+					height: 13.75rem;
+					@include media($mo) {
+						width: 100%;
+						height: auto;
+						padding: 20px 0 !important;
+					}
 				}
- 
-				li:nth-child(1) {
-					padding: 4.75rem 1.4063rem 4.75rem 1.4688rem;
-				}
-
-				li:nth-child(2),
-				li:nth-child(3) {
-					padding: 3.75rem 1.7813rem 4.75rem 1.8438rem;
-				}
-
-				li:nth-child(4) {
-					padding: 3.75rem 1.6563rem 4.75rem 1.7188rem;
-				}
-
 			}
-
 		}
-
 	}
 }
 
@@ -618,34 +609,31 @@
 	.subcotent .vision__wrap .top {
 		span::after {
 			content: none;
-		  }
-		  .box_tt {
+		}
+		.box_tt {
 			margin-top: 2rem;
 			width: 100%;
 			text-align: center;
-		  }
+		}
 	}
 	.subcotent .vision__wrap .middle {
 		span::after {
 			content: none;
-		  }
-		  img {
+		}
+		img {
 			width: 100%;
 			margin-top: 2rem;
-		  }
-	} 
+		}
+	}
 	.subcotent .vision__wrap .bottom {
 		span::after {
 			content: none;
-		  }
-		  .list_tt {
+		}
+		.list_tt {
 			width: 100% !important;
 			margin-top: 2rem;
-		  }
+		}
 	}
-
-	
-
 }
 @include media($mo) {
 	html {
@@ -684,7 +672,7 @@
 	}
 	.subcotent .form__wrap .complete .comBtn {
 		text-align: center;
-	} 
+	}
 	.subcotent .form__wrap .complete .comBtn {
 		width: 60%;
 	}
@@ -692,9 +680,9 @@
 		font-size: 1.7rem;
 	}
 	.subcotent .vision__wrap .bottom {
-		  .list_tt {
+		.list_tt {
 			flex-direction: column;
 			width: 100%;
-		  }
+		}
 	}
 }

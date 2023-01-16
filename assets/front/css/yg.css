@@ -472,7 +472,8 @@ a {
 .subcotent .form__wrap .connect .w100 {
   width: 100% !important;
 }
-.subcotent .form__wrap .jointop p, .subcotent .form__wrap .joinbt p {
+.subcotent .form__wrap .jointop p,
+.subcotent .form__wrap .joinbt p {
   color: #555555;
   font-weight: 500;
   font-size: 1.125rem;
@@ -495,14 +496,15 @@ a {
   line-height: 2.3125rem;
   padding: 50px 0 30px;
 }
-.subcotent .complete .style1, .subcotent .complete .style2 {
+.subcotent .complete .style1,
+.subcotent .complete .style2 {
   font-weight: bold;
 }
 .subcotent .complete .style1 {
-  color: #00398E;
+  color: #00398e;
 }
 .subcotent .complete .style2 {
-  color: #0074C6;
+  color: #0074c6;
 }
 .subcotent .text__wrap p {
   padding-bottom: 1.875rem;
@@ -545,7 +547,7 @@ a {
   color: #232323;
   border: 1px solid none;
   border-radius: 3.75rem;
-  padding: 0.9375rem 6.75rem 1.5rem;
+  padding: 0.9375rem 2.75rem 1.5rem;
   box-shadow: rgba(45, 45, 45, 0.2) 3px 3px 12px;
   box-sizing: border-box;
   line-height: 2.5rem;
@@ -574,6 +576,9 @@ a {
   width: 70%;
 }
 .subcotent .vision__wrap .bottom .list__wrap .list_tt li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid none;
   box-shadow: rgba(45, 45, 45, 0.16) 3px 3px 12px;
   box-sizing: border-box;
@@ -582,17 +587,14 @@ a {
   text-align: center;
   word-break: keep-all;
   width: 220px;
-  height: 220px;
+  height: 13.75rem;
 }
-.subcotent .vision__wrap .bottom .list__wrap .list_tt li:nth-child(1) {
-  padding: 4.75rem 1.4063rem 4.75rem 1.4688rem;
-}
-.subcotent .vision__wrap .bottom .list__wrap .list_tt li:nth-child(2),
-.subcotent .vision__wrap .bottom .list__wrap .list_tt li:nth-child(3) {
-  padding: 3.75rem 1.7813rem 4.75rem 1.8438rem;
-}
-.subcotent .vision__wrap .bottom .list__wrap .list_tt li:nth-child(4) {
-  padding: 3.75rem 1.6563rem 4.75rem 1.7188rem;
+@media all and (max-width: 600px) {
+  .subcotent .vision__wrap .bottom .list__wrap .list_tt li {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 !important;
+  }
 }
 
 .form__wrap .con__top {
