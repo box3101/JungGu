@@ -1,0 +1,90 @@
+.notice {
+	.searchBox {
+		padding: 0.8125rem;
+		border: 0.125rem solid #eee;
+		border-radius: 0.75rem;
+		text-align: center;
+    .comSelectWrap{
+      display: flex;
+      gap: 0.625rem;
+      .comSelectBox{
+        @include media($mo){
+          flex:1;
+        }
+      }
+    }
+	}
+	.searchBox__inner {
+		display: flex;
+		justify-content: center;
+		gap: 0.625rem;
+		@include media($mo) {
+			flex-direction: column;
+		}
+	}
+	.searchBox__select {
+		width: 9.375rem;
+		height: 2.0625rem;
+		font-size: 0.9375rem;
+		color: #555555;
+		border-radius: 0.3125rem;
+		border: 0.0625rem solid #b5b5b5;
+	}
+	.searchBox__input {
+		width: 28.125rem;
+		height: 2.0625rem;
+		font-size: 0.9375rem;
+		color: #555555;
+		border-radius: 0.3125rem;
+		border: 0.0625rem solid #b5b5b5;
+	}
+	.searchBox  .sizeMid {
+		@include media($mo) {
+      width: 100%;
+    }
+	}
+	.comSearchBox .txt span {
+		display: inline-block;
+		color: var(--basic-color-secondary);
+		font-weight: bold;
+	}
+  .w172{
+    width: 10.75rem!important;
+    height: 4rem!important;
+  }
+  .trHoverNone .flex.gap20{
+    align-items: center;
+  }
+  .flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.625rem 0;
+    gap:0px!important;
+  }
+  .boardArrPrev{
+    position: relative;
+    @include after{
+      @include pCenterY;
+      right: 1.225rem;
+      @include bg-url("img","board-view-prev-arw.png","cover");
+      width: 0.75rem;height: 0.4375rem;
+      @include media($mo){
+        right: 5px;
+      }
+    }
+  }
+  .boardArrNext{
+    position: relative;
+    @include after{
+      @include pCenterY;
+      right: 1.225rem;
+      @include bg-url("img","board-view-next-arw.png","cover");
+      width: 0.75rem;height: 0.4375rem;
+      @include media($mo){
+        right: 5px;
+      }
+    }
+  }
+}

@@ -217,6 +217,12 @@
 			}
 		}
 		.right {
+			@include media($mo){
+				width: 100%;
+				.sizeSm{
+					padding: 1em;
+				}
+			}
 			opacity: 1;
 			.name {
 				opacity: 1;

@@ -345,7 +345,198 @@
           </div>
           <div class="subBody">
             <!-- 서브 컨텐츠 들어가는 부분 -->
-            <div class="subcotent 배우는바다">
+            <div class="subcotent notice">
+
+              <!-- 공지사항 게시판 -->
+              <div class="searchBox">
+                <div class="searchBox__inner">
+                  <div class="comSelectWrap">
+                    <div class="comSelectBox">
+                      <label for="a1" class="hidden">카테고리 선택</label>
+                      <select id="a1" class="comSelect w140">
+                        <option value="">카테고리</option>
+                      </select>
+                    </div>
+                    <div class="comSelectBox">
+                      <label for="a2" class="hidden">검색타이틀 선택</label>
+                      <select id="a2" class="comSelect w140">
+                        <option value="">전체</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label for="a3" class="hidden">검색어 입력</label>
+                  <input id="a3" type="text" class="comInput w500">
+                  <button type="button" class="comBtn bgMain sizeMid">검색</button>
+                </div>
+              </div>
+              <div class="board-data-list board-has-sm-view">
+                <table class="comTable-1 mt30">
+                  <caption class="hidden">공지사항 게시판 번호 제목 담당부서 작성자 작성일 조회수로 구성된 표</caption>
+                  <colgroup>
+                    <col width="70px">
+                    <col width="auto" class="sm-view">
+                    <col width="120px">
+                    <col width="110px">
+                    <col width="110px" class="sm-view">
+                    <col width="110px">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">번호</th>
+                      <th scope="col" class="sm-view">제목</th>
+                      <th scope="col">담당부서</th>
+                      <th scope="col">작성자</th>
+                      <th scope="col" class="sm-view">작성일</th>
+                      <th scope="col">조회수</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="notice">
+                      <td>
+                        📢
+                      </td>
+                      <td class="left sm-view">
+                        <a class="oneLine"
+                          href="../pages/공지사항-상세.html">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                      </td>
+                      <td>평생교육과</td>
+                      <td>홍길동</td>
+                      <td class="sm-view">2022.10.20</td>
+                      <td>552</td>
+                    </tr>
+                    <tr class="notice">
+                      <td>
+                        📢
+                      </td>
+                      <td class="left sm-view"><a class="oneLine" href="../pages/공지사항-상세.html">공지게시물 2</a></td>
+                      <td>평생교육과</td>
+                      <td>홍길동</td>
+                      <td class="sm-view">2021.03.30</td>
+                      <td>212</td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td class="left sm-view"><a class="oneLine" href="../pages/공지사항-상세.html">공지사항 게시물 3</a></td>
+                      <td>평생교육과</td>
+                      <td>홍길동</td>
+                      <td class="sm-view">2021.03.30</td>
+                      <td>234</td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td class="left sm-view"><a class="oneLine" href="../pages/공지사항-상세.html">공지사항 게시물 4</a></td>
+                      <td>평생교육과</td>
+                      <td>홍길동</td>
+                      <td class="sm-view">2021.03.30</td>
+                      <td>524</td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td class="left sm-view"><a class="oneLine" href="../pages/공지사항-상세.html">공지사항 게시물 5</a></td>
+                      <td>평생교육과</td>
+                      <td>홍길동</td>
+                      <td class="sm-view">2021.03.30</td>
+                      <td>342</td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+               <!-- 페이징 -->
+              <div id="paginate" class="customPaginateBar">
+                <table>
+                  <caption class="hidden">페이징 네비게이션</caption>
+                  <tbody>
+                    <tr>
+                      <td align="center" class="customPage">
+                        <button type="button" class="customPageMoveBtn" title="처음 페이지로 이동">
+                          <i class="ui-icon ui-icon-seek-first"></i>
+                        </button type="button">
+                        <button type="button" class="customPageMoveBtn" title="이전 페이지로 이동">
+                          <i class="ui-icon ui-icon-seek-prev"></i>
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          1
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn on" id=" 1" title="1페이지로 이동">
+                          2
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          3
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          311
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          411
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          511
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          611
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          711
+                        </button type="button">
+                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
+                          811
+                        </button type="button">
+                        <button type="button" class="customPageMoveBtn" title="다음 페이지로 이동">
+                          <i class="ui-icon ui-icon-seek-next"></i>
+                        </button type="button">
+                        <button type="button" class="customPageMoveBtn" title="마지막 페이지로 이동">
+                          <i class="ui-icon ui-icon-seek-end"></i>
+                        </button type="button">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 페이징 eee -->
+
+              <!-- 공지사항 게시판 eee -->
+
             </div>
             <!-- 서브 컨텐츠 들어가는 부분 eee -->
           </div>

@@ -700,8 +700,8 @@ html.open {
 	margin-left: -15px;
 	margin-right: -16px;
 	position: absolute;
-	li{
-		padding: 0!important;
+	li {
+		padding: 0 !important;
 	}
 }
 .comPopupBotBtn ul {
@@ -846,8 +846,8 @@ html.open {
 @for $i from 1 to 1000 {
 	.w#{$i} {
 		width: #{$i}px !important;
-		@include media($mo){
-			width: 100%!important;
+		@include media($mo) {
+			width: 100% !important;
 		}
 	}
 }
@@ -984,7 +984,7 @@ html.open {
 	.comTable-3 tr {
 		display: grid;
 		grid-template-columns: 6.25rem auto;
-		ul li{
+		ul li {
 			padding: 5px 0;
 		}
 		th {
@@ -1001,7 +1001,7 @@ html.open {
 			font-size: 1rem !important;
 			height: auto !important;
 			padding: 0.625rem !important;
-			span{
+			span {
 				display: contents;
 			}
 		}
@@ -1018,17 +1018,72 @@ html.open {
 		}
 	}
 }
+@include media($tab) {
+	.board-data-list.board-has-sm-view table th:not(.sm-view) {
+		display: none;
+	}
+	.board-data-list.board-has-sm-view table td:not(.sm-view) {
+		display: none;
+	}
+	.board-data-list.board-has-sm-view table col:not(.sm-view) {
+		display: none;
+	}
+	.board-data-list.board-has-sm-view {
+		width: 100%;
+	}
+	.board-data-list.board-has-sm-view table {
+		width: 100%;
+		table-layout: fixed;
+	}
+	.board-data-list.board-has-sm-view a {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+	}
+}
 .comTable-1 {
 	margin-top: 0.4rem;
 	table-layout: fixed;
 	width: 100%;
 	border-spacing: 0;
 	border-collapse: collapse;
-	border-top: 0.125rem solid #484848;
+	border-top: 0.125rem solid #666;
 	background: #fff;
+	@include media($mo) {
+		colgroup {
+			display: none;
+		}
+	}
+	tr {
+		@include media($mo) {
+			display: grid;
+			grid-template-columns: 6.25rem auto;
+		}
+	}
+	&.trHoverNone {
+		tr:hover td {
+			background: transparent;
+		}
+	}
+	tr.notice td,
+	tr:hover td,
+	tr:focus td {
+		background: #f9fdf3;
+	}
+	&.textLeft {
+		td {
+			text-align: left;
+			padding-left: 15px;
+		}
+	}
 }
 .comTable-1 th,
 .comTable-1 td {
+	@include media($mo) {
+		height: auto;
+		border: none !important;
+		border-bottom: 1px solid #ddd !important;
+	}
 	padding: 0.1875rem 0;
 	height: 2.125rem;
 	border: 0.0625rem solid #ddd;
@@ -1045,9 +1100,13 @@ table input[type="checkbox"] + label {
 	padding-left: 0.625rem;
 }
 .comTable-1 th {
+	@include media($mo) {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+	}
 	background: #eaeaea;
 	border: 0.0625rem solid #d1d1d1;
-	border-left: none;
 	font-size: 1rem;
 	font-weight: 600;
 	text-align: center;
@@ -1055,11 +1114,22 @@ table input[type="checkbox"] + label {
 .comTable-1 td {
 	background: #fff;
 	text-align: center;
-	border-left: none;
 	font-size: 1rem;
 	font-weight: 400;
-	height: 2.125rem;
 	box-sizing: border-box;
+	padding: 10px 0;
+	a.oneLine {
+		width: calc(100% - 62px);
+		position: relative;
+    top: 3px;
+		@include media($mo) {
+			width: 95%;
+		}
+	}
+	@include media($mo) {
+		display: inline-flex;
+		align-items: center;
+	}
 }
 .comTable-1 td.oneLine {
 	position: relative;
@@ -1072,9 +1142,6 @@ table input[type="checkbox"] + label {
 	vertical-align: middle;
 }
 .comTable-1 td a {
-	text-decoration: underline;
-	text-underline-position: under;
-	text-underline-offset: 2px;
 	&:hover {
 		color: $cMain;
 	}
@@ -1134,11 +1201,11 @@ table input[type="radio"] + label {
 	display: flex;
 	gap: 1.25rem;
 	flex-wrap: wrap;
-	@include media($mo){
-		gap:10px;
+	@include media($mo) {
+		gap: 10px;
 	}
 	li {
-		@include media($mo){
+		@include media($mo) {
 			width: 100%;
 		}
 		a {
@@ -1153,7 +1220,7 @@ table input[type="radio"] + label {
 			border-radius: 1.5625rem;
 			transition: all 0.4s;
 			font-size: 1.125rem;
-			@include media($mo){
+			@include media($mo) {
 				width: 100%;
 			}
 		}
@@ -1196,7 +1263,7 @@ table input[type="radio"] + label {
 	line-height: 1.5;
 	display: flex;
 	justify-content: center;
-	@include media($mo){
+	@include media($mo) {
 		padding: 20px;
 		word-break: keep-all;
 	}
@@ -1243,8 +1310,8 @@ table input[type="radio"] + label {
 		width: 48% !important;
 	}
 }
-@include media($mo){
-	.mt40{
-		margin-top: 2.5rem!important;
+@include media($mo) {
+	.mt40 {
+		margin-top: 2.5rem !important;
 	}
 }

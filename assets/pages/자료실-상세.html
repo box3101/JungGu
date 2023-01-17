@@ -320,6 +320,7 @@
         </button>
       </div>
     </header>
+
     <!-- sub -->
     <main id="sub" class="main sub">
       <div class="contentBody">
@@ -347,173 +348,113 @@
             <!-- 서브 컨텐츠 들어가는 부분 -->
             <div class="subcotent notice">
 
-              <!-- 공지사항 게시판 -->
-              <div class="searchBox">
-                <div class="searchBox__inner">
-                  <div class="comSelectWrap">
-                    <div class="comSelectBox">
-                      <label for="a1" class="hidden">카테고리 선택</label>
-                      <select id="a1" class="comSelect w140">
-                        <option value="">카테고리</option>
-                      </select>
-                    </div>
-                    <div class="comSelectBox">
-                      <label for="a2" class="hidden">검색타이틀 선택</label>
-                      <select id="a2" class="comSelect w140">
-                        <option value="">전체</option>
-                      </select>
-                    </div>
-                  </div>
-                  <label for="a3" class="hidden">검색어 입력</label>
-                  <input id="a3" type="text" class="comInput w500">
-                  <button type="button" class="comBtn bgMain sizeMid">검색</button>
-                </div>
-              </div>
-              <div class="board-data-list board-has-sm-view">
-                <table class="comTable-1 mt30">
-                  <caption class="hidden">공지사항 게시판 번호 제목 담당부서 작성자 작성일 조회수로 구성된 표</caption>
-                  <colgroup>
-                    <col width="70px">
-                    <col width="auto" class="sm-view">
-                    <col width="120px">
-                    <col width="110px">
-                    <col width="110px" class="sm-view">
-                    <col width="70px">
-                    <col width="110px">
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">번호</th>
-                      <th scope="col" class="sm-view">제목</th>
-                      <th scope="col">담당부서</th>
-                      <th scope="col">작성자</th>
-                      <th scope="col" class="sm-view">작성일</th>
-                      <th scope="col" class="sm-view">첨부</th>
-                      </th>
-                      <th scope="col">조회수</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr class="notice">
-                      <td>
-                        📢
-                      </td>
-                      <td class="left sm-view">
-                        <a class="oneLine"
-                          href="../pages/자료실-상세.html">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
-                      </td>
-                      <td>평생교육과</td>
-                      <td>홍길동</td>
-                      <td class="sm-view">2022.10.20</td>
-                      <td>
-                        <img src="../front/img/icon-attachfile-list.png" alt="첨부파일 아이콘">
-                      </td>
-                      <td>552</td>
-                    </tr>
-                    <tr class="notice">
-                      <td>
-                        📢
-                      </td>
-                      <td class="left sm-view"><a class="oneLine" href="../pages/자료실-상세.html">공지게시물 2</a></td>
-                      <td>평생교육과</td>
-                      <td>홍길동</td>
-                      <td class="sm-view">2021.03.30</td>
-                      <td>
-                        <img src="../front/img/icon-attachfile-list.png" alt="첨부파일 아이콘">
-                      </td>
-                      <td>212</td>
-                    </tr>
-                    <tr>
-                      <td>10</td>
-                      <td class="left sm-view"><a class="oneLine" href="../pages/자료실-상세.html">공지사항 게시물 3</a></td>
-                      <td>평생교육과</td>
-                      <td>홍길동</td>
-                      <td class="sm-view">2021.03.30</td>
-                      <td>
-                        <img src="../front/img/icon-attachfile-list.png" alt="첨부파일 아이콘">
-                      </td>
-                      <td>234</td>
-                    </tr>
-                    <tr>
-                      <td>9</td>
-                      <td class="left sm-view"><a class="oneLine" href="../pages/자료실-상세.html">공지사항 게시물 4</a></td>
-                      <td>평생교육과</td>
-                      <td>홍길동</td>
-                      <td class="sm-view">2021.03.30</td>
-                      <td>
-                        <img src="../front/img/icon-attachfile-list.png" alt="첨부파일 아이콘">
-                      </td>
-                      <td>524</td>
-                    </tr>
-                    <tr>
-                      <td>8</td>
-                      <td class="left sm-view"><a class="oneLine" href="../pages/자료실-상세.html">공지사항 게시물 5</a></td>
-                      <td>평생교육과</td>
-                      <td>홍길동</td>
-                      <td class="sm-view">2021.03.30</td>
-                      <td>
-                        <img src="../front/img/icon-attachfile-list.png" alt="첨부파일 아이콘">
-                      </td>
-                      <td>342</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <!-- 공지사항 상세-->
+              <table class="comTable-1 textLeft trHoverNone">
+                <caption class="hidden"> 제목, 작성자, 작성일, 전화번호, 이메일, 담당부서, 담당기관, 내용. 첨부파일, 공공누리로 구성된 표</caption>
+                <colgroup>
+                  <col width="15%">
+                  <col width="35%">
+                  <col width="15%">
+                  <col width="35%">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row">제목</th>
+                    <td colspan="3">게시물1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">작성자</th>
+                    <td>홍길동</td>
+                    <th scope="row">작성일</th>
+                    <td>2022.10.17</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">전화번호</th>
+                    <td>02-6353-1562</td>
+                    <th scope="row">이메일</th>
+                    <td>bbb@naver.com</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">담당부서</th>
+                    <td>평생교육과</td>
+                    <th scope="row">담당기관</th>
+                    <td>인천중구청</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">내용</th>
+                    <td colspan="3">
+                      <div class="board-view-contents">
+                        <p>여성가족부에서는 매년 5월 청소년의 달을 기념하여 사회 각 분야에서 청소년의 건강한 성장에 기여한</p>
+                        <p>개인.단체.기업 등과 주체적인 활동으로 귀감이 되는 청소년에 대한 포상을 추진하고 있습니다.</p>
+                        <p><br></p>
+                        <p> 가. 포상명 : 2023년 청소년 육성 및 보호 유공</p>
+                        <p> 나. 포상규모(안)</p>
+                        <p> - 정부포상 : 훈장(2점), 포장(3점), 대통령표창(7점), 국무총리표창(11점)</p>
+                        <p> - 장관표창 : 50점</p>
+                        <p> 다. 추천기한 : 붙임 공고문 참고<span style="font-size: 17px; letter-spacing: -0.05em;"> </span></p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">첨부파일</th>
+                    <td colspan="3">
+                      abc.doc (용량:73MB, 다운로드:35회)
+                      <br> 가나다.pdf (용량: 25MB, 다운로드: 35 회)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">공공누리</th>
+                    <td colspan="3">
+                      <div class="flex gap20">
+                        <img class="w172" src="../front/img/PublicNuriType-1.png" alt="공공누리 공공지식물 자유이용 허락">
+                        <ul class="flex flexColumn gap10">
+                          <li>
+                            · 출처표시 필요
+                          </li>
+                          <li>
+                            · 상업적 이용 가능
+                          </li>
+                          <li>
+                            · 변형 등 2차적 저작물 작성 가능
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
 
-              <!-- 페이징 -->
-              <div id="paginate" class="customPaginateBar">
-                <table>
-                  <caption class="hidden">페이징 네비게이션</caption>
-                  <tbody>
-                    <tr>
-                      <td align="center" class="customPage">
-                        <button type="button" class="customPageMoveBtn" title="처음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-first"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="이전 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-prev"></i>
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          1
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn on" id=" 1" title="1페이지로 이동">
-                          2
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          3
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          311
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          411
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          511
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          611
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          711
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          811
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="다음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-next"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="마지막 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-end"></i>
-                        </button type="button">
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- 페이징 eee -->
+              <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter">
+                <li>
+                  <a href="../pages/자료실.html" class="comBtn sizeXlg bgBlack">목록</a>
+                </li>
+              </ul>
 
-              <!-- 공지사항 게시판 eee -->
+              <!-- 이전글, 다음글 -->
+              <table class="comTable-1 mt30">
+                <caption class="hidden">
+                  이전글 다음글 관련된 표
+                </caption>
+                <colgroup>
+                  <col width="15%">
+                  <col width="auto">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="boardArrPrev">이전글</th>
+                    <td class="left">
+                      <a href="#">게시물 2</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="boardArrNext">다음글</th>
+                    <td class="left">
+                      <a href="#">게시물 3</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- 공지사항 상세eee -->
 
             </div>
             <!-- 서브 컨텐츠 들어가는 부분 eee -->
