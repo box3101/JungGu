@@ -631,17 +631,17 @@ html.open {
 }
 .comPopupBox {
 	position: relative;
-	width: 45.125rem;
+	width: 25rem;
 	height: auto;
 	background: #fff;
 	@include media($mo) {
 		width: 90% !important;
 	}
 	&.sizeSm{
-		width: 25rem;
+		width: 37rem;
 	}
 	&.sizeMid{
-		width: 37.5rem;
+		width: 45rem;
 	}
 }
 .comPopupHeader {

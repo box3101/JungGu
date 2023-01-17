@@ -7273,7 +7273,7 @@ html.open {
 
 .comPopupBox {
   position: relative;
-  width: 45.125rem;
+  width: 25rem;
   height: auto;
   background: #fff;
 }
@@ -7283,10 +7283,10 @@ html.open {
   }
 }
 .comPopupBox.sizeSm {
-  width: 25rem;
+  width: 37rem;
 }
 .comPopupBox.sizeMid {
-  width: 37.5rem;
+  width: 45rem;
 }
 
 .comPopupHeader {
