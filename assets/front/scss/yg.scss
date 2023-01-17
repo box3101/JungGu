@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 // 사이트 전반에 걸쳐서 재사용되는 스타일 base
-// @import "base/reset.scss";
+@import "base/reset.scss";
 @import "base/variables.scss"; // 변수 선언
 
 // 함수형 프로그래밍 스타일
@@ -547,6 +547,34 @@
     .transport__wrap .width {
       flex: 1
     }
+
+    .introType {
+      .content {
+        padding-top: 1rem;
+      }
+      .row__head {
+        padding-top: 3rem;
+        p {
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+      }
+      .row__body {
+        text-indent: 1 !important;
+        padding-left: 1.5rem;
+        .txtWrap {
+          color: #999999;
+          padding: 0.6125rem 0;
+          span {
+            color: #555555;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+        }
+      }
+    } 
+
+
 }
 
 .form__wrap {
