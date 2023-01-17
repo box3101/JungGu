@@ -682,6 +682,19 @@ a {
 .subcotent .introType .row__body .txtWrap .tt {
   font-size: 1.3rem;
 }
+.subcotent .introType .row__body.introType2 {
+  padding-left: 0;
+  text-indent: 0;
+}
+.subcotent .introType .row__body.introType2 .txtWrap span {
+  font-weight: 500;
+}
+.subcotent .introType .detail {
+  color: #999999;
+  line-height: 1.4rem;
+  padding-left: 1rem;
+  margin-top: -0.5rem;
+}
 
 .form__wrap .con__top {
   display: flex;
