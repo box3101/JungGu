@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100;1,200;1,300&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 a,
 abbr,
 acronym,
@@ -88,8 +88,9 @@ video {
   margin: 0;
   padding: 0;
   vertical-align: baseline;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans", sans-serif !important;
   color: #2d2d2d;
+  letter-spacing: -0.05em;
 }
 
 article,
@@ -185,6 +186,54 @@ a {
   border: 2px solid #000;
 }
 
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 300;
+  src: url(../font/NotoSans-Light.eot);
+  src: url(../font/NotoSans-Light.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Light.woff) format("woff"), url(../font/NotoSans-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  src: url(../font/NotoSans-Regular.eot);
+  src: url(../font/NotoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Regular.woff) format("woff"), url(../font/NotoSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  src: url(../font/NotoSans-Medium.eot);
+  src: url(../font/NotoSans-Medium.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Medium.woff) format("woff"), url(../font/NotoSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  src: url(../font/NotoSans-Bold.eot);
+  src: url(../font/NotoSans-Bold.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Bold.woff) format("woff"), url(../font/NotoSans-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 300;
+  src: url(../font/NotoSans-Light.eot);
+  src: url(../font/NotoSans-Light.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Light.woff) format("woff"), url(../font/NotoSans-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  src: url(../font/NotoSans-Regular.eot);
+  src: url(../font/NotoSans-Regular.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Regular.woff) format("woff"), url(../font/NotoSans-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 500;
+  src: url(../font/NotoSans-Medium.eot);
+  src: url(../font/NotoSans-Medium.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Medium.woff) format("woff"), url(../font/NotoSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  src: url(../font/NotoSans-Bold.eot);
+  src: url(../font/NotoSans-Bold.eot?#iefix) format("embedded-opentype"), url(../font/NotoSans-Bold.woff) format("woff"), url(../font/NotoSans-Bold.ttf) format("truetype");
+}
 /* =================== animated =================== */
 .animated {
   -webkit-animation-duration: 1s;
@@ -5944,7 +5993,7 @@ button {
   transition: 0.25s ease-in-out;
   border-radius: 0.3125rem;
   border: 0.0625rem solid #666;
-  font: 500 1rem/1 "Noto Sans KR";
+  font: 500 1rem/1 "Noto Sans";
   box-sizing: border-box;
   color: #fff;
   flex: none;
@@ -7269,11 +7318,12 @@ html.open {
   font-size: 1rem;
   text-align: center;
   padding: 2.5rem 0;
+  font-weight: 500;
 }
 
 .comPopupBox {
   position: relative;
-  width: 25rem;
+  width: 400px;
   height: auto;
   background: #fff;
 }
@@ -7282,11 +7332,11 @@ html.open {
     width: 90% !important;
   }
 }
-.comPopupBox.sizeSm {
-  width: 37rem;
-}
 .comPopupBox.sizeMid {
-  width: 45rem;
+  width: 592px;
+}
+.comPopupBox.sizeLg {
+  width: 720px;
 }
 
 .comPopupHeader {

@@ -628,20 +628,21 @@ html.open {
 	font-size: 1rem;
 	text-align: center;
 	padding: 2.5rem 0;
+	font-weight: 500;
 }
 .comPopupBox {
 	position: relative;
-	width: 25rem;
+	width: 400px;
 	height: auto;
 	background: #fff;
 	@include media($mo) {
 		width: 90% !important;
 	}
-	&.sizeSm{
-		width: 37rem;
-	}
 	&.sizeMid{
-		width: 45rem;
+		width: 592px;
+	}
+	&.sizeLg{
+		width: 720px;
 	}
 }
 .comPopupHeader {
