@@ -679,6 +679,9 @@ a {
   font-size: 1rem;
   font-weight: bold;
 }
+.subcotent .introType .row__body .txtWrap .tt {
+  font-size: 1.3rem;
+}
 
 .form__wrap .con__top {
   display: flex;
