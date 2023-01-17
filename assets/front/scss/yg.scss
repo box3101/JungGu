@@ -372,7 +372,7 @@
 		p {
 			font-size: 1.5rem;
 			line-height: 2.3125rem;
-			padding: 50px 0 30px;
+			padding: 3.125rem 0 1.875rem;
 		}
 		.style1,
 		.style2 {
@@ -517,14 +517,14 @@
     width: 100%
   }
 	.transport__wrap {
-		@include flex (null, null, 1.75rem);
+		@include flex (null, null, 2.75rem);
       padding: 1.25rem 0 4.375rem 1rem;
       line-height: 1.75rem;
 	    word-break: keep-all;
 
       .transport {
         font-size: 1rem;
-        text-indent: -0.9375rem;
+        text-indent: -0.6375rem;
         span {
           color: $cMain;
           font-weight: 500;
@@ -537,13 +537,16 @@
       }
       
       li {
-        padding-left: 1em;
+        padding-left: 0.7rem;
       }
       
       li::before {
         content: "• ";
       }
-	}
+    }
+    .transport__wrap .width {
+      flex: 1
+    }
 }
 
 .form__wrap {
@@ -649,6 +652,9 @@
 	.subcotent .form {
 		width: 60%;
 	}
+  .subcotent .transport__wrap .transport img {
+    width: 40%;
+  }
 }
 @include media($tab) {
 	html {
@@ -698,7 +704,7 @@
   .location .transport__wrap {
     flex-direction: column;
     .transport img {
-      // width: 20%;
+      max-width: 15%;
     }
   }
 }
@@ -754,5 +760,9 @@
 	}
   .subcotent .transport__wrap {
     padding: 1.25rem 0 4.375rem 0.9375rem; 
+  }
+  .subcotent .transport__wrap .transport img {
+    max-width: 20%;
+    // min-width: 30%;
   }
 }
