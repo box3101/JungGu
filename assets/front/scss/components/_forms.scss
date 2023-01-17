@@ -6,10 +6,12 @@
 		text-align: right;
 		padding-right: 0.9375rem;
 	}
+	font-weight: 500;
+	font-size: 1.25rem;
 	&::placeholder {
-		font-size: 0.9rem;
-		opacity: 0.8;
-		font-size: 300;
+		color: $cGray-2!important;
+		letter-spacing: -0.0625rem!important;
+		font-weight: 400!important;
 	}
 }
 input:read-only {
@@ -46,9 +48,9 @@ input:read-only {
 	padding: 0.625rem;
 	line-height: 1.4;
 	&::placeholder {
-		font-size: 0.9rem;
-		opacity: 0.8;
-		font-size: 300;
+		color: $cGray-2!important;
+		letter-spacing: -0.0625rem!important;
+		font-weight: 400!important;
 	}
 }
 
@@ -57,6 +59,14 @@ input:read-only {
 	margin-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	padding-left: 2rem;
+	&.w700{
+		table{
+			width: 766px;
+			@include media($mo){
+				width: 100%;
+			}
+		}
+	}
 	@include media($mo) {
 		padding-left: 0;
 	}
@@ -78,9 +88,9 @@ input:read-only {
 	}
 	th,
 	td {
-		padding: 13px 0;
-    text-align: left;
-    font-size: 1rem;
+		padding: 10px 0;
+		text-align: left;
+		font-size: 1rem;
 	}
 	th {
 		color: #00489e;
@@ -100,12 +110,12 @@ input:read-only {
 		padding-left: 0 0.9375rem;
 		padding-right: 0 0.9375rem;
 		.formRadio {
-			.row{
+			.row {
 				padding-bottom: 0;
 			}
 		}
-		.flex{
-			@include media($mo){
+		.flex {
+			@include media($mo) {
 				width: 100%;
 			}
 		}
@@ -132,7 +142,7 @@ input:read-only {
 			position: relative;
 			top: 0;
 		}
-		td{
+		td {
 			padding-left: 0.5rem;
 		}
 		th {

@@ -5985,6 +5985,7 @@ button {
 /* =================== BUTTON =================== */
 .comBtn {
   padding: 0.125rem 1.025rem;
+  padding-bottom: 0.25rem;
   min-width: 4.1875rem;
   display: inline-block;
   position: relative;
@@ -6167,7 +6168,7 @@ button {
 .sizeXlg {
   width: 11.25rem;
   height: 3.125rem;
-  line-height: 2.9rem;
+  line-height: 2.8rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff !important;
@@ -6217,7 +6218,7 @@ button {
   padding: 0 0.625rem;
   min-width: 3.75rem;
   height: 1.875rem;
-  line-height: 1.875rem;
+  line-height: 1.775rem;
   background: #fff;
   color: #00489e;
   border: 0.0625rem solid #00489e;
@@ -6263,15 +6264,17 @@ button {
 
 .comInput {
   font-weight: 700;
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 .comInput.textRight {
   text-align: right;
   padding-right: 0.9375rem;
 }
 .comInput::placeholder {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  font-size: 300;
+  color: #999999 !important;
+  letter-spacing: -0.0625rem !important;
+  font-weight: 400 !important;
 }
 
 input:read-only {
@@ -6304,9 +6307,9 @@ input:read-only:focus, input:read-only:hover {
   line-height: 1.4;
 }
 .comTxtarea::placeholder {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  font-size: 300;
+  color: #999999 !important;
+  letter-spacing: -0.0625rem !important;
+  font-weight: 400 !important;
 }
 
 .comTable-2 {
@@ -6314,6 +6317,14 @@ input:read-only:focus, input:read-only:hover {
   padding-bottom: 1.25rem;
   padding-left: 2rem;
   border-bottom: 0.0625rem solid #666666;
+}
+.comTable-2.w700 table {
+  width: 766px;
+}
+@media all and (max-width: 600px) {
+  .comTable-2.w700 table {
+    width: 100%;
+  }
 }
 @media all and (max-width: 600px) {
   .comTable-2 {
@@ -6337,7 +6348,7 @@ input:read-only:focus, input:read-only:hover {
 }
 .comTable-2 th,
 .comTable-2 td {
-  padding: 13px 0;
+  padding: 10px 0;
   text-align: left;
   font-size: 1rem;
 }
@@ -7210,6 +7221,7 @@ html.open {
   opacity: 1;
   color: #000 !important;
   transition: all 0.4s;
+  border-radius: 0.6875rem;
   line-height: 2.2rem;
   cursor: pointer;
 }
@@ -7222,17 +7234,19 @@ html.open {
 }
 
 .customPageNumberBtn:hover {
-  color: #00489e !important;
-  font-weight: 600;
+  background: #00489E;
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 600 !important;
   opacity: 1;
 }
 
 .customPageNumberBtn.on {
-  position: relative;
-  font-weight: bold !important;
-  font-size: 1rem;
-  color: blue !important;
   opacity: 1;
+  background: #00489E;
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 600 !important;
 }
 
 .ui-icon-seek-next {
@@ -57918,7 +57932,7 @@ table input[type=radio] + label {
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  margin-right: 8px;
+  margin-right: 5px;
   background-image: url(../img/ico-field.png);
   background-position: center;
   background-size: cover;
@@ -58651,7 +58665,7 @@ table input[type=radio] + label {
   height: 3.375rem;
   border: 0.125rem solid #666666;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 0.9rem;
 }
 .courseSearch__btn input::placeholder {
   color: #999999;
@@ -58719,6 +58733,7 @@ table input[type=radio] + label {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-size: contain;
   width: 5.0625rem;
   height: 1.8125rem;
 }
@@ -58746,7 +58761,7 @@ table input[type=radio] + label {
 }
 .mainBottom .courseMonth ul li a .txt {
   font-size: 1.25rem;
-  font-weight: bold;
+  font-weight: 500;
   word-break: keep-all;
 }
 .mainBottom .courseMonth ul li a .bottom {
@@ -58840,7 +58855,7 @@ table input[type=radio] + label {
   color: #999999;
 }
 .mainBottom .notice ul li .left .txt {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.25rem;
   width: 31.25rem;
 }
@@ -58852,7 +58867,7 @@ table input[type=radio] + label {
 }
 .mainBottom .notice ul li .date {
   font-size: 1.125rem;
-  font-weight: bold;
+  font-weight: 500;
   color: #999999;
 }
 
@@ -59068,7 +59083,7 @@ table input[type=radio] + label {
 }
 .comRowType-1 dl dd .comInput::placeholder {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #555;
 }
 @media all and (max-width: 600px) {
@@ -59745,24 +59760,26 @@ table input[type=radio] + label {
 .place-icon::before {
   content: "";
   display: inline-block;
-  width: 12px;
+  width: 11.6px;
   height: 16px;
-  margin-right: 8px;
+  margin-right: 7px;
+  margin-left: 3px;
   background-image: url(../img/ico-place.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
 .people-icon::before {
   content: "";
   display: inline-block;
-  width: 12px;
+  width: 13px;
   height: 16px;
-  margin-right: 8px;
+  margin-right: 6px;
+  margin-left: 2px;
   background-image: url(../img/ico-people.svg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -59771,14 +59788,14 @@ table input[type=radio] + label {
   display: inline-block;
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 4px;
   background-image: url(../img/ico-organ.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1100px) {
   .classRegistration > .container.flex.gap15 {
     flex-direction: column;
   }
@@ -59791,6 +59808,15 @@ table input[type=radio] + label {
     padding: 10px !important;
   }
 }
+.searchArea__input {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.searchArea__input::placeholder {
+  color: #999999;
+  letter-spacing: -0.0625rem;
+}
+
 @media all and (max-width: 600px) {
   .searchArea__tit {
     flex-basis: auto;
@@ -59849,6 +59875,22 @@ table input[type=radio] + label {
   width: 100%;
   height: 500px;
   margin-top: 20px;
+}
+
+.cardcontent .content-bottom .date-icon::before,
+.cardcontent .content-bottom .pepole-icon::before {
+  content: "";
+  width: 16px !important;
+  height: 14px !important;
+  margin-right: 5px !important;
+  background-image: url(../img/ico-date.png) !important;
+  background-size: contain !important;
+}
+
+.cardcontent .content-bottom .txt {
+  padding: 0.3125rem 0;
+  display: flex;
+  align-items: center;
 }
 
 /*# sourceMappingURL=ui.css.map */

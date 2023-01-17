@@ -180,7 +180,7 @@
 			height: 3.375rem;
 			border: 0.125rem solid $cGray-3;
 			font-weight: 500;
-			font-size: 1.25rem;
+			font-size: 0.9rem;
 			&::placeholder {
 				color: $cGray-2;
 				letter-spacing: -0.0625rem;
@@ -230,6 +230,7 @@
 			right: 0;
 			bottom: 0;
 			@include bg-url("img", "more-btn.svg", "cover");
+			background-size: contain;
 			width: 5.0625rem;
 			height: 1.8125rem;
 		}
@@ -260,7 +261,7 @@
 
 					.txt {
 						font-size: 1.25rem;
-						font-weight: bold;
+						font-weight: 500;
 						word-break: keep-all;
 					}
 
@@ -344,7 +345,7 @@
 						color: #999999;
 					}
 					.txt {
-						font-weight: bold;
+						font-weight: 500;
 						font-size: 1.25rem;
 						width: 31.25rem;
 						&:hover {
@@ -357,7 +358,7 @@
 				}
 				.date {
 					font-size: 1.125rem;
-					font-weight: bold;
+					font-weight: 500;
 					color: #999999;
 				}
 			}
