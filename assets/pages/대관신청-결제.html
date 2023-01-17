@@ -403,11 +403,17 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">결제수단 선택</th>
+                        <!-- TODO 인증 완료 시   -->
+                        <th scope="row">(인증 확인 시)</th>
                         <td colspan="3">
-                          <div class="flex gap5 aiCenter">
-                            <button type="button" class="comBtn bgMain sizeLg">신용카드</button>
-                            <button type="button" class="comBtn bgBlack sizeLg">가상계좌</button>
+                          <div class="flex gap5">
+                            <div class="comSelectBox w150">
+                              <label for="g1"></label>
+                              <select name="" id="g1" class="comSelect btn-disabled">
+                                <option value="">국가유공자</option>
+                              </select>
+                            </div>
+                            <button type="button" class="comBtn bgBlack btnEventNone">인증완료</button>
                           </div>
                         </td>
                       </tr>
@@ -433,6 +439,26 @@
                       <tr>
                         <th scope="row">결제금액</th>
                         <td colspan="3"><strong>15,000원</strong></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">결제수단 선택</th>
+                        <td colspan="3">
+                          <div class="flex gap5 aiCenter">
+                            <button type="button" class="comBtn bgBlack sizeLg">신용카드</button>
+                            <button type="button" class="comBtn bgBlack sizeLg">가상계좌</button>
+                          </div>
+                        </td>
+                      </tr>
+                      <!-- TODO 선택시 색상 변경 + 선택됐을 경우 체크 박스 CLASS add .is-active  -->
+                      <tr>
+                        <th scope="row">(결제수단 선택 시)</th>
+                        <td colspan="3">
+                          <div class="flex gap5 aiCenter">
+                            <button type="button" class="comBtn bgBlack sizeLg btnEventNone" title="선택됨"
+                            >신용카드</button>
+                            <button type="button" class="comBtn bgBlack sizeLg btnEventNone is-active">가상계좌</button>
+                          </div>
+                        </td>
                       </tr>
                     </tbody>
                   </table>

@@ -607,33 +607,41 @@ html.open {
 .comPopupInfo {
 	width: 100%;
 	height: 100%;
-	padding: 10px 15px;
+	padding: 0.625rem 0.9375rem;
 	background: #eaeaea;
 	box-sizing: border-box;
 	max-height: 75vh;
-	overflow-y: scroll;
+	// overflow-y: scroll;
 	overflow-x: hidden;
-	padding-bottom: 50px;
+	padding-bottom: 3.125rem;
 }
 .comPopupInfo.bgfff {
 	background: #fff;
 }
 .comPopupInfoBox {
-	padding: 10px;
+	padding: 0.625rem;
 	background: #fff;
 }
-.comPopupInfoBox .comTxt {
-	font-size: 16px;
+.comPopupInfoBox .comTxt p{
+	line-height: 1.4;
+	word-break: keep-all;
+	font-size: 1rem;
 	text-align: center;
-	padding: 40px 0;
+	padding: 2.5rem 0;
 }
 .comPopupBox {
 	position: relative;
-	width: 850px;
+	width: 45.125rem;
 	height: auto;
 	background: #fff;
 	@include media($mo) {
 		width: 90% !important;
+	}
+	&.sizeSm{
+		width: 25rem;
+	}
+	&.sizeMid{
+		width: 37.5rem;
 	}
 }
 .comPopupHeader {
@@ -643,62 +651,62 @@ html.open {
 	background: #0195d3;
 }
 .comPopupHeader h2 {
-	padding: 10px 10px;
+	padding: 0.625rem 0.625rem;
 	color: #fff;
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: bold;
 	color: #fff;
 	text-align: left;
-	padding-left: 23px;
+	padding-left: 1.4375rem;
 	position: relative;
 	line-height: 1;
 }
 .comPopupHeader h2::before {
 	content: "";
-	width: 4px;
-	height: 20px;
+	width: 0.25rem;
+	height: 1.25rem;
 	background: #fff;
-	border-radius: 5px;
+	border-radius: 0.3125rem;
 	position: absolute;
-	left: 14px;
-	top: 11px;
+	left: 0.875rem;
+	top: 0.6875rem;
 }
 .comPopupHeader .popClose {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	margin-right: 10px;
+	margin-right: 0.625rem;
 	background: none;
 	border: none;
-	right: 5px;
+	right: 0.3125rem;
 }
 .comPopupHeader .popClose::after {
 	display: inline-block;
 	content: "\00d7";
 	font-size: 15pt;
-	line-height: 50px;
+	line-height: 3.125rem;
 	color: #fff;
 }
 .comTableHeightWrap {
-	height: 300px;
+	height: 18.75rem;
 	overflow-y: scroll;
-	margin-top: 20px;
+	margin-top: 1.25rem;
 }
 .comTableHeightWrap .comTable-1 {
 	margin-top: 0;
 }
 .comTableHeightWrap th {
 	position: sticky;
-	top: -2px;
+	top: -0.125rem;
 	z-index: 10;
 }
 .comPopupBotBtn {
 	top: auto;
-	left: 15px;
-	right: 15px;
+	left: 0.9375rem;
+	right: 0.9375rem;
 	bottom: 0;
-	margin-left: -15px;
-	margin-right: -16px;
+	margin-left: -0.9375rem;
+	margin-right: -1rem;
 	position: absolute;
 	li {
 		padding: 0 !important;
@@ -712,32 +720,32 @@ html.open {
 }
 .comPopupBotBtn ul li button {
 	width: 100%;
-	height: 40px;
+	height: 2.5rem;
 	background: $cMain;
 	&:hover {
 		top: 0;
 	}
 	&.bgRed {
 		background-color: darkred !important;
-		border: 0.0625rem solid darkred !important;
+		border: 1px solid darkred !important;
 	}
 }
 .accPopClose {
 	position: absolute;
 	display: inline-block;
 	text-align: center;
-	margin-right: 10px;
+	margin-right: 0.625rem;
 	background: none;
 	border: none;
-	right: 5px;
-	top: -5px;
+	right: 0.3125rem;
+	top: -0.3125rem;
 	position: absolute;
 }
 .accPopClose::after {
 	display: inline-block;
 	content: "\00d7";
-	font-size: 2rem;
-	line-height: 50px;
+	font-size: 32px;
+	line-height: 3.125rem;
 	color: #fff;
 }
 
@@ -1110,7 +1118,7 @@ table input[type="checkbox"] + label {
 	a.oneLine {
 		width: calc(100% - 62px);
 		position: relative;
-    top: 3px;
+		top: 3px;
 		@include media($mo) {
 			width: 95%;
 		}
@@ -1303,13 +1311,41 @@ table input[type="radio"] + label {
 	.mt40 {
 		margin-top: 2.5rem !important;
 	}
-	.memmerWrap__agree p{
-		padding-left: 0!important;
+	.memmerWrap__agree p {
+		padding-left: 0 !important;
 	}
 }
 
-.moW100{
-	@include media($mo){
+.moW100 {
+	@include media($mo) {
 		width: 100%;
+	}
+}
+.btn-disabled {
+	pointer-events: none;
+	opacity: 0.5;
+}
+.btnEventNone{
+	pointer-events: none;
+}
+.comBtn {
+	&.is-active {
+		position: relative;
+		background: $cMain;
+		pointer-events: none;
+		@include after{
+			content: "";
+			display: block;
+			position: absolute;
+			top: 3px;
+			transform: translateY(-50%);
+			left: 32px;
+			right: auto;
+			width: auto;
+			content: "✔";
+			color: #fff;
+			opacity: 1;
+			bottom: 0;
+		}
 	}
 }
