@@ -17,7 +17,7 @@
 		}
 	}
 	.agreeBox {
-		max-height: 300px;
+		max-height: 236px;
 		padding: 2%;
 		border: 0.0625rem solid #d4d4d4;
 		background: #f5f5f5;
@@ -60,10 +60,15 @@
 
 .memmerWrap {
 	padding: 3.125rem 0;
-	text-align: center;
 	&__form {
 		display: inline-block;
-		width: 40.625rem;
+		width: 100%;
+	}
+	.comRowType-1{
+		width: 60%;
+		@include media($tab){
+			width: 100%;
+		}
 	}
 }
 .comRowType-1 {

@@ -889,7 +889,7 @@ html.open {
 		padding-bottom: #{$i}px !important;
 	}
 	.pt#{$i} {
-		padding-bottom: #{$i}px !important;
+		padding-top: #{$i}px !important;
 	}
 	.pr#{$i} {
 		padding-bottom: #{$i}px !important;
@@ -1049,17 +1049,6 @@ html.open {
 	border-collapse: collapse;
 	border-top: 0.125rem solid #666;
 	background: #fff;
-	@include media($mo) {
-		colgroup {
-			display: none;
-		}
-	}
-	tr {
-		@include media($mo) {
-			display: grid;
-			grid-template-columns: 6.25rem auto;
-		}
-	}
 	&.trHoverNone {
 		tr:hover td {
 			background: transparent;
@@ -1100,11 +1089,11 @@ table input[type="checkbox"] + label {
 	padding-left: 0.625rem;
 }
 .comTable-1 th {
-	@include media($mo) {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-	}
+	// @include media($mo) {
+	// 	display: inline-flex;
+	// 	align-items: center;
+	// 	justify-content: center;
+	// }
 	background: #eaeaea;
 	border: 0.0625rem solid #d1d1d1;
 	font-size: 1rem;
@@ -1126,10 +1115,10 @@ table input[type="checkbox"] + label {
 			width: 95%;
 		}
 	}
-	@include media($mo) {
-		display: inline-flex;
-		align-items: center;
-	}
+	// @include media($mo) {
+	// 	display: inline-flex;
+	// 	align-items: center;
+	// }
 }
 .comTable-1 td.oneLine {
 	position: relative;
@@ -1313,5 +1302,14 @@ table input[type="radio"] + label {
 @include media($mo) {
 	.mt40 {
 		margin-top: 2.5rem !important;
+	}
+	.memmerWrap__agree p{
+		padding-left: 0!important;
+	}
+}
+
+.moW100{
+	@include media($mo){
+		width: 100%;
 	}
 }
