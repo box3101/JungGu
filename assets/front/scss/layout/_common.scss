@@ -1544,3 +1544,15 @@ span.cRed{
 		align-items: center;
 	}
 }
+
+@keyframes shake {
+  0% { text-shadow: 0 0 0 #000; opacity: 0; }
+  // 50% { text-shadow: 1px 1px 0 #000; }
+  100% { text-shadow: 0 0 0 #000; opacity: 1; }
+}
+
+.shake {
+  animation: shake 1.5s ease-in-out infinite;
+	animation-direction : alternate;
+	color: darkblue!important;
+}

@@ -44,10 +44,14 @@
 		padding: 0.625rem 1.25rem;
 		padding-left: 0;
 
+		.hint{
+			display: none;
+		}
+
 		.hint p {
 			position: absolute;
-			top: 1rem;
-			right: 0;
+			top: 1.2rem;
+			left: 18rem;
 			color: darkred;
 			font-size: 1rem;
 

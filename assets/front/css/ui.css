@@ -58236,6 +58236,22 @@ span.cRed {
     align-items: center;
   }
 }
+@keyframes shake {
+  0% {
+    text-shadow: 0 0 0 #000;
+    opacity: 0;
+  }
+  100% {
+    text-shadow: 0 0 0 #000;
+    opacity: 1;
+  }
+}
+.shake {
+  animation: shake 1.5s ease-in-out infinite;
+  animation-direction: alternate;
+  color: darkblue !important;
+}
+
 .header {
   position: relative;
 }
@@ -59239,10 +59255,13 @@ span.cRed {
   padding: 0.625rem 1.25rem;
   padding-left: 0;
 }
+.join .agreeOk .hint {
+  display: none;
+}
 .join .agreeOk .hint p {
   position: absolute;
-  top: 1rem;
-  right: 0;
+  top: 1.2rem;
+  left: 18rem;
   color: darkred;
   font-size: 1rem;
 }
@@ -59746,7 +59765,7 @@ span.cRed {
   content: "";
   width: 0.625rem;
   height: 0.625rem;
-  background: #dbecfa;
+  background: rgb(238, 246, 255);
   border: 1px solid #666;
 }
 
@@ -59759,7 +59778,7 @@ span.cRed {
   content: "";
   width: 0.625rem;
   height: 0.625rem;
-  background: #aaa;
+  background: #eee;
   border: 1px solid #666;
 }
 

@@ -274,10 +274,10 @@
       });
 
       $$swiperBtn = document.querySelectorAll(".swiperBtn");
-      $$swiperBtn.forEach((el,idx)=>{
-      let slideIndex = idx;
-        el.addEventListener("keydown",(e)=>{
-          if(e.keyCode === 13){
+      $$swiperBtn.forEach((el, idx) => {
+        let slideIndex = idx;
+        el.addEventListener("keydown", (e) => {
+          if (e.keyCode === 13) {
             detailSlideList.slideTo(slideIndex);
           }
         });
@@ -452,19 +452,38 @@
   const scrollable = () => {
 
     if (document.querySelector('.scrollable-element')) {
+
+      let $$hint = document.querySelectorAll(".hint");
+
+      // 스크롤 체크
+      const checkScroll = () => {
+        let $$formCheck = document.querySelectorAll(".formChkbox__control");
+        $$formCheck.forEach((el) => {
+          el.addEventListener("click", () => {
+            let hint = el.closest(".formChkbox").nextElementSibling;
+            hint.style.display = "block";
+          });
+        });
+      }
+
       const $$scrollableElement = document.querySelectorAll('.scrollable-element');
+
+
+      checkScroll();
 
       $$scrollableElement.forEach((el) => {
         el.addEventListener('scroll', () => {
           const agreeRow = el.closest(".agreeRow");
-          const hint = agreeRow.querySelector(".hint");
           const checkbox = agreeRow.querySelector('.my-checkbox');
+          const hint = agreeRow.querySelector(".hint");
+
           if (el.scrollTop + el.clientHeight >= el.scrollHeight) {
             checkbox.disabled = false;
-            hint.style.display = "none";
+            hint.style.opacity = "0";
           } else {
             checkbox.disabled = true;
-            hint.style.display = "block";
+            hint.style.opacity = "1";
+            checkScroll();
           }
         });
       });
