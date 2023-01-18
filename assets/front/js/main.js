@@ -477,7 +477,7 @@
           const checkbox = agreeRow.querySelector('.my-checkbox');
           const hint = agreeRow.querySelector(".hint");
 
-          if (el.scrollTop + el.clientHeight >= el.scrollHeight) {
+          if (el.scrollTop + el.clientHeight >= el.scrollHeight-1) {
             checkbox.disabled = false;
             hint.style.opacity = "0";
           } else {
