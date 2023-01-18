@@ -88,7 +88,7 @@ input:read-only {
 	}
 	th,
 	td {
-		padding: 10px 0;
+		padding: 15px 0;
 		text-align: left;
 		font-size: 1rem;
 	}
@@ -425,4 +425,7 @@ input:read-only {
 	.sizeLg {
 		font-size: 0.9rem;
 	}
+}
+.subcotent .introType .content{
+	padding-top: 20px!important;
 }

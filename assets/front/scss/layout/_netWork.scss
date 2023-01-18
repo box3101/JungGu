@@ -20,3 +20,18 @@
 		opacity: 1;
 	}
 }
+.subcotent .introType .row__body .txtWrap .tt{
+	display: block;
+	margin-bottom: 0.5rem;
+}
+.subcotent .introType .row__body .txtWrap span:not(.tt){
+	display: inline-block;
+	padding-left: 17px;
+	margin-bottom: 5px;
+}
+.row__body .txtWrap{
+	line-height: 1.5;
+}
+.subcotent .introType .row__body .txtWrap{
+	color: #747474!important;
+}

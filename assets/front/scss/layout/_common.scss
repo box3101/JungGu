@@ -538,19 +538,19 @@ html.open {
 }
 
 .customPageNumberBtn:hover {
-	background: #00489E;
-	color: #fff!important;
+	background: #00489e;
+	color: #fff !important;
 	font-size: 1rem;
-	font-weight: 600!important;
+	font-weight: 600 !important;
 	opacity: 1;
 }
 
 .customPageNumberBtn.on {
 	opacity: 1;
-	background: #00489E;
-	color: #fff!important;
+	background: #00489e;
+	color: #fff !important;
 	font-size: 1rem;
-	font-weight: 600!important;
+	font-weight: 600 !important;
 }
 
 .ui-icon-seek-next {
@@ -625,7 +625,7 @@ html.open {
 	padding: 0.625rem;
 	background: #fff;
 }
-.comPopupInfoBox .comTxt p{
+.comPopupInfoBox .comTxt p {
 	line-height: 1.4;
 	word-break: keep-all;
 	font-size: 1rem;
@@ -641,10 +641,10 @@ html.open {
 	@include media($mo) {
 		width: 90% !important;
 	}
-	&.sizeMid{
+	&.sizeMid {
 		width: 592px;
 	}
-	&.sizeLg{
+	&.sizeLg {
 		width: 720px;
 	}
 }
@@ -1221,6 +1221,7 @@ table input[type="radio"] + label {
 			border-radius: 1.5625rem;
 			transition: all 0.4s;
 			font-size: 1.125rem;
+			font-weight: bold;
 			@include media($mo) {
 				width: 100%;
 			}
@@ -1280,10 +1281,9 @@ table input[type="radio"] + label {
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	@include media($mo){
+	@include media($mo) {
 		margin-right: 9px;
 	}
-	
 }
 .cardcontent .content-bottom .subTxt {
 	font-size: 1rem;
@@ -1333,7 +1333,7 @@ table input[type="radio"] + label {
 	pointer-events: none;
 	opacity: 0.5;
 }
-.btnEventNone{
+.btnEventNone {
 	pointer-events: none;
 }
 .comBtn {
@@ -1341,7 +1341,7 @@ table input[type="radio"] + label {
 		position: relative;
 		background: $cMain;
 		pointer-events: none;
-		@include after{
+		@include after {
 			content: "";
 			display: block;
 			position: absolute;
@@ -1356,4 +1356,101 @@ table input[type="radio"] + label {
 			bottom: 0;
 		}
 	}
+}
+.subcotent .introType .row__body {
+	padding-left: 0 !important;
+}
+.list-1 {
+	padding-left: 30px;
+	> li {
+		&.before-none{
+			@include before{
+				display: none;
+			}
+		}
+		display: block;
+		position: relative;
+		margin: 5px 0;
+		font-size: 20px;
+		padding-left: 25px;
+		font-weight: 500;
+		color: #333333;
+		line-height: 1.8;
+		@include before{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 11px;
+			width: 16px;
+			height: 16px;
+			background-color: #00489e;
+			background-image: url(../img/h5-arw.png);
+			background-size: 6px 10px;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			border-radius: 50%;
+			box-sizing: border-box;
+		}
+		a{
+			display: inline-block;
+		}
+	}
+}
+.list-circle {
+	> li {
+		position: relative;
+		color: #747474;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: left;
+		line-height: 1.8;
+		padding-left: 17px;
+		@include before{
+			content: "";
+			display: block!important;
+			overflow: hidden;
+			position: absolute;
+			left: 3px;
+			top: 12px;
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: #575757;
+		}
+	}
+}
+.list-num{
+	>li{
+		font-size: 16px;
+		position: relative;
+		color: #747474;
+		font-size: 16px;
+		font-weight: 500;
+		text-align: left;
+		line-height: 1.8;
+		padding-left: 17px;
+		@include before{
+			content: "";
+			display: inline-block;
+			position: absolute;
+			left: 0;
+			top: 9px;
+			width: 12px;
+			height: 12px;
+			background: #fff;
+			border-radius: 50%;
+			border: 3px solid #00489e;
+			box-sizing: border-box;
+		}
+	}
+}
+.subcotent .introType .content {
+	font-size: 17px;
+}
+.row__body {
+	text-indent: 0 !important;
+}
+span.cRed{
+	color: darkred;
 }
