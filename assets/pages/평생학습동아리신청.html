@@ -364,7 +364,7 @@
                 <p class="row__head">
                   <span class="title__icon">신청서 작성</span>
                 </p>
-                <div class="comTable-2 w700" style="border-bottom: none;">
+                <div class="comTable-2 w700 pl8" style="border-bottom: none;">
                   <table>
                     <caption class="hidden">신청서 작성</caption>
                     <colgroup>
@@ -401,28 +401,28 @@
                         <th><label for="a3">회원수</label></th>
                         <td>
                           <div class="flex gap5 aiCenter">
-                            <input type="text" id="a3" class="comInput textRight w160" > 명
+                            <input type="text" id="a3" class="comInput textRight"> 명
                           </div>
                         </td>
                       </tr>
                       <tr>
                         <th><label for="a4">동아리 대표</label></th>
                         <td>
-                          <input type="text" id="a4" class="comInput w160" placeholder="홍길동">
+                          <input type="text" id="a4" class="comInput" placeholder="홍길동">
                         </td>
                         <th><label for="a5">대표 연락처</label></th>
                         <td>
-                          <input type="text" id="a5" class="comInput w160" placeholder="010-2222-1111">
+                          <input type="text" id="a5" class="comInput" placeholder="010-2222-1111">
                         </td>
                       </tr>
                       <tr>
                         <th><label for="a6">동아리 실무자</label></th>
                         <td>
-                          <input type="text" id="a6" class="comInput w160" placeholder="임꺽정">
+                          <input type="text" id="a6" class="comInput" placeholder="임꺽정">
                         </td>
                         <th><label for="a7">실무자 연락처</label></th>
                         <td>
-                          <input type="text" id="a7" class="comInput w160" placeholder="010-2222-1111">
+                          <input type="text" id="a7" class="comInput" placeholder="010-2222-1111">
                         </td>
                       </tr>
                       <tr>
@@ -440,15 +440,14 @@
                       <tr>
                         <th><label for="a10">가입문의처</label></th>
                         <td colspan="3">
-                          <input type="text"  id="a10" class="comInput"
+                          <input type="text" id="a10" class="comInput"
                             placeholder="문의전화 : 032-543-0324, 이메일 : sdmfls55@naver.com">
                         </td>
                       </tr>
                       <tr>
                         <th><label for="a12">동아리 소개</label></th>
                         <td colspan="3">
-                          <textarea class="comTxtarea" name="" id="a12" cols="30" rows="10"
-                          ></textarea>
+                          <textarea class="comTxtarea" name="" id="a12" cols="30" rows="10"></textarea>
                         </td>
                       </tr>
                       <tr>
@@ -458,9 +457,9 @@
                             <li>
                               <div class="flex gap5">
                                 <input type="text" id="a13" class="comInput">
-                                  <button type="button" class="comBtn bgBlack">찾기</button>
-                                  <button type="button" class="comBtn bgMain">추가</button>
-                                  <span class="desc">(최대 1MB 이하)</span>
+                                <button type="button" class="comBtn bgBlack">찾기</button>
+                                <button type="button" class="comBtn bgMain">추가</button>
+                                <span class="desc">(최대 1MB 이하)</span>
                               </div>
                             </li>
                             <li>
@@ -492,28 +491,35 @@
                 <p class="row__head">
                   <span class="title__icon">개인정보 수집동의</span>
                 </p>
-                <div class="agreeRow comScroll">
+                <div class="agreeRow">
                   <div class="agree">
-                    <fieldset class="agreeBox" tabindex="0">
+                    <fieldset class="agreeBox scrollable-element comScroll" tabindex="0">
                       <legend class="hidden">개인정보 수집동의</legend>
+                      <span class="hidden">스크롤을 끝까지 내려주세요. 그래야 동의 체크가 가능합니다.</span>
                       <div>
-                        개인정보 이용방침  <br> <br>
-                        본인은 ｢정보통신망 이용촉진 및 정보보호 등에 관한 법률｣제22조(개인정보의 수집ㆍ이용 동의 등) 및 제24조의2(개인정보의 제공 동의 등), ｢개인정보 보호법｣제15조(개인정보의 수집ㆍ이용), 제17조(개인정보의 제공)에 따라 본인의 개인정보를 인천중구교육포털 「배우는바다」에서 수집ㆍ활용하는데 동의합니다.
+                        개인정보 이용방침 <br> <br>
+                        본인은 ｢정보통신망 이용촉진 및 정보보호 등에 관한 법률｣제22조(개인정보의 수집ㆍ이용 동의 등) 및 제24조의2(개인정보의 제공 동의 등), ｢개인정보
+                        보호법｣제15조(개인정보의 수집ㆍ이용), 제17조(개인정보의 제공)에 따라 본인의 개인정보를 인천중구교육포털 「배우는바다」에서 수집ㆍ활용하는데 동의합니다.
                         <br><br>
                         수집목적 : 본인확인절차, 정책정보 등 행정서비스 제공, 업무와 관련된 통계자료 작성, 교육 및 컨설팅 등 사후관리 <br>
                         수집항목 : 동아리 실무자 성명, 연락처 <br>
                         보유 및 이용기간 : 사업목적이 달성된 이후 파기 <br>
                         <br>
                         귀하께서는 개인정보 제공 및 활용에 거부할 권리가 있음을 알려드리며, 거부하실 경우 신청서 접수가 불가능함을 알려드립니다.
-                        
+
                       </div>
                     </fieldset>
                   </div>
                   <div class="agreeOk">
                     <div class="formChkbox flex gap5 aiCenter">
-                      <label class="formChkbox__control control--checkbox"> 개인정보 수집 동의 <span class="cRed">(필수)</span>
-                        <input type="checkbox">
+                      <label class="formChkbox__control control--checkbox"> 대관신청 유의사항에 동의 합니다 <span
+                          class="cRed">(필수)</span>
+                        <input type="checkbox" class="my-checkbox" disabled="">
                       </label>
+                    </div>
+
+                    <div class="hint" tabindex="0">
+                      <p>※ 스크롤을 끝까지 내려주세요.</p>
                     </div>
                   </div>
                 </div>

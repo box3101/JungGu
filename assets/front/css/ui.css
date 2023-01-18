@@ -6154,6 +6154,7 @@ button {
 }
 
 .sizeLg {
+  min-width: 10.5rem;
   width: auto;
   height: 2.525rem;
   line-height: 2.1rem;
@@ -6313,10 +6314,15 @@ input:read-only:focus, input:read-only:hover {
 }
 
 .comTable-2 {
-  margin-top: 1.25rem;
   padding-bottom: 1.25rem;
   padding-left: 2rem;
   border-bottom: 0.0625rem solid #666666;
+}
+.comTable-2.pl8 {
+  margin-left: -8px;
+}
+.comTable-2.pl8 th {
+  padding-left: 8px;
 }
 .comTable-2.w700 table {
   width: 766px;
@@ -6369,6 +6375,10 @@ input:read-only:focus, input:read-only:hover {
   color: #2d2d2d;
   padding-left: 0 0.9375rem;
   padding-right: 0 0.9375rem;
+}
+.comTable-2 td.align-right {
+  text-align: right;
+  padding-right: 15px;
 }
 .comTable-2 td .formRadio .row {
   padding-bottom: 0;
@@ -6438,6 +6448,8 @@ input:read-only:focus, input:read-only:hover {
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
   background: #fff;
+  line-height: 1.6;
+  word-break: keep-all;
 }
 
 @media all and (max-width: 1400px) {
@@ -6700,7 +6712,7 @@ input:read-only:focus, input:read-only:hover {
   }
 }
 .subcotent .introType .content {
-  padding-top: 20px !important;
+  padding-top: 0.8375rem !important;
 }
 
 @keyframes ani {
@@ -7005,7 +7017,6 @@ html.open {
   font-size: 1.25rem;
   padding: 1.5rem 0;
   padding-bottom: 0.9rem;
-  border-bottom: 1px solid #333333;
   font-size: 1.5rem;
   color: #333333;
   min-height: 1.5625rem;
@@ -7477,6 +7488,10 @@ html.open {
 
 .cRed {
   color: #00489e;
+}
+
+.cBlue {
+  color: darkblue;
 }
 
 .BottomBtnWrap {
@@ -57572,8 +57587,8 @@ html.open {
 .twoLine {
   overflow: hidden;
   white-space: normal;
-  line-height: 1.2;
-  height: 2.4em;
+  line-height: 1.5;
+  height: 3em;
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
@@ -57741,6 +57756,7 @@ html.open {
     height: auto;
     border: none !important;
     border-bottom: 1px solid #ddd !important;
+    padding: 10px 0;
   }
 }
 
@@ -57823,20 +57839,20 @@ table input[type=radio] + label {
   flex: 0 1 63%;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 900px) {
   .scroll-tbl-wrap {
     position: relative;
     z-index: 20;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 900px) {
   .scroll-tbl-wrap > div {
     position: relative;
     width: 100%;
     overflow-x: auto;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 900px) {
   .scroll-tbl-wrap table {
     width: auto;
     min-width: 900px;
@@ -57848,11 +57864,6 @@ table input[type=radio] + label {
 .scroll-tbl-wrap table td {
   padding-left: 0.325rem;
   padding-right: 0.325rem;
-}
-@media all and (max-width: 1400px) {
-  .scroll-tbl-wrap table td {
-    padding: 3px 10px;
-  }
 }
 
 .comSubTab {
@@ -57881,8 +57892,8 @@ table input[type=radio] + label {
   color: #fff;
   border-radius: 1.5625rem;
   transition: all 0.4s;
-  font-size: 1.125rem;
-  font-weight: bold;
+  font-size: 1.3125rem;
+  font-weight: 500;
 }
 @media all and (max-width: 600px) {
   .comSubTab li a {
@@ -58123,7 +58134,9 @@ table input[type=radio] + label {
 }
 
 .subcotent .introType .content {
-  font-size: 17px;
+  font-size: 1.125rem;
+  padding-left: 2rem;
+  color: #2D2D2D;
 }
 
 .row__body {
@@ -58134,6 +58147,95 @@ span.cRed {
   color: darkred;
 }
 
+.com-step {
+  opacity: 1;
+}
+.com-step ul {
+  display: flex;
+}
+.com-step ul li .num {
+  font-size: 20px;
+  font-weight: bold;
+}
+.com-step ul li .tit {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+.com-step ul li .txt {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555555;
+}
+
+.subcotent .introType .row__head {
+  padding-top: 4rem !important;
+}
+
+.subcotent .con__left img {
+  object-fit: cover;
+}
+
+.subcotent .introType .row__head {
+  padding-top: 3.75rem;
+}
+
+.subcotent.privacyPolicy .row__head {
+  border-bottom: 1px solid #333;
+}
+
+.row__head {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row__head .search-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.row__head .search-wrap p {
+  font-size: 1rem;
+  margin-right: -0.9375rem;
+  font-weight: bold;
+}
+.row__head .search-wrap .btn-wrap button {
+  position: relative;
+}
+.row__head .search-wrap .btn-wrap button.is-active {
+  background: #000;
+  color: #fff !important;
+}
+.row__head .search-wrap .btn-wrap button.is-active:after {
+  content: "";
+  display: block;
+  content: "✔";
+  top: 0.5rem;
+  left: 0.8125rem;
+}
+
+@media all and (max-width: 900px) {
+  .mypage .row__head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mypage .row__head span {
+    margin-bottom: 10px;
+  }
+  .search-wrap .inputDateWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .row__head .search-wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .header {
   position: relative;
 }
@@ -58443,9 +58545,10 @@ span.cRed {
   color: #000;
   padding: 16px 0 !important;
   border-bottom: 1px solid #dddddd;
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
   font-weight: 600;
+  padding-left: 13px !important;
 }
 .mobileNav > ul > li.on .dapth2 li:last-of-type a {
   border-bottom: none;
@@ -59093,7 +59196,6 @@ span.cRed {
 }
 .join .agreeRow {
   position: relative;
-  margin-top: 1rem;
 }
 .join .agreeRow .moveBtn {
   position: absolute;
@@ -59109,18 +59211,23 @@ span.cRed {
   text-align: center;
 }
 .join .agreeBox {
-  max-height: 236px;
+  min-height: 236px;
   padding: 2%;
-  border: 0.0625rem solid #d4d4d4;
   background: #f5f5f5;
   border-bottom: 0rem;
-  overflow-y: scroll;
   font-size: 1rem;
   line-height: 1.4;
   box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  line-height: 1.6;
+}
+.join .agreeBox.comScroll {
+  overflow-y: scroll;
+  max-height: 236px;
 }
 .join .agreeBox.h550 {
   max-height: 450px;
+  overflow-y: scroll;
 }
 @media all and (max-width: 600px) {
   .join .agreeBox.h550 {
@@ -59382,6 +59489,10 @@ span.cRed {
     align-items: center;
   }
 }
+.mypage .customPaginateBar {
+  padding-top: 0.5rem !important;
+}
+
 #detailSlideItem .swiper-wrapper {
   margin-top: 10px;
   display: flex;

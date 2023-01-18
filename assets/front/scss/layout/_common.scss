@@ -310,10 +310,10 @@ html.open {
 		font-size: 1.25rem;
 		padding: 1.5rem 0;
 		padding-bottom: 0.9rem;
-		border-bottom: 1px solid #333333;
 		font-size: 1.5rem;
 		color: #333333;
 		min-height: 1.5625rem;
+		// border-bottom: 1px solid #333;
 		span {
 			// color: $cMain;
 			font-weight: bold;
@@ -757,6 +757,9 @@ html.open {
 .cRed {
 	color: $cMain;
 }
+.cBlue {
+	color: darkblue;
+}
 
 //하단 신청 취소 버튼
 .BottomBtnWrap {
@@ -922,8 +925,8 @@ html.open {
 .twoLine {
 	overflow: hidden;
 	white-space: normal;
-	line-height: 1.2;
-	height: 2.4em;
+	line-height: 1.5;
+	height: 3em;
 	text-align: left;
 	word-wrap: break-word;
 	display: -webkit-box;
@@ -1084,6 +1087,7 @@ html.open {
 		height: auto;
 		border: none !important;
 		border-bottom: 1px solid #ddd !important;
+		padding: 10px 0;
 	}
 	padding: 0.1875rem 0;
 	height: 2.125rem;
@@ -1169,19 +1173,19 @@ table input[type="radio"] + label {
 	flex: 0 1 63%;
 }
 .scroll-tbl-wrap {
-	@include media($web) {
+	@include media($tab) {
 		position: relative;
 		z-index: 20;
 	}
 	> div {
-		@include media($web) {
+		@include media($tab) {
 			position: relative;
 			width: 100%;
 			overflow-x: auto;
 		}
 	}
 	table {
-		@include media($web) {
+		@include media($tab) {
 			width: auto;
 			min-width: 900px;
 			max-width: 1280px;
@@ -1191,9 +1195,6 @@ table input[type="radio"] + label {
 		td {
 			padding-left: 0.325rem;
 			padding-right: 0.325rem;
-			@include media($web) {
-				padding: 3px 10px;
-			}
 		}
 	}
 }
@@ -1220,8 +1221,8 @@ table input[type="radio"] + label {
 			color: #fff;
 			border-radius: 1.5625rem;
 			transition: all 0.4s;
-			font-size: 1.125rem;
-			font-weight: bold;
+			font-size: 1.3125rem;
+			font-weight: 500;
 			@include media($mo) {
 				width: 100%;
 			}
@@ -1446,11 +1447,100 @@ table input[type="radio"] + label {
 	}
 }
 .subcotent .introType .content {
-	font-size: 17px;
+	font-size: 1.125rem;
+	padding-left: 2rem;
+	color: #2D2D2D;
 }
 .row__body {
 	text-indent: 0 !important;
 }
 span.cRed{
 	color: darkred;
+}
+
+.com-step{
+	opacity: 1;
+	ul{
+		display: flex;
+		li{
+			.num{
+				font-size: 20px;
+    font-weight: bold;
+			}
+			.tit{
+				font-size: 24px;
+				font-weight: bold;
+				line-height: 1.6;
+			}
+			.txt{
+				font-size: 18px;
+				font-weight: 500;
+				color: #555555;
+			}
+		}
+	}
+}
+.subcotent .introType .row__head {
+	padding-top: 4rem!important;
+}
+.subcotent .con__left img{
+	object-fit: cover;
+}
+.subcotent .introType .row__head{
+	padding-top: 3.75rem;
+}
+.subcotent.privacyPolicy{
+	.row__head{
+		border-bottom: 1px solid #333;
+	}
+}
+.row__head{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.search-wrap{
+		display: flex;
+		align-items: center;
+		gap:0.625rem;
+		p{
+			font-size: 1rem;
+			margin-right: -0.9375rem;
+			font-weight: bold;
+		}
+		.btn-wrap{
+			button{
+				position: relative;
+				&.is-active{
+					background: #000;
+					color: #fff!important;
+					@include after{
+						content: "✔";
+						top: 0.5rem;
+						left: 0.8125rem;
+					}
+				}
+			}
+		}
+	}
+}
+@include media($tab){
+	.mypage .row__head{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.mypage .row__head span{
+		margin-bottom: 10px;
+	}
+	.search-wrap .inputDateWrap{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+	.row__head .search-wrap{
+		width: 100%;
+		display: flex;flex-direction: column;
+		align-items: center;
+	}
 }

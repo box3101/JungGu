@@ -56,9 +56,15 @@ input:read-only {
 
 //table
 .comTable-2 {
-	margin-top: 1.25rem;
+	// margin-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	padding-left: 2rem;
+	&.pl8{
+		margin-left: -8px;
+	}
+	&.pl8 th{
+		padding-left: 8px;
+	}
 	&.w700{
 		table{
 			width: 766px;
@@ -109,6 +115,10 @@ input:read-only {
 		color: #2d2d2d;
 		padding-left: 0 0.9375rem;
 		padding-right: 0 0.9375rem;
+		&.align-right{
+			text-align: right;
+			padding-right: 15px;
+		}
 		.formRadio {
 			.row {
 				padding-bottom: 0;
@@ -180,6 +190,8 @@ input:read-only {
 	border-top: 1px solid #dedede;
 	border-bottom: 1px solid #dedede;
 	background: #fff;
+	line-height: 1.6;
+	word-break: keep-all;
 }
 
 // comSearchTable
@@ -427,5 +439,5 @@ input:read-only {
 	}
 }
 .subcotent .introType .content{
-	padding-top: 20px!important;
+	padding-top: 0.8375rem!important;
 }

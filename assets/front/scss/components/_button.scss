@@ -165,6 +165,7 @@ $btn-sizes: (
 		fontSize: 1rem,
 	),
 	sizeLg: (
+		minWidth : 10.5rem,
 		width: auto,
 		height: 2.525rem,
 		lineHeight: 2.1rem,
@@ -186,6 +187,7 @@ $btn-sizes: (
 
 @each $key, $value in $btn-sizes {
 	.#{$key} {
+		min-width: map-get($value, minWidth);
 		width: map-get($value, width);
 		height: map-get($value, height);
 		line-height: map-get($value, lineHeight);
