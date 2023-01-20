@@ -792,8 +792,8 @@ a {
   content: "";
   display: block;
   background-image: url("../img/visual-arrow.svg");
-  background-position: center;
-  background-size: cover;
+  background-position: initial;
+  background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -813,7 +813,6 @@ a {
 .com-step ul li .txt:before {
   content: "";
   display: block;
-  background-image: url("../img/visual-arrow-s.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -825,11 +824,7 @@ a {
   margin-left: 0.4375rem;
 }
 .com-step ul li .txt span {
-  margin-left: 1.1875rem;
-  color: #555555;
-}
-.com-step ul li:nth-child(3) ::before, .com-step ul li:nth-child(4) ::before {
-  display: none;
+  margin: 0 0.5rem;
 }
 
 .introType2 {
@@ -860,6 +855,9 @@ a {
   }
   .subcotent .transport__wrap .transport img {
     width: 40%;
+  }
+  .com-step.introType1 ul li {
+    width: calc(33.3333% - 1.58125rem);
   }
 }
 @media all and (max-width: 900px) {
@@ -971,6 +969,9 @@ a {
   }
   .subcotent .transport__wrap .transport img {
     max-width: 20%;
+  }
+  .com-step.introType1 ul li {
+    width: calc(50% - 1.58125rem);
   }
 }
 
