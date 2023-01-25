@@ -7489,7 +7489,10 @@ html.open {
 }
 
 .cRed {
-  color: #00489e;
+  color: darkred;
+}
+.row__body .cRed {
+  font-size: 1rem;
 }
 
 .cBlue {
@@ -57962,6 +57965,24 @@ table input[type=radio] + label {
   }
 }
 
+.week-icon::before {
+  content: "";
+  display: inline-block;
+  width: 0.875rem;
+  height: 1.125rem;
+  margin-right: 5px;
+  background-image: url(../img/ico-week.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+@media all and (max-width: 600px) {
+  .week-icon::before {
+    margin-right: 9px;
+  }
+}
+
 .cardcontent .content-bottom .subTxt {
   font-size: 1rem;
   color: #555555;
@@ -58030,9 +58051,9 @@ table input[type=radio] + label {
   content: "";
   display: block;
   position: absolute;
-  top: 3px;
+  top: 0.1875rem;
   transform: translateY(-50%);
-  left: 32px;
+  left: 2rem;
   right: auto;
   width: auto;
   content: "✔";
@@ -58046,14 +58067,14 @@ table input[type=radio] + label {
 }
 
 .list-1 {
-  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 .list-1 > li {
   display: block;
   position: relative;
-  margin: 5px 0;
-  font-size: 20px;
-  padding-left: 25px;
+  margin: 0.3125rem 0;
+  font-size: 1.1625rem;
+  padding-left: 1.5625rem;
   font-weight: 500;
   color: #333333;
   line-height: 1.8;
@@ -58070,12 +58091,12 @@ table input[type=radio] + label {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 11px;
-  width: 16px;
-  height: 16px;
+  top: 0.5625rem;
+  width: 1rem;
+  height: 1rem;
   background-color: #00489e;
   background-image: url(../img/h5-arw.png);
-  background-size: 6px 10px;
+  background-size: 0.375rem 0.625rem;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   border-radius: 50%;
@@ -58088,11 +58109,11 @@ table input[type=radio] + label {
 .list-circle > li {
   position: relative;
   color: #747474;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   text-align: left;
   line-height: 1.8;
-  padding-left: 17px;
+  padding-left: 1.0625rem;
 }
 .list-circle > li:before {
   content: "";
@@ -58101,23 +58122,23 @@ table input[type=radio] + label {
   display: block !important;
   overflow: hidden;
   position: absolute;
-  left: 3px;
-  top: 12ptitle__iconx;
-  width: 4px;
-  height: 4px;
+  left: 0.1875rem;
+  top: 0.75rem;
+  width: 0.25rem;
+  height: 0.25rem;
   border-radius: 50%;
   background-color: #575757;
 }
 
 .list-2 > li {
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
   color: #747474;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   text-align: left;
   line-height: 1.8;
-  padding-left: 17px;
+  padding-left: 1.0625rem;
 }
 .list-2 > li:before {
   content: "";
@@ -58126,12 +58147,12 @@ table input[type=radio] + label {
   display: inline-block;
   position: absolute;
   left: 0;
-  top: 9px;
-  width: 12px;
-  height: 12px;
+  top: 0.5625rem;
+  width: 0.75rem;
+  height: 0.75rem;
   background: #fff;
   border-radius: 50%;
-  border: 3px solid #00489e;
+  border: 0.1875rem solid #00489e;
   box-sizing: border-box;
 }
 
@@ -58139,6 +58160,7 @@ table input[type=radio] + label {
   font-size: 1.125rem;
   padding-left: 2rem;
   color: #2D2D2D;
+  line-height: 1.5;
 }
 
 .row__body {
@@ -58172,6 +58194,9 @@ span.cRed {
 
 .subcotent .introType .row__head {
   padding-top: 4rem !important;
+}
+.subcotent .introType .row__head.pt0 {
+  padding-top: 0 !important;
 }
 
 .subcotent .con__left img {
@@ -58317,6 +58342,37 @@ span.cRed {
 .completedType-1 td {
   text-align: left;
   padding-left: 1rem;
+}
+
+.ui-widget-header .ui-icon {
+  background: url(../img/ui-icons_555555_256x240.png);
+}
+
+.ui-icon-circle-triangle-w {
+  background-position: -80px -192px !important;
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: -48px -192px !important;
+}
+
+.com-step {
+  padding-left: 1.875rem;
+}
+
+.com-step ul li {
+  flex: 1 !important;
+  flex-wrap: wrap;
+}
+@media all and (max-width: 900px) {
+  .com-step ul li {
+    flex: 19.6% !important;
+  }
+}
+@media all and (max-width: 600px) {
+  .com-step ul li {
+    flex: 16.6% !important;
+  }
 }
 
 .header {
@@ -58535,7 +58591,11 @@ span.cRed {
   transform: rotate(-45deg);
   transform-origin: 3px;
 }
+.header .mobileMenu .menuToggle.open + .mobileNav {
+  display: block;
+}
 .header .mobileMenu .mobileNav {
+  display: none;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -60236,6 +60296,12 @@ span.cRed {
 .cardcontent-wrap .flex.gap24 {
   flex-wrap: wrap;
 }
+.cardcontent-wrap.elementMt0 li {
+  padding-top: 0.5rem !important;
+}
+.cardcontent-wrap.elementMt0 .tit {
+  margin-top: 0 !important;
+}
 
 .txt-top span {
   display: inline-block;
@@ -60401,6 +60467,11 @@ span.cRed {
   border: 1px solid rgba(255, 255, 255, 0.5);
   background: #f5f5f5;
   padding: 1.875rem 1.25rem;
+}
+
+.cardcontent .content-bottom .txt span, .cardcontent .content-bottom .txt em {
+  display: inline-block;
+  margin: 0 3px;
 }
 
 /*# sourceMappingURL=ui.css.map */

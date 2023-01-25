@@ -167,6 +167,24 @@
           }
         });
       });
+
+
+      // 모바일 메뉴 접근성 클릭
+      const mobileNavItem = document.querySelectorAll(".mobileNavItem a");
+      const mobileNavItemLength = mobileNavItem.length - 1;
+      const mobileNavItemActive = mobileNavItem[mobileNavItemLength];
+      const menuToggle = document.querySelector(".menuToggle");
+
+      // 교육경비 지원사업 링크다음으로 x버튼 포커스 이동
+      mobileNavItem.forEach((el) => {
+        el.addEventListener("focusout", function () {
+          if (el == mobileNavItemActive) {
+            menuToggle.focus();
+          }
+        });
+      });
+
+
       // 모바일 메뉴 eee
 
     })();
@@ -477,7 +495,7 @@
           const checkbox = agreeRow.querySelector('.my-checkbox');
           const hint = agreeRow.querySelector(".hint");
 
-          if (el.scrollTop + el.clientHeight >= el.scrollHeight-1) {
+          if (el.scrollTop + el.clientHeight >= el.scrollHeight - 1) {
             checkbox.disabled = false;
             hint.style.opacity = "0";
           } else {

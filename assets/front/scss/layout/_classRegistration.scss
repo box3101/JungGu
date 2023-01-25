@@ -152,6 +152,14 @@
 	.flex.gap24 {
 		flex-wrap: wrap;
 	}
+	&.elementMt0{
+		li{
+			padding-top: 0.5rem!important;
+		}
+		.tit{
+			margin-top: 0!important;
+		}
+	}
 }
 
 .txt-top span {
@@ -301,4 +309,8 @@
 	border: 1px solid rgba(255, 255, 255, 0.5);
     background: #f5f5f5;
     padding: 1.875rem 1.25rem;
+}
+.cardcontent .content-bottom .txt span, .cardcontent .content-bottom .txt em{
+	display: inline-block;
+	margin: 0 3px;
 }

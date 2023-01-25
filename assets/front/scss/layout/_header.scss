@@ -187,8 +187,15 @@
 					transform-origin: 3px;
 				}
 			}
+
+			&.open{
+				+ .mobileNav{
+					display: block;
+				}
+			}
 		}
 		.mobileNav {
+			display: none;
 			position: absolute;
 			top: 0;
 			bottom: 0;
