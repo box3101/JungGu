@@ -73,6 +73,13 @@
 	&__form {
 		display: inline-block;
 		width: 100%;
+		.desc-txt{
+			display: inline-block;
+			font-size: 0.9rem;
+			margin-top: 0.4rem;
+			margin-left: 0.1rem;
+			color: darkred;
+		}
 	}
 	.comRowType-1 {
 		width: 60%;

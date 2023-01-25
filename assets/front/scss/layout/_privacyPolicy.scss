@@ -1,4 +1,9 @@
 .privacyPolicy {
+	.row{
+		&__head{
+			display: block;
+		}
+	}
 	.tableType-1 {
 		td,
 		th {
@@ -48,5 +53,10 @@
 @include media($mo) {
 	html {
 		font-size: 12px;
+	}
+	.privacyPolicy figure{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

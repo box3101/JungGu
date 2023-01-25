@@ -58100,14 +58100,14 @@ table input[type=radio] + label {
   overflow: hidden;
   position: absolute;
   left: 3px;
-  top: 12px;
+  top: 12ptitle__iconx;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: #575757;
 }
 
-.list-num > li {
+.list-2 > li {
   font-size: 16px;
   position: relative;
   color: #747474;
@@ -58117,7 +58117,7 @@ table input[type=radio] + label {
   line-height: 1.8;
   padding-left: 17px;
 }
-.list-num > li:before {
+.list-2 > li:before {
   content: "";
   display: block;
   content: "";
@@ -58250,6 +58250,15 @@ span.cRed {
   animation: shake 1.5s ease-in-out infinite;
   animation-direction: alternate;
   color: darkblue !important;
+}
+
+.desc-txt.border {
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  padding: 15px;
+  line-height: 1.6;
+  word-break: keep-all;
+  color: #00489e;
 }
 
 .header {
@@ -59161,6 +59170,9 @@ span.cRed {
     height: auto;
   }
 }
+.privacyPolicy .row__head {
+  display: block;
+}
 .privacyPolicy .tableType-1 td,
 .privacyPolicy .tableType-1 th {
   border: 1px solid #ddd;
@@ -59208,6 +59220,11 @@ span.cRed {
 @media all and (max-width: 600px) {
   html {
     font-size: 12px;
+  }
+  .privacyPolicy figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .join .agreeRow {
@@ -59283,6 +59300,13 @@ span.cRed {
 .memmerWrap__form {
   display: inline-block;
   width: 100%;
+}
+.memmerWrap__form .desc-txt {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  margin-left: 0.1rem;
+  color: darkred;
 }
 .memmerWrap .comRowType-1 {
   width: 60%;
