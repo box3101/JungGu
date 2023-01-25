@@ -329,6 +329,8 @@ html.open {
 			height: 1.25rem;
 			margin-right: 0.625rem;
 			@include bg-url("img", "icon-wave.svg", "cover");
+			position: relative;
+			top: 1px;
 		}
 	}
 	&__body {
@@ -1558,10 +1560,60 @@ span.cRed{
 }
 
 .desc-txt.border{
-	border: 1px solid #aaa;
-	margin-top: 10px;
-	padding: 15px;
+	border: 0.0625rem solid #aaa;
+	margin-top: 0.625rem;
+	padding: 0.9375rem;
 	line-height: 1.6;
 	word-break: keep-all;
 	color: $cMain;
+}
+
+.completedType-1{
+	p.tit{
+		@include before{
+			width: 5.625rem; height: 5.625rem;
+			margin: 0 auto;
+			margin-bottom: 1.875rem;
+			@include bg-url("img","completed-check.png","contain");
+		}
+		position: relative;
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1.5;
+		margin-bottom: 1.875rem;
+		word-break: keep-all;
+		span{
+			font-weight: bold;
+			color: $cMain;
+		}
+	}
+	max-width: 37.5rem;
+	margin: 0 auto;
+	.border{
+		padding: 1.25rem;
+		border: 0.0625rem solid $cMain;
+		margin-bottom: 1.25rem;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		line-height: 1.4;
+		word-break: keep-all;
+		li{
+			font-size: 1.125rem;
+			span{
+				font-weight: bold;
+				color: $cMain;
+				&.cRed{
+					color: darkred;
+				}
+			}
+			+li{
+				margin-top: 0.625rem;
+			}
+		}
+	}
+	td{
+		text-align: left;
+		padding-left: 1rem;
+	}
 }

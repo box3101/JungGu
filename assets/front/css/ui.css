@@ -7038,6 +7038,8 @@ html.open {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+  top: 1px;
 }
 .row__body {
   padding-top: 0.625rem;
@@ -58253,12 +58255,68 @@ span.cRed {
 }
 
 .desc-txt.border {
-  border: 1px solid #aaa;
-  margin-top: 10px;
-  padding: 15px;
+  border: 0.0625rem solid #aaa;
+  margin-top: 0.625rem;
+  padding: 0.9375rem;
   line-height: 1.6;
   word-break: keep-all;
   color: #00489e;
+}
+
+.completedType-1 {
+  max-width: 37.5rem;
+  margin: 0 auto;
+}
+.completedType-1 p.tit {
+  position: relative;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 1.875rem;
+  word-break: keep-all;
+}
+.completedType-1 p.tit:before {
+  content: "";
+  display: block;
+  width: 5.625rem;
+  height: 5.625rem;
+  margin: 0 auto;
+  margin-bottom: 1.875rem;
+  background-image: url("../img/completed-check.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.completedType-1 p.tit span {
+  font-weight: bold;
+  color: #00489e;
+}
+.completedType-1 .border {
+  padding: 1.25rem;
+  border: 0.0625rem solid #00489e;
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+.completedType-1 .border li {
+  font-size: 1.125rem;
+}
+.completedType-1 .border li span {
+  font-weight: bold;
+  color: #00489e;
+}
+.completedType-1 .border li span.cRed {
+  color: darkred;
+}
+.completedType-1 .border li + li {
+  margin-top: 0.625rem;
+}
+.completedType-1 td {
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .header {

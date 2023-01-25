@@ -348,145 +348,257 @@
           <div class="subBody">
             <div class="subcotent sharingSpace">
 
-              <!-- 결제하기 -->
-              <div class="row">
-                <p class="row__head">
-                  <span class="title__icon">결제하기</span>
+              <!-- 신용카드 결제 완료 시  -->
+              <div class="completedType-1">
+                <p class="tit">
+                  홍길동님, <span>신용카드 결제가 완료</span> 되었습니다. <br>
+                  감사합니다.
                 </p>
-                <div class="comTable-2">
-                  <table>
-                    <caption class="hidden">결제 하기</caption>
-                    <colgroup>
-                      <col width="160px">
-                      <col width="190px">
-                      <col width="100px">
-                      <col width="400px">
-                    </colgroup>
-                    <thead>
-                      <tr>
-                        <th scope="row">강좌 정보</th>
-                        <td colspan="3" class="lh15">
-                          2022년 제24기 아동학대신고의무자 상설교육
-                        </td>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">신청자 정보</th>
-                        <td colspan="3" class="lh15">
-                          <span>홍*동</span>
-                          <span class="is-mo-hide">|</span>
-                          <br class="is-mo-show">
-                          <span>010-****-6785</span>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">면제 및 감면대상 인증</th>
-                        <td colspan="3">
-                          <div class="flex gap5">
-                            <div class="comSelectBox w150">
-                              <label for="g1"></label>
-                              <select name="" id="g1" class="comSelect">
-                                <option value="">국가유공자</option>
-                              </select>
-                            </div>
-                            <button type="button" class="comBtn bgMain">인증</button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <!-- TODO 인증 완료 시   -->
-                        <th scope="row">(인증 확인 시)</th>
-                        <td colspan="3">
-                          <div class="flex gap5">
-                            <div class="comSelectBox w150">
-                              <label for="g1"></label>
-                              <select name="" id="g1" class="comSelect btn-disabled">
-                                <option value="">국가유공자</option>
-                              </select>
-                            </div>
-                            <button type="button" class="comBtn bgBlack btnEventNone">인증완료</button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row">결제금액</th>
-                        <td colspan="3"><strong>15,000원</strong></td>
-                      </tr>
-                      <tr>
-                        <th scope="row">결제수단 선택</th>
-                        <td colspan="3">
-                          <div class="flex gap5 aiCenter">
-                            <button type="button" class="comBtn bgBlack sizeLg">신용카드</button>
-                            <button type="button" class="comBtn bgBlack sizeLg">가상계좌</button>
-                          </div>
-                        </td>
-                      </tr>
-                      <!-- TODO 선택시 색상 변경 + 선택됐을 경우 체크 박스 CLASS add .is-active  -->
-                      <tr>
-                        <th scope="row">(결제수단 선택 시)</th>
-                        <td colspan="3">
-                          <div class="flex gap5 aiCenter">
-                            <button type="button" class="comBtn bgBlack sizeLg btnEventNone" title="선택됨"
-                            >신용카드</button>
-                            <button type="button" class="comBtn bgBlack sizeLg btnEventNone is-active">가상계좌</button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="border">
+                  <ul>
+                    <li>
+                      <span>[공부머리 독서법]</span> 강좌 예약접수가 정상적으로 이루어 졌습니다.
+                    </li>
+                    <li>
+                      마이페이지의 <span>강좌신청현황</span>에서 확인하실 수 있습니다.
+                    </li>
+                  </ul>
                 </div>
-              </div>
+                <table class="comTable-1">
+                  <caption class="hidden">결제수단, 결제일시, 할부, 결제금액를 나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">결제수단</th>
+                    <td>
+                      신용카드 (2342 4253 **** ****)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">결제일시</th>
+                    <td>
+                      <span>2022-11-30</span> <span>12:34:53</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">할부</th>
+                    <td>
+                      일시불
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">결제금액</th>
+                    <td>
+                      <span>25,000</span>원
+                    </td>
+                  </tr>
+                </table>
 
-              <!-- 개인정보 수집동의 -->
-              <div class="row join pb0">
-                <p class="row__head">
-                  <span class="title__icon">개인정보 수집동의</span>
+                <table class="comTable-1 mt30">
+                  <caption class="hidden">교육기관, 강좌명, 교육기간을 나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">교육기관</th>
+                    <td>
+                      평생교육관
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">강좌명</th>
+                    <td>
+                      공부머리 독서법
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육기간</th>
+                    <td>
+                      <span>2022-12-06</span> ~ <span>2022-12-31</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <ul class="BottomBtnWrap flex gap5 aiCenter jcCenter">
+                  <li>
+                    <button type="button" class="comBtn sizeXlg bgMain">확인</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 신용카드 결제 완료 시 eee -->
+
+              <!-- 가상계좌 결제 완료 시  -->
+              <div class="completedType-1">
+                <p class="tit">
+                  홍길동님, <span>가상계좌 번호가 할당</span> 되었습니다. <br>
+                  아래 가상계좌 번호로 입금하시면 예약이 완료됩니다.
+                  감사합니다.
                 </p>
-                <div class="agreeRow">
-                  <div class="agree">
-                    <fieldset class="agreeBox" tabindex="0">
-                      <legend class="hidden">개인정보 수집동의</legend>
-                      <div>
-                        본인은 ｢정보통신망 이용촉진 및 정보보호 등에 관한 법률｣제22조(개인정보의 수집ㆍ이용 동의 등) 및 제24조의2(개인정보의 제공 동의 등), ｢개인정보
-                        보호법｣제15조(개인정보의 수집ㆍ이용), 제17조(개인정보의
-                        제공)에 따라 본인의 개인정보를 인천중구교육포털 「배우는바다」에서 수집ㆍ활용하는데 동의합니다. <br><br>
-
-                        수집목적 : 본인확인절차, 정책정보 등 행정서비스 제공, 업무와 관련된 통계자료 작성, 교육 및 컨설팅 등 사후관리 <br>
-                        수집항목 : 신청자 성명, 휴대전화, 이메일 등 <br>
-                        보유 및 이용기간 : 사업목적이 달성된 이후 파기
-                        귀하께서는 개인정보 제공 및 활용에 거부할 권리가 있음을 알려드리며, 거부하실 경우 신청서 접수가 불가능함을 알려드립니다.
-                        <br><br>
-                        ※미동의시 평생학습관 대관신청이 제한됩니다
-
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="agreeOk">
-                    <div class="formChkbox flex gap5 aiCenter">
-                      <label class="formChkbox__control control--checkbox"> 개인정보 수집 동의 <span class="cRed">(필수)</span>
-                        <input type="checkbox">
-                      </label>
-                    </div>
-
-                    <!-- <div class="hint">
-                     <p>※ 스크롤을 끝까지 내려 내용을 확인하기 바립니다.</p>
-                    </div> -->
-                  </div>
+                <div class="border">
+                  <ul>
+                    <li>
+                      <span>익일(2022-12-01) 08시 까지</span> 입금 부탁드립니다.
+                    </li>
+                    <li>
+                      기한 내 입금이 안될 시 <span class="cRed">예약이 자동으로 취소</span>됩니다.
+                    </li>
+                  </ul>
                 </div>
+                <table class="comTable-1">
+                  <caption class="hidden">입금은행 / 예금주 , 가상계좌 번호, 입금요청 금액, 입금기한
+                    나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">입금은행 / 예금주</th>
+                    <td>
+                      농협 (인천중구청)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">가상계좌 번호</th>
+                    <td>
+                      7723425578125
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">입금요청 금액</th>
+                    <td>
+                      <span>25,000</span>원
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">입금기한</th>
+                    <td>
+                      <span class="cBlue">2022-12-01 08시</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="comTable-1 mt30">
+                  <caption class="hidden">교육기관, 강좌명, 교육기간을 나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">교육기관</th>
+                    <td>
+                      평생교육관
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">강좌명</th>
+                    <td>
+                      공부머리 독서법
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육기간</th>
+                    <td>
+                      <span>2022-12-06</span> ~ <span>2022-12-31</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <ul class="BottomBtnWrap flex gap5 aiCenter jcCenter">
+                  <li>
+                    <button type="button" class="comBtn sizeXlg bgMain">확인</button>
+                  </li>
+                </ul>
               </div>
-              <!-- 개인정보 수집동의 eee -->
+              <!-- 가상계좌 결제 완료 시 eee -->
+
+              <!-- 무통장입금 결제 완료 시  -->
+              <div class="completedType-1">
+                <p class="tit">
+                  홍길동님, <span>무통장입금 계좌로 입금</span> 부탁드립니다. <br>
+                  아래 계좌 번호로 입금하시면 예약이 완료됩니다.
+                  감사합니다.
+                </p>
+                <div class="border">
+                  <ul>
+                    <li>
+                      <span>익일(2022-12-01) 08시 까지</span> 입금 부탁드립니다.
+                    </li>
+                    <li>
+                      기한 내 입금이 안될 시 <span class="cRed">예약이 자동으로 취소</span>될 수 있습니다.
+                    </li>
+                  </ul>
+                </div>
+                <table class="comTable-1">
+                  <caption class="hidden">입금은행 / 예금주 , 계좌 번호, 입금요청 금액, 입금기한
+                    나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">입금은행 / 예금주</th>
+                    <td>
+                      농협 (인천중구청)
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">계좌 번호</th>
+                    <td>
+                      7723425578125
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">입금요청 금액</th>
+                    <td>
+                      <span>25,000</span>원
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">입금기한</th>
+                    <td>
+                      <span class="cBlue">2022-12-01 08시</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <table class="comTable-1 mt30">
+                  <caption class="hidden">교육기관, 강좌명, 교육기간을 나타내는 표</caption>
+                  <colgroup>
+                    <col width="30%">
+                    <col width="70%">
+                  </colgroup>
+                  <tr>
+                    <th scope="row">교육기관</th>
+                    <td>
+                      평생교육관
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">강좌명</th>
+                    <td>
+                      공부머리 독서법
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">교육기간</th>
+                    <td>
+                      <span>2022-12-06</span> ~ <span>2022-12-31</span>
+                    </td>
+                  </tr>
+                </table>
+
+                <ul class="BottomBtnWrap flex gap5 aiCenter jcCenter">
+                  <li>
+                    <button type="button" class="comBtn sizeXlg bgMain">확인</button>
+                  </li>
+                </ul>
+              </div>
+              <!-- 무통장입금 결제 완료 시 eee -->
 
 
-              <!-- 취소, 신청 -->
-              <ul class="BottomBtnWrap flex gap5 aiCenter jcCenter">
-                <li>
-                  <button type="button" class="comBtn sizeXlg bgBlack">취소하기</button>
-                </li>
-                <li>
-                  <button type="button" class="comBtn sizeXlg bgMain">결제하기</button>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
