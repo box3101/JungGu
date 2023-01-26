@@ -4,15 +4,15 @@
 		border: 0.125rem solid #eee;
 		border-radius: 0.75rem;
 		text-align: center;
-    .comSelectWrap{
-      display: flex;
-      gap: 0.625rem;
-      .comSelectBox{
-        @include media($mo){
-          flex:1;
-        }
-      }
-    }
+		.comSelectWrap {
+			display: flex;
+			gap: 0.625rem;
+			.comSelectBox {
+				@include media($mo) {
+					flex: 1;
+				}
+			}
+		}
 	}
 	.searchBox__inner {
 		display: flex;
@@ -20,6 +20,77 @@
 		gap: 0.625rem;
 		@include media($mo) {
 			flex-direction: column;
+		}
+		&.custom {
+			gap: 0px;
+			@include media($tab) {
+				flex-direction: column;
+			}
+			.comSelectWrap {
+				.comSelectBox {
+					label {
+						@include media($tab) {
+							padding-right: 0;
+						}
+					}
+					@include media($tab) {
+						width: 100%;
+						flex-direction: column;
+						display: flex;
+						&:after {
+							@include media($tab) {
+								top: 40px;
+							}
+						}
+					}
+					.comSelect {
+						@include media($tab) {
+							width: 100% !important;
+							margin-top: 8px;
+						}
+					}
+				}
+				margin-right: 0.5rem;
+				@include media($tab) {
+					margin-right: 0;
+				}
+			}
+			.searchArea__tit {
+				padding-right: 0.625rem;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				top: -3px;
+				@include media($tab) {
+					width: 100%;
+					justify-content: center;
+					padding-right: 0;
+					top: 0;
+					max-height: 40px;
+					margin-top: 8px;
+				}
+				label {
+					position: relative;
+					top: 2px;
+					@include media($tab) {
+						top: 0;
+					}
+				}
+			}
+			.comInput {
+				margin-right: 0.5rem;
+				@include media($tab) {
+					margin-right: 0;
+					width: 100% !important;
+				}
+			}
+			.sizeMid {
+				height: 2.22725rem;
+				@include media($tab) {
+					margin-top: 8px;
+					width: 100%;
+				}
+			}
 		}
 	}
 	.searchBox__select {
@@ -38,53 +109,55 @@
 		border-radius: 0.3125rem;
 		border: 0.0625rem solid #b5b5b5;
 	}
-	.searchBox  .sizeMid {
+	.searchBox .sizeMid {
 		@include media($mo) {
-      width: 100%;
-    }
+			width: 100%;
+		}
 	}
 	.comSearchBox .txt span {
 		display: inline-block;
 		color: var(--basic-color-secondary);
 		font-weight: bold;
 	}
-  .w172{
-    width: 10.75rem!important;
-    height: 4rem!important;
-  }
-  .trHoverNone .flex.gap20{
-    align-items: center;
-  }
-  .flexColumn{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0.625rem 0;
-    gap:0px!important;
-  }
-  .boardArrPrev{
-    position: relative;
-    @include after{
-      @include pCenterY;
-      right: 1.225rem;
-      @include bg-url("img","board-view-prev-arw.png","cover");
-      width: 0.75rem;height: 0.4375rem;
-      @include media($mo){
-        right: 5px;
-      }
-    }
-  }
-  .boardArrNext{
-    position: relative;
-    @include after{
-      @include pCenterY;
-      right: 1.225rem;
-      @include bg-url("img","board-view-next-arw.png","cover");
-      width: 0.75rem;height: 0.4375rem;
-      @include media($mo){
-        right: 5px;
-      }
-    }
-  }
+	.w172 {
+		width: 10.75rem !important;
+		height: 4rem !important;
+	}
+	.trHoverNone .flex.gap20 {
+		align-items: center;
+	}
+	.flexColumn {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0.625rem 0;
+		gap: 0px !important;
+	}
+	.boardArrPrev {
+		position: relative;
+		@include after {
+			@include pCenterY;
+			right: 1.225rem;
+			@include bg-url("img", "board-view-prev-arw.png", "cover");
+			width: 0.75rem;
+			height: 0.4375rem;
+			@include media($mo) {
+				right: 5px;
+			}
+		}
+	}
+	.boardArrNext {
+		position: relative;
+		@include after {
+			@include pCenterY;
+			right: 1.225rem;
+			@include bg-url("img", "board-view-next-arw.png", "cover");
+			width: 0.75rem;
+			height: 0.4375rem;
+			@include media($mo) {
+				right: 5px;
+			}
+		}
+	}
 }

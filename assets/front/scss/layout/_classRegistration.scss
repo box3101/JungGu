@@ -130,6 +130,18 @@
 		@extend %hover-effect-1;
 	}
 }
+.cardcontent.link a {
+	@extend %effect-1;
+	@include after {
+		border-color: #333 !important;
+	}
+	@include before {
+		border-color: #333 !important;
+	}
+	&:hover {
+		@extend %hover-effect-1;
+	}
+}
 .cardcontent {
 	// width: 25% !important;
 	width: calc(25% - (24px / 4) * 3) !important;
@@ -152,12 +164,12 @@
 	.flex.gap24 {
 		flex-wrap: wrap;
 	}
-	&.elementMt0{
-		li{
-			padding-top: 0.5rem!important;
+	&.elementMt0 {
+		li {
+			padding-top: 0.5rem !important;
 		}
-		.tit{
-			margin-top: 0!important;
+		.tit {
+			margin-top: 0 !important;
 		}
 	}
 }
@@ -192,9 +204,9 @@
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
-	@include media($mo){
+	@include media($mo) {
 		margin-right: 8px;
-    margin-left: 0px;
+		margin-left: 0px;
 	}
 }
 
@@ -300,17 +312,18 @@
 	display: flex;
 	align-items: center;
 }
-.ifWoman{
+.ifWoman {
 	width: 11.25rem;
 	height: 13.75rem;
-	@include bg-url("img","ico-woman.png","cover");
+	@include bg-url("img", "ico-woman.png", "cover");
 }
-.lecture.point .lectureBox{
+.lecture.point .lectureBox {
 	border: 1px solid rgba(255, 255, 255, 0.5);
-    background: #f5f5f5;
-    padding: 1.875rem 1.25rem;
+	background: #f5f5f5;
+	padding: 1.875rem 1.25rem;
 }
-.cardcontent .content-bottom .txt span, .cardcontent .content-bottom .txt em{
+.cardcontent .content-bottom .txt span,
+.cardcontent .content-bottom .txt em {
 	display: inline-block;
 	margin: 0 3px;
 }

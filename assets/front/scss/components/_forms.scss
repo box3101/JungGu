@@ -9,9 +9,9 @@
 	font-weight: 500;
 	font-size: 1.25rem;
 	&::placeholder {
-		color: $cGray-2!important;
-		letter-spacing: -0.0625rem!important;
-		font-weight: 400!important;
+		color: $cGray-2 !important;
+		letter-spacing: -0.0625rem !important;
+		font-weight: 400 !important;
 	}
 }
 input:read-only {
@@ -48,9 +48,9 @@ input:read-only {
 	padding: 0.625rem;
 	line-height: 1.4;
 	&::placeholder {
-		color: $cGray-2!important;
-		letter-spacing: -0.0625rem!important;
-		font-weight: 400!important;
+		color: $cGray-2 !important;
+		letter-spacing: -0.0625rem !important;
+		font-weight: 400 !important;
 	}
 }
 
@@ -59,16 +59,16 @@ input:read-only {
 	// margin-top: 1.25rem;
 	padding-bottom: 1.25rem;
 	padding-left: 2rem;
-	&.pl8{
+	&.pl8 {
 		margin-left: -8px;
 	}
-	&.pl8 th{
+	&.pl8 th {
 		padding-left: 8px;
 	}
-	&.w700{
-		table{
+	&.w700 {
+		table {
 			width: 766px;
-			@include media($mo){
+			@include media($mo) {
 				width: 100%;
 			}
 		}
@@ -115,7 +115,7 @@ input:read-only {
 		color: #2d2d2d;
 		padding-left: 0 0.9375rem;
 		padding-right: 0 0.9375rem;
-		&.align-right{
+		&.align-right {
 			text-align: right;
 			padding-right: 15px;
 		}
@@ -305,7 +305,7 @@ input:read-only {
 }
 .formChkbox input {
 	position: absolute;
-	top: 44%;
+	top: 45%;
 	transform: translateY(-50%);
 	left: 0;
 	height: 1.25rem;
@@ -438,6 +438,6 @@ input:read-only {
 		font-size: 0.9rem;
 	}
 }
-.subcotent .introType .content{
-	padding-top: 0.8375rem!important;
+.subcotent .introType .content {
+	padding-top: 0.8375rem !important;
 }

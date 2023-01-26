@@ -758,7 +758,7 @@ html.open {
 //color
 .cRed {
 	color: darkred;
-	@at-root .row__body &{
+	@at-root .row__body & {
 		font-size: 1rem;
 	}
 }
@@ -1308,7 +1308,6 @@ table input[type="radio"] + label {
 	}
 }
 
-
 .cardcontent .content-bottom .subTxt {
 	font-size: 1rem;
 	color: #555555;
@@ -1387,8 +1386,8 @@ table input[type="radio"] + label {
 .list-1 {
 	padding-left: 1.875rem;
 	> li {
-		&.before-none{
-			@include before{
+		&.before-none {
+			@include before {
 				display: none;
 			}
 		}
@@ -1400,7 +1399,7 @@ table input[type="radio"] + label {
 		font-weight: 500;
 		color: #333333;
 		line-height: 1.8;
-		@include before{
+		@include before {
 			content: "";
 			display: inline-block;
 			position: absolute;
@@ -1416,7 +1415,7 @@ table input[type="radio"] + label {
 			border-radius: 50%;
 			box-sizing: border-box;
 		}
-		a{
+		a {
 			display: inline-block;
 		}
 	}
@@ -1430,9 +1429,9 @@ table input[type="radio"] + label {
 		text-align: left;
 		line-height: 1.8;
 		padding-left: 1.0625rem;
-		@include before{
+		@include before {
 			content: "";
-			display: block!important;
+			display: block !important;
 			overflow: hidden;
 			position: absolute;
 			left: 0.1875rem;
@@ -1444,8 +1443,8 @@ table input[type="radio"] + label {
 		}
 	}
 }
-.list-2{
-	>li{
+.list-2 {
+	> li {
 		font-size: 1rem;
 		position: relative;
 		color: #747474;
@@ -1454,7 +1453,7 @@ table input[type="radio"] + label {
 		text-align: left;
 		line-height: 1.8;
 		padding-left: 1.0625rem;
-		@include before{
+		@include before {
 			content: "";
 			display: inline-block;
 			position: absolute;
@@ -1472,31 +1471,31 @@ table input[type="radio"] + label {
 .subcotent .introType .content {
 	font-size: 1.125rem;
 	padding-left: 2rem;
-	color: #2D2D2D;
+	color: #2d2d2d;
 	line-height: 1.5;
 }
 .row__body {
 	text-indent: 0 !important;
 }
-span.cRed{
+span.cRed {
 	color: darkred;
 }
 
-.com-step{
+.com-step {
 	opacity: 1;
-	ul{
+	ul {
 		display: flex;
-		li{
-			.num{
+		li {
+			.num {
 				font-size: 20px;
-    font-weight: bold;
+				font-weight: bold;
 			}
-			.tit{
+			.tit {
 				font-size: 24px;
 				font-weight: bold;
 				line-height: 1.6;
 			}
-			.txt{
+			.txt {
 				font-size: 18px;
 				font-weight: 500;
 				color: #555555;
@@ -1505,43 +1504,43 @@ span.cRed{
 	}
 }
 .subcotent .introType .row__head {
-	padding-top: 4rem!important;
-	&.pt0{
-		padding-top: 0!important;
+	padding-top: 4rem !important;
+	&.pt0 {
+		padding-top: 0 !important;
 	}
 }
-.subcotent .con__left img{
+.subcotent .con__left img {
 	object-fit: cover;
 }
-.subcotent .introType .row__head{
+.subcotent .introType .row__head {
 	padding-top: 3.75rem;
 }
-.subcotent.privacyPolicy{
-	.row__head{
+.subcotent.privacyPolicy {
+	.row__head {
 		border-bottom: 1px solid #333;
 	}
 }
-.row__head{
+.row__head {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	.search-wrap{
+	.search-wrap {
 		display: flex;
 		align-items: center;
-		gap:0.625rem;
-		p{
+		gap: 0.625rem;
+		p {
 			font-size: 1rem;
 			margin-right: -0.9375rem;
 			font-weight: bold;
 		}
-		.btn-wrap{
-			button{
+		.btn-wrap {
+			button {
 				position: relative;
-				&.is-active{
+				&.is-active {
 					background: #000;
-					color: #fff!important;
-					@include after{
+					color: #fff !important;
+					@include after {
 						content: "✔";
 						top: 0.5rem;
 						left: 0.8125rem;
@@ -1551,40 +1550,47 @@ span.cRed{
 		}
 	}
 }
-@include media($tab){
-	.mypage .row__head{
+@include media($tab) {
+	.mypage .row__head {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	.mypage .row__head span{
+	.mypage .row__head span {
 		margin-bottom: 10px;
 	}
-	.search-wrap .inputDateWrap{
+	.search-wrap .inputDateWrap {
 		display: flex;
 		align-items: center;
 		flex-direction: row;
 	}
-	.row__head .search-wrap{
+	.row__head .search-wrap {
 		width: 100%;
-		display: flex;flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		align-items: center;
 	}
 }
 
 @keyframes shake {
-  0% { text-shadow: 0 0 0 #000; opacity: 0; }
-  // 50% { text-shadow: 1px 1px 0 #000; }
-  100% { text-shadow: 0 0 0 #000; opacity: 1; }
+	0% {
+		text-shadow: 0 0 0 #000;
+		opacity: 0;
+	}
+	// 50% { text-shadow: 1px 1px 0 #000; }
+	100% {
+		text-shadow: 0 0 0 #000;
+		opacity: 1;
+	}
 }
 
 .shake {
-  animation: shake 1.5s ease-in-out infinite;
-	animation-direction : alternate;
-	color: darkblue!important;
+	animation: shake 1.5s ease-in-out infinite;
+	animation-direction: alternate;
+	color: darkblue !important;
 }
 
-.desc-txt.border{
+.desc-txt.border {
 	border: 0.0625rem solid #aaa;
 	margin-top: 0.625rem;
 	padding: 0.9375rem;
@@ -1593,13 +1599,14 @@ span.cRed{
 	color: $cMain;
 }
 
-.completedType-1{
-	p.tit{
-		@include before{
-			width: 5.625rem; height: 5.625rem;
+.completedType-1 {
+	p.tit {
+		@include before {
+			width: 5.625rem;
+			height: 5.625rem;
 			margin: 0 auto;
 			margin-bottom: 1.875rem;
-			@include bg-url("img","completed-check.png","contain");
+			@include bg-url("img", "completed-check.png", "contain");
 		}
 		position: relative;
 		font-size: 2rem;
@@ -1607,14 +1614,14 @@ span.cRed{
 		line-height: 1.5;
 		margin-bottom: 1.875rem;
 		word-break: keep-all;
-		span{
+		span {
 			font-weight: bold;
 			color: $cMain;
 		}
 	}
 	max-width: 37.5rem;
 	margin: 0 auto;
-	.border{
+	.border {
 		padding: 1.25rem;
 		border: 0.0625rem solid $cMain;
 		margin-bottom: 1.25rem;
@@ -1623,45 +1630,159 @@ span.cRed{
 		text-align: center;
 		line-height: 1.4;
 		word-break: keep-all;
-		li{
+		li {
 			font-size: 1.125rem;
-			span{
+			span {
 				font-weight: bold;
 				color: $cMain;
-				&.cRed{
+				&.cRed {
 					color: darkred;
 				}
 			}
-			+li{
+			+ li {
 				margin-top: 0.625rem;
 			}
 		}
 	}
-	td{
+	td {
 		text-align: left;
 		padding-left: 1rem;
 	}
 }
 
-.ui-widget-header .ui-icon{
+.ui-widget-header .ui-icon {
 	background: url(../img/ui-icons_555555_256x240.png);
 }
 .ui-icon-circle-triangle-w {
-	background-position: -80px -192px!important;
+	background-position: -80px -192px !important;
 }
 .ui-icon-circle-triangle-e {
-	background-position: -48px -192px!important;
+	background-position: -48px -192px !important;
 }
-.com-step{
+.com-step {
 	padding-left: 1.875rem;
 }
-.com-step ul li{
-	flex:1!important;
+.com-step ul li {
+	flex: 1 !important;
 	flex-wrap: wrap;
-	@include media($tab){
+	@include media($tab) {
 		flex: 19.6% !important;
 	}
-	@include media($mo){
+	@include media($mo) {
 		flex: 16.6% !important;
 	}
+}
+.row__body .img01 {
+	@include media($tab) {
+		width: 100%;
+	}
+}
+/* 에러페이지 css */
+body.nopage {
+	background-color: #f3f4f6;
+}
+
+body.nopage .wrapper {
+	padding: 0 !important;
+}
+
+.nopage-wrap {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background-color: #f3f4f6;
+	padding: 4.6875rem 0 6.25rem 0;
+	box-sizing: border-box;
+}
+
+.nopage-inner {
+	display: block;
+	width: 43.4375rem;
+	max-width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.nopage-wrap .nopage-incheon {
+	display: block;
+	overflow: hidden;
+	width: 10.5625rem;
+	height: 2.375rem;
+	background-image: url("../img/icon-no-content.png");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	text-indent: -625000000000000000000rem;
+	font-size: 0;
+}
+
+.nopage-wrap .nopage-sorry {
+	display: block;
+	margin: 5rem auto 2rem auto;
+	color: #1c236c;
+	font-family: "Noto Sans";
+	font-size: 2.25rem;
+	line-height: 1.5;
+}
+
+.nopage-wrap .nopage-img {
+	display: block;
+	width: 16rem;
+	height: 16rem;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #fff;
+	background-image: url("../img/arr-img.png");
+	background-repeat: no-repeat;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+.nopage-wrap .nopage-guide {
+	display: block;
+	margin: 0 auto;
+	padding: 1.875rem;
+	color: #717171;
+	font-size: 1.125rem;
+	line-height: 1.5;
+}
+
+.nopage-wrap .nopage-btn-wrap {
+	overflow: hidden;
+	width: 37.5rem;
+	max-width: 90%;
+	margin: 2.5rem auto 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page {
+	display: block;
+	position: relative;
+	flex: 1;
+	height: 3.875rem;
+	background-color: $cMain;
+	border: 1px solid #fff;
+	line-height: 3.75rem;
+	color: #fff !important;
+	font-weight: 500;
+	font-size: 1.25rem;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page:nth-child(2n) {
+	margin-right: 0;
+}
+
+.nopage-wrap .btn-wrap .btn-lg span {
+	color: #fff !important;
+}
+
+.nopage-wrap .nopage-btn-wrap .btn-go-page > span {
+	position: relative;
+	top: -4px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	color: #fff;
 }

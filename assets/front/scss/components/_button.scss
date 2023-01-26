@@ -165,7 +165,7 @@ $btn-sizes: (
 		fontSize: 1rem,
 	),
 	sizeLg: (
-		minWidth : 10.5rem,
+		minWidth: 10.5rem,
 		width: auto,
 		height: 2.525rem,
 		lineHeight: 2.1rem,
@@ -278,6 +278,11 @@ $btn-radius: (
 		border: 0.0625rem solid #0fdb5c;
 		color: #fff;
 	}
+	&.link {
+		background: fff;
+		border: 1px solid #aaa;
+		color: #333;
+	}
 }
 /* =================== chip eee =================== */
 
@@ -288,8 +293,4 @@ $btn-radius: (
 	.subHead__location li:first-child:before {
 		display: none !important;
 	}
-}
-
-.cardcontent .content-bottom{
-	border: 1px solid #eee;
 }
