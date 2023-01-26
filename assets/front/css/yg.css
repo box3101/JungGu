@@ -836,14 +836,14 @@ a {
   padding-bottom: 1rem;
 }
 .introType2 .list-1 {
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .status .searchBox {
   margin-top: 1.1875rem;
 }
 .status .searchBox .searchArea__tit {
-  top: 3px;
+  top: 0.1875rem;
 }
 .status .comSelectBox label {
   color: #00489e;
@@ -857,16 +857,27 @@ a {
 }
 
 .comTable-2 textarea {
-  margin: 5px 0px;
+  margin: 0.3125rem 0rem;
   border: 1px solid #666;
-  height: 150px;
+  height: 9.375rem;
   width: 100%;
-  padding: 5px;
+  padding: 0.3125rem;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: 1px;
   line-height: 120%;
+}
+.comTable-2 .desc {
+  font-weight: 500;
+  line-height: 1rem;
+}
+.comTable-2 tr td ul li {
+  font-weight: 500;
+}
+
+.ais {
+  align-items: center;
 }
 
 @media all and (max-width: 1400px) {

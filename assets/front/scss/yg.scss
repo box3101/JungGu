@@ -750,7 +750,7 @@
     }
   }
   .list-1 {
-	padding-top: 10px;
+	padding-top: 0.625rem;
   }
 }
 
@@ -759,7 +759,7 @@
 		margin-top: 1.1875rem;
 
 		.searchArea__tit {
-			top: 3px;
+			top: 0.1875rem;
 		}
 	}
 	.comSelectBox label {
@@ -777,17 +777,32 @@
 	line-height: 2rem;
 }
 
-.comTable-2 textarea {
-    margin: 5px 0px;
-    border: 1px solid #666;
-    height: 150px;
-    width: 100%;
-    padding: 5px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    line-height: 120%;
+.comTable-2 {
+	textarea {
+		margin: 0.3125rem 0rem;
+		border: 1px solid #666;
+		height: 9.375rem;
+		width: 100%;
+		padding: 0.3125rem;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		letter-spacing: 1px;
+		line-height: 120%;
+	}
+
+	.desc {
+		font-weight: 500;
+		line-height: 1rem;
+	}
+
+	tr td ul li {
+		font-weight: 500;
+	}
+}
+
+.ais {
+	align-items: center;
 }
 
 // 미디어 쿼리
