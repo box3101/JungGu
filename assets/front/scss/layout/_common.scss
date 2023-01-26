@@ -1786,3 +1786,16 @@ body.nopage .wrapper {
 	line-height: 1;
 	color: #fff;
 }
+@include media($tab) {
+	.comTable-2.pl8 {
+		ul.flex {
+			flex-direction: column !important;
+			label {
+				flex: 0 0 50px;
+			}
+		}
+		.inputDateWrap {
+			width: 100%;
+		}
+	}
+}

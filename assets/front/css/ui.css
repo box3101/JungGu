@@ -58492,6 +58492,17 @@ body.nopage .wrapper {
   color: #fff;
 }
 
+@media all and (max-width: 900px) {
+  .comTable-2.pl8 ul.flex {
+    flex-direction: column !important;
+  }
+  .comTable-2.pl8 ul.flex label {
+    flex: 0 0 50px;
+  }
+  .comTable-2.pl8 .inputDateWrap {
+    width: 100%;
+  }
+}
 .header {
   position: relative;
 }
