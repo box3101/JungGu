@@ -494,7 +494,7 @@
 				line-height: 2.3125rem;
 
 				@include before {
-					@include bg-url ("img", "icon-wave.svg");
+					@include bg-url("img", "icon-wave.svg");
 					@include bg-op;
 					position: absolute;
 					left: 0;
@@ -502,97 +502,94 @@
 					transform: translateY(50%);
 					width: 1.25rem;
 					height: 1.25rem;
-					
 				}
 			}
 
 			p {
 				font-size: 1.125rem;
-				line-height: 1.75rem;		
+				line-height: 1.75rem;
 			}
 		}
-    
 	}
-  .map {
-    width: 100%
-  }
+	.map {
+		width: 100%;
+	}
 	.transport__wrap {
-      @include flex (null, null, 2.75rem);
-      padding: 1.25rem 0 4.375rem 1rem;
-      line-height: 1.75rem;
-	    word-break: keep-all;
+		@include flex(null, null, 2.75rem);
+		padding: 1.25rem 0 4.375rem 1rem;
+		line-height: 1.75rem;
+		word-break: keep-all;
 
-      .transport {
-        font-size: 1rem;
-        text-indent: -0.6375rem;
-        span {
-          color: $cMain;
-          font-weight: 500;
-        }
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      
-      li {
-        padding-left: 0.7rem;
-      }
-      
-      li::before {
-        content: "• ";
-      }
-    }
-    .transport__wrap .width {
-      flex: 1
-    }
+		.transport {
+			font-size: 1rem;
+			text-indent: -0.6375rem;
+			span {
+				color: $cMain;
+				font-weight: 500;
+			}
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
 
-    .introType {
-      .content {
-        padding-top: 1rem;
-      }
-      .row__head {
-        padding-top: 3rem;
-        p {
-          font-size: 1.125rem;
-          line-height: 1.75rem;
-        }
-      }
-      .row__body {
-        text-indent: 1 !important;
-        padding-left: 1.5rem;
-        .txtWrap {
-          color: #999999;
-          padding: 0.9125rem 0;
-          span {
-            color: #555555;
-            font-size: 1rem;
-            font-weight: bold;
-          }
-          .tt {
-            font-size: 1.3rem
-          }
-        }
-        &.introType2 {
-          padding-left: 0;
-          text-indent: 0;
-          .txtWrap span{
-            font-weight: 500;
-          }
+		li {
+			padding-left: 0.7rem;
+		}
 
-        }
-      }
-      .detail {
-        color: #999999;
-        line-height: 1.4rem;
-        padding-left: 1rem;
-        margin-top: -0.5rem;
-      }
-	  .list-circle > li:before {
-		top: 12px;
-	  }
-    } 
+		li::before {
+			content: "• ";
+		}
+	}
+	.transport__wrap .width {
+		flex: 1;
+	}
+
+	.introType {
+		.content {
+			padding-top: 1rem;
+		}
+		.row__head {
+			padding-top: 3rem;
+			p {
+				font-size: 1.125rem;
+				line-height: 1.75rem;
+			}
+		}
+		.row__body {
+			text-indent: 1 !important;
+			padding-left: 1.5rem;
+			.txtWrap {
+				color: #999999;
+				padding: 0.9125rem 0;
+				span {
+					color: #555555;
+					font-size: 1rem;
+					font-weight: bold;
+				}
+				.tt {
+					font-size: 1.3rem;
+				}
+			}
+			&.introType2 {
+				padding-left: 0;
+				text-indent: 0;
+				.txtWrap span {
+					font-weight: 500;
+				}
+			}
+		}
+		.detail {
+			color: #999999;
+			line-height: 1.4rem;
+			padding-left: 1rem;
+			margin-top: -0.5rem;
+		}
+		.list-circle > li:before {
+			top: 12px;
+		}
+	}
 }
 
 .form__wrap {
@@ -691,67 +688,69 @@
 }
 
 .com-step {
-  ul {
-    gap: 1.875rem;
-    flex-wrap: wrap;
-    li {
-      position: relative;
-      width: calc(20% - 1.58125rem);
-      .num {
-        color: $cMain;
-        font-size: 1.625rem;
-        font-weight: 400;
-        padding-top: 0.75rem;
-        @include after {
-          @include bg-url ("img", "visual-arrow.svg");
-		  background-position: initial;
-		  background-size: contain;
-		  background-repeat: no-repeat;
-          position: absolute;
-          left: 0;
-          top: 2.5rem;
-          width: 100%;
-          height: 0.6875rem;
-        }
-      }
-      .tit {
-        font-size: 1.125rem;
-        padding-top: 0.6875rem;
-      }
-      .txt {
-        padding: 0.75rem 0;
-        font-size: 1rem;
-        word-break: keep-all;
-        span {
-          margin: 0 0.5rem;
-        }
-      }
-    }
-  }
+	ul {
+		gap: 1.875rem;
+		flex-wrap: wrap;
+		li {
+			position: relative;
+			width: calc(20% - 1.58125rem);
+			.num {
+				color: $cMain;
+				font-size: 1.625rem;
+				font-weight: 400;
+				padding-top: 0.75rem;
+				@include after {
+					@include bg-url("img", "visual-arrow.svg");
+					background-position: initial;
+					background-size: contain;
+					background-repeat: no-repeat;
+					position: absolute;
+					left: 0;
+					top: 2.5rem;
+					width: 100%;
+					height: 0.6875rem;
+				}
+			}
+			.tit {
+				font-size: 1.125rem;
+				padding-top: 0.6875rem;
+				line-height: 1.5;
+			}
+			.txt {
+				padding: 0.75rem 0;
+				font-size: 1rem;
+				word-break: keep-all;
+				line-height: 1.5;
+				span {
+					margin: 0 0.5rem;
+				}
+			}
+		}
+	}
 }
 
 .introType2 {
-  padding-top: 0;
-  .com-step {
-    ul {
-      flex-wrap: wrap;
-      li {
-        width: calc(25% - 1.78125rem);
-      }
-      li ::after {
-        width: 80%;
-      }
-    } 
-    ul li ::before {
-      margin-left: -0.375rem;
-      p {
-        padding-bottom: 1rem;
-      }
-    }
-  }
-  .list-1 {
-	padding-top: 0.625rem;
-  }
+	padding-top: 0;
+	.com-step {
+		ul {
+			flex-wrap: wrap;
+			li {
+				width: calc(25% - 1.78125rem);
+			}
+			li ::after {
+				width: 80%;
+			}
+		}
+		ul li ::before {
+			margin-left: -0.375rem;
+			p {
+				padding-bottom: 1rem;
+			}
+		}
+	}
+	.list-1 {
+		padding-top: 0.625rem;
+	}
 }
 
 .status {
@@ -765,7 +764,7 @@
 	.comSelectBox label {
 		color: $cMain;
 		font-size: 1.5rem;
-    	font-weight: bold;
+		font-weight: bold;
 		padding-right: 0.625rem;
 		// position: absolute;
 		// top: 3px;
@@ -813,12 +812,12 @@
 	.subcotent .form {
 		width: 60%;
 	}
-  .subcotent .transport__wrap .transport img {
-    width: 40%;
-  }
-  .com-step.introType1 ul li {
-	width: calc(33.3333% - 1.58125rem);
-  }
+	.subcotent .transport__wrap .transport img {
+		width: 40%;
+	}
+	.com-step.introType1 ul li {
+		width: calc(33.3333% - 1.58125rem);
+	}
 }
 @include media($tab) {
 	html {
@@ -865,24 +864,24 @@
 			margin-top: 2rem;
 		}
 	}
-  .location .transport__wrap {
-    flex-direction: column;
-    .transport img {
-      max-width: 15%;
-    }
-  }
-  .introType2 .com-step ul {
-    gap: 3rem !important;
-    li {
-      width: calc(50% - 1.78125rem);
-    }
-  }
-  .introType1 .com-step ul {
-    gap: 3rem !important;
-    li {
-      width: calc(50% - 1.78125rem);
-    }
-  }
+	.location .transport__wrap {
+		flex-direction: column;
+		.transport img {
+			max-width: 15%;
+		}
+	}
+	.introType2 .com-step ul {
+		gap: 3rem !important;
+		li {
+			width: calc(50% - 1.78125rem);
+		}
+	}
+	.introType1 .com-step ul {
+		gap: 3rem !important;
+		li {
+			width: calc(50% - 1.78125rem);
+		}
+	}
 }
 @include media($mo) {
 	html {
@@ -934,13 +933,13 @@
 			width: 100%;
 		}
 	}
-  .subcotent .transport__wrap {
-    padding: 1.25rem 0 4.375rem 0.9375rem; 
-  }
-  .subcotent .transport__wrap .transport img {
-    max-width: 20%;
-  }
-  .com-step.introType1 ul li {
-	width: calc(50% - 1.58125rem);
-  }
+	.subcotent .transport__wrap {
+		padding: 1.25rem 0 4.375rem 0.9375rem;
+	}
+	.subcotent .transport__wrap .transport img {
+		max-width: 20%;
+	}
+	.com-step.introType1 ul li {
+		width: calc(50% - 1.58125rem);
+	}
 }

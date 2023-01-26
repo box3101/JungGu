@@ -292,6 +292,8 @@
 									@include before {
 										@include bg-url("img", "ico-place.png");
 										@include pCenter;
+										background-size: contain;
+										background-repeat: no-repeat;
 										left: 0.5625rem;
 										top: 54%;
 										width: 0.75rem;

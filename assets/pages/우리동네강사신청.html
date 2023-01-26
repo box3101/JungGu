@@ -364,33 +364,33 @@
                 <p class="row__head">
                   <span class="title__icon">신청서 작성</span>
                 </p>
-                <div class="comTable-2 pl8" style="border-bottom: none;">
+                <div class="comTable-2 pl8 pl0" style="border-bottom: none;">
                   <table>
                     <caption class="hidden">신청서 작성</caption>
                     <colgroup>
-                      <col width="15%">
-                      <col width="40%">
-                      <col width="15%">
-                      <col width="40%">
+                      <col width="140px">
+                      <col width="auto">
+                      <col width="140px">
+                      <col width="auto">
                     </colgroup>
                     <tbody>
                       <tr>
-                        <th scope="row"><label for="a1">강사명</label></th>
+                        <th scope="row">강사명</th>
                         <td>
-                          <input type="text" id="a1" class="comInput" placeholder="홍*동">
+                          홍*동
                         </td>
-                        <th><label for="a2">아이디</label></th>
+                        <th scope="row"><label for="a2">아이디</label></th>
                         <td>
-                          <input type="text" id="a2" class="comInput" placeholder="Hon******">
+                          Hon******
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">*교육분야</th>
+                        <th scope="row"><span class="cRed">*</span>교육분야</th>
                         <td colspan="3">
                           <div class="flex gap5">
-                            <div class="comSelectBox w150">
+                            <div class="comSelectBox">
                               <label for="a3"></label>
-                              <select name="" id="a3" class="comSelect">
+                              <select name="" id="a3" class="comSelect w150">
                                 <option value="">기초문해교육</option>
                               </select>
                             </div>
@@ -399,31 +399,33 @@
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a4">*소속기관</label></th>
+                        <th scope="row"><label for="a4"><span class="cRed">*</span>소속기관</label></th>
                         <td colspan="3">
                           <input type="text" id="a4" class="comInput" placeholder="한국대학교">
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">*강사이력사항 및 자기소개</th>
+                        <th scope="row">
+                          <label for="b2">*강사이력사항 및 자기소개</label>
+                        </th>
                         <td colspan="3">
-                          <textarea name="" id="" cols="30" rows="10">2016.5 - 수내초등학교 학부모 연수 강의 (프랑스자수, 모시조각보) 
+                          <textarea class="comTxtarea" name="" id="b2" cols="30" rows="10" placeholder="2016.5 - 수내초등학교 학부모 연수 강의 (프랑스자수, 모시조각보) 
 2016.6~11 - 푸른마을 작은 도서관 (프랑스자수 초급중급)2016.7 엔조이퀼트 주관(자수콘테스트 2등) 
 2016.9~11 성남 신기초등학교 학부모동아리(프랑스자수 기초, 작품진행) 
 2017.4~7 푸른마을 작은 도서관(프랑스자수 초급중급상급과정) 
 2018.9~ 성남 책이랑 도서관 (프랑스자수로 그림책작품과정 다수진행
 2019.3~5 성남 한마음복지관 (프랑스자수 기초,개인작품 진행) 
 2019.4 강남구립 못골 도서관(프랑스자수로 그림책 만들기) 2019.5~6 분당 샛별중학교
-학부모동아리(프랑스자수 작품진행)</textarea>
+학부모동아리(프랑스자수 작품진행)"></textarea>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row">*강의경력 <br>(최대 50건)</th>
+                        <th scope="row"><span class="cRed">*</span>강의경력 <br>(최대 50건)</th>
                         <td colspan="3">
-                          <ul class="flex gap5">
+                          <ul class="flex gap5 moColumn">
                             <li class="flex ais gap5">
                               <label for="a5">강의명</label>
-                              <input id="a5" type="text" class="comInput w150" placeholder="프랑스 자수">
+                              <input id="a5" type="text" class="comInput" placeholder="프랑스 자수">
                             </li>
                             <li class="flex ais gap5">
                               <label for="a6">기간</label>
@@ -447,14 +449,15 @@
                             <li class="flex gap5">
                               <div class="flex ais gap5">
                                 <label for="a7">주관기관</label>
-                                <input type="text" id="a7" class="comInput w150" placeholder="한국수예보급협회">
+                                <input type="text" id="a7" class="comInput" placeholder="한국수예보급협회">
                               </div>
                               <button type="button" class="comBtn bgMain">추가</button>
                             </li>
                           </ul>
-                          <ul class="flex gap5">
+                          <ul class="flex gap5 moColumn">
                             <li class="flex ais gap5">
-                              <label for="a8">강의명</label> <input type="text" id="a8" class="comInput w150" placeholder="까또나쥬">
+                              <label for="a8">강의명</label> <input type="text" id="a8" class="comInput"
+                                placeholder="까또나쥬">
                             </li>
                             <li class="flex ais gap5">
                               <label for="a9">기간</label>
@@ -478,7 +481,7 @@
                             <li class="flex gap5">
                               <div class="flex ais gap5">
                                 <label for="a10">주관기관</label>
-                                <input type="text" id="a10" class="comInput w150" placeholder="수리안협회">
+                                <input type="text" id="a10" class="comInput" placeholder="수리안협회">
                               </div>
                               <button type="button" class="comBtn bgRed">삭제</button>
                             </li>
@@ -488,12 +491,14 @@
                       <tr>
                         <th scope="row">자격 및 면허<br>(최대 20건)</th>
                         <td colspan="3">
-                          <ul class="flex ais gap5">
+                          <ul class="flex ais gap5 moColumn">
                             <li class="flex ais gap5">
-                              <label for="a11">명칭</label><input type="text" id="a11" class="comInput w150" placeholder="프랑스 자수">
+                              <label for="a11">명칭</label><input type="text" id="a11" class="comInput"
+                                placeholder="프랑스 자수">
                             </li>
                             <li class="flex ais gap5">
-                              <label for="a12">발행기관</label><input type="text" id="a12" class="comInput w150" placeholder="프랑스 자수">
+                              <label for="a12">발행기관</label><input type="text" id="a12" class="comInput"
+                                placeholder="프랑스 자수">
                             </li>
                             <li class="flex gap5">
                               <div class="flex ais gap5">
@@ -510,12 +515,14 @@
                               <button type="button" class="comBtn bgMain">추가</button>
                             </li>
                           </ul>
-                          <ul class="flex ais gap5">
+                          <ul class="flex ais gap5 moColumn">
                             <li class="flex ais gap5">
-                              <label for="a14">명칭</label><input type="text" id="a14" class="comInput w150" placeholder="프랑스 자수">
+                              <label for="a14">명칭</label><input type="text" id="a14" class="comInput"
+                                placeholder="프랑스 자수">
                             </li>
                             <li class="flex ais gap5">
-                              <label for="a15">발행기관</label><input type="text" id="a15" class="comInput w150" placeholder="프랑스 자수">
+                              <label for="a15">발행기관</label><input type="text" id="a15" class="comInput"
+                                placeholder="프랑스 자수">
                             </li>
                             <li class="flex gap5">
                               <div class="flex ais gap5">
@@ -543,7 +550,7 @@
                               <button type="button" class="comBtn bgBlack">찾기</button>
                             </div>
                           </div>
-                          <span class="desc">(명함판 얼굴사진을 올려주세요, 최대 1MB)</span>
+                          <span class="desc mt5">(명함판 얼굴사진을 올려주세요, 최대 1MB)</span>
                         </td>
                       </tr>
                     </tbody>
@@ -577,18 +584,18 @@
                   </div>
                   <div class="agreeOk">
                     <div class="formChkbox flex gap5 aiCenter">
-                      <label class="formChkbox__control control--checkbox"> 개인정보 수집 동의 <span class="cRed">(필수)</span>
+                      <label class="formChkbox__control control--checkbox"> 대관신청 유의사항에 동의 합니다 <span
+                          class="cRed">(필수)</span>
                         <input type="checkbox" class="my-checkbox" disabled="">
                       </label>
                     </div>
 
                     <div class="hint" tabindex="0">
-                      <p>※ 스크롤을 끝까지 내려 내용을 확인하기 바랍니다.</p>
+                      <p>※ 스크롤을 끝까지 내려 내용을 확인하기 바립니다.</p>
                     </div>
                   </div>
                 </div>
               </div>
-
               <!-- 취소, 신청 -->
               <ul class="BottomBtnWrap flex gap15 aiCenter jcCenter">
                 <li>
@@ -599,58 +606,6 @@
                 </li>
               </ul>
 
-              <!-- 페이징 -->
-              <div id="paginate" class="customPaginateBar">
-                <table>
-                  <caption class="hidden">페이징 네비게이션</caption>
-                  <tbody>
-                    <tr>
-                      <td align="center" class="customPage">
-                        <button type="button" class="customPageMoveBtn" title="처음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-first"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="이전 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-prev"></i>
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          1
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn on" id=" 1" title="1페이지로 이동">
-                          2
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          3
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          311
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          411
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          511
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          611
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          711
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          811
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="다음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-next"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="마지막 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-end"></i>
-                        </button type="button">
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- 페이징 eee -->
             </div>
             <!-- 서브 컨텐츠 들어가는 부분 eee -->
           </div>

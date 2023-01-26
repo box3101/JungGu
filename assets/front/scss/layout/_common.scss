@@ -912,10 +912,10 @@ html.open {
 		padding-top: #{$i}px !important;
 	}
 	.pr#{$i} {
-		padding-bottom: #{$i}px !important;
+		padding-right: #{$i}px !important;
 	}
 	.pl#{$i} {
-		padding-bottom: #{$i}px !important;
+		padding-left: #{$i}px !important;
 	}
 }
 
@@ -1445,6 +1445,11 @@ table input[type="radio"] + label {
 }
 .list-2 {
 	> li {
+		&.before-none {
+			@include before {
+				display: none;
+			}
+		}
 		font-size: 1rem;
 		position: relative;
 		color: #747474;
@@ -1476,6 +1481,14 @@ table input[type="radio"] + label {
 }
 .row__body {
 	text-indent: 0 !important;
+	.flex {
+		@include media($mo) {
+			flex-direction: column;
+			.list-1 {
+				padding-left: 0;
+			}
+		}
+	}
 }
 span.cRed {
 	color: darkred;
@@ -1786,8 +1799,61 @@ body.nopage .wrapper {
 	line-height: 1;
 	color: #fff;
 }
+
+.comTable-2.pl8.pl0 {
+	table {
+		width: 100%;
+	}
+	padding-left: 0;
+	.desc {
+		display: inline-block;
+		color: darkred;
+		font-weight: 400;
+	}
+	.ais {
+		width: 100%;
+	}
+	th {
+		text-align: right;
+		padding-right: 15px;
+		line-height: 1.5;
+		word-break: keep-all;
+	}
+	td {
+		vertical-align: middle;
+	}
+	ul {
+		width: 100%;
+		li {
+			flex: 1;
+			&:nth-of-type(2) {
+				flex: 1.2;
+			}
+			label {
+				flex: 0 0 100px;
+				text-align: center;
+			}
+		}
+	}
+}
+@include media($web) {
+	.comTable-2 table colgroup {
+		display: block !important;
+	}
+}
+
 @include media($tab) {
-	.comTable-2.pl8 {
+	.comTable-2.pl8.pl0 {
+		.comTable-2 td .flex {
+			width: 100%;
+		}
+		.w150 {
+			width: 100% !important;
+		}
+		th {
+			text-align: center !important;
+			justify-content: center;
+		}
 		ul.flex {
 			flex-direction: column !important;
 			label {
@@ -1795,7 +1861,23 @@ body.nopage .wrapper {
 			}
 		}
 		.inputDateWrap {
-			width: 100%;
+			width: auto;
+		}
+		.moColumn {
+			li:last-of-type {
+				flex-direction: column;
+				button {
+					height: 30px;
+				}
+			}
 		}
 	}
+}
+.status .comSelectBox label,
+.searchArea__tit label {
+	font-size: 1.2em !important;
+}
+
+.com-step ul li .txt {
+	line-height: 1.5;
 }

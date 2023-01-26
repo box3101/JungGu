@@ -45,12 +45,16 @@ input:read-only {
 .comTxtarea {
 	@extend %formReset;
 	height: 9.375rem !important;
-	padding: 0.625rem;
-	line-height: 1.4;
+	padding: 0.855rem !important;
+	line-height: 1.6 !important;
+	font-weight: 400 !important;
+	font-size: 0.9rem !important;
 	&::placeholder {
 		color: $cGray-2 !important;
 		letter-spacing: -0.0625rem !important;
-		font-weight: 400 !important;
+		font-weight: 300 !important;
+		line-height: 1.6 !important;
+		font-size: 1rem !important;
 	}
 }
 
