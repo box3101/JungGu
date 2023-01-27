@@ -346,16 +346,16 @@
           </div>
           <div class="subBody">
             <div class="subcotent network">
-              <!-- 서브 탭메뉴 -->
+              <!-- 탭 메뉴 -->
               <ul class="comSubTab">
                 <li>
-                  <a href="../pages/평생학습동아리소개.html">평생학습 동아리 소개</a>
+                  <a href="../pages/나눔공간소개.html">나눔공간 소개</a>
                 </li>
                 <li>
-                  <a href="../pages/평생학습동아리현황.html">평생학습 동아리 현황</a>
+                  <a href="../pages/나눔공간현황.html">나눔공간 현황</a>
                 </li>
                 <li class="on">
-                  <a href="../pages/평생학습동아리신청.html">평생학습 동아리 신청</a>
+                  <a href="../pages/나눔공간신청.html">나눔공간 신청</a>
                 </li>
               </ul>
 
@@ -364,6 +364,10 @@
                 <p class="row__head">
                   <span class="title__icon">신청서 작성</span>
                 </p>
+
+                <p class="comDescTxt">* 나눔공간을 신청하시면 승인 후 홈페이지에 게시됩니다. 신청 후 취소하시려면 마이페이지에서 취소가 가능합니다
+                <p>
+
                 <div class="comTable-2 w700 pl8" style="border-bottom: none;">
                   <table>
                     <caption class="hidden">신청서 작성</caption>
@@ -375,153 +379,122 @@
                     </colgroup>
                     <tbody>
                       <tr>
-                        <th scope="row"><label for="a1">동아리명</label></th>
+                        <th scope="row"><label for="a1">공간명</label></th>
                         <td colspan="3">
-                          <input type="text" id="a1" class="comInput" placeholder="니들이인문학을알아">
+                          <input type="text" id="a1" class="comInput" placeholder="">
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a2">활동분야</label></th>
+                        <th scope="row"><label for="a2">지역구분</label></th>
                         <td colspan="3">
-                          <input type="text" id="a2" class="comInput" placeholder="인문교양">
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><label for="beginDt">결성일</label></th>
-                        <td>
-                          <div class="inputDateWrap">
-                            <span class="input-date-wrap">
-                              <label for="beginDt" class="hidden">시작일자</label>
-                              <input type="text" id="beginDt" name="beginDt"
-                                class="setDatepicker from form-input input-date input-date-start"
-                                title="검색일자 입력 예시 yyyy.mm.dd" placeholder="yyyy-mm-dd" value="">
-                            </span>
+                          <div class="comSelectBox w150">
+                            <label for="a2"></label>
+                            <select name="" id="a2" class="comSelect w150">
+                              <option value="">선택</option>
+                            </select>
                           </div>
                         </td>
-                        <th scope="row"><label for="a3">회원수</label></th>
+                      </tr>
+                      <tr>
+                        <th scope="row"><label for="a4">주소</label></th>
+                        <td colspan="3">
+                          <div class="flex gap5">
+                            <input type="text" id="a4" class="comInput w150" placeholder="">
+                            <button class="comBtn bgMain">주소 찾기</button>
+                          </div>
+                          <div class="flex gap5">
+                            <input type="text" id="a4" class="comInput mt5">
+                            <input type="text" id="a4" class="comInput mt5">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><label for="a6">주차가능여부</label></th>
+                        <td>
+                          <div class="formRadio flex gap5">
+                            <div class="row">
+                              <input type="radio" id="c1" name="chk1_01" value="1" checked="">
+                              <label for="c1">
+                                가능
+                              </label>
+                            </div>
+                            <div class="row">
+                              <input type="radio" id="c2" name="chk1_01" value="2">
+                              <label for="c2">
+                                불가능
+                              </label>
+                            </div>
+                          </div>
+                        </td>
+                        <th scope="row"><label for="a7">인원</label></th>
                         <td>
                           <div class="flex gap5 aiCenter">
-                            <input type="text" id="a3" class="comInput textRight"> 명
+                            <input type="text" id="a7" class="comInput textRight" placeholder="">
+                            명
                           </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a4">동아리 대표</label></th>
-                        <td>
-                          <input type="text" id="a4" class="comInput" placeholder="홍길동">
-                        </td>
-                        <th scope="row"><label for="a5">대표 연락처</label></th>
-                        <td>
-                          <input type="text" id="a5" class="comInput" placeholder="010-2222-1111">
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><label for="a6">동아리 실무자</label></th>
-                        <td>
-                          <input type="text" id="a6" class="comInput" placeholder="임꺽정">
-                        </td>
-                        <th scope="row"><label for="a7">실무자 연락처</label></th>
-                        <td>
-                          <input type="text" id="a7" class="comInput" placeholder="010-2222-1111">
-                        </td>
-                      </tr>
-                      <tr>
-                        <th scope="row"><label for="a8">모임일시</label></th>
+                        <th scope="row"><label for="a8">문의전화</label></th>
                         <td colspan="3">
-                          <input type="text" id="a8" class="comInput" placeholder="매주 금요일">
+                          <input type="text" id="a8" class="comInput">
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a9">모임장소</label></th>
+                        <th scope="row"><label for="a9">대표사진</label></th>
                         <td colspan="3">
-                          <input type="text" id="a9" class="comInput" placeholder="인천광역시 중구 신포로 278번길 80 701호">
+                          <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
+                            <input id="utztnActplnAtchmnflId" name="utztnActplnAtchmnflId" type="hidden" value="">
+                            <div class="fileBox has-advanced-upload">
+                              <div class="divInputFile"><label for="file_divAtchFile1_atchFile"><strong>Choose
+                                    files</strong><span class="boxDragndrop"> or drag it here</span>.</label><input
+                                  class="inputFile" type="file" id="file_divAtchFile1_atchFile" multiple=""></div>
+                            </div>
+                            <div class="divStatus"><span><label>Files : </label><label
+                                  id="fileCnt_atchFile">0</label><label> / 3</label></span><span
+                                class="ml10"><label>Total Size : </label><label id="totalSize_atchFile">0</label><label>
+                                  / 157,286,400 bytes</label></span></div>
+                            <div class="divFileList mt5">
+                              <ul class="fileList"></ul>
+                            </div>
+                            <div class="divNewFileList mt10">
+                              <ul class="newFileList"></ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a10">가입문의처</label></th>
+                        <th scope="row"><label for="a10">추가사진</label></th>
                         <td colspan="3">
-                          <input type="text" id="a10" class="comInput"
-                            placeholder="문의전화 : 032-543-0324, 이메일 : sdmfls55@naver.com">
+                          <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
+                            <input id="utztnActplnAtchmnflId" name="utztnActplnAtchmnflId" type="hidden" value="">
+                            <div class="fileBox has-advanced-upload">
+                              <div class="divInputFile"><label for="file_divAtchFile1_atchFile"><strong>Choose
+                                    files</strong><span class="boxDragndrop"> or drag it here</span>.</label><input
+                                  class="inputFile" type="file" id="file_divAtchFile1_atchFile" multiple=""></div>
+                            </div>
+                            <div class="divStatus"><span><label>Files : </label><label
+                                  id="fileCnt_atchFile">0</label><label> / 3</label></span><span
+                                class="ml10"><label>Total Size : </label><label id="totalSize_atchFile">0</label><label>
+                                  / 157,286,400 bytes</label></span></div>
+                            <div class="divFileList mt5">
+                              <ul class="fileList"></ul>
+                            </div>
+                            <div class="divNewFileList mt10">
+                              <ul class="newFileList"></ul>
+                            </div>
+                          </div>
                         </td>
                       </tr>
                       <tr>
-                        <th scope="row"><label for="a12">동아리 소개</label></th>
+                        <th scope="row"><label for="a12">이용안내 및 <br> 주의사항
+                          </label></th>
                         <td colspan="3">
                           <textarea class="comTxtarea" name="" id="a12" cols="30" rows="10"></textarea>
                         </td>
                       </tr>
-                      <tr>
-                        <th scope="row"><label for="a13">활동사진</label></th>
-                        <td colspan="3">
-                          <ul>
-                            <li>
-                              <div class="flex gap5">
-                                <input type="text" id="a13" class="comInput">
-                                <button type="button" class="comBtn bgBlack">찾기</button>
-                                <button type="button" class="comBtn bgMain">추가</button>
-                                <span class="desc">(최대 1MB 이하)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="flex gap5">
-                                <input type="text" id="f2" class="comInput">
-                                <button type="button" class="comBtn bgBlack">찾기</button>
-                                <button type="button" class="comBtn bgRed">삭제</button>
-                                <span class="desc">(최대 1MB 이하)</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="flex gap5">
-                                <input type="text" id="f2" class="comInput">
-                                <button type="button" class="comBtn bgBlack">찾기</button>
-                                <button type="button" class="comBtn bgRed">삭제</button>
-                                <span class="desc">(최대 1MB 이하)</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </td>
-                      </tr>
                     </tbody>
                   </table>
-                </div>
-              </div>
-
-              <!-- 개인정보 수집동의  -->
-              <div class="row join pb0">
-                <p class="row__head">
-                  <span class="title__icon">개인정보 수집동의</span>
-                </p>
-                <div class="agreeRow">
-                  <div class="agree">
-                    <fieldset class="agreeBox scrollable-element comScroll" tabindex="0">
-                      <legend class="hidden">개인정보 수집동의</legend>
-                      <span class="hidden">스크롤을 끝까지 내려주세요. 그래야 동의 체크가 가능합니다.</span>
-                      <div>
-                        개인정보 이용방침 <br> <br>
-                        본인은 ｢정보통신망 이용촉진 및 정보보호 등에 관한 법률｣제22조(개인정보의 수집ㆍ이용 동의 등) 및 제24조의2(개인정보의 제공 동의 등), ｢개인정보
-                        보호법｣제15조(개인정보의 수집ㆍ이용), 제17조(개인정보의 제공)에 따라 본인의 개인정보를 인천중구교육포털 「배우는바다」에서 수집ㆍ활용하는데 동의합니다.
-                        <br><br>
-                        수집목적 : 본인확인절차, 정책정보 등 행정서비스 제공, 업무와 관련된 통계자료 작성, 교육 및 컨설팅 등 사후관리 <br>
-                        수집항목 : 동아리 실무자 성명, 연락처 <br>
-                        보유 및 이용기간 : 사업목적이 달성된 이후 파기 <br>
-                        <br>
-                        귀하께서는 개인정보 제공 및 활용에 거부할 권리가 있음을 알려드리며, 거부하실 경우 신청서 접수가 불가능함을 알려드립니다.
-
-                      </div>
-                    </fieldset>
-                  </div>
-                  <div class="agreeOk">
-                    <div class="formChkbox flex gap5 aiCenter">
-                      <label class="formChkbox__control control--checkbox"> 대관신청 유의사항에 동의 합니다 <span
-                          class="cRed">(필수)</span>
-                        <input type="checkbox" class="my-checkbox" disabled="">
-                      </label>
-                    </div>
-
-                    <div class="hint" tabindex="0">
-                      <p>※ 스크롤을 끝까지 내려 내용을 확인하기 바립니다.</p>
-                    </div>
-                  </div>
                 </div>
               </div>
 

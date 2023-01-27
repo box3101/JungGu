@@ -688,6 +688,11 @@
 }
 
 .com-step {
+	&.flex-auto{
+		li{
+			flex:auto;
+		}
+	}
 	ul {
 		gap: 1.875rem;
 		flex-wrap: wrap;

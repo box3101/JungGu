@@ -495,11 +495,14 @@ html.open {
 	display: inline-block;
 	border: none;
 	cursor: pointer;
-	margin: 0 1px;
+	margin: 0 5px;
 }
 
 .customPaginateBar {
 	padding-top: 2.5rem !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .ui-icon-seek-first {
@@ -531,6 +534,7 @@ html.open {
 	transition: all 0.4s;
 	border-radius: 0.6875rem;
 	line-height: 2.2rem;
+	margin: 0 8px;
 	cursor: pointer;
 	@include media($mo) {
 		width: 1.3rem;
@@ -608,6 +612,7 @@ html.open {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 999;
 }
 .comPopupInfo {
 	width: 100%;
@@ -917,6 +922,10 @@ html.open {
 	.pl#{$i} {
 		padding-left: #{$i}px !important;
 	}
+}
+.pl50 {
+	padding-left: 0 !important;
+	padding-top: 3.125rem !important;
 }
 
 //line
@@ -1880,4 +1889,43 @@ body.nopage .wrapper {
 
 .com-step ul li .txt {
 	line-height: 1.5;
+}
+.row__body.flex{
+	@include media($mo){
+		flex-direction: column
+	}
+}
+.kk1 {
+	@include bg-url("img", "롯데마트.jpg", "cover");
+	width: 550px;
+	height: 31.25rem;
+	background-size: contain;
+	@include media($mo){
+		width: 100%;
+		height: 25.25rem;
+	}
+}
+.kk2 {
+	@include bg-url("img", "이마트.jpg", "cover");
+	width: 550px;
+	height: 29.25rem;
+	background-size: contain;
+	@include media($mo){
+		width: 100%;
+		height: 19rem;
+	}
+}
+.com-step{
+	&.flex-auto{
+		li{
+			flex:auto!important;
+			max-width: 25%;
+		}
+	}
+}
+.cardcontent .content-bottom{
+	padding-top: 0!important;
+	.flex.jcBetween{
+		padding-top: 1.5rem;
+	}
 }

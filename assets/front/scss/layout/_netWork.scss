@@ -1,4 +1,4 @@
-#detailSlideItem {
+#detailSlideItem,#sharingSpaceItem {
 	.swiper-wrapper {
 		margin-top: 10px;
 		display: flex;
@@ -34,4 +34,75 @@
 }
 .subcotent .introType .row__body .txtWrap{
 	color: #747474!important;
+}
+.comDescTxt{
+	font-size: 16px;
+	color: darkred;
+	margin-bottom: 20px;
+}
+/* sgFileUploader */
+.sgFileUploader {
+  padding: 10px 0 0 0;
+  min-width: 100%;
+}
+
+.sgFileUploader .boxDragndrop {
+  display: none;
+}
+
+.sgFileUploader .inputFile {
+  display: none;
+}
+
+.sgFileUploader .fileBox {
+  width: 100%;
+  font-size: 1em;
+  color: #aaa;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 30px 15px;
+  box-sizing: border-box;
+}
+
+.sgFileUploader .fileBox.has-advanced-upload {
+  outline: 1px dashed #aaaaaa;
+}
+
+.sgFileUploader .fileBox.has-advanced-upload .boxDragndrop {
+  display: inline;
+}
+
+.sgFileUploader .fileBox.is-dragover {
+  background-color: #e8faff;
+}
+
+.sgFileUploader .divInputFile label {
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.sgFileUploader .divStatus,
+.sgFileUploader .divFileList,
+.sgFileUploader .divNewFileList {
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  min-width: 100%;
+}
+
+.sgFileUploader .fileList a label {
+  cursor: pointer;
+}
+
+.sgFileUploader .close {
+  cursor: pointer;
+  border: none;
+  background: url(../img/btn-close.png) no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  margin-left: 10px;
+  text-indent: -9999px;
 }

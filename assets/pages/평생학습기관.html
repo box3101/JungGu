@@ -126,7 +126,7 @@
                   <a href="../pages/대관신청.html">대관 신청</a>
                 </li>
                 <li>
-                  <a href="../pages/나눔공간.html">나눔공간</a>
+                  <a href="../pages/나눔공간소개.html">나눔공간</a>
                 </li>
               </ul>
             </li>
@@ -514,58 +514,30 @@
 
 
               <!-- 페이징 -->
-              <!-- 페이징 -->
+             <!-- 공통 페이징 -->
               <div id="paginate" class="customPaginateBar">
-                <table>
-                  <caption class="hidden">페이징 네비게이션</caption>
-                  <tbody>
-                    <tr>
-                      <td align="center" class="customPage">
-                        <button type="button" class="customPageMoveBtn" title="처음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-first"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="이전 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-prev"></i>
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          1
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn on" id=" 1" title="1페이지로 이동">
-                          2
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          3
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          311
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          411
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          511
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          611
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          711
-                        </button type="button">
-                        <button type="button" class="customPageNumberBtn" id=" 1" title="1페이지로 이동">
-                          811
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="다음 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-next"></i>
-                        </button type="button">
-                        <button type="button" class="customPageMoveBtn" title="마지막 페이지로 이동">
-                          <i class="ui-icon ui-icon-seek-end"></i>
-                        </button type="button">
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <a href="#" class="customPageMoveBtn" onclick="fnList(1);return false;" title="처음 페이지로 이동">
+                  <span class="hidden">처음 페이지로 이동</span>
+                  <i class="ui-icon ui-icon-seek-first"></i>
+                </a>
+                <a href="#" class="customPageMoveBtn" onclick="fnList(1);return false;" title="이전 페이지로 이동">
+                  <span class="hidden">이전 페이지로 이동</span>
+                  <i class="ui-icon ui-icon-seek-prev"></i>
+                </a>
+                <a class="customPageNumberBtn on" href="#" onclick="return false;" title="1페이지로 이동"> 1 </a>
+                <a class="customPageNumberBtn" href="#" onclick="fnList(2);return false;" title="2페이지로 이동"> 2
+                </a>
+                <a href="#" class="customPageMoveBtn" onclick="fnList(2);return false;" title="다음 페이지로 이동">
+                  <span class="hidden">다음 페이지로 이동</span>
+                  <i class="ui-icon ui-icon-seek-next"></i>
+                </a>
+                <a href="#" class="customPageMoveBtn" onclick="fnList(2);return false;" title="마지막 페이지로 이동">
+                  <span class="hidden">마지막 페이지로 이동</span>
+                  <i class="ui-icon ui-icon-seek-end"></i>
+                </a>
               </div>
-              <!-- 페이징 eee -->
+<!-- 페이징 eee -->
+
               <!-- 페이징 eee -->
 
             </div>
