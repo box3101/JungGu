@@ -58647,6 +58647,20 @@ body.nopage .wrapper {
   padding-top: 1.5rem;
 }
 
+.trip {
+  margin-top: 20px;
+  padding-left: 28px;
+}
+
+.common .trip img {
+  width: auto !important;
+}
+@media all and (max-width: 900px) {
+  .common .trip img {
+    width: 100% !important;
+  }
+}
+
 .header {
   position: relative;
 }
@@ -60097,8 +60111,8 @@ body.nopage .wrapper {
 
 .subcotent .introType .row__body .txtWrap span:not(.tt) {
   display: inline-block;
-  padding-left: 17px;
-  margin-bottom: 5px;
+  padding-left: 1.0625rem;
+  margin-bottom: 0.3125rem;
 }
 
 .row__body .txtWrap {
@@ -60110,9 +60124,11 @@ body.nopage .wrapper {
 }
 
 .comDescTxt {
-  font-size: 16px;
-  color: darkred;
-  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.25rem;
+  display: block;
+  padding-left: 1.6875rem;
 }
 
 /* sgFileUploader */
@@ -60127,16 +60143,6 @@ body.nopage .wrapper {
 
 .sgFileUploader .inputFile {
   display: none;
-}
-
-.sgFileUploader .fileBox {
-  width: 100%;
-  font-size: 1em;
-  color: #aaa;
-  background-color: #f6f6f6;
-  position: relative;
-  padding: 30px 15px;
-  box-sizing: border-box;
 }
 
 .sgFileUploader .fileBox.has-advanced-upload {
@@ -60180,6 +60186,20 @@ body.nopage .wrapper {
   vertical-align: middle;
   margin-left: 10px;
   text-indent: -9999px;
+}
+
+.sgFileUploader .fileBox {
+  width: 100%;
+  font-size: 1em;
+  color: #aaa;
+  background-color: #f6f6f6;
+  position: relative;
+  padding: 0;
+}
+
+.divInputFile label {
+  padding: 30px 15px;
+  box-sizing: border-box;
 }
 
 .notice .searchBox {

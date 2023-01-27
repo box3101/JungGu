@@ -1929,3 +1929,14 @@ body.nopage .wrapper {
 		padding-top: 1.5rem;
 	}
 }
+
+.trip{
+	margin-top: 20px;
+	padding-left: 28px;
+}
+.common .trip img{
+	width: auto!important;
+	@include media($tab){
+		width: 100%!important;
+	}
+}

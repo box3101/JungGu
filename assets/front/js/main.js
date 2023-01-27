@@ -11,7 +11,8 @@
   function eventBinding() {
     gnb();
     comSlide();
-    comPopupLayer();
+    com
+    PopupLayer();
     comTab();
     goTop();
     scrollable();
@@ -355,10 +356,13 @@
       const $$closeBtn = document.querySelectorAll(".popClose");
       const $$comPopContainer = document.querySelectorAll(".comPopupContainer");
 
+
       // open popup
       $$modalBtn.forEach((el) => {
+        let comPopupBox = document.querySelector(".comPopupBox");
         el.addEventListener("click", () => {
           openPop(el);
+          comPopupBox.focus();
         });
       });
 
@@ -370,6 +374,8 @@
               const curentTarget = e.target;
               if (curentTarget == el || curentTarget == element) {
                 closePop(el);
+                el.focus();
+                console.log("123");
               }
             });
           });

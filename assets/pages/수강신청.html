@@ -878,13 +878,38 @@
   </div>
 
   <script>
-    let modal = document.querySelector(".modalBtn");
-    let a = document.querySelector(".comPopupBox");
 
-    modal.addEventListener("click", () => {
-      console.log("123");
-      a.focus();
+    // 공통 팝업 포커스 이동
+    // TODO 팝업 버튼에 class modelBtn 추가 ex. <a class="comBtn sizeXlg bgBlack modelBtn">목록</a>
+    (function () {
+      const modalBtn = document.querySelector(".modalBtn");
+      const popClose = document.querySelector(".popClose");
+
+      // 모달버튼 클릭시 팝업 div 1. tabindex 추가 2. 팝업창으로 focus 이동
+      modalBtn.addEventListener("click", () => {
+        const comPopupBox = document.querySelector(".comPopupBox");
+        comPopupBox.setAttribute("tabindex", "0");
+        comPopupBox.focus();
+      });
+
+      // (가상돔 생성후) .popClose 클릭시 포커스 다시 모달버튼으로 이동
+      $(document).on("click", ".popClose", function () {
+        $(".modalBtn").focus();
+      });
+    })();
+
+
+
+    // 공통 file 첨부
+    let inpuFile = document.querySelector(".inputFile");
+    let $$inputFileLabel = document.querySelectorAll(".sgFileUploader .divInputFile label");
+    $$inputFileLabel.forEach((el) => {
+      el.setAttribute("tabindex", "0");
+      el.addEventListener("keydown", (e) => {
+        if (e.keyCode === 13 || e.keyCode === 32) inpuFile.click();
+      });
     });
+
   </script>
 </body>
 

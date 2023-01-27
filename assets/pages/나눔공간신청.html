@@ -446,7 +446,8 @@
                           <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
                             <input id="utztnActplnAtchmnflId" name="utztnActplnAtchmnflId" type="hidden" value="">
                             <div class="fileBox has-advanced-upload">
-                              <div class="divInputFile"><label for="file_divAtchFile1_atchFile"><strong>Choose
+                              <div class="divInputFile"><label tabindex="0"
+                                  for="file_divAtchFile1_atchFile"><strong>Choose
                                     files</strong><span class="boxDragndrop"> or drag it here</span>.</label><input
                                   class="inputFile" type="file" id="file_divAtchFile1_atchFile" multiple=""></div>
                             </div>
@@ -469,7 +470,8 @@
                           <div id="divAtchFile1" class="sgFileUploader" style="width: 100%;">
                             <input id="utztnActplnAtchmnflId" name="utztnActplnAtchmnflId" type="hidden" value="">
                             <div class="fileBox has-advanced-upload">
-                              <div class="divInputFile"><label for="file_divAtchFile1_atchFile"><strong>Choose
+                              <div class="divInputFile"><label tabindex="0"
+                                  for="file_divAtchFile1_atchFile"><strong>Choose
                                     files</strong><span class="boxDragndrop"> or drag it here</span>.</label><input
                                   class="inputFile" type="file" id="file_divAtchFile1_atchFile" multiple=""></div>
                             </div>
@@ -558,7 +560,16 @@
     <!-- footer eee -->
   </div>
 
-
+  <script>
+    // 공통 file 첨부
+    let inpuFile = document.querySelector(".inputFile");
+    let $$inputFileLabel = document.querySelectorAll(".sgFileUploader label");
+    $$inputFileLabel.forEach((el) => {
+      el.addEventListener("keydown", (e) => {
+        if (e.keyCode === 13 || e.keyCode === 32) inpuFile.click();
+      });
+    });
+  </script>
 </body>
 
 </html>
