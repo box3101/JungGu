@@ -807,11 +807,13 @@ a {
 .com-step ul li .tit {
   font-size: 1.125rem;
   padding-top: 0.6875rem;
+  line-height: 1.5;
 }
 .com-step ul li .txt {
   padding: 0.75rem 0;
   font-size: 1rem;
   word-break: keep-all;
+  line-height: 1.5;
 }
 .com-step ul li .txt span {
   margin: 0 0.5rem;
@@ -878,6 +880,120 @@ a {
 
 .ais {
   align-items: center;
+}
+
+.common .tit {
+  position: relative;
+  padding: 0 0 1.875rem 1.75rem;
+}
+.common .tit h3 {
+  font-weight: bold;
+  font-size: 1.625rem;
+  line-height: 2.3125rem;
+  padding-bottom: 0.5625rem;
+}
+.common .tit:before {
+  content: "";
+  display: block;
+  background-image: url("../img/icon-wave.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(50%);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.common .tit p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.common .trip {
+  flex-wrap: wrap;
+}
+.common .trip img {
+  width: 18%;
+}
+.common .list-01 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.5rem 0 0 1rem;
+  position: relative;
+}
+.common .list-01::before {
+  content: "";
+  display: block o !important;
+  border: #00489e;
+  border-radius: 50%;
+  background-color: #00489e;
+  width: 0.375rem;
+  height: 0.375rem;
+  left: 3px;
+  top: 1.875rem;
+  position: absolute;
+  overflow: hidden;
+}
+.common .list-02 {
+  padding: 0.625rem 0 0 1.75rem;
+  color: #555555;
+  line-height: 1.75rem;
+}
+.common .list-03 {
+  color: #999999;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  padding: 0 0 1.875rem 1.75rem;
+}
+.common .list-img li {
+  flex: 1;
+  border: 2px solid #dedede;
+  border-radius: 13px;
+  box-sizing: border-box;
+  height: 16.875rem;
+}
+.common .list-img li img {
+  border-bottom: 2px solid #dedede;
+  box-sizing: border-box;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.common .list-img li div {
+  padding: 1.4375rem 0;
+  text-align: center;
+  font-weight: bold;
+}
+.common .list-img .pd {
+  padding: 0.875rem 0;
+}
+.common table {
+  width: 50%;
+  margin: 0.625rem 0 0 1.75rem;
+}
+.common table tr, .common table td, .common table th {
+  border: 1px solid #dedede;
+  padding: 0.75rem 0.625rem 0.9375rem;
+  text-align: center;
+}
+.common table th {
+  font-weight: bold;
+  background: #F5F5F5;
+  color: #555555;
+}
+.common .before-none {
+  padding-top: 0.9375rem;
+}
+
+.common.active .list-img li {
+  flex: none;
+  width: 20%;
+}
+
+.common.work .list-img li {
+  flex: none;
+  width: 20%;
 }
 
 @media all and (max-width: 1400px) {
@@ -951,6 +1067,12 @@ a {
   .introType1 .com-step ul li {
     width: calc(50% - 1.78125rem);
   }
+  .subcotent .common .trip {
+    flex-direction: column;
+  }
+  .subcotent .common .trip img {
+    width: 30% !important;
+  }
 }
 @media all and (max-width: 600px) {
   html {
@@ -1006,6 +1128,21 @@ a {
   }
   .com-step.introType1 ul li {
     width: calc(50% - 1.58125rem);
+  }
+  .subcotent .common .trip {
+    flex-direction: column;
+  }
+  .subcotent .common .trip img {
+    width: 100% !important;
+  }
+  .subcotent .common table {
+    width: 100% !important;
+  }
+  .subcotent .common.shcool .list-img {
+    flex-direction: column !important;
+  }
+  .subcotent .common.active .list-img {
+    flex-direction: column;
   }
 }
 
