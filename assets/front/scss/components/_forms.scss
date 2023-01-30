@@ -323,6 +323,9 @@ input:read-only {
 		outline: 0.0625rem dotted #000 !important;
 	}
 }
+input[type="checkbox"]{
+	outline: 0.0625rem dotted #000 !important;
+}
 .formChkbox__indicator {
 	position: absolute;
 	top: 57%;
