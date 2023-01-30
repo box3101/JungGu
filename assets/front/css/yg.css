@@ -657,7 +657,7 @@ a {
   flex: 1;
 }
 .subcotent .introType .content {
-  padding-top: 1rem;
+  padding-top: 0.3rem !important;
 }
 .subcotent .introType .row__head {
   padding-top: 3rem;
@@ -882,33 +882,48 @@ a {
   align-items: center;
 }
 
-.common .tit {
-  position: relative;
-  padding: 0 0 1.875rem 1.75rem;
+.common .row__head {
+  padding-top: 3rem;
 }
-.common .tit h3 {
-  font-weight: bold;
-  font-size: 1.625rem;
-  line-height: 2.3125rem;
-  padding-bottom: 0.5625rem;
-}
-.common .tit:before {
-  content: "";
-  display: block;
-  background-image: url("../img/icon-wave.svg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: translateY(50%);
-  width: 1.25rem;
-  height: 1.25rem;
-}
-.common .tit p {
+.common .row__head p {
   font-size: 1.125rem;
   line-height: 1.75rem;
+}
+.common .row__body {
+  text-indent: 1 !important;
+  font-size: 1.125rem;
+  color: #2d2d2d;
+  line-height: 1.5;
+}
+.common .row__body.introType2 {
+  padding-left: 0;
+  text-indent: 0;
+}
+.common .row__body.introType2 .txtWrap span {
+  font-weight: 500;
+}
+.common .row__body .txtwrap-1, .common .row__body .txtwrap-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.common .row__body .txtwrap-1 {
+  height: 18%;
+}
+.common .row__body .txtwrap-2 {
+  height: 7%;
+  padding: 0.8rem;
+}
+.common .row__body .list-3 {
+  margin: 0.3125rem 0;
+  font-size: 1.1625rem;
+  font-weight: 500;
+  color: #333333;
+  line-height: 1.8;
+}
+.common .row__body .list-3 li {
+  padding: 0 0 0.3rem 1.75rem;
 }
 .common .trip {
   flex-wrap: wrap;
@@ -916,43 +931,19 @@ a {
 .common .trip img {
   width: 18%;
 }
-.common .list-01 {
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 1.5rem 0 0 1rem;
-  position: relative;
+.common .pl30 {
+  padding: 1rem 0 0 1.875rem;
 }
-.common .list-01::before {
-  content: "";
-  display: block o !important;
-  border: #00489e;
-  border-radius: 50%;
-  background-color: #00489e;
-  width: 0.375rem;
-  height: 0.375rem;
-  left: 3px;
-  top: 1.875rem;
-  position: absolute;
-  overflow: hidden;
-}
-.common .list-02 {
-  padding: 0.625rem 0 0 1.75rem;
-  color: #555555;
-  line-height: 1.75rem;
-}
-.common .list-03 {
-  color: #999999;
-  font-size: 0.9375rem;
-  font-weight: 500;
-  line-height: 1.75rem;
-  padding: 0 0 1.875rem 1.75rem;
+.common .list-img {
+  padding-top: 1.5rem;
 }
 .common .list-img li {
   flex: 1;
   border: 2px solid #dedede;
   border-radius: 13px;
   box-sizing: border-box;
-  height: 16.875rem;
+  height: -0.215%;
+  overflow: hidden;
 }
 .common .list-img li img {
   border-bottom: 2px solid #dedede;
@@ -960,27 +951,24 @@ a {
   width: 100%;
   flex-wrap: wrap;
 }
-.common .list-img li div {
-  padding: 1.4375rem 0;
-  text-align: center;
-  font-weight: bold;
-}
-.common .list-img .pd {
-  padding: 0.875rem 0;
-}
 .common table {
-  width: 50%;
-  margin: 0.625rem 0 0 1.75rem;
+  width: 100%;
+  margin: 0.625rem 0 1rem 1.75rem;
 }
 .common table tr, .common table td, .common table th {
   border: 1px solid #dedede;
   padding: 0.75rem 0.625rem 0.9375rem;
   text-align: center;
+  word-break: keep-all;
 }
 .common table th {
   font-weight: bold;
   background: #F5F5F5;
   color: #555555;
+}
+.common table th, .common table td {
+  text-align: center;
+  vertical-align: middle;
 }
 .common .before-none {
   padding-top: 0.9375rem;
@@ -991,9 +979,14 @@ a {
   width: 20%;
 }
 
+.common.active .content {
+  padding-top: 0.3rem !important;
+}
+
 .common.work .list-img li {
   flex: none;
   width: 20%;
+  padding: 0;
 }
 
 @media all and (max-width: 1400px) {
@@ -1073,6 +1066,15 @@ a {
   .subcotent .common .trip img {
     width: 30% !important;
   }
+  .subcotent.common .row__body table {
+    margin: 1.225rem -0.625rem 0px 0.15rem;
+  }
+  .subcotent.common .row__body .list-3 {
+    margin: 1.3125rem 0;
+  }
+  .subcotent.common.active .row__body .list-img li {
+    width: 100% !important;
+  }
 }
 @media all and (max-width: 600px) {
   html {
@@ -1129,20 +1131,26 @@ a {
   .com-step.introType1 ul li {
     width: calc(50% - 1.58125rem);
   }
-  .subcotent .common .trip {
-    flex-direction: column;
-  }
-  .subcotent .common .trip img {
+  .subcotent.common .comBtn {
     width: 100% !important;
   }
-  .subcotent .common table {
+  .subcotent.common.school .list-img .txtwrap-1 {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+  }
+  .subcotent.common.work .list-img li {
     width: 100% !important;
   }
-  .subcotent .common.shcool .list-img {
-    flex-direction: column !important;
+  .subcotent.common.work .list-img li .txtwrap-2 {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
   }
-  .subcotent .common.active .list-img {
-    flex-direction: column;
+  .subcotent.common.active .list-img li {
+    width: 100% !important;
+  }
+  .subcotent.common.active .list-img li .txtwrap-2 {
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
   }
 }
 
