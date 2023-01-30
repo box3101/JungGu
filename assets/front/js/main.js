@@ -11,8 +11,7 @@
   function eventBinding() {
     gnb();
     comSlide();
-    com
-    PopupLayer();
+    comPopupLayer();
     comTab();
     goTop();
     scrollable();
