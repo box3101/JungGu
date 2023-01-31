@@ -1979,3 +1979,42 @@ body.nopage .wrapper {
 	pointer-events: none;
 	opacity: 0.5;
 }
+
+.select-lecture {
+	ul {
+		gap: 10px !important;
+		@include media(600px) {
+			width: auto !important;
+		}
+		li {
+			button.twitter {
+				@include bg-url("img", "twitter.svg");
+			}
+			button.facebook {
+				@include bg-url("img", "facebook.svg");
+			}
+			button.naverBand {
+				@include bg-url("img", "naverBand.svg");
+			}
+			button.kakao {
+				@include bg-url("img", "kakao.svg");
+			}
+			button.heart {
+				@include bg-url("img", "heart.svg");
+				&.is-active {
+					@include bg-url("img", "heart-on.svg");
+				}
+			}
+		}
+	}
+	button {
+		width: 40px !important;
+		height: 40px !important;
+		&:hover {
+			@include before {
+				display: none;
+			}
+			background-color: inherit !important;
+		}
+	}
+}

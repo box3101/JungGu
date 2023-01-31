@@ -350,18 +350,49 @@
           </div>
           <div class="subBody">
             <div class="subcotent classRegistration">
-              <!-- 관심강좌 해제,추가 -->
+              <!-- 공유하기 -->
               <div class="select-lecture">
                 <ul>
                   <li>
-                    <button type="button" class="comBtn sizeSm bgBlack">관심강좌 해제</button>
+                    <button type="button" class="twitter">
+                      <span class="hidden">트위터 공유하기</span>
+                    </button>
                   </li>
                   <li>
-                    <button type="button" class="comBtn sizeSm bgMain">관심강좌 추가</button>
+                    <button type="button" class="facebook">
+                      <span class="hidden">페이스북 공유하기</span>
+                    </button>
                   </li>
+                  <li>
+                    <button type="button" class="naverBand">
+                      <span class="hidden">네이버 밴드 공유하기</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="kakao">
+                      <span class="hidden">카카오톡 공유하기</span>
+                    </button>
+                  </li>
+                  <!-- 찜하기 버튼 -->
+                  <!-- TODO .is-Active -> 찜하기 버튼 활성화 -->
+                  <li>
+                    <button type="button" class="heart">
+                      <span class="hidden">찜하기</span>
+                    </button>
+                  </li>
+                  <script>
+                    (function () {
+                      const $heart = document.querySelector(".heart");
+                      $heart.addEventListener("click", (e) => {
+                        let target = e.target;
+                        target.classList.toggle("is-active");
+                      });
+                    })();
+                  </script>
+                  <!-- 찜하기 버튼 eee -->
                 </ul>
               </div>
-              <!-- 관심강좌 해제,추가 eee -->
+              <!-- 공유하기 eee -->
               <div class="container flex gap15">
                 <div class="con__left">
                   <img src="https://via.placeholder.com/332x208" alt="강좌썸네일">

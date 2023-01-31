@@ -6584,7 +6584,7 @@ input:read-only:focus, input:read-only:hover {
   outline: 0.0625rem dotted #000 !important;
 }
 
-input[type=checkbox] {
+input[type=checkbox]:focus {
   outline: 0.0625rem dotted #000 !important;
 }
 
@@ -58715,6 +58715,45 @@ body.nopage .wrapper {
 .btnEventNone2 {
   pointer-events: none;
   opacity: 0.5;
+}
+
+.select-lecture ul {
+  gap: 10px !important;
+}
+@media all and (max-width: 600px) {
+  .select-lecture ul {
+    width: auto !important;
+  }
+}
+.select-lecture ul li button.twitter {
+  background-image: url("../img/twitter.svg");
+}
+.select-lecture ul li button.facebook {
+  background-image: url("../img/facebook.svg");
+}
+.select-lecture ul li button.naverBand {
+  background-image: url("../img/naverBand.svg");
+}
+.select-lecture ul li button.kakao {
+  background-image: url("../img/kakao.svg");
+}
+.select-lecture ul li button.heart {
+  background-image: url("../img/heart.svg");
+}
+.select-lecture ul li button.heart.is-active {
+  background-image: url("../img/heart-on.svg");
+}
+.select-lecture button {
+  width: 40px !important;
+  height: 40px !important;
+}
+.select-lecture button:hover {
+  background-color: inherit !important;
+}
+.select-lecture button:hover:before {
+  content: "";
+  display: block;
+  display: none;
 }
 
 .header {
