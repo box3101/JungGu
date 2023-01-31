@@ -828,14 +828,14 @@
 		.txtwrap-1, .txtwrap-2 {
 			@include flex (center, center, null);
 			font-weight: bold;
+			padding: 0.5rem 0;
 		}
 		.txtwrap-1 {
 			height: 18%;
 		}
 
 		.txtwrap-2 {
-			height: 7%;
-			padding: 0.8rem;
+			padding: 1rem;
 		}
 		.list-3 {
 			margin: 0.3125rem 0;
@@ -868,14 +868,15 @@
 			border: 2px solid #dedede;
 			border-radius: 13px;
 			box-sizing: border-box;
-			height: -0.215%;
 			overflow: hidden;
+			flex-wrap: wrap;
+			display: flex;
+			flex-direction: column;
 			
 			img {
 				border-bottom: 2px solid #dedede;
 				box-sizing: border-box;
 				width: 100%;
-				flex-wrap: wrap;
 			}
 		}
 	}
@@ -1014,6 +1015,9 @@
 		margin: 1.3125rem 0;
 	}
 	.subcotent.common.active .row__body .list-img li {
+		width: 100% !important;
+	}
+	.subcotent.common.school .row__body .list-img li {
 		width: 100% !important;
 	}
 }
