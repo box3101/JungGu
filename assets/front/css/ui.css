@@ -58707,8 +58707,14 @@ body.nopage .wrapper {
   }
 }
 
-.fc .fc-daygrid-day-bg .fc-bg-event, .fc .fc-daygrid-day-frame {
+.fc .fc-daygrid-day-bg .fc-bg-event,
+.fc .fc-daygrid-day-frame {
   cursor: pointer;
+}
+
+.btnEventNone2 {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 .header {
