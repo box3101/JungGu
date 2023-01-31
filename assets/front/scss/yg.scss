@@ -527,6 +527,11 @@
 				color: $cMain;
 				font-weight: 500;
 			}
+			.before-none:before {
+				content: "";
+				display: block;
+				display: none;
+			}
 		}
 		ul {
 			list-style: none;
@@ -589,6 +594,7 @@
 		.list-circle > li:before {
 			top: 12px;
 		}
+		
 	}
 }
 
@@ -727,6 +733,9 @@
 			}
 		}
 	}
+	.list-2 > li {
+		color: #333333;
+	}
 }
 
 .introType2 {
@@ -831,9 +840,6 @@
 			height: 60px;
 		}
 
-		.txtwrap-2 {
-			// padding: 1rem;
-		}
 		.list-3 {
 			margin: 0.3125rem 0;
 			font-size: 1.1625rem;
@@ -843,6 +849,10 @@
 
 			li {
 				padding:0 0 0.3rem 1.75rem;
+			}
+
+			.before-none {
+				margin-left: -1.75rem;
 			}
 		}
 	}

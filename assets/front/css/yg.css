@@ -642,6 +642,11 @@ a {
   color: #00489e;
   font-weight: 500;
 }
+.subcotent .transport__wrap .transport .before-none:before {
+  content: "";
+  display: block;
+  display: none;
+}
 .subcotent .transport__wrap ul {
   list-style: none;
   padding: 0;
@@ -818,6 +823,9 @@ a {
 .com-step ul li .txt span {
   margin: 0 0.5rem;
 }
+.com-step .list-2 > li {
+  color: #333333;
+}
 
 .introType2 {
   padding-top: 0;
@@ -918,6 +926,9 @@ a {
 }
 .common .row__body .list-3 li {
   padding: 0 0 0.3rem 1.75rem;
+}
+.common .row__body .list-3 .before-none {
+  margin-left: -1.75rem;
 }
 .common .trip {
   flex-wrap: wrap;
