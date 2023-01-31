@@ -907,13 +907,7 @@ a {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  padding: 0.5rem 0;
-}
-.common .row__body .txtwrap-1 {
-  height: 18%;
-}
-.common .row__body .txtwrap-2 {
-  padding: 1rem;
+  height: 60px;
 }
 .common .row__body .list-3 {
   margin: 0.3125rem 0;
@@ -928,14 +922,12 @@ a {
 .common .trip {
   flex-wrap: wrap;
 }
-.common .trip img {
-  width: 18%;
-}
 .common .pl30 {
   padding: 1rem 0 0 1.875rem;
 }
 .common .list-img {
   padding-top: 1.5rem;
+  flex-wrap: wrap;
 }
 .common .list-img li {
   flex: 1;
@@ -943,7 +935,6 @@ a {
   border-radius: 13px;
   box-sizing: border-box;
   overflow: hidden;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
 }
@@ -1061,23 +1052,29 @@ a {
   .introType1 .com-step ul li {
     width: calc(50% - 1.78125rem);
   }
-  .subcotent .common .trip {
-    flex-direction: column;
-  }
-  .subcotent .common .trip img {
-    width: 30% !important;
-  }
   .subcotent.common .row__body table {
-    margin: 1.225rem -0.625rem 0px 0.15rem;
+    margin: 1.225rem -0.625rem 0 0.15rem;
   }
   .subcotent.common .row__body .list-3 {
     margin: 1.3125rem 0;
   }
-  .subcotent.common.active .row__body .list-img li {
-    width: 100% !important;
-  }
   .subcotent.common.school .row__body .list-img li {
-    width: 100% !important;
+    flex: 0 0 33%;
+  }
+  .subcotent.common.school .row__body .list-img li .txtwrap-1 {
+    height: 4rem;
+  }
+  .subcotent.common.active .row__body .list-img li {
+    flex: 0 0 30%;
+  }
+  .subcotent.common.active .row__body .list-img li .txtwrap-2 {
+    height: 3.5rem;
+  }
+  .subcotent.common.work .row__body .list-img li {
+    flex: 0 0 30%;
+  }
+  .subcotent.common.work .row__body .list-img li .txtwrap-2 {
+    height: 3.5rem;
   }
 }
 @media all and (max-width: 600px) {
@@ -1138,23 +1135,27 @@ a {
   .subcotent.common .comBtn {
     width: 100% !important;
   }
-  .subcotent.common.school .list-img .txtwrap-1 {
-    padding: 1.5rem 0;
+  .subcotent.common.school .list-img {
     font-size: 1.3rem;
+    flex-wrap: nowrap;
+  }
+  .subcotent.common.school .row__body .list-img li .txtwrap-1 {
+    font-size: 1.3rem;
+    height: 3.5rem;
   }
   .subcotent.common.work .list-img li {
     width: 100% !important;
   }
   .subcotent.common.work .list-img li .txtwrap-2 {
-    padding: 1.5rem 0;
     font-size: 1.3rem;
+    height: 3rem;
   }
   .subcotent.common.active .list-img li {
     width: 100% !important;
   }
   .subcotent.common.active .list-img li .txtwrap-2 {
-    padding: 1.5rem 0;
     font-size: 1.3rem;
+    height: 3rem;
   }
 }
 

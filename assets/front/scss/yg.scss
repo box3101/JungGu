@@ -828,14 +828,11 @@
 		.txtwrap-1, .txtwrap-2 {
 			@include flex (center, center, null);
 			font-weight: bold;
-			padding: 0.5rem 0;
-		}
-		.txtwrap-1 {
-			height: 18%;
+			height: 60px;
 		}
 
 		.txtwrap-2 {
-			padding: 1rem;
+			// padding: 1rem;
 		}
 		.list-3 {
 			margin: 0.3125rem 0;
@@ -852,10 +849,6 @@
 
 	.trip  {
 		flex-wrap: wrap;
-		
-		img {
-			width: 18%;
-		}
 	}
 	.pl30 {
 		padding: 1rem 0 0 1.875rem;
@@ -863,13 +856,13 @@
 
 	.list-img {
 		padding-top: 1.5rem;
+		flex-wrap: wrap;
 		li  {
 			flex: 1;
 			border: 2px solid #dedede;
 			border-radius: 13px;
 			box-sizing: border-box;
 			overflow: hidden;
-			flex-wrap: wrap;
 			display: flex;
 			flex-direction: column;
 			
@@ -1001,24 +994,33 @@
 			width: calc(50% - 1.78125rem);
 		}
 	}
-
-	.subcotent .common .trip{
-		flex-direction: column;
-		img {
-			width: 30% !important;
-		}
-	}
 	.subcotent.common .row__body table{
-		margin: 1.225rem -0.625rem 0px 0.15rem;
+		margin: 1.225rem -0.625rem 0 0.15rem;
 	}
 	.subcotent.common .row__body .list-3 {
 		margin: 1.3125rem 0;
 	}
-	.subcotent.common.active .row__body .list-img li {
-		width: 100% !important;
-	}
+
 	.subcotent.common.school .row__body .list-img li {
-		width: 100% !important;
+		flex: 0 0 33%;
+		
+		.txtwrap-1 {
+			height: 4rem;
+		}
+	}
+	.subcotent.common.active .row__body .list-img li {
+		flex: 0 0 30%;
+		
+		.txtwrap-2 {
+			height: 3.5rem;
+		}
+	}
+	.subcotent.common.work .row__body .list-img li {
+		flex: 0 0 30%;
+		
+		.txtwrap-2 {
+			height: 3.5rem;
+		}
 	}
 }
 @include media($mo) {
@@ -1083,22 +1085,28 @@
 	.subcotent.common .comBtn {
 		width: 100% !important;
 	}
-	.subcotent.common.school .list-img .txtwrap-1 {
-		padding: 1.5rem 0;
+	.subcotent.common.school .list-img  {
 		font-size: 1.3rem;
+		flex-wrap: nowrap;
+	}
+	
+	.subcotent.common.school .row__body .list-img li .txtwrap-1 {
+		font-size: 1.3rem;
+		height: 3.5rem;
+
 	}
 	.subcotent.common.work .list-img li {
 		width: 100% !important;
 		.txtwrap-2 {
-			padding: 1.5rem 0;
 			font-size: 1.3rem;
+			height: 3rem;
 		}
 	}
 	.subcotent.common.active .list-img li {
 		width: 100% !important;
 		.txtwrap-2 {
-			padding: 1.5rem 0;
 			font-size: 1.3rem;
+			height: 3rem;
 		}
 	}
 }
