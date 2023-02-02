@@ -826,6 +826,25 @@ a {
 .com-step .list-2 > li {
   color: #333333;
 }
+.com-step.before-none .num {
+  padding-top: 0;
+}
+.com-step.before-none .num:after {
+  content: "";
+  display: block;
+  background-image: url("../img/visual-arrow.svg");
+  background-position: initial;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 2.3125rem;
+  width: 100%;
+  height: 0.6875rem;
+}
+.com-step.before-none .tit {
+  padding-top: 0;
+}
 
 .introType2 {
   padding-top: 0;
@@ -1167,6 +1186,11 @@ a {
   .subcotent.common.active .list-img li .txtwrap-2 {
     font-size: 1.3rem;
     height: 3rem;
+  }
+  .com-step.before-none .num:after {
+    content: "";
+    display: block;
+    top: 30px;
   }
 }
 
