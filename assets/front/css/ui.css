@@ -58985,7 +58985,7 @@ body.nopage .wrapper {
   right: 0.9375rem;
   display: inline-block;
   cursor: pointer;
-  z-index: 11;
+  z-index: 9999;
   display: inline-block;
   transition: all 0.3s ease-in-out;
 }

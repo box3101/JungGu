@@ -197,7 +197,7 @@
 			right: 0.9375rem;
 			display: inline-block;
 			cursor: pointer;
-			z-index: 11;
+			z-index: 9999;
 			display: inline-block;
 			transition: all 0.3s ease-in-out;
 			.menuItem {
@@ -385,35 +385,35 @@
 	}
 }
 
-.mobileMenu{
-	.utilMenu{
+.mobileMenu {
+	.utilMenu {
 		margin-top: 19px;
-    margin-right: 18px;
-    text-align: right;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 15px;
-			.login {
-				@include bg-url("img", "ico-login.png", "cover");
-				background-color: #fff;
-				border: none;
-				width: 1.5625rem;
-				height: 1.5625rem;
-			}
-			.logout {
-				@include bg-url("img", "ico-logout.png", "cover");
-				background-color: #fff;
-				border: none;
-				width: 1.5625rem;
-				height: 1.5625rem;
-			}
-			.mypage {
-				@include bg-url("img", "ico-mypage.png", "cover");
-				background-color: #fff;
-				border: none;
-				width: 1.5625rem;
-				height: 1.5625rem;
-			}
+		margin-right: 18px;
+		text-align: right;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 15px;
+		.login {
+			@include bg-url("img", "ico-login.png", "cover");
+			background-color: #fff;
+			border: none;
+			width: 1.5625rem;
+			height: 1.5625rem;
+		}
+		.logout {
+			@include bg-url("img", "ico-logout.png", "cover");
+			background-color: #fff;
+			border: none;
+			width: 1.5625rem;
+			height: 1.5625rem;
+		}
+		.mypage {
+			@include bg-url("img", "ico-mypage.png", "cover");
+			background-color: #fff;
+			border: none;
+			width: 1.5625rem;
+			height: 1.5625rem;
 		}
 	}
+}
