@@ -58852,6 +58852,64 @@ body.nopage .wrapper {
     left: 0 !important;
   }
 }
+#type5 .comPopupInfo {
+  background: #fff !important;
+}
+
+#type5 .comPopupInfo .list-01 strong {
+  font-weight: bold;
+}
+
+#type5 .comPopupInfo .list-02 {
+  margin-top: 1.25rem;
+}
+
+#type5 .comPopupInfo .list-02 li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4375rem;
+}
+
+#type5 .comPopupInfo .list-02 li label {
+  flex: 0 0 15%;
+}
+
+#type5 .comPopupInfo .list-01 li:nth-child(1) {
+  padding-bottom: 0 !important;
+}
+
+#type6 .comPopupInfo {
+  background: #fff;
+}
+
+#type6 .list-01 {
+  padding: 1.375rem 0;
+  padding-bottom: 0 !important;
+}
+
+#type6 .comPopupInfo .list-01 li:nth-child(1) {
+  font-size: 1.6rem !important;
+}
+
+#type5 .comPopupInfo .list-01 li:nth-child(2) p {
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#type6 .comPopupInfo .list-02 textarea {
+  border: 1px solid #aaa;
+  color: #333;
+  font-weight: 400;
+}
+
+#type6 .comPopupInfo .list-02 form {
+  padding-left: 2.6rem !important;
+}
+
+#type6 .comPopupInfo .list-02 form label {
+  cursor: pointer;
+}
+
 .header {
   position: relative;
 }
@@ -58987,7 +59045,7 @@ body.nopage .wrapper {
   height: 1.5625rem;
 }
 .header .headerWrap .headerInner .utilMenu li .login {
-  background-image: url("../img/ico-login.png");
+  background-image: url("../img/ico-login.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -58997,7 +59055,7 @@ body.nopage .wrapper {
   height: 1.5625rem;
 }
 .header .headerWrap .headerInner .utilMenu li .logout {
-  background-image: url("../img/ico-logout.png");
+  background-image: url("../img/ico-logout.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59007,7 +59065,7 @@ body.nopage .wrapper {
   height: 1.5625rem;
 }
 .header .headerWrap .headerInner .utilMenu li .mypage {
-  background-image: url("../img/ico-mypage.png");
+  background-image: url("../img/ico-mypage.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59263,7 +59321,7 @@ body.nopage .wrapper {
   gap: 15px;
 }
 .mobileMenu .utilMenu .login {
-  background-image: url("../img/ico-login.png");
+  background-image: url("../img/ico-login.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59273,7 +59331,7 @@ body.nopage .wrapper {
   height: 1.5625rem;
 }
 .mobileMenu .utilMenu .logout {
-  background-image: url("../img/ico-logout.png");
+  background-image: url("../img/ico-logout.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59283,7 +59341,7 @@ body.nopage .wrapper {
   height: 1.5625rem;
 }
 .mobileMenu .utilMenu .mypage {
-  background-image: url("../img/ico-mypage.png");
+  background-image: url("../img/ico-mypage.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

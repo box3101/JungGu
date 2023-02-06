@@ -110,21 +110,21 @@
 						height: 1.5625rem;
 					}
 					.login {
-						@include bg-url("img", "ico-login.png", "cover");
+						@include bg-url("img", "ico-login.svg", "cover");
 						background-color: #fff;
 						border: none;
 						width: 1.5625rem;
 						height: 1.5625rem;
 					}
 					.logout {
-						@include bg-url("img", "ico-logout.png", "cover");
+						@include bg-url("img", "ico-logout.svg", "cover");
 						background-color: #fff;
 						border: none;
 						width: 1.5625rem;
 						height: 1.5625rem;
 					}
 					.mypage {
-						@include bg-url("img", "ico-mypage.png", "cover");
+						@include bg-url("img", "ico-mypage.svg", "cover");
 						background-color: #fff;
 						border: none;
 						width: 1.5625rem;
@@ -395,21 +395,21 @@
 		justify-content: flex-end;
 		gap: 15px;
 		.login {
-			@include bg-url("img", "ico-login.png", "cover");
+			@include bg-url("img", "ico-login.svg", "cover");
 			background-color: #fff;
 			border: none;
 			width: 1.5625rem;
 			height: 1.5625rem;
 		}
 		.logout {
-			@include bg-url("img", "ico-logout.png", "cover");
+			@include bg-url("img", "ico-logout.svg", "cover");
 			background-color: #fff;
 			border: none;
 			width: 1.5625rem;
 			height: 1.5625rem;
 		}
 		.mypage {
-			@include bg-url("img", "ico-mypage.png", "cover");
+			@include bg-url("img", "ico-mypage.svg", "cover");
 			background-color: #fff;
 			border: none;
 			width: 1.5625rem;
