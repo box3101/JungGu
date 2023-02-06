@@ -985,6 +985,14 @@
 		font-size: 1rem;
 		font-weight: 500;
 	}
+	.flex {
+		justify-content: center;
+	}
+	.comBtn {
+		background-color: #00489e;
+		color: #fff !important;
+		border-radius: 0.3125rem;
+	}
 
 	.list-02 {
 		li {
@@ -1004,11 +1012,11 @@
 			border-bottom: none;
 			text-align: left;
 		}
-		form {
+		div {
 			font-weight: 400;
 			font-size: 1rem;
 			line-height: 1.5rem;
-			padding-left: 1.5375rem;
+			padding-left: 2.5375rem;
 		}
 		textarea {
 			width: 97%;
@@ -1016,14 +1024,6 @@
 			padding: 0.625rem;
 			line-height: 1.2rem;
 			margin-top: 0.5rem;
-		}
-		.flex {
-			justify-content: center;
-		}
-		.comBtn {
-			background-color: #00489e;
-			color: #fff !important;
-			border-radius: 0.3125rem;
 		}
 	}
 	

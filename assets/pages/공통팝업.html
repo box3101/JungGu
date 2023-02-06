@@ -176,7 +176,7 @@
           <div class="comPopupHeader" tabindex="0">
             <h2>환불 계좌정보 입력</h2>
             <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
-          </div>
+          </div> 
           <div class="comPopupInfo">
             <ul class="list-01">
               <li>
@@ -239,30 +239,38 @@
               <li>
                 <ul class="list-02">
                   <li>
-                    <p>질문 1) 강좌의 교육은 전반적으로 만족하셨습니까?</p>
-                    <form>
+                    <p>
+                      <span>
+                        질문 1)
+                      </span>
+                      강좌의 교육은 전반적으로 만족하셨습니까?
+                    </p>
+                    <div>
                       <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
                       <label for="very-satisfied">매우만족</label><br>
-
+  
                       <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
                       <label for="satisfied">만족</label><br>
-
+  
                       <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
                         value="neither-dissatisfied-nor-satisfied">
                       <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
-
+  
                       <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
                       <label for="dissatisfied">불만족</label><br>
-
+  
                       <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
                       <label for="very-dissatisfied">매우 불만족</label><br>
-                    </form>
-                    </p>
+                    </div>
                   </li>
                   <li>
-                    <p>질문 2) 교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까? </p>
                     <p>
-                    <form>
+                      <span>
+                        질문 2)
+                      </span>
+                      교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까? 
+                    </p>
+                    <div>
                       <input type="radio" id="very-satisfied2" name="satisfaction2" value="very-satisfied2">
                       <label for="very-satisfied2">매우만족</label><br>
 
@@ -278,14 +286,16 @@
 
                       <input type="radio" id="very-dissatisfied2" name="satisfaction2" value="very-dissatisfied2">
                       <label for="very-dissatisfied2">매우 불만족</label><br>
-                    </form>
-                    </p>
+                    </div>
                   </li>
                   <li>
-                    <p>질문 3) 교육 강사가 역량과 전문성을 갖추었습니까?
-                    </p>
                     <p>
-                    <form>
+                      <span>
+                        질문 3) 
+                      </span>
+                      교육 강사가 역량과 전문성을 갖추었습니까?
+                    </p>
+                    <div>
                       <input type="radio" id="very-satisfied3" name="satisfaction3" value="very-satisfied3">
                       <label for="very-satisfied3">매우만족</label><br>
 
@@ -301,21 +311,25 @@
 
                       <input type="radio" id="very-dissatisfied3" name="satisfaction3" value="very-dissatisfied3">
                       <label for="very-dissatisfied2">매우 불만족</label><br>
-                    </form>
-                    </p>
+                    </div>
                   </li>
-                  <li>
+                  <!-- 주관식 class short-form 추가 -->
+                  <li class="short-form">
                     <p>
-                      <label for="a7">질문 4) 강좌에 대한 개선의견, 불만, 칭찬 등 하고 싶은 말씀을 자유롭게 작성해 주세요. (최대 500자 이내)</label for="a7">
+                      <label for="a7">
+                        <span>
+                          질문 4) 
+                        </span>
+                        강좌에 대한 개선의견, 불만, 칭찬 등 하고 싶은 말씀을 자유롭게 작성해 주세요. (최대 500자 이내)</label for="a7">
                     </p>
                     <textarea name="" id="a7" cols="30" rows="10"></textarea>
-                  </li>
-                  <li class="flex">
-                    <input type="submit" value="제출하기" class="comBtn bgMain sizeLg">
                   </li>
                 </ul>
               </li>
             </ul>
+            <div class="flex">
+              <input type="submit" value="제출하기" class="comBtn bgMain sizeLg">
+            </div>
           </div>
           <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
           <button type="button" class="popClose accPopClose"></button>

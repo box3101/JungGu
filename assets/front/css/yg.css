@@ -1052,6 +1052,14 @@ a {
   font-size: 1rem;
   font-weight: 500;
 }
+.type6 .comPopupInfo .flex {
+  justify-content: center;
+}
+.type6 .comPopupInfo .comBtn {
+  background-color: #00489e;
+  color: #fff !important;
+  border-radius: 0.3125rem;
+}
 .type6 .comPopupInfo .list-02 li {
   padding-bottom: 0.8rem !important;
 }
@@ -1068,11 +1076,11 @@ a {
   border-bottom: none;
   text-align: left;
 }
-.type6 .comPopupInfo .list-02 form {
+.type6 .comPopupInfo .list-02 div {
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5rem;
-  padding-left: 1.5375rem;
+  padding-left: 2.5375rem;
 }
 .type6 .comPopupInfo .list-02 textarea {
   width: 97%;
@@ -1080,14 +1088,6 @@ a {
   padding: 0.625rem;
   line-height: 1.2rem;
   margin-top: 0.5rem;
-}
-.type6 .comPopupInfo .list-02 .flex {
-  justify-content: center;
-}
-.type6 .comPopupInfo .list-02 .comBtn {
-  background-color: #00489e;
-  color: #fff !important;
-  border-radius: 0.3125rem;
 }
 
 @media all and (max-width: 1400px) {
