@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="../front/js/jquery.js"></script>
+  <script src="../front/js/jquery-ui.js"></script>
   <link rel="stylesheet" href="../front/css/ui.css">
 </head>
 
@@ -86,8 +88,8 @@
     <!-- type2 eee-->
 
     <!-- type3 -->
-    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type3"
-      data-popup="accessibility">type3 sizeMid</button>
+    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type3" data-popup="accessibility">type3
+      sizeMid</button>
 
     <div class="comPopupWrap" role="dialog" id="type3">
       <div class="dim"></div>
@@ -124,8 +126,8 @@
     <!-- type2 eee-->
 
     <!-- type4-->
-    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type4"
-      data-popup="accessibility">type3 sizeLg</button>
+    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type4" data-popup="accessibility">type3
+      sizeLg</button>
 
     <div class="comPopupWrap" role="dialog" id="type4">
       <div class="dim"></div>
@@ -160,6 +162,76 @@
       </div>
     </div>
     <!-- type4 eee-->
+
+    <!-- 환불 계좌정보 입력팝업 -->
+    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type5">환불 계좌정보
+      입력팝업</button>
+
+    <div class="comPopupWrap" role="dialog" id="type5">
+      <div class="dim"></div>
+      <div class="comPopupContainer">
+        <div class="comPopupBox">
+          <!-- popup title에 tabindex=“0” 추가 필요 -->
+          <div class="comPopupHeader" tabindex="0">
+            <h2>담당자 찾기</h2>
+            <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
+          </div>
+          <div class="comPopupInfo">
+
+            내용내용
+
+          </div>
+          <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
+          <button type="button" class="popClose accPopClose"></button>
+        </div>
+      </div>
+    </div>
+    <!-- 환불 계좌정보 입력팝업 eee -->
+
+    <!-- 강좌 만족도조사 팝업 -->
+    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type6">환불 계좌정보
+      입력팝업</button>
+
+    <div class="comPopupWrap" role="dialog" id="type6">
+      <div class="dim"></div>
+      <div class="comPopupContainer">
+        <div class="comPopupBox">
+          <!-- popup title에 tabindex=“0” 추가 필요 -->
+          <div class="comPopupHeader" tabindex="0">
+            <h2>강좌 만족도조사</h2>
+            <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
+          </div>
+          <div class="comPopupInfo">
+
+            내용내용1
+            <form>
+              <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+              <label for="very-satisfied">매우만족</label><br>
+
+              <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+              <label for="satisfied">만족</label><br>
+
+              <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
+                value="neither-dissatisfied-nor-satisfied">
+              <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
+
+              <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+              <label for="dissatisfied">불만족</label><br>
+
+              <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+              <label for="very-dissatisfied">매우 불만족</label><br>
+
+              <input type="submit" value="제출하기">
+            </form>
+
+          </div>
+          <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
+          <button type="button" class="popClose accPopClose"></button>
+        </div>
+      </div>
+    </div>
+    <!-- 강좌 만족도조사 팝업 eee -->
+
 
   </div>
 
@@ -210,6 +282,28 @@
     }
     comPopupLayer();
 
+    // 공통 팝업 포커스 이동
+    // TODO 팝업 버튼에 class modelBtn 추가 ex. <a class="comBtn sizeXlg bgBlack modelBtn">목록</a>
+
+    (function () {
+      const $modalBtn = document.querySelector(".modalBtn");
+      const $popClose = document.querySelector(".popClose");
+
+      // 모달버튼이 있을시에만
+      if ($modalBtn) {
+        // 모달버튼 클릭시 팝업 div 1. tabindex 추가 2. 팝업창으로 focus 이동
+        $modalBtn.addEventListener("click", () => {
+          const $comPopupBox = document.querySelector(".comPopupBox");
+          $comPopupBox.setAttribute("tabindex", "0");
+          $comPopupBox.focus();
+        });
+
+        // (가상돔 생성후) .popClose 클릭시 포커스 다시 모달버튼으로 이동
+        $(document).on("click", ".popClose", function () {
+          $(".modalBtn").focus();
+        });
+      }
+    })();
   </script>
 </body>
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 메인화면 팝업-레이어 -->
+  <section class="mainLayorPopup" style="top:20px;left:20px;width:500px;height: 500px;">
+    <div class="content">
+      <!-- 여기에 내용이 들어갑니다 -->
+      <img src="https://www.incheon.go.kr/comm/getImage?srvcId=BANNER&upperNo=2374&fileTy=PCIMG&fileNo=1" alt="">
+    </div>
+    <div class="check">
+      <div class="form-chkbox">
+        <label class="form-chkbox__control control--checkbox mr15">다시보지않음
+          <input type="checkbox">
+          <div class="form-chkbox__indicator"></div>
+        </label>
+      </div>
+      <a href="#" class="close-pop">
+        [닫기]
+      </a>
+    </div>
+  </section>
+
+  <section class="mainLayorPopup" style="top:20px;left:600px;width:500px;height:500px;">
+    <div class="content">
+      <!-- 여기에 내용이 들어갑니다 -->
+      <img
+        src="https://www.incheon.go.kr/comm/getImage?srvcId=BBSTY10&upperNo=2097477&fileTy=THUMBNAIL&fileNo=1&thumbTy=L"
+        alt="">
+    </div>
+    <div class="check">
+      <div class="form-chkbox">
+        <label class="form-chkbox__control control--checkbox mr15">다시보지않음
+          <input type="checkbox">
+          <div class="form-chkbox__indicator"></div>
+        </label>
+      </div>
+      <a href="#" class="close-pop">
+        [닫기]
+      </a>
+    </div>
+  </section>
+
+
+  <script>
+    const mainPops = document.querySelectorAll(".mainLayorPopup");
+
+    mainPops.forEach((el) => {
+      const close = el.querySelector(".close-pop");
+
+      close.addEventListener("click", () => {
+        el.style.display = "none"
+      });
+    });
+  </script>
+  <!-- 메인화면 팝업-레이어 eee -->
+</body>
+
+</html>
