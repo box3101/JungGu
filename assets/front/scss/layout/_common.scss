@@ -2126,48 +2126,51 @@ body.nopage .wrapper {
 }
 
 
-#type5 .comPopupInfo{
+.type5 .comPopupInfo{
 	background: #fff!important;
 }
-#type5 .comPopupInfo .list-01 strong{
+.type5 .comPopupInfo .list-01 strong{
 	font-weight: bold;
 }
-#type5 .comPopupInfo .list-02 {
+.type5 .comPopupInfo .list-02 {
 	margin-top: 1.25rem;
 }
-#type5 .comPopupInfo .list-02 li{
+.type5 .comPopupInfo .list-02 li{
 	display: flex;
 	align-items: center;
 	margin-bottom: 0.4375rem;
 }
-#type5 .comPopupInfo .list-02 li label{
+.type5 .comPopupInfo .list-02 li label{
 	flex:0 0 15%;
 }
-#type5 .comPopupInfo .list-01 li:nth-child(1){
+.type5 .comPopupInfo .list-01 li:nth-child(1){
 	padding-bottom: 0!important;
 }
-#type6 .comPopupInfo{
+.type6 .comPopupInfo{
 	background: #fff;
 }
-#type6 .list-01{
+.type6 .list-01{
 	padding: 1.375rem 0;
 	padding-bottom: 0!important;
 }
-#type6 .comPopupInfo .list-01 li:nth-child(1){
+.type6 .comPopupInfo .list-01 li:nth-child(1){
 	font-size: 1.6rem!important;
 }
-#type5 .comPopupInfo .list-01 li:nth-child(2) p{
+.type5 .comPopupInfo .list-01 li:nth-child(2) p{
 	line-height: 1.5;
 	font-size: 14px;
 }
-#type6 .comPopupInfo .list-02 textarea{
+.type6 .comPopupInfo .list-02 textarea{
 	border: 1px solid #aaa;
 	color: #333;
 	font-weight: 400;
 }
-#type6 .comPopupInfo .list-02 form{
+.type6 .comPopupInfo .list-02 form{
 	padding-left: 2.6rem!important;
 }
-#type6 .comPopupInfo .list-02 form label{
+.type6 .comPopupInfo .list-02 form label,.type6 .comPopupInfo input[type="submit"]{
 	cursor: pointer;
+}
+.type6 .comPopupInfo .comBtn{
+	top: auto!important;
 }
