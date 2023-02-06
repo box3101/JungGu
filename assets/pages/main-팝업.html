@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta c har se t="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta name="description" content="">
+  <title>인천 중구청</title>
+
+  <!-- =================== Favicon =================== -->
+
+
+  <!-- =================== LINK =================== -->
+  <link rel="stylesheet" href="../front/css/ui.css">
+  <link rel="stylesheet" href="../front/css/yg.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src='../front/js/index.global.min.js'></script>
+  <script src="../front//js/datepicker.js"></script>
+  <script src="../front/js/swiper.js"></script>
+  <script src="../front/js/main.js"></script>
+  <script src="../front/js/wow.js"></script>
+
+  <!-- include -->
+  <!-- <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script> -->
+</head>
+
+<body>
+
+  <div class="skip-nav">
+    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+    <a href="#contentmain" tabindex="1">본문 바로가기</a>
+  </div>
+
+  <div id="wrapper">
+
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="headerWrap on">
+        <div class="headerInner">
+          <h1 class="logo">
+            <a href="../pages/main.html">
+              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
+            </a>
+          </h1>
+          <ul class="gnb" id="gnb" tabindex="0">
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/인사말.html" class="gnbLink">
+                평생학습도시
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/인사말.html">인사말</a>
+                </li>
+                <li>
+                  <a href="../pages/비전과목표.html">비전과 목표</a>
+                </li>
+                <li>
+                  <a href="../pages/선언문.html">선언문</a>
+                </li>
+                <li>
+                  <a href="../pages/조례.html">조례</a>
+                </li>
+                <li>
+                  <a href="../pages/주요사업소개.html">주요사업 소개</a>
+                </li>
+                <li>
+                  <a href="../pages/오시는길.html">오시는 길</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/수강신청.html" class="gnbLink">
+                수강신청 </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/수강신청.html">수강신청</a>
+                </li>
+                <li>
+                  <a href="../pages/배우는바다.html">배우는바다 Online</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/평생학습기관.html" class="gnbLink">
+                네트워크
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/평생학습기관.html">평생학습기관</a>
+                </li>
+                <li>
+                  <a href="../pages/평생학습동아리소개.html">평생학습동아리</a>
+                </li>
+                <li>
+                  <a href="../pages/우리동네강사.html">우리동네강사</a>
+                </li>
+                <li>
+                  <a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
+                </li>
+                <li>
+                  <a href="../pages/우리동네문화센터.html">우리동네문화센터</a>
+                </li>
+                <li>
+                  <a href="../pages/인천시민대학.html">인천시민대학</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/대관안내.html" class="gnbLink">
+                나눔공간
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/대관안내.html">대관 안내</a>
+                </li>
+                <li>
+                  <a href="../pages/대관신청.html">대관 신청</a>
+                </li>
+                <li>
+                  <a href="../pages/나눔공간소개.html">나눔공간</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/공지사항.html" class="gnbLink">
+                열린마당
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/공지사항.html">공지사항</a>
+                </li>
+                <li>
+                  <a href="../pages/자료실.html">자료실</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/구석구석탐방.html" class="gnbLink">
+                교육혁신지구
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/구석구석탐방.html">구석구석 탐방</a>
+                </li>
+                <li>
+                  <a href="../pages/중구마을학교.html">중구마을학교</a>
+                </li>
+                <li>
+                  <a href="../pages/마을교육활동가.html">마을교육활동가</a>
+                </li>
+                <li>
+                  <a href="../pages/교육경비지원사업.html">교육경비 지원사업</a>
+                </li>
+                <li>
+                  <a href="../pages/인터넷수능방송지원.html">인터넷 수능방송 지원</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <!-- 로그인 전 -->
+          <ul class="utilMenu">
+            <li>
+              <button type="button" class="login">
+                <span class="hidden">로그인</span>
+              </button>
+            </li>
+          </ul>
+          <!-- 로그인 전  eee-->
+          <!-- 로그인 후  -->
+          <ul class="utilMenu">
+            <li>
+              <button type="button" class="logout">
+                <span class="hidden">로그아웃</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="mypage">
+                <span class="hidden">마이페이지</span>
+              </button>
+            </li>
+          </ul>
+          <!-- 로그인 후 eee-->
+        </div>
+      </div>
+      <div class="headerBg">
+        <div class="inner">
+          <div class="txt-wrap">
+            <p class="tit">배우는 바다</p>
+            <p class="txt">
+              인천중구 교육포털에 <br>
+              방문하신걸 환영합니다!
+            </p>
+          </div>
+          <div class="changImg">
+          </div>
+        </div>
+      </div>
+
+      <!-- 모바일메뉴 -->
+      <nav class="mobileMenu">
+        <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
+          <span class="menuItem"></span>
+          <span class="menuItem"></span>
+          <span class="menuItem"></span>
+        </button>
+        <div class="mobileNav">
+          <div class="moLogo">
+            <a href="../pages/main.html" tabindex="0">
+              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
+            </a>
+          </div>
+          <ul class="mobileNavList">
+            <li class="mobileNavItem">
+              <a href="#">
+                평생학습도시
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">인사말</a>
+                </li>
+                <li>
+                  <a href="#">비전과 목표</a>
+                </li>
+                <li>
+                  <a href="#">선언문</a>
+                </li>
+                <li>
+                  <a href="#">조례</a>
+                </li>
+                <li>
+                  <a href="#">주요사업 소개</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                수강신청
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">평생학습관</a>
+                </li>
+                <li>
+                  <a href="#">동행정복지센터</a>
+                </li>
+                <li>
+                  <a href="#">문화센터</a>
+                </li>
+                <li>
+                  <a href="#">온라인 학습</a>
+                </li>
+                <li>
+                  <a href="#">중구구민대학</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                네트워크
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">평생학습기관</a>
+                </li>
+                <li>
+                  <a href="#">평생학습 동아리</a>
+                </li>
+                <li>
+                  <a href="#">우리동네강사</a>
+                </li>
+                <li>
+                  <a href="#">찾아가는 학습</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                나눔공간
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">대관 안내</a>
+                </li>
+                <li>
+                  <a href="#">대관 신청</a>
+                </li>
+                <li>
+                  <a href="#">나눔공간</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                열린마당
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">공모사업 신청</a>
+                </li>
+                <li>
+                  <a href="#">자료실</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                교육혁신지구
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">구석구석 탐방</a>
+                </li>
+                <li>
+                  <a href="#">중구마을학교</a>
+                </li>
+                <li>
+                  <a href="#">마을교육활동가</a>
+                </li>
+                <li>
+                  <a href="#">교육경비 지원사업</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <!-- 로그인 전 -->
+          <div class="utilMenu">
+            <div>
+              <button type="button" class="login">
+                <span class="hidden">로그인</span>
+              </button>
+            </div>
+          </div>
+          <!-- 로그인 전  eee-->
+          <!-- 로그인 후  -->
+          <div class="utilMenu">
+            <div>
+              <button type="button" class="logout">
+                <span class="hidden">로그아웃</span>
+              </button>
+            </div>
+            <div>
+              <button type="button" class="mypage">
+                <span class="hidden">마이페이지</span>
+              </button>
+            </div>
+          </div>
+          <!-- 로그인 후 eee-->
+        </div>
+      </nav>
+
+      <!-- gotop -->
+      <div class="goTop">
+        <button type="button" title="상단으로 이동">
+          <span class="hidden">상단으로 이동</span>
+        </button>
+      </div>
+    </header>
+    <!-- header eee -->
+
+    <!-- main -->
+    <main id="main" class="main">
+      <div class="contentBody">
+        <!-- 컨텐츠가 들어갈 부분 -->
+
+        <!-- visual -->
+        <figure class="visual">
+          <div class="inner">
+            <div class="visualSlide">
+              <!-- 다음 버튼 -->
+              <button type="button" class="swiper-button-next"></button>
+
+              <!-- 슬라이드 -->
+              <div id="visualSlide" class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="../front/img/visual-img01.png" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="https://via.placeholder.com/1400x385" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img src="../front/img/visual-img01.png" alt="메인 슬라이드 이미지">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 이전 버튼 -->
+              <button type="button" class="swiper-button-prev"></button>
+
+              <!-- 시작,정지 -->
+              <div class="autoplayControl">
+                <button aria-pressed="false" aria-label="자동 재생 일시 정지"></button>
+              </div>
+
+              <!-- 페이징 -->
+              <div class="comSlidePaging">
+                <div class="currentNum"></div>
+                <span class="bar">/</span>
+                <div class="allNum"></div>
+              </div>
+            </div>
+          </div>
+        </figure>
+        <!-- visual eee-->
+
+        <!-- 주요서비스 -->
+        <div class="service" id="contentmain" tabindex="0">
+          <div class="inner">
+            <div class="comTitle-1">
+              <div class="comTitle-1__tit wow fadeInUp" data-wow-delay="0.2s">주요 서비스</div>
+              <div class="comTitle-1__txt wow fadeInUp" data-wow-delay="0.4s">자주 사용하는 서비스를 바로 만나보세요</div>
+            </div>
+            <ul class="service__list flex flex16 gap15">
+              <li class="wow fadeInUp">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service01.png" alt="">
+                  </div>
+                  <p>수강신청</p>
+                </a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.2s">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service02.png" alt="">
+                  </div>
+                  <p>대관신청</p>
+                </a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.4s">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service03.png" alt="">
+                  </div>
+                  <p>찾아가는 학습</p>
+                </a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.6s">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service04.png" alt="">
+                  </div>
+                  <p>중구마을학교</p>
+                </a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="0.8s">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service05.png" alt="">
+                  </div>
+                  <p>우리동네 강사</p>
+                </a>
+              </li>
+              <li class="wow fadeInUp" data-wow-delay="1s">
+                <a href="#">
+                  <div class="img">
+                    <img src="../front/img/service06.png" alt="">
+                  </div>
+                  <p>공모사업 신청</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 주요서비스 eee -->
+
+        <!-- 강좌검색 -->
+        <div class="courseSearch">
+          <div class="inner">
+            <div class="comTitle-1">
+              <div class="comTitle-1__tit cWhite wow fadeInUp" data-wow-delay="0.2s">강좌 검색</div>
+              <div class="comTitle-1__txt cWhite wow fadeInUp" data-wow-delay="0.4s">필요한 강좌를 바로 검색해서 확인해보세요</div>
+            </div>
+
+            <form action="">
+              <div class="courseSearch__btn wow fadeInUp" data-wow-delay="0.6s">
+                <label for="a1" class="hidden">강좌검색</label>
+                <input id="a1" class="comInput" type="text" placeholder="검색어를 입력하세요">
+                <button type="button" aria-label="강좌검색">
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- 강좌검색 eee-->
+
+
+        <!-- 이달의 강좌, 공지사항 -->
+        <div class="mainBottom">
+          <div class="inner">
+            <div class="flex flex50 gap60">
+              <!-- 이달의 강좌 -->
+              <div class="courseMonth">
+                <div class="comTitle-1">
+                  <div class="comTitle-1__tit wow fadeInUp" data-wow-delay="0.2s">이달의 강좌</div>
+                  <div class="comTitle-1__txt wow fadeInUp" data-wow-delay="0.4s">이달의 새로운 강좌와 추천 강좌를 확인하세요</div>
+                </div>
+                <ul>
+                  <li class="wow fadeInUp" data-wow-delay="0.2s">
+                    <a href="#">
+                      <div class="chipWrap">
+                        <div class="flex jcBetween aiCenter">
+                          <span class="chip">건강 / 스포츠</span>
+                          <div>
+                            <div class="chipWrap mb0">
+                              <span class="chip receipt">접수중</span>
+                              <span class="chip pay">유료</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt twoLine">
+                        댄스스포츠 라인&라틴솔로
+                        (여성전용) - 서부여성회관댄스스포츠 라인&라틴솔로
+                        (여성전용) - 서부여성회관댄스스포츠 라인&라틴솔로
+                        (여성전용) - 서부여성회관
+                      </div>
+                      <div class="bottom">
+                        <dl>
+                          <dt class="date">교육기간:</dt>
+                          <dd>22.10.11 ~ 22.10.30</dd>
+                        </dl>
+                        <dl>
+                          <dt class="place">장소:</dt>
+                          <dd>서부여성회관</dd>
+                        </dl>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-delay="0.4s">
+                    <a href="#">
+                      <div class="chipWrap">
+                        <div class="flex jcBetween aiCenter">
+                          <span class="chip">교양</span>
+                          <div>
+                            <div class="chipWrap mb0">
+                              <span class="chip deadline">마감</span>
+                              <span class="chip free">무료</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt twoLine">
+                        글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                      </div>
+                      <div class="bottom">
+                        <dl>
+                          <dt class="date">교육기간:</dt>
+                          <dd>22.10.11 ~ 22.10.30</dd>
+                        </dl>
+                        <dl>
+                          <dt class="place">장소:</dt>
+                          <dd>서부여성회관</dd>
+                        </dl>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-delay="0.6s">
+                    <a href="#">
+                      <div class="chipWrap">
+                        <div class="flex jcBetween aiCenter">
+                          <span class="chip">건강 / 스포츠</span>
+                          <div>
+                            <div class="chipWrap mb0">
+                              <span class="chip receipt">접수중</span>
+                              <span class="chip pay">유료</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt twoLine">
+                        글자테스트 글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                      </div>
+                      <div class="bottom">
+                        <dl>
+                          <dt class="date">교육기간:</dt>
+                          <dd>22.10.11 ~ 22.10.30</dd>
+                        </dl>
+                        <dl>
+                          <dt class="place">장소:</dt>
+                          <dd>서부여성회관</dd>
+                        </dl>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-delay="0.8s">
+                    <a href="#">
+                      <div class="chipWrap">
+                        <div class="flex jcBetween aiCenter">
+                          <span class="chip">교양</span>
+                          <div>
+                            <div class="chipWrap mb0">
+                              <span class="chip deadline">마감</span>
+                              <span class="chip free">무료</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="txt twoLine">
+                        글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트
+                      </div>
+                      <div class="bottom">
+                        <dl>
+                          <dt class="date">교육기간:</dt>
+                          <dd>22.10.11 ~ 22.10.30</dd>
+                        </dl>
+                        <dl>
+                          <dt class="place">장소:</dt>
+                          <dd>서부여성회관</dd>
+                        </dl>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+                <a href="#" class="moreBtn">
+                  <span class="hidden">이달의 강좌 더보기</span>
+                </a>
+              </div>
+
+              <!-- 공지사항 -->
+              <div class="notice">
+                <div class="comTitle-1">
+                  <div class="comTitle-1__tit wow fadeInUp" data-wow-delay="0.2s">공지사항</div>
+                  <div class="comTitle-1__txt wow fadeInUp" data-wow-delay="0.4s">평생학습 센터의 최신 소식들을 한 눈에 확인해보세요</div>
+                </div>
+                <ul class="wow fadeInUp" data-wow-delay="0.4s">
+                  <li>
+                    <div class="left">
+                      <div class="num">01</div>
+                      <a href="#" class="txt oneLine">인하대학교와 함께하는 우리동네 지식팡팡 콘서트 교...
+                      </a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">02</div>
+                      <a href="#" class="txt oneLine">인하대학교와 함께하는 우리동네 지식팡팡 콘서트 교...</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">03</div>
+                      <a href="#" class="txt oneLine">장애인 평생 우리동네 지식팡팡 콘 서트 5주차 강의-1 (영화로..</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">04</div>
+                      <a href="#" class="txt oneLine">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">05</div>
+                      <a href="#" class="txt oneLine">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">06</div>
+                      <a href="#" class="txt oneLine">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                  <li>
+                    <div class="left">
+                      <div class="num">07</div>
+                      <a href="#" class="txt oneLine">글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트글자테스트</a>
+                    </div>
+                    <div class="date">
+                      2022.08.02
+                    </div>
+                  </li>
+                </ul>
+                <a href="#" class="moreBtn">
+                  <span class="hidden">공지사항 더보기</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 컨텐츠가 들어갈 부분 eee -->
+      </div>
+    </main>
+    <!-- main eee -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__nav">
+        <ul>
+          <li>
+            <a href="개인정보처리방침.html">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="#">저작권침해정책</a>
+          </li>
+          <li>
+            <a href="#">홈페이지 이용안내</a>
+          </li>
+          <li>
+            <a href="#">누리집 지도</a>
+          </li>
+          <li>
+            <a href="#">찾아오시는길</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="left">
+          <div class="logo">
+            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
+          </div>
+          <address>
+            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
+            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
+            E-Mail icjunggu@korea.kr
+          </address>
+        </div>
+        <div class="comSelectBox">
+          <label for="a3"></label>
+          <select name="" id="a3" class="comSelect">
+            <option value="">패밀리사이트</option>
+            <option value="">전체2</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <!-- footer eee -->
+
+  </div>
+
+  <script>
+    wow = new WOW({
+      mobile: false,
+    });
+    wow.init();
+  </script>
+
+  <!-- 메인화면 팝업-레이어 -->
+  <div class="mainLayorPopupWrap">
+    <section class="mainLayorPopup" style="top:20px;left:20px;width:500px;height: 500px;">
+      <div class="content">
+        <!-- 여기에 내용이 들어갑니다 -->
+        <img src="https://www.incheon.go.kr/comm/getImage?srvcId=BANNER&upperNo=2374&fileTy=PCIMG&fileNo=1" alt="">
+      </div>
+      <div class="check">
+        <div class="form-chkbox">
+          <label class="form-chkbox__control control--checkbox mr5">다시보지않음
+            <input type="checkbox">
+            <div class="form-chkbox__indicator"></div>
+          </label>
+        </div>
+        <a href="#" class="close-pop">
+          [닫기]
+        </a>
+      </div>
+    </section>
+
+    <section class="mainLayorPopup" style="top:20px;left:600px;width:500px;height:500px;">
+      <div class="content">
+        <!-- 여기에 내용이 들어갑니다 -->
+        <img
+          src="https://www.incheon.go.kr/comm/getImage?srvcId=BBSTY10&upperNo=2097477&fileTy=THUMBNAIL&fileNo=1&thumbTy=L"
+          alt="">
+      </div>
+      <div class="check">
+        <div class="form-chkbox">
+          <label class="form-chkbox__control control--checkbox mr5">다시보지않음
+            <input type="checkbox">
+            <div class="form-chkbox__indicator"></div>
+          </label>
+        </div>
+        <a href="#" class="close-pop">
+          [닫기]
+        </a>
+      </div>
+    </section>
+  </div>
+
+
+  <script>
+    const mainPops = document.querySelectorAll(".mainLayorPopup");
+
+    mainPops.forEach((el) => {
+      const close = el.querySelector(".close-pop");
+
+      close.addEventListener("click", () => {
+        el.style.display = "none"
+      });
+    });
+  </script>
+  <!-- 메인화면 팝업-레이어 eee -->
+</body>
+
+</html>

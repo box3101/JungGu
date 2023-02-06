@@ -2018,3 +2018,109 @@ body.nopage .wrapper {
 		}
 	}
 }
+
+.mainLayorPopup {
+	position: absolute;
+	z-index: 999;
+	padding: 0;
+
+	.content {
+		border: 0.0625rem solid #aaa;
+		background: #fff;
+		p {
+			padding: 3.125rem;
+			font-size: 0.8625rem;
+			color: #333;
+		}
+		img {
+			width: 100%;
+			object-fit: cover;
+			vertical-align: top;
+		}
+	}
+	input:read-only {
+		position: relative;
+		top: 1px;
+	}
+	.check {
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 0.3125rem 0.625rem;
+		background: #fff;
+		border: 0.0625rem solid #aaa;
+		margin-top: -1px;
+		box-sizing: border-box;
+		cursor: pointer;
+
+		.form-chkbox,
+		.form-chkbox__control {
+			display: flex;
+			align-items: center;
+			cursor: pointer;
+		}
+
+		.form-chkbox {
+			position: relative;
+			top: 1px;
+		}
+
+		.close-pop {
+			position: relative;
+			top: 0.0625rem;
+			display: block;
+			font-weight: 500;
+			font-size: 0.8rem;
+		}
+	}
+}
+
+.mainPop {
+	.content {
+		padding: 20px;
+	}
+	.check {
+		border-bottom: none;
+	}
+}
+.about {
+	.content {
+		display: none;
+	}
+	.btn-container {
+		margin-bottom: 20px;
+		border-bottom: 1px solid #333;
+	}
+	.tab-btn {
+		background: #aaa;
+		padding: 20px 45px;
+		top: 0 !important;
+	}
+
+	.tab-btn.active {
+		background: $cMain;
+	}
+	.content.active {
+		display: block;
+	}
+}
+
+@include media($mo) {
+	.mainLayorPopupWrap {
+		gap: 10px;
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		right: 10px;
+		.mainLayorPopup {
+			position: relative;
+			width: 100% !important;
+			height: auto !important;
+			top: 0 !important;
+			left: 0 !important;
+		}
+	}
+}
