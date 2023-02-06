@@ -891,8 +891,6 @@ a {
   height: 9.375rem;
   width: 100%;
   padding: 0.3125rem;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   letter-spacing: 1px;
   line-height: 120%;
@@ -1009,85 +1007,6 @@ a {
   flex: none;
   width: 20%;
   padding: 0;
-}
-
-#type5 .comPopupInfo {
-  text-align: left;
-  line-height: 2rem;
-}
-#type5 .comPopupInfo .list-01 li:nth-child(1) {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.3rem;
-}
-#type5 .comPopupInfo .list-01 li:nth-child(2) p {
-  color: darkred;
-}
-#type5 .comPopupInfo .list-02 {
-  padding-top: 0.5rem;
-  line-height: 2.5rem;
-}
-#type5 .comPopupInfo .list-02 select {
-  border-radius: 0.3125rem;
-}
-#type5 .comPopupInfo .list-02 li:nth-child(1) {
-  border-bottom: none;
-}
-#type5 .comPopupInfo button {
-  margin: 0 auto;
-  border-radius: 0.3125rem;
-}
-
-#type6 .comPopupInfo {
-  text-align: left;
-}
-#type6 .comPopupInfo .list-01 li:nth-child(1) {
-  text-align: center;
-  font-size: 1.4rem;
-  padding-bottom: 1.6rem;
-}
-#type6 .comPopupInfo .list-01 li:nth-child(2) {
-  line-height: 1.6rem;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 0.4rem;
-  font-size: 1rem;
-  font-weight: 500;
-}
-#type6 .comPopupInfo .list-02 li {
-  padding-bottom: 0.8rem !important;
-}
-#type6 .comPopupInfo .list-02 p {
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 2rem;
-}
-#type6 .comPopupInfo .list-02 li:nth-child(1) {
-  text-align: left;
-  padding-top: 0.4rem;
-}
-#type6 .comPopupInfo .list-02 li:nth-child(2) {
-  border-bottom: none;
-  text-align: left;
-}
-#type6 .comPopupInfo .list-02 form {
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  padding-left: 1.5375rem;
-}
-#type6 .comPopupInfo .list-02 textarea {
-  width: 97%;
-  height: 9.375rem;
-  padding: 0.625rem;
-  line-height: 1.2rem;
-  margin-top: 0.5rem;
-}
-#type6 .comPopupInfo .list-02 .flex {
-  justify-content: center;
-}
-#type6 .comPopupInfo .list-02 .comBtn {
-  background-color: #00489e;
-  color: #fff !important;
-  border-radius: 0.3125rem;
 }
 
 @media all and (max-width: 1400px) {
@@ -1271,6 +1190,4 @@ a {
     display: block;
     top: 30px;
   }
-}
-
-/*# sourceMappingURL=yg.css.map */
+}/*# sourceMappingURL=yg.css.map */

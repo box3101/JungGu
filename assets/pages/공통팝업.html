@@ -9,6 +9,7 @@
   <script src="../front/js/jquery.js"></script>
   <script src="../front/js/jquery-ui.js"></script>
   <link rel="stylesheet" href="../front/css/ui.css">
+  <link rel="stylesheet" href="../front/css/yg.css">
 </head>
 
 <body style="width: 1500px; margin: 0 auto;">
@@ -126,7 +127,7 @@
     <!-- type2 eee-->
 
     <!-- type4-->
-    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type4" data-popup="accessibility">type3
+    <button type="button" class="comBtn bgMain sizeLg modalBtn" data-id="type4" data-popup="accessibility">type3
       sizeLg</button>
 
     <div class="comPopupWrap" role="dialog" id="type4">
@@ -164,22 +165,53 @@
     <!-- type4 eee-->
 
     <!-- 환불 계좌정보 입력팝업 -->
-    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type5">환불 계좌정보
+    <button type="button" class="comBtn bgMain sizeLg modalBtn" data-id="type5">환불 계좌정보
       입력팝업</button>
 
     <div class="comPopupWrap" role="dialog" id="type5">
       <div class="dim"></div>
       <div class="comPopupContainer">
-        <div class="comPopupBox">
+        <div class="comPopupBox sizeLg">
           <!-- popup title에 tabindex=“0” 추가 필요 -->
           <div class="comPopupHeader" tabindex="0">
-            <h2>담당자 찾기</h2>
+            <h2>환불 계좌정보 입력</h2>
             <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
           </div>
           <div class="comPopupInfo">
-
-            내용내용
-
+            <ul class="list-01">
+              <li>
+                <p>결제수단 : 가상계좌입금 or 무통장입금</p>
+                <p>환불금액 : 17,500 원</p>
+              </li>
+              <li class="pt7">
+                <p>· 환불 받으실 계좌정보를 정확히 입력해 주세요. </p>
+                <p>· 잘못된 입력 시, 책임은 사용자 본인에게 있습니다.</p>
+              </li>
+              <li>
+                <ul class="list-02">
+                  <li>
+                    <label for="a1">은행</label>
+                    <div class="flex gap5">
+                      <select name="" id="a1" class="comSelect w170">
+                        <option value="">국민은행</option>
+                      </select>
+                      <input id="a1" type="text" class="comInput" placeholder="은행명 입력">
+                    </div>
+                  </li>
+                  <li>
+                    <label for="a2">예금주</label>
+                    <input id="a2" type="text"class="comInput" placeholder="예금주 입력">
+                  </li>
+                  <li>
+                    <label for="a3">계좌번호</label>
+                    <input id="a3" type="text" class="comInput" placeholder="계좌번호 (숫자만 입력)">
+                  </li>
+                  <li class="flex pt23">
+                    <button type="button" class="comBtn bgRed sizeSm">환불 및 접수취소 요청</button>
+                  </li> 
+                </ul>
+              </li>
+            </ul>
           </div>
           <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
           <button type="button" class="popClose accPopClose"></button>
@@ -189,41 +221,106 @@
     <!-- 환불 계좌정보 입력팝업 eee -->
 
     <!-- 강좌 만족도조사 팝업 -->
-    <button type="button" class="comBtn bgMain sizeMid modalBtn" data-id="type6">환불 계좌정보
-      입력팝업</button>
+    <button type="button" class="comBtn bgMain sizeLg modalBtn" data-id="type6">강좌 만족도조사</button>
 
     <div class="comPopupWrap" role="dialog" id="type6">
       <div class="dim"></div>
       <div class="comPopupContainer">
-        <div class="comPopupBox">
+        <div class="comPopupBox sizeLg">
           <!-- popup title에 tabindex=“0” 추가 필요 -->
           <div class="comPopupHeader" tabindex="0">
             <h2>강좌 만족도조사</h2>
             <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
           </div>
           <div class="comPopupInfo">
-
-            내용내용1
-            <form>
-              <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
-              <label for="very-satisfied">매우만족</label><br>
-
-              <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
-              <label for="satisfied">만족</label><br>
-
-              <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
-                value="neither-dissatisfied-nor-satisfied">
-              <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
-
-              <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
-              <label for="dissatisfied">불만족</label><br>
-
-              <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
-              <label for="very-dissatisfied">매우 불만족</label><br>
-
-              <input type="submit" value="제출하기">
-            </form>
-
+            <ul class="list-01">
+              <li>
+                강좌 만족도조사
+              </li>
+              <li>
+                강좌명 : 푸드테라피-돌봄교육지도자 전문연수 <br>
+                교육기간 : 2022-11-01 ~ 2022-11-10
+              </li>
+              <li>
+                <ul class="list-02">
+                  <li>
+                    <p>질문 1) 강좌의 교육은 전반적으로 만족하셨습니까?</p>
+                    <p>
+                      <form>
+                        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                        <label for="very-satisfied">매우만족</label><br>
+          
+                        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                        <label for="satisfied">만족</label><br>
+          
+                        <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
+                          value="neither-dissatisfied-nor-satisfied">
+                        <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
+          
+                        <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                        <label for="dissatisfied">불만족</label><br>
+          
+                        <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+                        <label for="very-dissatisfied">매우 불만족</label><br>
+                      </form>
+                    </p>
+                  </li>
+                  <li>
+                    <p>질문 2) 교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까? </p>
+                    <p>
+                      <form>
+                        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                        <label for="very-satisfied">매우만족</label><br>
+          
+                        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                        <label for="satisfied">만족</label><br>
+          
+                        <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
+                          value="neither-dissatisfied-nor-satisfied">
+                        <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
+          
+                        <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                        <label for="dissatisfied">불만족</label><br>
+          
+                        <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+                        <label for="very-dissatisfied">매우 불만족</label><br>
+                      </form>
+                    </p>
+                  </li>
+                  <li>
+                    <p>질문 3) 교육 강사가 역량과 전문성을 갖추었습니까?
+                    </p>
+                    <p>
+                      <form>
+                        <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+                        <label for="very-satisfied">매우만족</label><br>
+          
+                        <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                        <label for="satisfied">만족</label><br>
+          
+                        <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
+                          value="neither-dissatisfied-nor-satisfied">
+                        <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
+          
+                        <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                        <label for="dissatisfied">불만족</label><br>
+          
+                        <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+                        <label for="very-dissatisfied">매우 불만족</label><br>
+                      </form>
+                    </p>
+                  </li>
+                  <li>
+                    <p>질문 4) 강좌에 대한 개선의견, 불만, 칭찬 등 하고 싶은 말씀을 자유롭게 작성해 주세요. (최대 500자 이내)
+                    </p>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                  </li>
+                  <li class="flex">
+                    <input type="submit" value="제출하기" class="comBtn bgMain sizeMid">
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
           <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
           <button type="button" class="popClose accPopClose"></button>

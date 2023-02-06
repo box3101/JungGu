@@ -1,6 +1,6 @@
 @charset "utf-8";
 // NotoSans 폰트 연결
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 
 // 사이트 전반에 걸쳐서 재사용되는 스타일 base
 @import "base/reset.scss";
@@ -941,6 +941,93 @@
 	flex: none;
 	width: 20%;
 	padding: 0;
+}
+
+#type5 .comPopupInfo {
+	text-align: left;
+	line-height: 2rem;
+	& .list-01 li:nth-child(1){
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 0.3rem;
+	}
+	& .list-01 li:nth-child(2) p {
+		color: darkred;
+	}
+	.list-02 {
+		padding-top: 0.5rem;
+		line-height: 2.5rem;
+
+		select {
+			border-radius: 0.3125rem;
+		}
+	}
+
+	& .list-02 li:nth-child(1){
+		border-bottom: none;
+	}
+	button {
+		margin: 0 auto;
+		border-radius: 0.3125rem;
+	}
+}
+
+#type6 .comPopupInfo {
+	text-align: left;
+	& .list-01 li:nth-child(1) {
+		text-align: center;
+		font-size: 1.4rem;
+		padding-bottom: 1.6rem;
+	}
+	& .list-01 li:nth-child(2) {
+		line-height: 1.6rem;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 0.4rem;
+		font-size: 1rem;
+		font-weight: 500;
+	}
+
+	.list-02 {
+		li {
+			padding-bottom: 0.8rem !important;
+		}
+		p {
+			font-size: 1rem;
+			font-weight: bold;
+			line-height: 2rem;
+		}
+		& li:nth-child(1){
+			text-align: left;
+			padding-top: 0.4rem;
+		}
+
+		& li:nth-child(2){
+			border-bottom: none;
+			text-align: left;
+		}
+		form {
+			font-weight: 400;
+			font-size: 1rem;
+			line-height: 1.5rem;
+			padding-left: 1.5375rem;
+		}
+		textarea {
+			width: 97%;
+			height: 9.375rem;
+			padding: 0.625rem;
+			line-height: 1.2rem;
+			margin-top: 0.5rem;
+		}
+		.flex {
+			justify-content: center;
+		}
+		.comBtn {
+			background-color: #00489e;
+			color: #fff !important;
+			border-radius: 0.3125rem;
+		}
+	}
+	
+
 }
 
 // 미디어 쿼리
