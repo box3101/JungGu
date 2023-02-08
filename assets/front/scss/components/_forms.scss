@@ -403,13 +403,19 @@ input[type="checkbox"]:focus {
 	cursor: pointer;
 	color: #333 !important;
 }
+.formRadio input[type="radio"]:disabled+label{
+	pointer-events: none;
+	opacity: 0.4;
+	color: #aaa!important;
+	font-weight: 300;
+}
 .formRadio label:before {
 	content: "";
 	display: block;
 	display: inline-block;
 	width: 1rem;
 	height: 1rem;
-	border: 0.0625rem solid #ddd;
+	border: 0.0625rem solid #333;
 	background: #fff;
 	border-radius: 50%;
 	box-sizing: border-box;

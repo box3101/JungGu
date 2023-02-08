@@ -6670,13 +6670,20 @@ input[type=checkbox]:focus {
   color: #333 !important;
 }
 
+.formRadio input[type=radio]:disabled + label {
+  pointer-events: none;
+  opacity: 0.4;
+  color: #aaa !important;
+  font-weight: 300;
+}
+
 .formRadio label:before {
   content: "";
   display: block;
   display: inline-block;
   width: 1rem;
   height: 1rem;
-  border: 0.0625rem solid #ddd;
+  border: 0.0625rem solid #333;
   background: #fff;
   border-radius: 50%;
   box-sizing: border-box;
@@ -58906,14 +58913,19 @@ body.nopage .wrapper {
   padding-left: 2.6rem !important;
 }
 
-.type6 .comPopupInfo .list-02 form label, .type6 .comPopupInfo input[type=submit] {
+.type6 .comPopupInfo .list-02 form label,
+.type6 .comPopupInfo input[type=submit] {
   cursor: pointer;
 }
 
-.type6 .comPopupInfo .comBtn {
-  top: auto !important;
+@media all and (max-width: 900px) {
+  .searchBox.mt20.mb40 .gap10.ml40 {
+    margin-left: 0 !important;
+  }
+  .searchBox.mt20.mb40 label {
+    flex: 1 1 80px;
+  }
 }
-
 .header {
   position: relative;
 }
@@ -61014,6 +61026,7 @@ body.nopage .wrapper {
 @media all and (max-width: 900px) and (max-width: 600px) {
   .searchArea__box {
     padding: 0;
+    padding-bottom: 2rem;
   }
 }
 @media all and (max-width: 600px) {
