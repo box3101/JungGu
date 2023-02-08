@@ -557,7 +557,7 @@
 		}
 	}
 	.transport__wrap .width {
-		flex: 1;
+		flex: 1 1 auto;
 	}
 
 	.introType {
@@ -1086,7 +1086,8 @@
 		width: 60%;
 	}
 	.subcotent .transport__wrap .transport img {
-		width: 40%;
+		width: 125px;
+		height: 39.8px;
 	}
 	.com-step.introType1 ul li {
 		width: calc(33.3333% - 1.58125rem);
