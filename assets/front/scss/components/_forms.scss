@@ -14,7 +14,7 @@
 		font-weight: 400 !important;
 	}
 }
-input:read-only {
+input:read-only(:not(.close)) {
 	background: #eee;
 	border: 0.0625rem solid #eee;
 	&:focus,

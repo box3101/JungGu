@@ -6278,11 +6278,11 @@ button {
   font-weight: 400 !important;
 }
 
-input:read-only {
+input:read-only(:not(.close)) {
   background: #eee;
   border: 0.0625rem solid #eee;
 }
-input:read-only:focus, input:read-only:hover {
+input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
   background: #ddd;
   outline: none !important;
   border: none !important;
@@ -6964,7 +6964,7 @@ html.open {
   color: #fff;
 }
 .comTitle-1__txt {
-  margin-top: 0.5625rem;
+  margin-top: 0.9625rem;
   font-size: 1.1875rem;
   font-weight: 400;
   color: #999999;
@@ -58233,6 +58233,7 @@ span.cRed {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.6;
+  padding-top: 1.2875rem !important;
 }
 .com-step ul li .txt {
   font-size: 18px;
@@ -58926,6 +58927,10 @@ body.nopage .wrapper {
     flex: 1 1 80px;
   }
 }
+.subcotent .form__wrap .form__list .comInput {
+  height: 3.1rem;
+}
+
 .header {
   position: relative;
 }
@@ -59748,7 +59753,6 @@ body.nopage .wrapper {
   box-sizing: border-box;
   width: 100%;
   display: inline-block;
-  height: 11.875rem;
   border: 1px solid #dedede;
   background: #e9f7ff;
 }
@@ -59826,7 +59830,7 @@ body.nopage .wrapper {
   height: 1.8125rem;
 }
 .mainBottom .notice ul {
-  padding: 30px 0;
+  padding: 2.375rem 0;
   border-top: 1px solid #dedede;
   border-bottom: 1px solid #dedede;
 }

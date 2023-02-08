@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta c har se t="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
+  <meta name="description" content="">
+  <title>인천 중구청</title>
+
+  <!-- =================== Favicon =================== -->
+
+
+  <!-- =================== LINK =================== -->
+  <link rel="stylesheet" href="../front/css/yg.css">
+  <link rel="stylesheet" href="../front/css/ui.css">
+
+  <!-- =================== SCRIPT =================== -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src='../front/js/index.global.min.js'></script>
+  <script src="../front//js/datepicker.js"></script>
+  <script src="../front/js/swiper.js"></script>
+  <script src="../front/js/main.js"></script>
+
+  <!-- include -->
+  <!-- <script type="text/javascript">
+    $(document).ready(function () {
+      $("#header").load("./header.html");
+      $("#footer").load("./footer.html");
+    });
+  </script> -->
+</head>
+
+<body>
+
+  <div class="skip-nav">
+    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+    <a href="#contentmain" tabindex="1">본문 바로가기</a>
+  </div>
+
+  <div id="wrapper">
+
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="headerWrap">
+        <div class="headerInner">
+          <h1 class="logo">
+            <a href="../pages/main.html">
+              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
+            </a>
+          </h1>
+          <ul class="gnb" id="gnb" tabindex="0">
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/인사말.html" class="gnbLink">
+                평생학습도시
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/인사말.html">인사말</a>
+                </li>
+                <li>
+                  <a href="../pages/비전과목표.html">비전과 목표</a>
+                </li>
+                <li>
+                  <a href="../pages/선언문.html">선언문</a>
+                </li>
+                <li>
+                  <a href="../pages/조례.html">조례</a>
+                </li>
+                <li>
+                  <a href="../pages/주요사업소개.html">주요사업 소개</a>
+                </li>
+                <li>
+                  <a href="../pages/오시는길.html">오시는 길</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/수강신청.html" class="gnbLink">
+                수강신청 </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/수강신청.html">수강신청</a>
+                </li>
+                <li>
+                  <a href="../pages/배우는바다.html">배우는바다 Online</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/평생학습기관.html" class="gnbLink">
+                네트워크
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/평생학습기관.html">평생학습기관</a>
+                </li>
+                <li>
+                  <a href="../pages/평생학습동아리소개.html">평생학습동아리</a>
+                </li>
+                <li>
+                  <a href="../pages/우리동네강사.html">우리동네강사</a>
+                </li>
+                <li>
+                  <a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
+                </li>
+                <li>
+                  <a href="../pages/우리동네문화센터.html">우리동네문화센터</a>
+                </li>
+                <li>
+                  <a href="../pages/인천시민대학.html">인천시민대학</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/대관안내.html" class="gnbLink">
+                나눔공간
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/대관안내.html">대관 안내</a>
+                </li>
+                <li>
+                  <a href="../pages/대관신청.html">대관 신청</a>
+                </li>
+                <li>
+                  <a href="../pages/나눔공간소개.html">나눔공간</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo.png">
+              <a href="../pages/공지사항.html" class="gnbLink">
+                열린마당
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/공지사항.html">공지사항</a>
+                </li>
+                <li>
+                  <a href="../pages/자료실.html">자료실</a>
+                </li>
+              </ul>
+            </li>
+            <li class="gnbItem" data-img="../front/img/logo2.png">
+              <a href="../pages/구석구석탐방.html" class="gnbLink">
+                교육혁신지구
+              </a>
+              <ul class="subPanel">
+                <li>
+                  <a href="../pages/구석구석탐방.html">구석구석 탐방</a>
+                </li>
+                <li>
+                  <a href="../pages/중구마을학교.html">중구마을학교</a>
+                </li>
+                <li>
+                  <a href="../pages/마을교육활동가.html">마을교육활동가</a>
+                </li>
+                <li>
+                  <a href="../pages/교육경비지원사업.html">교육경비 지원사업</a>
+                </li>
+                <li>
+                  <a href="../pages/인터넷수능방송지원.html">인터넷 수능방송 지원</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="utilMenu">
+            <li>
+              <button type="button" class="myPage">
+                <span class="hidden">마이페이지</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="headerBg">
+        <div class="inner">
+          <div class="txt-wrap">
+            <p class="tit">배우는 바다</p>
+            <p class="txt">
+              인천중구 교육포털에 <br>
+              방문하신걸 환영합니다!
+            </p>
+          </div>
+          <div class="changImg">
+          </div>
+        </div>
+      </div>
+
+      <!-- 모바일메뉴 -->
+      <nav class="mobileMenu">
+        <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
+          <span class="menuItem"></span>
+          <span class="menuItem"></span>
+          <span class="menuItem"></span>
+        </button>
+        <div class="mobileNav">
+          <div class="moLogo">
+            <a href="../pages/main.html" tabindex="0">
+              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
+            </a>
+          </div>
+          <ul class="mobileNavList">
+            <li class="mobileNavItem">
+              <a href="#">
+                평생학습도시
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">인사말</a>
+                </li>
+                <li>
+                  <a href="#">비전과 목표</a>
+                </li>
+                <li>
+                  <a href="#">선언문</a>
+                </li>
+                <li>
+                  <a href="#">조례</a>
+                </li>
+                <li>
+                  <a href="#">주요사업 소개</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                수강신청
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">평생학습관</a>
+                </li>
+                <li>
+                  <a href="#">동행정복지센터</a>
+                </li>
+                <li>
+                  <a href="#">문화센터</a>
+                </li>
+                <li>
+                  <a href="#">온라인 학습</a>
+                </li>
+                <li>
+                  <a href="#">중구구민대학</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                네트워크
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">평생학습기관</a>
+                </li>
+                <li>
+                  <a href="#">평생학습 동아리</a>
+                </li>
+                <li>
+                  <a href="#">우리동네강사</a>
+                </li>
+                <li>
+                  <a href="#">찾아가는 학습</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                나눔공간
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">대관 안내</a>
+                </li>
+                <li>
+                  <a href="#">대관 신청</a>
+                </li>
+                <li>
+                  <a href="#">나눔공간</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                열린마당
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">공지사항</a>
+                </li>
+                <li>
+                  <a href="#">공모사업 신청</a>
+                </li>
+                <li>
+                  <a href="#">자료실</a>
+                </li>
+              </ul>
+            </li>
+            <li class="mobileNavItem">
+              <a href="#">
+                교육혁신지구
+              </a>
+              <ul class="dapth2">
+                <li>
+                  <a href="#">구석구석 탐방</a>
+                </li>
+                <li>
+                  <a href="#">중구마을학교</a>
+                </li>
+                <li>
+                  <a href="#">마을교육활동가</a>
+                </li>
+                <li>
+                  <a href="#">교육경비 지원사업</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- gotop -->
+      <div class="goTop">
+        <button type="button" title="상단으로 이동">
+          <span class="hidden">상단으로 이동</span>
+        </button>
+      </div>
+    </header>
+    <!-- header eee -->
+
+    <!-- sub -->
+    <main id="sub" class="main sub">
+      <div class="contentBody">
+        <!-- 컨텐츠가 들어갈 부분 -->
+        <div class="subContent" id="contentmain" tabindex="0">
+          <div class="subHead">
+            <div class="subHead__tit">휴면회원복구</div>
+            <div class="subHead__right">
+              <ul class="subHead__location">
+                <li class="home">
+                  <a href="#">Home</a>
+                </li>
+                <li class="last">
+                  <a href="#">휴면회원복구</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="subBody">
+            <div class="subcotent">
+              <div class="humanMember">
+                <p class="tit">휴면계정 복구</p>
+                <div class="info">
+                  휴면계정이 해제되었습니다.
+                </div>
+                <ul class="btnWrap flex gap10">
+                  <li>
+                    <button type="button" class="comBtn sizeXlg bgMain">확인</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- 컨텐츠가 들어갈 부분 eee -->
+          </div>
+    </main>
+    <!-- sub eee -->
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+      <div class="footer__nav">
+        <ul>
+          <li>
+            <a href="개인정보처리방침.html">개인정보처리방침</a>
+          </li>
+          <li>
+            <a href="#">저작권침해정책</a>
+          </li>
+          <li>
+            <a href="#">홈페이지 이용안내</a>
+          </li>
+          <li>
+            <a href="#">누리집 지도</a>
+          </li>
+          <li>
+            <a href="#">찾아오시는길</a>
+          </li>
+        </ul>
+      </div>
+      <div class="inner">
+        <div class="left">
+          <div class="logo">
+            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
+          </div>
+          <address>
+            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
+            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
+            E-Mail icjunggu@korea.kr
+          </address>
+        </div>
+        <div class="comSelectBox">
+          <label for="a3"></label>
+          <select name="" id="a3" class="comSelect">
+            <option value="">패밀리사이트</option>
+            <option value="">전체2</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+    <!-- footer eee -->
+  </div>
+
+
+</body>
+
+</html>

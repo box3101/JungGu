@@ -241,7 +241,7 @@ html.open {
 		}
 	}
 	&__txt {
-		margin-top: 0.5625rem;
+		margin-top: 0.9625rem;
 		font-size: 1.1875rem;
 		font-weight: 400;
 		color: $cGray-2;
@@ -1522,6 +1522,7 @@ span.cRed {
 				font-size: 24px;
 				font-weight: bold;
 				line-height: 1.6;
+				padding-top: 1.2875rem!important;
 			}
 			.txt {
 				font-size: 18px;
@@ -2180,4 +2181,8 @@ body.nopage .wrapper {
 			flex:1 1 80px;
 		}
 	}
+}
+
+.subcotent .form__wrap .form__list .comInput{
+	height: 3.1rem;
 }
