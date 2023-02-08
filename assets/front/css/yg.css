@@ -507,18 +507,29 @@ a {
 .subcotent .complete .style2 {
   color: #0074c6;
 }
+.subcotent .text__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+}
 .subcotent .text__wrap p {
-  padding-bottom: 1.875rem;
   color: #555555;
   font-size: 1.25rem;
   line-height: 2rem;
   word-break: keep-all;
 }
-.subcotent .text__wrap p:nth-child(1) {
+.subcotent .text__wrap .item-01 p {
   color: #00489e;
   font-size: 1.625rem;
   font-weight: bold;
   line-height: 2.125rem;
+}
+.subcotent .text__wrap .item-02 p {
+  padding-bottom: 1.875rem;
+  color: #555555;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  word-break: keep-all;
 }
 .subcotent .text__wrap p span {
   font-weight: bold;
@@ -702,6 +713,46 @@ a {
 }
 .subcotent .introType .list-circle > li:before {
   top: 12px;
+}
+
+.visual-intro {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.visual-intro:after {
+  content: "";
+  display: block;
+  background-image: url(../img/bg-visual-01.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: -5.4375rem;
+  bottom: -8.25rem;
+  width: 32.75rem;
+  height: 20.875rem;
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.visual-intro:before {
+  content: "";
+  display: block;
+  background-image: url(../img/bg-visual-02.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -5.8375rem;
+  bottom: -4.85rem;
+  width: 53.25rem;
+  height: 32.25rem;
+  opacity: 0.8;
+  z-index: -1;
 }
 
 .form__wrap .con__top {
@@ -1111,6 +1162,12 @@ a {
   .subcotent .form {
     width: 90%;
   }
+  .subcotent .text__wrap {
+    flex-direction: column;
+  }
+  .subcotent .text__wrap .item-01 {
+    padding-bottom: 2rem;
+  }
   .subcotent .form__wrap .complete .comBtn {
     width: 50%;
   }
@@ -1193,6 +1250,12 @@ a {
   }
   html .subcotent .con__right colgroup {
     display: none;
+  }
+  .subcotent .text__wrap {
+    flex-direction: column;
+  }
+  .subcotent .text__wrap .item-01 {
+    padding-bottom: 2rem;
   }
   .subcotent .form {
     width: 100%;

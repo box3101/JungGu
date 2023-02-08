@@ -386,18 +386,27 @@
 		}
 	}
 	.text__wrap {
+		@include flex (null, space-between, null);
+		padding-top: 28px;
 		p {
-			padding-bottom: 1.875rem;
 			color: #555555;
 			font-size: 1.25rem;
 			line-height: 2rem;
 			word-break: keep-all;
 		}
-		p:nth-child(1) {
+		.item-01 p {
 			color: $cMain;
 			font-size: 1.625rem;
 			font-weight: bold;
 			line-height: 2.125rem;
+		}
+
+		.item-02 p {
+			padding-bottom: 1.875rem;
+			color: #555555;
+			font-size: 1.25rem;
+			line-height: 2rem;
+			word-break: keep-all;
 		}
 		p span {
 			font-weight: bold;
@@ -596,6 +605,44 @@
 		}
 		
 	}
+}
+.visual-intro {
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.visual-intro:after {
+		content: "";
+		display: block;
+		background-image: url(../img/bg-visual-01.svg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		right: -5.4375rem;
+		bottom: -8.25rem;
+		width: 32.75rem;
+		height: 20.875rem;
+		opacity: 0.8;
+		z-index: -1;
+}
+.visual-intro:before {
+		content: "";
+		display: block;
+		background-image: url(../img/bg-visual-02.svg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: absolute;
+		left: -5.8375rem;
+		bottom: -4.85rem;
+		width: 53.25rem;
+		height: 32.25rem;
+		opacity: 0.8;
+		z-index: -1;
 }
 
 .form__wrap {
@@ -1052,6 +1099,14 @@
 	.subcotent .form {
 		width: 90%;
 	}
+
+	.subcotent .text__wrap {
+		flex-direction: column;
+		.item-01 {
+			padding-bottom: 2rem;
+		}
+	}
+
 	.subcotent .form__wrap .complete .comBtn {
 		width: 50%;
 	}
@@ -1145,6 +1200,12 @@
 			colgroup {
 				display: none;
 			}
+		}
+	}
+	.subcotent .text__wrap {
+		flex-direction: column;
+		.item-01 {
+			padding-bottom: 2rem;
 		}
 	}
 	.subcotent .form {
