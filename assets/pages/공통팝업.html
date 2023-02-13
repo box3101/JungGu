@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="../front/css/yg.css">
 </head>
 
-<body style="width: 1500px; margin: 0 auto;">
+<body>
 
   <h1 style="margin-top: 30px; padding-bottom: 20px; border-bottom: 1px solid #000;">공통 팝업</h1>
 
@@ -176,7 +176,7 @@
           <div class="comPopupHeader" tabindex="0">
             <h2>환불 계좌정보 입력</h2>
             <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
-          </div> 
+          </div>
           <div class="comPopupInfo">
             <ul class="list-01">
               <li>
@@ -202,7 +202,8 @@
                     <input id="a3" type="text" class="comInput" placeholder="계좌번호 (숫자만 입력)">
                   </li>
                   <li class="flex pt23">
-                    <button type="button" class="comBtn bgRed sizeLg" style="border:1px solid darkred!important">환불 및 접수취소 요청</button>
+                    <button type="button" class="comBtn bgRed sizeLg" style="border:1px solid darkred!important">환불 및
+                      접수취소 요청</button>
                   </li>
                 </ul>
               </li>
@@ -248,17 +249,17 @@
                     <div>
                       <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
                       <label for="very-satisfied">매우만족</label><br>
-  
+
                       <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
                       <label for="satisfied">만족</label><br>
-  
+
                       <input type="radio" id="neither-dissatisfied-nor-satisfied" name="satisfaction"
                         value="neither-dissatisfied-nor-satisfied">
                       <label for="neither-dissatisfied-nor-satisfied">보통</label><br>
-  
+
                       <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
                       <label for="dissatisfied">불만족</label><br>
-  
+
                       <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
                       <label for="very-dissatisfied">매우 불만족</label><br>
                     </div>
@@ -268,7 +269,7 @@
                       <span>
                         질문 2)
                       </span>
-                      교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까? 
+                      교육에서 활용한 교육방법(강의, 시청각, 교재, 실습 등)은 적절했습니까?
                     </p>
                     <div>
                       <input type="radio" id="very-satisfied2" name="satisfaction2" value="very-satisfied2">
@@ -291,7 +292,7 @@
                   <li>
                     <p>
                       <span>
-                        질문 3) 
+                        질문 3)
                       </span>
                       교육 강사가 역량과 전문성을 갖추었습니까?
                     </p>
@@ -318,7 +319,7 @@
                     <p>
                       <label for="a7">
                         <span>
-                          질문 4) 
+                          질문 4)
                         </span>
                         강좌에 대한 개선의견, 불만, 칭찬 등 하고 싶은 말씀을 자유롭게 작성해 주세요. (최대 500자 이내)</label for="a7">
                     </p>
@@ -337,6 +338,265 @@
       </div>
     </div>
     <!-- 강좌 만족도조사 팝업 eee -->
+
+    <!-- 수료증 팝업 -->
+
+    <button type="button" class="comBtn bgMain sizeLg modalBtn" data-id="type8">수료증 print</button>
+
+    <div class="comPopupWrap type6" role="dialog" id="type8">
+      <div class="dim"></div>
+      <div class="comPopupContainer">
+        <div class="comPopupBox sizeLg">
+          <!-- popup title에 tabindex=“0” 추가 필요 -->
+          <div class="comPopupHeader" tabindex="0">
+            <h2>수료증</h2>
+            <!-- popup 닫기 버튼에는 popup-close="팝업 고유 ID 값" 값이 필요하다 -->
+          </div>
+          <div class="comPopupInfo">
+            <div class="certificatesWrap">
+              <div class="img">
+                <img src="../front/img/Certificates.png" alt="수료증 배경 이미지">
+              </div>
+              <div class="infoTxtWrap">
+                <div class="sequenceNum">
+                  제 <span>2023-00</span>호
+                </div>
+                <p class="tit">
+                  수료증
+                </p>
+                <!-- 성명, 생년월일, 과정명, 교육기관 -->
+                <ul class="descList">
+                  <li>
+                    <dl>
+                      <dt>
+                        <span>성</span><span>명</span>
+                      </dt>
+                      <dd>이찬용</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>
+                        <span>생</span><span>년</span><span>월</span><span>일</span>
+                      </dt>
+                      <dd>
+                        1900.22.11
+                      </dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>
+                        <span>과</span><span>정</span><span>명</span>
+                      </dt>
+                      <dd>땡땡땡</dd>
+                    </dl>
+                  </li>
+                  <li>
+                    <dl>
+                      <dt>
+                        <span>교</span><span>육</span><span>기</span><span>간</spa>
+                      </dt>
+                      <dd>
+                        2022년 9월 29일 ~ 11월 17일 (15회,45시간)
+                      </dd>
+                    </dl>
+                  </li>
+                </ul>
+                <!-- 성명, 생년월일, 과정명, 교육기관 eee -->
+
+                <div class="descTxt">
+                  귀하는 <span>2022</span>년 <span>평생학습기관 평생학습기관 평생학습기관 평생학습기관 평생학습기관 평생학습기관</span> 과정을 성실히 이수하였기에 본 수료증을 수여합니다.
+                </div>
+
+                <div class="descDate">
+                  2023년 1월 17일
+                </div>
+
+                <div class="descNmae">
+                  중구평생학습관장 <span>이찬용</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- 인쇄하기 -->
+          <!-- <button class="comBtn" onclick="printModal()">인쇄하기</button> -->
+          <div class="comPopupBotBtn">
+            <ul>
+              <li>
+                <button type="button" onclick="printModal()" class="comBtn bgGreen h35">
+                  인쇄하기
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- popup 닫기 버튼은 항상 팝업 마크업 제일 마지막에 위치하며 공통 클래스가 필요하다 -->
+          <button type="button" class="popClose accPopClose"></button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- TODO 수료증 팝업-->
+    <style>
+      @media print {
+        @page {
+          size: A4;
+          margin: 0;
+        }
+
+        .comPopupInfo {
+          max-height: 100vh;
+          overflow-y: hidden;
+          display: flex;
+          align-items: center;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        .comPopupBox {
+          width: 100% !important;
+          height: 100% !important;
+          border: none !important;
+        }
+
+        .comPopupHeader,
+        .comBtn,
+        .popClose {
+          display: none;
+        }
+
+        .certificatesWrap {
+          position: relative;
+        }
+
+        .certificatesWrap img {
+          width: 100%;
+        }
+
+        .certificatesWrap .infoTxtWrap {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          padding: 51px;
+          padding-top: 138px;
+          box-sizing: border-box;
+        }
+
+        .certificatesWrap .sequenceNum {
+          font-size: 19.2px;
+          padding-top: 93px;
+          padding: 22px;
+          padding-bottom: 0;
+        }
+
+        .certificatesWrap .tit {
+          padding-top: 93px;
+          text-align: center;
+          font-size: 60px;
+          letter-spacing: 24px;
+          font-weight: bold;
+          text-indent: 22px;
+        }
+
+        .certificatesWrap .descList {
+          padding-top: 75px;
+          padding-left: 25px;
+        }
+
+        .certificatesWrap .descList li {
+          opacity: 1;
+          margin-bottom: 7px;
+        }
+
+        .certificatesWrap .descList li dl {
+          display: flex;
+          align-items: center;
+        }
+
+        .certificatesWrap .descList li dl dt {
+          font-size: 18px;
+          width: 106px;
+          display: flex;
+          justify-content: space-between;
+          margin-right: 25px;
+          position: relative;
+        }
+
+        .certificatesWrap .descList li dl dt:after {
+          content: "";
+          display: block;
+          position: absolute;
+          content: ":";
+          font-size: 18px;
+          right: -15px;
+        }
+
+        .certificatesWrap .descList li dl dd {
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.4px;
+          color: #000;
+        }
+
+        .certificatesWrap .descTxt {
+          padding-top: 40px;
+          padding-left: 23px;
+          font-size: 26px;
+          line-height: 1.5;
+          word-break: keep-all;
+          letter-spacing: 1px;
+          font-weight: 400;
+        }
+
+        .certificatesWrap .descDate {
+          position: absolute;
+          bottom: 162px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 20px;
+          letter-spacing: 2px;
+          font-weight: 500;
+        }
+
+        .certificatesWrap .descNmae {
+          position: absolute;
+          bottom: 114px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 26px;
+          letter-spacing: 2px;
+          font-weight: 500;
+        }
+
+        .comPopupBotBtn ul li button.h35 {
+          height: 56px;
+          font-size: 16px;
+        }
+
+
+      }
+    </style>
+
+    <script>
+      function printModal() {
+        document.querySelector('.comPopupBox').style.display = 'none';
+        document.querySelector('.comPopupInfo').style.display = 'block';
+        window.print();
+        document.querySelector('.comPopupBox').style.display = 'block';
+        document.querySelector('.comPopupInfo').style.display = 'none';
+      }
+    </script>
+
+    <!-- TODO 수료증 팝업eee -->
+
+    <!-- 수료증 팝업 eee -->
 
 
   </div>
