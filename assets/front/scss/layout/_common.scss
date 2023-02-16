@@ -2342,3 +2342,47 @@ body.nopage .wrapper {
 		padding-left: 2rem;
 	}
 }
+.signature__img {
+	position: absolute;
+	z-index: -1;
+}
+.common table th {
+	padding: 0.1875rem 0 !important;
+	height: 2.125rem !important;
+	border: 0.0625rem solid #ddd !important;
+	min-height: 3.125rem !important;
+	vertical-align: middle !important;
+	line-height: 1.5 !important;
+	font-size: 1rem !important;
+}
+.common table td {
+	background: #fff !important;
+	text-align: center !important;
+	font-size: 1rem !important;
+	font-weight: 400 !important;
+	box-sizing: border-box !important;
+	padding: 10px 0 !important;
+}
+.common table {
+	margin-left: 0 !important;
+}
+.com-border {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 0.9375rem;
+	padding: 1.25rem;
+	border: 1px solid #aaa;
+}
+.before-none {
+	img {
+		@include media($mo) {
+			width: 100%;
+		}
+	}
+}
+.memmerWrap__form .desc-txt {
+	line-height: 1.5;
+}
+.subcotent .con__left img {
+	object-fit: contain;
+}

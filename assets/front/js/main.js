@@ -16,6 +16,7 @@
     goTop();
     scrollable();
     detailedSearch();
+    comBtnActive();
   }
 
   // 공통 gnb
@@ -572,6 +573,28 @@
   $(function () {
     $(".setDatepicker").datepicker();
   });
+
+  //공통 버튼 클릭시 효과 20230216 추가
+  const comBtnActive = () => {
+    const rippleElements = document.querySelectorAll('.comBtn');
+
+    rippleElements.forEach(element => {
+      element.addEventListener('click', e => {
+        const rippleElement = document.createElement('span');
+        rippleElement.classList.add('v-ripple-overlay');
+        element.appendChild(rippleElement);
+        const x = e.clientX - e.target.offsetLeft;
+        const y = e.clientY - e.target.offsetTop;
+        rippleElement.style.left = x + 'px';
+        rippleElement.style.top = y + 'px';
+        setTimeout(() => {
+          rippleElement.remove();
+        }, 500);
+      });
+    });
+  }
+  //공통 버튼 클릭시 효과 20230216 추가 eee
+
 
   $(document).ready(function () {
     $.datepicker.setDefaults({
