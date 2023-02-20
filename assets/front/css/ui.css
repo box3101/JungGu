@@ -6264,7 +6264,7 @@ button {
   }
 }
 /*=============================================
-=            버튼 클릭시 효과           =
+=            버튼 클릭시 효과  20230216 추가          =
 =============================================*/
 .comBtn {
   position: relative;
@@ -6295,7 +6295,7 @@ button {
     opacity: 0;
   }
 }
-/*=====  End of 버튼 클릭시 효과   ======*/
+/*=====  End of 버튼 클릭시 효과   20230216 추가   ======*/
 .comInput {
   font-weight: 700;
   font-weight: 500;
@@ -61529,6 +61529,19 @@ body.nopage .wrapper {
 
 .subcotent .con__left {
   padding: 3.3125rem 2.9375rem !important;
+}
+
+.cardcontent-wrap #lrnOceanOnlineList.flex.gap24 {
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.cardcontent-wrap #lrnOceanOnlineList.flex.gap24 .cardcontent {
+  flex: 1 0 22%;
+}
+@media all and (max-width: 900px) {
+  .cardcontent-wrap #lrnOceanOnlineList.flex.gap24 {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=ui.css.map */

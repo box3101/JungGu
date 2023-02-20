@@ -1,508 +1,542 @@
 .guideBox {
-  padding-top: 50px;
-  width: 1400px;
-  margin: 0 auto;
+	padding-top: 50px;
+	width: 1400px;
+	margin: 0 auto;
 }
 
 .guideBox .header {
-  padding-bottom: 10px;
-  border-bottom: 1px solid #aaa;
-  font-weight: bold;
-  font-size: 20px;
-  margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #aaa;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
 }
-.guideBox dl{}
-.guideBox dl dt{
-  color: darkred;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #000;
+.guideBox dl {
 }
-.guideBox dl dd{
-  margin-top: 20px;
-  margin-left: 0;
+.guideBox dl dt {
+	color: darkred;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
 }
-.guideBox dl dd ul li{
-  margin-bottom: 10px;
+.guideBox dl dd {
+	margin-top: 20px;
+	margin-left: 0;
+}
+.guideBox dl dd ul li {
+	margin-bottom: 10px;
 }
 /* swiper */
 
 .swiper-slide img {
-  width: 80%;
-  height: 400px;
-  box-shadow: 0 0 5px #555;
+	width: 80%;
+	height: 400px;
+	box-shadow: 0 0 5px #555;
 }
 
 .swiper-slide a {
-  display: inline-flex;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+	display: inline-flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  border: none;
+	border: none;
 }
-.guideSwiper{
-  position: relative;
-  width: 1400px;
-  margin: 0 auto;
+.guideSwiper {
+	position: relative;
+	width: 1400px;
+	margin: 0 auto;
 }
 .autoplay-control {
-  position: absolute;
-  z-index: 10;
-  right: 7px;
-  bottom: 7px;
-  transform: translateX(-50%);
+	position: absolute;
+	z-index: 10;
+	right: 7px;
+	bottom: 7px;
+	transform: translateX(-50%);
 }
 
 .autoplay-control button {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 0;
-  background: transparent;
-  cursor: pointer;
+	display: block;
+	width: 20px;
+	height: 20px;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
 }
 
 .autoplay-control button:before {
-  display: block;
-  content: '';
-  position: absolute;
+	display: block;
+	content: "";
+	position: absolute;
 }
 
 .autoplay-control button[aria-pressed="false"]:before {
-  top: 4px;
-  left: 4px;
-  width: 12px;
-  height: 12px;
-  border-left: 3px solid #000;
-  border-right: 3px solid #000;
-  box-sizing: border-box;
+	top: 4px;
+	left: 4px;
+	width: 12px;
+	height: 12px;
+	border-left: 3px solid #000;
+	border-right: 3px solid #000;
+	box-sizing: border-box;
 }
 
 .autoplay-control button[aria-pressed="true"]:before {
-  top: 2px;
-  left: 2px;
-  border-top: 8px solid transparent;
-  border-left: 16px solid #000;
-  border-bottom: 8px solid transparent;
+	top: 2px;
+	left: 2px;
+	border-top: 8px solid transparent;
+	border-left: 16px solid #000;
+	border-bottom: 8px solid transparent;
 }
 
-.swiper{
-  height: 100vh;
-  width: 1400px;
+.swiper {
+	height: 100vh;
+	width: 1400px;
 }
-.swiper img{
-  width: 100%; height: 300px;
+.swiper img {
+	width: 100%;
+	height: 300px;
 }
 
-.infoBox{
-  width: 1400px;
-  margin: 0 auto;
+.infoBox {
+	width: 1400px;
+	margin: 0 auto;
 }
-ul,li{
-  list-style: none;
+ul,
+li {
+	list-style: none;
 }
-.tabBtnWrap{
-  display: flex;
-  gap: 10px;
+.tabBtnWrap {
+	display: flex;
+	gap: 10px;
 }
-.tabList{
-  cursor: pointer;
+.tabList {
+	cursor: pointer;
 }
-.tabBtn{
-  padding: 20px;
+.tabBtn {
+	padding: 20px;
 }
-.tabList.active{
-  color: #fff;
+.tabList.active {
+	color: #fff;
 }
-.tabList.active .tabBtn{
-  background: green;
-  border: 1px solid #fff;
-  color: #fff;
+.tabList.active .tabBtn {
+	background: green;
+	border: 1px solid #fff;
+	color: #fff;
 }
 .tab-content {
-  display: none;
+	display: none;
 }
 
 .tab-content.active {
-  display: block;
+	display: block;
 }
 
 .wrap-layer-popup {
-  display: none;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  z-index: 991;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	z-index: 991;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .wrap-layer-popup.popup-open {
-  display: flex;
+	display: flex;
 }
 
-.wrap-layer-popup.popup-open>.inner-layer-popup {
-  opacity: 1;
+.wrap-layer-popup.popup-open > .inner-layer-popup {
+	opacity: 1;
 }
 
 .wrap-layer-popup.prev-popup {
-  z-index: 989;
+	z-index: 989;
 }
 
-.wrap-layer-popup>.inner-layer-popup {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  width: 400px;
-  max-height: 100%;
-  height: auto;
-  opacity: 0;
-  border-radius: 5px;
-  overflow: hidden;
+.wrap-layer-popup > .inner-layer-popup {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: stretch;
+	width: 400px;
+	max-height: 100%;
+	height: auto;
+	opacity: 0;
+	border-radius: 5px;
+	overflow: hidden;
 }
 
 .wrap-layer-popup .wrap-layer-popup-title {
-  width: 100%;
-  padding: 10px;
-  background-color: #fff;
+	width: 100%;
+	padding: 10px;
+	background-color: #fff;
 }
 
 .wrap-layer-popup .wrap-layer-popup-title h1 {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 30px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 30px;
 }
 
 .wrap-layer-popup .layer-popup-contents {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  background-color: #fff;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	background-color: #fff;
 }
 
-.wrap-layer-popup .layer-popup-contents>.inner {
-  /* max-height: calc(100% - 50px); */
-  box-sizing: border-box;
-  padding: 20px;
+.wrap-layer-popup .layer-popup-contents > .inner {
+	/* max-height: calc(100% - 50px); */
+	box-sizing: border-box;
+	padding: 20px;
 }
 
 .wrap-layer-popup .layer-popup-bottom {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .wrap-layer-popup .layer-popup-bottom button {
-  width: 100%;
-  height: 40px;
-  border: 0;
-  background-color: #666;
-  color: #fff;
-  box-sizing: border-box;
-  border: 1px solid transparent;
+	width: 100%;
+	height: 40px;
+	border: 0;
+	background-color: #666;
+	color: #fff;
+	box-sizing: border-box;
+	border: 1px solid transparent;
 }
 
 .wrap-layer-popup .layer-popup-bottom button[popup-cancle] {
-  background-color: #fff;
-  color: #000;
-  border-top-color: #ccc;
+	background-color: #fff;
+	color: #000;
+	border-top-color: #ccc;
 }
 
 .popup-dimmed {
-  position: fixed;
-  z-index: 990;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, .7);
-  transition: opacity .2s;
+	position: fixed;
+	z-index: 990;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	transition: opacity 0.2s;
 }
 
 .scroll-lock {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .wrapper {
-  width: 900px;
-  margin: 0 auto;
+	width: 900px;
+	margin: 0 auto;
 }
 
 .hidden {
-  position: relative;
-  z-index: -1;
-  display: inline-block;
-  overflow: hidden;
-  height: 1px;
-  width: 1px;
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  clip-path: inset(50%);
-  word-break: initial;
-  word-wrap: initial;
+	position: relative;
+	z-index: -1;
+	display: inline-block;
+	overflow: hidden;
+	height: 1px;
+	width: 1px;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	word-break: initial;
+	word-wrap: initial;
 }
 
 .btn-layer-close {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  width: 26px;
-  height: 26px;
-  padding: 0;
-  border: 0;
-  background: transparent;
-  border-radius: 0;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 26px;
+	height: 26px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	border-radius: 0;
 }
 
 .btn-layer-close::before {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 3px;
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  transform: rotate(45deg);
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 3px;
+	width: 20px;
+	height: 1px;
+	background-color: #000;
+	transform: rotate(45deg);
 }
 
 .btn-layer-close::after {
-  position: absolute;
-  content: '';
-  top: 50%;
-  left: 3px;
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  transform: rotate(-45deg);
+	position: absolute;
+	content: "";
+	top: 50%;
+	left: 3px;
+	width: 20px;
+	height: 1px;
+	background-color: #000;
+	transform: rotate(-45deg);
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
 }
-p.tit{
-  font-size: 18px;font-weight: bold;
+p.tit {
+	font-size: 18px;
+	font-weight: bold;
 }
-p.desc{
-  font-size: 20px; font-weight: bold;
-  color: darkblue;
+p.desc {
+	font-size: 20px;
+	font-weight: bold;
+	color: darkblue;
 }
 .comPopupWrap {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 9999;
+	display: none;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
 }
 
 .comPopupWrap.on {
-  display: block;
+	display: block;
 }
 
 .comPopupWrap .dim {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .comPopupWrap .comBtn {
-  min-width: auto;
-  border-radius: 0;
+	min-width: auto;
+	border-radius: 0;
 }
 
 .comPopupContainer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .comPopupInfo {
-  width: 100%;
-  height: 100%;
-  padding: 10px 15px;
-  background: #eaeaea;
-  box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 10px 15px;
+	background: #eaeaea;
+	box-sizing: border-box;
 }
 
 .comPopupInfo.bgfff {
-  background: #fff;
+	background: #fff;
 }
 
 .comPopupInfoBox {
-  padding: 10px;
-  background: #fff;
+	padding: 10px;
+	background: #fff;
 }
 
 .comPopupInfoBox .comTxt {
-  font-size: 16px;
-  text-align: center;
-  padding: 40px 0;
+	font-size: 16px;
+	text-align: center;
+	padding: 40px 0;
 }
 
 .comPopupBox {
-  position: relative;
-  width: 480px;
-  height: auto;
-  background: #fff;
+	position: relative;
+	width: 480px;
+	height: auto;
+	background: #fff;
 }
 
 .comPopupHeader {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #0195d3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #0195d3;
 }
 
 .comPopupHeader h2 {
-  padding: 10px 10px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  color: #Fff;
-  text-align: left;
-  padding-left: 23px;
-  position: relative;
-  line-height: 1;
+	padding: 10px 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	padding-left: 23px;
+	position: relative;
+	line-height: 1;
 }
 
 .comPopupHeader h2::before {
-  content: '';
-  width: 4px;
-  height: 20px;
-  background: #fff;
-  border-radius: 5px;
-  position: absolute;
-  left: 14px;
-  top: 11px;
+	content: "";
+	width: 4px;
+	height: 20px;
+	background: #fff;
+	border-radius: 5px;
+	position: absolute;
+	left: 14px;
+	top: 11px;
 }
 
 .comPopupHeader .popClose {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  margin-right: 10px;
-  background: none;
-  border: none;
-  right: 5px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	background: none;
+	border: none;
+	right: 5px;
 }
 
 .comPopupHeader .popClose::after {
-  display: inline-block;
-  content: "\00d7";
-  font-size: 15pt;
-  line-height: 50px;
-  color: #fff;
+	display: inline-block;
+	content: "\00d7";
+	font-size: 15pt;
+	line-height: 50px;
+	color: #fff;
 }
 
 .comTableHeightWrap {
-  height: 300px;
-  overflow-y: scroll;
-  margin-top: 20px;
+	height: 300px;
+	overflow-y: scroll;
+	margin-top: 20px;
 }
 
 .comTableHeightWrap .comTable-1 {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .comTableHeightWrap th {
-  position: sticky;
-  top: -2px;
-  z-index: 10;
+	position: sticky;
+	top: -2px;
+	z-index: 10;
 }
 
 .comPopupBotBtn {
-  top: 10px;
-  margin-left: -15px;
-  margin-right: -16px;
-  position: relative;
+	top: 10px;
+	margin-left: -15px;
+	margin-right: -16px;
+	position: relative;
 }
 
 .comPopupBotBtn ul {
-  display: flex;
+	display: flex;
 }
 
 .comPopupBotBtn ul li {
-  flex: 1;
+	flex: 1;
 }
 
 .comPopupBotBtn ul li button {
-  width: 100%;
-  height: 40px;
+	width: 100%;
+	height: 40px;
 }
 
 .comTab-1 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #000;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
 }
 
 .comTab-1 ul {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .comTab-1 ul li {
-  padding: 10px 17px;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  margin-left: -1px;
-  border-bottom: none;
+	padding: 10px 17px;
+	border: 1px solid #000;
+	box-sizing: border-box;
+	margin-left: -1px;
+	border-bottom: none;
 }
 
 .comTab-1 ul li button {
-  background: none;
-  border: none;
+	background: none;
+	border: none;
 }
 
 .comTab-1 li.on {
-  background: #00489E;
-  color: #fff;
+	background: #00489e;
+	color: #fff;
 }
 
 .comTab-1 li.on button {
-  background: #00489E;
-  color: #fff;
+	background: #00489e;
+	color: #fff;
 }
 
-
-.tbl-btn>a {
-  padding: 0 10px !important;
+.tbl-btn > a {
+	padding: 0 10px !important;
 }
 
 .accPopClose::after {
-  display: inline-block;
-  content: "\00d7";
-  font-size: 15pt;
-  line-height: 50px;
-  color: #fff;
+	display: inline-block;
+	content: "\00d7";
+	font-size: 15pt;
+	line-height: 50px;
+	color: #fff;
 }
 
 .accPopClose {
-  position: absolute;
-  display: inline-block;
-  text-align: center;
-  margin-right: 10px;
-  background: none;
-  border: none;
-  right: 5px;
-  top: -5px;
-  position: absolute;
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	background: none;
+	border: none;
+	right: 5px;
+	top: -5px;
+	position: absolute;
+}
+.gudieWrap .row {
+	margin-top: 30px;
+}
+.gudieWrap .row h1 {
+	font-size: 30px;
+	font-weight: 400;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #aaa;
+}
+.bs-docs-header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	font-size: 18px;
+	background-color: #5e6b9e;
+	color: #fff;
+}
+.bs-docs-header h1 {
+	font-size: 45px;
+	color: #fff;
+	font-weight: 400;
+}
+.bs-docs-header p {
+	margin-bottom: 0;
+	font-weight: 300;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 300;
+	margin-top: 10px;
 }

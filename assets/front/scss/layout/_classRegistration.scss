@@ -331,3 +331,14 @@
 .subcotent .con__left {
 	padding: 3.3125rem 2.9375rem !important;
 }
+.cardcontent-wrap #lrnOceanOnlineList.flex.gap24 {
+	flex-wrap: nowrap;
+	overflow-x: scroll;
+	.cardcontent {
+		flex: 1 0 22%;
+	}
+
+	@include media($tab) {
+		flex-wrap: wrap;
+	}
+}
