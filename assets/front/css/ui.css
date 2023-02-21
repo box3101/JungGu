@@ -61357,7 +61357,7 @@ body.nopage .wrapper {
 }
 .cardcontent img {
   width: 100%;
-  height: 13rem;
+  height: 11rem;
 }
 @media all and (max-width: 1400px) {
   .cardcontent img {
@@ -61561,17 +61561,36 @@ body.nopage .wrapper {
   padding: 3.3125rem 2.9375rem !important;
 }
 
-.cardcontent-wrap #lrnOceanOnlineList.flex.gap24 {
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+#lrnOceanOnlineList .cardcontent {
+  width: calc(19% - 5.5px) !important;
 }
-.cardcontent-wrap #lrnOceanOnlineList.flex.gap24 .cardcontent {
-  flex: 1 0 22%;
-}
-@media all and (max-width: 900px) {
-  .cardcontent-wrap #lrnOceanOnlineList.flex.gap24 {
-    flex-wrap: wrap;
+@media all and (max-width: 1400px) {
+  #lrnOceanOnlineList .cardcontent {
+    width: calc(50% - 12px) !important;
   }
+}
+@media all and (max-width: 600px) {
+  #lrnOceanOnlineList .cardcontent {
+    width: 100% !important;
+  }
+}
+#lrnOceanOnlineList .twoLine {
+  font-size: 1.2rem;
+}
+#lrnOceanOnlineList.gap24 {
+  gap: 15px;
+}
+#lrnOceanOnlineList .field-icon::before {
+  display: none;
+}
+#lrnOceanOnlineList .cardcontent .content-bottom .date-icon::before, #lrnOceanOnlineList .cardcontent .content-bottom .pepole-icon::before {
+  display: none;
+}
+#lrnOceanOnlineList .week-icon::before {
+  display: none;
+}
+#lrnOceanOnlineList .cardcontent .content-bottom .txt span, #lrnOceanOnlineList .cardcontent .content-bottom .txt em, #lrnOceanOnlineList .cardcontent .content-bottom .txt {
+  font-size: 0.9rem;
 }
 
 /*# sourceMappingURL=ui.css.map */

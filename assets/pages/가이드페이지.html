@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table class="collection-content">
+    <thead>
+      <tr>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesTitle">
+              <path
+                d="M0.637695 13.1914C1.0957 13.1914 1.32812 13 1.47852 12.5215L2.24414 10.3887H6.14746L6.90625 12.5215C7.05664 13 7.2959 13.1914 7.74707 13.1914C8.22559 13.1914 8.5332 12.9043 8.5332 12.4531C8.5332 12.2891 8.50586 12.1523 8.44434 11.9678L5.41602 3.79199C5.2041 3.21777 4.82129 2.9375 4.19922 2.9375C3.60449 2.9375 3.21484 3.21777 3.0166 3.78516L-0.0322266 12.002C-0.09375 12.1797 -0.121094 12.3232 -0.121094 12.4668C-0.121094 12.918 0.166016 13.1914 0.637695 13.1914ZM2.63379 9.12402L4.17871 4.68066H4.21973L5.76465 9.12402H2.63379ZM12.2793 13.2324C13.3115 13.2324 14.2891 12.6787 14.7129 11.8037H14.7402V12.5762C14.7471 12.9863 15.0273 13.2393 15.4238 13.2393C15.834 13.2393 16.1143 12.9795 16.1143 12.5215V8.00977C16.1143 6.49902 14.9658 5.52148 13.1543 5.52148C11.7666 5.52148 10.6592 6.08887 10.2695 6.99121C10.1943 7.15527 10.1533 7.3125 10.1533 7.46289C10.1533 7.81152 10.4062 8.04395 10.7686 8.04395C11.0215 8.04395 11.2129 7.94824 11.3496 7.73633C11.7529 6.99121 12.2861 6.65625 13.1064 6.65625C14.0977 6.65625 14.6992 7.20996 14.6992 8.1123V8.67285L12.5664 8.7959C10.7686 8.8916 9.77734 9.69824 9.77734 11.0107C9.77734 12.3369 10.8096 13.2324 12.2793 13.2324ZM12.6621 12.1387C11.8008 12.1387 11.2129 11.667 11.2129 10.9561C11.2129 10.2725 11.7598 9.82129 12.7578 9.75977L14.6992 9.62988V10.3203C14.6992 11.3457 13.7969 12.1387 12.6621 12.1387Z">
+              </path>
+            </svg></span>1dapth</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesText">
+              <path
+                d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z">
+              </path>
+            </svg></span>2dapth</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesText">
+              <path
+                d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z">
+              </path>
+            </svg></span>3dapth</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesText">
+              <path
+                d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z">
+              </path>
+            </svg></span>html 명</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesStatus">
+              <path
+                d="M8.75488 1.02344C8.75488 0.613281 8.41309 0.264648 8.00293 0.264648C7.59277 0.264648 7.25098 0.613281 7.25098 1.02344V3.11523C7.25098 3.51855 7.59277 3.86719 8.00293 3.86719C8.41309 3.86719 8.75488 3.51855 8.75488 3.11523V1.02344ZM3.91504 5.0293C4.20215 5.31641 4.69434 5.32324 4.97461 5.03613C5.26855 4.74902 5.26855 4.25684 4.98145 3.96973L3.53906 2.52051C3.25195 2.2334 2.7666 2.21973 2.47949 2.50684C2.19238 2.79395 2.18555 3.28613 2.47266 3.57324L3.91504 5.0293ZM10.9629 4.01758C10.6826 4.30469 10.6826 4.79688 10.9697 5.08398C11.2568 5.37109 11.749 5.36426 12.0361 5.07715L13.4854 3.62793C13.7725 3.34082 13.7725 2.84863 13.4785 2.55469C13.1982 2.27441 12.7061 2.27441 12.4189 2.56152L10.9629 4.01758ZM15.0234 8.78906C15.4336 8.78906 15.7822 8.44727 15.7822 8.03711C15.7822 7.62695 15.4336 7.28516 15.0234 7.28516H12.9385C12.5283 7.28516 12.1797 7.62695 12.1797 8.03711C12.1797 8.44727 12.5283 8.78906 12.9385 8.78906H15.0234ZM0.975586 7.28516C0.56543 7.28516 0.223633 7.62695 0.223633 8.03711C0.223633 8.44727 0.56543 8.78906 0.975586 8.78906H3.07422C3.48438 8.78906 3.83301 8.44727 3.83301 8.03711C3.83301 7.62695 3.48438 7.28516 3.07422 7.28516H0.975586ZM12.0361 10.9902C11.749 10.71 11.2568 10.71 10.9629 10.9971C10.6826 11.2842 10.6826 11.7764 10.9697 12.0635L12.4258 13.5127C12.7129 13.7998 13.2051 13.793 13.4922 13.5059C13.7793 13.2256 13.7725 12.7266 13.4854 12.4395L12.0361 10.9902ZM2.52051 12.4395C2.22656 12.7266 2.22656 13.2188 2.50684 13.5059C2.79395 13.793 3.28613 13.7998 3.57324 13.5127L5.02246 12.0703C5.31641 11.7832 5.31641 11.291 5.03613 11.0039C4.74902 10.7168 4.25684 10.71 3.96973 10.9971L2.52051 12.4395ZM8.75488 12.9658C8.75488 12.5557 8.41309 12.207 8.00293 12.207C7.59277 12.207 7.25098 12.5557 7.25098 12.9658V15.0576C7.25098 15.4609 7.59277 15.8096 8.00293 15.8096C8.41309 15.8096 8.75488 15.4609 8.75488 15.0576V12.9658Z">
+              </path>
+            </svg></span>상태</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesDate">
+              <path
+                d="M3.29688 14.4561H12.7031C14.1797 14.4561 14.9453 13.6904 14.9453 12.2344V3.91504C14.9453 2.45215 14.1797 1.69336 12.7031 1.69336H3.29688C1.82031 1.69336 1.05469 2.45215 1.05469 3.91504V12.2344C1.05469 13.6973 1.82031 14.4561 3.29688 14.4561ZM3.27637 13.1162C2.70898 13.1162 2.39453 12.8154 2.39453 12.2207V5.9043C2.39453 5.30273 2.70898 5.00879 3.27637 5.00879H12.71C13.2842 5.00879 13.6055 5.30273 13.6055 5.9043V12.2207C13.6055 12.8154 13.2842 13.1162 12.71 13.1162H3.27637ZM6.68066 7.38086H7.08398C7.33008 7.38086 7.41211 7.30566 7.41211 7.05957V6.66309C7.41211 6.41699 7.33008 6.3418 7.08398 6.3418H6.68066C6.44141 6.3418 6.35938 6.41699 6.35938 6.66309V7.05957C6.35938 7.30566 6.44141 7.38086 6.68066 7.38086ZM8.92285 7.38086H9.31934C9.56543 7.38086 9.64746 7.30566 9.64746 7.05957V6.66309C9.64746 6.41699 9.56543 6.3418 9.31934 6.3418H8.92285C8.67676 6.3418 8.59473 6.41699 8.59473 6.66309V7.05957C8.59473 7.30566 8.67676 7.38086 8.92285 7.38086ZM11.1582 7.38086H11.5547C11.8008 7.38086 11.8828 7.30566 11.8828 7.05957V6.66309C11.8828 6.41699 11.8008 6.3418 11.5547 6.3418H11.1582C10.9121 6.3418 10.8301 6.41699 10.8301 6.66309V7.05957C10.8301 7.30566 10.9121 7.38086 11.1582 7.38086ZM4.44531 9.58203H4.84863C5.09473 9.58203 5.17676 9.50684 5.17676 9.26074V8.86426C5.17676 8.61816 5.09473 8.54297 4.84863 8.54297H4.44531C4.20605 8.54297 4.12402 8.61816 4.12402 8.86426V9.26074C4.12402 9.50684 4.20605 9.58203 4.44531 9.58203ZM6.68066 9.58203H7.08398C7.33008 9.58203 7.41211 9.50684 7.41211 9.26074V8.86426C7.41211 8.61816 7.33008 8.54297 7.08398 8.54297H6.68066C6.44141 8.54297 6.35938 8.61816 6.35938 8.86426V9.26074C6.35938 9.50684 6.44141 9.58203 6.68066 9.58203ZM8.92285 9.58203H9.31934C9.56543 9.58203 9.64746 9.50684 9.64746 9.26074V8.86426C9.64746 8.61816 9.56543 8.54297 9.31934 8.54297H8.92285C8.67676 8.54297 8.59473 8.61816 8.59473 8.86426V9.26074C8.59473 9.50684 8.67676 9.58203 8.92285 9.58203ZM11.1582 9.58203H11.5547C11.8008 9.58203 11.8828 9.50684 11.8828 9.26074V8.86426C11.8828 8.61816 11.8008 8.54297 11.5547 8.54297H11.1582C10.9121 8.54297 10.8301 8.61816 10.8301 8.86426V9.26074C10.8301 9.50684 10.9121 9.58203 11.1582 9.58203ZM4.44531 11.7832H4.84863C5.09473 11.7832 5.17676 11.708 5.17676 11.4619V11.0654C5.17676 10.8193 5.09473 10.7441 4.84863 10.7441H4.44531C4.20605 10.7441 4.12402 10.8193 4.12402 11.0654V11.4619C4.12402 11.708 4.20605 11.7832 4.44531 11.7832ZM6.68066 11.7832H7.08398C7.33008 11.7832 7.41211 11.708 7.41211 11.4619V11.0654C7.41211 10.8193 7.33008 10.7441 7.08398 10.7441H6.68066C6.44141 10.7441 6.35938 10.8193 6.35938 11.0654V11.4619C6.35938 11.708 6.44141 11.7832 6.68066 11.7832ZM8.92285 11.7832H9.31934C9.56543 11.7832 9.64746 11.708 9.64746 11.4619V11.0654C9.64746 10.8193 9.56543 10.7441 9.31934 10.7441H8.92285C8.67676 10.7441 8.59473 10.8193 8.59473 11.0654V11.4619C8.59473 11.708 8.67676 11.7832 8.92285 11.7832Z">
+              </path>
+            </svg></span>완료날짜</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesUrl">
+              <path
+                d="M7.69922 10.8945L8.73828 9.84863C7.91797 9.77344 7.34375 9.51367 6.91992 9.08984C5.76465 7.93457 5.76465 6.29395 6.91309 5.14551L9.18262 2.87598C10.3379 1.7207 11.9717 1.7207 13.127 2.87598C14.2891 4.04492 14.2822 5.67188 13.1338 6.82031L11.958 7.99609C12.1768 8.49512 12.2451 9.10352 12.1289 9.62988L14.0908 7.6748C15.7725 6 15.7793 3.62109 14.084 1.92578C12.3887 0.223633 10.0098 0.237305 8.33496 1.91211L5.95605 4.29785C4.28125 5.97266 4.26758 8.35156 5.96289 10.0469C6.36621 10.4434 6.90625 10.7441 7.69922 10.8945ZM8.30078 5.13184L7.26855 6.17773C8.08203 6.25293 8.66309 6.51953 9.08008 6.93652C10.2422 8.09863 10.2422 9.73242 9.08691 10.8809L6.81738 13.1504C5.66211 14.3057 4.03516 14.3057 2.87305 13.1504C1.71094 11.9883 1.71777 10.3545 2.87305 9.20605L4.04199 8.03027C3.83008 7.53125 3.75488 6.92969 3.87109 6.39648L1.91602 8.35156C0.234375 10.0264 0.227539 12.4121 1.92285 14.1074C3.61816 15.8027 5.99707 15.7891 7.67188 14.1143L10.0439 11.7354C11.7256 10.0537 11.7324 7.6748 10.0371 5.98633C9.64062 5.58301 9.10059 5.28223 8.30078 5.13184Z">
+              </path>
+            </svg></span>URL</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesText">
+              <path
+                d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z">
+              </path>
+            </svg></span>메모</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesFile">
+              <path
+                d="M12.5938 8.44043L7.54883 13.4854C6.26367 14.7773 4.54102 14.6475 3.44043 13.54C2.32617 12.4326 2.20312 10.7168 3.49512 9.4248L10.3926 2.52734C11.1445 1.77539 12.2725 1.63867 13.0039 2.37695C13.7422 3.11523 13.6055 4.22949 12.8535 4.98828L6.08594 11.7627C5.77832 12.0703 5.41602 11.9814 5.2041 11.7764C4.99902 11.5576 4.91016 11.2021 5.21777 10.8877L9.93457 6.1709C10.1738 5.93164 10.1875 5.58301 9.96191 5.35059C9.72949 5.13184 9.38086 5.13867 9.1416 5.37793L4.39746 10.1152C3.67285 10.8535 3.7002 11.9746 4.34961 12.624C5.05371 13.3281 6.12012 13.3145 6.8584 12.5762L13.6602 5.77441C14.9795 4.45508 14.9316 2.71875 13.7764 1.55664C12.6416 0.428711 10.8779 0.34668 9.55176 1.66602L2.61328 8.61816C0.883789 10.3477 1 12.8291 2.57227 14.4014C4.14453 15.9668 6.63281 16.0898 8.3623 14.3672L13.4414 9.28809C13.6738 9.0625 13.667 8.64551 13.4346 8.41992C13.209 8.18066 12.833 8.21484 12.5938 8.44043Z">
+              </path>
+            </svg></span>파일</th>
+        <th><span class="icon property-icon"><svg viewBox="0 0 16 16"
+              style="width:14px;height:14px;display:block;fill:rgba(55, 53, 47, 0.45);flex-shrink:0;-webkit-backface-visibility:hidden"
+              class="typesText">
+              <path
+                d="M1.56738 3.25879H14.4258C14.7676 3.25879 15.0479 2.97852 15.0479 2.63672C15.0479 2.29492 14.7744 2.02148 14.4258 2.02148H1.56738C1.21875 2.02148 0.952148 2.29492 0.952148 2.63672C0.952148 2.97852 1.22559 3.25879 1.56738 3.25879ZM1.56738 6.84082H14.4258C14.7676 6.84082 15.0479 6.56055 15.0479 6.21875C15.0479 5.87695 14.7744 5.60352 14.4258 5.60352H1.56738C1.21875 5.60352 0.952148 5.87695 0.952148 6.21875C0.952148 6.56055 1.22559 6.84082 1.56738 6.84082ZM1.56738 10.4229H14.4258C14.7676 10.4229 15.0479 10.1426 15.0479 9.80078C15.0479 9.45898 14.7744 9.18555 14.4258 9.18555H1.56738C1.21875 9.18555 0.952148 9.45898 0.952148 9.80078C0.952148 10.1426 1.22559 10.4229 1.56738 10.4229ZM1.56738 14.0049H8.75879C9.10059 14.0049 9.38086 13.7246 9.38086 13.3828C9.38086 13.041 9.10742 12.7676 8.75879 12.7676H1.56738C1.21875 12.7676 0.952148 13.041 0.952148 13.3828C0.952148 13.7246 1.22559 14.0049 1.56738 14.0049Z">
+              </path>
+            </svg></span>참고페이지</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr id="a2ca2c95-7005-4a88-952b-ef8df7d0f4e7">
+        <td class="cell-title"><a href="https://www.notion.so/a2ca2c9570054a88952bef8df7d0f4e7">공통팝업</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/공통팝업.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/공통팝업.html</a></td>
+        <td class="cell-cREN">sizeSm. sizeMid 추가</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3ee13762-7ade-40eb-be75-27a73dcb09c5">
+        <td class="cell-title"><a href="https://www.notion.so/3ee137627ade40ebbe7527a73dcb09c5">메인화면</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/04/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/main.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/main.html</a></td>
+        <td class="cell-cREN">로그인 전 디자인 필요
+          로그인 했을때 정보
+          gnb 메뉴 hover 이미지 필요
+          메인 배너 슬라이드 멈춤 기능 필요 및 paging 색상 변경 필요
+          모바일 화면 모바일 메뉴 디자인 필요 (로그인, 로그아웃 이미지 버튼)</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="899fb257-e655-4245-92e7-55a3c6e1383c">
+        <td class="cell-title"><a href="https://www.notion.so/899fb257e655424592e755a3c6e1383c">제목 없음</a></td>
+        <td class="cell-o|m=">메인팝업</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">main-팝업.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/main-팝업.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/main-팝업.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="2e8b8a97-ea34-453d-875f-2558d0c0f0b0">
+        <td class="cell-title"><a href="https://www.notion.so/2e8b8a97ea34453d875f2558d0c0f0b0">개인정보처리방침</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">개인정보처리방침.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/04/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/개인정보처리방침.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/개인정보처리방침.html</a></td>
+        <td class="cell-cREN">주요 개인정보 처리표시(라벨링) 뭐가 들어가는지?</td>
+        <td class="cell-:lvC"><span style="margin-right:6px"><a
+              href="%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8E%E1%85%A5%E1%86%AB%20%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%BC%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%8C%E1%85%A1%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8%E1%84%92%E1%85%A7%E1%86%AB%E1%84%92%E1%85%AA%E1%86%BC%20699e015b035e4950b4a8b6249765cae4/%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8E%E1%85%A5%E1%86%AB%20%E1%84%8C%E1%85%AE%E1%86%BC%E1%84%80%E1%85%AE%E1%84%8E%E1%85%A5%E1%86%BC%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%8C%E1%85%A1%20%E1%84%91%E1%85%A5%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%B5%E1%84%89%E1%85%B5%E1%86%BC%20%E1%84%8C%E1%85%A1%E1%86%A8%E1%84%8B%E1%85%A5%E1%86%B8%20a93e29c1a0314f98a45fa0e337714ecb/%E1%84%80%E1%85%A2%E1%84%8B%E1%85%B5%E1%86%AB%E1%84%8C%E1%85%A5%E1%86%BC%E1%84%87%E1%85%A9%E1%84%8E%E1%85%A5%E1%84%85%E1%85%B5%E1%84%87%E1%85%A1%E1%86%BC%E1%84%8E%E1%85%B5%E1%86%B7%202e8b8a97ea34453d875f2558d0c0f0b0/%25EA%25B0%259C%25EC%259D%25B8%25EC%25A0%2595%25EB%25B3%25B4%25EC%25B2%2598%25EB%25A6%25AC%25EB%25B0%25A9%25EC%25B9%25A8(%25ED%258F%25AC%25ED%2584%25B8)_1.1.hwp">개인정보처리방침(포털)
+              1.1.hwp</a></span></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="ec3fb844-799d-4979-83b8-57649dbab35e">
+        <td class="cell-title"><a href="https://www.notion.so/ec3fb844799d497983b857649dbab35e">평생학습도시</a></td>
+        <td class="cell-o|m=">인사말</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">인사말.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/13/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/인사말.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/인사말.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="fb35659c-a663-4ae6-9c01-67ca26a7dac1">
+        <td class="cell-title"><a href="https://www.notion.so/fb35659ca6634ae69c0167ca26a7dac1">제목 없음</a></td>
+        <td class="cell-o|m=">비전과 목표</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">비전과 목표.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/16/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/비전과목표.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/비전과목표.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="ccbf40d1-db6e-4a1f-a12e-1e07eb749cca">
+        <td class="cell-title"><a href="https://www.notion.so/ccbf40d1db6e4a1fa12e1e07eb749cca">제목 없음</a></td>
+        <td class="cell-o|m=">선언문</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">선언문.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-blue">
+            <div class="status-dot status-dot-color-blue"></div>In progress
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="a3fe77e7-7047-4fef-88fb-7b2a19010b5e">
+        <td class="cell-title"><a href="https://www.notion.so/a3fe77e770474fef88fb7b2a19010b5e">제목 없음</a></td>
+        <td class="cell-o|m=">조례</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">조례.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-blue">
+            <div class="status-dot status-dot-color-blue"></div>In progress
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="ef8a7662-4b89-4121-8dbd-986eba60d18d">
+        <td class="cell-title"><a href="https://www.notion.so/ef8a76624b8941218dbd986eba60d18d">제목 없음</a></td>
+        <td class="cell-o|m=">주요사업 소개</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">주요사업소개.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-blue">
+            <div class="status-dot status-dot-color-blue"></div>In progress
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="f9753035-cf08-4f3b-a0ab-29273fd1828f">
+        <td class="cell-title"><a href="https://www.notion.so/f9753035cf084f3ba0ab29273fd1828f">제목 없음</a></td>
+        <td class="cell-o|m=">오시는길</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">오시는길.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/21/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/오시는길.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/오시는길.html</a></td>
+        <td class="cell-cREN">디자인 필요 , 카카오맵 사용 , api 인증키 필요
+          참고 <a href="https://box3101.github.io/ReactMain/#/location">https://box3101.github.io/ReactMain/#/location</a>
+        </td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="c98e807f-11f1-478d-ac04-aabc817cca32">
+        <td class="cell-title"><a href="https://www.notion.so/c98e807f11f1478dac04aabc817cca32">수강신청</a></td>
+        <td class="cell-o|m=">수강신청목록</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청목록.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-blue">
+            <div class="status-dot status-dot-color-blue"></div>In progress
+          </span></td>
+        <td class="cell-IHGk"><time>@01/04/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청.html</a></td>
+        <td class="cell-cREN">- 변경필요 각각의 썸네일 및 기관 추가
+          <strong>이미지 썸네일 5type(평생학습관, 주민자치센터, 평생교육기관, 교육혁신지구, 그 외 기관)</strong>
+        </td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="6cb83bc7-358b-4afa-9deb-dc43ae43015d">
+        <td class="cell-title"><a href="https://www.notion.so/6cb83bc7358b4afa9debdc43ae43015d">제목 없음</a></td>
+        <td class="cell-o|m=">수강신청-상세</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청상세.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/05/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-상세.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-상세.html</a></td>
+        <td class="cell-cREN">관심강자 해제, 관심강좌 추가?
+          강좌상세 교육장소 추가</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="6c3030f0-cda8-4b6c-a336-8f3db7422eaa">
+        <td class="cell-title"><a href="https://www.notion.so/6c3030f0cda84b6ca3368f3db7422eaa">제목 없음</a></td>
+        <td class="cell-o|m=">수강신청-결제</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청결제.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/05/2023 → 01/05/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-결제.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-결제.html</a></td>
+        <td class="cell-cREN">동의 내용 항목 및 내용 고객 확인 예정</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="2a9231cc-f7f8-478e-a94a-bb80adcef229">
+        <td class="cell-title"><a href="https://www.notion.so/2a9231ccf7f8478ea94abb80adcef229">제목 없음</a></td>
+        <td class="cell-o|m=">수강신청-결제완료</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청결제완료.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/25/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-결제완료.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-결제완료.html</a></td>
+        <td class="cell-cREN">결제완료 상단 이미지 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="60bf5f02-0dc6-47ea-bab9-d97e6eff7de0">
+        <td class="cell-title"><a href="https://www.notion.so/60bf5f020dc647eabab9d97e6eff7de0">제목 없음</a></td>
+        <td class="cell-o|m=">수강신청-메일폼</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청-메일-가상계좌.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-메일-가상계좌.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-메일-가상계좌.html</a></td>
+        <td class="cell-cREN">결제완료 상단 이미지 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="4fe4dc47-1fdc-4c48-8d5a-420e328c48cb">
+        <td class="cell-title"><a href="https://www.notion.so/4fe4dc471fdc4c488d5a420e328c48cb">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청-메일-무통장입금.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-메일-무통장입금.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-메일-무통장입금.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="19d0e720-571d-45a6-b635-8a5be369897c">
+        <td class="cell-title"><a href="https://www.notion.so/19d0e720571d45a6b6358a5be369897c">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">수강신청-메일-신용카드.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/수강신청-메일-신용카드.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/수강신청-메일-신용카드.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="410bbe47-a3c0-432d-9d7a-f7f83cac7187">
+        <td class="cell-title"><a href="https://www.notion.so/410bbe47a3c0432d9d7af7f83cac7187">제목 없음</a></td>
+        <td class="cell-o|m=">출석부 QR코드 인증화면</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value">
+            <div class="status-dot"></div>Not started
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"></td>
+        <td class="cell-cREN">qr코드 화면 디자인 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="11ea3f4a-731d-4fb4-8253-0974062cf14a">
+        <td class="cell-title"><a href="https://www.notion.so/11ea3f4a731d4fb482530974062cf14a">제목 없음</a></td>
+        <td class="cell-o|m=">배우는바다 Online</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/25/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/배우는바다.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/배우는바다.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="df6f37b1-70fc-4592-9d47-d358dff2ff43">
+        <td class="cell-title"><a href="https://www.notion.so/df6f37b170fc45929d47d358dff2ff43">네트워크</a></td>
+        <td class="cell-o|m=">평생학습기관</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/25/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/평생학습기관.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/평생학습기관.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="54e0ca60-c695-4d7f-9638-659865a5091a">
+        <td class="cell-title"><a href="https://www.notion.so/54e0ca60c6954d7f9638659865a5091a">제목 없음</a></td>
+        <td class="cell-o|m=">평생학습동아리</td>
+        <td class="cell-oktI">평생학습동아리 소개</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/25/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/평생학습동아리소개.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/평생학습동아리소개.html</a></td>
+        <td class="cell-cREN">공통 step 레이아웃 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="0ac8c31e-0b3e-4b1e-a7a2-e01cd42903b9">
+        <td class="cell-title"><a href="https://www.notion.so/0ac8c31e0b3e4b1ea7a2e01cd42903b9">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">평생학습동아리 현황</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/평생학습동아리현황.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/평생학습동아리현황.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3eb2feb4-eae2-4d1b-9413-5368824257ba">
+        <td class="cell-title"><a href="https://www.notion.so/3eb2feb4eae24d1b94135368824257ba">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">평생학습동아리 현황-상세</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-blue">
+            <div class="status-dot status-dot-color-blue"></div>In progress
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/평생학습동아리현황-상세.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/평생학습동아리현황-상세.html</a></td>
+        <td class="cell-cREN">슬라이드 이미지 어떻게 진행할건지?
+          접근성-alt 확인 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="922fd18a-e1f4-4c4a-897b-127d16481977">
+        <td class="cell-title"><a href="https://www.notion.so/922fd18ae1f44c4a897b127d16481977">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">평생학습동아리 신청</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/평생학습동아리신청.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/평생학습동아리신청.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="82fbeea0-4809-4dbb-806d-44bb105a5a52">
+        <td class="cell-title"><a href="https://www.notion.so/82fbeea048094dbb806d44bb105a5a52">제목 없음</a></td>
+        <td class="cell-o|m=">우리동네강사</td>
+        <td class="cell-oktI">우리동네강사 소개</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/우리동네강사.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/우리동네강사.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="b8656ccc-a97a-40cd-9f2b-b7b30aa40f55">
+        <td class="cell-title"><a href="https://www.notion.so/b8656ccca97a40cd9f2bb7b30aa40f55">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">우리동네강사 현황</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/우리동네강사현황.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/우리동네강사현황.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="26abbd28-8d21-4616-b611-3647f046b775">
+        <td class="cell-title"><a href="https://www.notion.so/26abbd288d214616b6113647f046b775">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">우리동네강사 신청</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/우리동네강사신청.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/우리동네강사신청.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="9b8c1665-7df9-487e-b427-247b7ff2333c">
+        <td class="cell-title"><a href="https://www.notion.so/9b8c16657df9487eb427247b7ff2333c">제목 없음</a></td>
+        <td class="cell-o|m=">찾아가는 강좌</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/찾아가는강좌.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/찾아가는강좌.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3b3dae4f-41e3-46ae-a17a-dceec1da9fa6">
+        <td class="cell-title"><a href="https://www.notion.so/3b3dae4f41e346aea17adceec1da9fa6">제목 없음</a></td>
+        <td class="cell-o|m=">우리동네 문화센터</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/27/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/우리동네문화센터.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/우리동네문화센터.html</a></td>
+        <td class="cell-cREN">내용 수급 예정</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="07235d83-f10c-4467-8f65-a908017fa4c2">
+        <td class="cell-title"><a href="https://www.notion.so/07235d83f10c44678f65a908017fa4c2">제목 없음</a></td>
+        <td class="cell-o|m=">인천시민대학</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/인천시민대학.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/인천시민대학.html</a></td>
+        <td class="cell-cREN">디자인 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="097530e9-7931-44fd-9376-0eacf3bb8059">
+        <td class="cell-title"><a href="https://www.notion.so/097530e9793144fd93760eacf3bb8059">열린마당</a></td>
+        <td class="cell-o|m=">공지사항</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/17/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/공지사항.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/공지사항.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="2f80c290-837d-4059-99b7-a1a9801fffae">
+        <td class="cell-title"><a href="https://www.notion.so/2f80c290837d405999b7a1a9801fffae">제목 없음</a></td>
+        <td class="cell-o|m=">공지사항-상세</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/17/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/공지사항-상세.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/공지사항-상세.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="e720bc06-30dc-4927-9221-a3092c748fa2">
+        <td class="cell-title"><a href="https://www.notion.so/e720bc0630dc49279221a3092c748fa2">제목 없음</a></td>
+        <td class="cell-o|m=">자료실</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/17/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/자료실.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/자료실.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="bf24c1b0-6d8a-4ce3-b80f-bc032e18e2c1">
+        <td class="cell-title"><a href="https://www.notion.so/bf24c1b06d8a4ce3b80fbc032e18e2c1">제목 없음</a></td>
+        <td class="cell-o|m=">자료실-상세</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/17/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/자료실-상세.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/자료실-상세.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="7db856d2-2bba-4390-8e19-ef6be81a51d6">
+        <td class="cell-title"><a href="https://www.notion.so/7db856d22bba43908e19ef6be81a51d6">나눔공간</a></td>
+        <td class="cell-o|m=">대관안내 </td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/26/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/대관안내.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/대관안내.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="0ede6686-4557-493f-a420-28ef0b5021d3">
+        <td class="cell-title"><a href="https://www.notion.so/0ede66864557493fa42028ef0b5021d3">제목 없음</a></td>
+        <td class="cell-o|m=">대관신청</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/04/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/대관신청.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/대관신청.html</a></td>
+        <td class="cell-cREN">순서1</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="c44c0248-3b87-4eb3-b35f-57a0392bef1e">
+        <td class="cell-title"><a href="https://www.notion.so/c44c02483b874eb3b35f57a0392bef1e">제목 없음</a></td>
+        <td class="cell-o|m=">대관신청-결제</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/04/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/대관신청-결제.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/대관신청-결제.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="4109217c-292d-48b7-9840-f678f4358aba">
+        <td class="cell-title"><a href="https://www.notion.so/4109217c292d48b79840f678f4358aba">제목 없음</a></td>
+        <td class="cell-o|m=">나눔공간</td>
+        <td class="cell-oktI">나눔공간 소개</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/27/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/나눔공간소개.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/나눔공간소개.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="50b4225b-ab8e-42bd-aeed-d18e3ddaf1b7">
+        <td class="cell-title"><a href="https://www.notion.so/50b4225bab8e42bdaeedd18e3ddaf1b7">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">나눔공간 현황 목록</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/나눔공간현황.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/나눔공간현황.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="0b43a9b6-3a1a-4dc8-a5ac-e8562fc40993">
+        <td class="cell-title"><a href="https://www.notion.so/0b43a9b63a1a4dc8a5ace8562fc40993">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">나눔공간 현황 상세</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/나눔공간형황-상세,html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/나눔공간형황-상세,html</a></td>
+        <td class="cell-cREN">접근성-alt 확인 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3382e40a-0217-413c-bb5f-76f970c03b37">
+        <td class="cell-title"><a href="https://www.notion.so/3382e40a0217413cbb5f76f970c03b37">제목 없음</a></td>
+        <td class="cell-o|m="></td>
+        <td class="cell-oktI">나눔공간 신청</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/나눔공간신청.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/나눔공간신청.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="d20aba87-6801-4090-bfcc-4524d48300aa">
+        <td class="cell-title"><a href="https://www.notion.so/d20aba8768014090bfcc4524d48300aa">교육혁신지구</a></td>
+        <td class="cell-o|m=">구석구석탐방</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/구석구석탐방.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/구석구석탐방.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="1eb8dc74-27b4-4c64-b620-4a50962613d4">
+        <td class="cell-title"><a href="https://www.notion.so/1eb8dc7427b44c64b6204a50962613d4">제목 없음</a></td>
+        <td class="cell-o|m=">중구마을학교</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/중구마을학교.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/중구마을학교.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="11e06bc7-8ef4-4e3f-9363-cb30380c9406">
+        <td class="cell-title"><a href="https://www.notion.so/11e06bc78ef44e3f9363cb30380c9406">제목 없음</a></td>
+        <td class="cell-o|m=">마을교육활동가</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/14/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/마을교육활동가.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/마을교육활동가.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="8cfeff12-5bf5-4fdd-82d1-a4561233eb62">
+        <td class="cell-title"><a href="https://www.notion.so/8cfeff125bf54fdd82d1a4561233eb62">제목 없음</a></td>
+        <td class="cell-o|m=">교육경비지원사업</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/13/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/교육경비지원사업.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/교육경비지원사업.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="725c995a-adbe-4243-bce6-f4c354b6c285">
+        <td class="cell-title"><a href="https://www.notion.so/725c995aadbe4243bce6f4c354b6c285">제목 없음</a></td>
+        <td class="cell-o|m=">인터넷 수능방송 지원</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/13/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/인터넷수능방송지원.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/인터넷수능방송지원.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="d07c0afb-9e88-4349-b5fa-f6cdc41d04ca">
+        <td class="cell-title"><a href="https://www.notion.so/d07c0afb9e884349b5faf6cdc41d04ca">회원/마이페이지</a></td>
+        <td class="cell-o|m=">로그인</td>
+        <td class="cell-oktI">로그인</td>
+        <td class="cell-f^Ph">로그인.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/09/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/로그인.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/로그인.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="1341f990-fd29-4528-a453-bf3a03b16f14">
+        <td class="cell-title"><a href="https://www.notion.so/1341f990fd294528a453bf3a03b16f14">제목 없음</a></td>
+        <td class="cell-o|m=">아이디 찾기</td>
+        <td class="cell-oktI">로그인</td>
+        <td class="cell-f^Ph">아이디찾기.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/10/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/아이디찾기.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/아이디찾기.html</a></td>
+        <td class="cell-cREN">찾기 전 .후 Type 2가지</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="4bca46e5-a5da-4a61-b4fa-954315463d51">
+        <td class="cell-title"><a href="https://www.notion.so/4bca46e5a5da4a61b4fa954315463d51">제목 없음</a></td>
+        <td class="cell-o|m=">비밀번호 찾기</td>
+        <td class="cell-oktI">로그인</td>
+        <td class="cell-f^Ph">비밀번호찾기.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/11/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/비밀번호찾기.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/비밀번호찾기.html</a></td>
+        <td class="cell-cREN">찾기 전.,후 Type 2가지</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="903aaf1c-6990-431a-be91-10f9669a73c6">
+        <td class="cell-title"><a href="https://www.notion.so/903aaf1c6990431abe9110f9669a73c6">제목 없음</a></td>
+        <td class="cell-o|m=">휴면회원복구</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">휴면회원복구.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/08/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/휴면회원복구.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/휴면회원복구.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="ee9bd784-8a6a-4ab8-a0ed-111430c57a7f">
+        <td class="cell-title"><a href="https://www.notion.so/ee9bd7848a6a4ab8a0ed111430c57a7f">제목 없음</a></td>
+        <td class="cell-o|m=">휴면획원확인</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">휴면회원복구-확인.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@02/08/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/휴면회원복구-확인.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/휴면회원복구-확인.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="30d62691-64b2-46b9-a892-c79b06c2a831">
+        <td class="cell-title"><a href="https://www.notion.so/30d6269164b246b9a892c79b06c2a831">제목 없음</a></td>
+        <td class="cell-o|m=">회원가입</td>
+        <td class="cell-oktI">회원가입</td>
+        <td class="cell-f^Ph">회원가입.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/09/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/회원가입.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/회원가입.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="18f45582-151f-4315-9fe6-320e0e70cbb3">
+        <td class="cell-title"><a href="https://www.notion.so/18f45582151f43159fe6320e0e70cbb3">제목 없음</a></td>
+        <td class="cell-o|m=">마이페이지</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">마이페이지.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/18/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/마이페이지.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/마이페이지.html</a></td>
+        <td class="cell-cREN">마이페이지 내용 변경 및 확인</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3c6e3251-6755-4ff1-a70d-6ea7ad0b64a2">
+        <td class="cell-title"><a href="https://www.notion.so/3c6e325167554ff1a70d6ea7ad0b64a2">제목 없음</a></td>
+        <td class="cell-o|m=">회원가입-상세</td>
+        <td class="cell-oktI">회원가입</td>
+        <td class="cell-f^Ph">회원가입-상세.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/12/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/회원가입-상세.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/회원가입-상세.html</a></td>
+        <td class="cell-cREN">이용약관 , 개인정보 수집 내용 확인 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="31e3f7aa-2fc8-4608-a3b7-b4b1ab6ff494">
+        <td class="cell-title"><a href="https://www.notion.so/31e3f7aa2fc84608a3b7b4b1ab6ff494">제목 없음</a></td>
+        <td class="cell-o|m=">회원가입-완료</td>
+        <td class="cell-oktI">회원가입</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/13/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/회원가입-완료.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/회원가입-완료.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="3722f776-b9f3-4cff-86ce-4b89ace9dfd0">
+        <td class="cell-title"><a href="https://www.notion.so/3722f776b9f34cff86ce4b89ace9dfd0">제목 없음</a></td>
+        <td class="cell-o|m=">회원탈퇴</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph">회원탈퇴.html</td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/10/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/회원탈퇴.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/회원탈퇴.html</a></td>
+        <td class="cell-cREN">회원 탈퇴 동의 내용 필요</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="84a9ebac-fb11-4c0a-9230-cfe1aa3d65c0">
+        <td class="cell-title"><a href="https://www.notion.so/84a9ebacfb114c0a9230cfe1aa3d65c0">제목 없음</a></td>
+        <td class="cell-o|m=">마이페이지</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/11/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/마이페이지.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/마이페이지.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="5fc320c1-5e02-4c58-b149-e3425ca5874e">
+        <td class="cell-title"><a href="https://www.notion.so/5fc320c15e024c58b149e3425ca5874e">제목 없음</a></td>
+        <td class="cell-o|m=">회원정보변경</td>
+        <td class="cell-oktI"></td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"></td>
+        <td class="cell-raWv"><a href="개발에서 진행" class="url-value">개발에서 진행</a></td>
+        <td class="cell-cREN">개발에서 진행</td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+      <tr id="0b39f522-99cf-4c0c-99e5-8a3b417f1e32">
+        <td class="cell-title"><a href="https://www.notion.so/0b39f52299cf4c0c99e58a3b417f1e32">제목 없음</a></td>
+        <td class="cell-o|m=">비밀번호변경</td>
+        <td class="cell-oktI">마이페이지</td>
+        <td class="cell-f^Ph"></td>
+        <td class="cell-O_@v"><span class="status-value select-value-color-green">
+            <div class="status-dot status-dot-color-green"></div>Done
+          </span></td>
+        <td class="cell-IHGk"><time>@01/13/2023</time></td>
+        <td class="cell-raWv"><a href="https://box3101.github.io/JungGu/assets/pages/비밀번호변경.html"
+            class="url-value">https://box3101.github.io/JungGu/assets/pages/비밀번호변경.html</a></td>
+        <td class="cell-cREN"></td>
+        <td class="cell-:lvC"></td>
+        <td class="cell-iUR["></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
