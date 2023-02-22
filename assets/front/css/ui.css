@@ -6439,7 +6439,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
     grid-template-columns: 6.25rem auto;
   }
   .comTable-2 th,
-.comTable-2 td {
+  .comTable-2 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -6541,7 +6541,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
     display: none;
   }
   .comSearchTable-1 th,
-.comSearchTable-1 td {
+  .comSearchTable-1 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -57759,14 +57759,14 @@ html.open {
     display: contents;
   }
   .comTable-3 tr th,
-.comTable-3 tr td {
+  .comTable-3 tr td {
     border-bottom: none !important;
     vertical-align: middle;
     display: grid;
     align-items: center;
   }
   .comTable-3 tr th .comBtn.ico-down,
-.comTable-3 tr td .comBtn.ico-down {
+  .comTable-3 tr td .comBtn.ico-down {
     padding-left: 0 !important;
     margin-left: 0 !important;
   }
@@ -57827,7 +57827,7 @@ html.open {
 }
 @media all and (max-width: 600px) {
   .comTable-1 th,
-.comTable-1 td {
+  .comTable-1 td {
     height: auto;
     border: none !important;
     border-bottom: 1px solid #ddd !important;
@@ -57901,7 +57901,7 @@ table input[type=radio] + label {
 }
 @media all and (max-width: 600px) {
   .form__wrap .form__list__id label,
-.form__wrap .form__list__pw label {
+  .form__wrap .form__list__pw label {
     font-size: 1.1rem;
     word-break: keep-all;
     text-align: left;
@@ -57981,7 +57981,7 @@ table input[type=radio] + label {
 
 @media all and (max-width: 1400px) {
   .scroll-wrap:before,
-.scroll-tbl-wrap:before {
+  .scroll-tbl-wrap:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -59107,7 +59107,7 @@ body.nopage .wrapper {
     font-weight: 500;
   }
   .certificatesWrap .descList li dl dt,
-.certificatesWrap .descList li dl dd {
+  .certificatesWrap .descList li dl dd {
     font-size: 0.7rem;
   }
   .certificatesWrap .descList li dl dt {
@@ -59181,7 +59181,7 @@ body.nopage .wrapper {
 .humanMember .tit {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #2D2D2D;
+  color: #2d2d2d;
   padding-bottom: 1.875rem;
 }
 
@@ -59189,8 +59189,8 @@ body.nopage .wrapper {
   font-size: 1.125rem;
   line-height: 1.5;
   padding: 1.5rem 0;
-  border-top: 0.125rem solid #2D2D2D;
-  border-bottom: 0.125rem solid #2D2D2D;
+  border-top: 0.125rem solid #2d2d2d;
+  border-bottom: 0.125rem solid #2d2d2d;
 }
 
 .humanMember .info strong {
@@ -59200,6 +59200,14 @@ body.nopage .wrapper {
 .humanMember .btnWrap {
   margin-top: 1.25rem;
   justify-content: center;
+}
+
+.dick-container .dick-bg-visual::before {
+  background-size: cover !important;
+}
+
+.dick-container .dick-bg-visual::after {
+  background-size: cover !important;
 }
 
 .header {
@@ -59723,7 +59731,7 @@ body.nopage .wrapper {
     margin: 0 10px;
   }
   .footer .inner,
-.footer .left {
+  .footer .left {
     flex-direction: column;
   }
   .footer .left address {
