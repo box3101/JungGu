@@ -1,412 +1,767 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes"
+		/>
+		<meta name="description" content="" />
+		<title>인천 중구청</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
-  <meta name="description" content="">
-  <title>인천 중구청</title>
+		<!-- =================== Favicon =================== -->
 
-  <!-- =================== Favicon =================== -->
+		<!-- =================== LINK =================== -->
+		<link rel="stylesheet" href="../front/css/ui.css" />
+		<link rel="stylesheet" href="../front/css/yg.css" />
 
+		<!-- =================== SCRIPT =================== -->
+		<script src="../front/js/jquery.js"></script>
+		<script src="../front/js/jquery-ui.js"></script>
+		<script src="../front/js/index.global.min.js"></script>
+		<script src="../front//js/datepicker.js"></script>
+		<script src="../front/js/swiper.js"></script>
+		<script src="../front/js/main.js"></script>
 
-  <!-- =================== LINK =================== -->
-  <link rel="stylesheet" href="../front/css/ui.css">
-  <link rel="stylesheet" href="../front/css/yg.css">
-
-  <!-- =================== SCRIPT =================== -->
-  <script src="../front/js/jquery.js"></script>
-  <script src="../front/js/jquery-ui.js"></script>
-  <script src='../front/js/index.global.min.js'></script>
-  <script src="../front//js/datepicker.js"></script>
-  <script src="../front/js/swiper.js"></script>
-  <script src="../front/js/main.js"></script>
-
-  <!-- include -->
-  <!-- <script type="text/javascript">
+		<!-- include -->
+		<!-- <script type="text/javascript">
     $(document).ready(function () {
       $("#header").load("./header.html");
       $("#footer").load("./footer.html");
     });
   </script> -->
-</head>
+	</head>
 
-<body>
+	<body>
+		<div class="skip-nav">
+			<a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+			<a href="#contentmain" tabindex="1">본문 바로가기</a>
+		</div>
 
-  <div class="skip-nav">
-    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
-    <a href="#contentmain" tabindex="1">본문 바로가기</a>
-  </div>
+		<div id="wrapper">
+			<header id="header" class="header">
+				<div class="headerWrap">
+					<div class="headerInner">
+						<h1 class="logo">
+							<a href="../pages/main.html">
+								<img
+									src="../front/img/logo.png"
+									alt="인천중구교육포털 배우는바다"
+								/>
+							</a>
+						</h1>
+						<ul class="gnb" id="gnb" tabindex="0">
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/인사말.html" class="gnbLink">
+									평생학습도시
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/인사말.html">인사말</a>
+									</li>
+									<li>
+										<a href="../pages/비전과목표.html">비전과 목표</a>
+									</li>
+									<li>
+										<a href="../pages/선언문.html">선언문</a>
+									</li>
+									<li>
+										<a href="../pages/조례.html">조례</a>
+									</li>
+									<li>
+										<a href="../pages/주요사업소개.html">주요사업 소개</a>
+									</li>
+									<li>
+										<a href="../pages/오시는길.html">오시는 길</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/수강신청.html" class="gnbLink"> 수강신청 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/수강신청.html">수강신청</a>
+									</li>
+									<li>
+										<a href="../pages/배우는바다.html">배우는바다 Online</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/평생학습기관.html" class="gnbLink">
+									네트워크
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/평생학습기관.html">평생학습기관</a>
+									</li>
+									<li>
+										<a href="../pages/평생학습동아리소개.html"
+											>평생학습동아리</a
+										>
+									</li>
+									<li>
+										<a href="../pages/우리동네강사.html">우리동네강사</a>
+									</li>
+									<li>
+										<a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
+									</li>
+									<li>
+										<a href="../pages/우리동네문화센터.html"
+											>우리동네문화센터</a
+										>
+									</li>
+									<li>
+										<a href="../pages/인천시민대학.html">인천시민대학</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/대관안내.html" class="gnbLink"> 나눔공간 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/대관안내.html">대관 안내</a>
+									</li>
+									<li>
+										<a href="../pages/대관신청.html">대관 신청</a>
+									</li>
+									<li>
+										<a href="../pages/나눔공간소개.html">나눔공간</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/공지사항.html" class="gnbLink"> 열린마당 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/공지사항.html">공지사항</a>
+									</li>
+									<li>
+										<a href="../pages/자료실.html">자료실</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/구석구석탐방.html" class="gnbLink">
+									교육혁신지구
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/구석구석탐방.html">구석구석 탐방</a>
+									</li>
+									<li>
+										<a href="../pages/중구마을학교.html">중구마을학교</a>
+									</li>
+									<li>
+										<a href="../pages/마을교육활동가.html">마을교육활동가</a>
+									</li>
+									<li>
+										<a href="../pages/교육경비지원사업.html"
+											>교육경비 지원사업</a
+										>
+									</li>
+									<li>
+										<a href="../pages/인터넷수능방송지원.html"
+											>인터넷 수능방송 지원</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="utilMenu">
+							<li>
+								<button type="button" class="myPage">
+									<span class="hidden">마이페이지</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="headerBg">
+					<div class="inner">
+						<div class="txt-wrap">
+							<p class="tit">배우는 바다</p>
+							<p class="txt">
+								인천중구 교육포털에 <br />
+								방문하신걸 환영합니다!
+							</p>
+						</div>
+						<div class="changImg"></div>
+					</div>
+				</div>
 
-  <div id="wrapper">
+				<!-- 모바일메뉴 -->
+				<nav class="mobileMenu">
+					<button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
+						<span class="menuItem"></span>
+						<span class="menuItem"></span>
+						<span class="menuItem"></span>
+					</button>
+					<div class="mobileNav">
+						<div class="moLogo">
+							<a href="../pages/main.html" tabindex="0">
+								<img
+									src="../front/img/logo.png"
+									alt="인천중구교육포털 배우는바다"
+								/>
+							</a>
+						</div>
+						<ul class="mobileNavList">
+							<li class="mobileNavItem">
+								<a href="#"> 평생학습도시 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">인사말</a>
+									</li>
+									<li>
+										<a href="#">비전과 목표</a>
+									</li>
+									<li>
+										<a href="#">선언문</a>
+									</li>
+									<li>
+										<a href="#">조례</a>
+									</li>
+									<li>
+										<a href="#">주요사업 소개</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 수강신청 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">평생학습관</a>
+									</li>
+									<li>
+										<a href="#">동행정복지센터</a>
+									</li>
+									<li>
+										<a href="#">문화센터</a>
+									</li>
+									<li>
+										<a href="#">온라인 학습</a>
+									</li>
+									<li>
+										<a href="#">중구구민대학</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 네트워크 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">평생학습기관</a>
+									</li>
+									<li>
+										<a href="#">평생학습 동아리</a>
+									</li>
+									<li>
+										<a href="#">우리동네강사</a>
+									</li>
+									<li>
+										<a href="#">찾아가는 학습</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 나눔공간 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">대관 안내</a>
+									</li>
+									<li>
+										<a href="#">대관 신청</a>
+									</li>
+									<li>
+										<a href="#">나눔공간</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 열린마당 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">공지사항</a>
+									</li>
+									<li>
+										<a href="#">공모사업 신청</a>
+									</li>
+									<li>
+										<a href="#">자료실</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 교육혁신지구 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">구석구석 탐방</a>
+									</li>
+									<li>
+										<a href="#">중구마을학교</a>
+									</li>
+									<li>
+										<a href="#">마을교육활동가</a>
+									</li>
+									<li>
+										<a href="#">교육경비 지원사업</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
 
-    <header id="header" class="header">
-      <div class="headerWrap">
-        <div class="headerInner">
-          <h1 class="logo">
-            <a href="../pages/main.html">
-              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
-            </a>
-          </h1>
-          <ul class="gnb" id="gnb" tabindex="0">
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/인사말.html" class="gnbLink">
-                평생학습도시
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/인사말.html">인사말</a>
-                </li>
-                <li>
-                  <a href="../pages/비전과목표.html">비전과 목표</a>
-                </li>
-                <li>
-                  <a href="../pages/선언문.html">선언문</a>
-                </li>
-                <li>
-                  <a href="../pages/조례.html">조례</a>
-                </li>
-                <li>
-                  <a href="../pages/주요사업소개.html">주요사업 소개</a>
-                </li>
-                <li>
-                  <a href="../pages/오시는길.html">오시는 길</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/수강신청.html" class="gnbLink">
-                수강신청 </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/수강신청.html">수강신청</a>
-                </li>
-                <li>
-                  <a href="../pages/배우는바다.html">배우는바다 Online</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/평생학습기관.html" class="gnbLink">
-                네트워크
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/평생학습기관.html">평생학습기관</a>
-                </li>
-                <li>
-                  <a href="../pages/평생학습동아리소개.html">평생학습동아리</a>
-                </li>
-                <li>
-                  <a href="../pages/우리동네강사.html">우리동네강사</a>
-                </li>
-                <li>
-                  <a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
-                </li>
-                <li>
-                  <a href="../pages/우리동네문화센터.html">우리동네문화센터</a>
-                </li>
-                <li>
-                  <a href="../pages/인천시민대학.html">인천시민대학</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/대관안내.html" class="gnbLink">
-                나눔공간
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/대관안내.html">대관 안내</a>
-                </li>
-                <li>
-                  <a href="../pages/대관신청.html">대관 신청</a>
-                </li>
-                <li>
-                  <a href="../pages/나눔공간소개.html">나눔공간</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/공지사항.html" class="gnbLink">
-                열린마당
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/공지사항.html">공지사항</a>
-                </li>
-                <li>
-                  <a href="../pages/자료실.html">자료실</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/구석구석탐방.html" class="gnbLink">
-                교육혁신지구
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/구석구석탐방.html">구석구석 탐방</a>
-                </li>
-                <li>
-                  <a href="../pages/중구마을학교.html">중구마을학교</a>
-                </li>
-                <li>
-                  <a href="../pages/마을교육활동가.html">마을교육활동가</a>
-                </li>
-                <li>
-                  <a href="../pages/교육경비지원사업.html">교육경비 지원사업</a>
-                </li>
-                <li>
-                  <a href="../pages/인터넷수능방송지원.html">인터넷 수능방송 지원</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="utilMenu">
-            <li>
-              <button type="button" class="myPage">
-                <span class="hidden">마이페이지</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="headerBg">
-        <div class="inner">
-          <div class="txt-wrap">
-            <p class="tit">배우는 바다</p>
-            <p class="txt">
-              인천중구 교육포털에 <br>
-              방문하신걸 환영합니다!
-            </p>
-          </div>
-          <div class="changImg">
-          </div>
-        </div>
-      </div>
+				<!-- gotop -->
+				<div class="goTop">
+					<button type="button" title="상단으로 이동">
+						<span class="hidden">상단으로 이동</span>
+					</button>
+				</div>
+			</header>
+			<!-- sub -->
+			<main id="sub" class="main sub">
+				<div class="contentBody">
+					<!-- 컨텐츠가 들어갈 부분 -->
+					<div class="subContent" id="contentmain" tabindex="0">
+						<div class="subHead">
+							<div class="subHead__tit">조례</div>
+							<div class="subHead__right">
+								<ul class="subHead__location">
+									<li class="home">
+										<a href="#">Home</a>
+									</li>
+									<li>
+										<a href="#">평생학습도시</a>
+									</li>
+									<li class="last">
+										<a href="#">조례 </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="subBody">
+							<!-- 서브 컨텐츠 들어가는 부분 -->
+							<div class="subcotent 배우는바다 privacyPolicy ordinance">
+								<!-- 제 1장 -->
+								<div class="row">
+									<!-- 제 1조 -->
+									<p class="row__head">
+										<span class="title__icon">제1장</span> 총칙
+									</p>
+									<div class="row__body">
+										<ul class="txtWrap notindent row__icon">
+											<li>
+												제1조(목적) 이 조례는 「평생교육법」 제5조에 따라
+												인천광역시 중구의 평생교육 진흥을 도모하고 평생학습도시
+												조성사업을 원활하게 추진하기 위하여 그에 필요한 사항을
+												정함을 목적으로 한다.
+											</li>
+											<li class="mt7">
+												제2조(정의) 이 조례에서 사용하는 용어의 뜻은 다음 각
+												호와 같다.
+											</li>
+										</ul>
+										<p class="txtWrap ml-20">
+											1. “평생교육”이란학교의 정규교육과정을 제외한
+											학력보완교육, 성인 기초·문자해득교육, 직업능력 향상교육,
+											인문교양교육, 문화예술교육, 시민참여교육 등을 포함하는
+											모든 형태의 조직적 교육활동을 말한다.
+										</p>
+										<p class="txtWrap ml-20">
+											2. “평생교육기관”이란평생교육을 주된 목적으로 하는
+											인천광역시 중구(이하 “구”라한다) 소재 시설·법인 또는
+											단체를 말한다.
+										</p>
+										<p class="txtWrap ml-20">
+											3. “평생학습센터”란구에 주소를 가진 주민(이하
+											“구민”이라한다)들에게 평생학습 기회를 제공하기 위하여 구
+											소재 또는 인터넷 상에 설치·운영하는 센터를 말한다.
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제3조(책무)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 인천광역시 중구청장(이하 “구청장”이라한다)은 평생교육을
+											통하여 양질의 교육서비스를 제공함으로써 구민의 삶의 질과
+											지역 경쟁력을 향상시키고 배움과 나눔이 실천되는
+											평생학습도시 조성에 노력해야 한다.
+										</p>
+										<p class="txtWrap pl20">
+											② 구청장은 구민 누구나, 언제, 어디서나 원하는 교육을 받을
+											수 있는 여건을 만들기 위하여 평생교육에 관한 정책개발 및
+											조사연구 계획을 수립하고 지원정책을 적극적으로 추진해야
+											한다.
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제4조(지원)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 구청장은 평생교육 진흥계획의 추진에 필요한 재원을
+											확보해야 한다.
+										</p>
+										<p class="txtWrap pl20">
+											② 구청장은 평생교육 진흥을 위하여 학습참여자와
+											평생교육기관에 대하여 예산의 범위에서 학습과 그 운영에
+											필요한 경비를 지원할 수 있다.
+										</p>
+										<p class="txtWrap pl20">
+											③ 제2항에 따른 경비의 지원에 관하여 필요한 사항은
+											「인천광역시 중구 지방보조금 관리 조례」에따른다.
+										</p>
+									</div>
+								</div>
 
-      <!-- 모바일메뉴 -->
-      <nav class="mobileMenu">
-        <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
-          <span class="menuItem"></span>
-          <span class="menuItem"></span>
-          <span class="menuItem"></span>
-        </button>
-        <div class="mobileNav">
-          <div class="moLogo">
-            <a href="../pages/main.html" tabindex="0">
-              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
-            </a>
-          </div>
-          <ul class="mobileNavList">
-            <li class="mobileNavItem">
-              <a href="#">
-                평생학습도시
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">인사말</a>
-                </li>
-                <li>
-                  <a href="#">비전과 목표</a>
-                </li>
-                <li>
-                  <a href="#">선언문</a>
-                </li>
-                <li>
-                  <a href="#">조례</a>
-                </li>
-                <li>
-                  <a href="#">주요사업 소개</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                수강신청
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">평생학습관</a>
-                </li>
-                <li>
-                  <a href="#">동행정복지센터</a>
-                </li>
-                <li>
-                  <a href="#">문화센터</a>
-                </li>
-                <li>
-                  <a href="#">온라인 학습</a>
-                </li>
-                <li>
-                  <a href="#">중구구민대학</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                네트워크
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">평생학습기관</a>
-                </li>
-                <li>
-                  <a href="#">평생학습 동아리</a>
-                </li>
-                <li>
-                  <a href="#">우리동네강사</a>
-                </li>
-                <li>
-                  <a href="#">찾아가는 학습</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                나눔공간
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">대관 안내</a>
-                </li>
-                <li>
-                  <a href="#">대관 신청</a>
-                </li>
-                <li>
-                  <a href="#">나눔공간</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                열린마당
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">공지사항</a>
-                </li>
-                <li>
-                  <a href="#">공모사업 신청</a>
-                </li>
-                <li>
-                  <a href="#">자료실</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                교육혁신지구
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">구석구석 탐방</a>
-                </li>
-                <li>
-                  <a href="#">중구마을학교</a>
-                </li>
-                <li>
-                  <a href="#">마을교육활동가</a>
-                </li>
-                <li>
-                  <a href="#">교육경비 지원사업</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
+								<!-- 제 2장 -->
+								<div class="row">
+									<p class="row__head">
+										<span class="title__icon">제2장</span> 평생교육협의회
+									</p>
+									<div class="row__body">
+										<ul class="txtWrap notindent row__icon">
+											<li>제5조(설치 및 기능)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 구청장은 「평생교육법」제14조에 따라 구민을 위한
+											평생교육의 실시와 관련되는 사업 간 조정 및 유관기관 간
+											협력 증진을 위하여 인천광역시 중구 평생교육협의회(이하
+											“협의회”라한다)를 둔다.
+										</p>
+										<p class="txtWrap pl20">
+											② 협의회는 평생교육에 관한 다음 각 호의 사항을 협의
+											조정하고 구청장의 자문에 응한다.
+										</p>
+										<p class="txtWrap ml41">
+											1. 기본계획의 수립 및 효율적 운영
+										</p>
+										<p class="txtWrap ml41">
+											2. 평생교육기관의 운영·지원 및 기관 간의 협력·조정
+										</p>
+										<p class="txtWrap ml41">3. 평생학습센터의 설치·운영</p>
+										<p class="txtWrap ml41">
+											4. 그 밖에 구청장이 필요하다고 인정하여 회의에 부치는 사항
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제6조(구성)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 협의회는 의장과 부의장 각 1명을 포함한 12명 이내의
+											위원으로 구성하되, 위촉직및 당연직위원으로 구성한다.
+										</p>
+										<p class="txtWrap pl20">
+											② 의장은 구청장이 되고, 부의장은 위원 중에서 서로 뽑는다.
+										</p>
+										<p class="txtWrap pl20">
+											③ 위촉직위원은 성별을 고려하여 구청장이 평생학습에 관한
+											학식과 경험이 풍부한 사람, 인천광역시 중구의회 의장이
+											추천하는 의원, 관할 교육청 교육장 중에서 위촉하고
+											당연직위원은 행정복지국장, 국제도시행정국장으로 한다.
+											<개정 2019. 2. 18., 2019. 9. 30.>
+										</p>
+										<p class="txtWrap pl20">
+											④ 협의회의 원활한 사무 처리를 위하여 간사 1명을 두되,
+											간사는 평생교육과장이 되며 협의회에 출석하여 발언을 할 수
+											있다. <개정 2017. 9. 29., 2019. 2. 18., 2021.12.31.>
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt7">
+												제7조(위원의 임기) 위촉직위원의 임기는 2년으로 하되
+												연임할 수 있으며, 당연직위원 및 기관의 장으로서 위촉되는
+												위원의 임기는 그 직위의 재임 기간으로 한다. 다만,
+												위촉직위원의 해촉에따라 새로 위촉된 위원의 임기는
+												전임자의 남은 임기로 한다.
+											</li>
+										</ul>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제8조(의장 등의 직무)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 의장은 협의회를 대표하며 협의회의 사무를 관장한다.
+										</p>
+										<p class="txtWrap pl20">
+											② 부의장은 의장을 보좌하며 의장이 부득이한 사유로 직무를
+											수행할 수 없을 때 그 직무를 대행한다.
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제9조(회의)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 협의회는 다음 각 호의 어느 하나에 해당하는 경우 의장이
+											소집한다.
+										</p>
+										<p class="txtWrap ml41">1. 의장이 필요하다고 인정할 경우</p>
+										<p class="txtWrap ml41">
+											2. 구청장이 회의에 부치는 안건이 접수된 경우
+										</p>
+										<p class="txtWrap ml41">
+											3. 재적위원 3분의 1 이상의 회의소집 요구가 있을 경우
+										</p>
+										<p class="txtWrap pl20">
+											② 협의회의 회의는 재적위원 과반수의 출석으로 개의하고,
+											출석위원 과반수의 찬성으로 의결한다. 다만, 가부동수일때는
+											의장이 결정한다.
+										</p>
+										<p class="txtWrap pl20">
+											③ 협의회는 관련 업무수행에 필요할 경우 관계기관,
+											관계전문가 그 밖의 관련자 등을 참석시켜의견을 듣거나 자료
+											및 서류의 제출 등 필요한 협조를 요청할 수 있다. ④ 협의회는
+											의장이 필요하다고 인정할 경우에는 서면으로 심의·의결할 수
+											있다.
+										</p>
+										<p class="txtWrap pl20">
+											④ 협의회는 의장이 필요하다고 인정할 경우에는 서면으로
+											심의·의결할 수 있다.
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">제10조(실무위원회)</li>
+										</ul>
+										<p class="txtWrap pl20">
+											① 협의회는 평생교육기관 간 업무조정 및 협력증진과 그
+											효율적 운영을 위하여 실무위원회를 구성·운영할 수 있다.
+										</p>
+										<p class="txtWrap pl20">
+											② 실무위원회는 다음 각 호의 사항을 협의·조정한다.
+										</p>
+										<p class="txtWrap ml41">
+											1. 평생학습도시 조성사업 운영 및 지원
+										</p>
+										<p class="txtWrap ml41">
+											2. 평생교육기관과의 프로그램 개발 및 연계체계 구축
+										</p>
+										<p class="txtWrap ml41">
+											3. 평생교육기관과의 정보교류와 업무 조정이 필요한 사항
+										</p>
+										<p class="txtWrap ml41">
+											4. 평생교육관련 각종 공모사업 심사·선정
+										</p>
+										<p class="txtWrap ml41">
+											5. 그 밖에 의장이 필요하다고 인정하는 사항
+										</p>
+										<p class="txtWrap pl20">
+											③ 실무위원회는 위원장을 포함하여 7명 이내의 위원으로
+											구성하되 위원장은 복지경제국장이 되고, 위원은 의장이
+											평생교육기관의 장이 추천하는 실무책임자 중에서 위촉한다.
+											<개정 2019. 2. 18.>
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">
+												제11조(회의록) 간사는 회의가 개최된 때에는 다음 각 호의
+												사항이 포함된 회의록을 작성·비치해야 한다.
+											</li>
+										</ul>
+										<p class="txtWrap ml41">1. 회의개최 일시 및 장소</p>
+										<p class="txtWrap ml41">2. 출석위원 성명</p>
+										<p class="txtWrap ml41">3. 회의·심의안건 및 결과</p>
+										<p class="txtWrap ml41">
+											4. 그 밖에 의장이 필요하다고 인정하는 사항
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">
+												제12조(해촉) 의장은 위원이 다음 각 호의 어느 하나에
+												해당하는 때에는 임기 중에도 그 위원을 해촉할수 있다.
+											</li>
+										</ul>
+										<p class="txtWrap ml41">
+											1. 본인 의사에 따라 사임을 원한 때
+										</p>
+										<p class="txtWrap ml41">
+											2. 장기치료를 요하는 질병 등 부득이한 사정으로 임무를
+											수행하기 어려운 때
+										</p>
+										<p class="txtWrap ml41">
+											3. 그 밖에 협의회 목적에 반하는 행위 또는 품위손상 등으로
+											위원으로서 부적격하다고인정된 때
+										</p>
+										<ul class="txtWrap notindent row__icon">
+											<li class="mt5">
+												제13조(수당 등) 협의회 및 실무위원회의 회의에 출석한
+												위원에게는 「인천광역시 중구 소속 위원회의
+												설치ㆍ운영에관한 조례」 제9조에 따라 예산의 범위에서
+												수당 및 여비를 지급할 수 있다.  <개정 2016.5.30.,
+												2022.5.18.>
+											</li>
+											<li class="mt10">
+												제14조(운영규정) 이 조례에서 정한 것 외에 협의회의
+												운영에 필요한 사항은 협의회의 의결을 거쳐 의장이 정한다.
+											</li>
+										</ul>
 
-      <!-- gotop -->
-      <div class="goTop">
-        <button type="button" title="상단으로 이동">
-          <span class="hidden">상단으로 이동</span>
-        </button>
-      </div>
-    </header>
-    <!-- sub -->
-    <main id="sub" class="main sub">
-      <div class="contentBody">
-        <!-- 컨텐츠가 들어갈 부분 -->
-        <div class="subContent" id="contentmain" tabindex="0">
-          <div class="subHead">
-            <div class="subHead__tit">조례
-            </div>
-            <div class="subHead__right">
-              <ul class="subHead__location">
-                <li class="home">
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">평생학습도시</a>
-                </li>
-                <li class="last">
-                  <a href="#">조례
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="subBody">
-            <!-- 서브 컨텐츠 들어가는 부분 -->
-            <div class="subcotent 배우는바다">
-            </div>
-            <!-- 서브 컨텐츠 들어가는 부분 eee -->
-          </div>
-          <!-- 컨텐츠가 들어갈 부분 eee -->
-        </div>
-      </div>
-    </main>
-    <!-- sub eee -->
+                  <div class="row">
+										<p class="row__head">
+											<span class="title__icon">제3장</span> 평생학습센터
+										</p>
+										<div class="row__body">
+												<ul class="txtWrap notindent row__icon">
+													<li>
+														제15조(설치)
+													</li>
+												</ul>
+												<p class="txtWrap pl20">
+													① 구청장은 구민들에게 평생교육 프로그램 운영, 평생교육
+													기회 등을 제공하기 위하여 인천광역시 중구 평생학습센터(이
+													조례에서 “평생학습센터”라한다)를 구 소재 또는 인터넷 상에
+													설치할 수 있다. <개정 2019. 2. 18.>
+												</p>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">
+														제16조(기능) 평생학습센터는 평생교육에 관한 다음 각 호의
+														기능을 수행한다.
+													</li>
+												</ul>
+												<p class="txtWrap ml39">1. 관련 정책개발 및 연구</p>
+												<p class="txtWrap ml39">2. 프로그램 개발 및 운영</p>
+												<p class="txtWrap ml39">
+													3. 관련 기관 간 연계체제 구축 및 지원
+												</p>
+												<p class="txtWrap ml39">4. 정보 수집 및 제공</p>
+												<p class="txtWrap ml39">5. 종사자 전문성 향상 사업</p>
+												<p class="txtWrap ml39">6. 학습동아리 육성·지원 사업</p>
+												<p class="txtWrap ml39">
+													7. 축제(박람회를 말한다) 등 특화사업 추진
+												</p>
+												<p class="txtWrap ml39">8. 소외계층 평생교육 진흥사업</p>
+												<p class="txtWrap ml39">
+													9. 그 밖에 구청장이 필요하다고 인정하는 기능
+												</p>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">제17조(운영)</li>
+												</ul>
+												<p class="txtWrap pl20">
+													① 평생학습센터는 구청장이 관리·운영함을 원칙으로 하되,
+													평생교육사업의 효율적 추진을 위하여 그 관리·운영을
+													평생교육과 관련이 있는 법인 또는 공공기관에 위탁할 수
+													있다.
+												</p>
+												<p class="txtWrap pl20">
+													② 구청장은 평생학습센터의 효율적인 운영을 위하여 센터장과
+													평생교육사 등 필요한 직원을 둘 수 있다. 다만, 구
+													재정여건을 고려하여 평생교육과장에게 센터장의 업무를
+													수행하게 할 수 있다. <개정 2017. 9. 29., 2019. 2. 18.,
+													2021.12.31.>
+												</p>
+												<p class="txtWrap pl20">
+													③ 제2항에 따른 센터장과 직원의 자격기준은 규칙으로 정한다.
+												</p>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">
+														제18조(위탁의 철회) 구청장은 제17조에 따른
+														평생학습센터의 위탁운영자가 다음 각 호의 어느 하나에
+														해당하는 경우 위탁을 철회할 수 있다.
+													</li>
+												</ul>
+												<p class="txtWrap ml39">
+													1. 파산 등으로 평생학습센터 관리·운영이 곤란한 경우
+												</p>
+												<p class="txtWrap ml39">2. 위탁조건을 위반한 경우</p>
+												<p class="txtWrap ml39">
+													3. 그 밖에 구청장이 공익상 필요하다고 인정한 경우
+												</p>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">제19조(수강료의 징수 등)</li>
+												</ul>
+												<p class="txtWrap pl20">
+													① 구청장은 평생학습센터에서 운영하는 프로그램에 대하여
+													이용자로부터 수강료 등을 징수할 수 있다.
+												</p>
+												<p class="txtWrap pl20">
+													② 제1항에 따라 징수하는 수강료 등은 수익자부담 원칙과
+													공공성을 고려하여 합리적으로 정해야 하며, 평생교육
+													활성화를 위하여 구청장이 필요하다고 인정할 때에는 협의회의
+													의견을 들어서 수강료 등을 감면하거나 일부 강좌의 운영을
+													무료로 할 수 있다.
+												</p>
+												<p class="txtWrap pl20">
+													③ 수강료의 금액, 징수방법 등은 협의회의 의견을 들어서
+													구청장이 정한다.
+												</p>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">
+														제20조(자원봉사자) 구청장은 평생학습센터의 운영에 필요한
+														자원봉사자를 적극적으로 모집·활용하고 자원봉사자에게는
+														「인천광역시 중구 자원봉사활동 지원 조례」에따라 예산의
+														범위에서 실비를 지급할 수 있다.
+													</li>
+													<li class="mt10">
+														제21조(수료자에 대한 예우) 구청장은 구 주관으로 실시하는
+														평생교육을 수료한 사람에게는 수료증을 교부할 수 있으며,
+														우수 수료자에 대하여 표창을 할 수 있다.
+													</li>
+												</ul>
+											</div>
+										</div>
 
-    <!-- footer -->
-    <footer id="footer" class="footer">
-      <div class="footer__nav">
-        <ul>
-          <li>
-            <a href="개인정보처리방침.html">개인정보처리방침</a>
-          </li>
-          <li>
-            <a href="#">저작권침해정책</a>
-          </li>
-          <li>
-            <a href="#">홈페이지 이용안내</a>
-          </li>
-          <li>
-            <a href="#">누리집 지도</a>
-          </li>
-          <li>
-            <a href="#">찾아오시는길</a>
-          </li>
-        </ul>
-      </div>
-      <div class="inner">
-        <div class="left">
-          <div class="logo">
-            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
-          </div>
-          <address>
-            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
-            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
-            E-Mail icjunggu@korea.kr
-          </address>
-        </div>
-        <div class="comSelectBox">
-          <label for="a3"></label>
-          <select name="" id="a3" class="comSelect">
-            <option value="">패밀리사이트</option>
-            <option value="">전체2</option>
-          </select>
-        </div>
-      </div>
-    </footer>
-    <!-- footer eee -->
-  </div>
+										<div class="row">
+											<p class="row__head">
+												<span class="title__icon">제4장</span>보칙
+											</p>
+										<div class="row__body">
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">제22조(지도·감독) 구청장은 평생교육 진흥과 관련하여 공공기관, 단체, 시설 등에 지원된 경비가 목적대로 사용되고 있는지 연 한 차례 이상 확인하고 지도·감독해야 한다.</li>
+												</ul>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">제23조(공동사업 추진) 구청장은 평생학습도시 조성 및 평생교육진흥사업의 원활한 추진을 위하여 필요하다고 인정할 경우에는 지역교육청 등 유관기관 및 민간단체와 공동으로 사업을 추진할 수 있다.</li>
+												</ul>
+												<ul class="txtWrap notindent row__icon">
+													<li class="mt5">제24조(시행규칙) 이 조례의 시행에 관하여 필요한 사항은 규칙으로 정한다.
+													부칙<조례 제1032호, 2012.12.31>
+													이 조례는 공포한 날부터 시행한다</li>
+												</ul>
+										</div>
+									</div>
+								</div>
+							<!-- 서브 컨텐츠 들어가는 부분 eee -->
+						</div>
+						<!-- 컨텐츠가 들어갈 부분 eee -->
+					</div>
+				</div>
+			</main>
+			<!-- sub eee -->
 
-
-</body>
-
+			<!-- footer -->
+			<footer id="footer" class="footer">
+				<div class="footer__nav">
+					<ul>
+						<li>
+							<a href="개인정보처리방침.html">개인정보처리방침</a>
+						</li>
+						<li>
+							<a href="#">저작권침해정책</a>
+						</li>
+						<li>
+							<a href="#">홈페이지 이용안내</a>
+						</li>
+						<li>
+							<a href="#">누리집 지도</a>
+						</li>
+						<li>
+							<a href="#">찾아오시는길</a>
+						</li>
+					</ul>
+				</div>
+				<div class="inner">
+					<div class="left">
+						<div class="logo">
+							<img src="../front/img/fot-logo.svg" alt="인천광역시중구" />
+						</div>
+						<address>
+							[22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br />
+							대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222,
+							(영종국제도시) 032-760-8910 <br />
+							E-Mail icjunggu@korea.kr
+						</address>
+					</div>
+					<div class="comSelectBox">
+						<label for="a3"></label>
+						<select name="" id="a3" class="comSelect">
+							<option value="">패밀리사이트</option>
+							<option value="">전체2</option>
+						</select>
+					</div>
+				</div>
+			</footer>
+			<!-- footer eee -->
+		</div>
+	</body>
 </html>
