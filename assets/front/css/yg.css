@@ -1380,6 +1380,9 @@ a {
   word-break: keep-all;
 }
 
+.ordinance .definition .txtWrap .txt {
+  text-align: right;
+}
 .ordinance .row__body {
   position: relative;
 }
