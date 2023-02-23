@@ -1422,6 +1422,16 @@ a {
   text-align: center;
 }
 
+.classRegistration .join .agreeRow span {
+  font-weight: bold;
+}
+
+.common .site {
+  width: 400px;
+  height: 400px;
+  margin-top: 1.5rem;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 0.875rem;

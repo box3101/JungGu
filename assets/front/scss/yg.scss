@@ -1477,6 +1477,16 @@
 	}
 }
 
+.classRegistration .join .agreeRow span {
+	font-weight: bold;
+}
+
+.common .site {
+	width: 400px;
+	height: 400px;
+	margin-top: 1.5rem;
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
