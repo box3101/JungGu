@@ -2482,6 +2482,9 @@ body.nopage .wrapper {
 	}
 }
 @include media($mo) {
+	.comDescTxt {
+		line-height: 1.5;
+	}
 	.subHead {
 		flex-direction: column;
 		align-items: flex-start;
@@ -2496,7 +2499,14 @@ body.nopage .wrapper {
 		align-self: flex-start;
 		margin-top: 5px;
 	}
+	.comTable-2.pl8 .comInput.textRight {
+		width: 100% !important;
+	}
 }
 .inputDateWrap input {
 	width: 9.375rem;
+}
+.join .agreeOk {
+	align-items: center;
+	display: flex;
 }

@@ -43,22 +43,23 @@
 		position: relative;
 		padding: 0.625rem 1.25rem;
 		padding-left: 0;
+		@include media($mo) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 
-		.hint{
+		.hint {
 			display: none;
 		}
 
 		.hint p {
-			position: absolute;
-			top: 1.2rem;
-			left: 18rem;
+			position: relative;
+			margin-left: 10px;
 			color: darkred;
 			font-size: 1rem;
 
 			@include media($web) {
-				top: 0.5rem;
-				width: 9rem;
-				line-height: 1.3;
+				width: 100%;
 			}
 		}
 	}
@@ -73,7 +74,7 @@
 	&__form {
 		display: inline-block;
 		width: 100%;
-		.desc-txt{
+		.desc-txt {
 			display: inline-block;
 			font-size: 0.9rem;
 			margin-top: 0.4rem;
@@ -310,15 +311,15 @@
 		padding-top: 0.5rem !important;
 	}
 }
-.subcotent .form__wrap .connect a{
-	font-size: 1rem!important;
-	color: #2D2D2D;
+.subcotent .form__wrap .connect a {
+	font-size: 1rem !important;
+	color: #2d2d2d;
 	font-weight: 500;
 }
-.subcotent .form__wrap .connect a:hover{
+.subcotent .form__wrap .connect a:hover {
 	color: $cMain;
 }
-.subcotent .form__wrap .connect.joinbt li a{
+.subcotent .form__wrap .connect.joinbt li a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -326,92 +327,106 @@
 	font-weight: 500;
 	text-align: center;
 }
-.subcotent .form__wrap .connect li{
-	padding-bottom: 0.7rem!important;
+.subcotent .form__wrap .connect li {
+	padding-bottom: 0.7rem !important;
 }
-.subcotent .form__wrap .connect.joinbt li:first-of-type .comBtn:hover{
-	background: #FEE500!important;
+.subcotent .form__wrap .connect.joinbt li:first-of-type .comBtn:hover {
+	background: #fee500 !important;
 }
-.subcotent .form__wrap .connect.joinbt li:nth-of-type(2) .comBtn:hover{
-	background: #03C75A!important;
+.subcotent .form__wrap .connect.joinbt li:nth-of-type(2) .comBtn:hover {
+	background: #03c75a !important;
 }
-.subcotent .form__wrap .connect.joinbt li:first-of-type .comBtn{
-	@include before{
+.subcotent .form__wrap .connect.joinbt li:first-of-type .comBtn {
+	@include before {
 		@include pCenterY;
 		top: 1.0625rem;
-		left: 50%; transform: translateX(-7.8125rem);
-		@include bg-url("img","ico-kakao.svg");
+		left: 50%;
+		transform: translateX(-7.8125rem);
+		@include bg-url("img", "ico-kakao.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		width: 1.125rem;
 		height: 1rem;
 	}
 	position: relative;
-	background: #FEE500;
-	border: 0.0625rem solid #FEE500;
-	color: #000!important;
-	font-size: 1.125rem!important;
+	background: #fee500;
+	border: 0.0625rem solid #fee500;
+	color: #000 !important;
+	font-size: 1.125rem !important;
 }
-.subcotent .form__wrap .connect.joinbt li:nth-of-type(2) .comBtn{
-	@include before{
+.subcotent .form__wrap .connect.joinbt li:nth-of-type(2) .comBtn {
+	@include before {
 		@include pCenterY;
 		top: 1.0625rem;
-		left: 50%; transform: translateX(-7.8125rem);
-		@include bg-url("img","ico-naver.svg");
+		left: 50%;
+		transform: translateX(-7.8125rem);
+		@include bg-url("img", "ico-naver.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		width: 0.9375rem;
 		height: 0.9375rem;
 	}
 	position: relative;
-	background: #03C75A;
-	border: 0.0625rem solid #03C75A;
-	color: #fff!important;
-	font-size: 1.125rem!important;
+	background: #03c75a;
+	border: 0.0625rem solid #03c75a;
+	color: #fff !important;
+	font-size: 1.125rem !important;
 }
-.subcotent .form__wrap .connect.one-pass .comBtn{
+.subcotent .form__wrap .connect.one-pass .comBtn {
 	margin-top: 20px;
-	@include before{
+	@include before {
 		@include pCenterY;
 		top: 1.0625rem;
-		left: 50%; transform: translateX(-7.8125rem);
-		@include bg-url("img","ico-onepass.svg");
+		left: 50%;
+		transform: translateX(-7.8125rem);
+		@include bg-url("img", "ico-onepass.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		width: 0.9375rem;
 		height: 0.9375rem;
 	}
 	position: relative;
-	background: #1C2674;
-	border: 0.0625rem solid #1C2674;
-	color: #fff!important;
-	font-size: 1.125rem!important;
+	background: #1c2674;
+	border: 0.0625rem solid #1c2674;
+	color: #fff !important;
+	font-size: 1.125rem !important;
 }
-.subcotent .form__wrap .connect .comBtn{
-	color: #000!important;
-	display: flex; align-items: center; justify-content: center;
+.subcotent .form__wrap .connect .comBtn {
+	color: #000 !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.subcotent .form__wrap .connect  .comBtn:hover{
-	color: #fff!important;
+.subcotent .form__wrap .connect .comBtn:hover {
+	color: #fff !important;
 }
 
-.membership{
+.membership {
 	padding: 20px 0;
 	border-bottom: 2px solid #000;
-	li{
+	li {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		height: 32px;
 		padding: 3px 0;
-		p{
-			font-size: 16px; font-weight: 500; color: #555555;
+		p {
+			font-size: 16px;
+			font-weight: 500;
+			color: #555555;
 		}
-		a{
+		a {
 			display: inline-block;
-			width: 120px; height: 32px; line-height: 32px;
-			text-align: center; line-height: 32px; background: #555555;
-			font-size: 16px; font-weight: 500; border-radius: 5px; color: #fff;
+			width: 120px;
+			height: 32px;
+			line-height: 32px;
+			text-align: center;
+			line-height: 32px;
+			background: #555555;
+			font-size: 16px;
+			font-weight: 500;
+			border-radius: 5px;
+			color: #fff;
 		}
 	}
 }

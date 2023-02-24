@@ -318,6 +318,7 @@ input:read-only(:not(.close)) {
 	cursor: pointer;
 	&:first-of-type {
 		margin-left: 0;
+		pointer-events: none;
 	}
 	&:focus {
 		outline: 0.0625rem dotted #000 !important;
@@ -403,10 +404,10 @@ input[type="checkbox"]:focus {
 	cursor: pointer;
 	color: #333 !important;
 }
-.formRadio input[type="radio"]:disabled+label{
+.formRadio input[type="radio"]:disabled + label {
 	pointer-events: none;
 	opacity: 0.4;
-	color: #aaa!important;
+	color: #aaa !important;
 	font-weight: 300;
 }
 .formRadio label:before {
