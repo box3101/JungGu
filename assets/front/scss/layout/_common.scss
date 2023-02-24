@@ -2419,15 +2419,51 @@ body.nopage .wrapper {
 .dick-container .dick-bg-visual::after {
 	background-size: cover !important;
 }
-.ordinance .row__body ul{
+.ordinance .row__body ul {
 	text-indent: -1.5625rem;
 	padding-left: 1.8rem;
 }
-.ordinance{
-	.txtWrap.pl20{
-			text-indent: -1.4375rem;
-			padding-left: 2.9rem!important;
-			word-break: keep-all;
-			line-height: 1.5;
+.ordinance {
+	.txtWrap.pl20 {
+		text-indent: -1.4375rem;
+		padding-left: 2.9rem !important;
+		word-break: keep-all;
+		line-height: 1.5;
 	}
+}
+
+.qr-code {
+	text-align: center;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	&-tit {
+		font-size: 2rem;
+		margin-bottom: 3rem;
+	}
+	&-info {
+		opacity: 1;
+		padding: 0 10px;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		margin-bottom: 3rem;
+		input {
+			height: 40px;
+			margin: 5px 0;
+			font-size: 15px;
+		}
+	}
+	.comBtn {
+		opacity: 1;
+		font-size: 20px;
+		height: 40px;
+		width: 40%;
+	}
+}
+.comTable-2.pl8 {
+	padding-left: 2.0625rem !important;
+	box-sizing: border-box;
 }

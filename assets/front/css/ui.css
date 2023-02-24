@@ -59222,6 +59222,43 @@ body.nopage .wrapper {
   line-height: 1.5;
 }
 
+.qr-code {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.qr-code-tit {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.qr-code-info {
+  opacity: 1;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3rem;
+}
+.qr-code-info input {
+  height: 40px;
+  margin: 5px 0;
+  font-size: 15px;
+}
+.qr-code .comBtn {
+  opacity: 1;
+  font-size: 20px;
+  height: 40px;
+  width: 40%;
+}
+
+.comTable-2.pl8 {
+  padding-left: 2.0625rem !important;
+  box-sizing: border-box;
+}
+
 .header {
   position: relative;
 }
