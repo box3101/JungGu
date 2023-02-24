@@ -6038,12 +6038,13 @@ button {
 .comBtn.ico-down {
   font-weight: bold;
   margin: 0.5rem 0 0.5rem 1.0625rem;
-  display: inline-block;
+  display: -webkit-inline-box;
   padding-left: 2rem;
 }
 @media all and (max-width: 600px) {
   .comBtn.ico-down {
     width: 100%;
+    display: block;
   }
 }
 .comBtn.ico-down:before {

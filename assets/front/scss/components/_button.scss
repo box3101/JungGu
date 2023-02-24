@@ -57,10 +57,11 @@ button {
 	&.ico-down {
 		font-weight: bold;
 		margin: 0.5rem 0 0.5rem 1.0625rem;
-		display: inline-block;
+		display: -webkit-inline-box;
 		padding-left: 2rem;
 		@include media($mo) {
 			width: 100%;
+			display: block;
 		}
 		@include before {
 			position: absolute;
