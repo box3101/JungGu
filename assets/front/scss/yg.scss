@@ -1468,9 +1468,17 @@
 	}
 }
 
+.subcotent .introType .row__body {
+	flex-wrap: wrap;
+}
+
 .introType .list-1 {
 	.kk1 {
 		height: 29.25rem !important;
+		width: 535px;
+	}
+	.kk2 {
+		width: 535px;
 	}
 	.center {
 		text-align: center;
@@ -1482,11 +1490,18 @@
 }
 
 .common .site {
-	width: 400px;
-	height: 400px;
+	width: 25rem;
+	height: 25rem;
 	margin-top: 1.5rem;
 }
 
+.comPopupWrap .red {
+	color: red;
+}
+
+.comSubTab {
+	justify-content: center !important;
+}
 // 미디어 쿼리
 @include media($web) {
 	html {
@@ -1859,4 +1874,10 @@
 	.dick-container {
 		width: 100%;
 	}
+
+	// 	.common .site {
+	// 	width: 400px;
+	// 	height: 400px;
+	// 	margin-top: 1.5rem;
+	// }
 }

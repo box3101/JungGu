@@ -1415,8 +1415,16 @@ a {
   margin-left: 2.35rem !important;
 }
 
+.subcotent .introType .row__body {
+  flex-wrap: wrap;
+}
+
 .introType .list-1 .kk1 {
   height: 29.25rem !important;
+  width: 535px;
+}
+.introType .list-1 .kk2 {
+  width: 535px;
 }
 .introType .list-1 .center {
   text-align: center;
@@ -1427,9 +1435,17 @@ a {
 }
 
 .common .site {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
   margin-top: 1.5rem;
+}
+
+.comPopupWrap .red {
+  color: red;
+}
+
+.comSubTab {
+  justify-content: center !important;
 }
 
 @media all and (max-width: 1400px) {
