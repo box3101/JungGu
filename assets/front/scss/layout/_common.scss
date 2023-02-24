@@ -2466,4 +2466,37 @@ body.nopage .wrapper {
 .comTable-2.pl8 {
 	padding-left: 2.0625rem !important;
 	box-sizing: border-box;
+	.comInput.textRight {
+		width: 150px !important;
+	}
+}
+.comTable-2 th > label {
+	line-height: 1.5;
+}
+@include media($web) {
+	.header .headerBg.on {
+		display: none !important;
+	}
+	.subHead__location li:first-child:before {
+		left: -18px;
+	}
+}
+@include media($mo) {
+	.subHead {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.subHead__location li {
+		flex: none;
+	}
+	.subHead__tit {
+		flex: none;
+	}
+	.subHead__right {
+		align-self: flex-start;
+		margin-top: 5px;
+	}
+}
+.inputDateWrap input {
+	width: 9.375rem;
 }
