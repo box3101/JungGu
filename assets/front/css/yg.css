@@ -321,6 +321,7 @@ a {
   font-weight: bold;
   font-size: 1.25rem;
   color: #2d2d2d !important;
+  padding-left: 0px !important;
 }
 .lecture.info .pl-26 {
   padding-left: 1.625rem;
@@ -1440,10 +1441,6 @@ a {
   margin-top: 1.5rem;
 }
 
-.comPopupWrap .red {
-  color: red;
-}
-
 .comSubTab {
   justify-content: center !important;
 }
@@ -1724,6 +1721,20 @@ a {
   }
   .dick-container {
     width: 100%;
+  }
+  .common .site {
+    width: 100%;
+  }
+  .introType .list-1 .kk1 {
+    height: 29.25rem !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .introType .list-1 .kk2 {
+    margin-top: 3rem;
+    height: 29.25rem !important;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
