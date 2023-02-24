@@ -1445,6 +1445,14 @@ a {
   justify-content: center !important;
 }
 
+.list-circle > li {
+  line-height: 1.9;
+}
+
+.introType .list-2 > li {
+  line-height: 1.9 !important;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 0.875rem;

@@ -1,582 +1,590 @@
 <!DOCTYPE html>
 <html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes"
+		/>
+		<meta name="description" content="" />
+		<title>인천 중구청</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport"
-    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=10.0,user-scalable=yes" />
-  <meta name="description" content="">
-  <title>인천 중구청</title>
+		<!-- =================== Favicon =================== -->
 
-  <!-- =================== Favicon =================== -->
+		<!-- =================== LINK =================== -->
+		<link rel="stylesheet" href="../front/css/ui.css" />
+		<link rel="stylesheet" href="../front/css/yg.css" />
 
+		<!-- =================== SCRIPT =================== -->
+		<script src="../front/js/jquery.js"></script>
+		<script src="../front/js/jquery-ui.js"></script>
+		<script src="../front/js/index.global.min.js"></script>
+		<script src="../front//js/datepicker.js"></script>
+		<script src="../front/js/swiper.js"></script>
+		<script src="../front/js/main.js"></script>
 
-  <!-- =================== LINK =================== -->
-  <link rel="stylesheet" href="../front/css/ui.css">
-  <link rel="stylesheet" href="../front/css/yg.css">
-
-  <!-- =================== SCRIPT =================== -->
-  <script src="../front/js/jquery.js"></script>
-  <script src="../front/js/jquery-ui.js"></script>
-  <script src='../front/js/index.global.min.js'></script>
-  <script src="../front//js/datepicker.js"></script>
-  <script src="../front/js/swiper.js"></script>
-  <script src="../front/js/main.js"></script>
-
-  <!-- include -->
-  <!-- <script type="text/javascript">
+		<!-- include -->
+		<!-- <script type="text/javascript">
     $(document).ready(function () {
       $("#header").load("./header.html");
       $("#footer").load("./footer.html");
     });
   </script> -->
-</head>
+	</head>
 
-<body>
+	<body>
+		<div class="skip-nav">
+			<a href="#gnb" tabindex="1">주메뉴 바로가기</a>
+			<a href="#contentmain" tabindex="1">본문 바로가기</a>
+		</div>
 
-  <div class="skip-nav">
-    <a href="#gnb" tabindex="1">주메뉴 바로가기</a>
-    <a href="#contentmain" tabindex="1">본문 바로가기</a>
-  </div>
+		<div id="wrapper">
+			<header id="header" class="header">
+				<div class="headerWrap">
+					<div class="headerInner">
+						<h1 class="logo">
+							<a href="../pages/main.html">
+								<img
+									src="../front/img/logo.png"
+									alt="인천중구교육포털 배우는바다"
+								/>
+							</a>
+						</h1>
+						<ul class="gnb" id="gnb" tabindex="0">
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/인사말.html" class="gnbLink">
+									평생학습도시
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/인사말.html">인사말</a>
+									</li>
+									<li>
+										<a href="../pages/비전과목표.html">비전과 목표</a>
+									</li>
+									<li>
+										<a href="../pages/선언문.html">선언문</a>
+									</li>
+									<li>
+										<a href="../pages/조례.html">조례</a>
+									</li>
+									<li>
+										<a href="../pages/주요사업소개.html">주요사업 소개</a>
+									</li>
+									<li>
+										<a href="../pages/오시는길.html">오시는 길</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/수강신청.html" class="gnbLink"> 수강신청 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/수강신청.html">수강신청</a>
+									</li>
+									<li>
+										<a href="../pages/배우는바다.html">배우는바다 Online</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/평생학습기관.html" class="gnbLink">
+									네트워크
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/평생학습기관.html">평생학습기관</a>
+									</li>
+									<li>
+										<a href="../pages/평생학습동아리소개.html"
+											>평생학습동아리</a
+										>
+									</li>
+									<li>
+										<a href="../pages/우리동네강사.html">우리동네강사</a>
+									</li>
+									<li>
+										<a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
+									</li>
+									<li>
+										<a href="../pages/우리동네문화센터.html"
+											>우리동네문화센터</a
+										>
+									</li>
+									<li>
+										<a href="../pages/인천시민대학.html">인천시민대학</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/대관안내.html" class="gnbLink"> 나눔공간 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/대관안내.html">대관 안내</a>
+									</li>
+									<li>
+										<a href="../pages/대관신청.html">대관 신청</a>
+									</li>
+									<li>
+										<a href="../pages/나눔공간.html">나눔공간</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo.png">
+								<a href="../pages/공지사항.html" class="gnbLink"> 열린마당 </a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/공지사항.html">공지사항</a>
+									</li>
+									<li>
+										<a href="../pages/자료실.html">자료실</a>
+									</li>
+								</ul>
+							</li>
+							<li class="gnbItem" data-img="../front/img/logo2.png">
+								<a href="../pages/구석구석탐방.html" class="gnbLink">
+									교육혁신지구
+								</a>
+								<ul class="subPanel">
+									<li>
+										<a href="../pages/구석구석탐방.html">구석구석 탐방</a>
+									</li>
+									<li>
+										<a href="../pages/중구마을학교.html">중구마을학교</a>
+									</li>
+									<li>
+										<a href="../pages/마을교육활동가.html">마을교육활동가</a>
+									</li>
+									<li>
+										<a href="../pages/교육경비지원사업.html"
+											>교육경비 지원사업</a
+										>
+									</li>
+									<li>
+										<a href="../pages/인터넷수능방송지원.html"
+											>인터넷 수능방송 지원</a
+										>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="utilMenu">
+							<li>
+								<button type="button" class="myPage">
+									<span class="hidden">마이페이지</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="headerBg">
+					<div class="inner">
+						<div class="changImg"></div>
+					</div>
+				</div>
 
-  <div id="wrapper">
+				<!-- 모바일메뉴 -->
+				<nav class="mobileMenu">
+					<button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
+						<span class="menuItem"></span>
+						<span class="menuItem"></span>
+						<span class="menuItem"></span>
+					</button>
+					<div class="mobileNav">
+						<div class="moLogo">
+							<a href="../pages/main.html" tabindex="0">
+								<img
+									src="../front/img/logo.png"
+									alt="인천중구교육포털 배우는바다"
+								/>
+							</a>
+						</div>
+						<ul class="mobileNavList">
+							<li class="mobileNavItem">
+								<a href="#"> 평생학습도시 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">인사말</a>
+									</li>
+									<li>
+										<a href="#">비전과 목표</a>
+									</li>
+									<li>
+										<a href="#">선언문</a>
+									</li>
+									<li>
+										<a href="#">조례</a>
+									</li>
+									<li>
+										<a href="#">주요사업 소개</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 수강신청 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">평생학습관</a>
+									</li>
+									<li>
+										<a href="#">동행정복지센터</a>
+									</li>
+									<li>
+										<a href="#">문화센터</a>
+									</li>
+									<li>
+										<a href="#">온라인 학습</a>
+									</li>
+									<li>
+										<a href="#">중구구민대학</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 네트워크 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">평생학습기관</a>
+									</li>
+									<li>
+										<a href="#">평생학습 동아리</a>
+									</li>
+									<li>
+										<a href="#">우리동네강사</a>
+									</li>
+									<li>
+										<a href="#">찾아가는 학습</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 나눔공간 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">대관 안내</a>
+									</li>
+									<li>
+										<a href="#">대관 신청</a>
+									</li>
+									<li>
+										<a href="#">나눔공간</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 열린마당 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">공지사항</a>
+									</li>
+									<li>
+										<a href="#">공모사업 신청</a>
+									</li>
+									<li>
+										<a href="#">자료실</a>
+									</li>
+								</ul>
+							</li>
+							<li class="mobileNavItem">
+								<a href="#"> 교육혁신지구 </a>
+								<ul class="dapth2">
+									<li>
+										<a href="#">구석구석 탐방</a>
+									</li>
+									<li>
+										<a href="#">중구마을학교</a>
+									</li>
+									<li>
+										<a href="#">마을교육활동가</a>
+									</li>
+									<li>
+										<a href="#">교육경비 지원사업</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
 
-    <header id="header" class="header">
-      <div class="headerWrap">
-        <div class="headerInner">
-          <h1 class="logo">
-            <a href="../pages/main.html">
-              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
-            </a>
-          </h1>
-          <ul class="gnb" id="gnb" tabindex="0">
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/인사말.html" class="gnbLink">
-                평생학습도시
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/인사말.html">인사말</a>
-                </li>
-                <li>
-                  <a href="../pages/비전과목표.html">비전과 목표</a>
-                </li>
-                <li>
-                  <a href="../pages/선언문.html">선언문</a>
-                </li>
-                <li>
-                  <a href="../pages/조례.html">조례</a>
-                </li>
-                <li>
-                  <a href="../pages/주요사업소개.html">주요사업 소개</a>
-                </li>
-                <li>
-                  <a href="../pages/오시는길.html">오시는 길</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/수강신청.html" class="gnbLink">
-                수강신청 </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/수강신청.html">수강신청</a>
-                </li>
-                <li>
-                  <a href="../pages/배우는바다.html">배우는바다 Online</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/평생학습기관.html" class="gnbLink">
-                네트워크
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/평생학습기관.html">평생학습기관</a>
-                </li>
-                <li>
-                  <a href="../pages/평생학습동아리소개.html">평생학습동아리</a>
-                </li>
-                <li>
-                  <a href="../pages/우리동네강사.html">우리동네강사</a>
-                </li>
-                <li>
-                  <a href="../pages/찾아가는강좌.html">찾아가는 강좌</a>
-                </li>
-                <li>
-                  <a href="../pages/우리동네문화센터.html">우리동네문화센터</a>
-                </li>
-                <li>
-                  <a href="../pages/인천시민대학.html">인천시민대학</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/대관안내.html" class="gnbLink">
-                나눔공간
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/대관안내.html">대관 안내</a>
-                </li>
-                <li>
-                  <a href="../pages/대관신청.html">대관 신청</a>
-                </li>
-                <li>
-                  <a href="../pages/나눔공간.html">나눔공간</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo.png">
-              <a href="../pages/공지사항.html" class="gnbLink">
-                열린마당
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/공지사항.html">공지사항</a>
-                </li>
-                <li>
-                  <a href="../pages/자료실.html">자료실</a>
-                </li>
-              </ul>
-            </li>
-            <li class="gnbItem" data-img="../front/img/logo2.png">
-              <a href="../pages/구석구석탐방.html" class="gnbLink">
-                교육혁신지구
-              </a>
-              <ul class="subPanel">
-                <li>
-                  <a href="../pages/구석구석탐방.html">구석구석 탐방</a>
-                </li>
-                <li>
-                  <a href="../pages/중구마을학교.html">중구마을학교</a>
-                </li>
-                <li>
-                  <a href="../pages/마을교육활동가.html">마을교육활동가</a>
-                </li>
-                <li>
-                  <a href="../pages/교육경비지원사업.html">교육경비 지원사업</a>
-                </li>
-                <li>
-                  <a href="../pages/인터넷수능방송지원.html">인터넷 수능방송 지원</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <ul class="utilMenu">
-            <li>
-              <button type="button" class="myPage">
-                <span class="hidden">마이페이지</span>
-              </button>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="headerBg">
-        <div class="inner">
-          <div class="changImg">
-          </div>
-        </div>
-      </div>
+				<!-- gotop -->
+				<div class="goTop">
+					<button type="button" title="상단으로 이동">
+						<span class="hidden">상단으로 이동</span>
+					</button>
+				</div>
+			</header>
+			<!-- sub -->
+			<main id="sub" class="main sub">
+				<div class="contentBody">
+					<!-- 컨텐츠가 들어갈 부분 -->
+					<div class="subContent" id="contentmain" tabindex="0">
+						<div class="subHead">
+							<div class="subHead__tit">교육경비지원사업</div>
+							<div class="subHead__right">
+								<ul class="subHead__location">
+									<li class="home">
+										<a href="#">Home</a>
+									</li>
+									<li>
+										<a href="#">교육혁신지구</a>
+									</li>
+									<li class="last">
+										<a href="#">교육경비지원사업 </a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="subBody">
+							<!-- 서브 컨텐츠 들어가는 부분 -->
+							<div class="subcotent 배우는바다 common work">
+								<p class="row__head pt0">
+									<span class="title__icon">교육경비 지원사업</span>
+								</p>
+								<div class="row__body pl30">
+									<p class="content">
+										관내 소재 “고등학교 이하 각급학교” 및 “종일제 운영 유치원”의
+										교육여건 개선 및 학력 향상을 위해 각종 사업경비의 일부를
+										지원함으로써 공교육의 질적 향상을 도모하고, 지역 내 교육격차
+										해소를 통해 균형 있는 선진교육 환경을 조성하고자 합니다.
+									</p>
+									<ul class="list-img flex gap20">
+										<li>
+											<img
+												src="../front/img/sub-img04.jpg"
+												alt="논슬립 설치공사 (송도중)"
+											/>
+											<div class="txtwrap-2">
+												<span>논슬립 설치공사 (송도중)</span>
+											</div>
+										</li>
+										<li>
+											<img
+												src="../front/img/sub-img05.jpg"
+												alt="전자칠판 설치 (인성초)"
+											/>
+											<div class="txtwrap-2">전자칠판 설치 (인성초)</div>
+										</li>
+										<li>
+											<img
+												src="../front/img/sub-img06.jpg"
+												alt="하늘악기교실 운영 (하늘초)"
+											/>
+											<div class="txtwrap-2">하늘악기교실 운영 (하늘초)</div>
+										</li>
+									</ul>
+								</div>
+								<p class="row__head">
+									<span class="title__icon">관련근거 </span>
+								</p>
+								<div class="row__body">
+									<ul class="list-1">
+										<li>지방교육재정교부금법 제11조 제8항</li>
+										<li class="mt15">
+											지방자치단체의 교육경비 보조에 관한 규정 제2조
+										</li>
+										<li class="mt15">
+											유아교육법 제27조 및 유아교육법 시행령 제33조
+										</li>
+										<li class="mt15">
+											인천광역시 중구 교육경비 보조에 관한 조례
+										</li>
+									</ul>
+								</div>
+								<p class="row__head">
+									<span class="title__icon">추진방향(2022년 기준) </span>
+								</p>
+								<div class="row__body">
+									<ul class="list-1">
+										<li>
+											각급학교 교육환경 개선 및 학력향상을 위한 교육특성화
+											프로그램 운영 지원
+										</li>
+										<li class="mt15">학교폭력예방사업 교육경비 지원</li>
+										<li class="mt15">유치원에 대한 교육환경개선사업 지원</li>
+									</ul>
+								</div>
+								<p class="row__head">
+									<span class="title__icon"
+										>사업예산 : 1,580,000천원 (2022년 기준)
+									</span>
+								</p>
+								<div class="row__body">
+									<table>
+										<caption class="hidden">
+											구분, 주요사업내용, 지원예산을 설명하는 표
+										</caption>
+										<tbody>
+											<tr>
+												<th scope="col">주요사업내용</th>
+												<th scope="col">지원예산</th>
+											</tr>
+											<tr>
+												<th scope="row">합계</th>
+												<td>1,580,000천원</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													교육환경 개선 및 특성화프로그램 운영 지원
+												</th>
+												<td>1,424,000천원</td>
+											</tr>
+											<tr>
+												<th scope="row">학교폭력예방사업 지원</th>
+												<td>80,000천원</td>
+											</tr>
+											<tr>
+												<th scope="row">
+													종일제 운영 유치원 교육환경개선사업 지원
+												</th>
+												<td>76,000천원</td>
+											</tr>
+										</tbody>
+									</table>
+									<ul class="list-1"></ul>
+								</div>
+								<p class="row__head">
+									<span class="title__icon">세부지원사항 </span>
+								</p>
+								<div class="row__body">
+									<ul class="list-3">
+										<li>1. 교육환경 개선 및 교육특성화 프로그램 지원</li>
+										<li class="before-none">
+											<table>
+												<caption class="hidden">
+													사업구분, 사업분야, 세부내역(예시), 교육환경 개선,
+													교육특성화 프로그램 운영을 설명하는 표
+												</caption>
+												<tbody>
+													<tr>
+														<th scope="col">사업구분</th>
+														<th scope="col">사업분야</th>
+														<th scope="col">세부내역(예시)</th>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="4">교육환경 개선</th>
+														<td>보건위생</td>
+														<td>급식시설 개선, 음수대개선 등</td>
+													</tr>
+													<tr>
+														<td>교육정보화</td>
+														<td>
+															컴퓨터, 빔프로젝터등 정보화 기기(※ 학생용에 한함)
+														</td>
+													</tr>
+													<tr>
+														<td>특별교실 조성</td>
+														<td>방송실, 실습실, 평생교육실등 조성 및 개선</td>
+													</tr>
+													<tr>
+														<td>기타시설 개선</td>
+														<td>각종 학교의 제반시설개선 및 안전도 향상</td>
+													</tr>
+													<tr>
+														<th scope="row" rowspan="3">
+															교육특성화 프로그램 운영
+														</th>
+														<td>각학력향상 교육(기초학력 향상)</td>
+														<td>
+															독서·논술 교실, 방과후 학교 프로그램 운영 확대,
+															<br />
+															동아리 활동지원, 자기주도 학습프로그램 운영
+														</td>
+													</tr>
+													<tr>
+														<td>특기적성 교육 강화(인재육성)</td>
+														<td>
+															외국어(중국어 등) 교실, 과학교실, 예술활동, <br />
+															체형교정 등 체육활동, 특기적성 및 인재육성
+															프로그램 운영
+														</td>
+													</tr>
+													<tr>
+														<td>그 외 학교 제안 프로그램 공모</td>
+														<td>학교별 여건에 맞는 특성화 교육 프로그램</td>
+													</tr>
+												</tbody>
+											</table>
+										</li>
+									</ul>
+								</div>
+								<div class="row__body">
+									<ul class="list-3">
+										<li>
+											2. 교육환경 개선 및 교육특성화 프로그램 지원
+											<ul class="list-1">
+												<li>학교폭력예방 교육비(외부강사료)</li>
+												<li class="mt15">학교폭력예방 관련 공연 관람비</li>
+												<li class="mt15">학교폭력예방 캠페인 등 활동비</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+								<div class="row__body">
+									<ul class="list-3">
+										<li>
+											3. 유치원 교육환경 개선사업 지원
+											<ul class="list-1">
+												<li>
+													시설보수 등 환경개선, 교육교재·교구 구입비 지원
+													(소모품 구입 등 소모성 경비 및 인건비는 지원 제외)
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- 서브 컨텐츠 들어가는 부분 eee -->
+						</div>
+						<!-- 컨텐츠가 들어갈 부분 eee -->
+					</div>
+				</div>
+			</main>
+			<!-- sub eee -->
 
-      <!-- 모바일메뉴 -->
-      <nav class="mobileMenu">
-        <button type="button" class="menuToggle" title="모바일 메뉴 토글버튼">
-          <span class="menuItem"></span>
-          <span class="menuItem"></span>
-          <span class="menuItem"></span>
-        </button>
-        <div class="mobileNav">
-          <div class="moLogo">
-            <a href="../pages/main.html" tabindex="0">
-              <img src="../front/img/logo.png" alt="인천중구교육포털 배우는바다">
-            </a>
-          </div>
-          <ul class="mobileNavList">
-            <li class="mobileNavItem">
-              <a href="#">
-                평생학습도시
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">인사말</a>
-                </li>
-                <li>
-                  <a href="#">비전과 목표</a>
-                </li>
-                <li>
-                  <a href="#">선언문</a>
-                </li>
-                <li>
-                  <a href="#">조례</a>
-                </li>
-                <li>
-                  <a href="#">주요사업 소개</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                수강신청
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">평생학습관</a>
-                </li>
-                <li>
-                  <a href="#">동행정복지센터</a>
-                </li>
-                <li>
-                  <a href="#">문화센터</a>
-                </li>
-                <li>
-                  <a href="#">온라인 학습</a>
-                </li>
-                <li>
-                  <a href="#">중구구민대학</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                네트워크
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">평생학습기관</a>
-                </li>
-                <li>
-                  <a href="#">평생학습 동아리</a>
-                </li>
-                <li>
-                  <a href="#">우리동네강사</a>
-                </li>
-                <li>
-                  <a href="#">찾아가는 학습</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                나눔공간
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">대관 안내</a>
-                </li>
-                <li>
-                  <a href="#">대관 신청</a>
-                </li>
-                <li>
-                  <a href="#">나눔공간</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                열린마당
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">공지사항</a>
-                </li>
-                <li>
-                  <a href="#">공모사업 신청</a>
-                </li>
-                <li>
-                  <a href="#">자료실</a>
-                </li>
-              </ul>
-            </li>
-            <li class="mobileNavItem">
-              <a href="#">
-                교육혁신지구
-              </a>
-              <ul class="dapth2">
-                <li>
-                  <a href="#">구석구석 탐방</a>
-                </li>
-                <li>
-                  <a href="#">중구마을학교</a>
-                </li>
-                <li>
-                  <a href="#">마을교육활동가</a>
-                </li>
-                <li>
-                  <a href="#">교육경비 지원사업</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <!-- gotop -->
-      <div class="goTop">
-        <button type="button" title="상단으로 이동">
-          <span class="hidden">상단으로 이동</span>
-        </button>
-      </div>
-    </header>
-    <!-- sub -->
-    <main id="sub" class="main sub">
-      <div class="contentBody">
-        <!-- 컨텐츠가 들어갈 부분 -->
-        <div class="subContent" id="contentmain" tabindex="0">
-          <div class="subHead">
-            <div class="subHead__tit">교육경비지원사업
-            </div>
-            <div class="subHead__right">
-              <ul class="subHead__location">
-                <li class="home">
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">교육혁신지구</a>
-                </li>
-                <li class="last">
-                  <a href="#">교육경비지원사업
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="subBody">
-            <!-- 서브 컨텐츠 들어가는 부분 -->
-            <div class="subcotent 배우는바다 common work">
-              <p class="row__head pt0">
-                <span class="title__icon">교육경비 지원사업</span>
-              </p>
-              <div class="row__body pl30">
-                <p class="content">
-                  관내 소재 “고등학교 이하 각급학교” 및 “종일제 운영 유치원”의 교육여건 개선 및 학력 향상을 위해 각종 사업경비의 일부를 지원함으로써 공교육의 질적 향상을 도모하고, 지역 내 교육격차 해소를 통해 균형 있는 선진교육 환경을 조성하고자 합니다.
-                </p>
-                <ul class="list-img flex gap20">
-                  <li>
-                    <img src="../front/img/sub-img04.jpg" alt="논슬립 설치공사 (송도중)">
-                    <div class="txtwrap-2"><span>논슬립 설치공사 (송도중)</span></div>
-                  </li>
-                  <li>
-                    <img src="../front/img/sub-img05.jpg" alt="전자칠판 설치 (인성초)">
-                    <div class="txtwrap-2">전자칠판 설치 (인성초)</div>
-                  </li>
-                  <li>
-                    <img src="../front/img/sub-img06.jpg" alt="하늘악기교실 운영 (하늘초)">
-                    <div class="txtwrap-2">하늘악기교실 운영 (하늘초)</div>
-                  </li>
-                </ul>
-              </div>
-              <p class="row__head">
-                <span class="title__icon">관련근거
-                </span>
-              </p>
-              <div class="row__body">
-                <ul class="list-1">
-                  <li>
-                    지방교육재정교부금법 제11조 제8항
-                  </li>
-                  <li>
-                    지방자치단체의 교육경비 보조에 관한 규정 제2조
-                  </li>
-                  <li>
-                    유아교육법 제27조 및 유아교육법 시행령 제33조
-                  </li>
-                  <li>
-                    인천광역시 중구 교육경비 보조에 관한 조례
-                  </li>
-                </ul>
-              </div>
-              <p class="row__head">
-                <span class="title__icon">추진방향(2022년 기준)
-                </span>
-              </p>
-              <div class="row__body">
-                <ul class="list-1">
-                  <li>
-                    각급학교 교육환경 개선 및 학력향상을 위한 교육특성화 프로그램 운영 지원
-                  </li>
-                  <li>
-                    학교폭력예방사업 교육경비 지원
-                  </li>
-                  <li>
-                    유치원에 대한 교육환경개선사업 지원
-                  </li>
-                </ul>
-              </div>
-              <p class="row__head">
-                <span class="title__icon">사업예산 : 1,580,000천원 (2022년 기준)
-                </span>
-              </p>
-              <div class="row__body">
-                <table>
-                  <caption class="hidden">구분, 주요사업내용, 지원예산을 설명하는 표</caption>
-                  <tbody>
-                    <tr>
-                      <th scope="col">주요사업내용</th>
-                      <th scope="col">지원예산</th>
-                    </tr>
-                    <tr>
-                      <th scope="row">합계</th>
-                      <td>1,580,000천원</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">교육환경 개선 및 특성화프로그램 운영 지원</th>
-                      <td>1,424,000천원</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">학교폭력예방사업 지원</th>
-                      <td>80,000천원</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">종일제 운영 유치원 교육환경개선사업 지원</th>
-                      <td>76,000천원</td>
-                    </tr>
-                  </tbody>
-                </table>
-                <ul class="list-1">
-                </ul>
-              </div>
-              <p class="row__head">
-                <span class="title__icon">세부지원사항
-                </span>
-              </p>
-              <div class="row__body">
-                <ul class="list-3">
-                  <li>
-                    1. 교육환경 개선 및 교육특성화 프로그램 지원
-                  </li>
-                  <li class="before-none">
-                    <table>
-                      <caption class="hidden">사업구분, 사업분야, 세부내역(예시), 교육환경 개선, 교육특성화 프로그램 운영을 설명하는 표</caption>
-                      <tbody>
-                        <tr>
-                          <th scope="col">사업구분</th>
-                          <th scope="col">사업분야</th>
-                          <th scope="col">세부내역(예시)</th>
-                        </tr>
-                        <tr>
-                          <th scope="row" rowspan="4">교육환경 개선</th>
-                          <td>보건위생</td>
-                          <td>급식시설 개선, 음수대개선 등</td>
-                        </tr>
-                        <tr>
-                          <td>교육정보화</td>
-                          <td>컴퓨터, 빔프로젝터등 정보화 기기(※ 학생용에 한함)</td>
-                        </tr>
-                        <tr>
-                          <td>특별교실 조성</td>
-                          <td>방송실, 실습실, 평생교육실등 조성 및 개선</td>
-                        </tr>
-                        <tr>
-                          <td>기타시설 개선</td>
-                          <td>각종 학교의 제반시설개선 및 안전도 향상</td>
-                        </tr>
-                        <tr>
-                          <th scope="row" rowspan="3">교육특성화 프로그램 운영</th>
-                          <td>각학력향상 교육(기초학력 향상)</td>
-                          <td>독서·논술 교실, 방과후 학교 프로그램 운영 확대, <br>
-                            동아리 활동지원, 자기주도 학습프로그램 운영</td>
-                        </tr>
-                        <tr>
-                          <td>특기적성 교육 강화(인재육성)</td>
-                          <td>외국어(중국어 등) 교실, 과학교실, 예술활동, <br>
-                            체형교정 등 체육활동, 특기적성 및 인재육성 프로그램 운영</td>
-                        </tr>
-                        <tr>
-                          <td>그 외 학교 제안 프로그램 공모</td>
-                          <td>학교별 여건에 맞는 특성화 교육 프로그램</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </li>
-                </ul>
-              </div>
-                <div class="row__body">
-                  <ul class="list-3">
-                    <li>
-                      2. 교육환경 개선 및 교육특성화 프로그램 지원
-                      <ul class="list-1">
-                        <li>
-                          학교폭력예방 교육비(외부강사료)
-                        </li>
-                        <li>
-                          학교폭력예방 관련 공연 관람비
-                        </li>
-                        <li>
-                          학교폭력예방 캠페인 등 활동비
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-                <div class="row__body">
-                  <ul class="list-3">
-                    <li>
-                      3. 유치원 교육환경 개선사업 지원
-                      <ul class="list-1">
-                        <li>
-                          시설보수 등 환경개선, 교육교재·교구 구입비 지원 (소모품 구입 등 소모성 경비 및 인건비는 지원 제외)
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- 서브 컨텐츠 들어가는 부분 eee -->
-            </div>
-            <!-- 컨텐츠가 들어갈 부분 eee -->
-          </div>
-        </div>
-      </main>
-    <!-- sub eee -->
-    
-    <!-- footer -->
-    <footer id="footer" class="footer">
-      <div class="footer__nav">
-        <ul>
-          <li>
-            <a href="개인정보처리방침.html">개인정보처리방침</a>
-          </li>
-          <li>
-            <a href="#">저작권침해정책</a>
-          </li>
-          <li>
-            <a href="#">홈페이지 이용안내</a>
-          </li>
-          <li>
-            <a href="#">누리집 지도</a>
-          </li>
-          <li>
-            <a href="#">찾아오시는길</a>
-          </li>
-        </ul>
-      </div>
-      <div class="inner">
-        <div class="left">
-          <div class="logo">
-            <img src="../front/img/fot-logo.svg" alt="인천광역시중구">
-          </div>
-          <address>
-            [22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br>
-            대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222, (영종국제도시) 032-760-8910 <br>
-            E-Mail icjunggu@korea.kr
-          </address>
-        </div>
-        <div class="comSelectBox">
-          <label for="a3"></label>
-          <select name="" id="a3" class="comSelect">
-            <option value="">패밀리사이트</option>
-            <option value="">전체2</option>
-          </select>
-        </div>
-      </div>
-    </footer>
-    <!-- footer eee -->
-  </div>
-
-
-</body>
-
+			<!-- footer -->
+			<footer id="footer" class="footer">
+				<div class="footer__nav">
+					<ul>
+						<li>
+							<a href="개인정보처리방침.html">개인정보처리방침</a>
+						</li>
+						<li>
+							<a href="#">저작권침해정책</a>
+						</li>
+						<li>
+							<a href="#">홈페이지 이용안내</a>
+						</li>
+						<li>
+							<a href="#">누리집 지도</a>
+						</li>
+						<li>
+							<a href="#">찾아오시는길</a>
+						</li>
+					</ul>
+				</div>
+				<div class="inner">
+					<div class="left">
+						<div class="logo">
+							<img src="../front/img/fot-logo.svg" alt="인천광역시중구" />
+						</div>
+						<address>
+							[22315] 인천광역시 중구 신포로27번길 80 (관동1가) <br />
+							대표번호 032-760-7114｜야간 당직실(원도심) 032-760-7222,
+							(영종국제도시) 032-760-8910 <br />
+							E-Mail icjunggu@korea.kr
+						</address>
+					</div>
+					<div class="comSelectBox">
+						<label for="a3"></label>
+						<select name="" id="a3" class="comSelect">
+							<option value="">패밀리사이트</option>
+							<option value="">전체2</option>
+						</select>
+					</div>
+				</div>
+			</footer>
+			<!-- footer eee -->
+		</div>
+	</body>
 </html>

@@ -1499,6 +1499,15 @@
 .comSubTab {
 	justify-content: center !important;
 }
+
+.list-circle > li {
+	line-height: 1.9;
+}
+
+.introType .list-2 > li {
+	line-height: 1.9 !important;
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
