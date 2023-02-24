@@ -166,10 +166,9 @@
 .lecture {
 	&.detail {
 		margin-top: 3.125rem;
-
-		p {
-			line-height: 1.75rem;
-		}
+	}
+	&.line-height {
+		line-height: 1.75rem;
 	}
 
 	&.info {
@@ -1506,6 +1505,10 @@
 
 .introType .list-2 > li {
 	line-height: 1.9 !important;
+}
+
+.row__head.center {
+	justify-content: center;
 }
 
 // 미디어 쿼리

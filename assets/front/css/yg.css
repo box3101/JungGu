@@ -310,7 +310,7 @@ a {
 .lecture.detail {
   margin-top: 3.125rem;
 }
-.lecture.detail p {
+.lecture.line-height {
   line-height: 1.75rem;
 }
 .lecture.info span {
@@ -1451,6 +1451,10 @@ a {
 
 .introType .list-2 > li {
   line-height: 1.9 !important;
+}
+
+.row__head.center {
+  justify-content: center;
 }
 
 @media all and (max-width: 1400px) {
