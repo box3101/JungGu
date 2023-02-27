@@ -1511,6 +1511,15 @@
 	justify-content: center;
 }
 
+.utilMenu li {
+	@include flex(center, center, null);
+	flex-direction: column;
+	span {
+		white-space: nowrap;
+		padding-top: 0.25rem;
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {

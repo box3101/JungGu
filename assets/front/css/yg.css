@@ -1457,6 +1457,17 @@ a {
   justify-content: center;
 }
 
+.utilMenu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.utilMenu li span {
+  white-space: nowrap;
+  padding-top: 0.25rem;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 0.875rem;
