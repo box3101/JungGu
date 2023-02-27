@@ -1421,10 +1421,11 @@ a {
 }
 
 .introType .list-1 .kk1 {
-  height: 29.25rem !important;
+  height: 25.25rem !important;
   width: 535px;
 }
 .introType .list-1 .kk2 {
+  height: 25.25rem !important;
   width: 535px;
 }
 .introType .list-1 .center {
@@ -1523,6 +1524,12 @@ a {
   .flow-top-tit span,
   .flow-bottom-tit span {
     font-size: 1.575rem;
+  }
+  .introType .list-1 .kk1 {
+    height: 27.25rem !important;
+  }
+  .introType .list-1 .kk2 {
+    height: 27.25rem !important;
   }
 }
 @media all and (max-width: 900px) {
@@ -1635,6 +1642,12 @@ a {
   .flow-top-tit span,
   .flow-bottom-tit span {
     font-size: 1.675rem;
+  }
+  .introType .list-1 .kk1 {
+    height: 28.25rem !important;
+  }
+  .introType .list-1 .kk2 {
+    height: 28.25rem !important;
   }
 }
 @media all and (max-width: 600px) {
