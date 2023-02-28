@@ -1526,6 +1526,13 @@
 	background-size: contain !important;
 }
 
+.mobileMenu .utilMenu .mypage {
+	background-size: contain !important;
+}
+.mobileMenu .utilMenu .logout {
+	background-size: contain !important;
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {

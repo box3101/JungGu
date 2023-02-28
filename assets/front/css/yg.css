@@ -1474,6 +1474,14 @@ a {
   background-size: contain !important;
 }
 
+.mobileMenu .utilMenu .mypage {
+  background-size: contain !important;
+}
+
+.mobileMenu .utilMenu .logout {
+  background-size: contain !important;
+}
+
 @media all and (max-width: 1400px) {
   html {
     font-size: 0.875rem;
