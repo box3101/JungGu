@@ -1006,6 +1006,13 @@ a {
 .common .trip {
   flex-wrap: wrap;
 }
+.common .trip img {
+  width: 18% !important;
+  height: 10rem !important;
+  object-fit: cover;
+  border-radius: 10px;
+  flex: 1;
+}
 .common .pl30 {
   padding: 1rem 0 0 1.875rem;
 }
@@ -1416,10 +1423,6 @@ a {
   margin-left: 2.35rem !important;
 }
 
-.subcotent .introType .row__body {
-  flex-wrap: wrap;
-}
-
 .introType .list-1 .kk1 {
   height: 25.25rem !important;
   width: 535px;
@@ -1621,7 +1624,7 @@ a {
     height: 4rem;
   }
   .subcotent.common.active .row__body .list-img li {
-    flex: 0 0 30%;
+    flex: 0 0 33%;
   }
   .subcotent.common.active .row__body .list-img li .txtwrap-2 {
     height: 3.5rem;
@@ -1661,6 +1664,14 @@ a {
   }
   .introType .list-1 .kk2 {
     height: 28.25rem !important;
+  }
+  .common .row__body .trip {
+    gap: 2rem;
+  }
+  .common .row__body .trip img {
+    flex: 0 0 33%;
+    height: 13rem !important;
+    object-fit: cover;
   }
 }
 @media all and (max-width: 600px) {
@@ -1784,6 +1795,15 @@ a {
     height: 29.25rem !important;
     width: 100%;
     box-sizing: border-box;
+  }
+  .common .row__body .trip {
+    gap: 2rem;
+  }
+  .common .row__body .trip img {
+    width: 100% !important;
+    height: 25rem !important;
+    object-fit: cover;
+    flex: 1 0 auto;
   }
 }
 
