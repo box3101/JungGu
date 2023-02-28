@@ -1517,8 +1517,13 @@
 	flex-direction: column;
 	span {
 		white-space: nowrap;
-		padding-top: 0.25rem;
+		padding-top: 0.45rem;
+		font-size: 0.9rem;
 	}
+}
+
+.headerWrap .headerInner .utilMenu li .mypage {
+	background-size: contain !important;
 }
 
 // 미디어 쿼리

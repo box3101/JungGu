@@ -1466,7 +1466,12 @@ a {
 }
 .utilMenu li span {
   white-space: nowrap;
-  padding-top: 0.25rem;
+  padding-top: 0.45rem;
+  font-size: 0.9rem;
+}
+
+.headerWrap .headerInner .utilMenu li .mypage {
+  background-size: contain !important;
 }
 
 @media all and (max-width: 1400px) {

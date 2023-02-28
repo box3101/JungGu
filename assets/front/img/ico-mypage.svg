@@ -1,17 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
-  <defs>
-    <clipPath id="clip-path">
-      <rect id="사각형_275" data-name="사각형 275" width="24" height="24" transform="translate(0.372 0.372)" fill="none"/>
-    </clipPath>
-  </defs>
-  <g id="그룹_653" data-name="그룹 653" transform="translate(-0.372 -0.372)" clip-path="url(#clip-path)">
-    <g id="그룹_2349" data-name="그룹 2349" transform="translate(1.409 1.436)">
-      <g id="그룹_2350" data-name="그룹 2350">
-        <path id="패스_2420" data-name="패스 2420" d="M22.4,11.45A10.95,10.95,0,1,1,11.45.5,10.951,10.951,0,0,1,22.4,11.45" transform="translate(-0.5 -0.5)" fill="#fff" stroke="#2d2d2d" stroke-width="1"/>
-        <path id="패스_2422" data-name="패스 2422" d="M10.95,0a11.074,11.074,0,0,1,8.684,4.279A10.7,10.7,0,0,1,21.9,10.95,10.95,10.95,0,1,1,10.95,0Z" fill="none" stroke="#2d2d2d" stroke-width="2"/>
-        <circle id="타원_40" data-name="타원 40" cx="3.783" cy="3.783" r="3.783" transform="translate(7.136 4.852)" fill="none" stroke="#2d2d2d" stroke-linejoin="round" stroke-width="2"/>
-        <path id="패스_2421" data-name="패스 2421" d="M19.307,20.656a8.469,8.469,0,0,0-1.291-1.923,8.4,8.4,0,0,0-12.271-.3,8.508,8.508,0,0,0-1.57,2.221" transform="translate(-0.822 -1.849)" fill="none" stroke="#2d2d2d" stroke-linejoin="round" stroke-width="2"/>
-      </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="23.131" viewBox="0 0 19 23.131">
+  <g id="그룹_2351" data-name="그룹 2351" transform="translate(-0.333 -0.064)">
+    <g id="타원_41" data-name="타원 41" transform="translate(4.334 0.064)" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+      <circle cx="5.5" cy="5.5" r="5.5" stroke="none"/>
+      <circle cx="5.5" cy="5.5" r="4.5" fill="none"/>
+    </g>
+    <g id="패스_2423" data-name="패스 2423" transform="translate(-0.667 -10.6)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10.5,23A9.61,9.61,0,0,0,1,32.715v1.079H20V32.715A9.61,9.61,0,0,0,10.5,23Z" stroke="none"/>
+      <path d="M 10.5 24.99999237060547 C 6.667131423950195 24.99999237060547 3.496597290039062 27.9727954864502 3.053073883056641 31.7949333190918 L 17.94692611694336 31.7949333190918 C 17.50340270996094 27.9727954864502 14.3328685760498 24.99999237060547 10.5 24.99999237060547 M 10.5 22.99999237060547 C 15.7466402053833 22.99999237060547 20 27.34981346130371 20 32.7154426574707 L 20 33.7949333190918 L 1 33.7949333190918 L 1 32.7154426574707 C 1 27.34981346130371 5.253359794616699 22.99999237060547 10.5 22.99999237060547 Z" stroke="none" fill="#2d2d2d"/>
     </g>
   </g>
 </svg>
