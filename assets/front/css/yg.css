@@ -1423,6 +1423,10 @@ a {
   margin-left: 2.35rem !important;
 }
 
+.subcotent .introType .row__body {
+  flex-wrap: wrap;
+}
+
 .introType .list-1 .kk1 {
   height: 25.25rem !important;
   width: 535px;
