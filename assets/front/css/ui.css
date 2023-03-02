@@ -59494,6 +59494,36 @@ body.nopage .wrapper {
     transform: scale(1);
   }
 }
+@media all and (max-width: 900px) {
+  .introType .row__body .list-1 .kk1,
+  .introType .row__body .list-1 .kk2 {
+    height: 28rem !important;
+    background-position: 0 35px;
+  }
+}
+@media all and (max-width: 600px) {
+  .introType .row__body .list-1 .kk1,
+  .introType .row__body .list-1 .kk2 {
+    height: 21.25rem !important;
+  }
+  .introType .row__body .list-1 .kk1 + .before-none,
+  .introType .row__body .list-1 .kk2 + .before-none {
+    position: relative;
+    top: 15px;
+  }
+}
+@media all and (max-width: 400px) {
+  .introType .row__body .list-1 .kk1 + .before-none,
+  .introType .row__body .list-1 .kk2 + .before-none {
+    position: relative;
+    top: -25px;
+  }
+}
+.introType .row__body .list-1 .kk1 + .before-none,
+.introType .row__body .list-1 .kk2 + .before-none {
+  margin-top: 0 !important;
+}
+
 .header {
   position: relative;
 }

@@ -2677,3 +2677,27 @@ body.nopage .wrapper {
 		transform: scale(1);
 	}
 }
+
+.introType .row__body .list-1 .kk1,
+.introType .row__body .list-1 .kk2 {
+	@include media($tab) {
+		height: 28rem !important;
+		background-position: 0 35px;
+	}
+	@include media($mo) {
+		height: 21.25rem !important;
+		+ .before-none {
+			position: relative;
+			top: 15px;
+		}
+	}
+	@include media(400px) {
+		+ .before-none {
+			position: relative;
+			top: -25px;
+		}
+	}
+	+ .before-none {
+		margin-top: 0 !important;
+	}
+}
