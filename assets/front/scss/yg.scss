@@ -565,7 +565,7 @@
 
 	.transport__wrap {
 		@include flex(null, null, 2.75rem);
-		padding: 1.25rem 0 4.375rem 1rem;
+		padding: 1.25rem 0 2.875rem 1rem;
 		line-height: 1.75rem;
 		word-break: keep-all;
 
@@ -1481,11 +1481,11 @@
 
 .introType .list-1 {
 	.kk1 {
-		height: 25.25rem !important;
+		height: 23.8rem !important;
 		width: 535px;
 	}
 	.kk2 {
-		height: 25.25rem !important;
+		height: 23.8rem !important;
 		width: 535px;
 	}
 	.center {
@@ -1498,7 +1498,7 @@
 }
 
 .common .site {
-	width: 25rem;
+	width: 35rem;
 	height: 25rem;
 	margin-top: 1.5rem;
 }
@@ -1527,6 +1527,14 @@
 		padding-top: 0.45rem;
 		font-size: 0.9rem;
 	}
+}
+.utilMenu.border-none {
+	li {
+		border-bottom: none;
+	}
+}
+.mobileMenu .utilMenu .login {
+	background-size: contain;
 }
 
 .headerWrap .headerInner .utilMenu li .mypage {
@@ -1611,10 +1619,10 @@
 
 	.introType .list-1 {
 		.kk1 {
-			height: 27.25rem !important;
+			height: 26.5rem !important;
 		}
 		.kk2 {
-			height: 27.25rem !important;
+			height: 26.5rem !important;
 		}
 	}
 }
@@ -1865,7 +1873,7 @@
 	}
 
 	.subcotent .transport__wrap {
-		padding: 1.25rem 0 4.375rem 0.9375rem;
+		padding: 1.25rem 0 2.875rem 0.9375rem;
 	}
 
 	.subcotent .transport__wrap .transport img {
