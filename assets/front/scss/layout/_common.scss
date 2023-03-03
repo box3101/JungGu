@@ -2701,3 +2701,19 @@ body.nopage .wrapper {
 		margin-top: 0 !important;
 	}
 }
+.subcotent {
+	.lecture {
+		img {
+			width: auto !important;
+			@include media($mo) {
+				width: 100% !important;
+			}
+			&.w100 {
+				width: 100% !important;
+			}
+			&.wAuto {
+				width: auto !important;
+			}
+		}
+	}
+}

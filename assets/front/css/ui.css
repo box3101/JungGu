@@ -59524,6 +59524,21 @@ body.nopage .wrapper {
   margin-top: 0 !important;
 }
 
+.subcotent .lecture img {
+  width: auto !important;
+}
+@media all and (max-width: 600px) {
+  .subcotent .lecture img {
+    width: 100% !important;
+  }
+}
+.subcotent .lecture img.w100 {
+  width: 100% !important;
+}
+.subcotent .lecture img.wAuto {
+  width: auto !important;
+}
+
 .header {
   position: relative;
 }
