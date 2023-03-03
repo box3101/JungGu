@@ -17,6 +17,7 @@
     scrollable();
     detailedSearch();
     comBtnActive();
+    imgChange();
   }
 
   // 공통 gnb
@@ -594,6 +595,21 @@
     });
   }
   //공통 버튼 클릭시 효과 20230216 추가 eee
+
+  // 수강신청 상세 이미지 넓이에 다른 비율 조정.
+  const imgChange = () => {
+    const lecture = document.querySelector(".lecture");
+    const $$lectureImg = lecture.querySelectorAll("img");
+
+    $$lectureImg.forEach((el) => {
+      if (el.clientWidth > 500) {
+        el.classList.add("w100")
+      } else if (el.clientWidth < 600) {
+        el.classList.add("wAuto")
+      }
+    });
+  }
+  // 수강신청 상세 이미지 넓이에 다른 비율 조정.eee
 
 
   $(document).ready(function () {
