@@ -735,6 +735,18 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
+
+      // 20230303 대관신청 달력플로그인 레이아웃 변경
+      const toolbarTitle = document.querySelector(".fc-toolbar-title");
+      const btnSet = document.querySelector(".fc-button-group");
+      const btn = btnSet.querySelector(".fc-button");
+
+      // 이전 버튼 다음요소로 toolbarTitle 넘김.
+      btnSet.insertBefore(toolbarTitle, btn.nextSibling);
+
+      toolbarTitle.style.margin = "0 20px";
+      // 20230303 대관신청 달력플로그인 레이아웃 변경 eee
+
       const initialLocaleCode = 'ko'; // 한글
       const calendarEl = document.getElementById('calendar');
       const calendar = new FullCalendar.Calendar(calendarEl, {

@@ -2768,8 +2768,8 @@ a {
 }
 
 .swiper-container-3d {
-  -webkit-perspective: 1400px;
-  perspective: 1400px;
+  -webkit-perspective: 1399px;
+  perspective: 1399px;
 }
 
 .swiper-container-3d .swiper-cube-shadow,
@@ -3362,7 +3362,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-container-coverflow .swiper-wrapper {
-  -ms-perspective: 1400px;
+  -ms-perspective: 1399px;
 }
 
 .xdsoft_datetimepicker {
@@ -6429,7 +6429,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
 .comTable-2 td strong {
   font-weight: bold;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .comTable-2 th {
     justify-content: center;
   }
@@ -6490,7 +6490,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
   word-break: keep-all;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .comSearchTable-1.flex {
     flex-direction: column;
   }
@@ -6660,7 +6660,7 @@ input[type=checkbox]:focus {
 .formRadio .row {
   margin-right: 0.3rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .formRadio {
     flex-wrap: wrap;
   }
@@ -6863,7 +6863,7 @@ html.open {
   max-width: 87.5rem;
   margin: 0 auto;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .inner {
     padding: 0 0.9375rem;
   }
@@ -6874,7 +6874,7 @@ html.open {
   max-width: 87.5rem;
   margin: 0 auto;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .subContent {
     padding: 0 15px !important;
     padding-top: 1.5625rem !important;
@@ -6901,7 +6901,7 @@ html.open {
   display: flex;
   gap: 0.3125rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .subHead__location {
     margin-top: 0.625rem;
   }
@@ -6947,7 +6947,7 @@ html.open {
     line-height: 1.3;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .subHead__location li.home {
     padding-left: 0;
   }
@@ -6967,7 +6967,7 @@ html.open {
   display: none;
   padding-left: 1.5625rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .subHead__shareWrap {
     display: none;
   }
@@ -7037,7 +7037,7 @@ html.open {
     width: 100%;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .inputDateWrap.ml20 {
     margin-left: 0 !important;
   }
@@ -7213,7 +7213,7 @@ html.open {
 .flex.flex16 li {
   flex: 1;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .flex.flex16 li {
     flex: calc(33.333% - 10px);
   }
@@ -7609,13 +7609,13 @@ html.open {
 .is-web-show {
   display: none;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .is-web-show {
     display: block;
   }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .is-web-hide {
     display: none;
   }
@@ -57721,7 +57721,7 @@ html.open {
     right: 4vw;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   html {
     font-size: 0.875rem;
   }
@@ -57981,7 +57981,7 @@ table input[type=radio] + label {
   background: #00489e;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .scroll-wrap:before,
   .scroll-tbl-wrap:before {
     content: "";
@@ -57997,7 +57997,7 @@ table input[type=radio] + label {
     z-index: 20;
   }
 }
-@media all and (max-width: 1400px) and (max-width: 1400px) {
+@media all and (max-width: 1399px) and (max-width: 1399px) {
   .scroll-tbl-wrap colgroup {
     display: none;
   }
@@ -58074,7 +58074,7 @@ table input[type=radio] + label {
   display: inline-block;
   margin-right: 4.0625rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .subcotent .vision__wrap span {
     margin-right: 0;
   }
@@ -58619,7 +58619,7 @@ body.nopage .wrapper {
   text-align: center;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .comTable-2 table colgroup {
     display: block !important;
   }
@@ -59268,7 +59268,7 @@ body.nopage .wrapper {
   line-height: 1.5;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .header .headerBg.on {
     display: none !important;
   }
@@ -59903,7 +59903,7 @@ body.nopage .wrapper {
   background: #00489e !important;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .gnb {
     display: none !important;
   }
@@ -60034,7 +60034,7 @@ body.nopage .wrapper {
   border: 0.125rem solid #dddddd;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .footer__nav ul {
     padding: 0 10px;
     flex-wrap: wrap;
@@ -60179,7 +60179,7 @@ body.nopage .wrapper {
   flex: 1;
   transition: all 0.4s;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1399px) {
   .service__list li:hover {
     flex: 1.3;
   }
@@ -60215,7 +60215,7 @@ body.nopage .wrapper {
   transition: all 0.4s;
   transform: rotateY(0deg);
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .service__list li a .img img {
     height: 6rem;
   }
@@ -60464,7 +60464,7 @@ body.nopage .wrapper {
   color: #999999;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .header .headerWrap .headerInner .logo a img {
     width: 10rem !important;
   }
@@ -60556,7 +60556,7 @@ body.nopage .wrapper {
   }
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   html {
     font-size: 14px;
   }
@@ -60636,7 +60636,7 @@ body.nopage .wrapper {
   color: darkred;
   font-size: 1rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .join .agreeOk .hint p {
     width: 100%;
   }
@@ -60853,7 +60853,7 @@ body.nopage .wrapper {
   opacity: 1;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .row__head span em {
     display: block;
     margin-top: 9px;
@@ -61358,7 +61358,7 @@ body.nopage .wrapper {
   min-height: 3.5rem;
   margin: 0;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .sharingSpace .tabBtnWrap li button {
     letter-spacing: -1px;
   }
@@ -61379,7 +61379,7 @@ body.nopage .wrapper {
   width: 12.5rem;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .sharingSpace .tabBtnWrap li {
     width: calc(33.3% - 0.78125rem);
   }
@@ -61542,6 +61542,115 @@ body.nopage .wrapper {
   background: #00489e;
 }
 
+.calendarWrap .fc .fc-toolbar {
+  justify-content: center !important;
+}
+
+.fc .fc-toolbar-title {
+  display: flex;
+  align-items: center;
+  font-weight: 26;
+  font-weight: bold;
+}
+
+.calendarWrap .fc .fc-button-primary {
+  background: #fff !important;
+  border-radius: 9999px !important;
+  border: 1px solid #b5b5b5 !important;
+}
+
+.fc-icon-chevron-left:before,
+.fc-icon-chevron-right:before {
+  color: #000 !important;
+}
+
+.fc .fc-button-primary:focus {
+  box-shadow: none !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  height: 27px;
+}
+.fc-theme-standard td a,
+.fc-theme-standard th a {
+  font-size: 21px;
+  padding: 10px 0 !important;
+}
+
+.fc-day-sun a {
+  color: #f41e1e;
+}
+
+.fc-day-sat a {
+  color: #0085cf;
+}
+
+.fc .fc-daygrid-day-top {
+  display: flex;
+  flex-direction: row;
+  padding-left: 11px;
+}
+.fc .fc-daygrid-day-top a {
+  font-size: 16px;
+}
+
+.calendarWrap .txtWrap {
+  top: 7.1rem;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 3.5em !important;
+}
+@media all and (max-width: 600px) {
+  .fc .fc-toolbar.fc-header-toolbar {
+    margin-bottom: 5.5em !important;
+  }
+}
+
+.calendarWrap .txtWrap {
+  gap: 3.4375rem;
+}
+@media all and (max-width: 600px) {
+  .calendarWrap .txtWrap {
+    top: 9.1rem;
+  }
+}
+
+.calendarWrap .txtWrap li {
+  position: relative;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  color: #999999;
+}
+.calendarWrap .txtWrap li:last-of-type {
+  padding-right: 0;
+}
+
+.calendarWrap .txtWrap li:first-child::before {
+  background: #c5e0ff;
+}
+
+.calendarWrap .txtWrap li:first-child::before,
+.calendarWrap .txtWrap li:nth-of-type(2)::before {
+  left: -1.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+@media (max-width: 1399px) {
+  .sharingSpace .tabBtnWrap li {
+    width: 48%;
+  }
+}
+.fc .fc-daygrid-day-top {
+  flex-direction: revert !important;
+}
+
+.fc .fc-highlight {
+  background-color: #c6ffc5;
+}
+
 .searchArea {
   padding: 0 6.25rem;
   border-radius: 0.3125rem;
@@ -61611,7 +61720,7 @@ body.nopage .wrapper {
   gap: 0.3125rem;
 }
 
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .searchArea {
     padding: 0 10px;
   }
@@ -61685,12 +61794,12 @@ body.nopage .wrapper {
   width: 100%;
   height: 11rem;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .cardcontent img {
     height: auto;
   }
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   .cardcontent {
     width: calc(50% - 12px) !important;
   }
@@ -61890,7 +61999,7 @@ body.nopage .wrapper {
 #lrnOceanOnlineList .cardcontent {
   width: calc(19% - 5.5px) !important;
 }
-@media all and (max-width: 1400px) {
+@media all and (max-width: 1399px) {
   #lrnOceanOnlineList .cardcontent {
     width: calc(50% - 12px) !important;
   }

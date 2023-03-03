@@ -179,3 +179,97 @@
 .subcotent .form__wrap .comBtn.bgMain {
 	background: $cMain;
 }
+
+// 20230303 대관신청 달력 커스텀 css
+.calendarWrap .fc .fc-toolbar {
+	justify-content: center !important;
+}
+.fc .fc-toolbar-title {
+	display: flex;
+	align-items: center;
+	font-weight: 26;
+	font-weight: bold;
+}
+.calendarWrap .fc .fc-button-primary {
+	background: #fff !important;
+	border-radius: 9999px !important;
+	border: 1px solid #b5b5b5 !important;
+}
+.fc-icon-chevron-left:before,
+.fc-icon-chevron-right:before {
+	color: #000 !important;
+}
+.fc .fc-button-primary:focus {
+	box-shadow: none !important;
+}
+.fc-theme-standard td,
+.fc-theme-standard th {
+	height: 27px;
+	a {
+		font-size: 21px;
+		padding: 10px 0 !important;
+	}
+}
+.fc-day-sun {
+	a {
+		color: #f41e1e;
+	}
+}
+.fc-day-sat {
+	a {
+		color: #0085cf;
+	}
+}
+.fc .fc-daygrid-day-top {
+	display: flex;
+	flex-direction: row;
+	padding-left: 11px;
+	a {
+		font-size: 16px;
+	}
+}
+.calendarWrap .txtWrap {
+	top: 7.1rem;
+}
+.fc .fc-toolbar.fc-header-toolbar {
+	margin-bottom: 3.5em !important;
+	@include media($mo) {
+		margin-bottom: 5.5em !important;
+	}
+}
+.calendarWrap .txtWrap {
+	gap: 3.4375rem;
+	@include media($mo) {
+		top: 9.1rem;
+	}
+}
+.calendarWrap .txtWrap li {
+	position: relative;
+	font-size: 1.0625rem;
+	font-weight: bold;
+	color: #999999;
+	&:last-of-type {
+		padding-right: 0;
+	}
+}
+.calendarWrap .txtWrap li:first-child::before {
+	background: #c5e0ff;
+}
+.calendarWrap .txtWrap li:first-child::before,
+.calendarWrap .txtWrap li:nth-of-type(2)::before {
+	left: -1.5rem;
+	width: 1rem;
+	height: 1rem;
+}
+@media (max-width: 1399px) {
+	.sharingSpace .tabBtnWrap li {
+		width: 48%;
+	}
+}
+.fc .fc-daygrid-day-top {
+	flex-direction: revert !important;
+}
+.fc .fc-highlight {
+	background-color: #c6ffc5;
+}
+// 20230303 대관신청 달력 커스텀 css eee
