@@ -164,6 +164,10 @@
 }
 
 .lecture {
+	img {
+		width: 100% !important;
+	}
+
 	&.detail {
 		margin-top: 3.125rem;
 	}
@@ -1562,6 +1566,42 @@
 	}
 }
 
+.visual .visualSlide .swiper-slide {
+	a img {
+		border-radius: 20px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+		height: auto;
+	}
+}
+
+.wrapper {
+	margin: 0 auto;
+	height: 90vh;
+
+	.qr-top {
+		margin-top: 3rem;
+		text-align: center;
+		padding: 0 1rem 0;
+
+		.qr-top-tit {
+			font-size: 2.5rem;
+			font-weight: 600;
+		}
+
+		.qr-top-info {
+			padding: 5rem 0 1.2rem;
+			font-size: 2rem;
+			border-bottom: 1px solid #2d2d2d;
+			text-align: left;
+			line-height: 2.5rem;
+		}
+	}
+	.qr-code {
+		margin-top: 12rem;
+		height: auto !important;
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
@@ -1635,6 +1675,9 @@
 		.kk2 {
 			height: 26.5rem !important;
 		}
+	}
+	.lecture {
+		width: 100% !important;
 	}
 }
 
@@ -1808,6 +1851,9 @@
 			height: 13rem !important;
 			object-fit: cover;
 		}
+	}
+	.lecture {
+		width: 100% !important;
 	}
 }
 
@@ -1986,5 +2032,8 @@
 			object-fit: cover;
 			flex: 1 0 auto;
 		}
+	}
+	.lecture {
+		width: 100% !important;
 	}
 }
