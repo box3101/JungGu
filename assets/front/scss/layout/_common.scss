@@ -2705,9 +2705,6 @@ body.nopage .wrapper {
 	.lecture {
 		img {
 			width: auto !important;
-			@include media($mo) {
-				width: 100% !important;
-			}
 			&.w100 {
 				width: 100% !important;
 			}
@@ -2716,4 +2713,7 @@ body.nopage .wrapper {
 			}
 		}
 	}
+}
+.cardcontent img {
+	height: auto !important;
 }

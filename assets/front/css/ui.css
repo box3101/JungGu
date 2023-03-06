@@ -59527,16 +59527,15 @@ body.nopage .wrapper {
 .subcotent .lecture img {
   width: auto !important;
 }
-@media all and (max-width: 600px) {
-  .subcotent .lecture img {
-    width: 100% !important;
-  }
-}
 .subcotent .lecture img.w100 {
   width: 100% !important;
 }
 .subcotent .lecture img.wAuto {
   width: auto !important;
+}
+
+.cardcontent img {
+  height: auto !important;
 }
 
 .header {
