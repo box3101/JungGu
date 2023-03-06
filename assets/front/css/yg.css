@@ -1541,6 +1541,27 @@ a {
   height: auto !important;
 }
 
+.mainBottom {
+  padding-bottom: 5.125rem;
+}
+.mainBottom .courseMonth ul li {
+  max-width: calc(24% + 2px) !important;
+}
+.mainBottom .courseMonth .moreBtn {
+  bottom: -45px !important;
+}
+.mainBottom .noticeflexWrap {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+.mainBottom .noticeflexWrap .notice {
+  width: calc(48% - 5px);
+}
+.mainBottom .noticeflexWrap .notice .moreBtn {
+  bottom: -45px !important;
+}
+
 @media all and (max-width: 1399px) {
   html {
     font-size: 0.875rem;
@@ -1605,6 +1626,31 @@ a {
   }
   .lecture {
     width: 100% !important;
+  }
+  .mainBottom {
+    flex-direction: column;
+  }
+  .mainBottom .courseMonth ul li {
+    max-width: 100% !important;
+  }
+  .mainBottom .courseMonth .moreBtn {
+    bottom: -45px !important;
+    right: 5px;
+  }
+  .mainBottom .noticeflexWrap {
+    flex-direction: column;
+    padding-top: 70px;
+  }
+  .mainBottom .noticeflexWrap .notice {
+    width: 100% !important;
+  }
+  .mainBottom .noticeflexWrap .notice .moreBtn {
+    bottom: -45px !important;
+    right: 5px;
+    background-position: right;
+  }
+  .mainBottom .notice.ref {
+    padding-top: 50px;
   }
 }
 @media all and (max-width: 900px) {

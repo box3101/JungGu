@@ -1602,6 +1602,28 @@
 	}
 }
 
+.mainBottom {
+	padding-bottom: 5.125rem;
+	.courseMonth {
+		ul li {
+			max-width: calc(24% - -2px) !important;
+		}
+		.moreBtn {
+			bottom: -45px !important;
+		}
+	}
+	.noticeflexWrap {
+		@include flex(null, space-between, null);
+		padding-top: 60px;
+		.notice {
+			width: calc(48% - 5px);
+			.moreBtn {
+				bottom: -45px !important;
+			}
+		}
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
@@ -1678,6 +1700,34 @@
 	}
 	.lecture {
 		width: 100% !important;
+	}
+
+	.mainBottom {
+		flex-direction: column;
+		.courseMonth {
+			ul li {
+				max-width: 100% !important;
+			}
+			.moreBtn {
+				bottom: -45px !important;
+				right: 5px;
+			}
+		}
+		.noticeflexWrap {
+			flex-direction: column;
+			padding-top: 70px;
+			.notice {
+				width: 100% !important;
+				.moreBtn {
+					bottom: -45px !important;
+					right: 5px;
+					background-position: right;
+				}
+			}
+		}
+		.notice.ref {
+			padding-top: 50px;
+		}
 	}
 }
 
