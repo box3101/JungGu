@@ -776,9 +776,9 @@
 
 		p {
 			text-align: left;
-			font-size: 1.125rem;
+			font-size: 1rem;
 			font-weight: 500;
-			color: #555555;
+			color: #00489e;
 			line-height: 1.2rem;
 		}
 	}
@@ -794,10 +794,14 @@
 			color: #555555;
 		}
 
-		.w70 {
-			flex: 0 1 calc(73%);
+		.w63 {
+			flex: 0 1 63%;
 		}
 	}
+}
+
+.w63 {
+	width: 63px !important;
 }
 
 .com-step {
@@ -1619,6 +1623,22 @@
 			}
 		}
 	}
+}
+.ui-icon-seek-prev {
+	width: 28px !important;
+	height: 28px !important;
+	background: url(../img/btn__page_pre.svg) no-repeat !important;
+}
+
+.ui-icon-seek-next {
+	width: 28px !important;
+	height: 28px !important;
+	background: url(../img/btn__page_next.svg) no-repeat !important;
+}
+
+.ui-icon-seek-first,
+.ui-icon-seek-end {
+	display: none;
 }
 
 // 미디어 쿼리

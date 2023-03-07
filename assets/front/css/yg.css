@@ -821,9 +821,9 @@ a {
 .form__wrap .form__list__id p,
 .form__wrap .form__list__pw p {
   text-align: left;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
-  color: #555555;
+  color: #00489e;
   line-height: 1.2rem;
 }
 .form__wrap .form__list__pw li:nth-child(1) {
@@ -834,8 +834,12 @@ a {
   font-weight: 500;
   color: #555555;
 }
-.form__wrap .form__list__pw .w70 {
-  flex: 0 1 73%;
+.form__wrap .form__list__pw .w63 {
+  flex: 0 1 63%;
+}
+
+.w63 {
+  width: 63px !important;
 }
 
 .com-step ul {
@@ -1559,6 +1563,23 @@ a {
 }
 .mainBottom .noticeflexWrap .notice .moreBtn {
   bottom: -45px !important;
+}
+
+.ui-icon-seek-prev {
+  width: 28px !important;
+  height: 28px !important;
+  background: url(../img/btn__page_pre.svg) no-repeat !important;
+}
+
+.ui-icon-seek-next {
+  width: 28px !important;
+  height: 28px !important;
+  background: url(../img/btn__page_next.svg) no-repeat !important;
+}
+
+.ui-icon-seek-first,
+.ui-icon-seek-end {
+  display: none;
 }
 
 @media all and (max-width: 1399px) {
