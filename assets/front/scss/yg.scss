@@ -1636,9 +1636,57 @@
 	background: url(../img/btn__page_next.svg) no-repeat !important;
 }
 
-.ui-icon-seek-first,
+.cardcontent-wrap .cardcontent img {
+	height: 12.7rem !important;
+}
+
+.customPageNumberBtn.on {
+	width: 1.75rem;
+	height: 1.75rem;
+	line-height: 1.525rem;
+	border: none;
+}
+.customPageNumberBtn {
+	width: 1.75rem !important;
+	height: 1.75rem !important;
+	line-height: 1.525rem;
+	background: #f6f6f6;
+	border-radius: 0.6875rem;
+	border: 1px solid #b5b5b5;
+	margin: 0 0.375rem;
+	box-sizing: border-box;
+}
+
+.customPageNumberBtn:hover {
+	background: #666666;
+	color: #fff !important;
+	font-size: 1rem;
+	font-weight: 600 !important;
+	opacity: 1;
+	border: none;
+	box-sizing: border-box;
+	line-height: 1.57rem;
+}
+
+.ui-icon-seek-first {
+	width: 1.75rem;
+	height: 1.75rem;
+	background-size: cover;
+	background: url(../img/btn__page_first.svg) no-repeat;
+	background-size: cover;
+}
+
 .ui-icon-seek-end {
-	display: none;
+	width: 1.75rem;
+	height: 1.75rem;
+	background-size: cover;
+	background: url(../img/btn__page_last.svg) no-repeat;
+	background-size: cover;
+}
+
+.customPageNumberBtn.on:hover {
+	background: #00489e;
+	line-height: 1.525rem;
 }
 
 // 미디어 쿼리
