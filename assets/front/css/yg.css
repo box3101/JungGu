@@ -1623,6 +1623,24 @@ a {
   background: #00489e;
 }
 
+.board-view-contents {
+  padding: 1.25rem 0;
+}
+
+.zommIn {
+  position: absolute;
+  right: 150px;
+  top: 10px;
+}
+.zommIn li {
+  display: flex;
+  flex-direction: column;
+}
+.zommIn li img {
+  width: 20px;
+  height: 20px;
+}
+
 @media all and (max-width: 1399px) {
   html {
     font-size: 0.875rem;

@@ -1681,6 +1681,24 @@
 	background: #00489e;
 }
 
+.board-view-contents {
+	padding: 1.25rem 0;
+}
+
+.zommIn {
+	position: absolute;
+	right: 150px;
+	top: 10px;
+	li {
+		display: flex;
+		flex-direction: column;
+		img {
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
 // 미디어 쿼리
 @include media($web) {
 	html {
