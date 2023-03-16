@@ -471,6 +471,14 @@
     </main>
     <!-- sub eee -->
 
+    <!-- 테이블 내용 높이 값 변경-->
+    <script>
+      const divBox = document.querySelector('.board-view-contents');
+      if(divBox.clientHeight < 25){
+        divBox.style.padding = "60px 0";
+      }
+    </script>
+
     <!-- footer -->
     <footer id="footer" class="footer">
       <div class="footer__nav">

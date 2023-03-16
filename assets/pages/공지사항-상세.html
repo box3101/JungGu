@@ -392,13 +392,13 @@
                     <td colspan="3">
                       <div class="board-view-contents">
                         <p>여성가족부에서는 매년 5월 청소년의 달을 기념하여 사회 각 분야에서 청소년의 건강한 성장에 기여한</p>
-                        <p>개인.단체.기업 등과 주체적인 활동으로 귀감이 되는 청소년에 대한 포상을 추진하고 있습니다.</p>
-                        <p><br></p>
-                        <p> 가. 포상명 : 2023년 청소년 육성 및 보호 유공</p>
-                        <p> 나. 포상규모(안)</p>
-                        <p> - 정부포상 : 훈장(2점), 포장(3점), 대통령표창(7점), 국무총리표창(11점)</p>
-                        <p> - 장관표창 : 50점</p>
-                        <p> 다. 추천기한 : 붙임 공고문 참고<span style="font-size: 17px; letter-spacing: -0.05em;"> </span></p>
+                          <p>개인.단체.기업 등과 주체적인 활동으로 귀감이 되는 청소년에 대한 포상을 추진하고 있습니다.</p>
+                          <p><br></p>
+                          <p> 가. 포상명 : 2023년 청소년 육성 및 보호 유공</p>
+                          <p> 나. 포상규모(안)</p>
+                          <p> - 정부포상 : 훈장(2점), 포장(3점), 대통령표창(7점), 국무총리표창(11점)</p>
+                          <p> - 장관표창 : 50점</p>
+                          <p> 다. 추천기한 : 붙임 공고문 참고<span style="font-size: 17px; letter-spacing: -0.05em;"> </span></p>
                       </div>
                     </td>
                   </tr>
@@ -470,6 +470,14 @@
         </div>
     </main>
     <!-- sub eee -->
+
+    <!-- 테이블 내용 높이 값 변경-->
+    <script>
+      const divBox = document.querySelector('.board-view-contents');
+      if(divBox.clientHeight < 25){
+        divBox.style.padding = "60px 0";
+      }
+    </script>
 
     <!-- footer -->
     <footer id="footer" class="footer">
