@@ -1515,8 +1515,6 @@ a {
 
 .visual .visualSlide .swiper-slide a img {
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-  height: auto;
 }
 
 .wrapper {
@@ -1621,24 +1619,6 @@ a {
 
 .customPageNumberBtn.on:hover {
   background: #00489e;
-}
-
-.comTable-1 .content {
-  padding: 50px 0;
-}
-
-.zommIn {
-  position: absolute;
-  right: 150px;
-  top: 10px;
-}
-.zommIn li {
-  display: flex;
-  flex-direction: column;
-}
-.zommIn li img {
-  width: 20px;
-  height: 20px;
 }
 
 @media all and (max-width: 1399px) {

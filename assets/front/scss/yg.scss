@@ -1570,8 +1570,6 @@
 .visual .visualSlide .swiper-slide {
 	a img {
 		border-radius: 20px;
-		box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
-		height: auto;
 	}
 }
 
@@ -1679,24 +1677,6 @@
 
 .customPageNumberBtn.on:hover {
 	background: #00489e;
-}
-
-.comTable-1 .content {
-	padding: 50px 0;
-}
-
-.zommIn {
-	position: absolute;
-	right: 150px;
-	top: 10px;
-	li {
-		display: flex;
-		flex-direction: column;
-		img {
-			width: 20px;
-			height: 20px;
-		}
-	}
 }
 
 // 미디어 쿼리
