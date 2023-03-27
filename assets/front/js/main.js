@@ -227,8 +227,8 @@
         loop: true,
         // effect: 'fade',
         navigation: {
-          nextEl: '#visualSlide .swiper-button-next', // 다음 버튼 클래스명
-          prevEl: '#visualSlide .swiper-button-prev', // 이번 버튼 클래스명
+          nextEl: '.visualSlide .swiper-button-next', // 다음 버튼 클래스명
+          prevEl: '.visualSlide .swiper-button-prev', // 이번 버튼 클래스명
         },
         a11y: {
           prevSlideMessage: '이전 슬라이드',
@@ -269,8 +269,8 @@
         loop: true,
         // effect: 'fade',
         navigation: {
-          nextEl: '#moVisualSlide .swiper-button-next', // 다음 버튼 클래스명
-          prevEl: '#moVisualSlide .swiper-button-prev', // 이번 버튼 클래스명
+          nextEl: '.moVisualSlide .swiper-button-next', // 다음 버튼 클래스명
+          prevEl: '.moVisualSlide .swiper-button-prev', // 이번 버튼 클래스명
         },
         a11y: {
           prevSlideMessage: '이전 슬라이드',
@@ -691,3 +691,6 @@
     }, 100)
   })();
 })();
+
+
+
