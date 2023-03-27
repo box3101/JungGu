@@ -124,7 +124,7 @@
       <text id="미래지향-2" data-name="미래지향" transform="translate(875.962 499.573)" fill="#fff" font-size="24" font-family="NotoSansCJKkr-Medium, Noto Sans CJK KR" font-weight="500" letter-spacing="-0.025em"><tspan x="-43.26" y="0">미래지향</tspan></text>
     </g>
     <g id="포용과_상생" data-name="포용과 상생">
-      <circle id="타원_1_복사-3" data-name="타원 1 복사" cx="126" cy="126" r="126" transform="translate(979 301)" fill="#59c4ff" opacity="0.902"/>
+      <circle id="타원_1_복사-3" data-name="타원 1 복사" cx="126" cy="126" r="126" transform="translate(979 301)" fill="#003d9a" opacity="0.902"/>
       <g id="벡터_고급_개체-4" data-name="벡터 고급 개체" transform="translate(1051 347)">
         <g id="그룹_716" data-name="그룹 716">
           <g id="그룹_715" data-name="그룹 715" clip-path="url(#clip-path-4)">
@@ -133,20 +133,20 @@
             <rect id="사각형_690" data-name="사각형 690" width="23.609" height="37.501" transform="translate(11.342 78.986)" fill="#68c9fe"/>
             <rect id="사각형_691" data-name="사각형 691" width="23.609" height="37.501" transform="translate(11.342 78.986)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
             <path id="패스_767" data-name="패스 767" d="M34.95,116.487V45.776L56.768,68.248,64.6,61.036,40.877,35.95c-3.126-2.827-5.968-4.443-9.861-4.7H13.308c-6.492,0-11.8,4.669-11.8,10.378V78.986h9.837v37.5" fill="#68c9fe"/>
-            <path id="패스_768" data-name="패스 768" d="M34.95,116.487V45.776L56.768,68.248,64.6,61.036,40.877,35.95c-3.126-2.827-5.968-4.443-9.861-4.7H13.308c-6.492,0-11.8,4.669-11.8,10.378V78.986h9.837v37.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
+            <path id="패스_768" data-name="패스 768" d="M34.95,116.487V45.776L56.768,68.248,64.6,61.036,40.877,35.95c-3.126-2.827-5.968-4.443-9.861-4.7H13.308c-6.492,0-11.8,4.669-11.8,10.378V78.986h9.837v37.5" fill="#1950a3" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
             <line id="선_54" data-name="선 54" y2="36.987" transform="translate(11.341 41.999)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.025"/>
             <line id="선_55" data-name="선 55" y1="37.501" transform="translate(23.146 78.986)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.025"/>
-            <path id="패스_769" data-name="패스 769" d="M33.053,15.389a9.859,9.859,0,1,1-19.718,0V11.424a9.859,9.859,0,1,1,19.718,0Z" fill="#68c9fe"/>
+            <path id="패스_769" data-name="패스 769" d="M33.053,15.389a9.859,9.859,0,1,1-19.718,0V11.424a9.859,9.859,0,1,1,19.718,0Z" fill="#1950a3"/>
             <path id="패스_770" data-name="패스 770" d="M33.053,15.389a9.859,9.859,0,1,1-19.718,0V11.424a9.859,9.859,0,1,1,19.718,0Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
             <path id="패스_771" data-name="패스 771" d="M52.232,68.248,44.4,61.036,68.123,35.95c3.126-2.827,5.968-4.443,9.861-4.7H95.692c6.492,0,11.8,4.669,11.8,10.378V78.986H74.05V45.776Z" fill="#68c9fe"/>
             <path id="패스_772" data-name="패스 772" d="M52.232,68.248,44.4,61.036,68.123,35.95c3.126-2.827,5.968-4.443,9.861-4.7H95.692c6.492,0,11.8,4.669,11.8,10.378V78.986H74.05V45.776Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
             <rect id="사각형_692" data-name="사각형 692" width="23.609" height="37.501" transform="translate(74.05 78.986)" fill="#68c9fe"/>
             <rect id="사각형_693" data-name="사각형 693" width="23.609" height="37.501" transform="translate(74.05 78.986)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
-            <path id="패스_773" data-name="패스 773" d="M74.05,116.487V45.776L52.232,68.248,44.4,61.036,68.123,35.95c3.126-2.827,5.968-4.443,9.861-4.7H95.692c6.492,0,11.8,4.669,11.8,10.378V78.986H97.658v37.5" fill="#68c9fe"/>
+            <path id="패스_773" data-name="패스 773" d="M74.05,116.487V45.776L52.232,68.248,44.4,61.036,68.123,35.95c3.126-2.827,5.968-4.443,9.861-4.7H95.692c6.492,0,11.8,4.669,11.8,10.378V78.986H97.658v37.5" fill="#1950a3"/>
             <path id="패스_774" data-name="패스 774" d="M74.05,116.487V45.776L52.232,68.248,44.4,61.036,68.123,35.95c3.126-2.827,5.968-4.443,9.861-4.7H95.692c6.492,0,11.8,4.669,11.8,10.378V78.986H97.658v37.5" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
             <line id="선_56" data-name="선 56" y2="36.987" transform="translate(97.659 41.999)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.025"/>
             <line id="선_57" data-name="선 57" y1="37.501" transform="translate(85.854 78.986)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.025"/>
-            <path id="패스_775" data-name="패스 775" d="M75.947,15.389a9.859,9.859,0,1,0,19.718,0V11.424a9.859,9.859,0,1,0-19.718,0Z" fill="#68c9fe"/>
+            <path id="패스_775" data-name="패스 775" d="M75.947,15.389a9.859,9.859,0,1,0,19.718,0V11.424a9.859,9.859,0,1,0-19.718,0Z" fill="#1950a3"/>
             <path id="패스_776" data-name="패스 776" d="M75.947,15.389a9.859,9.859,0,1,0,19.718,0V11.424a9.859,9.859,0,1,0-19.718,0Z" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3.017"/>
           </g>
         </g>

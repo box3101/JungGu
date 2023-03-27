@@ -378,6 +378,7 @@
                   </div>
                   <!-- 상세 검색 내용 -->
                   <div class="searchArea__box">
+                    <span class="hidden">닫힘</span>
                     <div class="comSearchTable-1 flex">
                       <table>
                         <caption class="hidden">
@@ -928,20 +929,60 @@
           $(".modalBtn").focus();
         });
       }
+    })();
+
+    // 0. ppt 19페이지 텍스트 형태의 정보로 제공하지 않은 경우
+
+
+    // 1. 공통 file 첨부
+    (function () {
+      let $inpuFile = document.querySelector(".inputFile");
+      if ($inpuFile) {
+        let $$inputFileLabel = document.querySelectorAll(".sgFileUploader .divInputFile label");
+        $$inputFileLabel.forEach((el) => {
+          el.setAttribute("tabindex", "0");
+          el.addEventListener("keydown", (e) => {
+            if (e.keyCode === 13 || e.keyCode === 32) $inpuFile.click();
+          });
+        });
+      }
+    })();
+
+    (function () {
+      //20230324 웹 접근성 조치 - div 타이틀태그 -> h2 태그로 변경
+      const $divElement = $(".subHead__tit");
+      const $h2Element = $("<h2>", {
+        class: 'subHead__tit',
+        text: $divElement.text()
+      });
+
+      $divElement.replaceWith($h2Element);
+      //20230324 웹 접근성 조치 - div 타이틀태그 -> h2 태그로 변경 eee
+
+      //20230324 웹 접근성 조치 모든 팝업태그 초점 이동
+      const $comBtn = $(".comBtn")
+      const $comPopInfo = $(".comPopupInfo");
+      const $popClose = $(".popClose");
+
+      $comBtn.on("click", function () {
+        let $this = $(this);
+
+        setTimeout(function () {
+          $comPopInfo.attr("tabindex", "0");
+          $comPopInfo.focus();
+
+          $popClose.on("click", function () {
+            $this.focus();
+          });
+        }, 100)
+
+      });
+      //20230324 웹 접근성 조치 - 모든 팝업태그 초점 이동 eee
 
     })();
 
 
 
-    // 공통 file 첨부
-    let inpuFile = document.querySelector(".inputFile");
-    let $$inputFileLabel = document.querySelectorAll(".sgFileUploader .divInputFile label");
-    $$inputFileLabel.forEach((el) => {
-      el.setAttribute("tabindex", "0");
-      el.addEventListener("keydown", (e) => {
-        if (e.keyCode === 13 || e.keyCode === 32) inpuFile.click();
-      });
-    });
 
   </script>
 </body>

@@ -6440,7 +6440,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
     grid-template-columns: 6.25rem auto;
   }
   .comTable-2 th,
-  .comTable-2 td {
+.comTable-2 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -6542,7 +6542,7 @@ input:read-only(:not(.close)):focus, input:read-only(:not(.close)):hover {
     display: none;
   }
   .comSearchTable-1 th,
-  .comSearchTable-1 td {
+.comSearchTable-1 td {
     height: auto;
     padding: 0.625rem 0;
     text-align: left;
@@ -57761,14 +57761,14 @@ html.open {
     display: contents;
   }
   .comTable-3 tr th,
-  .comTable-3 tr td {
+.comTable-3 tr td {
     border-bottom: none !important;
     vertical-align: middle;
     display: grid;
     align-items: center;
   }
   .comTable-3 tr th .comBtn.ico-down,
-  .comTable-3 tr td .comBtn.ico-down {
+.comTable-3 tr td .comBtn.ico-down {
     padding-left: 0 !important;
     margin-left: 0 !important;
   }
@@ -57829,7 +57829,7 @@ html.open {
 }
 @media all and (max-width: 600px) {
   .comTable-1 th,
-  .comTable-1 td {
+.comTable-1 td {
     height: auto;
     border: none !important;
     border-bottom: 1px solid #ddd !important;
@@ -57903,7 +57903,7 @@ table input[type=radio] + label {
 }
 @media all and (max-width: 600px) {
   .form__wrap .form__list__id label,
-  .form__wrap .form__list__pw label {
+.form__wrap .form__list__pw label {
     font-size: 1.1rem;
     word-break: keep-all;
     text-align: left;
@@ -57983,7 +57983,7 @@ table input[type=radio] + label {
 
 @media all and (max-width: 1399px) {
   .scroll-wrap:before,
-  .scroll-tbl-wrap:before {
+.scroll-tbl-wrap:before {
     content: "";
     position: absolute;
     top: 0px;
@@ -59109,7 +59109,7 @@ body.nopage .wrapper {
     font-weight: 500;
   }
   .certificatesWrap .descList li dl dt,
-  .certificatesWrap .descList li dl dd {
+.certificatesWrap .descList li dl dd {
     font-size: 0.7rem;
   }
   .certificatesWrap .descList li dl dt {
@@ -59496,25 +59496,25 @@ body.nopage .wrapper {
 }
 @media all and (max-width: 900px) {
   .introType .row__body .list-1 .kk1,
-  .introType .row__body .list-1 .kk2 {
+.introType .row__body .list-1 .kk2 {
     height: 28rem !important;
     background-position: 0 35px;
   }
 }
 @media all and (max-width: 600px) {
   .introType .row__body .list-1 .kk1,
-  .introType .row__body .list-1 .kk2 {
+.introType .row__body .list-1 .kk2 {
     height: 21.25rem !important;
   }
   .introType .row__body .list-1 .kk1 + .before-none,
-  .introType .row__body .list-1 .kk2 + .before-none {
+.introType .row__body .list-1 .kk2 + .before-none {
     position: relative;
     top: 15px;
   }
 }
 @media all and (max-width: 400px) {
   .introType .row__body .list-1 .kk1 + .before-none,
-  .introType .row__body .list-1 .kk2 + .before-none {
+.introType .row__body .list-1 .kk2 + .before-none {
     position: relative;
     top: -25px;
   }
@@ -60059,7 +60059,7 @@ body.nopage .wrapper {
     margin: 0 10px;
   }
   .footer .inner,
-  .footer .left {
+.footer .left {
     flex-direction: column;
   }
   .footer .left address {
@@ -61806,7 +61806,7 @@ body.nopage .wrapper {
 }
 .cardcontent img {
   width: 100%;
-  height: 11rem;
+  height: 12.8rem;
 }
 @media all and (max-width: 1399px) {
   .cardcontent img {
@@ -62032,14 +62032,105 @@ body.nopage .wrapper {
 #lrnOceanOnlineList .field-icon::before {
   display: none;
 }
-#lrnOceanOnlineList .cardcontent .content-bottom .date-icon::before, #lrnOceanOnlineList .cardcontent .content-bottom .pepole-icon::before {
+#lrnOceanOnlineList .cardcontent .content-bottom .date-icon::before,
+#lrnOceanOnlineList .cardcontent .content-bottom .pepole-icon::before {
   display: none;
 }
 #lrnOceanOnlineList .week-icon::before {
   display: none;
 }
-#lrnOceanOnlineList .cardcontent .content-bottom .txt span, #lrnOceanOnlineList .cardcontent .content-bottom .txt em, #lrnOceanOnlineList .cardcontent .content-bottom .txt {
+#lrnOceanOnlineList .cardcontent .content-bottom .txt span,
+#lrnOceanOnlineList .cardcontent .content-bottom .txt em,
+#lrnOceanOnlineList .cardcontent .content-bottom .txt {
   font-size: 0.9rem;
 }
 
+.subcotent .con__left img {
+  object-fit: cover;
+}
+
+.comPopupInfo:focus-visible {
+  border: 1px solid #000;
+}
+
 /*# sourceMappingURL=ui.css.map */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+  background: #FEEB8B!important;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+  background: #1D3CB9!important;
+}
+.comSubTab li a{
+  background: #fff!important;
+  color: #333;
+  border: 1px solid #333;
+}
+.comSubTab li:hover a, .comSubTab li.on a{
+  background: #00489E!important;
+  color: #fff;
+}
+.comTitle-1__txt{
+  opacity:1;
+}
+.courseSearch__btn input{
+  color: #000!important;
+}
+.comInput::placeholder{
+  color: #000!important;
+}
+.mainBottom .notice ul li .date{
+  color: #333;
+}
+.chip.pay{
+  background: #E42C01;
+  border: 1px solid #E42C01;
+}
+.chip.free{
+  background: #2D8800;
+  border: 1px solid #2D8800;
+}
+.subcotent .form__wrap .connect.joinbt li:nth-of-type(2) .comBtn{
+  background: #00883D;
+  border:1px solid #00883D;
+}
+@media (max-width: 1399px){
+  .classRegistration .cardcontent-wrap .cardcontent img{
+    height: auto!important;
+  }
+  .main .cardcontent-wrap .cardcontent img{
+    height: auto!important;
+  }
+  .network .cardcontent-wrap .cardcontent img{
+    height: auto!important;
+  }
+}
+#lrnOceanOnlineList .cardcontent {
+  width: calc(19% - -1.5px)!important;
+}
+@media (max-width: 1399px){
+  #lrnOceanOnlineList .cardcontent {
+      width: calc(50% - 12px) !important;
+  }
+}
+@media (max-width:600px){
+    #lrnOceanOnlineList .cardcontent {
+      width: 100% !important;
+  }
+}
+
+
+.comSelectBoxWrap{
+  display: flex;
+  align-items: center;
+  gap:0.625rem;
+}
+.comSelectBoxWrap .comBtn{
+  min-width: 3.75rem;
+  height: 2.5rem;
+  line-height: 2.375rem;
+  background: #00489E;
+  border:0.0625rem solid #00489E;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: bold;
+}

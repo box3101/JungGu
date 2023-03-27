@@ -148,7 +148,7 @@
 	flex-wrap: wrap;
 	img {
 		width: 100%;
-    height: 11rem;
+		height: 12.8rem;
 		@include media($web) {
 			height: auto;
 		}
@@ -341,32 +341,41 @@
 // 		flex-wrap: wrap;
 // 	}
 // }
-#lrnOceanOnlineList{
-	.cardcontent{
-		width: calc(19% - 5.5px)!important;
-		@include media($web){
-			width: calc(50% - 12px)!important;
+#lrnOceanOnlineList {
+	.cardcontent {
+		width: calc(19% - 5.5px) !important;
+		@include media($web) {
+			width: calc(50% - 12px) !important;
 		}
-		@include media($mo){
-			width: 100%!important;
+		@include media($mo) {
+			width: 100% !important;
 		}
 	}
-	.twoLine{
+	.twoLine {
 		font-size: 1.2rem;
 	}
-	&.gap24{
-		gap:15px;
+	&.gap24 {
+		gap: 15px;
 	}
-	.field-icon::before{
+	.field-icon::before {
 		display: none;
 	}
-	.cardcontent .content-bottom .date-icon::before, .cardcontent .content-bottom .pepole-icon::before{
+	.cardcontent .content-bottom .date-icon::before,
+	.cardcontent .content-bottom .pepole-icon::before {
 		display: none;
 	}
-	.week-icon::before{
+	.week-icon::before {
 		display: none;
 	}
-	.cardcontent .content-bottom .txt span, .cardcontent .content-bottom .txt em , .cardcontent .content-bottom .txt{
+	.cardcontent .content-bottom .txt span,
+	.cardcontent .content-bottom .txt em,
+	.cardcontent .content-bottom .txt {
 		font-size: 0.9rem;
 	}
+}
+.subcotent .con__left img {
+	object-fit: cover;
+}
+.comPopupInfo:focus-visible {
+	border: 1px solid #000;
 }
